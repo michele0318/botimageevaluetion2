@@ -1,0 +1,52 @@
+{
+  "id": "0914ed3e59ea85f7c0e5a46b301ad86bb44e0af0f80cb5755ff6367c70accf3c",
+  "prompt": "TRANSLATION: \"product photography of 2 bottles, placed on a blue soft bed sheet, against the backdrop of a deep twilight sky with stars, in the style of contemporary minimalist treatment. the background is the sky with stars, HD resolution\"\n\nORIGINAL: \"product photography of 2 bottles, placed on blue soft bed sheet, against the backdrop of deep twilight sky with stars in the style of comtemporory minimalistic treatment. the background is the sky with stars, hd resolution\"",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Both images follow the prompt, but image 2 is far more attractive — beautiful colours and lighting. Its only real flaw is the badly rendered text, and that is a single designer step to fix in Photoshop. When a beautiful image is one easy fix away from being perfect, it wins.",
+  "split": "train",
+  "image_group": "678ead0489565ca4fc129e5f1d640ccd5611d462116ed10bed9e996329a03da0",
+  "image_hashes": [
+    "73e60ff0c6aada9f948f29b61db9f9c0a1674db30564629284aa5eaed6470103",
+    "bab51e27a9c2c65b4efdf5c30476a7740d74b4dff10d9211d956ded1c9239da3"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "c5bd7345bdd6f26dd89adaa36da18ae22ec0fe52a5158a352e03b6c07eb14c06",
+      "corrected": false,
+      "time": "2026-09-13T02:17:23"
+    },
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "5db6608a2c981167b7335550f8c197ead187b42d3027aab117db26a15ff5d9b4",
+      "corrected": false,
+      "time": "2026-09-13T22:00:26"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:17:25"
+    },
+    {
+      "previous": "2",
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:00:28"
+    }
+  ],
+  "feedback": "Both images follow the prompt, but image 2 is far more attractive — beautiful colours and lighting. Its only real flaw is the badly rendered text, and that is a single designer step to fix in Photoshop. When a beautiful image is one easy fix away from being perfect, it wins.",
+  "lesson": "If requested style is specified, prioritize visual harmony and aesthetic appeal over strict literal adherence; minor technical flaws can be corrected without affecting overall merit.",
+  "lesson_evidence": "Both images follow the prompt, but image 2 is far more attractive — beautiful colours and lighting. Its only real flaw is the badly rendered text, and that is a single designer step to fix in Photoshop.",
+  "lesson_source": "Both images follow the prompt, but image 2 is far more attractive — beautiful colours and lighting. Its only real flaw is the badly rendered text, and that is a single designer step to fix in Photoshop. When a beautiful image is one easy fix away from being perfect, it wins."
+}

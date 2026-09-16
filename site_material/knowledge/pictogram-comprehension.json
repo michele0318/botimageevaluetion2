@@ -1,0 +1,15 @@
+{
+  "title": "Testing whether a symbol works — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension",
+  "source_hash": "e221934e6d51616c3a4366e2613c7b3c5e06900d7d8505e7ac569ea5231b7a64",
+  "rules": [
+    {
+      "rule": "If destination names in a test contain only place-based words (like 'Unit' or 'Center') without function descriptors, comprehension scores will drop significantly.",
+      "evidence": "function-based names scored around 4 out of 5, while names leaning on a place or a population dropped as low as 1."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2199,
+  "output_tokens": 277,
+  "processed_at": "2026-09-13T09:35:38"
+}

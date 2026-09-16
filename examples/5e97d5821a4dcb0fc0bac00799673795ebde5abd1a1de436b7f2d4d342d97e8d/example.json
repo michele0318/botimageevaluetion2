@@ -1,0 +1,61 @@
+{
+  "id": "5e97d5821a4dcb0fc0bac00799673795ebde5abd1a1de436b7f2d4d342d97e8d",
+  "prompt": "vintage summer jazz festival poster, ornate hand-lettered title, subtitle with the date, a long list of performer names in small text at the bottom, two dancers with intertwined arms in the centre, warm dramatic stage lighting, textured paper",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 wins. Yes, image 2 is less atmospheric and less vintage — but look at how many defects image 1 has. A designer fixing it would have to redo almost everything: JAZZ is spelled with an extra third Z, the dancers' legs turn into mush, the text at the bottom is unreadable and broken, and what is going on with the dancers' arms — are there three of them? Despite the interesting mood and the beautiful presentation, image 1 loses. Image 2 may be less eye-catching, but it has no defects a designer would have to fix at all. A beautiful image wins only when what is broken can be fixed in one designer step.",
+  "split": "train",
+  "image_group": "6c0931e7e3d406d5feadf8f3a5f0ba30491b7d33b3f2b348cd1d1d4caef1d5f0",
+  "image_hashes": [
+    "af606c18b1db640aac56cb618865b3e163d39bd4806d37ff940bebef03f4b09f",
+    "feea0c582edcbf1dfafe561b465d35b6a0b26e19d776246196f9a338f67e80a0"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "29e420ab307db790ff87287923638577247cf605dc05039eff1ad51f41098078",
+      "corrected": false,
+      "time": "2026-09-13T02:16:53"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "29e420ab307db790ff87287923638577247cf605dc05039eff1ad51f41098078",
+      "corrected": true,
+      "time": "2026-09-13T02:16:58"
+    },
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "188081005b6ee2cb7271cb0988840c543901a9003ff26261912e4e8423f2cc64",
+      "corrected": false,
+      "time": "2026-09-13T22:00:21"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 wins. Yes, image 2 is less atmospheric and less vintage — but look at how many defects image 1 has. A designer fixing it would have to redo almost everything: JAZZ is spelled with an extra third Z, the dancers' legs turn into mush, the text at the bottom is unreadable and broken, and what is going on with the dancers' arms — are there three of them? Despite the interesting mood and the beautiful presentation, image 1 loses. Image 2 may be less eye-catching, but it has no defects a designer would have to fix at all. A beautiful image wins only when what is broken can be fixed in one designer step.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:16:55"
+    },
+    {
+      "previous": "2",
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:00:23"
+    }
+  ],
+  "feedback": "Image 2 wins. Yes, image 2 is less atmospheric and less vintage — but look at how many defects image 1 has. A designer fixing it would have to redo almost everything: JAZZ is spelled with an extra third Z, the dancers' legs turn into mush, the text at the bottom is unreadable and broken, and what is going on with the dancers' arms — are there three of them? Despite the interesting mood and the beautiful presentation, image 1 loses. Image 2 may be less eye-catching, but it has no defects a designer would have to fix at all. A beautiful image wins only when what is broken can be fixed in one designer step.",
+  "lesson": "If requested style is specified, prioritize clarity and structural integrity over aesthetic flair; a visually coherent image with no critical defects wins over an atmospheric one with errors.",
+  "lesson_evidence": "A designer fixing it would have to redo almost everything: JAZZ is spelled with an extra third Z, the dancers' legs turn into mush, the text at the bottom is unreadable and broken, and what is going on with the dancers' arms — are there three of them? Despite the interesting mood and the beautiful presentation, image 1 loses.",
+  "lesson_source": "Image 2 wins. Yes, image 2 is less atmospheric and less vintage — but look at how many defects image 1 has. A designer fixing it would have to redo almost everything: JAZZ is spelled with an extra third Z, the dancers' legs turn into mush, the text at the bottom is unreadable and broken, and what is going on with the dancers' arms — are there three of them? Despite the interesting mood and the beautiful presentation, image 1 loses. Image 2 may be less eye-catching, but it has no defects a designer would have to fix at all. A beautiful image wins only when what is broken can be fixed in one designer step."
+}

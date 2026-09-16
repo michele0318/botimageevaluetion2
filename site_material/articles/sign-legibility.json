@@ -1,0 +1,155 @@
+{
+  "title": "Sign legibility is arithmetic — Image Wiki",
+  "text": "\n  \n\n  Sign legibility is arithmetic\n  How big, how thick, how far apart, how much contrast. Most of it is calculated from viewing distance and mounting height, and the legal numbers are floors rather than goals.\n\n  \n    Termsign legibility\n    Also calledcharacter height, sign contrast, ADA sign requirements\n    Not the same ascomprehension, readability of long text, brand typography\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        Height comes from distanceWhy all-caps hurts at distanceContrast, and an honest gap in the lawThese are floors, not targetsCommon mistakes\n      \n    \n  \n\n  Stand at a hospital reception desk and try to read the room numbers on the far wall. If you cannot, it is not because the designer had poor taste. Someone picked a letter height without measuring the distance from the desk to the wall — and a sign nobody can read is a hole in the wayfinding whatever else is right about it.\nAlmost everything about whether a sign can be read is calculated. Two site measurements — how far away the reader is stuck, and how high the sign is mounted — set the minimum letter height. Stroke width and spacing then follow as percentages of that height. The numbers below are the ones a US inspector actually checks.\nHeight comes from distance\nThe ADA Standards make minimum character height a stepped function of two things: the height of the characters above the floor, and the horizontal viewing distance — the distance from the character to whatever obstruction stops you getting closer. A counter, a rail, a planter, the edge of a platform.\n\n\n\nMounting height\nViewing distance\nMinimum cap height\n\n\n\n\n40″ – 70″\nunder 6 ft\n5/8″\n\n\n40″ – 70″\n6 ft or more\n5/8″ + 1/8″ per extra foot\n\n\nabove 70″ to 10 ft\nunder 15 ft\n2″\n\n\nabove 70″ to 10 ft\n15 ft or more\n2″ + 1/8″ per extra foot\n\n\nabove 10 ft\nunder 21 ft\n3″\n\n\nabove 10 ft\n21 ft or more\n3″ + 1/8″ per extra foot\n\n\n\n\nB12mounting heightmeasured to the baselinecounterhorizontal viewing distanceto whatever stops you walking closer0\"1\"2\"3\"4\"5\"6\"0 ft10 ft20 ft30 ft40 fthorizontal viewing distanceminimum cap height40–70\" up70\" to 10 ft upabove 10 ft5/8\"+1/8\" per extra foot20 ft → 2 3/8\"What you measuretwo numbers, both on siteWhat the standard then demandsflat, then one eighth of an inch per foot\n\nLeft, the two numbers you measure on site. Note that the viewing distance is set by the obstruction, not by where people happen to stand — if a counter holds you 20 feet back, 20 feet is the number.\nRight, what the rule then produces. Each band is flat up to a knee and then climbs at one eighth of an inch per additional foot. Follow the accent line: a sign at normal eye level read from 20 feet behind a counter needs characters 2 3/8 inches high, not the 5/8 inch that satisfies a corridor doorplate. The three lines converge because a high sign starts big but grows at the same rate.\n\n\nEverything else is a ratio of that cap height:\n\n\n\nQuantity\nADA requirement\n\n\n\n\nStroke thickness, visual characters\n10–30% of cap height\n\n\nStroke thickness, raised characters\n15% maximum\n\n\nCharacter width (cap O vs cap I)\n55–110%\n\n\nSpace between characters\n10–35% of cap height\n\n\nSpace between lines\n135–170% of cap height\n\n\nRaised character height\n1/2″ – 2″ (5/8″ min if also read visually)\n\n\nTactile characters above the floor\n48″ min to 60″ max, at the baselines\n\n\nVisual characters above the floor\n40″ min\n\n\nClear headroom under an overhead sign\n80″ min\n\n\n\nTwo of those repay a second look. Stroke thickness has an upper bound, because too thick a stroke closes up the counters of a, e and o until letters become blobs — heavy is not legible. And the tactile band, 48 to 60 inches, is set by the height of a hand: the one dimension on the sign that has nothing to do with looking.\n\n\n\nPhoto: Eddau, 2007, via Wikimedia Commons, public domain.\nA room sign built to the pattern: raised sans-serif capitals, Grade 2 braille directly under each line of characters, and the pictogram field kept clear of both. The raised characters must be uppercase — a rule about fingertips rather than eyes, since a tactile reader tracks a constant-height band. Note also that the braille is not required to contrast with the plate, only the visual and raised characters are.\n\n\nWhy all-caps hurts at distance\nFor characters read with the eyes, the ADA allows upper case, lower case, or a mix. Everyone who designs for distance picks the mix, and Legible London says why in one line: upper and lower case wherever possible, for maximum legibility.\nThe mechanism is word shape. Ascenders and descenders give a lower-case word a distinctive silhouette — hospital has a tall h and l, a dotted i, a descending p — and that outline survives when the letters themselves have gone soft, from distance, motion, dim light or peripheral vision. Set the same word in capitals and every glyph is the same height: the outline is a rectangle, so the reader resolves letters one at a time. Capitals also run wider, eating the panel you needed for a bigger cap height.\nCaps are not banned. They earn their place on short, learned messages where nobody reads a word shape anyway.\n\n\n\nPhoto: Hugh Llewelyn, Oval Underground Station (Northern Line), 2025, via Wikimedia Commons, CC BY-SA 2.0.\nTwo words, all capitals, white on dark blue vitreous enamel — and it works, because WAY OUT is a fixed phrase you recognise as a shape and never actually read. The arrow carries as much of the message as the words. Note the finish: enamel is glossy but the panel sits flat on a wall lit from the platform, and TfL's standards handle the remaining risk by controlling sightlines instead — exclusion zones around signs so departure indicators cannot block them, and repeater signs where the distance is too great.\n\n\nContrast, and an honest gap in the law\nThe ADA is specific about geometry and vague about contrast. It requires characters to contrast with their background as either light-on-dark or dark-on-light with a non-glare finish, and then declines to name a number.\nThe Access Board explains why, and the explanation is worth more than a number: contrast is based on a colour's light reflectance value, LRV, normally measured with a spectrophotometer, and measuring LRV accurately in the field is difficult — affected by the sign's materials and by the lighting. A rule you cannot enforce on site gets ignored, so they wrote down the part checkable by eye.\nBritish practice does give the number. RNIB, quoting BS 8300, asks for a difference of at least 20 LRV points between adjacent critical surfaces, with 30 preferred, valid where the surfaces are lit to 200 lux or more. LRV runs from 0 to 99: the higher, the lighter. It is value, measured — lightness alone, with the hue thrown away.\n\nWARD 6letters LRV 42.7 · plate LRV 47.0WARD 6the same two colours, colour removed4 points apartfails: the letters sink into the plateWARD 6letters LRV 25.7 · plate LRV 47.0WARD 6the same two colours, colour removed21 points apartclears the 20-point floor, only justWARD 6letters LRV 4.6 · plate LRV 47.0WARD 6the same two colours, colour removed42 points apartpast the 30 points RNIB prefers\n\nOne plate colour, three letter colours, and the only variable is the letters' LRV. Underneath each pair is the same combination with the colour stripped out.\nLeft, four points apart: legible-ish in colour, gone in grey. Middle, 21 points — over the BS 8300 floor and no further. Right, 42 points, which is what a sign you can read across a lobby looks like. This is why RNIB warns against relying on hue: two colours as different as green and brown can sit within a few points of each other, and a person with low vision or colour vision deficiency sees the grey version.\n\n\nThe lux condition matters as much as the LRV. Contrast perception falls at low light levels, so RNIB asks for fairly uniform lighting about 25% brighter than a sighted norm, and warns that strong directional light casts shadows which mask the contrast you designed, and that big swings in level defeat an eye that adapts slowly.\nThese are floors, not targets\nEverything above is a legal minimum. Meeting it exactly buys a sign that a stranger, in a hurry, in bad light, can just read. TfL's standard runs the calculation in the more useful direction — pick a cap height, read off the maximum distance at which average eyesight can manage it, its eight standard sizes spanning roughly 6 to 60 metres — and instructs that the optimum size be used wherever possible, not the smallest legal one.\nCommon mistakes\n\n\"It's 5/8 inch, so it's compliant.\" Only under 6 feet of viewing distance at normal mounting height. Beyond that the minimum grows every single foot.\n\"Bolder is more legible.\" Above roughly 30% of cap height the counters fill in. There is a ceiling as well as a floor.\n\"The colours are very different.\" Different hue, not different lightness. Photocopy it in black and white, or desaturate the file: if the two tones merge, so does the sign.\n\"We checked it on screen.\" You checked a backlit, glare-free version at 40 cm. Print it at size, tape it to the actual wall, and stand where the counter puts you.\n\"Bigger is always safer.\" Panel area is finite, so bigger costs you destinations — and an oversized line steals attention from the one that matters. See Visual hierarchy.\n\n\nChecking a sign in five steps\n\nStand at the nearest point you are physically allowed to reach. Measure that distance and the sign's height.\nCompute the minimum cap height, then measure the actual letters. Most failures are here.\nCheck the stroke against the cap height: thinner than a tenth or thicker than a third is a problem.\nDesaturate the colours in your head or on your phone. Does the text still separate from the plate?\nMove your head. If a lamp or a window lands on the panel and the text disappears, the finish is wrong no matter what the numbers say.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Wayfinding is not signage\n              Signage is the objects on the wall. Wayfinding is a stranger actually arriving. You can add signs and make wayfinding worse.\n            \n          \n        \n          \n            \n              Icon, pictogram, symbol, glyph, logo\n              Five words the field uses interchangeably for five different things. Knowing which one you are looking at tells you what test it has to pass.\n            \n          \n        \n          \n            \n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            \n          \n        \n          \n            \n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        WAY-010 — US Access Board — Guide to the ADA Standards, Chapter 7: SignsWAY-011 — US Access Board — ADA Standards, Chapter 7: Communication Elements and FeaturesWAY-013 — RNIB — Colour and contrast for people with sight loss (2020)WAY-009 — Transport for London — Interchange Signs Standard, Issue 5WAY-006 — Transport for London — Legible London: A Wayfinding Study (the Yellow Book)\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Sign legibility is arithmetic",
+    "Height comes from distance",
+    "Why all-caps hurts at distance",
+    "Contrast, and an honest gap in the law",
+    "These are floors, not targets",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nB12mounting heightmeasured to the baselinecounterhorizontal viewing distanceto whatever stops you walking closer0\"1\"2\"3\"4\"5\"6\"0 ft10 ft20 ft30 ft40 fthorizontal viewing distanceminimum cap height40–70\" up70\" to 10 ft upabove 10 ft5/8\"+1/8\" per extra foot20 ft → 2 3/8\"What you measuretwo numbers, both on siteWhat the standard then demandsflat, then one eighth of an inch per foot\n\nLeft, the two numbers you measure on site. Note that the viewing distance is set by the obstruction, not by where people happen to stand — if a counter holds you 20 feet back, 20 feet is the number.\nRight, what the rule then produces. Each band is flat up to a knee and then climbs at one eighth of an inch per additional foot. Follow the accent line: a sign at normal eye level read from 20 feet behind a counter needs characters 2 3/8 inches high, not the 5/8 inch that satisfies a corridor doorplate. The three lines converge because a high sign starts big but grows at the same rate.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nPhoto: Eddau, 2007, via Wikimedia Commons, public domain.\nA room sign built to the pattern: raised sans-serif capitals, Grade 2 braille directly under each line of characters, and the pictogram field kept clear of both. The raised characters must be uppercase — a rule about fingertips rather than eyes, since a tactile reader tracks a constant-height band. Note also that the braille is not required to contrast with the plate, only the visual and raised characters are.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWs3XY56l04qqdm1juNur-ysBgCmDLIWKIkU-zNTTHdGBuAUi0Iw05RPzLBIkwwRQWidBhDG4v9RNhEcInohfrLrMNq4tXFXV6Rvy0NTdKvRRSXK3p6R-FMB-S5DoDkxJdfSjDCiayYJd6rkeMrChNnszw03udzaBvXQcugOdkm3rtNsAY--PfJJyeo84HKl1AoI9GggBghWl8ghwcmRJ-pK5kbvbScGUE_Qcvz1-1B4635PoM4PjP7zSTJ9IJobjZr5ytdsMYtr4vNKW0-eThcrzeEeq-msrXw9E1B7UIH0oPLTa-VUH5LxwnKRv4Fj4Z5Lcv_6Ee9cyI6YTBHAFPZrBbAja-OKBvPzf9gr7NhN-wWf5aDyWghYXpG6Tftk07o7ZvmkxfMkQGDTvA-A9oyCV3NxkiMr5DACmo31YWp0PaKnXHct6Vq-DrRONqZ580XMdlJOaLn1d_MixYHcf5yq353-N-hItRrku0zO2SeSzkImolFlE3tJ1_w2hYQ_McU6JDE0RTVEi0MjGvrk6FqRGuDLsW93O9_IzOHnbcY_Py2_dDHFOvNRVGAl57jZZEu5SP1nbXZMRPReLMftD0kUtsNghNEtly5QIFseYLrDpVcSqqliEWGduaagl2qFXqWEzKACARHMXa8fIZrtsYMEv5PZAgP3Vm4KTaPwn8X72XD_mZovOKWngwvZ8uGzAWpBZ5PPNxOA30Hc_IeiKG6zQDvY9BQjiu3Pkgl3fHg-GnQVJZ9pENd7b5aMv_LLyZhKHCo8e08fEfY6cF4A_I-t_hOD_0EV2MkwJdKdvgcRoCJBs4JidRNQTK5mQvvJHiPHr_51nymyLWNus0rsP_b5q_fRiFEkTUC03SJp9tX8HI2dno0FYgbcHhGjxMlNqyL0dMHdlyf8A9buvPa4lKHtLdaFZR6c-kFIDuxJOcvAMo6IrjYzCz7RrnlTvVOMKmj6rkOGulRGSGJZgcXG8Ye2SKIyHaiye_oPirW11QPfbxuA8VwDJVIGwi-u4C02B6WOKxOC1Ba0Qnwl00i9mEk6aIHXIDnr1n3PIcI4MuaXG9xia9cfu8lcbX1xKHNEYw0A2lJQ_k0BopZ4RY_ieGpurIjXpV0kv3krMtLh11nLzvM1uUy7fuWUvEI-cLoy_65SRBMrrd_eIUK3G10E-ypkpBVqTQzR40sXbC7Wn7ygPD6BQytCO1Usvjwe4wzsnzcpJdS3QJRgkWKj5O-Oe-taZ3SFuSXMS-a4BQNvMRmuzbnmCjgYQH2q6Wj6kQ4TiQc6I-1nZH1LkUNYPLsWPCNZjgMxBqQOwYZTpl6kkQjdS-jbTPdhOEBzACvAv4X4bqVOe8T6yaSLun2ZV8-uqE_zUxVnV5v-tsHuDyVFTgJUMKcdih6E3MYXBLTlmOk47Ya8lpBU1MrqTJPsKqEywNsRzuj_sXDl3mmxqBk_-zslpKGKVBNH6_hz2GUDGw26bvvpZVpZ2P2Wfs0b5ST9K8MBest1nGx0acnRGWuQMU3bepbMycp2bc04eibrBIwF-N58-MM1VOUNGoqldodpjcIbIb8Zfm1eiVsD5xKDxouk2iBfjWEaXwtkwDGPiJ3oDVyYpqAv9PEmCSJY8zJgaeJzSbOaoTrlXGgKCGOdxrGdbGIHVYfAqjUF5YHEPjYcuF9HIU8Qvj4_QLQNO59GPGLsroZKzqUjcFvLf5AOGWMLkUqH0EmpB8rhLn2JlNBxYc4myW1y10K_5P5vQeHxTqkNPccZdAcrfO1euT4_cwlRh7ySf37fbctScrNbMJfoO25Ni51PwqC061HiFtwRGecZ2OIHj0wtlSpIULFHHMh7KwIVGC6poVii9V9Ap-8lVWuYKBMtZy9FxppgK9hIXT1pde0zrFblOrDRMwUx5RXJf4fYOwK37L_ojcoNsggyJdq1OBC-80v_y0vS_gL_lfMzsdG2xTsDOZA1FN6IeEDeUb8lzniZi96i8iHl_VsNuESp_0tJTHqU2Kurcp1v4M5Zhlf1jkY1TCrw1BIZ8mDQw3BBHE4IRIXH9kqSkhvW",
+          "alt": "A grey door sign reading G603B with braille beneath it, pictograms of a man and a wheelchair user, and MEN with braille below"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nPhoto: Hugh Llewelyn, Oval Underground Station (Northern Line), 2025, via Wikimedia Commons, CC BY-SA 2.0.\nTwo words, all capitals, white on dark blue vitreous enamel — and it works, because WAY OUT is a fixed phrase you recognise as a shape and never actually read. The arrow carries as much of the message as the words. Note the finish: enamel is glossy but the panel sits flat on a wall lit from the platform, and TfL's standards handle the remaining risk by controlling sightlines instead — exclusion zones around signs so departure indicators cannot block them, and repeater signs where the distance is too great.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AeVBKXO84NFLTJCfSZmJ_ayyeBxytF4MORLSJnwpPK1moMxtC8u9t7wa9X7UNXzTSoJ6rIxPvEU6S3W3SXX5po7k9n_ApHhFbyahS2PFqhUDvSkSPzdlIsrUj2I3kFaqqWgEZr8iFWhuWHNvgU5nWntydnDPDPt1K94i9ebdUF9OLZ7LCOkmvTBKSop-e_XMBkNcZqw3xWQKweDGbwKpy_xtS2_3lNRChGlN8j-qXSTQkIidkOBcv9hgJzVRIS40n578Og2pA7jDk4yyqIkbUxOcrLQqoFGuRJUp-LwSS3OpCXryZQyFMliH7bA7dsq-xxKX2awiuEznPnsl6d550XqwmXGkaw6xrK5SffgwCHJlVeQCn9l7_getSJv3JSegAjczexzOmalw0Dt_BOcocG5RV-zxVB6iEW1JAVgiNseMy7wbQkWNRivDHEeeIBXgx0GC5KRrlPQLbH3CQhWG9NZKqjwmsmyBQX-_KX3Xkx1EQpoU0ECBc2uwX9P85BMG-DcDwqQ26oBJtBOFyWELwQN31SRJWiMXkwAFDTb05WPRFcsO16ZXaRSqzM3UcM9zXnlZF64XNn4q993eQd5iPUUXeodcSGbABqoWj2qKShXPU1rR4tvEE1QcG9qfF5MMeM4S9AW9m7eHjkdnXm6x11nDVWr7Oe7hx8KltJ8iRtQT0WmNYHRj23CC7RukOveU4VgAeuABAtlTgE0lLpyqTER4KCno3arvEqxWCHapoyLv_R9yNLlJl8LNhVWlisBCBlU-N_xryizL_l82wUgMTLyDSzEadaVTb-UjrHnr3xob3wUW_PFEGsMMK1WLToDOPiXRbzecB7gsdh3psJk_1TNfnQonSHgv5Md3eeO2jpe-XjCJ2ahQoKN4B5rIDXvmv7wDRwdiqWRdHihUHhDCWi1hVuYdG3MExtI0TAfNecECMOfVBSIG7apiEXDRMcnlhPrfoWsaUCymUxzFqhI6qHG8yMzR7LOOsBKsE0lZIDBYZ8YIjMjLFWbTeRvKHgdPpSzJyz5ae4HKb_-ZHdMVirrq57gPKio_DPa_TqGGDLDNQKv-TQro5grznkrBmuCnqyr98be7kjrh3J0CsyNnLLuq80ocfJeFgczTII-ngeMGHWTeRqvZ8jk8EZEF3HtnmIxkHGqHX-EPrG-rH-5m2zZk_DjkgfnkeSBAXL91KSQmVoLwaQxHrAvAXT-yxAvAnauqfldPc72Q0CfsQ6DCRsTa3r4OG6YC-g8HI9Y4NobmI-7jC2RKTdWoABStqZxMg11GdS4HbwmRJ71ORMPWEAXrjFGhwe-dI2CWwWYKE9MGKycv7CNkFMzUn-LP9Y1IiVGNHvtbQR63cN1fhE5joF0mtDefEQbhCfls9Tl9giwE5l9sUteV9qaetPtAYp2H9-3o66IO6Psm4SSmCJA84VxKsEW5_dEFWcRM4PzASZT2F-KDGDI10mr7uj9EvC9wfeLJzOlX_nB6DuANe6u_Z8EFgZqbn7r2rfEvkoK-d_BuHvygGqvtYc1CwqqDeEPTTeW5tBw7lfJl10qwktlLfkCALXPDELQG61to_AixMCbmiswhGu-SZecBFlm1pEN6QDGlzO5RZ3ipCx5p63hDZLwmgGk1MlI0Bl9dNupV4mxaE_HTiaa6Axa6Umbsw-06TKSBSN_buUqy4LX1hyso21Cho9AuAvGfN9BEZgYpsuJg3HgD0uwHK86FypgIcyskEx5XccXKfSR6SnuesJrYsHnYuBnebFN4AxHNn2gtNnSwxGyBszW7_JouLNiVH0YJa_hWnTWBKAJVmOLiZffl54g_PRG3Fpw-7c4NstbYEbXoT2qkfC02OsW4wMDNvDQC6-saxbJTVGSunYJjnqkojR3XpQFhZ8tfrscHOWL_TuaK8Kio_CXWzktyqVohCwkvuPk72JY72YLdZOf2z5GEeEdK_P_LPIMugIY_SD22MUjmiH3z3Gsyuq0JKBSkiDvdoUTKRPvzmJgXdOE9i0xRCVGLAqULGFgkPjpJUO2iIqXLoQx-TXlXCdtH1StGDagy",
+          "alt": "A London Underground platform sign: WAY OUT in white capitals on dark blue with a long arrow, above the Oval roundel"
+        }
+      ]
+    },
+    {
+      "caption": "\nWARD 6letters LRV 42.7 · plate LRV 47.0WARD 6the same two colours, colour removed4 points apartfails: the letters sink into the plateWARD 6letters LRV 25.7 · plate LRV 47.0WARD 6the same two colours, colour removed21 points apartclears the 20-point floor, only justWARD 6letters LRV 4.6 · plate LRV 47.0WARD 6the same two colours, colour removed42 points apartpast the 30 points RNIB prefers\n\nOne plate colour, three letter colours, and the only variable is the letters' LRV. Underneath each pair is the same combination with the colour stripped out.\nLeft, four points apart: legible-ish in colour, gone in grey. Middle, 21 points — over the BS 8300 floor and no further. Right, 42 points, which is what a sign you can read across a lobby looks like. This is why RNIB warns against relying on hue: two colours as different as green and brown can sit within a few points of each other, and a person with low vision or colour vision deficiency sees the grey version.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWs3XY56l04qqdm1juNur-ysBgCmDLIWKIkU-zNTTHdGBuAUi0Iw05RPzLBIkwwRQWidBhDG4v9RNhEcInohfrLrMNq4tXFXV6Rvy0NTdKvRRSXK3p6R-FMB-S5DoDkxJdfSjDCiayYJd6rkeMrChNnszw03udzaBvXQcugOdkm3rtNsAY--PfJJyeo84HKl1AoI9GggBghWl8ghwcmRJ-pK5kbvbScGUE_Qcvz1-1B4635PoM4PjP7zSTJ9IJobjZr5ytdsMYtr4vNKW0-eThcrzeEeq-msrXw9E1B7UIH0oPLTa-VUH5LxwnKRv4Fj4Z5Lcv_6Ee9cyI6YTBHAFPZrBbAja-OKBvPzf9gr7NhN-wWf5aDyWghYXpG6Tftk07o7ZvmkxfMkQGDTvA-A9oyCV3NxkiMr5DACmo31YWp0PaKnXHct6Vq-DrRONqZ580XMdlJOaLn1d_MixYHcf5yq353-N-hItRrku0zO2SeSzkImolFlE3tJ1_w2hYQ_McU6JDE0RTVEi0MjGvrk6FqRGuDLsW93O9_IzOHnbcY_Py2_dDHFOvNRVGAl57jZZEu5SP1nbXZMRPReLMftD0kUtsNghNEtly5QIFseYLrDpVcSqqliEWGduaagl2qFXqWEzKACARHMXa8fIZrtsYMEv5PZAgP3Vm4KTaPwn8X72XD_mZovOKWngwvZ8uGzAWpBZ5PPNxOA30Hc_IeiKG6zQDvY9BQjiu3Pkgl3fHg-GnQVJZ9pENd7b5aMv_LLyZhKHCo8e08fEfY6cF4A_I-t_hOD_0EV2MkwJdKdvgcRoCJBs4JidRNQTK5mQvvJHiPHr_51nymyLWNus0rsP_b5q_fRiFEkTUC03SJp9tX8HI2dno0FYgbcHhGjxMlNqyL0dMHdlyf8A9buvPa4lKHtLdaFZR6c-kFIDuxJOcvAMo6IrjYzCz7RrnlTvVOMKmj6rkOGulRGSGJZgcXG8Ye2SKIyHaiye_oPirW11QPfbxuA8VwDJVIGwi-u4C02B6WOKxOC1Ba0Qnwl00i9mEk6aIHXIDnr1n3PIcI4MuaXG9xia9cfu8lcbX1xKHNEYw0A2lJQ_k0BopZ4RY_ieGpurIjXpV0kv3krMtLh11nLzvM1uUy7fuWUvEI-cLoy_65SRBMrrd_eIUK3G10E-ypkpBVqTQzR40sXbC7Wn7ygPD6BQytCO1Usvjwe4wzsnzcpJdS3QJRgkWKj5O-Oe-taZ3SFuSXMS-a4BQNvMRmuzbnmCjgYQH2q6Wj6kQ4TiQc6I-1nZH1LkUNYPLsWPCNZjgMxBqQOwYZTpl6kkQjdS-jbTPdhOEBzACvAv4X4bqVOe8T6yaSLun2ZV8-uqE_zUxVnV5v-tsHuDyVFTgJUMKcdih6E3MYXBLTlmOk47Ya8lpBU1MrqTJPsKqEywNsRzuj_sXDl3mmxqBk_-zslpKGKVBNH6_hz2GUDGw26bvvpZVpZ2P2Wfs0b5ST9K8MBest1nGx0acnRGWuQMU3bepbMycp2bc04eibrBIwF-N58-MM1VOUNGoqldodpjcIbIb8Zfm1eiVsD5xKDxouk2iBfjWEaXwtkwDGPiJ3oDVyYpqAv9PEmCSJY8zJgaeJzSbOaoTrlXGgKCGOdxrGdbGIHVYfAqjUF5YHEPjYcuF9HIU8Qvj4_QLQNO59GPGLsroZKzqUjcFvLf5AOGWMLkUqH0EmpB8rhLn2JlNBxYc4myW1y10K_5P5vQeHxTqkNPccZdAcrfO1euT4_cwlRh7ySf37fbctScrNbMJfoO25Ni51PwqC061HiFtwRGecZ2OIHj0wtlSpIULFHHMh7KwIVGC6poVii9V9Ap-8lVWuYKBMtZy9FxppgK9hIXT1pde0zrFblOrDRMwUx5RXJf4fYOwK37L_ojcoNsggyJdq1OBC-80v_y0vS_gL_lfMzsdG2xTsDOZA1FN6IeEDeUb8lzniZi96i8iHl_VsNuESp_0tJTHqU2Kurcp1v4M5Zhlf1jkY1TCrw1BIZ8mDQw3BBHE4IRIXH9kqSkhvW",
+      "alt": "A grey door sign reading G603B with braille beneath it, pictograms of a man and a wheelchair user, and MEN with braille below"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AeVBKXO84NFLTJCfSZmJ_ayyeBxytF4MORLSJnwpPK1moMxtC8u9t7wa9X7UNXzTSoJ6rIxPvEU6S3W3SXX5po7k9n_ApHhFbyahS2PFqhUDvSkSPzdlIsrUj2I3kFaqqWgEZr8iFWhuWHNvgU5nWntydnDPDPt1K94i9ebdUF9OLZ7LCOkmvTBKSop-e_XMBkNcZqw3xWQKweDGbwKpy_xtS2_3lNRChGlN8j-qXSTQkIidkOBcv9hgJzVRIS40n578Og2pA7jDk4yyqIkbUxOcrLQqoFGuRJUp-LwSS3OpCXryZQyFMliH7bA7dsq-xxKX2awiuEznPnsl6d550XqwmXGkaw6xrK5SffgwCHJlVeQCn9l7_getSJv3JSegAjczexzOmalw0Dt_BOcocG5RV-zxVB6iEW1JAVgiNseMy7wbQkWNRivDHEeeIBXgx0GC5KRrlPQLbH3CQhWG9NZKqjwmsmyBQX-_KX3Xkx1EQpoU0ECBc2uwX9P85BMG-DcDwqQ26oBJtBOFyWELwQN31SRJWiMXkwAFDTb05WPRFcsO16ZXaRSqzM3UcM9zXnlZF64XNn4q993eQd5iPUUXeodcSGbABqoWj2qKShXPU1rR4tvEE1QcG9qfF5MMeM4S9AW9m7eHjkdnXm6x11nDVWr7Oe7hx8KltJ8iRtQT0WmNYHRj23CC7RukOveU4VgAeuABAtlTgE0lLpyqTER4KCno3arvEqxWCHapoyLv_R9yNLlJl8LNhVWlisBCBlU-N_xryizL_l82wUgMTLyDSzEadaVTb-UjrHnr3xob3wUW_PFEGsMMK1WLToDOPiXRbzecB7gsdh3psJk_1TNfnQonSHgv5Md3eeO2jpe-XjCJ2ahQoKN4B5rIDXvmv7wDRwdiqWRdHihUHhDCWi1hVuYdG3MExtI0TAfNecECMOfVBSIG7apiEXDRMcnlhPrfoWsaUCymUxzFqhI6qHG8yMzR7LOOsBKsE0lZIDBYZ8YIjMjLFWbTeRvKHgdPpSzJyz5ae4HKb_-ZHdMVirrq57gPKio_DPa_TqGGDLDNQKv-TQro5grznkrBmuCnqyr98be7kjrh3J0CsyNnLLuq80ocfJeFgczTII-ngeMGHWTeRqvZ8jk8EZEF3HtnmIxkHGqHX-EPrG-rH-5m2zZk_DjkgfnkeSBAXL91KSQmVoLwaQxHrAvAXT-yxAvAnauqfldPc72Q0CfsQ6DCRsTa3r4OG6YC-g8HI9Y4NobmI-7jC2RKTdWoABStqZxMg11GdS4HbwmRJ71ORMPWEAXrjFGhwe-dI2CWwWYKE9MGKycv7CNkFMzUn-LP9Y1IiVGNHvtbQR63cN1fhE5joF0mtDefEQbhCfls9Tl9giwE5l9sUteV9qaetPtAYp2H9-3o66IO6Psm4SSmCJA84VxKsEW5_dEFWcRM4PzASZT2F-KDGDI10mr7uj9EvC9wfeLJzOlX_nB6DuANe6u_Z8EFgZqbn7r2rfEvkoK-d_BuHvygGqvtYc1CwqqDeEPTTeW5tBw7lfJl10qwktlLfkCALXPDELQG61to_AixMCbmiswhGu-SZecBFlm1pEN6QDGlzO5RZ3ipCx5p63hDZLwmgGk1MlI0Bl9dNupV4mxaE_HTiaa6Axa6Umbsw-06TKSBSN_buUqy4LX1hyso21Cho9AuAvGfN9BEZgYpsuJg3HgD0uwHK86FypgIcyskEx5XccXKfSR6SnuesJrYsHnYuBnebFN4AxHNn2gtNnSwxGyBszW7_JouLNiVH0YJa_hWnTWBKAJVmOLiZffl54g_PRG3Fpw-7c4NstbYEbXoT2qkfC02OsW4wMDNvDQC6-saxbJTVGSunYJjnqkojR3XpQFhZ8tfrscHOWL_TuaK8Kio_CXWzktyqVohCwkvuPk72JY72YLdZOf2z5GEeEdK_P_LPIMugIY_SD22MUjmiH3z3Gsyuq0JKBSkiDvdoUTKRPvzmJgXdOE9i0xRCVGLAqULGFgkPjpJUO2iIqXLoQx-TXlXCdtH1StGDagy",
+      "alt": "A London Underground platform sign: WAY OUT in white capitals on dark blue with a long arrow, above the Oval roundel"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Height comes from distance",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#height-comes-from-distance"
+    },
+    {
+      "text": "Why all-caps hurts at distance",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#why-all-caps-hurts-at-distance"
+    },
+    {
+      "text": "Contrast, and an honest gap in the law",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#contrast-and-an-honest-gap-in-the-law"
+    },
+    {
+      "text": "These are floors, not targets",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#these-are-floors-not-targets"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#common-mistakes"
+    },
+    {
+      "text": "wayfinding",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/wayfinding-vs-signage"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#height-comes-from-distance"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#why-all-caps-hurts-at-distance"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#contrast-and-an-honest-gap-in-the-law"
+    },
+    {
+      "text": "value",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#these-are-floors-not-targets"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility#common-mistakes"
+    },
+    {
+      "text": "Visual hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "\n              Wayfinding is not signage\n              Signage is the objects on the wall. Wayfinding is a stranger actually arriving. You can add signs and make wayfinding worse.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/wayfinding-vs-signage"
+    },
+    {
+      "text": "\n              Icon, pictogram, symbol, glyph, logo\n              Five words the field uses interchangeably for five different things. Knowing which one you are looking at tells you what test it has to pass.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol"
+    },
+    {
+      "text": "\n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "\n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "WAY-010 — US Access Board — Guide to the ADA Standards, Chapter 7: Signs",
+      "href": "https://www.access-board.gov/ada/guides/chapter-7-signs/"
+    },
+    {
+      "text": "WAY-011 — US Access Board — ADA Standards, Chapter 7: Communication Elements and Features",
+      "href": "https://www.access-board.gov/ada/chapter/ch07/"
+    },
+    {
+      "text": "WAY-013 — RNIB — Colour and contrast for people with sight loss (2020)",
+      "href": "https://media.rnib.org.uk/documents/Colour_and_contrast_for_people_with_sight_loss_2020.pdf"
+    },
+    {
+      "text": "WAY-009 — Transport for London — Interchange Signs Standard, Issue 5",
+      "href": "https://content.tfl.gov.uk/tfl-interchange-signs-standard.pdf"
+    },
+    {
+      "text": "WAY-006 — Transport for London — Legible London: A Wayfinding Study (the Yellow Book)",
+      "href": "https://content.tfl.gov.uk/ll-yellow-book.pdf"
+    },
+    {
+      "text": "\n        PreviousWayfinding is not signage",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/wayfinding-vs-signage"
+    },
+    {
+      "text": "\n        NextPackaging hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/packaging-hierarchy"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility"
+}

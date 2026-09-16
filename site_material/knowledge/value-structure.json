@@ -1,0 +1,10 @@
+{
+  "title": "Value structure — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure",
+  "source_hash": "0a3037fcd0f4ad7e795bffd8414c9e56ac56687434ea8d831ed31586a4487fad",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2706,
+  "output_tokens": 243,
+  "processed_at": "2026-09-13T09:40:33"
+}

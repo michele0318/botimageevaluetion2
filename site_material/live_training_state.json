@@ -1,0 +1,97 @@
+[
+  {
+    "text": "My projects\nExplore\nWhich image is a better response to the user's request?\nMA\nmichele annunziata",
+    "buttons": [
+      {
+        "text": "My projects",
+        "id": ""
+      },
+      {
+        "text": "Explore",
+        "id": ""
+      },
+      {
+        "text": "MA\nmichele annunziata",
+        "id": ""
+      }
+    ],
+    "task": false
+  },
+  {
+    "text": "",
+    "buttons": [],
+    "task": false
+  },
+  {
+    "text": "",
+    "buttons": [],
+    "task": false
+  },
+  {
+    "text": "",
+    "buttons": [],
+    "task": false
+  },
+  {
+    "text": "you\nIn Progress\nSaved\nDiscard Changes\nApply Changes",
+    "buttons": [
+      {
+        "text": "Discard Changes",
+        "id": ""
+      },
+      {
+        "text": "Apply Changes",
+        "id": ""
+      }
+    ],
+    "task": false
+  },
+  {
+    "text": "What to Expect\nYou will be directed to an external platform where you need to: complete onboarding and training modules, perform various tasks and assignments. Payment will be issued only after you successfully complete the required tasks on the platform.\nUpdate: submission is now automatic\nYou no longer need to submit anything on this page. Keep labeling task sets on the external platform: every completed set is submitted here automatically, your payment is issued right after, and your next task set is assigned to you right away. This should make your work easier and getting new tasks faster. The controls below remain only as a backup in case automatic submission fails.\nYour Platform Link\nOpen External Platform\nTask Completion\n\nYour HITs are submitted automatically when you finish them on the external platform, so normally there is nothing to do on this page. Use the button below only to double-check your completion status.\n\nCheck Completion Status\nConfirmation\nI confirm that I have visited the external platform and will complete the required onboarding, trainings, and tasks. I understand that payment will be issued after successful task completion on the platform.",
+    "buttons": [
+      {
+        "text": "Open External Platform",
+        "id": ""
+      },
+      {
+        "text": "Check Completion Status",
+        "id": ""
+      }
+    ],
+    "task": false
+  },
+  {
+    "text": "Annotation Tool: Which image is a better response to the user's request?\nImage Wiki\nInstructions\nFAQ\nYou have completed 0/40 training tasks\nThe task expires in 4 minutes and 39 seconds.\nRequest\n⤢ Zoom\nreplace that man with this boy in a yellow t-shirt\nResponses\n⤢ Zoom\nImage 1\n1\nImage 2\n2\nDifference\n1 / 2 — mark the best response\nEnter — submit and go to the next task\ndouble-click an image or ⤢ Zoom — full-size viewer\nin the viewer: ← → switch inside the block · Tab request ⇆ responses · wheel / + - zoom · drag to pan · B backdrop · 0 reset · Esc close\nSubmit\nOptional Comment",
+    "buttons": [
+      {
+        "text": "Image Wiki",
+        "id": ""
+      },
+      {
+        "text": "Instructions",
+        "id": ""
+      },
+      {
+        "text": "FAQ",
+        "id": ""
+      },
+      {
+        "text": "⤢ Zoom",
+        "id": ""
+      },
+      {
+        "text": "⤢ Zoom",
+        "id": ""
+      },
+      {
+        "text": "Submit",
+        "id": "submitBtn"
+      },
+      {
+        "text": "Optional Comment",
+        "id": ""
+      }
+    ],
+    "task": false
+  }
+]

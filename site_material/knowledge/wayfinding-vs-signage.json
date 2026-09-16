@@ -1,0 +1,23 @@
+{
+  "title": "Wayfinding is not signage — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/wayfinding-vs-signage",
+  "source_hash": "c6cf640de7a7097781cec9de06b567d30462066fb20c0540d4cc12f2218abd8a",
+  "rules": [
+    {
+      "rule": "Place information only at decision points (junctions/turns) rather than repeating messages along straight corridors.",
+      "evidence": "Between decisions, a walker needs nothing; they are already going the right way."
+    },
+    {
+      "rule": "Provide confirmation after a turn to stop anxious doubling-back, and ensure recovery signs exist for wrong turns.",
+      "evidence": "Having made the turn, the walker needs to know they were right. The standard requires that on reaching the platform a customer can see a sign confirming the platform number and direction."
+    },
+    {
+      "rule": "Express scale in walking minutes rather than metres because people use time to decide whether to walk.",
+      "evidence": "Legible London expresses scale in walking minutes, because research showed that is what people use when deciding whether to walk."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2358,
+  "output_tokens": 216,
+  "processed_at": "2026-09-13T09:41:37"
+}

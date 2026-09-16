@@ -1,0 +1,36 @@
+{
+  "id": "8e8117fcc0220ee0b80a14c5054c13041f4ae10da35b290352471fdafdf4e87f",
+  "prompt": "infographic about 'cradle to cradle' sustainability with a green arrow curving around the top of the title and a blue arrow curving around the bottom no human figures illustration flat design with a brand logo at the bottom",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 resembles an infographic, unlike image 2, which includes a lot of text not mentioned in the prompt. Additionally, blocks of text are highlighted in a pale yellow color, which detracts from the image's visual appeal.",
+  "split": "train",
+  "image_group": "6411b1aef38365d296a57773c62f739094c6f2f85c1e534f500aa9a3b0a9d9c8",
+  "image_hashes": [
+    "23ea9b870ca8039b1224f3bb6005e1df8d038a7c2b387ee8ffe035a20f2e8257",
+    "f07f64eb38bd61ec5b83c95dfa4d45db2aa4cf9b462e39113d4b6e700c230184"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "d2e98587ae1b8ebdb6a04e31777e673974010eaa336d25eab28d64e2dd9403eb",
+      "corrected": false,
+      "time": "2026-09-13T21:55:26"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:55:27"
+    }
+  ],
+  "feedback": "Image 1 resembles an infographic, unlike image 2, which includes a lot of text not mentioned in the prompt. Additionally, blocks of text are highlighted in a pale yellow color, which detracts from the image's visual appeal.",
+  "lesson": "If a requested style is specified, prioritize visual clarity and minimalism over text-heavy layouts; avoid non-requested color highlights that detract from design cohesion.",
+  "lesson_evidence": "Image 1 resembles an infographic, unlike image 2, which includes a lot of text not mentioned in the prompt. Additionally, blocks of text are highlighted in a pale yellow color, which detracts from the image's visual appeal.",
+  "lesson_source": "Image 1 resembles an infographic, unlike image 2, which includes a lot of text not mentioned in the prompt. Additionally, blocks of text are highlighted in a pale yellow color, which detracts from the image's visual appeal."
+}

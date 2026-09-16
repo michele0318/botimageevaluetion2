@@ -1,0 +1,45 @@
+{
+  "id": "2bda01ee63b92cdbf2f563883906f69312236226f45b9688a81c65c1027270d9",
+  "prompt": "Two glossy black abstract figures hugging, covered in shiny water droplets, sparkle highlights, purple-blue gradient background, grainy textures",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is bolder and more original.Image 1 is bolder and more original. The glossy red orbs against the dark embracing forms create real color tension, and the tight crop — arms wrapping, faces hidden — keeps it abstract and intriguing. Dense water beads and sparkles give the whole frame texture. Image 2 is well-rendered but conventional: two readable figures hugging, centered on a plain gradient in one flat palette, with a lot of dead background. Image 1 fills the frame, commits to the surreal, and reads as a deliberate art piece.",
+  "split": "test",
+  "image_group": "f19e3be3f5620bcb6ba39ef177a488d1c9b05bf248dbb0a692835b8099514256",
+  "image_hashes": [
+    "9869acdf2711b939b66764563e900f550b47de02ea7a0263951079c8101fe6f2",
+    "b500bd8838161b89490f660a8bbd0d4be84655efc5f367992907fb7b23fc0c4b"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "c2fa0e0f353ae9552588a309afbfd870ad3d042ed666d6309dca63855539d687",
+      "corrected": false,
+      "time": "2026-09-13T22:02:48"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "c2fa0e0f353ae9552588a309afbfd870ad3d042ed666d6309dca63855539d687",
+      "corrected": true,
+      "time": "2026-09-13T22:02:55"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is bolder and more original.Image 1 is bolder and more original. The glossy red orbs against the dark embracing forms create real color tension, and the tight crop — arms wrapping, faces hidden — keeps it abstract and intriguing. Dense water beads and sparkles give the whole frame texture. Image 2 is well-rendered but conventional: two readable figures hugging, centered on a plain gradient in one flat palette, with a lot of dead background. Image 1 fills the frame, commits to the surreal, and reads as a deliberate art piece.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:02:52"
+    }
+  ],
+  "feedback": "Image 1 is bolder and more original.Image 1 is bolder and more original. The glossy red orbs against the dark embracing forms create real color tension, and the tight crop — arms wrapping, faces hidden — keeps it abstract and intriguing. Dense water beads and sparkles give the whole frame texture. Image 2 is well-rendered but conventional: two readable figures hugging, centered on a plain gradient in one flat palette, with a lot of dead background. Image 1 fills the frame, commits to the surreal, and reads as a deliberate art piece.",
+  "lesson": "If requested style is bold and abstract with texture and color tension, prioritize visual originality and frame-fill over conventional clarity or flat palettes; style matters only when requested.",
+  "lesson_evidence": "Image 1 is bolder and more original. The glossy red orbs against the dark embracing forms create real color tension, and the tight crop — arms wrapping, faces hidden — keeps it abstract and intriguing. Dense water beads and sparkles give the whole frame texture.",
+  "lesson_source": "Image 1 is bolder and more original.Image 1 is bolder and more original. The glossy red orbs against the dark embracing forms create real color tension, and the tight crop — arms wrapping, faces hidden — keeps it abstract and intriguing. Dense water beads and sparkles give the whole frame texture. Image 2 is well-rendered but conventional: two readable figures hugging, centered on a plain gradient in one flat palette, with a lot of dead background. Image 1 fills the frame, commits to the surreal, and reads as a deliberate art piece."
+}

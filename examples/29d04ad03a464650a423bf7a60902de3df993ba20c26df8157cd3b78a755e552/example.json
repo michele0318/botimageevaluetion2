@@ -1,0 +1,55 @@
+{
+  "id": "29d04ad03a464650a423bf7a60902de3df993ba20c26df8157cd3b78a755e552",
+  "prompt": "Embossed typographic poster, repeated text \"FRAGIL KERAMIKMARKT NEUBAD POOL SA 02.03.2024 + SO 03.03.2024\" scattered across, each line at various angles, light grey monochrome",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is preferred because the embossed typography is more connected to the prompt. Also, since this is a ceramic event, the text looks as if it has been pressed into a ceramic surface, creating a stronger visual metaphor. While the text is not immediately readable, its bold presence catches the eye and encourages a closer look. Looking more closely, the repeated text makes it easy to understand the theme. In Image 2, the text is heavily distorted and lacks the embossed part.",
+  "split": "train",
+  "image_group": "0da32d5366589032eadf3aa12c185a7b9c428967b68dbfb72cbc6b70856593b7",
+  "image_hashes": [
+    "1d86c91f03970a9f3e36f786326237ad866dc01d23c98ad5771a538a84981d90",
+    "8b7b2fd04145de2813f14716c1eb1aad8692cc01169f530eaae329d3e8972a1e"
+  ],
+  "contextual_hints": "Keramikmarkt Neubad festival\nHIGH\nThis refers to a specific recurring ceramic market event; visual references of past posters or the event setup may assist the annotator.",
+  "reference_images": [
+    {
+      "label": "Keramikmarkt Neubad festival",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Keramikmarkt Neubad festival",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Keramikmarkt Neubad festival",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Keramikmarkt Neubad festival",
+      "file": "reference_4.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ffdb7fce5cd829fbbf02893d5a5345dae9daa4aa6613b450fbea3b9dcece6fae",
+      "corrected": false,
+      "time": "2026-09-13T22:03:25"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:03:29"
+    }
+  ],
+  "feedback": "Image 1 is preferred because the embossed typography is more connected to the prompt. Also, since this is a ceramic event, the text looks as if it has been pressed into a ceramic surface, creating a stronger visual metaphor. While the text is not immediately readable, its bold presence catches the eye and encourages a closer look. Looking more closely, the repeated text makes it easy to understand the theme. In Image 2, the text is heavily distorted and lacks the embossed part.",
+  "lesson": "If requested style is embossed typography with thematic visual metaphor, prioritize visual cohesion with the prompt’s subject matter over mere text repetition or distortion, even if readability is compromised.",
+  "lesson_evidence": "Image 1 is preferred because the embossed typography is more connected to the prompt. Also, since this is a ceramic event, the text looks as if it has been pressed into a ceramic surface, creating a stronger visual metaphor.",
+  "lesson_source": "Image 1 is preferred because the embossed typography is more connected to the prompt. Also, since this is a ceramic event, the text looks as if it has been pressed into a ceramic surface, creating a stronger visual metaphor. While the text is not immediately readable, its bold presence catches the eye and encourages a closer look. Looking more closely, the repeated text makes it easy to understand the theme. In Image 2, the text is heavily distorted and lacks the embossed part."
+}

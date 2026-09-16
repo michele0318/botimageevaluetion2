@@ -1,0 +1,135 @@
+{
+  "title": "Print-ready files — Image Wiki",
+  "text": "\n  \n\n  Print-ready files\n  What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n\n  \n    Termprint-ready artwork / PDF/X\n    Also calledPDF/X, prepress files, bleed and trim, artwork delivery\n    Not the same ascolour management, export settings, PDF for web\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        PDF/X is PDF with things taken awayFonts and transparency are where files dieBleed, trim and safe margins are facts about bladesResolution is a ratio, not a numberThe honest limit of the standardCommon mistakes\n      \n    \n  \n\n  You send a PDF. It opens perfectly on your laptop. Two weeks later 5,000 leaflets arrive with a hairline white edge down one side, a headline in the wrong typeface, and a drop shadow that has turned into a grey box.\nNothing corrupted the file. A PDF for reading and a PDF for printing are different animals, and only one of them has to survive being turned into ink by a machine that cannot ask you a question.\nPDF/X is PDF with things taken away\nPDF/X was the first ISO standard built on PDF, and it is a subset: it constrains the format for print use (PRINT-010). Conforming means accepting restrictions, and there are two principles behind all of them (PRINT-008).\nFirst, the file must be complete and fully self-contained: fonts embedded, either fully or as a subset covering every character used; images present in the file; no external references, no embedded files, no password protection.\nSecond, nothing may appear on a page that is either not printable at all, or whose print output is not fully defined. Out go video, audio and 3D, JavaScript and form fields, transfer curves (they modify how colours come out), low-resolution alternate images (which one prints?), annotations in the print area, and LZW compression. Spot colours need an alternate colour, and it must be the same everywhere that spot colour appears, or the same named ink could render two ways.\nOne requirement earns its own paragraph: an Output Intent must be present, naming an ICC profile that specifies the intended printing conditions — device type and paper type — whenever colours or greys are defined. That is the hinge between this article and Colour management. Without it, \"60% cyan\" is a number with nothing attached; with it, the file states which press on which stock it was made for. Metadata must also declare whether the file has been trapped, and which part and conformance level it claims.\nFonts and transparency are where files die\nFonts fail because a PDF can reference a font instead of carrying it. Open such a file where the font is not installed and the viewer substitutes something, usually with different widths, so the line breaks move too. PDF/X forbids it outright — the strongest single argument for exporting to PDF/X rather than plain PDF.\nTransparency fails more subtly. Drop shadows, multiply blends, feathered edges and glows have to be resolved into something a press can image, and the PDF Association is direct about why that is hard: PDF \"allows for many complex situations, for example, colors in semi-transparent overlapping objects\", with many interdependencies where it is difficult to tell whether the result is unambiguously defined (PRINT-008). Flattening carves the artwork into opaque tiles, and the seams sometimes show as faint rectangles across a blend. PDF/X-1a demands flattening up front; PDF/X-4 keeps transparency live for a modern RIP. Which to send is the printer's call.\nBleed, trim and safe margins are facts about blades\nNow the physical part, and it has nothing to do with software. A finished piece is cut out of a bigger sheet, usually in a stack of several hundred, by a guillotine. Paper compresses, the stack shifts, the blade deflects a little. The cut lands near where you asked, not on it.\n\nthe file, 1:1HEADLINEin the safe marginbleed boxtrim boxsafe margintop-left corner after cutting, 4.6xblade, 0.8 mm outbare paper stripdown every edgeArtwork stops at the trim boxnothing wrong with the file, and it still failsthe file, 1:1HEADLINEin the safe marginbleed boxtrim boxsafe margintop-left corner after cutting, 4.6xblade, 0.8 mm outink to the edge,wander absorbedArtwork carried 3 mm past the trim boxsame design, same trim size, same blade\n\nSame design, same trim size, same blade wander of 0.8 mm. The only difference is how far the coloured artwork extends.\nLeft, the artwork stops exactly on the trim box. Nothing is wrong with the file. The blade lands 0.8 mm outside the line, and the finished piece carries a bare paper strip down every edge — see the magnified corner.\nRight, the artwork is carried 3 mm past the trim into the bleed box. The same blade in the same bad mood now cuts through solid colour, and the error is invisible. Bleed is not a margin; it is deliberately wasted artwork, printed to be thrown away.\nThe safe margin is the same tolerance pointed inwards. Put type on the trim line and a cut that wanders the other way shaves it. Keep anything that must survive — text, logos, faces — a few millimetres inside.\n\n\nPDF/X has one rule here and it is a consistency rule, not a size: bleed is not required, because not every print product needs it, but if a BleedBox is defined then it must not be enclosed by the TrimBox (PRINT-008). In other words, PDF/X will not stop you shipping a file with no bleed. It will only stop you shipping one whose boxes contradict each other.\n\n\n\nDavid Peters, Offset printing at Watermark Press, San Francisco — a press check for the Wiki Education Foundation's Editing Wikipedia guide on a Komori eight-colour perfector, 21 June 2016. Wikimedia Commons, CC BY-SA 3.0.\nWhat your file actually becomes. On the inspection table lies one press sheet holding many booklet pages at once, and look at their orientation: the whole upper row is upside down relative to the lower row, where the cover (\"Editing Wikipedia\") and the markup cheatsheet sit the right way up. That is imposition — the page order you designed has nothing to do with the arrangement that folds and binds correctly, and the printer decides it.\nThen follow the very top edge of the sheet: a thin strip of repeating small patches of cyan, magenta, yellow, black and their overprints, running its whole length. That is the colour control bar, measured to check ink density across the sheet.\nThat strip lives outside the trimmed pages, in the area the guillotine removes. Marks, colour bars and bleed all share the same real estate: the part of the sheet nobody ever sees.\n\n\nResolution is a ratio, not a number\n\"300 dpi\" is not a property of an image. An image has a pixel count; resolution only exists once you decide how big it will be printed.\n\nsame file: 900 x 600 pixels76 x 51 mm3 x 3 mm of the print, 42xone pixel = 0.08 mm300 pixels per inchprinted as a postcard photosame file: 900 x 600 pixels305 x 203 mm3 x 3 mm of the print, 42xone pixel = 0.34 mm75 pixels per inchprinted as a exhibition panel\n\nThe same 900 × 600 pixel file, twice. Across 76 mm it is 300 pixels per inch and one pixel is 0.08 mm. Across 305 mm it is 75 ppi and one pixel is 0.34 mm — big enough to see, which is why the magnified 3 mm square on the right has visible steps in the diagonal.\nNothing about the file changed. Ask for the final dimensions before you judge whether an image is big enough, and do the division: pixels ÷ (mm ÷ 25.4) = ppi.\n\n\nViewing distance moves the goalposts too: a billboard read from 30 metres is routinely produced at well under 50 ppi, while a jewellery catalogue held at 25 cm will not forgive 200.\nThe honest limit of the standard\nHere is the thing that catches people who have just learned about PDF/X: PDF/X does not specify a minimum image resolution, and it does not specify a bleed zone. The PDF Association says so plainly — those provisions, \"although important, may vary depending on the printing conditions\" (PRINT-008), so they were deliberately left out. Non-ISO specifications known as PDF/X-Plus exist to cover exactly this production-specific ground.\nWhich means a file can pass every PDF/X check and still be unusable: 72 ppi images, no bleed, type on the trim line, and an output intent naming a profile that is not the press you are using. \"Is this print-ready\" is a question about a specific product on a specific press, and the answer lives on the printer's spec sheet. Get it in writing, before you design.\nCommon mistakes\n\n\"It exported without errors, so it is fine.\" Preflight checks conformance, not suitability.\n\"Bleed is a safety margin.\" The opposite: artwork placed to be destroyed. The safety margin is the inner one.\n\"I'll raise the resolution on export.\" Upsampling invents pixels. The staircase stays; it only gets blurrier.\n\"Fonts are fine, I sent a PDF.\" Only if they are embedded. Check, do not assume.\n\"The printer will fix it.\" They may fix it silently, in a way you would not have chosen. Every fix is a decision you gave away.\n\n\nBefore you press send\n\nGet the spec sheet: trim size, bleed, safe margin, minimum resolution, output intent profile by name.\nExport to the PDF/X part they ask for, and confirm the output intent is their profile, not your default.\nCheck the boxes in the exported file: is the TrimBox the finished size, is the BleedBox outside it?\nCheck every image's pixel count against its placed size. Do the division.\nZoom to 400% on any shadow, glow or blend and look for seams and rectangles.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Colour management\n              Why a colour on your screen is not a colour on paper, and the machinery — gamuts, profiles, a shared connection space and four rendering intents — that decides which compromise you get.\n            \n          \n        \n          \n            \n              Packaging hierarchy\n              Ordering what a pack says, under constraints no other graphic design job has — a reader who is standing up, holding it, deciding in seconds, from a metre away, next to fifty rivals, with part of the layout dictated by law.\n            \n          \n        \n          \n            \n              Logo reproduction tests\n              The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        PRINT-008 — PDF Association — PDF/X: The key factsPRINT-010 — PDF Association — PDF/X in a NutshellPRINT-004 — ICC — Introduction to the ICC profile formatPRINT-007 — William Li, ICC — Fundamentals of ICC Color Management\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Print-ready files",
+    "PDF/X is PDF with things taken away",
+    "Fonts and transparency are where files die",
+    "Bleed, trim and safe margins are facts about blades",
+    "Resolution is a ratio, not a number",
+    "The honest limit of the standard",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nthe file, 1:1HEADLINEin the safe marginbleed boxtrim boxsafe margintop-left corner after cutting, 4.6xblade, 0.8 mm outbare paper stripdown every edgeArtwork stops at the trim boxnothing wrong with the file, and it still failsthe file, 1:1HEADLINEin the safe marginbleed boxtrim boxsafe margintop-left corner after cutting, 4.6xblade, 0.8 mm outink to the edge,wander absorbedArtwork carried 3 mm past the trim boxsame design, same trim size, same blade\n\nSame design, same trim size, same blade wander of 0.8 mm. The only difference is how far the coloured artwork extends.\nLeft, the artwork stops exactly on the trim box. Nothing is wrong with the file. The blade lands 0.8 mm outside the line, and the finished piece carries a bare paper strip down every edge — see the magnified corner.\nRight, the artwork is carried 3 mm past the trim into the bleed box. The same blade in the same bad mood now cuts through solid colour, and the error is invisible. Bleed is not a margin; it is deliberately wasted artwork, printed to be thrown away.\nThe safe margin is the same tolerance pointed inwards. Put type on the trim line and a cut that wanders the other way shaves it. Keep anything that must survive — text, logos, faces — a few millimetres inside.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nDavid Peters, Offset printing at Watermark Press, San Francisco — a press check for the Wiki Education Foundation's Editing Wikipedia guide on a Komori eight-colour perfector, 21 June 2016. Wikimedia Commons, CC BY-SA 3.0.\nWhat your file actually becomes. On the inspection table lies one press sheet holding many booklet pages at once, and look at their orientation: the whole upper row is upside down relative to the lower row, where the cover (\"Editing Wikipedia\") and the markup cheatsheet sit the right way up. That is imposition — the page order you designed has nothing to do with the arrangement that folds and binds correctly, and the printer decides it.\nThen follow the very top edge of the sheet: a thin strip of repeating small patches of cyan, magenta, yellow, black and their overprints, running its whole length. That is the colour control bar, measured to check ink density across the sheet.\nThat strip lives outside the trimmed pages, in the area the guillotine removes. Marks, colour bars and bleed all share the same real estate: the part of the sheet nobody ever sees.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AQBPImXqtpTPGYL-0dyqLdEcJBXKIX6qK4X3ygDtWgX_JAJWY8hLdPvD3p8CG8oxIImGJV6wkEV-g4CJOZvq29TIJxD-XFIUX1yb2QC4DdFEevIXFnwtL9JQOiLdxegzEhmkay3N8I-rVFw-4Ok4KkAeCYRr4VW-VJkjMeHrikkizFXQUvHi3ZULxu1J35LTG73tJHjAeQdIosqREE8J-Xry2x4CnPbThfsTgdxcyKrDuSAqRCmMNye53QQY3VDA3u6sjvtlHTZ8KnBbSR1BZN8CJnMbaTC1V_O0BrfCVqlUylhRSllZnTTtanlD-2XVH7eoWPCSOMhtfT8jNo9VnX77Mhix2-cNa19IrRZIIV8twMWV5fdOkr2x-KI5ddmg2wbS_GKG9KqRSD5y2M3RGt_6caid5o-AYXOY9s1hALZvZ-mR3MPfxadTRdCZbqg8JyUgExL6Yc2BnDQXv5tp8Cw_U1Hh_qFEU6lxVcAEJmpjLapxnSzFsk5C0-VX7E2dNTsu5Oaal3k-Ditr9LCTV0tOhyyLx5v9afmZlTnhRnDewudaYadfTG63byeRj48yB26CVSMZK8aKLWUFbp0bq4TQLO-lcGMJB__4kMFvy_IdPt4OLSiGIrhqoMOMlDTWs65VXXa1jKCcbgvr3Q7on9udCnxsgn98NUztgTj0jVATldIVpxmB4VC4rRTxrJBVsYVVfinoM0q4E_xv7VpYmAR-OyUULBy7wistE5BX9J4eSnKVv5RWYFI2054OiYNpER991JUG2YIMgcABTmQaTEHuS6ySVGE7Syoay-YM9HARYSpoJr5Ez6UmHq_1DIDqkz29VDLpI5Cc-zLMcuW3qy7IT6OoTEOC5c2jBB8q5df_GHzOVcs4sPwpWcLklkZAb0DNNDA-WEqaDd6NqN0Az-b1QKvJiCeiz2yRjqHInSB38pjVs3mjPcZyka8BsW0b6Us3xumVM1szFaR5DRGPhWinflVdD339WZbYNto7E4TIvR9AoBcZTR7qX_3Ob93VF4wObJ8H11LYohYgxE4-sjL6IoqhoC-ei-5okMPOMq5ZMqTu2amZLXCYgSkHQWihv3QR2c0v6ooWcvwBkzI6qa-Un6-WIDtnJZdvEwY6VQzvBYyLM8fjILJT6udnLXmTgNSL8PgU-8cOQ03ezkRN79_1eFRiKgwnTNMg0mQ6RTe3ApH-2i4WsMtLdZq1ql6ndskNYJnJKMPipS8cG-xD3fIaJhVl5iSmI2dz168-AmhdzKByDCqGa61fgyH8AyE1eaPnR82Fezn_GAKduVMLd78O-yd6xI1WEmi1KgBs8pw0592dNqPxSIAuA80kzB7MdW4nyIwforqJiYooUYkmOYNPBuPO8Abqfedr_PjSgBkg9wUS7ZHdCK-6pX65NFt_44tUQLmx9eVLh89wITgvzQtFK4qDuY1DIvZRY4a-JCZL0wdc155o_-6CMTrTUjudby8CU47eLiYT4ft0b_89CIW8GYloeyQM1iqh1Vboj4AG6N4l1GTdsHX8-3M-BRDXhDHqWX7WI9PHIPowv-xTDz4vIsXDcW5d0it_A7_MU2LkS4WZ7GAe1zFsKkSt357jwyu2MeAozVrPzqDvBSBtT7bhRbs_PdbdSKGxLzz9zHkE-2EZrA4iMyewoJNWl5wYC1z6HnIPGoss6P0Jk89Smbaua_k0f4ODk3OxXGjDDsF7crYYupnAWg8kiSgyo_hwpyVQ3W9xt6KH0taGxIRewmCupqiYNVWM7-gdR9XIDwjf0xx4R0BC7iDhHWvMRx7ZaavwpaB_al4c005oxMkiNSoO3NWoK-FaNfy_Pb1pEoQNA6d_Qa6G-F-xmBWZZHBOyvaBAFaM5YhhGxr1_9Pqh6-fHnx4Mb948FS_0wJDwH2tYB-LwY9orpx96F5iSMf7LnPZ1Zm2DsxsGCIkDXM1bbc0luFV75Bocix4YcL_eamy38muvOuW6xMxHHKlxlsNP24dhdmQmw1QaFrW5_LStPHkvNRndiGeV6s26LN6-7wgqabGgCCtd0tLV2USE9G3",
+          "alt": "Two pressmen at a press check, with a large printed sheet on an inspection table carrying many booklet pages in different orientations and a strip of small colour patches along its top edge"
+        }
+      ]
+    },
+    {
+      "caption": "\nsame file: 900 x 600 pixels76 x 51 mm3 x 3 mm of the print, 42xone pixel = 0.08 mm300 pixels per inchprinted as a postcard photosame file: 900 x 600 pixels305 x 203 mm3 x 3 mm of the print, 42xone pixel = 0.34 mm75 pixels per inchprinted as a exhibition panel\n\nThe same 900 × 600 pixel file, twice. Across 76 mm it is 300 pixels per inch and one pixel is 0.08 mm. Across 305 mm it is 75 ppi and one pixel is 0.34 mm — big enough to see, which is why the magnified 3 mm square on the right has visible steps in the diagonal.\nNothing about the file changed. Ask for the final dimensions before you judge whether an image is big enough, and do the division: pixels ÷ (mm ÷ 25.4) = ppi.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AQBPImXqtpTPGYL-0dyqLdEcJBXKIX6qK4X3ygDtWgX_JAJWY8hLdPvD3p8CG8oxIImGJV6wkEV-g4CJOZvq29TIJxD-XFIUX1yb2QC4DdFEevIXFnwtL9JQOiLdxegzEhmkay3N8I-rVFw-4Ok4KkAeCYRr4VW-VJkjMeHrikkizFXQUvHi3ZULxu1J35LTG73tJHjAeQdIosqREE8J-Xry2x4CnPbThfsTgdxcyKrDuSAqRCmMNye53QQY3VDA3u6sjvtlHTZ8KnBbSR1BZN8CJnMbaTC1V_O0BrfCVqlUylhRSllZnTTtanlD-2XVH7eoWPCSOMhtfT8jNo9VnX77Mhix2-cNa19IrRZIIV8twMWV5fdOkr2x-KI5ddmg2wbS_GKG9KqRSD5y2M3RGt_6caid5o-AYXOY9s1hALZvZ-mR3MPfxadTRdCZbqg8JyUgExL6Yc2BnDQXv5tp8Cw_U1Hh_qFEU6lxVcAEJmpjLapxnSzFsk5C0-VX7E2dNTsu5Oaal3k-Ditr9LCTV0tOhyyLx5v9afmZlTnhRnDewudaYadfTG63byeRj48yB26CVSMZK8aKLWUFbp0bq4TQLO-lcGMJB__4kMFvy_IdPt4OLSiGIrhqoMOMlDTWs65VXXa1jKCcbgvr3Q7on9udCnxsgn98NUztgTj0jVATldIVpxmB4VC4rRTxrJBVsYVVfinoM0q4E_xv7VpYmAR-OyUULBy7wistE5BX9J4eSnKVv5RWYFI2054OiYNpER991JUG2YIMgcABTmQaTEHuS6ySVGE7Syoay-YM9HARYSpoJr5Ez6UmHq_1DIDqkz29VDLpI5Cc-zLMcuW3qy7IT6OoTEOC5c2jBB8q5df_GHzOVcs4sPwpWcLklkZAb0DNNDA-WEqaDd6NqN0Az-b1QKvJiCeiz2yRjqHInSB38pjVs3mjPcZyka8BsW0b6Us3xumVM1szFaR5DRGPhWinflVdD339WZbYNto7E4TIvR9AoBcZTR7qX_3Ob93VF4wObJ8H11LYohYgxE4-sjL6IoqhoC-ei-5okMPOMq5ZMqTu2amZLXCYgSkHQWihv3QR2c0v6ooWcvwBkzI6qa-Un6-WIDtnJZdvEwY6VQzvBYyLM8fjILJT6udnLXmTgNSL8PgU-8cOQ03ezkRN79_1eFRiKgwnTNMg0mQ6RTe3ApH-2i4WsMtLdZq1ql6ndskNYJnJKMPipS8cG-xD3fIaJhVl5iSmI2dz168-AmhdzKByDCqGa61fgyH8AyE1eaPnR82Fezn_GAKduVMLd78O-yd6xI1WEmi1KgBs8pw0592dNqPxSIAuA80kzB7MdW4nyIwforqJiYooUYkmOYNPBuPO8Abqfedr_PjSgBkg9wUS7ZHdCK-6pX65NFt_44tUQLmx9eVLh89wITgvzQtFK4qDuY1DIvZRY4a-JCZL0wdc155o_-6CMTrTUjudby8CU47eLiYT4ft0b_89CIW8GYloeyQM1iqh1Vboj4AG6N4l1GTdsHX8-3M-BRDXhDHqWX7WI9PHIPowv-xTDz4vIsXDcW5d0it_A7_MU2LkS4WZ7GAe1zFsKkSt357jwyu2MeAozVrPzqDvBSBtT7bhRbs_PdbdSKGxLzz9zHkE-2EZrA4iMyewoJNWl5wYC1z6HnIPGoss6P0Jk89Smbaua_k0f4ODk3OxXGjDDsF7crYYupnAWg8kiSgyo_hwpyVQ3W9xt6KH0taGxIRewmCupqiYNVWM7-gdR9XIDwjf0xx4R0BC7iDhHWvMRx7ZaavwpaB_al4c005oxMkiNSoO3NWoK-FaNfy_Pb1pEoQNA6d_Qa6G-F-xmBWZZHBOyvaBAFaM5YhhGxr1_9Pqh6-fHnx4Mb948FS_0wJDwH2tYB-LwY9orpx96F5iSMf7LnPZ1Zm2DsxsGCIkDXM1bbc0luFV75Bocix4YcL_eamy38muvOuW6xMxHHKlxlsNP24dhdmQmw1QaFrW5_LStPHkvNRndiGeV6s26LN6-7wgqabGgCCtd0tLV2USE9G3",
+      "alt": "Two pressmen at a press check, with a large printed sheet on an inspection table carrying many booklet pages in different orientations and a strip of small colour patches along its top edge"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "PDF/X is PDF with things taken away",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#pdfx-is-pdf-with-things-taken-away"
+    },
+    {
+      "text": "Fonts and transparency are where files die",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#fonts-and-transparency-are-where-files-die"
+    },
+    {
+      "text": "Bleed, trim and safe margins are facts about blades",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#bleed-trim-and-safe-margins-are-facts-about-blades"
+    },
+    {
+      "text": "Resolution is a ratio, not a number",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#resolution-is-a-ratio-not-a-number"
+    },
+    {
+      "text": "The honest limit of the standard",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#the-honest-limit-of-the-standard"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#pdfx-is-pdf-with-things-taken-away"
+    },
+    {
+      "text": "Colour management",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#fonts-and-transparency-are-where-files-die"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#bleed-trim-and-safe-margins-are-facts-about-blades"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#resolution-is-a-ratio-not-a-number"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#the-honest-limit-of-the-standard"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files#common-mistakes"
+    },
+    {
+      "text": "\n              Colour management\n              Why a colour on your screen is not a colour on paper, and the machinery — gamuts, profiles, a shared connection space and four rendering intents — that decides which compromise you get.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management"
+    },
+    {
+      "text": "\n              Packaging hierarchy\n              Ordering what a pack says, under constraints no other graphic design job has — a reader who is standing up, holding it, deciding in seconds, from a metre away, next to fifty rivals, with part of the layout dictated by law.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/packaging-hierarchy"
+    },
+    {
+      "text": "\n              Logo reproduction tests\n              The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+    },
+    {
+      "text": "PRINT-008 — PDF Association — PDF/X: The key facts",
+      "href": "https://pdfa.org/pdfx-the-key-facts/"
+    },
+    {
+      "text": "PRINT-010 — PDF Association — PDF/X in a Nutshell",
+      "href": "https://pdfa.org/resource/pdfx-in-a-nutshell/"
+    },
+    {
+      "text": "PRINT-004 — ICC — Introduction to the ICC profile format",
+      "href": "https://www.color.org/getting-started/"
+    },
+    {
+      "text": "PRINT-007 — William Li, ICC — Fundamentals of ICC Color Management",
+      "href": "https://archive.color.org/events/Fundamentals_of_ICC_Color_Management.pdf"
+    },
+    {
+      "text": "\n        PreviousColour management",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management"
+    },
+    {
+      "text": "\n        NextRaster and vector",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+}

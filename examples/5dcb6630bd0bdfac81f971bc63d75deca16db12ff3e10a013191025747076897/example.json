@@ -1,0 +1,33 @@
+{
+  "id": "5dcb6630bd0bdfac81f971bc63d75deca16db12ff3e10a013191025747076897",
+  "prompt": "Create a photograph of a high-speed NASCAR race. Use a telephoto lens to capture the intense action:\nShow two cars racing side-by-side, one bright blue and the other white.\nThese vehicles are covered in numerous sponsor decals and logos. The car features branding for 'Pull-A-Part.com', 'HUNTORATOR', and is sponsored by the tire company 'Goodyear'. Additional sponsors include 'Uncle Bob's self storage' and 'Leaf Green Filter'.\nIncorporate product advertising with decals from brands like 'Holley', 'Mobil 1' and its racing oil, 'MSD', '3M', 'FedEx', and 'MAHLE COMPS CLEVELAND'. Also include a decal for the brand 'ARP'.",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Both images are far from ideal. However, image 1 has more obvious flaws: overexposure in the top-left corner, and the cars are driving one behind the other rather than side-by-side. Therefore, image 2 is better.",
+  "split": "test",
+  "image_group": "6be65a03de7b76f7f3712efc93007929a0f2557c71dbbfc6f34bcd50102bbebb",
+  "image_hashes": [
+    "0511381742c60446e51639ce13f7c5568eaf0cd58df55b8043dd1af02ceaa664",
+    "1c5e7475319771313d79163ad4008f8ad1c04ed0b2ace631bab20c86c52b28c7"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "11ee365ea74b5d7469ce78fd560f4329dbc19b4e56ba7a211a9a9d1108dc987a",
+      "corrected": false,
+      "time": "2026-09-13T21:58:57"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:58:58"
+    }
+  ],
+  "feedback": "Both images are far from ideal. However, image 1 has more obvious flaws: overexposure in the top-left corner, and the cars are driving one behind the other rather than side-by-side. Therefore, image 2 is better."
+}

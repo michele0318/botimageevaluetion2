@@ -1,0 +1,43 @@
+{
+  "id": "a76313961cb2f073738263d2c4f226b65f744a22442030fdebb76e8920274f00",
+  "prompt": "a man in a traditional vietnamese robe holds a lit oil lamp, surrounded by dark, reaching hands emerging from the water, no woman illustration, digital composite.       The film is directed by PHẠM TUẤN ANH. The movie is a production of HOÀNG NAM. The poster features the CGV logo and the DOLBY ATMOS logo. Sponsors listed on the poster include CHALLENGE ME, KHÁCH SẠN, popS, HEROSS, U, ECOMB, MSB, SAMSUNG, SanDisk, VOV, HTV, GLOBEL, BeeSeen, LEXAR, SONY, VTVcab, and Zalo Video.       The film's premiere date is scheduled for a specific traditional date, with an official release date listed as a particular calendar date.",
+  "correct_choice": null,
+  "verification": "",
+  "split": "test",
+  "image_group": "d06fee032ea248fe65c4b0446fb3c9a63d85fb2e2e4f9cd54fc3d80674a360d7",
+  "image_hashes": [
+    "d8443cd8f6b29b0254f7decfa9975e68662dea2f1b6f4d212c238d754fd8adbf",
+    "0871d9e46a62a33f8c47b017bc0181401492ccda0e396122c1c1b46a168845e0"
+  ],
+  "contextual_hints": "CGV logo\nHIGH\nCGV is a major cinema chain; its logo is requested for the poster design.\n\nDolby Atmos logo\nHIGH\nStandard technical logo for movie posters.",
+  "reference_images": [
+    {
+      "label": "CGV logo",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "CGV logo",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "CGV logo",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "CGV logo",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "CGV logo",
+      "file": "reference_5.png"
+    },
+    {
+      "label": "Dolby Atmos logo",
+      "file": "reference_6.png"
+    },
+    {
+      "label": "Dolby Atmos logo",
+      "file": "reference_7.png"
+    }
+  ]
+}

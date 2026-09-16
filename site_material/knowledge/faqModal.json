@@ -1,0 +1,10 @@
+{
+  "title": "faqModal",
+  "source": "site dialog: faqModal",
+  "source_hash": "77e3d01b537dd50c4be734cab16835df8c12435134ecccad655f938e06ea8e10",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 875,
+  "output_tokens": 5,
+  "processed_at": "2026-09-13T09:42:10"
+}

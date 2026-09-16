@@ -1,0 +1,20 @@
+{
+  "id": "abcc25ff6c5fdddce750147254efc549085148229ad37804912c644e60bb4196",
+  "module": "response_comparison",
+  "prompt": "replace that man with this boy in a yellow t-shirt",
+  "source_count": 2,
+  "correct_choice": null,
+  "verification": "",
+  "attempts": [
+    {
+      "choice": "1",
+      "reason": "Response 1 successfully replaced the original man with the boy from Source 2, wearing the yellow t-shirt and maintaining all other elements of the composition. Response 2 only partially swapped faces while keeping the original pose and background context, failing to fully execute the request.",
+      "seconds": 131.71,
+      "assignment": "3666b7bf-217a-4124-8869-f10fe89da181",
+      "accepted": null,
+      "time": "2026-09-13T21:22:11"
+    }
+  ],
+  "feedback": [],
+  "split": "train"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "615df8554920a5b88333d112e632551df59f9d6e4435410e01240691e6ad3bc1",
+  "prompt": "TRANSLATION: 'Generate an image of a beautiful psychedelic cartoon landscape, with two large anthropomorphic orange-red trees, their smiling yellow leaves shaped like clouds. In front, there are four anthropomorphic flowers with smiling faces. Create in the psychedelic painting style of Kenny Scharf.'\n\nORIGINAL : 'Gere um imagem de um lindo paisagem cartoon psicodélico, com duas grandes arvores laranja-vermelhas antropomórficas, suas folhas amarelas sorridentes são formas como nuvens. Na frente tem quatro flores antropomórficas com rostos sorridentes. Crie em estilo pintura psicodélico de Kenny Scharf'",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: The first image matches the style we see in the contextual hints much better. In Kenny Scharf’s style, you can see that each entity has a face, and the first image also matches the prompt itself much better. Image 1 wins.",
+  "split": "train",
+  "image_group": "023df20678a8d01b2d5877c9611362c4b2fad2cf1d695a92f1c7727e2bf946f1",
+  "image_hashes": [
+    "d2dc3309630b3d69ee72eea37aba0d21bf15cba9990f3939085e70322f41f8be",
+    "a6a70671428cb81cd56bce48b25cbddf8d28d65bf9b77576e06d5971027da831"
+  ],
+  "contextual_hints": "Kenny Scharf style\nHIGH\nKenny Scharf is a specific artist known for a distinct psychedelic, pop-surrealist cartoon style mentioned as the primary aesthetic instruction.",
+  "reference_images": [
+    {
+      "label": "Kenny Scharf style",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Kenny Scharf style",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Kenny Scharf style",
+      "file": "reference_3.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "72d076d3c71aa279f724dd650f0a7b3ea641dd5e029ca145888b085f55d57d5f",
+      "corrected": false,
+      "time": "2026-09-13T21:51:52"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "72d076d3c71aa279f724dd650f0a7b3ea641dd5e029ca145888b085f55d57d5f",
+      "corrected": true,
+      "time": "2026-09-13T21:51:57"
+    }
+  ],
+  "observed_feedback": "Please take another look:The first image matches the style we see in the contextual hints much better. In Kenny Scharf’s style, you can see that each entity has a face, and the first image also matches the prompt itself much better. Image 1 wins.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:51:54"
+    }
+  ],
+  "feedback": "The first image matches the style we see in the contextual hints much better. In Kenny Scharf’s style, you can see that each entity has a face, and the first image also matches the prompt itself much better. Image 1 wins.",
+  "lesson": "When a requested style is specified, prioritize visual alignment with that style’s known characteristics over generic aesthetic matches, even if the prompt is otherwise fulfilled.",
+  "lesson_evidence": "In Kenny Scharf’s style, you can see that each entity has a face, and the first image also matches the prompt itself much better.",
+  "lesson_source": "The first image matches the style we see in the contextual hints much better. In Kenny Scharf’s style, you can see that each entity has a face, and the first image also matches the prompt itself much better. Image 1 wins."
+}

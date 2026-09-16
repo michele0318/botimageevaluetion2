@@ -1,0 +1,23 @@
+{
+  "title": "Framing and cropping — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/framing-and-cropping",
+  "source_hash": "1928b4d77cf47255f0051633db167b120d92a73c8d4eb39ba51d73003145e713",
+  "rules": [
+    {
+      "rule": "If a subject faces or moves toward a direction, leave space on that side; otherwise, the subject reads as blocked.",
+      "evidence": "Cropping so tight the subject has nowhere to look. A face pressed against the border it is facing reads as blocked. Leave the space on the side the subject faces or moves toward, and it reads as about to"
+    },
+    {
+      "rule": "If a frame's shape mismatches the subject (e.g., tall thing in wide rectangle), the composition fails before the shutter.",
+      "evidence": "Does the frame's shape suit the subject, or is a tall thing lying down in a wide rectangle?"
+    },
+    {
+      "rule": "If covering the outer tenth of the picture improves the image, the crop is not finished; if the subject feels cornered, it went too far.",
+      "evidence": "Try covering the outer tenth of the picture with your hands. If it improves, the crop is not finished. If the subject suddenly feels cornered, it already went too far."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2759,
+  "output_tokens": 290,
+  "processed_at": "2026-09-13T09:28:38"
+}

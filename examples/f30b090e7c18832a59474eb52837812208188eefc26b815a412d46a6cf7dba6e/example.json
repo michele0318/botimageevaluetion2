@@ -1,0 +1,21 @@
+{
+  "id": "f30b090e7c18832a59474eb52837812208188eefc26b815a412d46a6cf7dba6e",
+  "prompt": "a pink fabric drape in a blue ice cave artwork by thomas wrde",
+  "correct_choice": null,
+  "verification": "",
+  "split": "train",
+  "image_group": "b0301bce343e2e23e3990bcc11484dba685a84cfc63168a5db9aba5749f90522",
+  "image_hashes": [
+    "a7caca43541266eb6057655da3c2f0b06c3e82014064480de68f8b84fd353e29",
+    "d98a634d7345516715bd56af8ed0c9d5e9090ad10b8687cc11ac4982e5627b16"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": null,
+      "corrected": false,
+      "time": "2026-09-12T20:27:05"
+    }
+  ]
+}

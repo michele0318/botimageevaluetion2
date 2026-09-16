@@ -1,0 +1,172 @@
+{
+  "title": "What an SVG actually contains — Image Wiki",
+  "text": "\n  \n\n  What an SVG actually contains\n  SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n\n  \n    TermSVG\n    Also calledsvg file, scalable vector graphics, svg contents, image/svg+xml\n    Not the same asvector artwork, icon font, PDF\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        Everything a valid SVG may holdGradients are part of the geometrySelf-contained, or borrowingText inside an SVG is textSize is a question the file may decline to answer\n      \n    \n  \n\n  The specification's own abstract is the fastest way to kill the usual assumption. SVG is \"a language based on XML for describing two-dimensional vector and mixed vector/raster graphics\". MDN puts it the same way: an XML-based markup language, defined in text files, which \"can be searched, indexed, scripted, and compressed\".\nAn SVG is a document, not a picture format in the sense a JPEG is. The Library of Congress format description lists the three kinds of thing it may contain: vector shapes, raster images, and text.\nSo .svg tells you how the file is written down. It tells you nothing about what is inside.\n\nbadge.svgbadge.svgthat edge at 4xthat edge at 4x<path d=\"M 66.9 33.8 L 152.2 151.4 …\"/><image href=\"data:image/png;base64,iVBOR…\"/>Geometry insidethree paths and a circleA photograph insideone 176 px bitmap, wrapped in XML\n\nTwo files, the same name, the same picture on screen. One holds four shapes. The other holds one 176-pixel bitmap, base64-encoded inside an image element.\nAt page size you cannot tell them apart, and no dialog will warn you. Magnify one edge and the difference is total: geometry stays a straight line, the bitmap becomes a staircase. Scale the second one up for a poster and you have a poster of a 176-pixel bitmap.\nA photograph wrapped in an SVG is still a photograph. It is not \"now vector\".\n\n\nEverything a valid SVG may hold\n\n\n\nInside the file\nConsequence for you\n\n\n\n\nPaths, rectangles, circles, groups, transforms\nThe good case: real geometry, editable, scales\n\n\ntext elements\nReal characters — searchable, translatable, and dependent on a font being available\n\n\nlinearGradient / radialGradient referenced by fill\nSmooth shading with no samples in it — legal, resolution-independent, and the first thing a conversion loses\n\n\nimage elements holding a bitmap\nRaster content, with a fixed resolution, inside a \"vector\" file\n\n\nimage, use or a stylesheet pointing at another URL\nThe file is incomplete on its own\n\n\nFilters — blur, drop shadow, colour matrices\nRendered differently by different engines, and often rasterised on export or at print\n\n\nscript, and event handlers on elements\nExecutable code, which is why an untrusted SVG is not a safe thing to open in a browser\n\n\nEditor leftovers: hidden layers, clipped-away artwork, comments, metadata\nWeight, and things that reappear on conversion\n\n\n\nTwo consequences of the last two rows are worth stating plainly. The media type registration for image/svg+xml lists the security considerations itself: SVG documents may reference arbitrary URIs and may include scripting languages, and \"scripting languages are executable content\". OWASP's general rule applies with full force — the extension and the declared content type come from whoever uploaded the file and cannot be trusted. Sanitising SVG before showing it to other people is a specific, solved job (DOMPurify covers HTML, MathML and SVG); guessing from the file name is not.\nGradients are part of the geometry\n\"Vector means flat colour\" is the most common wrong thing believed about these files. A gradient is a paint server: a small element that describes how to shade an area, referenced by name from a fill.\n\n<defs>  <linearGradient id=\"sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">    <stop offset=\"0%\"   stop-color=\"#2b3a52\"/>    <stop offset=\"100%\" stop-color=\"#e6ebf2\"/>  </linearGradient></defs><rect fill=\"url(#sky)\" …/>an id, two stops, and a fill that points at itlinearGradient: x1 y1 → x2 y2radialGradient: cx cy r, fx fySmooth shading with no samples in it. Both panels of this diagram are the file.Gradients live in defs (or in svg), must carry an id, and are referenced from fill or stroke as url(#id).gradientUnits defaults to objectBoundingBox, spreadMethod to pad, and href on a gradient inherits another one's stops.\n\nMDN's tutorial states the mechanics: gradient definitions \"can be placed in a defs element or an svg element\", you \"must give each gradient an id\", and to use one \"you have to reference it from an object's fill or stroke attribute\" — fill=\"url(#sky)\".\nInside, each stop carries an offset, a stop-color and optionally a stop-opacity. A linearGradient runs along the line from x1 y1 to x2 y2 and \"defaults to a horizontal orientation\"; a radialGradient uses cx cy r with an optional focus at fx fy. Two more defaults are worth knowing because they are the usual surprise: gradientUnits is objectBoundingBox, so the numbers are fractions of the shape's own box, and spreadMethod is pad, so past the last stop \"the final offset color is used to fill the rest of the object\". An href on one gradient borrows another's stops instead of repeating them.\nBoth panels above are this file: no bitmap is involved, and the shading scales exactly like the rest of the geometry.\n\n\nThe catch is not legality, it is what happens on the way back. A gradient is the part of a drawing that redraws worst — see Raster and vector for why our own pipeline prefers flat fills, and What a bad vector file looks like for the banding it leaves behind.\nSelf-contained, or borrowing\n\nthe bytes are in thefile, so it renderson any machine<image href=\"data:image/png;base64,…\">?<image href=\"https://cdn.example/hero.jpg\">one request, every timeempty for anyonewithout that URLEmbeddedself-contained: what you see is what you getReferencedthe picture lives somewhere else, and can vanish or change\n\nSame markup, one attribute different.\nLeft, the bitmap is embedded in the file. The file is heavier and it works anywhere, forever, offline.\nRight, the href points at a server. On the machine that made it, everything looks right — the picture is in the browser cache. Somewhere else it renders as nothing, or it renders and quietly tells that server who opened the file and when. Many viewers refuse cross-origin references outright, and the spec permits them to: SVG 2 does not allow cross-origin resource requests in use at all.\nA file that renders on its author's laptop is not evidence of a file that renders.\n\n\nText inside an SVG is text\n\n<text x=\"24\" y=\"70\"      font-family=\"Playfair Display\"      font-size=\"54\">SUMMIT</text><path d=\"M28 70 L28 22 L44 22 L58 52         L72 22 L88 22 L88 70 L76 70         L76 38 L62 66 …\"/> ×6SUMMITSUMMITsearch finds it · a translator can re-set ita screen reader reads itand it needs that font wherever the file is openedsearch finds nothing · no language can be swapped ina screen reader finds six shapesand it needs no font anywhere, everLive textThe same word, outlinedIdentical on the page. In the file, one of them is still the word and the other is six closed paths that resemble it.\n\nIn the file the whole difference is one element: a text carrying the characters and a font name, or six path elements carrying coordinates. The character data in a text element is real text, and the spec says so as a design goal: text in SVG \"is readily accessible to the visually impaired\", users can generally select and copy it, and search engines can find it.\nWhich cuts both ways. Live text needs its font to be present or the machine substitutes another one, and the line changes width — see AI, EPS and PDF. Outlined text renders identically everywhere and gives up search, editing, translation and screen readers in exchange.\nNeither is correct in general. Which one is correct depends on where the file is going.\n\n\nStructural meaning is a separate layer again: the WAI-ARIA Graphics Module adds roles — graphics-document, graphics-object, graphics-symbol — so that a chart or a map can be navigated as a structure rather than announced as one anonymous image. A title on the root is the minimum, and it is not the same thing as an alt attribute on the img that embeds it.\nSize is a question the file may decline to answer\nAn SVG has no intrinsic physical size. One user unit equals one CSS pixel in the initial coordinate system, and CSS pixels have no fixed physical dimension. The viewBox names a rectangle in user space that gets mapped onto whatever viewport it is placed in, which is exactly why the same file can be a favicon and a billboard.\nPractical consequence: an SVG with no width, height or viewBox can render at a default size, at nothing, or stretched, depending on what embeds it. \"It looks wrong in our page and right in the browser\" is usually this.\n\nHow to check an SVG, without a design tool\nAn SVG is text. Open it in any text editor, or run these:\n\nhead -c 400 file.svg — you should see <svg, and ideally a viewBox.\ngrep -c '<path' file.svg — how much geometry is actually in there.\ngrep -o 'xlink:href=\"[^\"]\\{0,40\\}' file.svg; grep -o 'href=\"[^\"]\\{0,40\\}' file.svg — every reference. data:image/... means embedded raster; http means it borrows from a server.\ngrep -c '<image' file.svg — bitmaps inside.\ngrep -c '<text' file.svg — live text, so ask which fonts.\ngrep -Ec '<script|on[a-z]+=' file.svg — script and inline handlers. Anything above zero in artwork from outside is a reason to stop.\ngrep -c '<filter' file.svg — filters, which are the usual reason an export looks different from the editor.\n\n\n\nOptimisers are not neutral\nTools like SVGO exist to strip editor metadata, comments and hidden elements, and they are genuinely useful. But its plugin list also includes reducing the precision of path coordinates and removing the viewBox outright, and thin strokes, tiny counters and exact alignment are what pay for that. Compare before and after at the size that matters, not at 100%.\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Raster and vector\n              Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n            \n          \n        \n          \n            \n              Paths and curves\n              What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n            \n          \n        \n          \n            \n              AI, EPS and PDF\n              Three containers people call \"vector formats\". What each really holds, what survives being opened somewhere else, and what outlining the text destroys on the way.\n            \n          \n        \n          \n            \n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            \n          \n        \n          \n            \n              Design tokens\n              A named decision. The point of calling a colour color.text.default rather than #1B1B1B is that the name can be pointed somewhere else once, for everybody.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        VEC-001 — W3C — Scalable Vector Graphics (SVG) 2VEC-002 — W3C — SVG 2, Document StructureVEC-003 — W3C — SVG 2, Coordinate Systems, Transformations and UnitsVEC-006 — W3C — SVG 2, TextVEC-007 — W3C — Media type registration for image/svg+xmlVEC-008 — MDN — SVG: Scalable Vector GraphicsVEC-017 — Library of Congress — Scalable Vector Graphics (SVG) File Format FamilyVEC-020 — W3C — WAI-ARIA Graphics Module 1.0VEC-022 — SVGO — SVG OptimizerVEC-027 — MDN — SVG from scratch: GradientsVEC-025 — SVGO — Plugins referenceVEC-023 — DOMPurify — XSS sanitizer for HTML, MathML and SVGVEC-024 — OWASP — File Upload Cheat Sheet\n      \n    \n  \n\n  \n",
+  "headings": [
+    "What an SVG actually contains",
+    "Everything a valid SVG may hold",
+    "Gradients are part of the geometry",
+    "Self-contained, or borrowing",
+    "Text inside an SVG is text",
+    "Size is a question the file may decline to answer",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nbadge.svgbadge.svgthat edge at 4xthat edge at 4x<path d=\"M 66.9 33.8 L 152.2 151.4 …\"/><image href=\"data:image/png;base64,iVBOR…\"/>Geometry insidethree paths and a circleA photograph insideone 176 px bitmap, wrapped in XML\n\nTwo files, the same name, the same picture on screen. One holds four shapes. The other holds one 176-pixel bitmap, base64-encoded inside an image element.\nAt page size you cannot tell them apart, and no dialog will warn you. Magnify one edge and the difference is total: geometry stays a straight line, the bitmap becomes a staircase. Scale the second one up for a poster and you have a poster of a 176-pixel bitmap.\nA photograph wrapped in an SVG is still a photograph. It is not \"now vector\".\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n<defs>  <linearGradient id=\"sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">    <stop offset=\"0%\"   stop-color=\"#2b3a52\"/>    <stop offset=\"100%\" stop-color=\"#e6ebf2\"/>  </linearGradient></defs><rect fill=\"url(#sky)\" …/>an id, two stops, and a fill that points at itlinearGradient: x1 y1 → x2 y2radialGradient: cx cy r, fx fySmooth shading with no samples in it. Both panels of this diagram are the file.Gradients live in defs (or in svg), must carry an id, and are referenced from fill or stroke as url(#id).gradientUnits defaults to objectBoundingBox, spreadMethod to pad, and href on a gradient inherits another one's stops.\n\nMDN's tutorial states the mechanics: gradient definitions \"can be placed in a defs element or an svg element\", you \"must give each gradient an id\", and to use one \"you have to reference it from an object's fill or stroke attribute\" — fill=\"url(#sky)\".\nInside, each stop carries an offset, a stop-color and optionally a stop-opacity. A linearGradient runs along the line from x1 y1 to x2 y2 and \"defaults to a horizontal orientation\"; a radialGradient uses cx cy r with an optional focus at fx fy. Two more defaults are worth knowing because they are the usual surprise: gradientUnits is objectBoundingBox, so the numbers are fractions of the shape's own box, and spreadMethod is pad, so past the last stop \"the final offset color is used to fill the rest of the object\". An href on one gradient borrows another's stops instead of repeating them.\nBoth panels above are this file: no bitmap is involved, and the shading scales exactly like the rest of the geometry.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nthe bytes are in thefile, so it renderson any machine<image href=\"data:image/png;base64,…\">?<image href=\"https://cdn.example/hero.jpg\">one request, every timeempty for anyonewithout that URLEmbeddedself-contained: what you see is what you getReferencedthe picture lives somewhere else, and can vanish or change\n\nSame markup, one attribute different.\nLeft, the bitmap is embedded in the file. The file is heavier and it works anywhere, forever, offline.\nRight, the href points at a server. On the machine that made it, everything looks right — the picture is in the browser cache. Somewhere else it renders as nothing, or it renders and quietly tells that server who opened the file and when. Many viewers refuse cross-origin references outright, and the spec permits them to: SVG 2 does not allow cross-origin resource requests in use at all.\nA file that renders on its author's laptop is not evidence of a file that renders.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n<text x=\"24\" y=\"70\"      font-family=\"Playfair Display\"      font-size=\"54\">SUMMIT</text><path d=\"M28 70 L28 22 L44 22 L58 52         L72 22 L88 22 L88 70 L76 70         L76 38 L62 66 …\"/> ×6SUMMITSUMMITsearch finds it · a translator can re-set ita screen reader reads itand it needs that font wherever the file is openedsearch finds nothing · no language can be swapped ina screen reader finds six shapesand it needs no font anywhere, everLive textThe same word, outlinedIdentical on the page. In the file, one of them is still the word and the other is six closed paths that resemble it.\n\nIn the file the whole difference is one element: a text carrying the characters and a font name, or six path elements carrying coordinates. The character data in a text element is real text, and the spec says so as a design goal: text in SVG \"is readily accessible to the visually impaired\", users can generally select and copy it, and search engines can find it.\nWhich cuts both ways. Live text needs its font to be present or the machine substitutes another one, and the line changes width — see AI, EPS and PDF. Outlined text renders identically everywhere and gives up search, editing, translation and screen readers in exchange.\nNeither is correct in general. Which one is correct depends on where the file is going.\n\n",
+      "images": []
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Everything a valid SVG may hold",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#everything-a-valid-svg-may-hold"
+    },
+    {
+      "text": "Gradients are part of the geometry",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#gradients-are-part-of-the-geometry"
+    },
+    {
+      "text": "Self-contained, or borrowing",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#self-contained-or-borrowing"
+    },
+    {
+      "text": "Text inside an SVG is text",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#text-inside-an-svg-is-text"
+    },
+    {
+      "text": "Size is a question the file may decline to answer",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#size-is-a-question-the-file-may-decline-to-answer"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#everything-a-valid-svg-may-hold"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#gradients-are-part-of-the-geometry"
+    },
+    {
+      "text": "Raster and vector",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+    },
+    {
+      "text": "What a bad vector file looks like",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#self-contained-or-borrowing"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#text-inside-an-svg-is-text"
+    },
+    {
+      "text": "AI, EPS and PDF",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains#size-is-a-question-the-file-may-decline-to-answer"
+    },
+    {
+      "text": "\n              Raster and vector\n              Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+    },
+    {
+      "text": "\n              Paths and curves\n              What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+    },
+    {
+      "text": "\n              AI, EPS and PDF\n              Three containers people call \"vector formats\". What each really holds, what survives being opened somewhere else, and what outlining the text destroys on the way.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+    },
+    {
+      "text": "\n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    },
+    {
+      "text": "\n              Design tokens\n              A named decision. The point of calling a colour color.text.default rather than #1B1B1B is that the name can be pointed somewhere else once, for everybody.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/design-tokens"
+    },
+    {
+      "text": "VEC-001 — W3C — Scalable Vector Graphics (SVG) 2",
+      "href": "https://www.w3.org/TR/SVG2/"
+    },
+    {
+      "text": "VEC-002 — W3C — SVG 2, Document Structure",
+      "href": "https://www.w3.org/TR/SVG2/struct.html"
+    },
+    {
+      "text": "VEC-003 — W3C — SVG 2, Coordinate Systems, Transformations and Units",
+      "href": "https://www.w3.org/TR/SVG2/coords.html"
+    },
+    {
+      "text": "VEC-006 — W3C — SVG 2, Text",
+      "href": "https://www.w3.org/TR/SVG2/text.html"
+    },
+    {
+      "text": "VEC-007 — W3C — Media type registration for image/svg+xml",
+      "href": "https://www.w3.org/TR/SVG/mimereg.html"
+    },
+    {
+      "text": "VEC-008 — MDN — SVG: Scalable Vector Graphics",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG"
+    },
+    {
+      "text": "VEC-017 — Library of Congress — Scalable Vector Graphics (SVG) File Format Family",
+      "href": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000515.shtml"
+    },
+    {
+      "text": "VEC-020 — W3C — WAI-ARIA Graphics Module 1.0",
+      "href": "https://www.w3.org/TR/graphics-aria-1.0/"
+    },
+    {
+      "text": "VEC-022 — SVGO — SVG Optimizer",
+      "href": "https://github.com/svg/svgo"
+    },
+    {
+      "text": "VEC-027 — MDN — SVG from scratch: Gradients",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Gradients"
+    },
+    {
+      "text": "VEC-025 — SVGO — Plugins reference",
+      "href": "https://svgo.dev/docs/plugins/"
+    },
+    {
+      "text": "VEC-023 — DOMPurify — XSS sanitizer for HTML, MathML and SVG",
+      "href": "https://github.com/cure53/DOMPurify"
+    },
+    {
+      "text": "VEC-024 — OWASP — File Upload Cheat Sheet",
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+    },
+    {
+      "text": "\n        PreviousPaths and curves",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+    },
+    {
+      "text": "\n        NextAI, EPS and PDF",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+}

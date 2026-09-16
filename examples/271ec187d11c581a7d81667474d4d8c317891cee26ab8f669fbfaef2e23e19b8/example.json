@@ -1,0 +1,45 @@
+{
+  "id": "271ec187d11c581a7d81667474d4d8c317891cee26ab8f669fbfaef2e23e19b8",
+  "prompt": "Two sneakers stacked overlapping at angle, black and burnt orange upper, massive chunky peble-textured midsole, floating on dark gray background, product shot",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 features an excellent spatial arrangement where the objects are positioned to be viewed from multiple angles, significantly enhancing its aesthetic appeal. In contrast, Image 2 is poorly composed, as the sneakers are simply piled on top of each other in a disorganized manner.",
+  "split": "train",
+  "image_group": "ce8515efe358d3377d7208028594b9d0b4fce9b80267a6d109116755ce9eb77d",
+  "image_hashes": [
+    "b3db3e2ada59524ff7a4320c275eae188594997c20eca8bc222aebf0746699c9",
+    "cfc9896f2d6dd8a3760fd2154e45a95c6547494af49dc9b0beea56f43b5f0269"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "a09ef453883cbf16d9945117810788a9158ed059fa293543725c03c372a39df6",
+      "corrected": false,
+      "time": "2026-09-13T22:10:56"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "a09ef453883cbf16d9945117810788a9158ed059fa293543725c03c372a39df6",
+      "corrected": true,
+      "time": "2026-09-13T22:11:00"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 features an excellent spatial arrangement where the objects are positioned to be viewed from multiple angles, significantly enhancing its aesthetic appeal. In contrast, Image 2 is poorly composed, as the sneakers are simply piled on top of each other in a disorganized manner.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:10:58"
+    }
+  ],
+  "feedback": "Image 1 features an excellent spatial arrangement where the objects are positioned to be viewed from multiple angles, significantly enhancing its aesthetic appeal. In contrast, Image 2 is poorly composed, as the sneakers are simply piled on top of each other in a disorganized manner.",
+  "lesson": "When requested, prioritize spatial arrangement over simple stacking to enhance visual appeal and perceived depth; composition matters only when explicitly requested.",
+  "lesson_evidence": "Image 1 features an excellent spatial arrangement where the objects are positioned to be viewed from multiple angles, significantly enhancing its aesthetic appeal.",
+  "lesson_source": "Image 1 features an excellent spatial arrangement where the objects are positioned to be viewed from multiple angles, significantly enhancing its aesthetic appeal. In contrast, Image 2 is poorly composed, as the sneakers are simply piled on top of each other in a disorganized manner."
+}

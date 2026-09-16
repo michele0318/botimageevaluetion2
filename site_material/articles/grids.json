@@ -1,0 +1,159 @@
+{
+  "title": "Grids — Image Wiki",
+  "text": "\n  \n\n  Grids\n  A set of decisions taken once — margins, columns, gutters, modules, baselines — so that no later page needs a fresh decision. It is a system, not a look.\n\n  \n    Termlayout grid / grid system\n    Also calledlayout grid, typographic grid, modular grid, baseline grid, grid system\n    Not the same asSwiss style, rule of thirds, guides and snapping\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        The partsThe baseline gridA grid is not a styleThe Marber GridCommon mistakes\n      \n    \n  \n\n  Open any book at two random spreads and hold them side by side. The text starts at the same height on all four pages. It stops at the same height. The page numbers sit in the same place, the same distance from the trimmed edge. Nobody decided that four times; somebody decided it once.\nThat once-decided set of positions is a grid. Massimo Vignelli's flat definition is worth keeping: for him graphic design is the organisation of information, and the grid is the instrument for it (The Vignelli Canon, p. 21). Its real product is not tidiness. It is that the fortieth page of a job costs a tenth of what the first one cost, because the questions were already answered.\nThe parts\n\nmodulemargincolumngutterDecisions taken oncefour columns, six rows, one set of marginsTwo pages on that same gridnothing about the grid changed, and they look nothing alike\n\nLeft, the anatomy. The margin is the band of nothing between the content and the trimmed edge. Columns are the vertical divisions the content can occupy; the gutter is the fixed gap between two of them, and it exists so two adjacent columns of text never touch. Cross the columns with horizontal divisions and each cell becomes a module — one is highlighted.\nRight, two pages built on that identical grid, and they do not resemble each other. One is a full-width picture over two text columns; the other is a headline and a single wide measure with a narrow marginal column. Same margins, same columns, same modules. This is the point that gets lost: a grid constrains where things may start and stop, not what they are or how they feel.\n\n\nVignelli is precise about the trade-off in module size (p. 21): very small modules constrain nothing, so the grid may as well not exist, while a coarse grid offers too few places to put things. He illustrates the working range on the facing page — 2×4, 3×6, 4×8, 5×4 and 6×6 (p. 22) — then shows the method at its smallest scale on a company letterhead: outside margins at 10 mm, the width divided into three columns with the left one left empty, and a six-module horizontal grid to hang the date and address on (p. 23).\nMargins carry two conventions that look like errors otherwise. In books the outer margin is usually wider than the inner one, and the bottom wider than the top: your thumb needs somewhere to go, two inner margins meet at the gutter and add up, and a text block sitting optically low looks settled rather than sliding off. Margin width is also an expressive control, not just hygiene — Vignelli's line is that tight margins establish a tension between the content and the edge of the page, while wide margins deflate it (p. 47). Margins are usually the largest single piece of Negative space on a page, and they are shaped whether you look at them or not.\n\n\n\nA page from the Gutenberg Bible, about 1455, in the Library of Congress copy (this one hand-illuminated after printing). Public domain.\nEvery part of the diagram above is here, 570 years before anyone said \"grid system\". Two columns with a narrow gutter you could not fit a finger into. A fixed line count per column, so both columns end level. Margins so generous that the text occupies little more than half the sheet, one side margin visibly wider than the other, and a bottom margin about twice the top.\nLook at the right edge of each column: the lines end flush, held there by abbreviations and varying word space. That flushness is not decoration — it is what makes the column read as a rectangle, which is what lets the eye find the next line without hunting. And note the illuminated vine, which ignores the grid completely. A grid governs the structural elements. It does not forbid anything else.\n\n\nThe baseline grid\nThe parts above control horizontal position. A baseline grid controls the vertical one: a fixed ladder of lines, spaced at the leading of the body text, that every line of type lands on. Set 11 pt type on 14 pt leading and the ladder is 14 pt (LAY-005).\n\nNo baseline grideach column keeps its own rhythmOn a baseline gridevery line lands on the same set of lines\n\nFollow the orange line across each panel. Left, no baseline grid: the left column begins under a heading with its own leading, so from there down every one of its lines sits about half a line off the right column's. Right, both columns snapped to the same ladder, so the orange line touches type on both sides.\nTwo things this buys. Across a gutter, aligned lines read as one field instead of two rival rhythms. Through the paper, the lines on the back of a leaf fall behind the lines on the front instead of between them, which stops the show-through from turning the page grey. The cost is real: headings, captions and anything with different leading must either be given a size that is a whole fraction of the ladder, or deliberately released from it.\n\n\nA grid is not a style\nThis is the confusion the field never quite kills. The International Typographic Style — the Swiss grid — took hold from the 1950s. Poster House's account is that its practitioners streamlined compositions by adhering to geometric grid structures, and that the results read as universal, anonymous and modern precisely because they avoided national historical reference (POST-004, POST-005).\nSo a particular look and a particular device arrived together, and the look took the device's name. But the Gutenberg page above is rigorously gridded and looks like the fifteenth century, and the page below is rigorously gridded and looks like nothing anyone would call modernist.\n\n\n\nThe New York Times, front page, 16 April 1912. Public domain.\nEight columns, one fixed gutter, one measure for every line of body text on the sheet. The banner headline spans all eight; the photograph spans four and stops exactly on a column boundary; the stacked one-column decks down the left and right edges are all the same width because there is only one width available. Even the ruled lines that separate stories sit on column boundaries.\nNothing here is spare, quiet or geometric in the Swiss sense. It is grey, cramped and ornamental at the masthead. It is also more strictly gridded than most modernist posters, and it had to be: the grid is what let a dozen people set type in parallel overnight and have it fit.\n\n\nThe Marber Grid\nThe clearest proof that a grid is a decision, not a look, is what happens when a named one gets adopted. Romek Marber built a cover template for Penguin's Crime series in the early 1960s: fixed margins, and the top third reserved for the series name, title and author, leaving the lower two thirds for the image. The V&A, which holds his archive, credits him with the distinctive \"Marber Grid\" and with illustrating in the region of 100 covers for Crime and other series (LAY-016).\nHundreds of books by different illustrators, and the shelf reads as one identity — because the varying part was fenced off from the fixed part. That is what a grid buys at scale, and it is the same idea Cooper Hewitt files under make a system in Poster mechanisms.\nA grid settles where things may go. What the reader does once they are there is hierarchy, and the two get designed together: a heading can only land on the baseline ladder if its size was chosen to fit the ladder.\nCommon mistakes\n\n\"A grid makes everything look like Swiss design.\" The grid is invisible in the printed result. What produces that look is a sans-serif face, flush-left ragged-right setting, a restricted palette and lots of white — all separate choices.\n\"More columns means more freedom.\" Past a point it means less: 12 tiny columns constrain nothing (p. 21).\n\"Golden ratio.\" Vignelli calls the international A paper series a golden rectangle (p. 19); it is not. A0 is 841 × 1189 mm, a ratio of 1:1.414 — the square root of two, chosen so that halving the sheet preserves the proportion. The golden ratio, 1.618, does not do that. Tier-S sources get details wrong; check the arithmetic.\nDesigning the grid before knowing the content. Count the real ingredients first — headings, captions, sidebars, picture shapes — then build a grid that fits them (LAY-004).\nSnapping everything. For round shapes, punctuation and large type, optical alignment beats mathematical alignment. The grid is where you start measuring from, not an authority.\n\n\nReading a page's grid in ten seconds\n\nFind the text block's four edges. Are the margins equal, and if not, which one is widest?\nCount the columns, and check whether the pictures start and stop on column boundaries.\nHold two pages up together. Do the first lines of text coincide?\nCheck a caption or a heading: is it on the same baseline ladder as the body, or deliberately off it?\nAsk what the grid was for. If you cannot find a repeated element it protects, there may not be one.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Type hierarchy on a page\n              How a reader finds their way through a page without being told — by size, weight, space, position and case. Space does more of the work than size does.\n            \n          \n        \n          \n            \n              Negative space\n              The empty parts of an image are shapes too, and you are composing them whether you notice or not.\n            \n          \n        \n          \n            \n              Balance\n              Why one frame feels steady on its feet and another feels like it is tipping over, even though nothing in a picture weighs anything.\n            \n          \n        \n          \n            \n              Poster mechanisms\n              The named moves a poster can make on a passer-by — fourteen of them, several arranged as deliberate opposites — and why they are moves rather than styles.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        LAY-001 — Massimo Vignelli — The Vignelli CanonLAY-016 — V&A — Romek Marber: a lifetime legacy in graphic designPOST-005 — Poster House — The Swiss Grid (digital exhibition)POST-004 — Poster House — The Swiss GridLAY-004 — Book Design Made Simple — Use a layout gridLAY-005 — Book Design Made Simple — Baseline grid essentials\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Grids",
+    "The parts",
+    "The baseline grid",
+    "A grid is not a style",
+    "The Marber Grid",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nmodulemargincolumngutterDecisions taken oncefour columns, six rows, one set of marginsTwo pages on that same gridnothing about the grid changed, and they look nothing alike\n\nLeft, the anatomy. The margin is the band of nothing between the content and the trimmed edge. Columns are the vertical divisions the content can occupy; the gutter is the fixed gap between two of them, and it exists so two adjacent columns of text never touch. Cross the columns with horizontal divisions and each cell becomes a module — one is highlighted.\nRight, two pages built on that identical grid, and they do not resemble each other. One is a full-width picture over two text columns; the other is a headline and a single wide measure with a narrow marginal column. Same margins, same columns, same modules. This is the point that gets lost: a grid constrains where things may start and stop, not what they are or how they feel.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nA page from the Gutenberg Bible, about 1455, in the Library of Congress copy (this one hand-illuminated after printing). Public domain.\nEvery part of the diagram above is here, 570 years before anyone said \"grid system\". Two columns with a narrow gutter you could not fit a finger into. A fixed line count per column, so both columns end level. Margins so generous that the text occupies little more than half the sheet, one side margin visibly wider than the other, and a bottom margin about twice the top.\nLook at the right edge of each column: the lines end flush, held there by abbreviations and varying word space. That flushness is not decoration — it is what makes the column read as a rectangle, which is what lets the eye find the next line without hunting. And note the illuminated vine, which ignores the grid completely. A grid governs the structural elements. It does not forbid anything else.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AVfR8URCW8urYWzx08yo8cD2CSarQp8E63yNk_6Lm0uAtNcbpv0k7ciQjd5oYsDkUXBA7qFc1_no_4bnVvoj-6KvLSfUNJAgN0crFdcLxggDp3_FwfG_TYjFKO09PxKKi46MJIfdhNWg-5R5f27er7fvHma6GyobRmz8plkGQzgUQBvi5jgJxI5IIc2DUZyd6RZhciiiTaoIPgUK1ptGart1zenBZE2cJPfyB7wq_qPhuiwOPKsbfdcP0fFxst2LlDqHh0P-riJMtX3li-8zdo4DNJKQ6v4rYZOsQCAAeyL05CFfCghSmGRgkbMBoslY9x4YcTk3R-EAPufKeMGDePmSckBY7s22kBPaydf6bc_1HRVqJMaNApJCwyTFAtnk5BSzIylnc3pXFEfdtOYzOhYE-0M6zOJtDjt-4nd-8tf2ddDJo05E0h8n1Atr_hI1kj6Oiprd70tygPmBN4FSxfkZIfIiRq3K3KrlwX_62ktnIqqePAIW5vxy1gYMpE4zPiJwTqM-0v6eVYP8pVHGPiwxLt7hX0CdzdJC8IxWHWbF0TE8k4z45fZC7QdC0VA1cU9F7ZQKHx2OUXAvNWXg-oep9QxHWi9k3_rfWpTLLFTrdNtZsc94XeAI6JL3yRRrNnCCWnKMcm4AY50WYfp1QxJoJnfkr-JEk4-ebcO-4_mf1f7Jnh-16nXq9wZAw3b950DJp2EWszWoO58g0tf395pYkBZJE6lBq5lMrwRLoDOJlKbF04ROC9tIx6OYIglMSPrun3YFpVDvGtGtnu8mc3izqG8Oul41wkgqspKuLZYzjN35R0sQvNKsZWszjSiEnAlQxLQtUGBSfplOLKrgltZzdSrE4JpQdETurFDeYeb5N-a0iYzqfdlOY3ouqF1d8xI9gH7mI5nI61qUKG7VgGLBfxgBoweLrHTCE8JafN3Ngvf02RRRP8jDfclboyMSWUfv3eSgyErB-BQ8uemGmlucwfUy9N-ZJkhA76b8A1hp2qf8ooy2ZbFFB5xB78sUY0sHIGBuWPxnCmPcDKYVaYeVWSTIg_vtCUkOw95V5SHKJj2bXhKmtOghnt9yy3XG0pXeSSJhuytHJ69UZgpkKj9X9nTiX251HnbzAgpL2VwrKGSTvzAG22dvVrmwHqrGOebhvF-cpN0nji9_y49dvgzbk0xmO_TcJknQoZ7N1FGCPHQPtJhx2x6wHYJtqHgkgbfBuir9vOMkBhtgiQcwknBSwYlmOyPcuj120k3-PIv0zQYRVX1PeA4EaVNTY_xNM8NJ5uCjNA5vhQWRjXVaiOZg9wmOIAXPMOh4kU6SEwToyFdY9HexhYAYrQ99D8WgYmojEVe3vA8M1bci6J5CEDPspr74I_ELrGZvzInqWRc8ui6xkFP1ICScnebOTaeKG1XZugDLSsISj1bbHR9O1Ouqc7pCsCnKoy35s7Bv3mxtRMV1uKDXBSvsFzDAo9WRw6l7m_mxMtShsxCw9Bxey3gXM7pGbTRC4BCYyVEkRL4dlSyOuclrtdzWaf-UfcfMcVgVy9uIikk4SEo3hmmaDeRV88c8KjESxIARaVx5SqKlasZBnbXLawUQj5alS0WRKxPmH40wzo9NTE6PIW87HnDj7AUdV9eA4oxdzB8NxsxZDh1LMU46VpzWDhKAP5_EZUu49kOCQwi-TWqINmZWUjYvemkncFgp1GWVvutCVOq5EO0Ffx8hQiabxiQy0-RY7QGx2QjVWSeRnapB6A5mDxNnIbEUj2OdYUuZdGMgLxORYAeyud9PaGSYkzX9F1CWs32PlYnDlh4H1eBH5bPE65558weZjpui00-hoyhPnsQ4O-kDNpDgdAbKsxgOtugSkILDG0Y_ktvl6YqkB84RjIPgRgOZu5KfQ-XWD4BCH8axhjRj8nDDWYq9ekgz_o3FMQpFcCq9abw2CaUeOCcPl-s4qEcUMVBW2xEuBtBVwvZP3OQUy6u1OiKoLtdET4UDm6U9HXIxhCTRyfii-mURjWHRrqSs_gw_okFqK1U6h890Yh9CoSSRdrt1uzSqoAjL",
+          "alt": "A page of the Gutenberg Bible: two dense columns of blackletter with wide margins and a painted vine border"
+        }
+      ]
+    },
+    {
+      "caption": "\nNo baseline grideach column keeps its own rhythmOn a baseline gridevery line lands on the same set of lines\n\nFollow the orange line across each panel. Left, no baseline grid: the left column begins under a heading with its own leading, so from there down every one of its lines sits about half a line off the right column's. Right, both columns snapped to the same ladder, so the orange line touches type on both sides.\nTwo things this buys. Across a gutter, aligned lines read as one field instead of two rival rhythms. Through the paper, the lines on the back of a leaf fall behind the lines on the front instead of between them, which stops the show-through from turning the page grey. The cost is real: headings, captions and anything with different leading must either be given a size that is a whole fraction of the ladder, or deliberately released from it.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nThe New York Times, front page, 16 April 1912. Public domain.\nEight columns, one fixed gutter, one measure for every line of body text on the sheet. The banner headline spans all eight; the photograph spans four and stops exactly on a column boundary; the stacked one-column decks down the left and right edges are all the same width because there is only one width available. Even the ruled lines that separate stories sit on column boundaries.\nNothing here is spare, quiet or geometric in the Swiss sense. It is grey, cramped and ornamental at the masthead. It is also more strictly gridded than most modernist posters, and it had to be: the grid is what let a dozen people set type in parallel overnight and have it fit.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AagDApCN73w7a1AMvfG3cMl3JgyP9d24IBga9yvDzqjvRmlwSpHeZbxs51gwjkItjQ0SVV26fZlLm1DIcXQQA6H1CvsS7BIZYh8F6aVRu5KVkc0m2aD_iP0AbqVPkKMZGkE2a621KJSUXWMQcafTX2-ZbrhzHJrdmIjxrR6HSN2bbAm_GBhFAd_53FOz4iVXOr_DlWBJjqmC08uQZGfrYXqHeXUPjMASNFN2LgfO_z3JG14Qbsnb8n7sKQU8vuBLgKS79uBTBzjuAensQ04JLqvc1f4euWkaJ1WrJahLk5Fe41l7503EHdkXvXqmM32AL7HQGVdya-DvmdaLS2c2WZNzM3Q33Mm9um8UVVjzd4atvO9SqU6zc3b9MnBmVrhcZP0f9iCSc2pK6zwLfxwed8O7OWI8b2R_Y319KGg4AwvxI7RkvAeX0PQsG2FuAuEnHEFkO72K_hRYKgBNPjcj5mzxKPglg_GHueHHwwevwvXyH2l1wbPO8o9qRHuiWuDomrU6rbXUf3MqqXqOsCDyQgRCZwJH89JwHgjYOwyNMOJqFBNqAVHD4yFyFt4_rxCwWi8m5Xb4S7HmvtBNhBH135uPegeTXdDYppf_lNHxOKxpYZNTM73t_7TOmSCyOF2u9DYRr__CkHPUjbeW76wgjq31G19rFnKodf9gfykUYJp9dhjL04zsuNjR0jxemCooHMKeRvy3hBukMXPg0DddX8o7zDLTgZpMg5AyHKE500jI1rFFYS7VInZ_z-3ZjZE9Vrr6i7gUT7SEroVg21x001zUlocY_mEstCzwE-y1h2D_voMCAtMuvciHRIYxXX_jpUhSs27kZ5BMZ00mQRYvcMyTKYJYd7k0UfuVjmSUC5JmWlYujF4Ol7J8RtGYLTF96zs2JTyWA_1pByBEslUx_mhz4i5k3QxeqtXDTKWwt0rLbJ_NG_B1wW-0FCvamXWNJy5FwtVFkRX-0drMsVqAf38783C0DZIZ1dU7aMtVnU1y5yvLB3_TSTZPwTQea1ucIphOuqsZuAPWMBx60ZDUctWJ3-WDOFoaHczNhpe_sxj3zz9IuNbSmzl7Zs3Y6Eug3yDVms6Hl3WzWlRfOt-peR9-rdHYW5vVFREgayRt1sFR0_QBQg4UH7RlHvtBKsdX0kzlsWqDjshoELC20tdvQgm4oSLugqXWFhjIKikjbcbAU0afJlMLR-eVfxzga9kBq128THcAV1VU0iHbTeFy19bIsxEeCDOySrL750vVZYvieJ9jJvI-FaasP2blSk8n4KYqf2V0BlK3zrkTT4MgkW1BafxMMY_wsOjNG8-b85EBEfSoMGx2OIkysONjXtrCbi9tUVrEtWdSQkZ0298APnXiXDBd_atvGragL60WhG48cO2zETeaWO0S81T3Qv3w01uLkwTQdZHMJH3h7t4_AtOM_7BreSS0AGPa-yIDUI2nUxL8_74rd36cY8ii878XmPxfTl91_W_8Kb70a9H0SOR-qe7fSN4TyrPr2qTge65PEtv7FlESRgIu998xxeT9zs3IZ4eSjP3Je7JxLaS8YN6uv8y4wUFKvlDm_BnaeEjwDmOPXPIfit1_WVBmM2sW8x3ExXelisvhvEauWJ2myZ8wCUjWCyK7HGqnU3grumK0r28q3Yp4iFasx9-o5BtLndYJmXGCSI9KlW_VC31nfJlBSJghoX_-wObaSSO0s8LAOBefqEpJl_asXR4t4CfCioxGz4_uEyUorc0h4EHFvpGrwpvvw4VHVd1cIiz44i8moz28kdJKzkfaFQ9L4iT3Vq54eetVSM7g2M0SYpms6ueRMkR8RzoHEcEJ0q-CiuM8m4XnZdvNgFEIMt9rRyIp_bqA4VQZUgEW0zLWoXjIuCn7K-lpYZbeBEs0XnxuhJKEE9zLblLoZb5Oc8nfC0qNxYnN-qf7ECfHbM1n9vc28SMzGlYHJ-E1TyrQYcqNeiZ2EbKHFQlI6L8mII75JSfuKb_xUAMW_Ywt9s2t5GBIs7-scef4HsD23p5Iis4-nuUBPJh4n36v0CJFCbn48fV7",
+          "alt": "The New York Times front page of 16 April 1912, eight narrow columns of dense type under a banner headline"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AVfR8URCW8urYWzx08yo8cD2CSarQp8E63yNk_6Lm0uAtNcbpv0k7ciQjd5oYsDkUXBA7qFc1_no_4bnVvoj-6KvLSfUNJAgN0crFdcLxggDp3_FwfG_TYjFKO09PxKKi46MJIfdhNWg-5R5f27er7fvHma6GyobRmz8plkGQzgUQBvi5jgJxI5IIc2DUZyd6RZhciiiTaoIPgUK1ptGart1zenBZE2cJPfyB7wq_qPhuiwOPKsbfdcP0fFxst2LlDqHh0P-riJMtX3li-8zdo4DNJKQ6v4rYZOsQCAAeyL05CFfCghSmGRgkbMBoslY9x4YcTk3R-EAPufKeMGDePmSckBY7s22kBPaydf6bc_1HRVqJMaNApJCwyTFAtnk5BSzIylnc3pXFEfdtOYzOhYE-0M6zOJtDjt-4nd-8tf2ddDJo05E0h8n1Atr_hI1kj6Oiprd70tygPmBN4FSxfkZIfIiRq3K3KrlwX_62ktnIqqePAIW5vxy1gYMpE4zPiJwTqM-0v6eVYP8pVHGPiwxLt7hX0CdzdJC8IxWHWbF0TE8k4z45fZC7QdC0VA1cU9F7ZQKHx2OUXAvNWXg-oep9QxHWi9k3_rfWpTLLFTrdNtZsc94XeAI6JL3yRRrNnCCWnKMcm4AY50WYfp1QxJoJnfkr-JEk4-ebcO-4_mf1f7Jnh-16nXq9wZAw3b950DJp2EWszWoO58g0tf395pYkBZJE6lBq5lMrwRLoDOJlKbF04ROC9tIx6OYIglMSPrun3YFpVDvGtGtnu8mc3izqG8Oul41wkgqspKuLZYzjN35R0sQvNKsZWszjSiEnAlQxLQtUGBSfplOLKrgltZzdSrE4JpQdETurFDeYeb5N-a0iYzqfdlOY3ouqF1d8xI9gH7mI5nI61qUKG7VgGLBfxgBoweLrHTCE8JafN3Ngvf02RRRP8jDfclboyMSWUfv3eSgyErB-BQ8uemGmlucwfUy9N-ZJkhA76b8A1hp2qf8ooy2ZbFFB5xB78sUY0sHIGBuWPxnCmPcDKYVaYeVWSTIg_vtCUkOw95V5SHKJj2bXhKmtOghnt9yy3XG0pXeSSJhuytHJ69UZgpkKj9X9nTiX251HnbzAgpL2VwrKGSTvzAG22dvVrmwHqrGOebhvF-cpN0nji9_y49dvgzbk0xmO_TcJknQoZ7N1FGCPHQPtJhx2x6wHYJtqHgkgbfBuir9vOMkBhtgiQcwknBSwYlmOyPcuj120k3-PIv0zQYRVX1PeA4EaVNTY_xNM8NJ5uCjNA5vhQWRjXVaiOZg9wmOIAXPMOh4kU6SEwToyFdY9HexhYAYrQ99D8WgYmojEVe3vA8M1bci6J5CEDPspr74I_ELrGZvzInqWRc8ui6xkFP1ICScnebOTaeKG1XZugDLSsISj1bbHR9O1Ouqc7pCsCnKoy35s7Bv3mxtRMV1uKDXBSvsFzDAo9WRw6l7m_mxMtShsxCw9Bxey3gXM7pGbTRC4BCYyVEkRL4dlSyOuclrtdzWaf-UfcfMcVgVy9uIikk4SEo3hmmaDeRV88c8KjESxIARaVx5SqKlasZBnbXLawUQj5alS0WRKxPmH40wzo9NTE6PIW87HnDj7AUdV9eA4oxdzB8NxsxZDh1LMU46VpzWDhKAP5_EZUu49kOCQwi-TWqINmZWUjYvemkncFgp1GWVvutCVOq5EO0Ffx8hQiabxiQy0-RY7QGx2QjVWSeRnapB6A5mDxNnIbEUj2OdYUuZdGMgLxORYAeyud9PaGSYkzX9F1CWs32PlYnDlh4H1eBH5bPE65558weZjpui00-hoyhPnsQ4O-kDNpDgdAbKsxgOtugSkILDG0Y_ktvl6YqkB84RjIPgRgOZu5KfQ-XWD4BCH8axhjRj8nDDWYq9ekgz_o3FMQpFcCq9abw2CaUeOCcPl-s4qEcUMVBW2xEuBtBVwvZP3OQUy6u1OiKoLtdET4UDm6U9HXIxhCTRyfii-mURjWHRrqSs_gw_okFqK1U6h890Yh9CoSSRdrt1uzSqoAjL",
+      "alt": "A page of the Gutenberg Bible: two dense columns of blackletter with wide margins and a painted vine border"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AagDApCN73w7a1AMvfG3cMl3JgyP9d24IBga9yvDzqjvRmlwSpHeZbxs51gwjkItjQ0SVV26fZlLm1DIcXQQA6H1CvsS7BIZYh8F6aVRu5KVkc0m2aD_iP0AbqVPkKMZGkE2a621KJSUXWMQcafTX2-ZbrhzHJrdmIjxrR6HSN2bbAm_GBhFAd_53FOz4iVXOr_DlWBJjqmC08uQZGfrYXqHeXUPjMASNFN2LgfO_z3JG14Qbsnb8n7sKQU8vuBLgKS79uBTBzjuAensQ04JLqvc1f4euWkaJ1WrJahLk5Fe41l7503EHdkXvXqmM32AL7HQGVdya-DvmdaLS2c2WZNzM3Q33Mm9um8UVVjzd4atvO9SqU6zc3b9MnBmVrhcZP0f9iCSc2pK6zwLfxwed8O7OWI8b2R_Y319KGg4AwvxI7RkvAeX0PQsG2FuAuEnHEFkO72K_hRYKgBNPjcj5mzxKPglg_GHueHHwwevwvXyH2l1wbPO8o9qRHuiWuDomrU6rbXUf3MqqXqOsCDyQgRCZwJH89JwHgjYOwyNMOJqFBNqAVHD4yFyFt4_rxCwWi8m5Xb4S7HmvtBNhBH135uPegeTXdDYppf_lNHxOKxpYZNTM73t_7TOmSCyOF2u9DYRr__CkHPUjbeW76wgjq31G19rFnKodf9gfykUYJp9dhjL04zsuNjR0jxemCooHMKeRvy3hBukMXPg0DddX8o7zDLTgZpMg5AyHKE500jI1rFFYS7VInZ_z-3ZjZE9Vrr6i7gUT7SEroVg21x001zUlocY_mEstCzwE-y1h2D_voMCAtMuvciHRIYxXX_jpUhSs27kZ5BMZ00mQRYvcMyTKYJYd7k0UfuVjmSUC5JmWlYujF4Ol7J8RtGYLTF96zs2JTyWA_1pByBEslUx_mhz4i5k3QxeqtXDTKWwt0rLbJ_NG_B1wW-0FCvamXWNJy5FwtVFkRX-0drMsVqAf38783C0DZIZ1dU7aMtVnU1y5yvLB3_TSTZPwTQea1ucIphOuqsZuAPWMBx60ZDUctWJ3-WDOFoaHczNhpe_sxj3zz9IuNbSmzl7Zs3Y6Eug3yDVms6Hl3WzWlRfOt-peR9-rdHYW5vVFREgayRt1sFR0_QBQg4UH7RlHvtBKsdX0kzlsWqDjshoELC20tdvQgm4oSLugqXWFhjIKikjbcbAU0afJlMLR-eVfxzga9kBq128THcAV1VU0iHbTeFy19bIsxEeCDOySrL750vVZYvieJ9jJvI-FaasP2blSk8n4KYqf2V0BlK3zrkTT4MgkW1BafxMMY_wsOjNG8-b85EBEfSoMGx2OIkysONjXtrCbi9tUVrEtWdSQkZ0298APnXiXDBd_atvGragL60WhG48cO2zETeaWO0S81T3Qv3w01uLkwTQdZHMJH3h7t4_AtOM_7BreSS0AGPa-yIDUI2nUxL8_74rd36cY8ii878XmPxfTl91_W_8Kb70a9H0SOR-qe7fSN4TyrPr2qTge65PEtv7FlESRgIu998xxeT9zs3IZ4eSjP3Je7JxLaS8YN6uv8y4wUFKvlDm_BnaeEjwDmOPXPIfit1_WVBmM2sW8x3ExXelisvhvEauWJ2myZ8wCUjWCyK7HGqnU3grumK0r28q3Yp4iFasx9-o5BtLndYJmXGCSI9KlW_VC31nfJlBSJghoX_-wObaSSO0s8LAOBefqEpJl_asXR4t4CfCioxGz4_uEyUorc0h4EHFvpGrwpvvw4VHVd1cIiz44i8moz28kdJKzkfaFQ9L4iT3Vq54eetVSM7g2M0SYpms6ueRMkR8RzoHEcEJ0q-CiuM8m4XnZdvNgFEIMt9rRyIp_bqA4VQZUgEW0zLWoXjIuCn7K-lpYZbeBEs0XnxuhJKEE9zLblLoZb5Oc8nfC0qNxYnN-qf7ECfHbM1n9vc28SMzGlYHJ-E1TyrQYcqNeiZ2EbKHFQlI6L8mII75JSfuKb_xUAMW_Ywt9s2t5GBIs7-scef4HsD23p5Iis4-nuUBPJh4n36v0CJFCbn48fV7",
+      "alt": "The New York Times front page of 16 April 1912, eight narrow columns of dense type under a banner headline"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The parts",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#the-parts"
+    },
+    {
+      "text": "The baseline grid",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#the-baseline-grid"
+    },
+    {
+      "text": "A grid is not a style",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#a-grid-is-not-a-style"
+    },
+    {
+      "text": "The Marber Grid",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#the-marber-grid"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#the-parts"
+    },
+    {
+      "text": "Negative space",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/negative-space"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#the-baseline-grid"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#a-grid-is-not-a-style"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#the-marber-grid"
+    },
+    {
+      "text": "Poster mechanisms",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/poster-mechanisms"
+    },
+    {
+      "text": "hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids#common-mistakes"
+    },
+    {
+      "text": "\n              Type hierarchy on a page\n              How a reader finds their way through a page without being told — by size, weight, space, position and case. Space does more of the work than size does.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "\n              Negative space\n              The empty parts of an image are shapes too, and you are composing them whether you notice or not.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/negative-space"
+    },
+    {
+      "text": "\n              Balance\n              Why one frame feels steady on its feet and another feels like it is tipping over, even though nothing in a picture weighs anything.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/balance"
+    },
+    {
+      "text": "\n              Poster mechanisms\n              The named moves a poster can make on a passer-by — fourteen of them, several arranged as deliberate opposites — and why they are moves rather than styles.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/poster-mechanisms"
+    },
+    {
+      "text": "LAY-001 — Massimo Vignelli — The Vignelli Canon",
+      "href": "https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/The%20Vignelli%20Canon.pdf"
+    },
+    {
+      "text": "LAY-016 — V&A — Romek Marber: a lifetime legacy in graphic design",
+      "href": "https://www.vam.ac.uk/blog/projects/romek-marber-a-lifetime-legacy-in-graphic-design"
+    },
+    {
+      "text": "POST-005 — Poster House — The Swiss Grid (digital exhibition)",
+      "href": "https://swissgrid.posterhouse.org/"
+    },
+    {
+      "text": "POST-004 — Poster House — The Swiss Grid",
+      "href": "https://posterhouse.org/exhibition/the-swiss-grid/"
+    },
+    {
+      "text": "LAY-004 — Book Design Made Simple — Use a layout grid",
+      "href": "https://hadleyhouse.substack.com/p/using-a-layout-grid-in-book-design"
+    },
+    {
+      "text": "LAY-005 — Book Design Made Simple — Baseline grid essentials",
+      "href": "https://hadleyhouse.substack.com/p/baseline-grid"
+    },
+    {
+      "text": "\n        PreviousThe first read",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/poster-first-read"
+    },
+    {
+      "text": "\n        NextType hierarchy on a page",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "a0cb9a3a5e241662dfd1fa976fb33ee5fa6294065acaedc618c5163e9ee97d72",
+  "prompt": "\"atto\" 'espresso syrup' logo,  bubbly script lettering",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 is preferred because the typography in the first one is outdated and has too many details for a logo. The font at the bottom also suits the logo in the second image better — in the first one, they look like they’re from different styles.",
+  "split": "train",
+  "image_group": "3b25d53b5c144e6389ead2bde1ae56162184e891191628a4c999c20e78aeb3e8",
+  "image_hashes": [
+    "7a57833d040c3e635038f0f573600334436d4d2fe0493be9c357aad00d837ff5",
+    "acbe9fadd57c508e423e229545475fccfce961a008be6d32a194173cd007ae6f"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "aa7114cd4c7e394bc3fda19241d8a619dc06f28720a713fea1674167599ea137",
+      "corrected": false,
+      "time": "2026-09-13T02:26:26"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "aa7114cd4c7e394bc3fda19241d8a619dc06f28720a713fea1674167599ea137",
+      "corrected": true,
+      "time": "2026-09-13T02:26:30"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 is preferred because the typography in the first one is outdated and has too many details for a logo. The font at the bottom also suits the logo in the second image better — in the first one, they look like they’re from different styles.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:26:28"
+    }
+  ],
+  "feedback": "Image 2 is preferred because the typography in the first one is outdated and has too many details for a logo. The font at the bottom also suits the logo in the second image better — in the first one, they look like they’re from different styles.",
+  "lesson": "If a requested style is specified, prioritize matching typography and visual cohesion; avoid mixing disparate font styles within the same logo design.",
+  "lesson_evidence": "Image 2 is preferred because the typography in the first one is outdated and has too many details for a logo. The font at the bottom also suits the logo in the second image better — in the first one, they look like they’re from different styles.",
+  "lesson_source": "Image 2 is preferred because the typography in the first one is outdated and has too many details for a logo. The font at the bottom also suits the logo in the second image better — in the first one, they look like they’re from different styles."
+}

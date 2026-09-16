@@ -1,0 +1,19 @@
+{
+  "title": "Legibility and readability — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability",
+  "source_hash": "881c8f54a9010619552ce65c64418837015bf852ea157576ea60d3fa2e0622b4",
+  "rules": [
+    {
+      "rule": "If counters (openings) in letters like 'c', 'e', or 'o' appear filled in rather than open when squinting, legibility fails.",
+      "evidence": "Look at a c and an e: are the openings still open, or filled in?"
+    },
+    {
+      "rule": "If gaps between letters in all caps or small caps are large enough to fit another letter, spacing has exceeded legibility limits.",
+      "evidence": "His overboard test is exact — if the gaps are big enough to fit another letter, you have gone too far."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2414,
+  "output_tokens": 256,
+  "processed_at": "2026-09-13T09:31:03"
+}

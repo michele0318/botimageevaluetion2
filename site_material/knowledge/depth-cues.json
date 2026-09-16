@@ -1,0 +1,27 @@
+{
+  "title": "Depth cues — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues",
+  "source_hash": "471d8eb44bdf5ae3c011ed855ee9ca444a5c80c70bada33acb6f5d5497758a9f",
+  "rules": [
+    {
+      "rule": "If an image contains conflicting depth cues, the visual system rejects the minority cue and interprets it as a fault rather than averaging them.",
+      "evidence": "Your eye does not average conflicting cues into a compromise depth; it takes the majority reading, and the odd cue out stops looking like depth and starts looking like a fault."
+    },
+    {
+      "rule": "If an image shows overlapping outlines where one object's edge runs unbroken across another, the unbroken object is interpreted as being in front.",
+      "evidence": "One outline runs unbroken, the other breaks where they meet: the unbroken one is in front. No gradation, no maybe, no skill required."
+    },
+    {
+      "rule": "If an image displays objects of known real size at different apparent sizes, the smaller object is interpreted as being further away.",
+      "evidence": "Two things you know to be the same size, drawn at different sizes. Double the distance and apparent size halves."
+    },
+    {
+      "rule": "If an image shows parallel edges converging or forms shrinking as they recede, this indicates linear perspective creating depth.",
+      "evidence": "Parallel edges converge, and forms shrink as they do. Two effects, one geometry."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2240,
+  "output_tokens": 237,
+  "processed_at": "2026-09-13T09:26:13"
+}

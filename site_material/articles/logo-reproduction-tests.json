@@ -1,0 +1,202 @@
+{
+  "title": "Logo reproduction tests — Image Wiki",
+  "text": "\n  \n\n  Logo reproduction tests\n  The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n\n  \n    Termreproduction tests / logo stress tests\n    Also calledone-colour test, minimum size, clear space, squint test, favicon test\n    Not the same astaste, logo trends, accessibility contrast rules\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        One colourMinimum sizeReversed on darkBlur and silhouetteThread, cutters and other physical floorsNext to competitorsWhy clear space existsCommon mistakes\n      \n    \n  \n\n  Look at the top of your browser. Every open tab is showing somebody's logo at about 16 pixels square, in a row with nine strangers. That is the smallest, most hostile and most frequent place a mark appears, and it is almost never the place it was designed in.\nNone of the tests below is a matter of taste. Each one removes something — colour, size, contrast polarity, sharpness, spare room — and each removal has a mechanism you can name in advance. Paul Rand named the first two as the only mandatory requirements for a logo: reproducible in one colour and at exceedingly small sizes (ID-001).\nThe best available evidence for which failures actually happen is a page written by people who had to police a mark across a whole agency.\n\n\n\nNASA Graphics Standards Manual, 1976, p. 1.6 (ID-006). A US Government work, so the document itself carries no copyright.\nNine numbered failures, and the giveaway is that they are numbered. This is not a designer's wish list; it is a list of things that had already been done to the mark. Note what kinds of things they are. 1, 7, 8: the solid stroke broken up by a pattern or a halftone screen, so the letters stop being one shape. 2, 3: the mark dropped inside a circle or a box, which is what happens when somebody needs it to fill a square slot. 4, 5: outlined and shadowed, the two standard ways of adding \"impact\" that dissolve the silhouette. 6: photographically distorted, here skewed into a fake italic. 9: turned on its side to fit a narrow gap.\nEvery one of these is a person solving a layout problem at 5pm. That is what the tests are defending against.\n\n\nOne colour\n\nAs drawnOne colourFavicon sizeReversed on dark,ink gainBlurredMark Abig shapes,one wide gapMark Bhairlines,a gradient,a tiny counter\n\nThe same two marks, five conditions. Mark A is one disc with one wide chevron-shaped hole. Mark B has a hairline ring, twelve hairline rays, a gradient body and a small central counter.\nFollow row B along. In one colour the gradient collapses and the modelled body becomes a flat blob — any part of a mark distinguished only by hue or by a tonal ramp merges the moment the ramp is gone. At favicon size the hairlines fall below the width of a pixel. Reversed, the light rays spread into the dark ground and fuse with the ring. Blurred, nothing remains but a dark lump. Row A does the same five journeys and arrives intact, because everything in it is a large shape with a large gap.\n\n\nOne colour is not a rare edge case. Rubber stamps, engraving, embossing, laser etching, thermal receipt printers and single-plate printing all have exactly one ink. NASA's 1976 manual notes plainly that government printing regulations \"relegate most NASA publications to a one or two color printing limitation\" (p. 5.2) — the constraint was budget, not aesthetics. Canada's Federal Identity Program keeps all-black and all-white versions on file, and permits the wordmark in some other colour only when that colour is the sole colour in the product (ID-008-c4).\nThe mechanism is the one from Value structure: strip hue and what is left is lightness. If your two shapes were the same lightness in different hues, they are now one shape.\nMinimum size\n\nPrinted 50 mm widePrinted 7 mm wideThe 7 mm print, enlargedOpengap = 3 strokewidthsTightgap = 1/3 of astroke widthgapgap\n\nThe same ring, the same stroke weight, one variable: the width of the gap. Both rows have been given the same fixed amount of spread — the amount ink creeps on paper, or a thread covers, or a pixel of antialiasing adds.\nAt 50 mm that amount is a rounding error. At 7 mm it is a large fraction of a small gap, so the top row loses a little and the bottom row closes completely. Enlarge the 7 mm result and you can see what the reader got: the C has become an O. The mark did not get blurry. It became a different mark.\n\n\nThis is why guidelines carry a number instead of an adjective. GOV.UK sets the wordmark minimum at 50 px wide and the crown at 16 px, and specifies a separate, simplified small crown for anything below that, favicons included (ID-013-c6). Canada issued reproduction proofs in the sizes actually used — the Coat of Arms from 12 mm, the \"Canada\" wordmark from 20 mm.\nReversed on dark\n\n\n\nNASA Graphics Standards Manual, 1976, p. 1.4 (ID-006). A US Government work, so the document itself carries no copyright.\nThree permitted versions on white, then the reversed one. The rules on this page are all about value, not taste: on black or very dark grounds the logotype is always white; on a medium-value ground it may be black or white, whichever reads; and NASA red is forbidden on medium, dark or black grounds — a saturated red against a dark ground has almost no lightness difference to work with, so the letters stop separating.\n\n\nReversing also changes the weight. Light shapes on a dark ground gain: ink spreads into the gaps, screens bloom, and a hairline that was crisp in black on white comes back thick in white on black. Anything narrow closes first — the minimum-size mechanism arriving from another direction.\nBlur and silhouette\nBlurring is a cheap simulation of the conditions marks are usually seen in: thirty metres away, on a moving van, in peripheral vision, on a bad print. What survives is the coarse arrangement of light and dark, which is what the eye uses to recognise things fast (Gestalt grouping, Visual hierarchy).\nThe silhouette test is the harsher version: fill every counter solid and see whether the outline alone is still yours. Marks that pass are the ones people can draw from memory.\nThread, cutters and other physical floors\nA stitch has a width. Embroidered strokes and gaps below roughly a millimetre close up, and the same floor shows up with an engraving cutter, a screen mesh, and cut vinyl that cannot hold an island too small for the machine to lift. NASA's 1976 binder had separate sections for uniform patches and for vinyl decals — which is what you do once you accept that the medium sets the limit, not the drawing.\nNext to competitors\nDistinctiveness is relative, and this is the test people skip. Put nine marks from the same category in a row at 24 pixels and ask someone to point at yours. Three blue circular swooshes in one market means none of them is doing the job from What a logo does.\nWhy clear space exists\nAnything close enough to the mark gets read as part of it — that is grouping by proximity, and it is not optional wiring (Gestalt grouping). Clear space is a fence against a headline, a photo edge or a partner's logo joining the mark and changing its silhouette.\nGood systems express the fence in a unit taken from the mark itself, so it scales automatically. Canada sets the clear space around the \"Canada\" wordmark at the height of its letter C on all four sides, around a flag signature at the height of the flag symbol, and around an arms signature at half the width of the arms (ID-008-c7). NASA's current standard measures the insignia's protected space in N heights from the edge of the sphere (ID-007). GOV.UK measures everything in the dot inside the wordmark.\nCommon mistakes\n\n\"It looks fine on my monitor.\" Your monitor is the one condition the mark will never have to survive.\n\"The gradient is part of our identity.\" Then the identity has no one-colour form, and every stamp, patch and etched panel becomes an improvisation by whoever is holding it.\n\"We'll simplify it for small sizes.\" Reasonable, and GOV.UK does exactly this with the small crown — but a second drawing is a second thing to distribute and police (Identity systems), not a rescue you can bolt on later.\n\"If it survives one colour it survives everything.\" Independent axes. A flat black mark can still be all hairlines.\n\"These tests are subjective.\" Each removes a measurable quantity. If two people disagree about whether a counter closed at 16 px, print it and look.\n\n\nStress-testing a mark in five moves\n\nConvert to pure black on white. Did any two shapes merge into one?\nScale it to 16 px next to nine competitors. Can you still point at it?\nInvert it — white on black. Did the thin parts fatten, and did any counter close?\nBlur it until detail is gone. Is the remaining lump distinctive, or is it a circle?\nFill every counter solid. If the silhouette is still recognisable, the mark is safe almost everywhere.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              What a logo does\n              A mark has one job — to identify one thing and tell it apart from everything else. It does not explain the business and it cannot make the business good; the meaning runs the other way.\n            \n          \n        \n          \n            \n              Identity systems\n              The set of decisions that make a mark work everywhere — colour, typeface, grid, formats, signage, artwork masters and the rules about who may change what. Its real purpose is governance, not beauty.\n            \n          \n        \n          \n            \n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            \n          \n        \n          \n            \n              Gestalt grouping\n              The automatic machinery that turns a field of pixels into objects and groups — and the reason accidental alignments in a photograph look deliberate.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        ID-006 — NASA Graphics Standards Manual, NHB 1430.2, January 1976ID-007 — NASA Brand Guidelines (current)ID-013-c6 — GOV.UK Brand Guidelines — Logo elementsID-008-c7 — Government of Canada, Size and position — Design Standard for the Federal Identity ProgramID-008-c4 — Government of Canada, Colour — Design Standard for the Federal Identity ProgramID-009 — Federal Identity Program Manual, Government of CanadaID-001 — Paul Rand, Logos, Flags, and Escutcheons (AIGA, 1991)\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Logo reproduction tests",
+    "One colour",
+    "Minimum size",
+    "Reversed on dark",
+    "Blur and silhouette",
+    "Thread, cutters and other physical floors",
+    "Next to competitors",
+    "Why clear space exists",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\n\nNASA Graphics Standards Manual, 1976, p. 1.6 (ID-006). A US Government work, so the document itself carries no copyright.\nNine numbered failures, and the giveaway is that they are numbered. This is not a designer's wish list; it is a list of things that had already been done to the mark. Note what kinds of things they are. 1, 7, 8: the solid stroke broken up by a pattern or a halftone screen, so the letters stop being one shape. 2, 3: the mark dropped inside a circle or a box, which is what happens when somebody needs it to fill a square slot. 4, 5: outlined and shadowed, the two standard ways of adding \"impact\" that dissolve the silhouette. 6: photographically distorted, here skewed into a fake italic. 9: turned on its side to fit a narrow gap.\nEvery one of these is a person solving a layout problem at 5pm. That is what the tests are defending against.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Ad60Z8Q8Jyd2xU5M1YO7rAq_r9AnBb7pEnft4fTgMpjhGUKOy7OeV-7PVYW2g5iWbqV5zqRvAlE-Z6UAqUKHCyPtLiJF6RpaJvycIk4XryLziHefLdX0ZOdQ35UiDdaI7ikAGKFxRYe5gS5eIOWic6z5eKmUBq7ehOVTwUSjmSHThw-5WxC6MhGXu8n70i4CtI7NlzxsPLjXcPO3hgNjW_bD9QiSdJyO4b1rm7zd4rvtykVxZQ5-8MaE7YWg-DJs1AZdN5C6vios2PjH_VvIor-gsutaRfxlc8CsP7wzp4CHcRUJwVNnRl9U3Cd24dTyz9dQlukSJo5RvcHVW7F-TNmcOpVIZRRJmYaP8La87aoWWmKeHacs5pf9gLGKlfMBvXeXfqk6FjiyevbbAIG6lXIU9hjTWAEeGM4GnhwoHMyAG1LQWLupR-qYKYy1wqrosJZCkzwph7jRBAgrYlyD4QtTigdvskX9aApTgwexUA8o7nYBUCUABJye8tMy8_eiwLR4DXQtno8Qh15B4RaUFFtww8ob-FXvVhGfmcMLbtYBmOsozNJYKO27QUpRK32gruXXJvA3tmx515tXmZKGk52HKcDkHzPFJ_eXsG9nyeZHNecep3RhnNqVASlG4MTNCbiOXI9I3dIhXBsX_nQzJ5AC9J-ctrBdZAtULlbC5Q-EjOSW0_AiIs9gjeWWs-l7BjirG4tKynhEafvPdnxifzgM67gf7rHxA1CHeIYDrHCZ5f9Jyg3tac6Y1zsJRckgZjMnmaf0Vm7TW0Cn8CHJsdy3_yaP36d8LeLB1rNG1Cx7CcW0PQqwADUSaRK5FtktP8icQlHoHE7-cQ4DN3OKTdpY9PcdEu9T12P8CdXd9SE9S-hcLm9Io7CMS_Cmzz2D93WDhVmDRv_VfAN4zGne3CMw2DktzR-dIykRgILSfBf6ZGIigzP6C2Wlr6tu2cUr6uOEd2BvdqZlWQEV3OiS9BnVowVGmF1GKMwyLEI08IEwSqKwb3l5vw3E9P-qRp0uwrR9RXLz9hK81e8nERrgEdVR0rIBCBlWVO5yUClDDFWUXEl1lEw7mBzMOAsqBmIT9Mz44UUY8UMio5wAEQhqMscxNNDaVfzZ9y7GRyEdwzVcHwkhyW27-ben0tCZOn2RAGAe6VQI4alnxA92GKOZIBkdcyn1aHMc0QAa4f_d0eBRRCJlBSUvI9wayfSELkvmj7Z3G-ZGJG1BBRUPjqb_winAN4qOOFhJdw-wuUFMyHhCv7DCdSn2T3PqaOPvJtJlh_RI1oF_J9LZNB9zfSWUOyHtnJ70-6bT79Wb8Ojyoze4j7lW9MxR5k2iquQpv8uUkx80Ol5Vb-9CauggS8HvRQzpnD6yI6y8GvhlBw95Zz-PBVSWR4XoJOtLNk5AjROL73qM5YrtEXWqELVc0hER4Kvz6ORw2HJ04C09c86GyiC_rDf9kWY3MmDHroIAOj11-Eh4f19PFbx8Q-qofQt12211w3EC5kXkIeloh2imN-8yauG7tGnb5_ocWR_r2J0i6VFDsgR3jHmEcYHhXqWasV7CIoJTJ0xh_U3RZmbknHVWbplhNC1KpwaGgkgL1IO-ufDJd2UgKrBttfhz9dZHJXOBxY0XGw_cmdMv70f7mzln7PhZmg41iLAYfWMe1xUCP95RLuHJfp5x1Dix1EmAh6y_nlsXoUgPTDxYbcLv87eecUodGXZQpFJ_PtctffoluN4X9nwFs8Ur6qVzm4TppzQtVzzoFf70KcCRtFAdOvqOmk8UFwRTMSAiq62vm-b31nOuwqs6Wvuprk8tqFjT9YJVW4-6UlyUMymiCqnZq0UW79SbXEt5IHY-OETNf5-STaNzb8Cho2dSJUivkgFyGMSEIgn3V83O4FVhf-a3J5vJTAdKFS2llpgmD0Jsy0D4EDTceFeD4Ujp9L4x9JMDGgRYtwf3bWWHJvgTbtC4ANvGcMBIuoe265G-R-lDrLoTYr7djrKa4f8Z716txJ8UidozWdOve-vIb4Ek8XCJbSN6QTfQq39BtRsm_p3YdjH4",
+          "alt": "Page 1.6 of the 1976 NASA Graphics Standards Manual: nine numbered examples of the NASA logotype misused — filled with stripes, inside a circle, inside a box, outlined, shadowed, italicised, screened light, screened on dark, and rotated vertical"
+        }
+      ]
+    },
+    {
+      "caption": "\nAs drawnOne colourFavicon sizeReversed on dark,ink gainBlurredMark Abig shapes,one wide gapMark Bhairlines,a gradient,a tiny counter\n\nThe same two marks, five conditions. Mark A is one disc with one wide chevron-shaped hole. Mark B has a hairline ring, twelve hairline rays, a gradient body and a small central counter.\nFollow row B along. In one colour the gradient collapses and the modelled body becomes a flat blob — any part of a mark distinguished only by hue or by a tonal ramp merges the moment the ramp is gone. At favicon size the hairlines fall below the width of a pixel. Reversed, the light rays spread into the dark ground and fuse with the ring. Blurred, nothing remains but a dark lump. Row A does the same five journeys and arrives intact, because everything in it is a large shape with a large gap.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nPrinted 50 mm widePrinted 7 mm wideThe 7 mm print, enlargedOpengap = 3 strokewidthsTightgap = 1/3 of astroke widthgapgap\n\nThe same ring, the same stroke weight, one variable: the width of the gap. Both rows have been given the same fixed amount of spread — the amount ink creeps on paper, or a thread covers, or a pixel of antialiasing adds.\nAt 50 mm that amount is a rounding error. At 7 mm it is a large fraction of a small gap, so the top row loses a little and the bottom row closes completely. Enlarge the 7 mm result and you can see what the reader got: the C has become an O. The mark did not get blurry. It became a different mark.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nNASA Graphics Standards Manual, 1976, p. 1.4 (ID-006). A US Government work, so the document itself carries no copyright.\nThree permitted versions on white, then the reversed one. The rules on this page are all about value, not taste: on black or very dark grounds the logotype is always white; on a medium-value ground it may be black or white, whichever reads; and NASA red is forbidden on medium, dark or black grounds — a saturated red against a dark ground has almost no lightness difference to work with, so the letters stop separating.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AUnY-XOLq02bAO7c7gFqxXCaXTvk8C5w6InBTTxGx2i4mCSuWm5Cl_r_CQxchyi8JZ9IRgW7sDYiLgmJXONISiFq0371ycA_Hfg7RmAZK444Ei2lC0qn7U3fDpENPW9YpLAhrOgQnfgukCV8ZI-NN5EHU0QeMZ9HPRsshBLzRsI4LChKsSpMsb21tUj8MixQonKG503L7n-7cXHLT-4gYrej5Z84koo-Cjg1r0R8rGgQOoKsHNm45W-Mq-oRl2zBosJhN8IUewc0RytLFh6Yusxipk7t_oO_ojnuvo4skf4gIgwq3bvQiCJJC1VuL_BrdVNX7t1sk_HwJj-Fdrk_gOhJ-r4QLlPRZVhlT_SGu4HT7S1arZS2Nwwdb5HuNOKaVHuYsyAQcb8sz7tharoecpMJNNXMI-7NUptlDS9BPbgftOVS3jiGAhGQtn4wfP_Ztkj-QwHvJfyWzC7B0dzXkSgBGiVnezHvdnxOswezWmObXt9Ki2y-uH3ACr4CTLRPZ4IeJ0R3OPRD35BGUrQtLy_veQcEr8uPbQC45iiztmn9eAB0chkpbVGyPgCMm_11TGd2aX9bNtADr8naBJnqcomXG5-LWK-LoCu7zW3Eikm9XQlQG2Qhxg4W93VhwPbJmxtAXHuAudV9nZF2fuw5lgF1NNsWgyc22OeSWEkniK5dRyVo_AFj8uBJhKjheFUiqlbXgF5FhFvnPDVqM8m27jAUVxwgKJjGbWFMvcJR5TadW0Ptnrx8j1H6BvYLRCvMLxe7FE45QDv0j6boK8mzGZsM6aaT2JcKdWwRJHuY5-ZTi7v2-7HFu4GHjRA2m_kA1fVRwwxbXhirN-E74UW9gnqIeOnkQsv4Xf0BR0taZdsqSBV6x8daqp0ZeCBheFwK0v4GcKRHhRzsn2rQXiMyMQQvMi2tHwmBaT1eWH94SVCAIE2Ez57ZtARufX60qMp4Ww7Z2L9d63pduRswMMut8r-ixHUICr9ER7qGUBxd7W1DpKDlkp0NfbdddFlDxL5F3XIMt6ZKrt7eZaev0-X10yswPTmEXX-EM0Vh0axITNnQcIMSq_qiUJDUNCeUSzLgdtH50kk55bKfoIkEO6XC8GbhTw-8SLRmCAT93UA93KU6i4pv-tZyRRK9_gFQ0JYqCs6rPMEeoNcLfdno3VrbQ9IZFiVBziNUEVi7s5B1bhsrkNP0ATOckaVzhuLeK19-WLzgxURQZDtvWutk7_1a-COByU2c8FqDozhMFBWFfuBt1yVa9qWrhWhShroa6mF5WhRx5Otj9-HWlg0GSeQxg6Cssp4T7pfjzuCC-p2FdOHgKUZyhpQGWurBOhVOq1djH_6_Klp6vviBla3j_noADIq62UTA-kthTEGzAvcnCD_mPqJKI98R8uKy_-7xWjtEn27EyyKmUXqnevUmv9EuEZ0vxgvflbaPTsL9qhSQ2AbhwqVVA4LIt1O2112GhHTlxUcoegZA9R3fFFeT-FC9Sh2anVqW1yDeoBg_vf0rhBffGeEU9cGaD9eMB_JZHX1O6TeJmvAxLLoqJoTdPxCBwswBXE9cImFyKOWbd9xFFR8zOP25ZKqoP2CiSyjn8i56_23C1wmA6V33IfEnDXtrMLiQZJRBjNLrzjIGdcVwBY0J6LhbomHtssbORfwqFWXuVe4f57ajHTf754l2I1SKDXD-HST0r-teixJm9Nd86gX3GSeBfW2QGRLJBErtkLOIjAl93EA6zCpqyVN7TQU8U60xi_XXbux9VvkITOFywSLk4pT2mYjxASKsKWghmf4fEsmqGqedGAR09Wo36hVpr7l58HCT7hZEQiwDoaZkqm_LfWBj2jymppEBMs_L9lrGtuQpyDvNwTRI6sa_8sSOQFqs_fzS19fzh8gy5twczo_E880kmxBAiJPwGC8FGlxlFL71lAyLzQz9WJJZGkZTgGgRRbYWpGXuxipv-IlKKi6KbsaR8RTzxDxfc1IphW4rLfEHU6dJOHiC6d4E2bcbrblgS8tlgFrcGZGvP54Q8DWtRoa0b69IMX6m2MMvH1p4",
+          "alt": "Page 1.4 of the 1976 NASA Graphics Standards Manual: the logotype in red, black and warm grey on white, and below it in white reversed out of a black panel"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Ad60Z8Q8Jyd2xU5M1YO7rAq_r9AnBb7pEnft4fTgMpjhGUKOy7OeV-7PVYW2g5iWbqV5zqRvAlE-Z6UAqUKHCyPtLiJF6RpaJvycIk4XryLziHefLdX0ZOdQ35UiDdaI7ikAGKFxRYe5gS5eIOWic6z5eKmUBq7ehOVTwUSjmSHThw-5WxC6MhGXu8n70i4CtI7NlzxsPLjXcPO3hgNjW_bD9QiSdJyO4b1rm7zd4rvtykVxZQ5-8MaE7YWg-DJs1AZdN5C6vios2PjH_VvIor-gsutaRfxlc8CsP7wzp4CHcRUJwVNnRl9U3Cd24dTyz9dQlukSJo5RvcHVW7F-TNmcOpVIZRRJmYaP8La87aoWWmKeHacs5pf9gLGKlfMBvXeXfqk6FjiyevbbAIG6lXIU9hjTWAEeGM4GnhwoHMyAG1LQWLupR-qYKYy1wqrosJZCkzwph7jRBAgrYlyD4QtTigdvskX9aApTgwexUA8o7nYBUCUABJye8tMy8_eiwLR4DXQtno8Qh15B4RaUFFtww8ob-FXvVhGfmcMLbtYBmOsozNJYKO27QUpRK32gruXXJvA3tmx515tXmZKGk52HKcDkHzPFJ_eXsG9nyeZHNecep3RhnNqVASlG4MTNCbiOXI9I3dIhXBsX_nQzJ5AC9J-ctrBdZAtULlbC5Q-EjOSW0_AiIs9gjeWWs-l7BjirG4tKynhEafvPdnxifzgM67gf7rHxA1CHeIYDrHCZ5f9Jyg3tac6Y1zsJRckgZjMnmaf0Vm7TW0Cn8CHJsdy3_yaP36d8LeLB1rNG1Cx7CcW0PQqwADUSaRK5FtktP8icQlHoHE7-cQ4DN3OKTdpY9PcdEu9T12P8CdXd9SE9S-hcLm9Io7CMS_Cmzz2D93WDhVmDRv_VfAN4zGne3CMw2DktzR-dIykRgILSfBf6ZGIigzP6C2Wlr6tu2cUr6uOEd2BvdqZlWQEV3OiS9BnVowVGmF1GKMwyLEI08IEwSqKwb3l5vw3E9P-qRp0uwrR9RXLz9hK81e8nERrgEdVR0rIBCBlWVO5yUClDDFWUXEl1lEw7mBzMOAsqBmIT9Mz44UUY8UMio5wAEQhqMscxNNDaVfzZ9y7GRyEdwzVcHwkhyW27-ben0tCZOn2RAGAe6VQI4alnxA92GKOZIBkdcyn1aHMc0QAa4f_d0eBRRCJlBSUvI9wayfSELkvmj7Z3G-ZGJG1BBRUPjqb_winAN4qOOFhJdw-wuUFMyHhCv7DCdSn2T3PqaOPvJtJlh_RI1oF_J9LZNB9zfSWUOyHtnJ70-6bT79Wb8Ojyoze4j7lW9MxR5k2iquQpv8uUkx80Ol5Vb-9CauggS8HvRQzpnD6yI6y8GvhlBw95Zz-PBVSWR4XoJOtLNk5AjROL73qM5YrtEXWqELVc0hER4Kvz6ORw2HJ04C09c86GyiC_rDf9kWY3MmDHroIAOj11-Eh4f19PFbx8Q-qofQt12211w3EC5kXkIeloh2imN-8yauG7tGnb5_ocWR_r2J0i6VFDsgR3jHmEcYHhXqWasV7CIoJTJ0xh_U3RZmbknHVWbplhNC1KpwaGgkgL1IO-ufDJd2UgKrBttfhz9dZHJXOBxY0XGw_cmdMv70f7mzln7PhZmg41iLAYfWMe1xUCP95RLuHJfp5x1Dix1EmAh6y_nlsXoUgPTDxYbcLv87eecUodGXZQpFJ_PtctffoluN4X9nwFs8Ur6qVzm4TppzQtVzzoFf70KcCRtFAdOvqOmk8UFwRTMSAiq62vm-b31nOuwqs6Wvuprk8tqFjT9YJVW4-6UlyUMymiCqnZq0UW79SbXEt5IHY-OETNf5-STaNzb8Cho2dSJUivkgFyGMSEIgn3V83O4FVhf-a3J5vJTAdKFS2llpgmD0Jsy0D4EDTceFeD4Ujp9L4x9JMDGgRYtwf3bWWHJvgTbtC4ANvGcMBIuoe265G-R-lDrLoTYr7djrKa4f8Z716txJ8UidozWdOve-vIb4Ek8XCJbSN6QTfQq39BtRsm_p3YdjH4",
+      "alt": "Page 1.6 of the 1976 NASA Graphics Standards Manual: nine numbered examples of the NASA logotype misused — filled with stripes, inside a circle, inside a box, outlined, shadowed, italicised, screened light, screened on dark, and rotated vertical"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AUnY-XOLq02bAO7c7gFqxXCaXTvk8C5w6InBTTxGx2i4mCSuWm5Cl_r_CQxchyi8JZ9IRgW7sDYiLgmJXONISiFq0371ycA_Hfg7RmAZK444Ei2lC0qn7U3fDpENPW9YpLAhrOgQnfgukCV8ZI-NN5EHU0QeMZ9HPRsshBLzRsI4LChKsSpMsb21tUj8MixQonKG503L7n-7cXHLT-4gYrej5Z84koo-Cjg1r0R8rGgQOoKsHNm45W-Mq-oRl2zBosJhN8IUewc0RytLFh6Yusxipk7t_oO_ojnuvo4skf4gIgwq3bvQiCJJC1VuL_BrdVNX7t1sk_HwJj-Fdrk_gOhJ-r4QLlPRZVhlT_SGu4HT7S1arZS2Nwwdb5HuNOKaVHuYsyAQcb8sz7tharoecpMJNNXMI-7NUptlDS9BPbgftOVS3jiGAhGQtn4wfP_Ztkj-QwHvJfyWzC7B0dzXkSgBGiVnezHvdnxOswezWmObXt9Ki2y-uH3ACr4CTLRPZ4IeJ0R3OPRD35BGUrQtLy_veQcEr8uPbQC45iiztmn9eAB0chkpbVGyPgCMm_11TGd2aX9bNtADr8naBJnqcomXG5-LWK-LoCu7zW3Eikm9XQlQG2Qhxg4W93VhwPbJmxtAXHuAudV9nZF2fuw5lgF1NNsWgyc22OeSWEkniK5dRyVo_AFj8uBJhKjheFUiqlbXgF5FhFvnPDVqM8m27jAUVxwgKJjGbWFMvcJR5TadW0Ptnrx8j1H6BvYLRCvMLxe7FE45QDv0j6boK8mzGZsM6aaT2JcKdWwRJHuY5-ZTi7v2-7HFu4GHjRA2m_kA1fVRwwxbXhirN-E74UW9gnqIeOnkQsv4Xf0BR0taZdsqSBV6x8daqp0ZeCBheFwK0v4GcKRHhRzsn2rQXiMyMQQvMi2tHwmBaT1eWH94SVCAIE2Ez57ZtARufX60qMp4Ww7Z2L9d63pduRswMMut8r-ixHUICr9ER7qGUBxd7W1DpKDlkp0NfbdddFlDxL5F3XIMt6ZKrt7eZaev0-X10yswPTmEXX-EM0Vh0axITNnQcIMSq_qiUJDUNCeUSzLgdtH50kk55bKfoIkEO6XC8GbhTw-8SLRmCAT93UA93KU6i4pv-tZyRRK9_gFQ0JYqCs6rPMEeoNcLfdno3VrbQ9IZFiVBziNUEVi7s5B1bhsrkNP0ATOckaVzhuLeK19-WLzgxURQZDtvWutk7_1a-COByU2c8FqDozhMFBWFfuBt1yVa9qWrhWhShroa6mF5WhRx5Otj9-HWlg0GSeQxg6Cssp4T7pfjzuCC-p2FdOHgKUZyhpQGWurBOhVOq1djH_6_Klp6vviBla3j_noADIq62UTA-kthTEGzAvcnCD_mPqJKI98R8uKy_-7xWjtEn27EyyKmUXqnevUmv9EuEZ0vxgvflbaPTsL9qhSQ2AbhwqVVA4LIt1O2112GhHTlxUcoegZA9R3fFFeT-FC9Sh2anVqW1yDeoBg_vf0rhBffGeEU9cGaD9eMB_JZHX1O6TeJmvAxLLoqJoTdPxCBwswBXE9cImFyKOWbd9xFFR8zOP25ZKqoP2CiSyjn8i56_23C1wmA6V33IfEnDXtrMLiQZJRBjNLrzjIGdcVwBY0J6LhbomHtssbORfwqFWXuVe4f57ajHTf754l2I1SKDXD-HST0r-teixJm9Nd86gX3GSeBfW2QGRLJBErtkLOIjAl93EA6zCpqyVN7TQU8U60xi_XXbux9VvkITOFywSLk4pT2mYjxASKsKWghmf4fEsmqGqedGAR09Wo36hVpr7l58HCT7hZEQiwDoaZkqm_LfWBj2jymppEBMs_L9lrGtuQpyDvNwTRI6sa_8sSOQFqs_fzS19fzh8gy5twczo_E880kmxBAiJPwGC8FGlxlFL71lAyLzQz9WJJZGkZTgGgRRbYWpGXuxipv-IlKKi6KbsaR8RTzxDxfc1IphW4rLfEHU6dJOHiC6d4E2bcbrblgS8tlgFrcGZGvP54Q8DWtRoa0b69IMX6m2MMvH1p4",
+      "alt": "Page 1.4 of the 1976 NASA Graphics Standards Manual: the logotype in red, black and warm grey on white, and below it in white reversed out of a black panel"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "One colour",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#one-colour"
+    },
+    {
+      "text": "Minimum size",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#minimum-size"
+    },
+    {
+      "text": "Reversed on dark",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#reversed-on-dark"
+    },
+    {
+      "text": "Blur and silhouette",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#blur-and-silhouette"
+    },
+    {
+      "text": "Thread, cutters and other physical floors",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#thread-cutters-and-other-physical-floors"
+    },
+    {
+      "text": "Next to competitors",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#next-to-competitors"
+    },
+    {
+      "text": "Why clear space exists",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#why-clear-space-exists"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#one-colour"
+    },
+    {
+      "text": "Value structure",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#minimum-size"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#reversed-on-dark"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#blur-and-silhouette"
+    },
+    {
+      "text": "Gestalt grouping",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt"
+    },
+    {
+      "text": "Visual hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#thread-cutters-and-other-physical-floors"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#next-to-competitors"
+    },
+    {
+      "text": "What a logo does",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/what-a-logo-does"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#why-clear-space-exists"
+    },
+    {
+      "text": "Gestalt grouping",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests#common-mistakes"
+    },
+    {
+      "text": "Identity systems",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/identity-systems"
+    },
+    {
+      "text": "\n              What a logo does\n              A mark has one job — to identify one thing and tell it apart from everything else. It does not explain the business and it cannot make the business good; the meaning runs the other way.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/what-a-logo-does"
+    },
+    {
+      "text": "\n              Identity systems\n              The set of decisions that make a mark work everywhere — colour, typeface, grid, formats, signage, artwork masters and the rules about who may change what. Its real purpose is governance, not beauty.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/identity-systems"
+    },
+    {
+      "text": "\n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "\n              Gestalt grouping\n              The automatic machinery that turns a field of pixels into objects and groups — and the reason accidental alignments in a photograph look deliberate.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt"
+    },
+    {
+      "text": "ID-006 — NASA Graphics Standards Manual, NHB 1430.2, January 1976",
+      "href": "https://www.nasa.gov/wp-content/uploads/2015/01/nasa_graphics_manual_nhb_1430-2_jan_1976.pdf"
+    },
+    {
+      "text": "ID-007 — NASA Brand Guidelines (current)",
+      "href": "https://www.nasa.gov/nasa-brand-center/brand-guidelines/"
+    },
+    {
+      "text": "ID-013-c6 — GOV.UK Brand Guidelines — Logo elements",
+      "href": "https://brand.design-system.service.gov.uk/logo-system/logo-elements/"
+    },
+    {
+      "text": "ID-008-c7 — Government of Canada, Size and position — Design Standard for the Federal Identity Program",
+      "href": "https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/design-standard/size-position-design-standard-fip.html"
+    },
+    {
+      "text": "ID-008-c4 — Government of Canada, Colour — Design Standard for the Federal Identity Program",
+      "href": "https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/design-standard/colour-design-standard-fip.html"
+    },
+    {
+      "text": "ID-009 — Federal Identity Program Manual, Government of Canada",
+      "href": "https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/federal-identity-program/manual.html"
+    },
+    {
+      "text": "ID-001 — Paul Rand, Logos, Flags, and Escutcheons (AIGA, 1991)",
+      "href": "https://www.paulrand.design/writing/articles/1991-logos-flags-and-escutcheons.html"
+    },
+    {
+      "text": "\n        PreviousIdentity systems",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/identity-systems"
+    },
+    {
+      "text": "\n        NextType anatomy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Colour management — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management",
+  "source_hash": "44033aca4b72139b740ca8ee31567bbe5f3355690014d11562eb30d36acc2eb3",
+  "rules": [
+    {
+      "rule": "If comparing screen RGB to generic CMYK output, expect electric magentas to appear as dusty pink-purple due to gamut shape differences.",
+      "evidence": "Pick the most electric magenta your screen can make and print it on an office printer. What comes back is a dusty pink-purple."
+    },
+    {
+      "rule": "If judging colour accuracy for brand colours or spot inks, choose media-relative colorimetric intent instead of perceptual.",
+      "evidence": "For flat brand colour and spot inks, colorimetric is usually the right answer; perceptual is for photographs."
+    },
+    {
+      "rule": "If converting files early in a pipeline, avoid it because every conversion throws away colours that cannot be recovered.",
+      "evidence": "Every conversion throws away colours you cannot get back. Stay in the wide space and convert once, late, to the profile the printer names."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2998,
+  "output_tokens": 256,
+  "processed_at": "2026-09-13T09:25:23"
+}

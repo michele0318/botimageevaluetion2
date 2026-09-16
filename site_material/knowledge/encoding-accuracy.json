@@ -1,0 +1,19 @@
+{
+  "title": "How accurately a chart can be read — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy",
+  "source_hash": "40f311eb28792163ff1bce27c7d769db990ca4d8a01c55975554ea38f56d6800",
+  "rules": [
+    {
+      "rule": "If comparing values via ink properties like length or angle, assume the reader will consistently underestimate differences and rank them lower than position-based charts.",
+      "evidence": "The failure is not just noisier, it is biased in a known direction: for true percentages between 25 and 50, Cleveland and McGill's subjects consistently underestimated length and angle differences (p. 544)."
+    },
+    {
+      "rule": "If comparing values via colour saturation or shading, assume the reader will conflate light/dark mass with quantity rather than reading an unambiguous magnitude order.",
+      "evidence": "Colour hue and texture were left off deliberately: they have no unambiguous small-to-large order, which makes them good for naming categories and bad for carrying quantities (p. 532)."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2542,
+  "output_tokens": 345,
+  "processed_at": "2026-09-13T09:27:50"
+}

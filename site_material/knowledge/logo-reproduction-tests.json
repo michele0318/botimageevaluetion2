@@ -1,0 +1,27 @@
+{
+  "title": "Logo reproduction tests — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests",
+  "source_hash": "507d03ecbad0add1b772c2aeb807fdb7bfb3c8612674f155c78433818f2e2339",
+  "rules": [
+    {
+      "rule": "If a mark contains gradients or tonal ramps, it will fail the one-colour test because those distinctions merge when hue is removed.",
+      "evidence": "any part of a mark distinguished only by hue or by a tonal ramp merges the moment the ramp is gone"
+    },
+    {
+      "rule": "If a mark has hairline strokes thinner than the pixel width at 16px, it will fail the favicon size test as lines fall below resolution.",
+      "evidence": "At favicon size the hairlines fall below the width of a pixel"
+    },
+    {
+      "rule": "If a mark contains thin counters or narrow gaps smaller than one-third of stroke width, it may close completely when scaled to minimum sizes like 7mm.",
+      "evidence": "At 7 mm it is a large fraction of a small gap, so the top row loses a little and the bottom row closes completely"
+    },
+    {
+      "rule": "If a mark is placed next to nine competitors in the same category at 24px, it will likely fail distinctiveness tests as users cannot point to their own.",
+      "evidence": "Three blue circular swooshes in one market means none of them is doing the job from What a logo does"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2546,
+  "output_tokens": 237,
+  "processed_at": "2026-09-13T09:32:38"
+}

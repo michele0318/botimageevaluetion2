@@ -1,0 +1,35 @@
+{
+  "id": "c84a09db8746f79ce24f7fa2caef0d885e96c63a383ab51f8999e86801eaa764",
+  "prompt": "Whimsical sea turtle character, full body, soft childlike proportions, large glossy eyes with bright highlights, gently smiling expression, beautifully patterned shell with stitched handcrafted texture, flippers slightly outstretched, glossy digital oil painting style, dusty green, beige, soft rose and warm cream color palette, smooth painterly shading, dreamy storybook look, clean white background, printable illustration",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is the superior choice due to its correct anatomical rendering. While Image 2 is overall very pretty and visually appealing, it suffers from a severe and distracting structural flaw—an extra turtle leg bizarrely growing out of its back. This major anatomical issue completely ruins the composition, causing it to lose to the much more accurate Image 1.",
+  "split": "train",
+  "image_group": "53ce7fe8146becbb0bea73502b7bb765c5cd8ab6bd5d0c68bce5db609c837610",
+  "image_hashes": [
+    "2c0fa2503a0821f38e400916d68da8b8abff9401a51426d27919c031fafa5740",
+    "eca0a92c2a10848a41c1164fc2f53995b9d9a2661ffa7c22d1d7d59653b35024"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "a82ccef8d475cf0642e4cb65164fa56fa8d0606a8d32d2734f916c130cc4be10",
+      "corrected": false,
+      "time": "2026-09-13T02:11:25"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:11:26"
+    }
+  ],
+  "feedback": "Image 1 is the superior choice due to its correct anatomical rendering. While Image 2 is overall very pretty and visually appealing, it suffers from a severe and distracting structural flaw—an extra turtle leg bizarrely growing out of its back. This major anatomical issue completely ruins the composition, causing it to lose to the much more accurate Image 1.",
+  "lesson": "If requested style is specified, prioritize anatomical accuracy over aesthetic appeal when structural flaws exist; style preferences do not override biological plausibility.",
+  "lesson_evidence": "Image 1 is the superior choice due to its correct anatomical rendering. While Image 2 is overall very pretty and visually appealing, it suffers from a severe and distracting structural flaw—an extra turtle leg bizarrely growing out of its back. This major anatomical issue completely ruins the composition, causing it to lose to the much more accurate Image 1.",
+  "lesson_source": "Image 1 is the superior choice due to its correct anatomical rendering. While Image 2 is overall very pretty and visually appealing, it suffers from a severe and distracting structural flaw—an extra turtle leg bizarrely growing out of its back. This major anatomical issue completely ruins the composition, causing it to lose to the much more accurate Image 1."
+}

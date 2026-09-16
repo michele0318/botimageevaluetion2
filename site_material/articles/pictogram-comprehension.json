@@ -1,0 +1,134 @@
+{
+  "title": "Testing whether a symbol works — Image Wiki",
+  "text": "\n  \n\n  Testing whether a symbol works\n  You cannot tell whether a symbol is understood by looking at it, because you already know the answer. You find out by testing strangers — and the results are boringly repeatable.\n\n  \n    Termpictogram comprehension testing\n    Also calledsymbol comprehension, icon testing, comprehensibility testing\n    Not the same asaesthetic review, brand approval, legibility testing\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        Why you have to testThe ceiling at about sixteenName the function, not the placePeel the layersCommon mistakes\n      \n    \n  \n\n  Here is a real hospital directory. Four rows in its purple column — a short-stay ward, two named wards, a day unit — carry the same drawing: a figure lying in a bed. In the blue column, three more entries carry that same bed.\nNobody designed that on purpose. It is what happens when a symbol set grows past the point where its members stay different from each other — and it is invisible to whoever drew the set, because they know which ward is which.\n\n\n\nPhoto: Cassian Lodge, department guide at Bronglais General Hospital, Aberystwyth, 2023, via Wikimedia Commons, CC0. Cropped to three of the four zone columns.\nLook down the purple column: Rhiannon Short Stay Ward, Enlli and Ystwyth Wards, Leri Day Unit and Y Banwy all use the bed. In blue, so do Angharad Children's Ward, Meurig Ward and Dyfi. The symbols still work as a class marker — bed means inpatient — but they no longer separate one destination from another, so the reader is back to reading the text.\nTwo good decisions are visible too. The board is split into four colour zones, which is how you keep the number of symbols in view at any one time small. And the fork-and-knife for the dining room sits on a black disc rather than a coloured bar, marking it as a support destination rather than a department.\n\n\nWhy you have to test\nOnce you know what a symbol means, you cannot see it as a stranger does. The meaning arrives before you can stop it and it feels obvious — which is precisely the feeling you get for symbols nobody else understands. A designer's confidence carries no information about comprehension, and neither does a committee's.\nSo the field measures instead. Five tests do most of the work:\n\nNaming with no label. Show the symbol alone and ask an open question: \"What service would you expect here?\" Record the answer verbatim. This is the hard test, and the only one measuring the picture rather than the pair.\nMatching with a label. Give the viewer the symbol and a shortlist of destination names, and ask how well each fits. SEGD used a 0–5 rating for this.\nAt distance. Repeat the naming test at the real reading distance, the one letter height is calculated from. Detail dies first; a symbol needing its interior lines works only in a presentation.\nIn peripheral vision. Signs get found out of the corner of the eye, where acuity and colour are poor and little survives but gross silhouette. A symbol that works there is one people notice at all.\nA confusion matrix. Show every member of the set in random order and record which name each one gets. The diagonal is correct answers; everything off it is a mix-up you can name.\n\n\nthe symbol you showedthe name they gave itCustomsPassport controlTicketsStairsEscalatornamed correctlyshares its main featureshares a minor featureno overlap, no confusionan officer behind a counter, or a diagonal run of steps — the shared feature is where the answers leak\n\nThe layout of the test: what you showed across the top, what people called it down the side. Fill the cells with counts from your own viewers.\nThe shading here marks something you can check before testing — which pairs share their main visual feature. Customs and passport control are both a uniformed figure behind a counter; stairs and escalator are both a diagonal run of steps. Those are the cells that fill up. A matrix with a clean diagonal means the set is discriminable; a matrix with hot blocks tells you which two symbols to redraw, which is more useful than a single average score.\n\n\nThe ceiling at about sixteen\nResearch at the four hospitals in SEGD's programme produced one number worth memorising: visitors have difficulty telling symbols apart once a single set holds more than 16 unique symbols. The measure is not whether the pictogram is readable, but whether it is distinguishable.\nThe mechanism is not memory, it is discriminability. Every symbol has to differ from every other symbol, so the burden grows with the number of pairs: four symbols make six pairs, sixteen make 120. Meanwhile the supply of distinct drawings is limited. Healthcare has a few dozen genuinely different visual ideas — a bed, a heart, an eye, a tooth, a syringe — and once they are spent, each new symbol is a variation on one already in play. That is when the bed starts appearing four times.\n\n4 symbols6 pairs must stay apartAiga coatcheck16 symbols120 pairs must stay apartfour times the symbols, twenty times as many pairs to keep distinct\n\nEvery line is a pair that has to stay distinguishable. Public-domain AIGA/DOT pictograms.\nLeft, four symbols and six pairs; you can audit that by eye in a minute. Right, sixteen symbols and 120 pairs. Four times the symbols, twenty times the work — and any two that share a feature are a pair that will trade places under time pressure.\n\n\nThe fix is not a better drawing, it is fewer symbols in view. Grady Memorial's hierarchy split the hospital into zones so that no more than eight distinct symbols appear in any one zone — same building, same fifty-symbol library, a set small enough to stay discriminable where it is used.\nName the function, not the place\nThe same programme tested how destination names pair with symbols, and found something you can use immediately: names work when they keep the function the symbol depicts.\nTesting the cardiology symbol, users happily matched heart imagery to \"Cardiology Department\", \"Cardio-Pulmonary Services\", \"Heart & Disease Disorders\" and \"Cardiovascular Medicine\". Words that only signal a place — Unit, Center, Clinic, Department, Services — are free additions, so long as the function stays in the name. The reverse does not hold: on the intensive-care symbol, function-based names scored around 4 out of 5, while names leaning on a place or a population dropped as low as 1.\nPeel the layers\nThe neatest method in the guidebook is subtraction. Build a prototype route, send people along it, and vary how much support the signs get:\n\nsymbols only\nsymbols plus English\nsymbols plus English plus a third language\nplus a graphic support\nplus a map\nplus a member of staff\n\nAsk the same questions at every level and you learn which layer is doing the work. At Grady Memorial, 32 people ran the route — 15 native English speakers, 10 Spanish, seven Cambodian — looking for three destinations. A printed handout of the symbol system helped a lot; a generic campus map helped far less. And visitors who relied entirely on staff never learned to use the signs, even in their own language.\nCommon mistakes\n\n\"Twenty colleagues all got it.\" Colleagues know the building, the department names and usually the design intent — the one population whose comprehension is worthless.\n\"87% comprehension, ship it.\" An average hides the shape of the errors. Two symbols swapping places is a redraw; scattered wrong answers mean the concept is unreadable. Only the matrix separates those.\n\"We tested the sign.\" With the label present you measured the pair, not the picture — so do not then build a multilingual system on the picture alone.\n\"Adding a symbol is free.\" Every addition is checked against everything already in the set. Past sixteen it costs you accuracy on symbols that used to work.\n\n\nAuditing a symbol set in five minutes\n\nCount the distinct symbols a viewer can see from one spot. Over sixteen, expect confusion.\nSquint or step back until detail disappears. Which pairs become the same shape?\nCover the text. Can you still tell any two apart, and would you know what either meant?\nRead the destination names. Does each still contain the function the picture shows?\nLook for a repeat — the same drawing on two rows. That is a set that outgrew its vocabulary.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Icon, pictogram, symbol, glyph, logo\n              Five words the field uses interchangeably for five different things. Knowing which one you are looking at tells you what test it has to pass.\n            \n          \n        \n          \n            \n              Sign legibility is arithmetic\n              How big, how thick, how far apart, how much contrast. Most of it is calculated from viewing distance and mounting height, and the legal numbers are floors rather than goals.\n            \n          \n        \n          \n            \n              Wayfinding is not signage\n              Signage is the objects on the wall. Wayfinding is a stranger actually arriving. You can add signs and make wayfinding worse.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        ICON-008 — SEGD / Hablamos Juntos — Universal Symbols in Health Care: Implementation GuidebookWAY-010 — US Access Board — Guide to the ADA Standards, Chapter 7: SignsICON-004 — SEGD — AIGA/DOT Symbols for Transportation (public domain set)WAY-002 — SEGD — Wayfinding Is Where Place Meets Information Design\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Testing whether a symbol works",
+    "Why you have to test",
+    "The ceiling at about sixteen",
+    "Name the function, not the place",
+    "Peel the layers",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\n\nPhoto: Cassian Lodge, department guide at Bronglais General Hospital, Aberystwyth, 2023, via Wikimedia Commons, CC0. Cropped to three of the four zone columns.\nLook down the purple column: Rhiannon Short Stay Ward, Enlli and Ystwyth Wards, Leri Day Unit and Y Banwy all use the bed. In blue, so do Angharad Children's Ward, Meurig Ward and Dyfi. The symbols still work as a class marker — bed means inpatient — but they no longer separate one destination from another, so the reader is back to reading the text.\nTwo good decisions are visible too. The board is split into four colour zones, which is how you keep the number of symbols in view at any one time small. And the fork-and-knife for the dining room sits on a black disc rather than a coloured bar, marking it as a support destination rather than a department.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ATleuhD23FvtcJCZRTxNoaZ_qEoMWLadganFXJaCnt1Kj3ympeBkPxpFehs4MBCRUQOIb8Ljdv1E-132_9FpxLrVMfJNg-YZpQ6DCQwdE1ylydpsHrtNc5FqBBf8EJ7kzbgKTo5-vpCzrypKmZoWRx7NlvM8bBycHBEJ21LebJyaDLTEEGsGlZKg98mdFQAyIY6MsmA1qo3YXTmf0iQxvHW9vei8XIrBP9F6J9HvuqDqAN2Soi_rKYaVMD3ucXIsXZLYrhQvfLuKS6lNqCkNsCkwO-MXqSVBSTvC5rq0uzal05d00OquqLF2TWpVB5qP7wVgsdfiwBkSEQkvqJxunbR3vTUbK-B0MohOzXj9igHfmf8yOZ7rmC8kZ97GRI51beNoOc2lXrMrue2iSxcE8vtgn3yQTgLC99VeHPW1sOr3CYi5PnM9DxDF304Nx390uUz8OQTLA__pXyPWyFVkraKtE_5y8Xp6StwVJb3iLw8N8pRGhuN3Zy9E5gnweJHnVLt006Dh-nMoOfY5AnoRJnhvoQZ7K6KjmuT3ZZ48EcBmMVSsN_A3J2N6ZY3m1R8K3k74ogD8TzqBD68XhDnz0flliUvENG0axEzANo0Vu02xECmE-dJMcVVZDdlYXgiCxucJe__iLE_Oa1osdp9gHsB9XHVVuqhzCQaDORdSaAk8zi_OFAnM4SMKiKaeyync-2Ir-yFnz_Gbnw5dUfHgpMoxejtDVlPRpohGgvNcxwtJujdd2t-8QQBDiKEafsj4LExFRj-E7wG8FCmimLwzE4szLZvVPdQBRUfENklwFQ1R8NO6X5-JPaKJ9I2BTkXdeW3mxBPxLhr3aZjEefYRGM8xen-4gz9PfCRYCBq7k7_R6v6SkQAcath4IfPeixpVCrbkJ2l7oZQ8uQgSDd_eujVDHmKAii6XHdm7mdsspFwWYvaBzCCQB5Vk7_IeK0imuR1HnU78dOXL_Jda7pzCYNTwRxzkhWWLIxwxm3NKHMsg1uwQCR-HFXtxgHjKpIHJ6RHH5V1uPnKnYv1fRZJo2DeB8gfu2Kn5G56DQdCEmBwBsYlF0xS6lBcrdDnxiy6ot8eOLFiimDAyjhkCvX1YXdUkQPzEYI1sYp0wKOKTreJGW7A7AGgRxqCx_oB_7QbAl-eGy2W43HI9oIzDkPhluzxHHa06R4ujgVDw4hd36gtD28ULJI7h7q9OxGt58Gn92RryLx2zclSD2lsnZwIW9ln3IWVUzs7-EkiRMpmZ62_9JhB7s7Lrf0x79LAwji6FWvdeVievKk3lUsLzWxM5Wx8hrjksbltCBgfQj7DDcOJv60f2sxt6Xm_9msABboZ4x3salIjuB_Z-svk4a9YS3Wfx0Mms1OJcjIJDlFEuOfNfXh6Ti-sHhpbjMudxRMHT7UlnEb8kXXzVS0v8nFNnzDqHzRGkBQrhlRgyftl-IPjS8O5FnraYGFXtrNwdsH33mSE9d2UEF5SLWCK3Ude-Lt8PP4yVeslbNI9IXcd-M48bpGY4hUieBLmyuM9ffqxwjYq9acayPc381kY6btjxO3-LlHg7zvTdjmLt0_m5k9MiegOOEX7gWKPvi6ZVtW5LTqbqIwjolf4SeyIT0eXvxX_kvbZxH4DNU9NfZwexqs3tlpZFiOJZoI2lADMObJNCnU7lsHUELIRz1RKCHhFeh9k0JqqJ5RDLKfQquPfYXn0FapWJU6LpJ5ZhG70QIVaYg5XoV6JsrlZjlj7FAzjDEE9gpFs_7jr3JvuiyWwiWQ63IG9XOUAVVnYjLhCQ9Sp9AExinK0Ub9rUd8TxndFGbPW1-A-0drExQLhoQ2DXG5VTPEFlfY2zSy7WZSikAq9tDUEIdg_AXhKMMIVHjIiIFSGZP4q7_xMOgjiVGuy1vZP5b_LkbFFmAjgqy6Bi-ppX9P2dchjdWkqYBerJHyL8W3qEPLhpBNd4N_AN--RYE2g8ksSD6rgbtWcPmztyxl1Fe_1f-r3V08rnoBYiEGM9sgZy4rS5BhBD1Vwn7-gt34NUWkS63pIDbRaJlb4lIeWm",
+          "alt": "Three columns of a Welsh hospital department guide, colour-coded purple, blue and green, each row pairing a small white pictogram with a Welsh and an English department name"
+        }
+      ]
+    },
+    {
+      "caption": "\nthe symbol you showedthe name they gave itCustomsPassport controlTicketsStairsEscalatornamed correctlyshares its main featureshares a minor featureno overlap, no confusionan officer behind a counter, or a diagonal run of steps — the shared feature is where the answers leak\n\nThe layout of the test: what you showed across the top, what people called it down the side. Fill the cells with counts from your own viewers.\nThe shading here marks something you can check before testing — which pairs share their main visual feature. Customs and passport control are both a uniformed figure behind a counter; stairs and escalator are both a diagonal run of steps. Those are the cells that fill up. A matrix with a clean diagonal means the set is discriminable; a matrix with hot blocks tells you which two symbols to redraw, which is more useful than a single average score.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n4 symbols6 pairs must stay apartAiga coatcheck16 symbols120 pairs must stay apartfour times the symbols, twenty times as many pairs to keep distinct\n\nEvery line is a pair that has to stay distinguishable. Public-domain AIGA/DOT pictograms.\nLeft, four symbols and six pairs; you can audit that by eye in a minute. Right, sixteen symbols and 120 pairs. Four times the symbols, twenty times the work — and any two that share a feature are a pair that will trade places under time pressure.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ATleuhD23FvtcJCZRTxNoaZ_qEoMWLadganFXJaCnt1Kj3ympeBkPxpFehs4MBCRUQOIb8Ljdv1E-132_9FpxLrVMfJNg-YZpQ6DCQwdE1ylydpsHrtNc5FqBBf8EJ7kzbgKTo5-vpCzrypKmZoWRx7NlvM8bBycHBEJ21LebJyaDLTEEGsGlZKg98mdFQAyIY6MsmA1qo3YXTmf0iQxvHW9vei8XIrBP9F6J9HvuqDqAN2Soi_rKYaVMD3ucXIsXZLYrhQvfLuKS6lNqCkNsCkwO-MXqSVBSTvC5rq0uzal05d00OquqLF2TWpVB5qP7wVgsdfiwBkSEQkvqJxunbR3vTUbK-B0MohOzXj9igHfmf8yOZ7rmC8kZ97GRI51beNoOc2lXrMrue2iSxcE8vtgn3yQTgLC99VeHPW1sOr3CYi5PnM9DxDF304Nx390uUz8OQTLA__pXyPWyFVkraKtE_5y8Xp6StwVJb3iLw8N8pRGhuN3Zy9E5gnweJHnVLt006Dh-nMoOfY5AnoRJnhvoQZ7K6KjmuT3ZZ48EcBmMVSsN_A3J2N6ZY3m1R8K3k74ogD8TzqBD68XhDnz0flliUvENG0axEzANo0Vu02xECmE-dJMcVVZDdlYXgiCxucJe__iLE_Oa1osdp9gHsB9XHVVuqhzCQaDORdSaAk8zi_OFAnM4SMKiKaeyync-2Ir-yFnz_Gbnw5dUfHgpMoxejtDVlPRpohGgvNcxwtJujdd2t-8QQBDiKEafsj4LExFRj-E7wG8FCmimLwzE4szLZvVPdQBRUfENklwFQ1R8NO6X5-JPaKJ9I2BTkXdeW3mxBPxLhr3aZjEefYRGM8xen-4gz9PfCRYCBq7k7_R6v6SkQAcath4IfPeixpVCrbkJ2l7oZQ8uQgSDd_eujVDHmKAii6XHdm7mdsspFwWYvaBzCCQB5Vk7_IeK0imuR1HnU78dOXL_Jda7pzCYNTwRxzkhWWLIxwxm3NKHMsg1uwQCR-HFXtxgHjKpIHJ6RHH5V1uPnKnYv1fRZJo2DeB8gfu2Kn5G56DQdCEmBwBsYlF0xS6lBcrdDnxiy6ot8eOLFiimDAyjhkCvX1YXdUkQPzEYI1sYp0wKOKTreJGW7A7AGgRxqCx_oB_7QbAl-eGy2W43HI9oIzDkPhluzxHHa06R4ujgVDw4hd36gtD28ULJI7h7q9OxGt58Gn92RryLx2zclSD2lsnZwIW9ln3IWVUzs7-EkiRMpmZ62_9JhB7s7Lrf0x79LAwji6FWvdeVievKk3lUsLzWxM5Wx8hrjksbltCBgfQj7DDcOJv60f2sxt6Xm_9msABboZ4x3salIjuB_Z-svk4a9YS3Wfx0Mms1OJcjIJDlFEuOfNfXh6Ti-sHhpbjMudxRMHT7UlnEb8kXXzVS0v8nFNnzDqHzRGkBQrhlRgyftl-IPjS8O5FnraYGFXtrNwdsH33mSE9d2UEF5SLWCK3Ude-Lt8PP4yVeslbNI9IXcd-M48bpGY4hUieBLmyuM9ffqxwjYq9acayPc381kY6btjxO3-LlHg7zvTdjmLt0_m5k9MiegOOEX7gWKPvi6ZVtW5LTqbqIwjolf4SeyIT0eXvxX_kvbZxH4DNU9NfZwexqs3tlpZFiOJZoI2lADMObJNCnU7lsHUELIRz1RKCHhFeh9k0JqqJ5RDLKfQquPfYXn0FapWJU6LpJ5ZhG70QIVaYg5XoV6JsrlZjlj7FAzjDEE9gpFs_7jr3JvuiyWwiWQ63IG9XOUAVVnYjLhCQ9Sp9AExinK0Ub9rUd8TxndFGbPW1-A-0drExQLhoQ2DXG5VTPEFlfY2zSy7WZSikAq9tDUEIdg_AXhKMMIVHjIiIFSGZP4q7_xMOgjiVGuy1vZP5b_LkbFFmAjgqy6Bi-ppX9P2dchjdWkqYBerJHyL8W3qEPLhpBNd4N_AN--RYE2g8ksSD6rgbtWcPmztyxl1Fe_1f-r3V08rnoBYiEGM9sgZy4rS5BhBD1Vwn7-gt34NUWkS63pIDbRaJlb4lIeWm",
+      "alt": "Three columns of a Welsh hospital department guide, colour-coded purple, blue and green, each row pairing a small white pictogram with a Welsh and an English department name"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Why you have to test",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#why-you-have-to-test"
+    },
+    {
+      "text": "The ceiling at about sixteen",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#the-ceiling-at-about-sixteen"
+    },
+    {
+      "text": "Name the function, not the place",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#name-the-function-not-the-place"
+    },
+    {
+      "text": "Peel the layers",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#peel-the-layers"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#why-you-have-to-test"
+    },
+    {
+      "text": "letter height",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#the-ceiling-at-about-sixteen"
+    },
+    {
+      "text": "pictogram",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#name-the-function-not-the-place"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#peel-the-layers"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension#common-mistakes"
+    },
+    {
+      "text": "\n              Icon, pictogram, symbol, glyph, logo\n              Five words the field uses interchangeably for five different things. Knowing which one you are looking at tells you what test it has to pass.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol"
+    },
+    {
+      "text": "\n              Sign legibility is arithmetic\n              How big, how thick, how far apart, how much contrast. Most of it is calculated from viewing distance and mounting height, and the legal numbers are floors rather than goals.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility"
+    },
+    {
+      "text": "\n              Wayfinding is not signage\n              Signage is the objects on the wall. Wayfinding is a stranger actually arriving. You can add signs and make wayfinding worse.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/wayfinding-vs-signage"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "ICON-008 — SEGD / Hablamos Juntos — Universal Symbols in Health Care: Implementation Guidebook",
+      "href": "https://media.segd.org/s3fs-public/segd_hj_00_full_workbook_1.pdf"
+    },
+    {
+      "text": "WAY-010 — US Access Board — Guide to the ADA Standards, Chapter 7: Signs",
+      "href": "https://www.access-board.gov/ada/guides/chapter-7-signs/"
+    },
+    {
+      "text": "ICON-004 — SEGD — AIGA/DOT Symbols for Transportation (public domain set)",
+      "href": "https://segd.org/resources/aiga-dot-symbols-for-transportation/"
+    },
+    {
+      "text": "WAY-002 — SEGD — Wayfinding Is Where Place Meets Information Design",
+      "href": "https://segd.org/resources/wayfinding-where-place-meets-information-design/"
+    },
+    {
+      "text": "\n        PreviousIcon, pictogram, symbol, glyph, logo",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol"
+    },
+    {
+      "text": "\n        NextWayfinding is not signage",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/wayfinding-vs-signage"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension"
+}

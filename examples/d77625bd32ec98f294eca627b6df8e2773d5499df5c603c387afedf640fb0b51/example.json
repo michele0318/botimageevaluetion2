@@ -1,0 +1,47 @@
+{
+  "id": "d77625bd32ec98f294eca627b6df8e2773d5499df5c603c387afedf640fb0b51",
+  "prompt": "Minimalist laptop icon, pastel pink background, light blue screen, black outline, simple geometric design, flat illustration style, clean lines, vector graphic, tech symbol, modern aesthetic, 2D artwork, digital device representation",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: The images are similar, but image 1 is better because the laptop image in image 2 looks like 3D, whereas the prompt requires a 2D icon.",
+  "split": "train",
+  "image_group": "008e93d786da52f890305b0302aeca184343f70f6bc0e14465a26752e291f8da",
+  "image_hashes": [
+    "6817ab6b7a2dbaf5af4a5913d5c8e129476e8f8d4d8c1cf26d0301831e2dd593",
+    "e33d4d4dd5e75c3fcef19975df05f816017d5ba64891dcefd76bbfc78fb238ae"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "corrected": false,
+      "time": "2026-09-12T20:38:41"
+    }
+  ],
+  "observed_feedback": "You are right!The images are similar, but image 1 is better because the laptop image in image 2 looks like 3D, whereas the prompt requires a 2D icon.\nTo the next task!",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "time": "2026-09-12T20:40:16"
+    },
+    {
+      "previous": "1",
+      "choice": "1",
+      "time": "2026-09-12T20:42:29"
+    },
+    {
+      "previous": "1",
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "time": "2026-09-12T20:43:33"
+    }
+  ],
+  "feedback": "The images are similar, but image 1 is better because the laptop image in image 2 looks like 3D, whereas the prompt requires a 2D icon.",
+  "lesson": "If a 2D style is requested, ensure the output avoids 3D rendering; 2D flatness is non-negotiable unless explicitly stated otherwise.",
+  "lesson_evidence": "The images are similar, but image 1 is better because the laptop image in image 2 looks like 3D, whereas the prompt requires a 2D icon.",
+  "lesson_source": "The images are similar, but image 1 is better because the laptop image in image 2 looks like 3D, whereas the prompt requires a 2D icon."
+}

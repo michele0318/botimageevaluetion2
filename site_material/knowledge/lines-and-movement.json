@@ -1,0 +1,19 @@
+{
+  "title": "Lines and movement — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/lines-and-movement",
+  "source_hash": "07eb38735159b1cfaf799d5cab9d3919941e70ff5cc1dc5814f0c5244b0ddf7a",
+  "rules": [
+    {
+      "rule": "A line leads only if it points to something; a track aimed at an empty field or leaving the frame creates a 'slide' rather than a composition.",
+      "evidence": "Arrives nowhere: the identical line drops you on a blank patch of field, and the barn — still there, still the subject — now has to be found without help."
+    },
+    {
+      "rule": "Implied lines such as gazes or trajectories are often more effective than drawn lines because they create movement without visible marks.",
+      "evidence": "Not one of those lines exists as a mark on the panel, and they are the strongest structure in it."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2809,
+  "output_tokens": 283,
+  "processed_at": "2026-09-13T09:32:22"
+}

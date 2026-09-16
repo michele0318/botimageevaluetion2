@@ -1,0 +1,66 @@
+{
+  "id": "92e93e57b9222746c4e93f55660877beb71667a4da72047e3e51fdf44f7e5dd8",
+  "prompt": "Mister Beast inspired cover image of a 35-year-old man holding a US dollar bill in the foreground, in the background, we see dollars falling from the sky and blowing around over a solid yellow backdrop",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 1 has fewer artifacts with the banknotes and obtrusive text. The second image wins.",
+  "split": "train",
+  "image_group": "6ea67383910a2def30685ab9678d4f7946c2f140eeba05e2923260cf9964629c",
+  "image_hashes": [
+    "fa49e1e36f85f61042fb3952ef2ccc7bcb62cdb5267cec8bd4b65793da80ca9b",
+    "2f525774d5c092a6846c8f4f783794cf31fb84f4f183a698970e1998345de6cb"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "9377f4303e05d0193c8283fadbe25e02bbde49138f1929581d7e33756d608a61",
+      "corrected": false,
+      "time": "2026-09-13T02:08:52"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": false,
+      "assignment": "9377f4303e05d0193c8283fadbe25e02bbde49138f1929581d7e33756d608a61",
+      "corrected": true,
+      "time": "2026-09-13T02:08:57"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "9377f4303e05d0193c8283fadbe25e02bbde49138f1929581d7e33756d608a61",
+      "corrected": true,
+      "time": "2026-09-13T02:10:02"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 has fewer artifacts with the banknotes and obtrusive text. The second image wins.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:08:55"
+    },
+    {
+      "previous": "1",
+      "choice": "1",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:08:59"
+    },
+    {
+      "previous": "1",
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:10:02"
+    }
+  ],
+  "feedback": "Image 1 has fewer artifacts with the banknotes and obtrusive text. The second image wins.",
+  "lesson": "If a requested style is specified, prioritize clarity and minimal artifacts over aesthetic flair; do not add obtrusive text or visual clutter.",
+  "lesson_evidence": "Image 1 has fewer artifacts with the banknotes and obtrusive text. The second image wins.",
+  "lesson_source": "Image 1 has fewer artifacts with the banknotes and obtrusive text. The second image wins."
+}

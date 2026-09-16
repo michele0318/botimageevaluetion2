@@ -1,0 +1,23 @@
+{
+  "title": "Shape, texture and pattern — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shape-texture-pattern",
+  "source_hash": "721aac3def65a983480c801047d6b3c528e4d5ceccdf9f306a506314a40bed40",
+  "rules": [
+    {
+      "rule": "If a repeated element is regular enough that you can predict it, the whole area collapses into a single field known as a pattern.",
+      "evidence": "A pattern is repetition regular enough that you can predict it. Once you can predict it, you stop examining it, and the whole area collapses into a single field."
+    },
+    {
+      "rule": "If an object's outline merges with its surroundings when squinting, it loses its shape identity and becomes part of a texture or background.",
+      "evidence": "Check the subject against the background as a silhouette. Is its outline still separable, or does it merge? If it merges, see Gestalt grouping."
+    },
+    {
+      "rule": "If light is frontal, texture disappears; if raking (parallel to surface), every bump casts a shadow revealing texture.",
+      "evidence": "Raking light reveals texture; frontal light kills it. Put the source almost parallel to the surface and every bump gets a long shadow; put it behind the camera and the shadows hide behind the bumps that cast them."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2836,
+  "output_tokens": 258,
+  "processed_at": "2026-09-13T09:38:16"
+}

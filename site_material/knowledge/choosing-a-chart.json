@@ -1,0 +1,23 @@
+{
+  "title": "Choosing a chart — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart",
+  "source_hash": "c40bfd5ac40145ec4865323af50f7e43014c4befe8ecf498a57d05b55c55e26b",
+  "rules": [
+    {
+      "rule": "Only select a chart type after explicitly naming the relationship in the data that answers the reader's question, rather than starting with a preferred shape.",
+      "evidence": "The reliable way runs the other direction: name the question in plain words, name the relationship in the data that answers it, and only then pick an encoding."
+    },
+    {
+      "rule": "If the question requires comparing two derived variables (like percentage change), plot them side-by-side on a shared scale rather than hoping readers perform mental subtraction.",
+      "evidence": "Plotting two levels side by side and hoping the reader subtracts them is the most common failure in the whole business."
+    },
+    {
+      "rule": "Use a table or large printed number instead of a chart when the reader needs exact values or only one specific number matters.",
+      "evidence": "If the reader needs exact values, use a table. If one number matters, print it large."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2260,
+  "output_tokens": 238,
+  "processed_at": "2026-09-13T09:23:57"
+}

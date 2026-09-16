@@ -1,0 +1,12 @@
+{
+  "id": "e5ae06dc8455c1e16298790a02379335596a76f676dc4f35046efd19d8094085",
+  "prompt": "Faceted glass perfume bottle with a pink liquid and a dark collar, on a weathered natural wood piece, 3d render, labeled with a brand name, no people, no animals",
+  "correct_choice": null,
+  "verification": "",
+  "split": "test",
+  "image_group": "5523db88599368c4ce4d2dcd487cfa0d36701a8ca3f13fe17ca0fc65af429bef",
+  "image_hashes": [
+    "a0b7bf69a991ece48a377b9e56def011e87105eadad86f520b2c7a1b0c5a495e",
+    "ca9dbf3d2218f2b81496c62153e3f0eba01512b86f634dbf33ff5463c314fa47"
+  ]
+}

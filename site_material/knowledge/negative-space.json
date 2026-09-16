@@ -1,0 +1,19 @@
+{
+  "title": "Negative space — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/negative-space",
+  "source_hash": "373a25d0ca8276d70f5b002cdc7cd40aae9d8ca039bd4ab4f43e7037c2c0046c",
+  "rules": [
+    {
+      "rule": "Negative space isolates a subject to make it the focal point; removing it destroys the image's meaning.",
+      "evidence": "Space around an object is also what makes it read as isolated, and isolation is one of the strongest ways to make something the focal point"
+    },
+    {
+      "rule": "If your eye identifies the background as the object, the figure-ground split has gone the wrong way.",
+      "evidence": "Ask which region your eye calls \"the object\". If it picks the background, the figure/ground split has gone the wrong way"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2275,
+  "output_tokens": 210,
+  "processed_at": "2026-09-13T09:34:33"
+}

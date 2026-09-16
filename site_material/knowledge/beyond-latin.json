@@ -1,0 +1,23 @@
+{
+  "title": "Beyond Latin — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin",
+  "source_hash": "8df3a443bbb6ab6fa499caff3781d4b2437794ebe1110f1c643260d3d9374ca7",
+  "rules": [
+    {
+      "rule": "If a line contains mixed-direction text (e.g., numbers in RTL), ensure punctuation aligns with the correct directional run rather than mirroring.",
+      "evidence": "Is the line mixed-direction? Find a number inside RTL text and check the punctuation landed on the correct side."
+    },
+    {
+      "rule": "For CJK scripts, determine if text is vertical or horizontal and verify annotations appear only in the mode required by that layout.",
+      "evidence": "If it is CJK, is the text vertical or horizontal — and are the annotations on the side that mode requires?"
+    },
+    {
+      "rule": "Do not apply Latin rules about word spacing, case hierarchy, or letter-spacing unless the script uses separate letters and distinct upper/lowercase forms.",
+      "evidence": "Ask what the Latin rule you are about to apply depends on. If it needs spaces, case, or letters standing apart, it may not exist here."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2573,
+  "output_tokens": 241,
+  "processed_at": "2026-09-13T09:23:26"
+}

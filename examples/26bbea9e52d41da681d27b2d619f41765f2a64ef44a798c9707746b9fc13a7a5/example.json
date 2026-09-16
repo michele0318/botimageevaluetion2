@@ -1,0 +1,21 @@
+{
+  "id": "26bbea9e52d41da681d27b2d619f41765f2a64ef44a798c9707746b9fc13a7a5",
+  "prompt": "Flat-lay photograph of artwork by Peanuts, with a style reminiscent of KAWS's artwork. The image features four white design sheets arranged in a 2x2 grid on a grey concrete wall. The sheets display bold, painterly black illustrations with 'X' symbols and a cartoon character head. Each sheet has a red logo block containing the brand's name, a character silhouette, and the title of the collaboration. The product line is identified by large, bold red text, and the collection is part of a collaboration with the featured characters and another well-known comic.",
+  "correct_choice": null,
+  "verification": "",
+  "split": "test",
+  "image_group": "a2e2973d7a954600e6f8140b0979ac29266f6fe3efbb660416bf7353f6cad127",
+  "image_hashes": [
+    "a55fa4a8c504af6c42efe9b75f51af5901c83984191d3e77a1ef33e74f793a50",
+    "f48a8d29b27978684cd0eb993c681cdcd363000becc146d550b2cbab2887ab20"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": null,
+      "corrected": false,
+      "time": "2026-09-12T20:28:53"
+    }
+  ]
+}

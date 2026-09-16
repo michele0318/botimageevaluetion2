@@ -1,0 +1,176 @@
+{
+  "title": "Focal length vs camera position — Image Wiki",
+  "text": "\n  \n\n  Focal length vs camera position\n  Where the camera stands decides how big near things look next to far things. The lens only decides how much of that view fits in the frame.\n\n  \n    Termperspective vs focal length\n    Also calledlens compression, perspective distortion, wide-angle distortion, foreshortening\n    Not the same asbarrel distortion, field of view, depth of field\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        Why it happensThe test that ends the argumentSo where does compression come fromWhat focal length genuinely changesBarrel distortion is a different defectCommon mistakes\n      \n    \n  \n\n  Take a selfie at arm's length and your nose comes out too big. Hand the phone to someone across the room, have them zoom until your head fills the same amount of frame, and you look like yourself again.\nAlmost everybody blames the lens, and that is wrong. Perspective — the relative size of near things and far things — is set by where the camera is and only by that. The lens decides how much of the view lands inside the frame.\nWhy it happens\nApparent size falls off with distance, so what shapes an object is not the distance to it but the ratio of the distances to its near part and its far part.\nAt selfie distance the tip of your nose is maybe 30 cm from the lens and your ears about 40 cm. Ratio 1.33, so the nose gets drawn a third bigger relative to the ears than it should be. Step back to two metres: 200 cm and 210 cm, ratio 1.05, and the face flattens out. No glass changed. The ratio changed.\n\nnear postfar post1 m3 mnearfarwhat the frame records3.0 : 1near : farCamera 1 m from the near postwide lens, so both posts still fit the framenear postfar post4 m6 mnearfarwhat the frame records1.5 : 1near : farCamera 4 m from the near postlong lens, so the near post is the same size as before\n\nTwo posts of the same real height, 2 m apart. The only thing that changes between panels is where the camera stands.\nTop: at 1 m the far post is 3 m away — three times as far as the near one — so it is drawn a third the size. Bottom: from 4 m the distances are 4 m and 6 m, a ratio of 1.5, and the posts come out nearly the same size. The lens change is a consequence: keeping the near post the same size from four times further back takes roughly four times the focal length.\n\n\n\n\nClose, wide lens: 17 mm\nFar, long lens: 200 mm\n\n\nArmin Kübelbeck, 2008, from a series at seven focal lengths with the subject held the same size in the frame. Wikimedia Commons, CC BY-SA 3.0.\nHer head is about the same width in both. Now compare the feet, the nearest thing to the camera. At 17 mm one foot is wider than her head and the legs run away down a long stretch of jeans; at 200 mm a foot is about as wide as her head, and the legs have collapsed to almost nothing.\n\n\nThe test that ends the argument\nPhotography Life shot a bridge from a tripod at 24 mm and at 70 mm, then cropped the 24 mm frame to the 70 mm framing — a 285% enlargement, so it looks terrible, and the geometry is identical: same bridge shape, pier railing in the same place. Photograph people at 11 mm on full frame from a sane distance and crop in hard and they look normal too: the super-wide lens distorted nobody, because the camera was not close to anybody.\nIf your feet do not move, changing focal length does exactly what cropping does, minus the lost pixels.\nSo where does compression come from\nFrom standing far away. Photography Life shot one person at 24, 70, 105, 200 and 300 mm, backing up each time to hold her size in the frame; her distance to the background never changed, and by 300 mm two planters 10 m apart looked almost stacked.\n\n\n24 mm, close to the subject\n400 mm, far from the subject\n\n\nFlorian Schott, 2007, same footbridge, same f/5.6, subject held the same size in the frame. Wikimedia Commons, CC BY-SA 3.0.\nFollow the handrail she is leaning on. At 24 mm it runs away down the bridge deck to a vanishing point and brings the whole gorge with it: conifers on the far side drawn small, the rock face beyond them smaller still. At 400 mm that handrail crosses the lower frame almost flat, and the rock face — which never moved — fills the whole background and reads as a wall close behind her.\nShe is the same size in both, so it is the background magnification that changed. The softer rendering on the right is a second consequence of shooting from far back with a long lens; see Depth of field.\n\n\nThe lens gets the credit for this because of a habit: you reach for a long lens when you cannot get close, and a wide one when you cannot get back.\nWhat focal length genuinely changes\n\nAngle of view — how wide a wedge of the world lands in the frame. Everything else follows from this, magnification from a fixed spot included.\nHow much background sits behind your subject, and how large each object in it is drawn.\nThe distance you end up standing at for a given framing — the indirect route to every perspective effect above, and the reason 70-135 mm is called the portrait range.\nHandheld sharpness. Long lenses magnify your own shake; the rule of thumb is a shutter of at least 1/focal length seconds on 35 mm.\nDepth of field from a fixed position at the same f-number — see Depth of field, and Exposure and dynamic range for what an f-number costs elsewhere.\n\nBarrel distortion is a different defect\nOptical distortion is real, measurable and unrelated to all of the above: the lens fails to draw straight lines straight, barrel bowing them outward from the centre, pincushion pulling them inward. Wide zooms are the usual offenders. Look for it on brickwork, window frames, tiled floors, a sea horizon near the top of the frame. It is also small — the Nikon 50mm f/1.4G has roughly 1.4% barrel distortion, obvious on bricks and doing essentially nothing to a face. Photography Life's conclusion is that even the worst-distorting lens will not distort a subject kept away from the camera.\nOne more wide-angle effect is neither of these. A rectilinear lens keeps straight lines straight by stretching the corners, so a face near the edge of a very wide shot comes out egg-shaped and broad-shouldered. That is the flat projection, not a fault in the glass, and it survives the crop test.\nCommon mistakes\n\n\"A wide lens distorts faces.\" Standing 30 cm from a face distorts it. Filling the frame with a face is what puts you at 30 cm.\n\"85mm is a flattering focal length.\" The focal length is a proxy for the working distance it forces on you. An 85 mm portrait flatters because you shot it from two metres.\n\"A telephoto compresses the background.\" Distance compresses it. The telephoto is what lets you be that far away and still frame the subject.\n\"Zooming in is the same as walking closer.\" Zooming changes framing. Walking changes shape. Zoom from where you stand and every relative size stays exactly as it was.\n\"Converging verticals mean a wide lens.\" They mean the camera was tilted up or down. Aim at the horizon and verticals stay parallel with any lens — which is what an architectural shift lens exploits, sliding the frame upward inside an oversized image circle instead of tilting the camera.\n\n\nHow to read camera position out of a photo\n\nFind something whose real proportions you know: a face, a car, a doorway. Near parts oversized against far parts means a close camera, and nothing else.\nLook at the scale of the background. Distant buildings or hills rendered huge behind the subject means the camera was far back with a long lens.\nCheck the straight lines. Bowed near the edges is barrel or pincushion, a lens defect. Converging is camera tilt.\nDo steps 1 and 2 agree? Close-up proportions on a subject in front of a compressed, telephoto-looking background is a strong sign of two images stitched together. Check the shadow edges on both halves too (Hard and soft light).\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Depth of field\n              The band of distance that comes out looking sharp. Everything outside it blurs, and how that blur grows tells you whether a picture came out of a real camera.\n            \n          \n        \n          \n            \n              Exposure and dynamic range\n              How much light got recorded, and how far apart the brightest and darkest thing can be before one of them stops recording at all.\n            \n          \n        \n          \n            \n              Depth cues\n              A picture is a flat surface. It reads as deep because a dozen separate cues all point the same way, and your eye believes the majority.\n            \n          \n        \n          \n            \n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SRC-085 — Photography Life — Does Focal Length Distort Subjects?SRC-084 — Photography Life — What is Lens Compression?SRC-081 — Cambridge in Colour — Understanding Camera LensesSRC-083 — Cambridge in Colour — Tilt-Shift Lenses: Perspective Control\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Focal length vs camera position",
+    "Why it happens",
+    "The test that ends the argument",
+    "So where does compression come from",
+    "What focal length genuinely changes",
+    "Barrel distortion is a different defect",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nnear postfar post1 m3 mnearfarwhat the frame records3.0 : 1near : farCamera 1 m from the near postwide lens, so both posts still fit the framenear postfar post4 m6 mnearfarwhat the frame records1.5 : 1near : farCamera 4 m from the near postlong lens, so the near post is the same size as before\n\nTwo posts of the same real height, 2 m apart. The only thing that changes between panels is where the camera stands.\nTop: at 1 m the far post is 3 m away — three times as far as the near one — so it is drawn a third the size. Bottom: from 4 m the distances are 4 m and 6 m, a ratio of 1.5, and the posts come out nearly the same size. The lens change is a consequence: keeping the near post the same size from four times further back takes roughly four times the focal length.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\nClose, wide lens: 17 mm\nFar, long lens: 200 mm\n\n\nArmin Kübelbeck, 2008, from a series at seven focal lengths with the subject held the same size in the frame. Wikimedia Commons, CC BY-SA 3.0.\nHer head is about the same width in both. Now compare the feet, the nearest thing to the camera. At 17 mm one foot is wider than her head and the legs run away down a long stretch of jeans; at 200 mm a foot is about as wide as her head, and the legs have collapsed to almost nothing.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Acbz3uefEejJxWsVO7RyUj2PxfqyaGTvAMjacJz4r5UIwxihI4p_UtrDKwU-nmlGhSFOZr005gtME8ZP9rK20ZI1ZWjlEo2FrmPq98Ivn6E66SlWu5HfMj2INWmPS9C0NZa4LspAGXsvVYjypWJ7eHf69wUaUlhwmspIIR5MBSFcrPie12YAVYcHs2skLinYZeKwsZt4qqpHaVwgEbE0MMmqxEVavmYjoJh2BzZ3zbsx1if6MdjWjMJNiQKFbAExf932jiPDiIgFi5mVAJrnsU8r0SIRvaY2axDH13LMf2mrevwpyCJ14IiAeMz5XG2Bq0aZJMWYW15ZzJEI_dODeFfhao4AnsGTS8qN5yOdKFm_47s4MVRl0qm7vfCGx8eN-692J4f8QZo6YeEfhTkESmfD6U9RCO_RhjE-gjoT4DSbQDgVPeKXgNjt0Nfxc8T3WeWfZKtIsEcmHD2cZeGxZ_xRV4RoirOR47kXKVe-cGFDnPNljNWkPsS_jW9o7ZWJhWtC-Y1PkPELz074kksMnOD1KKzWBHBc5NWLtSw56ihzFy6MRn0f1VCOaAqU9Hu-q7Bpxu_DOcb9l0ynG33EdEbiOPv8L5hd9ZamYmDYK-S5o8V3Y3Dwpx3E6C70AXDH_pkgzQUcFKUOvE8zU-lpDNaEQOsw1afXfw1vCeBrtzs9136Y607e1fmbVUrfmQW7UyP4PskPPo9vHYlpyCmyDPtNASicXhKDAEuuQHt02PdRsJUVZY55MqlIHbnEWAxUz4aAdkKc8TjnBTHbp3izSlQifJL12seISwgB7j6fBuNkxIAjgcFBII834OvvmnEQc1y1I717mrUYrGq_rZ9Em9jxgKnSBGYdTSGK9KXStEyEoVhzaYT1-dUOI05KUntndPEXEqzMj4cpTVB7ZTkqbAByLeo5acCliDyGRFhXxo9RS63ebMd7fQq8BCm4sPGIjLDuleZIsXeXZWB2gcBcnILblvDEsWV7GOkz0l4XwltQyT5MICuD9TQUQFOz5HU3VBFt8C0HvJQEnX98rI_dyCbTcr_N-oVsTZT3zCkPwunITyMMIYf0vsVMlAaOJkP-nv38H1DuuT7zhOgFQdA7mF9iXIZeymP8liIbgs55Ri5bRrISiCj0o1FcnQVjt5awpjsQ_c3BwYur5ESRIbNKSFaDZGh0_-9gyzykOhArGkFjkOrTJWpdSByY8nen3t1nq0VKY9SLUuV8E27SGwnSc8D7hmOkLmaKzXg-WDrBgrtVd151la059hzLZlYS4MnUxUm2y3XUgApS2oJ7_c9SO09_CYQUv_m3RF-yVN5o21JWwzduG9j0-lkZb7QbH5-0t4Ro4vyqAZMG90GSK3JlATalwKddIoNomIZZfes1etSIRW5W8MuNbwtVWK6_0kt_RdwscHIdMSZknz5rHxh0tdEVF24WHhNvOHdgmicdmCFkEYkLk8qaDnEI6CirKqjSVF6gZZBAAm-kINpvk40wcsi9JHryPM3UsVo4bfqEQnc2s63fcHBXgH4OBGaIepsetuuiXZUAV4_KdNaVyiQQfFrOUaQm2BI8W99pmZUkLcegdDcGyxyenUsI7APL9tJOgQQVm8spqoMSt9mpjgXyCsdHIWuSto902yJzre0jxx3nXvBAV7Pkrrsa8zekg7kNrKT6nOk5XzGQdNzDTMwNuCiyLHjir7_Gv628KQF5i5K6hdrO-SmONw_d6CGZIf_8HyXHTblIA_hDyhF_Ty9uPhnjBPKMXQmnHcBW6L9gbbKdUWA-NuYiagy6MRcek6Gw_Faj12RMoHctKwc9IR3Cwsf1V9mUpnzvJH_sVNNhB-qmpiTC9ottuSoyw3Ujb1sKSadnAKUrHexV1J88NhNSBGxk4XLRBpfdCVlNbFXrmNDDasgrp9Csuc7CD3wp7YS6WzEh4BZ5bVui6i-2QqYucB9pAOly8oqVYH7Draz9amfwOF2g0a-R7BmaV-qvs7YvY6CmK9zhRB2acgTXvIUg-CT1MGHc2gVzdk7hDQ9pEU5iaK9gTx4Qp6GrDDjKm-Ji",
+          "alt": "Close, wide lens: 17 mm"
+        },
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ATN5gAI-eJv7vFpgBZj51Z6OY-ZxjL7v1U3u13hZd6eCcqyF48vPrSseQyqdSPkTDzAhFhJjI45UsSDCy_p-2O3_H6Buuov38RX1PgHb6tfqCMqfs0DkWjeehB9XckEpZS_6SvNfXdJvUzxnCmJmrTyfe8EroN972nBDyDZTEQdr23BUvEzZNQxbqGQ-D60R5p6vSS9FtmEtl5e1cnTi2DUBDpWAxd3ks9zGhYvG2HnsFNp8PZWDdB1K1F8jgza3TbkjdobL0WZ4oJ-mNgXILOXuW-HFRQbpmP-Mgv7_NvYiCn2Etp-uJyybNNZa8aLysdZanR8Jiny6cWHQazxr3w-2mx_TUcNMgNp6JmnHXm8vgVvu3M0VlGjP48AAqwq7QN5V4HDd-zZoI4cn4KndORm0HxihKzU1dgp-H_lle2cX6SDXLuzL5O9jseXTW2pm2Ar6NWMpspFUIHPE95yq6vjQvqJZTVe6oPu3ZlXgY_tM6-3XC4iuUre7Fi3FeUAfvEB_JpQdfjSlDd_F0LCPIESmXDV6qEQc47CGnwyXdjeS4uuwAB76nDrHlFSM8nX23JXWknrq9PnvQj7VKbX60-qG2sy0f7ly171sYh7KYIXsURXsBuK9bb-5XNW-lEvhh-VxUaoh-AxtxQ9iaxAw1e-Moaiiyqf7TiQELbC0bpCK0uo2c3InGuwjHx0o4X8o8UW9wLVAxbJben_9l5wRCTUwXkwb7ltdstmxGP034fCUzP5qfuPROeFekLU2ztbjbADp0jlE51xUVKB9fZoQltxtFcXvaEInP9pVwRhQh4aCtREP9mQRzdbXVUSGtThTIgqJc3CEb1tTkzDgez2tW-FZ3939hi2is2vwN7B98CN3mm-zVwPku6qXP5nTzTRqjujJQUyg2g1Z31goMlT8WMocz-kFAb_L7sv7rkVGOuNdT-Hvy_kaRfDqoLWIlCnGRvYzu2aXOVYl6Y2UEZEjrzMR9IYFt3iErWphBXkmFS7F8YQZnFOoSHD6T4IeKnFNCnKgEcwWlaO5vsHW6x9nipVZ_LLPJdnNUKLhzpWsgVERFEYepbi8jCAJBVMZj9GA9pb1YLO7fjYrb33UBguTD6Rngpp9fXn7CJxP37sFNUgDXq7PcnG83BeT-r6aUve9iaKpG9suU3fz3Tk1ZErqrvVOa7FjPobIO-vxVEpcoEPoqcom1pUSj8STwOswArOEZODgWsWQx0rAD5wx98U6m-2hvLe97rpBkg1r9dl739FUdmzGdFWrDAfbMM7I3xRFvzxEcuqE20enmWY2th3e6OeA7HWq3iajnOT9t4qJNLdMM7Xt__neE0lzWf51L-rU9xndUe1govd-QCNTq5Zfwo4bPDbofkPFoztZjwSdexubYGRYFnCzxh5Hd_g67SO5ziGYOGQ3kCiCG9nJL9eQcje54iYHc6CnCyKOYVZQM1rrquLYfP8CbozoIPcVXP6PFBvKccrlApGB0jK0J6-JYMhfBccYZoD83XHV0HW7XxQF_P7yp1Dy9efqmRSqRHa_1MoxiGmcGropnOCoJ32_1xyZ49pwvywWSL2peB4BGJTxUfyLKF-6mT_y0ek7c3WwLe9-50xDNXNoRMA8sm_4tJBPhf7g2AZkHCnt71iz50ZpOvfNqVfL74PnJsfd9i8rUtHlZeY_SqJzs0_C0gfrMYnts03ltPLHPBC52JKKUMrwRJMrrkCxFCDvZdaOwAyex0kM9MbPEQtbzTvOqzF7oHMYh8hfAukH8Egww4FaIQCa3lYxmirACR6RwFbFNAAGT-YUHaH-_rNgHpOfcviYGZqZziwqSRWEidlNgCm5STOXRf8TdwY3gcrmUxYQwoJE3qGpozA11rINaakUtTuAyLKIJn3hMHRCNEjrxNtNuB6JwRG7_3FBinpxmvOVxxtvHyfXp_8ODGkZuE_vHr_QVslNQGUhhbBsoDoJ3sasrCTGykTOIv2skK3YuspMg5rON0DKoT1SCLElqEzfr6uPooo9l0xP-46Fwhx9fDCsU3AhlWHulOCeUdBhcy3QoypX",
+          "alt": "Far, long lens: 200 mm"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n24 mm, close to the subject\n400 mm, far from the subject\n\n\nFlorian Schott, 2007, same footbridge, same f/5.6, subject held the same size in the frame. Wikimedia Commons, CC BY-SA 3.0.\nFollow the handrail she is leaning on. At 24 mm it runs away down the bridge deck to a vanishing point and brings the whole gorge with it: conifers on the far side drawn small, the rock face beyond them smaller still. At 400 mm that handrail crosses the lower frame almost flat, and the rock face — which never moved — fills the whole background and reads as a wall close behind her.\nShe is the same size in both, so it is the background magnification that changed. The softer rendering on the right is a second consequence of shooting from far back with a long lens; see Depth of field.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ARG5twkD19ggfx6I96U-76xroaAhIMbMFc6tSNvaOB98Ib7BvaDzspM6l3_SFFukCqB6yZqX1xMKJRfSRGDRGSS1bCV0flLbiv5CalwrtSseq4n-073arCl7WyQlhSfyqKuwVHzkzi92jXHoh2nIfFmLKta-wOHiBqY7nWtVtJlRYu8ImFfCAbNgVGYxO3dvaNcimodZDIuI9vyc1P_pLccVBEiVU32Nvy4AkBYcEI5AOncTomOmGU1V0iElKus5nGIUeRQ1qM748BNiU6Z0kPLTKbDrGNqhmXl-IN9DB2umqrKEaaeJPH5FYZkQgFLifCVdJDQMb2WeMZQVLlyIpnZMU3vsMLPWwMMslL_2GACvBgI80gDx_MvZEu-XdTRVvwt6UunX_H0SDGuK6NGkT1tOUzy6p1ssy2UAgQ4xhWvTiQoDpGpf1wkbYEnDVIlUiyGn7n8-534bicTPq7W1UKjLqfRKoOoooV20lXQ_Zhxs7VRQ9u6SEFB2VSLX6-LAixCCKlG1YdUD32H5HOzWVuSUIbvx_son0_Hv4CR6tM9JMOi9o6adVKI-n3Kp0978i0UXwoEGLVeCf_ul6xh2YNfqNwn8oOUaqVdBNulse0SEQd0OWyJM0ky1nbaA3ruNrFsKaBIKTEEMZ0S8aRsxutsulPTgUPNEWMbp8HGYszCM4QG6mMUgG7nFzReWgYy-0u5rUiWDXuInN0xTw9wXbolbqSKBrs9SiJ1FJ7B75SnR4eyOpibnBpyiQfS9LHPWHLv712IcSUNojypu16B37VjaAjKcpfvZohs27Gzba0XwWF2q057Wnyps26YW4_zMEUVOfLIldLDSMxZzh80ypTu2iHnQuMwVWnDh4Xkwm2BI0qpWl9M4Q7X6mg63PWDlBQzBvwG15oWrQ9Es2la-rI3zTBnPaghGM5pvVtDJKJgjaiCoGMxEYyHdFgycdL-3GAdfHkhto3-hy818ZGctSK5ZmHhdWGZ6SE2BoUhIgSStWHlbUgsIlGeMk4CUuSzDHAVHiP2Wjdlyl3CcZjuNsdfJ-HRYh2qnOSl1d107uZZsvqNi4R2vBFVhRIt40pC4HneQywIBbm8gtjcIFuvubf98mQzVHA7zJZgdw7E8tRX5-5NcypkMa0RGQ3sti6yXedKXwKiy44Xaaa35iUoDLSPVrhEI-__gcKlZHAdxk48XVSStIueKvMRAr2Sf_Q4MHCywRC-HKx4CywLzu45vU88L-Qbr_xVK_OoobI7ABDnEEH9G9nhqXxrmYKc0_Eqn1eSh4MipQPb0wkyGhReZiqNBkUzdb5qCr7BinqQIbrgPGeo-T9hZIJxK711OmQ8K2cJnfZ_vPNJ43VgJ8I2U80WWPcgtxqbqtox5o0ve-GoK-3IX9kJrjYK0UEIuYHiRgsIWWs2N41I3Hwkj1lEDlXRT5FR3Omb4_ul9EyRmXzEuRvvWNflhyBJcUrMfTyUCElIt9eYxJq4rp5w8QBegbMG_8LPnoyfPPCIn2RwbaY56DI1mAic4qJ4d4gpk_mjJaqFCXBNb2lRoF-VJr90-dD3vEcIyaoxigyrNQpADsyzNkgDIisukfcF0UvNY5EaBtgCf5-MmJlP6SmimJrZtAvNoComQl0ll_O8n9MoJlqu8DCMkvM7MuTjLcaP84gagxiKU-ED61yyqHEaOk_IjSNmZw7F4kG7GIFwUKNAtax1DSTKsfQOTwWwGb7o3BTie_w4X036QKK1rNPb80kOiikpkNb-89ZozH4XdKFelHlRtpdamR8bM2pXcU9CTR0KeUNdhkIMah4d_oJEk3z9Tm6OhiBQnXAfP65aQvE1a0P6lR3WeyQV2E2aC8L1oRFB-lwItLDcVYD5I5oUO8UdxZwQPFIOmcutnZb-NZFNfyYL7xi_U58INMIOQ3KshwoSfdxOUGarFVKCpZJ3sVnLZxVZmAHxHppcoGX7xu69s1KhiWcnfmrJhGdqw0nWeKTrlduCUywn3nu-iDr1C5wprfWBrpSRxLNK60QYAzIMupBnSNHg7j-JoFRpmTEPKmGQa",
+          "alt": "24 mm, close to the subject"
+        },
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AczFjTPO72Io6L4snEPsQEtWyD1ixGWa_dke37wWxF1L1K8fVu_8mjgUI-mFw-_xtFP2mMkYWXYe_PUM848Xu_jrjz25Kk5CC5k9Xci1h3C-ZuGqneLymm-3AON0fO5KrF6BnvR6o8ZFhVQrH8oJYAA59rdTbgO4ktRY5OHWtjl33Wxu3w7kz0wyH5PdM-QUhIhfonERW33-rj925LxYAtMdEtQ786EqPHOHK0IuLmNaCCTlnj9aD6NxBCumxyW5SY9iVkLSMiFMjO5kdTouViGbaUk1Pcp_DdTeHFM6rGRTONZPcsrytnGzqj87ifbzMG4gkNGPjJ4l3wOnjDLPo9dBIQaWWcuKloH3-mjZfTu_xQOXPUDimwggC4I53DMmM1Y5tLdVwQ3ENELxsbzULNRVHc-jk3f77CLAgFwIyLmRPjprHaj-uO3sIX-9C_kWJeMtsDd9-8AqWILxl_IbL7vv-alYKuDCzdygXT5tmeFggUX0AisW4VZm8zfLoxxlCUDyTS6uqsCE0hLH1jxb6_1enHTE5B5Dv1bzMkWHHpFbrZaiLpEQEC0EDPHJAyDj0BICy1Vz6vCz2HrcJehYycTOXRCSu7-W1Eho4K_lzWkLKLW2uRDH5AGpvkFWgJ1drZtMuEiQm0LYAEZZMWBsCfDj6gjQTmsiod22IkfDS0eavPBC3jqlQu50WV0S947okS3ahCBNv3DxwQ_OMjlVvebCdIgh_zjTzjISscfus0Y76VPh0QA5uIqLBgmUCJSSgLl-HJH5VZVQff7R3DxNLyHI3xmxwJ6y-nD_QCylw2jywiVbL7B80wpllSFslnjhTdWFwqzh_7X7-gnNktWVLQoiAuMRvet8wvzJS2uvuBq19yZ7vlUlZyCzkETezMBK6vQpiP_ylLSy5UR-YU6QzkY3xkaDNt_duUFjMpbrYyY3DchLsYqJxZU0K8bE4tGsZdld-bznDxV3TRrh6dsJl_HYBvKjnWKoccLthGRUthLwrr2LojhX_4dlHPE4FKxDxiBdwaxDPAkcWThSOC_uxUIzvypfxjaj6VmvTKivrWUmXwm8dHCfS35XpAR-S4pwNdxdUgEGFH8vAR_35MYH_s5VpJ0aAsqdvhJ51P10-tRh4nJ_Qx-SCYTJyLUXzgFcoSTY3Zqr4Xi9eiHF4JotugPbfMNRwgpr7Fz6eO7DroLgWlKM_z8zk5ozU3Ic6WyFBQDdeoBW004caY3wQY4uFca72TUYCOdsUyDqzdYOuKJgzWnAJi-N7W37rnYlqVcsGcn8Bf84gnu8q_K6Pg4VGZuhwap-u4C84dm1wR2gLmI5Cuys3mrlshrYbrGkVt8tc2AdfyfzJMDTG2OUHzYuo3n369DY8HGZjjD5iwoTllFyu9MApCyOe0NDR9A7fiY_rtEHOefyhcjoUrqgBxOGmr2Vyog4SOzGLhoLByK0UlqoPDarbbC1956Jw43g9XagNEqlZB6Oio0kCi-p28zmuYCoBt6LHSXLg--qXMXs9krwUD2Mik-g9Q9hQfCigTDL602laITOZptGmKCLhm3bunwy11URwBqxWNDLIIJSe_bqxqOlObaUjGWWNATj_nPINfLyA_7LGzYFWcKBVNgDKX2wBUKOT_xRnFmahweAhxNgbDAOqdpN4U7hNDD14tNRAvoPIff6iXH5766HF2r30qGVIAQYuK8gHOLvZicq1-Pb0w0qUiklYCscY9WRJDGQo_HMzgpcZusi72Y3YfEoA3YkVdc3T8ZInia-xTe6_-skEllfZLkcWVSIhNolVi0XFG1Sp5qP-NQr0c56FG_Za4YWZ7NOcagk-TJpY36Hd26ygXMR_8vUrtZEdFzEGDPcIG0fh_Gh7caw9O9Ld9vrnbOHX0m-eVY-E4E-7voLAiwADdKRoUemK0d5FLsJ2bcZ28NK8ZlHf723-LI_C1c3OOF192BpkjvMYQ-YsjQmar_0OtuPGaCDggs_TULVpjGUrjxpeW5ZCXPZGbUPlZcA_6l8yKXWRfN6vmsl1ZmgB6SDmwIJbamxq7mIigC1ynQ6",
+          "alt": "400 mm, far from the subject"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Acbz3uefEejJxWsVO7RyUj2PxfqyaGTvAMjacJz4r5UIwxihI4p_UtrDKwU-nmlGhSFOZr005gtME8ZP9rK20ZI1ZWjlEo2FrmPq98Ivn6E66SlWu5HfMj2INWmPS9C0NZa4LspAGXsvVYjypWJ7eHf69wUaUlhwmspIIR5MBSFcrPie12YAVYcHs2skLinYZeKwsZt4qqpHaVwgEbE0MMmqxEVavmYjoJh2BzZ3zbsx1if6MdjWjMJNiQKFbAExf932jiPDiIgFi5mVAJrnsU8r0SIRvaY2axDH13LMf2mrevwpyCJ14IiAeMz5XG2Bq0aZJMWYW15ZzJEI_dODeFfhao4AnsGTS8qN5yOdKFm_47s4MVRl0qm7vfCGx8eN-692J4f8QZo6YeEfhTkESmfD6U9RCO_RhjE-gjoT4DSbQDgVPeKXgNjt0Nfxc8T3WeWfZKtIsEcmHD2cZeGxZ_xRV4RoirOR47kXKVe-cGFDnPNljNWkPsS_jW9o7ZWJhWtC-Y1PkPELz074kksMnOD1KKzWBHBc5NWLtSw56ihzFy6MRn0f1VCOaAqU9Hu-q7Bpxu_DOcb9l0ynG33EdEbiOPv8L5hd9ZamYmDYK-S5o8V3Y3Dwpx3E6C70AXDH_pkgzQUcFKUOvE8zU-lpDNaEQOsw1afXfw1vCeBrtzs9136Y607e1fmbVUrfmQW7UyP4PskPPo9vHYlpyCmyDPtNASicXhKDAEuuQHt02PdRsJUVZY55MqlIHbnEWAxUz4aAdkKc8TjnBTHbp3izSlQifJL12seISwgB7j6fBuNkxIAjgcFBII834OvvmnEQc1y1I717mrUYrGq_rZ9Em9jxgKnSBGYdTSGK9KXStEyEoVhzaYT1-dUOI05KUntndPEXEqzMj4cpTVB7ZTkqbAByLeo5acCliDyGRFhXxo9RS63ebMd7fQq8BCm4sPGIjLDuleZIsXeXZWB2gcBcnILblvDEsWV7GOkz0l4XwltQyT5MICuD9TQUQFOz5HU3VBFt8C0HvJQEnX98rI_dyCbTcr_N-oVsTZT3zCkPwunITyMMIYf0vsVMlAaOJkP-nv38H1DuuT7zhOgFQdA7mF9iXIZeymP8liIbgs55Ri5bRrISiCj0o1FcnQVjt5awpjsQ_c3BwYur5ESRIbNKSFaDZGh0_-9gyzykOhArGkFjkOrTJWpdSByY8nen3t1nq0VKY9SLUuV8E27SGwnSc8D7hmOkLmaKzXg-WDrBgrtVd151la059hzLZlYS4MnUxUm2y3XUgApS2oJ7_c9SO09_CYQUv_m3RF-yVN5o21JWwzduG9j0-lkZb7QbH5-0t4Ro4vyqAZMG90GSK3JlATalwKddIoNomIZZfes1etSIRW5W8MuNbwtVWK6_0kt_RdwscHIdMSZknz5rHxh0tdEVF24WHhNvOHdgmicdmCFkEYkLk8qaDnEI6CirKqjSVF6gZZBAAm-kINpvk40wcsi9JHryPM3UsVo4bfqEQnc2s63fcHBXgH4OBGaIepsetuuiXZUAV4_KdNaVyiQQfFrOUaQm2BI8W99pmZUkLcegdDcGyxyenUsI7APL9tJOgQQVm8spqoMSt9mpjgXyCsdHIWuSto902yJzre0jxx3nXvBAV7Pkrrsa8zekg7kNrKT6nOk5XzGQdNzDTMwNuCiyLHjir7_Gv628KQF5i5K6hdrO-SmONw_d6CGZIf_8HyXHTblIA_hDyhF_Ty9uPhnjBPKMXQmnHcBW6L9gbbKdUWA-NuYiagy6MRcek6Gw_Faj12RMoHctKwc9IR3Cwsf1V9mUpnzvJH_sVNNhB-qmpiTC9ottuSoyw3Ujb1sKSadnAKUrHexV1J88NhNSBGxk4XLRBpfdCVlNbFXrmNDDasgrp9Csuc7CD3wp7YS6WzEh4BZ5bVui6i-2QqYucB9pAOly8oqVYH7Draz9amfwOF2g0a-R7BmaV-qvs7YvY6CmK9zhRB2acgTXvIUg-CT1MGHc2gVzdk7hDQ9pEU5iaK9gTx4Qp6GrDDjKm-Ji",
+      "alt": "Close, wide lens: 17 mm"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ATN5gAI-eJv7vFpgBZj51Z6OY-ZxjL7v1U3u13hZd6eCcqyF48vPrSseQyqdSPkTDzAhFhJjI45UsSDCy_p-2O3_H6Buuov38RX1PgHb6tfqCMqfs0DkWjeehB9XckEpZS_6SvNfXdJvUzxnCmJmrTyfe8EroN972nBDyDZTEQdr23BUvEzZNQxbqGQ-D60R5p6vSS9FtmEtl5e1cnTi2DUBDpWAxd3ks9zGhYvG2HnsFNp8PZWDdB1K1F8jgza3TbkjdobL0WZ4oJ-mNgXILOXuW-HFRQbpmP-Mgv7_NvYiCn2Etp-uJyybNNZa8aLysdZanR8Jiny6cWHQazxr3w-2mx_TUcNMgNp6JmnHXm8vgVvu3M0VlGjP48AAqwq7QN5V4HDd-zZoI4cn4KndORm0HxihKzU1dgp-H_lle2cX6SDXLuzL5O9jseXTW2pm2Ar6NWMpspFUIHPE95yq6vjQvqJZTVe6oPu3ZlXgY_tM6-3XC4iuUre7Fi3FeUAfvEB_JpQdfjSlDd_F0LCPIESmXDV6qEQc47CGnwyXdjeS4uuwAB76nDrHlFSM8nX23JXWknrq9PnvQj7VKbX60-qG2sy0f7ly171sYh7KYIXsURXsBuK9bb-5XNW-lEvhh-VxUaoh-AxtxQ9iaxAw1e-Moaiiyqf7TiQELbC0bpCK0uo2c3InGuwjHx0o4X8o8UW9wLVAxbJben_9l5wRCTUwXkwb7ltdstmxGP034fCUzP5qfuPROeFekLU2ztbjbADp0jlE51xUVKB9fZoQltxtFcXvaEInP9pVwRhQh4aCtREP9mQRzdbXVUSGtThTIgqJc3CEb1tTkzDgez2tW-FZ3939hi2is2vwN7B98CN3mm-zVwPku6qXP5nTzTRqjujJQUyg2g1Z31goMlT8WMocz-kFAb_L7sv7rkVGOuNdT-Hvy_kaRfDqoLWIlCnGRvYzu2aXOVYl6Y2UEZEjrzMR9IYFt3iErWphBXkmFS7F8YQZnFOoSHD6T4IeKnFNCnKgEcwWlaO5vsHW6x9nipVZ_LLPJdnNUKLhzpWsgVERFEYepbi8jCAJBVMZj9GA9pb1YLO7fjYrb33UBguTD6Rngpp9fXn7CJxP37sFNUgDXq7PcnG83BeT-r6aUve9iaKpG9suU3fz3Tk1ZErqrvVOa7FjPobIO-vxVEpcoEPoqcom1pUSj8STwOswArOEZODgWsWQx0rAD5wx98U6m-2hvLe97rpBkg1r9dl739FUdmzGdFWrDAfbMM7I3xRFvzxEcuqE20enmWY2th3e6OeA7HWq3iajnOT9t4qJNLdMM7Xt__neE0lzWf51L-rU9xndUe1govd-QCNTq5Zfwo4bPDbofkPFoztZjwSdexubYGRYFnCzxh5Hd_g67SO5ziGYOGQ3kCiCG9nJL9eQcje54iYHc6CnCyKOYVZQM1rrquLYfP8CbozoIPcVXP6PFBvKccrlApGB0jK0J6-JYMhfBccYZoD83XHV0HW7XxQF_P7yp1Dy9efqmRSqRHa_1MoxiGmcGropnOCoJ32_1xyZ49pwvywWSL2peB4BGJTxUfyLKF-6mT_y0ek7c3WwLe9-50xDNXNoRMA8sm_4tJBPhf7g2AZkHCnt71iz50ZpOvfNqVfL74PnJsfd9i8rUtHlZeY_SqJzs0_C0gfrMYnts03ltPLHPBC52JKKUMrwRJMrrkCxFCDvZdaOwAyex0kM9MbPEQtbzTvOqzF7oHMYh8hfAukH8Egww4FaIQCa3lYxmirACR6RwFbFNAAGT-YUHaH-_rNgHpOfcviYGZqZziwqSRWEidlNgCm5STOXRf8TdwY3gcrmUxYQwoJE3qGpozA11rINaakUtTuAyLKIJn3hMHRCNEjrxNtNuB6JwRG7_3FBinpxmvOVxxtvHyfXp_8ODGkZuE_vHr_QVslNQGUhhbBsoDoJ3sasrCTGykTOIv2skK3YuspMg5rON0DKoT1SCLElqEzfr6uPooo9l0xP-46Fwhx9fDCsU3AhlWHulOCeUdBhcy3QoypX",
+      "alt": "Far, long lens: 200 mm"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ARG5twkD19ggfx6I96U-76xroaAhIMbMFc6tSNvaOB98Ib7BvaDzspM6l3_SFFukCqB6yZqX1xMKJRfSRGDRGSS1bCV0flLbiv5CalwrtSseq4n-073arCl7WyQlhSfyqKuwVHzkzi92jXHoh2nIfFmLKta-wOHiBqY7nWtVtJlRYu8ImFfCAbNgVGYxO3dvaNcimodZDIuI9vyc1P_pLccVBEiVU32Nvy4AkBYcEI5AOncTomOmGU1V0iElKus5nGIUeRQ1qM748BNiU6Z0kPLTKbDrGNqhmXl-IN9DB2umqrKEaaeJPH5FYZkQgFLifCVdJDQMb2WeMZQVLlyIpnZMU3vsMLPWwMMslL_2GACvBgI80gDx_MvZEu-XdTRVvwt6UunX_H0SDGuK6NGkT1tOUzy6p1ssy2UAgQ4xhWvTiQoDpGpf1wkbYEnDVIlUiyGn7n8-534bicTPq7W1UKjLqfRKoOoooV20lXQ_Zhxs7VRQ9u6SEFB2VSLX6-LAixCCKlG1YdUD32H5HOzWVuSUIbvx_son0_Hv4CR6tM9JMOi9o6adVKI-n3Kp0978i0UXwoEGLVeCf_ul6xh2YNfqNwn8oOUaqVdBNulse0SEQd0OWyJM0ky1nbaA3ruNrFsKaBIKTEEMZ0S8aRsxutsulPTgUPNEWMbp8HGYszCM4QG6mMUgG7nFzReWgYy-0u5rUiWDXuInN0xTw9wXbolbqSKBrs9SiJ1FJ7B75SnR4eyOpibnBpyiQfS9LHPWHLv712IcSUNojypu16B37VjaAjKcpfvZohs27Gzba0XwWF2q057Wnyps26YW4_zMEUVOfLIldLDSMxZzh80ypTu2iHnQuMwVWnDh4Xkwm2BI0qpWl9M4Q7X6mg63PWDlBQzBvwG15oWrQ9Es2la-rI3zTBnPaghGM5pvVtDJKJgjaiCoGMxEYyHdFgycdL-3GAdfHkhto3-hy818ZGctSK5ZmHhdWGZ6SE2BoUhIgSStWHlbUgsIlGeMk4CUuSzDHAVHiP2Wjdlyl3CcZjuNsdfJ-HRYh2qnOSl1d107uZZsvqNi4R2vBFVhRIt40pC4HneQywIBbm8gtjcIFuvubf98mQzVHA7zJZgdw7E8tRX5-5NcypkMa0RGQ3sti6yXedKXwKiy44Xaaa35iUoDLSPVrhEI-__gcKlZHAdxk48XVSStIueKvMRAr2Sf_Q4MHCywRC-HKx4CywLzu45vU88L-Qbr_xVK_OoobI7ABDnEEH9G9nhqXxrmYKc0_Eqn1eSh4MipQPb0wkyGhReZiqNBkUzdb5qCr7BinqQIbrgPGeo-T9hZIJxK711OmQ8K2cJnfZ_vPNJ43VgJ8I2U80WWPcgtxqbqtox5o0ve-GoK-3IX9kJrjYK0UEIuYHiRgsIWWs2N41I3Hwkj1lEDlXRT5FR3Omb4_ul9EyRmXzEuRvvWNflhyBJcUrMfTyUCElIt9eYxJq4rp5w8QBegbMG_8LPnoyfPPCIn2RwbaY56DI1mAic4qJ4d4gpk_mjJaqFCXBNb2lRoF-VJr90-dD3vEcIyaoxigyrNQpADsyzNkgDIisukfcF0UvNY5EaBtgCf5-MmJlP6SmimJrZtAvNoComQl0ll_O8n9MoJlqu8DCMkvM7MuTjLcaP84gagxiKU-ED61yyqHEaOk_IjSNmZw7F4kG7GIFwUKNAtax1DSTKsfQOTwWwGb7o3BTie_w4X036QKK1rNPb80kOiikpkNb-89ZozH4XdKFelHlRtpdamR8bM2pXcU9CTR0KeUNdhkIMah4d_oJEk3z9Tm6OhiBQnXAfP65aQvE1a0P6lR3WeyQV2E2aC8L1oRFB-lwItLDcVYD5I5oUO8UdxZwQPFIOmcutnZb-NZFNfyYL7xi_U58INMIOQ3KshwoSfdxOUGarFVKCpZJ3sVnLZxVZmAHxHppcoGX7xu69s1KhiWcnfmrJhGdqw0nWeKTrlduCUywn3nu-iDr1C5wprfWBrpSRxLNK60QYAzIMupBnSNHg7j-JoFRpmTEPKmGQa",
+      "alt": "24 mm, close to the subject"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AczFjTPO72Io6L4snEPsQEtWyD1ixGWa_dke37wWxF1L1K8fVu_8mjgUI-mFw-_xtFP2mMkYWXYe_PUM848Xu_jrjz25Kk5CC5k9Xci1h3C-ZuGqneLymm-3AON0fO5KrF6BnvR6o8ZFhVQrH8oJYAA59rdTbgO4ktRY5OHWtjl33Wxu3w7kz0wyH5PdM-QUhIhfonERW33-rj925LxYAtMdEtQ786EqPHOHK0IuLmNaCCTlnj9aD6NxBCumxyW5SY9iVkLSMiFMjO5kdTouViGbaUk1Pcp_DdTeHFM6rGRTONZPcsrytnGzqj87ifbzMG4gkNGPjJ4l3wOnjDLPo9dBIQaWWcuKloH3-mjZfTu_xQOXPUDimwggC4I53DMmM1Y5tLdVwQ3ENELxsbzULNRVHc-jk3f77CLAgFwIyLmRPjprHaj-uO3sIX-9C_kWJeMtsDd9-8AqWILxl_IbL7vv-alYKuDCzdygXT5tmeFggUX0AisW4VZm8zfLoxxlCUDyTS6uqsCE0hLH1jxb6_1enHTE5B5Dv1bzMkWHHpFbrZaiLpEQEC0EDPHJAyDj0BICy1Vz6vCz2HrcJehYycTOXRCSu7-W1Eho4K_lzWkLKLW2uRDH5AGpvkFWgJ1drZtMuEiQm0LYAEZZMWBsCfDj6gjQTmsiod22IkfDS0eavPBC3jqlQu50WV0S947okS3ahCBNv3DxwQ_OMjlVvebCdIgh_zjTzjISscfus0Y76VPh0QA5uIqLBgmUCJSSgLl-HJH5VZVQff7R3DxNLyHI3xmxwJ6y-nD_QCylw2jywiVbL7B80wpllSFslnjhTdWFwqzh_7X7-gnNktWVLQoiAuMRvet8wvzJS2uvuBq19yZ7vlUlZyCzkETezMBK6vQpiP_ylLSy5UR-YU6QzkY3xkaDNt_duUFjMpbrYyY3DchLsYqJxZU0K8bE4tGsZdld-bznDxV3TRrh6dsJl_HYBvKjnWKoccLthGRUthLwrr2LojhX_4dlHPE4FKxDxiBdwaxDPAkcWThSOC_uxUIzvypfxjaj6VmvTKivrWUmXwm8dHCfS35XpAR-S4pwNdxdUgEGFH8vAR_35MYH_s5VpJ0aAsqdvhJ51P10-tRh4nJ_Qx-SCYTJyLUXzgFcoSTY3Zqr4Xi9eiHF4JotugPbfMNRwgpr7Fz6eO7DroLgWlKM_z8zk5ozU3Ic6WyFBQDdeoBW004caY3wQY4uFca72TUYCOdsUyDqzdYOuKJgzWnAJi-N7W37rnYlqVcsGcn8Bf84gnu8q_K6Pg4VGZuhwap-u4C84dm1wR2gLmI5Cuys3mrlshrYbrGkVt8tc2AdfyfzJMDTG2OUHzYuo3n369DY8HGZjjD5iwoTllFyu9MApCyOe0NDR9A7fiY_rtEHOefyhcjoUrqgBxOGmr2Vyog4SOzGLhoLByK0UlqoPDarbbC1956Jw43g9XagNEqlZB6Oio0kCi-p28zmuYCoBt6LHSXLg--qXMXs9krwUD2Mik-g9Q9hQfCigTDL602laITOZptGmKCLhm3bunwy11URwBqxWNDLIIJSe_bqxqOlObaUjGWWNATj_nPINfLyA_7LGzYFWcKBVNgDKX2wBUKOT_xRnFmahweAhxNgbDAOqdpN4U7hNDD14tNRAvoPIff6iXH5766HF2r30qGVIAQYuK8gHOLvZicq1-Pb0w0qUiklYCscY9WRJDGQo_HMzgpcZusi72Y3YfEoA3YkVdc3T8ZInia-xTe6_-skEllfZLkcWVSIhNolVi0XFG1Sp5qP-NQr0c56FG_Za4YWZ7NOcagk-TJpY36Hd26ygXMR_8vUrtZEdFzEGDPcIG0fh_Gh7caw9O9Ld9vrnbOHX0m-eVY-E4E-7voLAiwADdKRoUemK0d5FLsJ2bcZ28NK8ZlHf723-LI_C1c3OOF192BpkjvMYQ-YsjQmar_0OtuPGaCDggs_TULVpjGUrjxpeW5ZCXPZGbUPlZcA_6l8yKXWRfN6vmsl1ZmgB6SDmwIJbamxq7mIigC1ynQ6",
+      "alt": "400 mm, far from the subject"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Why it happens",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#why-it-happens"
+    },
+    {
+      "text": "The test that ends the argument",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#the-test-that-ends-the-argument"
+    },
+    {
+      "text": "So where does compression come from",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#so-where-does-compression-come-from"
+    },
+    {
+      "text": "What focal length genuinely changes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#what-focal-length-genuinely-changes"
+    },
+    {
+      "text": "Barrel distortion is a different defect",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#barrel-distortion-is-a-different-defect"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#why-it-happens"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#the-test-that-ends-the-argument"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#so-where-does-compression-come-from"
+    },
+    {
+      "text": "Depth of field",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#what-focal-length-genuinely-changes"
+    },
+    {
+      "text": "Depth of field",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field"
+    },
+    {
+      "text": "Exposure and dynamic range",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/exposure-and-dynamic-range"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#barrel-distortion-is-a-different-defect"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position#common-mistakes"
+    },
+    {
+      "text": "Hard and soft light",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-hard-soft"
+    },
+    {
+      "text": "\n              Depth of field\n              The band of distance that comes out looking sharp. Everything outside it blurs, and how that blur grows tells you whether a picture came out of a real camera.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field"
+    },
+    {
+      "text": "\n              Exposure and dynamic range\n              How much light got recorded, and how far apart the brightest and darkest thing can be before one of them stops recording at all.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/exposure-and-dynamic-range"
+    },
+    {
+      "text": "\n              Depth cues\n              A picture is a flat surface. It reads as deep because a dozen separate cues all point the same way, and your eye believes the majority.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues"
+    },
+    {
+      "text": "\n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    },
+    {
+      "text": "SRC-085 — Photography Life — Does Focal Length Distort Subjects?",
+      "href": "https://photographylife.com/does-focal-length-distort-subjects"
+    },
+    {
+      "text": "SRC-084 — Photography Life — What is Lens Compression?",
+      "href": "https://photographylife.com/what-is-lens-compression"
+    },
+    {
+      "text": "SRC-081 — Cambridge in Colour — Understanding Camera Lenses",
+      "href": "https://www.cambridgeincolour.com/tutorials/camera-lenses.htm"
+    },
+    {
+      "text": "SRC-083 — Cambridge in Colour — Tilt-Shift Lenses: Perspective Control",
+      "href": "https://www.cambridgeincolour.com/tutorials/tilt-shift-lenses1.htm"
+    },
+    {
+      "text": "\n        PreviousRoughness and Fresnel",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/fresnel-roughness"
+    },
+    {
+      "text": "\n        NextDepth of field",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position"
+}

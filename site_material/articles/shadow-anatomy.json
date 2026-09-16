@@ -1,0 +1,171 @@
+{
+  "title": "The anatomy of a shadow — Image Wiki",
+  "text": "\n  \n\n  The anatomy of a shadow\n  The named parts of light and shade on a solid object — highlight, halftone, core shadow, reflected light, cast shadow, contact shadow — and the rules each one obeys.\n\n  \n    Termlight and shadow zones\n    Also calledshading zones, form shadow and cast shadow, terminator, core shadow\n    Not the same asform shadow vs cast shadow, core shadow vs cast shadow, specular vs diffuse highlight\n    Read9 min\n  \n\n  \n    \n      On this page\n      \n        The partsTwo distinctions to get exactly rightWhy the contact point is the darkest placeWhy reflected light cannot beat the lit sideCommon mistakes\n      \n    \n  \n\n  Put an egg on a white table next to a window and look at it ten seconds longer than feels necessary. There is far more there than \"light side, dark side\": seven things, seven names, seven different rules.\nTelling them apart is the most useful skill for spotting an assembled or generated image, because a picture can get the big shapes right and still make these relationships physically impossible. Where the pattern sits on the object is set by Light direction; how sharp its edges are, by Hard and soft light.\nThe parts\n\nhighlighthalftonecore shadowreflected lightcontact shadowcast shadowSix zones, one ball, one lampmatte white ball on a matte floor, small source upper left\n\nTrace it from the top left down and across. The highlight sits where the surface faces the lamp squarely. The halftone is the long, almost-even stretch where the surface has begun to turn away. Then the core shadow arrives as a fast dark band, where the surface has swung past the light completely — a band and not a line, because immediately beyond it the ball starts picking up bounce again.\nNow check the two relationships a faked image usually gets wrong. The reflected light on the far rim is lighter than the core band beside it, but it stays clearly darker than any part of the lit side. And the contact shadow where the ball meets the floor is darker than the cast shadow it sits inside — the ball and the floor between them wall off almost the whole sky from that seam, while the open shadow on the floor is still lit by the rest of the room.\n\n\nThe rules that are not obvious from the drawing:\nSpecular highlight. A reflection of the light source — shaped and coloured like the lamp, not the egg, and sitting wherever the geometry between lamp, surface and eye puts it rather than in the middle of the lit side. Strobist: you can tell a can of Coke is cold without touching it, because condensation turns the highlight's edges soft and matte (Diffuse and specular).\nDiffuse highlight, or full light. Where the object's real colour shows. On a black object the full light is still black, which is why dark glossy things have to be described by their speculars instead.\nHalftone. Brightness follows the tilt, on a deceptive curve: 30° off, a surface still looks about 94% as bright; at 60°, 73%; at 80°, 45%; then it collapses. Almost all the change is in the last stretch.\nReflected light. Light that hit something else first — table, wall, sky — and came back into the shadow side. It can get strong: James Gurney's ochre building in Toledo, drenched in bounce off an orange building opposite, is more saturated on its shadow side than in direct sun.\n\n\n\nFrancisco de Zurbarán, Still Life with Lemons, Oranges and a Rose, 1633 (Norton Simon Museum, Pasadena). Public domain.\nEvery zone in the list, on real objects, under one source. The light comes from the upper left: all three cast shadows — of the plate of lemons, of the basket, of the cup — run to the right, and each object's lit face is its upper left.\nTake the lemon on the left of the pewter plate. Its highlight is a soft pale patch on the upper left of the skin, broad rather than a dot, because a lemon is matte. The halftone covers most of the rest of the peel, changing so gradually you cannot say where it begins. The core shadow is the darkest part of the fruit itself, along its lower right — and it stops short of the silhouette, because a thin strip of reflected light off the plate lifts the bottom of the lemon back out of the dark. Compare that strip against the lit top of the same lemon: unmistakably darker. That is the rule that keeps the fruit reading as solid.\nThen the two shadows on the table. The cast shadow to the right of the plate is a soft, open grey — blocked from the window but still lit by the rest of the room. The contact shadow under the rim of the plate is a near-black hairline, because nothing gets into that seam at all. Cover the fruit and the plate still reads as sitting on the wood, from that line alone.\n\n\nTwo distinctions to get exactly right\nForm shadow versus cast shadow. A form shadow is the object turning away from the light; a cast shadow is the object blocking light from reaching something else. Drawabox: form shading happens on the object, cast shadows are projected onto another surface.\nThey behave differently, and that is the point. A form shadow's edge is set by the object's curvature and the source size, so it is generally a gradual roll. A cast shadow's edge softens the further it travels from the contact point (Hard and soft light) — so one that is uniformly blurry, or uniformly sharp along its whole length, is suspicious.\nCore shadow versus cast shadow. Both dark, both on the shadow side, on different surfaces: the core shadow follows the egg's curvature, the cast shadow is the egg's outline projected onto the table. Merging them is why untrained drawings smear a dark outline around the base of every form.\nWhy the contact point is the darkest place\nA cast shadow's interior is blocked from the window but wide open to the rest of the room — ceiling, far wall, half the sky — so it is dark, not black. The hairline gap where the egg touches the table is blocked from nearly everything, because egg and tabletop wall off almost the whole hemisphere above it. Renderers call this ambient occlusion; Drawabox puts it from the drawing end — turn the light up and shadows burn away until only the deepest cracks survive.\nSo black lives in crevices, seams, the underside of a collar, the join where a chair leg meets the floor. Not in the middle of a shadow.\n\nno seam hereshadow sits apartFloatingone soft blob, offset, base sitting on clean floorhard dark seamsoftens with distancePlantedshadow anchored on the footprint, near-black at the join\n\nSame box, same lamp, same two rays grazing its top corners. On the left the shadow is a single uniformly soft blob sitting a few centimetres clear of the base, and the bottom edge of the box meets untouched floor — so the box hovers, and the rays land somewhere no shadow is.\nOn the right the shadow begins on the footprint and never leaves it: near-black in the seam, then softening as it travels away from the contact. Cover everything except the bottom edge of each box and the difference is still obvious. That few-pixel band is what a pasted-in or generated object most often lacks entirely.\n\n\nThis is the highest-value check in the article. An object pasted into a scene, or generated without real light transport, very often has a plausible cast shadow and no seam.\nWhy reflected light cannot beat the lit side\nReflected light is second-hand twice over: the bouncing surface caught only a fraction of the source, then returns only what it does not absorb — well under half for anything short of a mirror. A fraction of a fraction.\nThe working rule: on one object under one source, reflected light inside the shadow stays darker than the darkest part of the lit side. Break it and the object reads as a cut-out with a glow behind it. If something in the shadow really is that bright, it is a second source, and it should be casting shadows of its own somewhere.\n\n\n\nJuan Sánchez Cotán, Quince, Cabbage, Melon and Cucumber, c. 1602 (San Diego Museum of Art). Public domain.\nThe same painting runs the experiment twice, and the difference is whether there is anything nearby to catch light or throw it back. One small hard source enters from the upper left: the cut wedge and the cucumber each lay a crisp-edged shadow to the right along the stone ledge, and each has a dark seam where it touches.\nOn the ledge, the objects get the full sequence — cast shadow, contact seam, and a shadow side kept well above black by the pale stone underneath. Hanging in the void, the quince and the cabbage get none of it: no floor, no wall, nothing behind them, so their shaded sides fall away toward the black of the ground and neither casts a shadow anywhere in the picture. Same painter, same light, same day. Both cast shadows and reflected light need a second surface to exist at all.\n\n\nCommon mistakes\n\n\"The darkest part of the picture is the middle of a shadow.\" It is a contact point; a cast shadow's interior still sees most of the sky. For Value structure that means true black is usually a seam a few pixels wide.\n\"A shadow that fades out must be soft.\" It might be running from a close lamp. Fading with distance is Light falloff; fading at the edge is softness.\n\"The core shadow is the object's shadow.\" Core shadow on the object, cast shadow on whatever it stands on. Both usually exist and touch.\n\"Reflected light brightens the shadow side.\" Slightly. Never past the lit side.\n\"A highlight is the light part of the object.\" Two things, one word: the diffuse highlight shows the object's colour, the specular shows the lamp.\n\"Shadows are grey.\" A shadow is lit by whatever still reaches it, usually a different colour from the key. See The colour of the light.\n\n\nFive seconds on any solid object\n\nWhere the object meets the ground: a distinct dark seam? No seam means it is floating.\nTrace the cast shadow. Does it run away from the light and sharpen as it nears the contact point?\nFind the core shadow band on the object. Is there a lighter strip below it from bounce?\nIs anything on the shadow side brighter than the lit side? Not physically available under one light.\nDoes every object agree on one light direction, one shadow softness, one contact darkness?\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Hard and soft light\n              Whether shadows have crisp edges or fade gradually. It is decided by one thing — how big the light looks from where the subject is standing.\n            \n          \n        \n          \n            \n              Light direction\n              Where the light sits relative to the subject and to the camera. It decides where the shadows land and how much of the shaded side you get to see, which is what makes a flat picture look solid.\n            \n          \n        \n          \n            \n              Diffuse and specular\n              Light hitting a surface either goes in and comes back out coloured, or bounces straight off keeping the light's own colour. Almost everything a material looks like follows from the split between those two.\n            \n          \n        \n          \n            \n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SRC-051 — Strobist — Lighting 102: In the ZoneSRC-070 — The Dimensions of Colour — Shading series, shadow seriesSRC-071 — The Dimensions of Colour — Effect of inclination to lightSRC-075 — Gurney Journey — Colour Obtains in the LightSRC-078 — Drawabox — Lesson 2: Cast Shadows\n      \n    \n  \n\n  \n",
+  "headings": [
+    "The anatomy of a shadow",
+    "The parts",
+    "Two distinctions to get exactly right",
+    "Why the contact point is the darkest place",
+    "Why reflected light cannot beat the lit side",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nhighlighthalftonecore shadowreflected lightcontact shadowcast shadowSix zones, one ball, one lampmatte white ball on a matte floor, small source upper left\n\nTrace it from the top left down and across. The highlight sits where the surface faces the lamp squarely. The halftone is the long, almost-even stretch where the surface has begun to turn away. Then the core shadow arrives as a fast dark band, where the surface has swung past the light completely — a band and not a line, because immediately beyond it the ball starts picking up bounce again.\nNow check the two relationships a faked image usually gets wrong. The reflected light on the far rim is lighter than the core band beside it, but it stays clearly darker than any part of the lit side. And the contact shadow where the ball meets the floor is darker than the cast shadow it sits inside — the ball and the floor between them wall off almost the whole sky from that seam, while the open shadow on the floor is still lit by the rest of the room.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nFrancisco de Zurbarán, Still Life with Lemons, Oranges and a Rose, 1633 (Norton Simon Museum, Pasadena). Public domain.\nEvery zone in the list, on real objects, under one source. The light comes from the upper left: all three cast shadows — of the plate of lemons, of the basket, of the cup — run to the right, and each object's lit face is its upper left.\nTake the lemon on the left of the pewter plate. Its highlight is a soft pale patch on the upper left of the skin, broad rather than a dot, because a lemon is matte. The halftone covers most of the rest of the peel, changing so gradually you cannot say where it begins. The core shadow is the darkest part of the fruit itself, along its lower right — and it stops short of the silhouette, because a thin strip of reflected light off the plate lifts the bottom of the lemon back out of the dark. Compare that strip against the lit top of the same lemon: unmistakably darker. That is the rule that keeps the fruit reading as solid.\nThen the two shadows on the table. The cast shadow to the right of the plate is a soft, open grey — blocked from the window but still lit by the rest of the room. The contact shadow under the rim of the plate is a near-black hairline, because nothing gets into that seam at all. Cover the fruit and the plate still reads as sitting on the wood, from that line alone.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWdPb6b4Kpr02ZxUl2D7jOUBkpoTgG0mS6k-PFBkoiCiQ59U2qE0GIEWAO8p3QVzYcp1eFdyXu6Vava15uVw9863jVny8TPqHCNcIUbDMdrCk4im0o_A6VxONE-4MqrgWR6XtTvN4FXcuEeZ1q8dtvA9CwZmIcB4HWzeCgCye0GP9MZ5zoHw5j0N8ez-zoUq5ITaeGL_hnJdzotaj4liTVLAk7EI-ENTO3Jw1Bx3YTQR_UN5guc7bXRazrbQE6X2Lev0Yv34TtluRc0ziWe9Wb-0F6PL11cOLhDv4sjIL7bo6Qfm6CzKgGYQY1ZnVZOaKNwdnhy2wlz4ulToPLnBft__8hhat4gmZUvMeRUxKAx-eqEC-NPxYxOgVYGsibBIFsMnXEoJGu6ZoMJcsMBVAxwMY2a8EaCPm4um3nhT1WS160arvh18YBF5pctCcJtrfedOK931qi3-SmZu43IAYKpJr5p2sleIdAvh0DYnnuXCTITSiyjxZhUSxYqmHWFcaiWJ17zrhCZ_eGtN32fK2puNLKWgEHwUFYZCDN_XLyyItDJZPraV8YllQZLz4jU0w46aXU1cknpmzGzwwyHSl3O4qG04ojT1j4hvrT7WSFkHnD3uUIun6Aa1qRIZhrWZzUo2w9jNXF7jlcTJMFxxDbHMfbypMRVFz7649B_0qcyHO_FZZhiDBv1qaLOQUI_OBwRBCv_cyHY9MgPQCwfSYX4ds_Rz9x1p0tsu9xiP7fgMn9jcBpZQlMTE09Tdsnh6FQKUDwke0w2GJZI4A4kW8T5xLVquGM6nCmSPDl-yLNZYNoU1G4EfpbKgwrKbXBDF0ee7FxWpW9treOt25ENyZaixRvHV9heY_kB8ZvKoGYSPZcKslv_b7ryzLJRcOO27p_DrYty0iRYUs_KX5a-FzzRE7965pFViIoPGEOby0V2e-i-DDLnpyG2F6CMXQH--bBK5gOJdg5xeiYzrIO6U5DMQ7PQDqBQugcW24CrTXYpk9yO9JyI9mc9EbXFxWFclfoBue8d_llja8jERuYJP00o5uYTvjs41ES3iUm1Xigi3cj5xrCbcKhcUbQ8amrnedfpIVrmG0Fe3TxYaHcApMd-ERBM8htaqRHbmhOZlCAXDVuyAHKKOl0LUL_zo9PcYOHvbygYtrMFXH-OxgH5DZvU9InMg0Yrjm2ttAjZq-4NVn45aGNlX9p1aukP1lcZnrZJJ7W0iPNYYYGOIsSUGtaLds0wDIQ7E4KHVi7k3CwzirgrI2RGxAJQEhlin_cTqEoNwGZd-pCr60WEl9plWGm-TccXpVRkMW75QDROeclkX6vfZAEUYk4CmI309VfH4TnrnvPzJk7CMRZV23WcdkbceuDwa8pBhU2zrazcJ-XVVpnSiZerHf7vq_HyVYjUAm8nC1mcrJrDNPjPl_HFsHXy9Cvc8-x9hWDax_NsZlAa9piLlm7G2eCNtsTIeVrrcI3Erpc_32VVx7b-5U6YWRoO5sAJ8-7xfMKvgktIhQ2Gm8lHPrd9e2OlGemkecYXXqoQPV8NaAcGM9LvwU1keJU_i8IlUlkWLK51FZP_5mVWC7buOg0ApsP3ozFmT68H-kw2OUWxqP8rB1qpvRrulK1OtRXcsCOE8IkFx_3lvFfRrtSlukzDeJUKRVCfwOSzkwO3FZoCkuuefrLKxVgQw93NnIlspYR4JmGB2iQebZpCtAlnwXVvuSQdIPeCSGHU24PfQqM3-m1O4m-BNqnNn1mLCyMxtWf4OMFeyljWGG0sBYyUDugY-HWp_fg7-lCEqgruXsczfVQoOz9metR6D3Kl1D5IQKIH6hfQgSi75rb_bBSByufMD-O_nK9hcHK-q3iwepZgPYkMLWvC6-_nU8c7kS6Lp5JfuW0GHm6e9rw8u3pi0SvLe8ZbGFqJwXQUNcW-pEdlb9UF2cP-XArCF93akR_EFC2UAt4vAxxcD7Om5gBrA3gj9JS0zK6Xl1pcMlSEXh1vzqOr7EdGgnitZhsV5Eg09ndLXiJ_Uniy43d4hmwvS_QPVLOjTSJ_3XFvL",
+          "alt": "Zurbaran still life: lemons on a pewter plate, a basket of oranges and a cup on a plate, on a table against a black ground, lit from the upper left"
+        }
+      ]
+    },
+    {
+      "caption": "\nno seam hereshadow sits apartFloatingone soft blob, offset, base sitting on clean floorhard dark seamsoftens with distancePlantedshadow anchored on the footprint, near-black at the join\n\nSame box, same lamp, same two rays grazing its top corners. On the left the shadow is a single uniformly soft blob sitting a few centimetres clear of the base, and the bottom edge of the box meets untouched floor — so the box hovers, and the rays land somewhere no shadow is.\nOn the right the shadow begins on the footprint and never leaves it: near-black in the seam, then softening as it travels away from the contact. Cover everything except the bottom edge of each box and the difference is still obvious. That few-pixel band is what a pasted-in or generated object most often lacks entirely.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nJuan Sánchez Cotán, Quince, Cabbage, Melon and Cucumber, c. 1602 (San Diego Museum of Art). Public domain.\nThe same painting runs the experiment twice, and the difference is whether there is anything nearby to catch light or throw it back. One small hard source enters from the upper left: the cut wedge and the cucumber each lay a crisp-edged shadow to the right along the stone ledge, and each has a dark seam where it touches.\nOn the ledge, the objects get the full sequence — cast shadow, contact seam, and a shadow side kept well above black by the pale stone underneath. Hanging in the void, the quince and the cabbage get none of it: no floor, no wall, nothing behind them, so their shaded sides fall away toward the black of the ground and neither casts a shadow anywhere in the picture. Same painter, same light, same day. Both cast shadows and reflected light need a second surface to exist at all.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AapjkEbDa8yFVeLRWqXrcoprKdaOmOr3z-_HnKQ7Ri6uTbIiSNBh4XC0vuCpfzpEdG4zc91jModWVqej7_hKf3b7xjJWRhvK2LpXTJa897IEjXPzH0ZYlokrYRxI7iX99vtBLcKrhwfhMkaDSyv0_N4SCGgT-C-xkUHmRHXROg1TC2x5p5F9c5xxQhKtLxcFesKs0CQ5_h02BL4g9n-NV2dTLtFkoT0sWl3YS4z6avVEPlgiRP17aj5AjYe9W7hnGhnw_dyE65OiD1avQCmwQIapLY__Pj0l1yaS-Dr2Nk4Km93UID2VfpEzd6BOC57DjetZCBmCTHXDsZCJvnKwMJ_-5pModjdtPLEH3g0vQiZQo8lOuiIB9ciKrgNySOhOmTZkBntXFKGkSTnII-5H8JZ-a8TcY11b7wf3lbuv4h9dynw3lQ775YGbJyA3sSq58HcoQ5hsD48mEcoVRPnzAymUQxmYbkJaT2rC7_LddEiaMr1XuW7Sqam8N9QXw0vdfTK5k2BZ0qKqptdeHVWeM1RPpP23t7gJZiIeixA3l0PUJIcikoNH8SKhp_4INl784pLrSutFM5Zffl2Aebu1_V3PPYchUv3B91AoIGOsoG2I01zP9yxAWo1qibILvIGV-xrHuxDbmbbxz6yF0Y6EwJf3oShBzK_junM_JLUMGoYZRgaRWCMoBCJ5ibizR0HrAK8lypkm8ikjpTLIFP7YbBtYurl786AdFEHAOHwARp-gH-sTAWL-I7Le8QJxoRIVXs8bXLgSTt38CbUmE2FANZEp-tx4ia4NqxxRwi0v-WLzEr8K2a5tV7Y-ueNq-jEaYk0uP9g49Oxij3NhZxUZm4KXd_WbDq_xygRj3LPgZ8kJklxVh1TMLKGonkcGg0KFglx5RqIFanuWu-hE22ZldqRxkzyaZ0U0_z9yXf51TBjw-cqdcQxqJFXoDLdwG2jcqm3fJKroYBkEcjthnGCcrMzuRkMoBa4hQPaN4GeUyRyb8_zhOTIUyDcbdvX5Gu3xXZzbHyrEq9a5e2JDdGCmb104y0320Ewy499QPZbH6GMmLqyFo3465BY0SaECg6zzAy4wA7LhgbKpxQP1-xiWoKBmWFEnLEhiYOpG8hexS1YBJI4uJTgns8qXiQWZOorxZHR50Jtyd309QUP6zsuXaiWdRpp2o00qX3gikHMSBr_Meod84KTaqyeWb2Yy1PDqPRuElypoHpXp1D8I9IV8WC7ddq5J1hr098WUrUd7ynxefB2YYiXJ7q5IiExDFi86EESkimO6_JclkDVOVTpsJlCzZ-H5XZAp8MOevX8yz8bEcD_a1jSzZy956UEJ1X8o_WxqODqQLnwvBVuo4PovlL1GvhL30vGLxHKsGwRg6XT2gANTEw-KsN_VG3Y1quLFwUPN5lk9kZrNz4bkY9oAFzyvZED_sy49tisG4DZkQvorrrD35J_r7cLvbwKUSs9h_DcMcwjSlvId5Su6rNfS3-VjHZxce1msbwfuYEXrHb9pIVyR-IfwmzdvoyTG3cVMKR0nozsPkhwv4cMGB92rynMeP9UVo3NSjTrStqREEJGvrG7W893b-rKBpF2tUSLnm43FQE8CUTghf_TIgGRiSq-bl0f0gbLS4uaMVbZBVs4ORGkPHJGMXIFhKrGAXmWZE9QVNSNEG2y3IsTLt1xAp4y483eTVGJ4LwJQE-xvXOORwN74KqB7XFNrpzwudeI7dCppYvVkg7by7Crdql8BpysOjxnBhDsfz-J8cfoVamiHdbWMJOmwycEnKymqaAF4LLOqcLtwuek0CfencZE_SC8XzTuRB8xNTGmBwCbjUVZ4yPnM7qJ9QtSdvXB-OrY9IxOPbM5uzGp6hzP2fmNzaBwngJAoOvp5RX9xEK8KEgGhqSAeNu2j5wI4ElPSi2vJQQZT-Lrmm9XJrAUWlFtN-o2gfLVG4bzZ_oKAx2v-AS9lkAxPCoLWcHUVU43eHGO6dAEXQLqp1MTvQHsZIojWiIeT3pPyF5VlF9xtUGVPrNPDdiWN3B25i_6FUNuIBSyM",
+          "alt": "Sanchez Cotan still life: a quince and a cabbage hanging on strings in front of a black void, a cut melon and a cucumber on a lit stone ledge"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWdPb6b4Kpr02ZxUl2D7jOUBkpoTgG0mS6k-PFBkoiCiQ59U2qE0GIEWAO8p3QVzYcp1eFdyXu6Vava15uVw9863jVny8TPqHCNcIUbDMdrCk4im0o_A6VxONE-4MqrgWR6XtTvN4FXcuEeZ1q8dtvA9CwZmIcB4HWzeCgCye0GP9MZ5zoHw5j0N8ez-zoUq5ITaeGL_hnJdzotaj4liTVLAk7EI-ENTO3Jw1Bx3YTQR_UN5guc7bXRazrbQE6X2Lev0Yv34TtluRc0ziWe9Wb-0F6PL11cOLhDv4sjIL7bo6Qfm6CzKgGYQY1ZnVZOaKNwdnhy2wlz4ulToPLnBft__8hhat4gmZUvMeRUxKAx-eqEC-NPxYxOgVYGsibBIFsMnXEoJGu6ZoMJcsMBVAxwMY2a8EaCPm4um3nhT1WS160arvh18YBF5pctCcJtrfedOK931qi3-SmZu43IAYKpJr5p2sleIdAvh0DYnnuXCTITSiyjxZhUSxYqmHWFcaiWJ17zrhCZ_eGtN32fK2puNLKWgEHwUFYZCDN_XLyyItDJZPraV8YllQZLz4jU0w46aXU1cknpmzGzwwyHSl3O4qG04ojT1j4hvrT7WSFkHnD3uUIun6Aa1qRIZhrWZzUo2w9jNXF7jlcTJMFxxDbHMfbypMRVFz7649B_0qcyHO_FZZhiDBv1qaLOQUI_OBwRBCv_cyHY9MgPQCwfSYX4ds_Rz9x1p0tsu9xiP7fgMn9jcBpZQlMTE09Tdsnh6FQKUDwke0w2GJZI4A4kW8T5xLVquGM6nCmSPDl-yLNZYNoU1G4EfpbKgwrKbXBDF0ee7FxWpW9treOt25ENyZaixRvHV9heY_kB8ZvKoGYSPZcKslv_b7ryzLJRcOO27p_DrYty0iRYUs_KX5a-FzzRE7965pFViIoPGEOby0V2e-i-DDLnpyG2F6CMXQH--bBK5gOJdg5xeiYzrIO6U5DMQ7PQDqBQugcW24CrTXYpk9yO9JyI9mc9EbXFxWFclfoBue8d_llja8jERuYJP00o5uYTvjs41ES3iUm1Xigi3cj5xrCbcKhcUbQ8amrnedfpIVrmG0Fe3TxYaHcApMd-ERBM8htaqRHbmhOZlCAXDVuyAHKKOl0LUL_zo9PcYOHvbygYtrMFXH-OxgH5DZvU9InMg0Yrjm2ttAjZq-4NVn45aGNlX9p1aukP1lcZnrZJJ7W0iPNYYYGOIsSUGtaLds0wDIQ7E4KHVi7k3CwzirgrI2RGxAJQEhlin_cTqEoNwGZd-pCr60WEl9plWGm-TccXpVRkMW75QDROeclkX6vfZAEUYk4CmI309VfH4TnrnvPzJk7CMRZV23WcdkbceuDwa8pBhU2zrazcJ-XVVpnSiZerHf7vq_HyVYjUAm8nC1mcrJrDNPjPl_HFsHXy9Cvc8-x9hWDax_NsZlAa9piLlm7G2eCNtsTIeVrrcI3Erpc_32VVx7b-5U6YWRoO5sAJ8-7xfMKvgktIhQ2Gm8lHPrd9e2OlGemkecYXXqoQPV8NaAcGM9LvwU1keJU_i8IlUlkWLK51FZP_5mVWC7buOg0ApsP3ozFmT68H-kw2OUWxqP8rB1qpvRrulK1OtRXcsCOE8IkFx_3lvFfRrtSlukzDeJUKRVCfwOSzkwO3FZoCkuuefrLKxVgQw93NnIlspYR4JmGB2iQebZpCtAlnwXVvuSQdIPeCSGHU24PfQqM3-m1O4m-BNqnNn1mLCyMxtWf4OMFeyljWGG0sBYyUDugY-HWp_fg7-lCEqgruXsczfVQoOz9metR6D3Kl1D5IQKIH6hfQgSi75rb_bBSByufMD-O_nK9hcHK-q3iwepZgPYkMLWvC6-_nU8c7kS6Lp5JfuW0GHm6e9rw8u3pi0SvLe8ZbGFqJwXQUNcW-pEdlb9UF2cP-XArCF93akR_EFC2UAt4vAxxcD7Om5gBrA3gj9JS0zK6Xl1pcMlSEXh1vzqOr7EdGgnitZhsV5Eg09ndLXiJ_Uniy43d4hmwvS_QPVLOjTSJ_3XFvL",
+      "alt": "Zurbaran still life: lemons on a pewter plate, a basket of oranges and a cup on a plate, on a table against a black ground, lit from the upper left"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AapjkEbDa8yFVeLRWqXrcoprKdaOmOr3z-_HnKQ7Ri6uTbIiSNBh4XC0vuCpfzpEdG4zc91jModWVqej7_hKf3b7xjJWRhvK2LpXTJa897IEjXPzH0ZYlokrYRxI7iX99vtBLcKrhwfhMkaDSyv0_N4SCGgT-C-xkUHmRHXROg1TC2x5p5F9c5xxQhKtLxcFesKs0CQ5_h02BL4g9n-NV2dTLtFkoT0sWl3YS4z6avVEPlgiRP17aj5AjYe9W7hnGhnw_dyE65OiD1avQCmwQIapLY__Pj0l1yaS-Dr2Nk4Km93UID2VfpEzd6BOC57DjetZCBmCTHXDsZCJvnKwMJ_-5pModjdtPLEH3g0vQiZQo8lOuiIB9ciKrgNySOhOmTZkBntXFKGkSTnII-5H8JZ-a8TcY11b7wf3lbuv4h9dynw3lQ775YGbJyA3sSq58HcoQ5hsD48mEcoVRPnzAymUQxmYbkJaT2rC7_LddEiaMr1XuW7Sqam8N9QXw0vdfTK5k2BZ0qKqptdeHVWeM1RPpP23t7gJZiIeixA3l0PUJIcikoNH8SKhp_4INl784pLrSutFM5Zffl2Aebu1_V3PPYchUv3B91AoIGOsoG2I01zP9yxAWo1qibILvIGV-xrHuxDbmbbxz6yF0Y6EwJf3oShBzK_junM_JLUMGoYZRgaRWCMoBCJ5ibizR0HrAK8lypkm8ikjpTLIFP7YbBtYurl786AdFEHAOHwARp-gH-sTAWL-I7Le8QJxoRIVXs8bXLgSTt38CbUmE2FANZEp-tx4ia4NqxxRwi0v-WLzEr8K2a5tV7Y-ueNq-jEaYk0uP9g49Oxij3NhZxUZm4KXd_WbDq_xygRj3LPgZ8kJklxVh1TMLKGonkcGg0KFglx5RqIFanuWu-hE22ZldqRxkzyaZ0U0_z9yXf51TBjw-cqdcQxqJFXoDLdwG2jcqm3fJKroYBkEcjthnGCcrMzuRkMoBa4hQPaN4GeUyRyb8_zhOTIUyDcbdvX5Gu3xXZzbHyrEq9a5e2JDdGCmb104y0320Ewy499QPZbH6GMmLqyFo3465BY0SaECg6zzAy4wA7LhgbKpxQP1-xiWoKBmWFEnLEhiYOpG8hexS1YBJI4uJTgns8qXiQWZOorxZHR50Jtyd309QUP6zsuXaiWdRpp2o00qX3gikHMSBr_Meod84KTaqyeWb2Yy1PDqPRuElypoHpXp1D8I9IV8WC7ddq5J1hr098WUrUd7ynxefB2YYiXJ7q5IiExDFi86EESkimO6_JclkDVOVTpsJlCzZ-H5XZAp8MOevX8yz8bEcD_a1jSzZy956UEJ1X8o_WxqODqQLnwvBVuo4PovlL1GvhL30vGLxHKsGwRg6XT2gANTEw-KsN_VG3Y1quLFwUPN5lk9kZrNz4bkY9oAFzyvZED_sy49tisG4DZkQvorrrD35J_r7cLvbwKUSs9h_DcMcwjSlvId5Su6rNfS3-VjHZxce1msbwfuYEXrHb9pIVyR-IfwmzdvoyTG3cVMKR0nozsPkhwv4cMGB92rynMeP9UVo3NSjTrStqREEJGvrG7W893b-rKBpF2tUSLnm43FQE8CUTghf_TIgGRiSq-bl0f0gbLS4uaMVbZBVs4ORGkPHJGMXIFhKrGAXmWZE9QVNSNEG2y3IsTLt1xAp4y483eTVGJ4LwJQE-xvXOORwN74KqB7XFNrpzwudeI7dCppYvVkg7by7Crdql8BpysOjxnBhDsfz-J8cfoVamiHdbWMJOmwycEnKymqaAF4LLOqcLtwuek0CfencZE_SC8XzTuRB8xNTGmBwCbjUVZ4yPnM7qJ9QtSdvXB-OrY9IxOPbM5uzGp6hzP2fmNzaBwngJAoOvp5RX9xEK8KEgGhqSAeNu2j5wI4ElPSi2vJQQZT-Lrmm9XJrAUWlFtN-o2gfLVG4bzZ_oKAx2v-AS9lkAxPCoLWcHUVU43eHGO6dAEXQLqp1MTvQHsZIojWiIeT3pPyF5VlF9xtUGVPrNPDdiWN3B25i_6FUNuIBSyM",
+      "alt": "Sanchez Cotan still life: a quince and a cabbage hanging on strings in front of a black void, a cut melon and a cucumber on a lit stone ledge"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The parts",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#the-parts"
+    },
+    {
+      "text": "Two distinctions to get exactly right",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#two-distinctions-to-get-exactly-right"
+    },
+    {
+      "text": "Why the contact point is the darkest place",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#why-the-contact-point-is-the-darkest-place"
+    },
+    {
+      "text": "Why reflected light cannot beat the lit side",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#why-reflected-light-cannot-beat-the-lit-side"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#common-mistakes"
+    },
+    {
+      "text": "Light direction",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-direction"
+    },
+    {
+      "text": "Hard and soft light",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-hard-soft"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#the-parts"
+    },
+    {
+      "text": "Diffuse and specular",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diffuse-specular"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#two-distinctions-to-get-exactly-right"
+    },
+    {
+      "text": "Hard and soft light",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-hard-soft"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#why-the-contact-point-is-the-darkest-place"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#why-reflected-light-cannot-beat-the-lit-side"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy#common-mistakes"
+    },
+    {
+      "text": "Value structure",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "Light falloff",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-falloff"
+    },
+    {
+      "text": "The colour of the light",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-of-light"
+    },
+    {
+      "text": "\n              Hard and soft light\n              Whether shadows have crisp edges or fade gradually. It is decided by one thing — how big the light looks from where the subject is standing.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-hard-soft"
+    },
+    {
+      "text": "\n              Light direction\n              Where the light sits relative to the subject and to the camera. It decides where the shadows land and how much of the shaded side you get to see, which is what makes a flat picture look solid.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-direction"
+    },
+    {
+      "text": "\n              Diffuse and specular\n              Light hitting a surface either goes in and comes back out coloured, or bounces straight off keeping the light's own colour. Almost everything a material looks like follows from the split between those two.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diffuse-specular"
+    },
+    {
+      "text": "\n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    },
+    {
+      "text": "SRC-051 — Strobist — Lighting 102: In the Zone",
+      "href": "https://strobist.blogspot.com/2016/07/lighting-102-four-zones-four-names.html"
+    },
+    {
+      "text": "SRC-070 — The Dimensions of Colour — Shading series, shadow series",
+      "href": "http://www.huevaluechroma.com/101.php"
+    },
+    {
+      "text": "SRC-071 — The Dimensions of Colour — Effect of inclination to light",
+      "href": "http://www.huevaluechroma.com/107.php"
+    },
+    {
+      "text": "SRC-075 — Gurney Journey — Colour Obtains in the Light",
+      "href": "http://gurneyjourney.blogspot.com/2008/04/color-obtains-in-light.html"
+    },
+    {
+      "text": "SRC-078 — Drawabox — Lesson 2: Cast Shadows",
+      "href": "https://drawabox.com/lesson/2/texture/castshadows"
+    },
+    {
+      "text": "\n        PreviousLight falloff",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-falloff"
+    },
+    {
+      "text": "\n        NextValue structure",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy"
+}

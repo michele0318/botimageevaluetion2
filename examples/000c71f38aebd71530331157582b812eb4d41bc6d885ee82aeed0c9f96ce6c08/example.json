@@ -1,0 +1,45 @@
+{
+  "id": "000c71f38aebd71530331157582b812eb4d41bc6d885ee82aeed0c9f96ce6c08",
+  "prompt": "1930s Japanese Poster, fountain pen going through a ring writing orange neon 'Tanaka' on blue, Japanese text, cream background, black outlines",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is the more characterful design. It has the genuine feel of a 1930s Japanese matchbox or pen label — the slightly off-register printing and that hand-drawn \"Tanaka\" script. The composition is dynamic and a little eccentric, with real period charm. Image 2 is cleaner and more technically polished but it reads as a modern vector pastiche of the style: tidy, balanced, and a bit generic. Image 1 has soul and a distinctive point of view; image 2 is retro decoration.",
+  "split": "train",
+  "image_group": "53a77b0642e085566111773fa05a1801390b93703d2da61a04d4df3a3915beef",
+  "image_hashes": [
+    "84ef4722b9f6a67cb0a36d09836771915972ce3d20768d09f6234f6b419b0232",
+    "acfe69e4c7f7249d6e54e10a57362560d9f7f00993a392751bb95a41272d096a"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "79145979a349188dc798c221f6b6c69a94a9c7437d3837ec7a22b0b34e4295a1",
+      "corrected": false,
+      "time": "2026-09-13T02:20:00"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "79145979a349188dc798c221f6b6c69a94a9c7437d3837ec7a22b0b34e4295a1",
+      "corrected": true,
+      "time": "2026-09-13T02:20:05"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is the more characterful design. It has the genuine feel of a 1930s Japanese matchbox or pen label — the slightly off-register printing and that hand-drawn \"Tanaka\" script. The composition is dynamic and a little eccentric, with real period charm. Image 2 is cleaner and more technically polished but it reads as a modern vector pastiche of the style: tidy, balanced, and a bit generic. Image 1 has soul and a distinctive point of view; image 2 is retro decoration.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:20:02"
+    }
+  ],
+  "feedback": "Image 1 is the more characterful design. It has the genuine feel of a 1930s Japanese matchbox or pen label — the slightly off-register printing and that hand-drawn \"Tanaka\" script. The composition is dynamic and a little eccentric, with real period charm. Image 2 is cleaner and more technically polished but it reads as a modern vector pastiche of the style: tidy, balanced, and a bit generic. Image 1 has soul and a distinctive point of view; image 2 is retro decoration.",
+  "lesson": "When requested, prioritize characterful, slightly imperfect execution over clean technical polish to evoke authentic period charm; avoid generic retro decoration unless explicitly requested.",
+  "lesson_evidence": "Image 1 is the more characterful design. It has the genuine feel of a 1930s Japanese matchbox or pen label — the slightly off-register printing and that hand-drawn \"Tanaka\" script. The composition is dynamic and a little eccentric, with real period charm. Image 2 is cleaner and more technically polished but it reads as a modern vector pastiche of the style: tidy, balanced, and a bit generic.",
+  "lesson_source": "Image 1 is the more characterful design. It has the genuine feel of a 1930s Japanese matchbox or pen label — the slightly off-register printing and that hand-drawn \"Tanaka\" script. The composition is dynamic and a little eccentric, with real period charm. Image 2 is cleaner and more technically polished but it reads as a modern vector pastiche of the style: tidy, balanced, and a bit generic. Image 1 has soul and a distinctive point of view; image 2 is retro decoration."
+}

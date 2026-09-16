@@ -1,0 +1,171 @@
+{
+  "title": "Depth cues — Image Wiki",
+  "text": "\n  \n\n  Depth cues\n  A picture is a flat surface. It reads as deep because a dozen separate cues all point the same way, and your eye believes the majority.\n\n  \n    Termdepth cues\n    Also calledpictorial depth cues, monocular cues, cues to space\n    Not the same aslinear perspective, depth of field, stereo vision\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        Why it happensThe majority ruleAcross different mediaCommon mistakes\n      \n    \n  \n\n  Look at a photograph of a street on your laptop. You feel that the far end of it is two hundred metres away. Nothing in it is: every pixel sits on the same sheet of glass at the same distance from your eye, and your eye knows that perfectly well.\nThe depth is a conclusion your visual system reaches from evidence in the picture, and that evidence comes in about a dozen separate kinds. Drawabox calls the flat page a window onto a 3D world. The important point comes last, so here it is first: no single cue creates depth. Each one alone is weak. Depth is a stack of independent cues that happen to agree, and your eye goes with the majority.\nWhy it happens\nYou never receive depth; even with two eyes open in a real room your brain is inferring it. Stereo is strong within arm's reach and fades out past ten metres or so, and beyond that you are running on exactly the cues a painting uses. Which is why a painting can fool you at all.\n\n\n\nPietro Perugino, Christ Handing the Keys to St Peter, Sistine Chapel, 1481–82, fresco. Public domain. Smarthistory uses this fresco to teach pictorial space.\nNearly every cue below is running here at once, and they all agree. Follow the joints in the paving away from you: they close together toward the temple's open doorway, and each transverse band of slabs is shallower than the one before. Then compare bodies. The apostles at the front fill about two-fifths of the panel's height; the figures across the middle of the square are a fifth of their height; the ones in the temple doorway a twelfth — and each group's feet sit higher in the frame than the last group's. Finally look past the arches to the hills: pale, flat, near the colour of the sky, while the foreground robes are at full strength.\nCover the hills with a thumb: still deep. Cover the paving instead: still deep. That redundancy is the argument.\n\n\nHere are the cues that do the work, roughly strongest first.\n\nOverlap. One outline runs unbroken, the other breaks where they meet: the unbroken one is in front. No gradation, no maybe, no skill required. Its limit is that it gives you order, never distance — a hand overlapping a mountain says only \"hand is nearer\".\nRelative size. Two things you know to be the same size, drawn at different sizes. Double the distance and apparent size halves. Needs prior knowledge; two unfamiliar rocks tell you nothing.\nPosition against the horizon. For anything standing on the ground, the closer its base sits to the horizon line, the further away it is. The horizon is your eye level — see Linear perspective.\nLinear perspective. Parallel edges converge, and forms shrink as they do. Two effects, one geometry.\nAtmospheric perspective. Distance adds a veil of scattered skylight, so far things go pale, flat and soft. See Atmospheric perspective.\nTexture gradient. Relative size applied to a repeating pattern — cobbles, shingle, a ploughed field. It works without knowing how big the stones are; you only assume they are all similar.\nShading. Value across a surface reports which way that surface turns. A disc and a sphere have the same outline. Smarthistory's example is Titian's Venus of Urbino, where the thigh is bright on top and rolls into shadow as the knee turns away. See Value structure.\nContact shadow. The dark patch where an object meets the ground pins it to one spot on the floor instead of somewhere along a line. Remove it and it floats — see The anatomy of a shadow.\nFocus and blur. A camera is sharp at one distance only, so sharpness becomes a distance report. See Depth of field.\nForeshortening. A form pointed at you is compressed, not shortened.\n\n\n\n\nAndrea Mantegna, Lamentation over the Dead Christ, c. 1470–74, Pinacoteca di Brera, Milan. Public domain.\nForeshortening at the limit. Compare one sole with the face above it: drawn at nearly the same size, absurd as a measurement and correct as a projection, because the feet are the nearest thing here and the head the furthest. Then measure with your fingers — his legs, over half his real length, take up no more picture height than his chest and belly.\nNote what did not change: the thighs are full width. A form aimed at you keeps its width and loses its length. That is the difference between foreshortened and simply small.\n\n\nThe majority rule\nAny one of these is arguable. Together they are overwhelming because they are independent: overlap is about outlines, haze about contrast, texture about grain size. Nothing links them except the actual 3D layout, so when they agree the only simple explanation is that there really is one.\nWhich is why disagreement is so loud. Your eye does not average conflicting cues into a compromise depth; it takes the majority reading, and the odd cue out stops looking like depth and starts looking like a fault. Paint a figure hazier than the wall she overlaps and you will not see spatial ambiguity — you will see that she was pasted in. Same for a person on grass with no contact shadow.\n\n\n\nSerife Gerenschier, forced perspective at the Sultan Ahmed Mosque, Istanbul, 2017. CC BY 4.0 via Wikimedia Commons.\nShe stands a couple of metres from the lens; the mosque is much further. Her outline runs unbroken across the domes, the arches and the wall — that is overlap, and overlap almost never loses. Relative size is the cue that gives way, and your eye does not discard it, it rewrites it: she must be several storeys tall. The visitors by the doors are the scale that got overruled: roughly her height in reality, an eighth of it here.\n\n\nAcross different media\n\nPainting and drawing. Every cue is available and none is expensive. The Italian Renaissance was, among other things, a project to work them all out at once.\nPhotography. Most cues arrive free from the geometry. The photographer picks three things — where to stand, what focal length, what aperture — and where you stand does the perspective (Focal length vs camera position).\n3D and CG. Overlap, perspective, size and shading fall out of the renderer. Atmospheric haze is a separate switch someone has to remember, which is why untuned renders look plausible up close and suspiciously clean into the distance.\nGenerated images. Cues come from learned statistics rather than from a scene, so each can be individually convincing while the set of them disagrees. That mismatch is most of what there is to catch.\n\nCommon mistakes\n\n\"Depth means perspective lines.\" Only if the scene has straight edges. A misty forest, a beach, a face — no orthogonal anywhere, still deep. Perspective is the one cue that needs architecture.\n\"Blurry means far.\" Blur means not at the focus distance; foreground blurs just as hard. A tilt-shift photo of a real city reads as a model because the blur pattern claims the depth is centimetres.\n\"More cues means more depth.\" Only if they agree. One contradicting cue costs more than five agreeing ones gain.\n\"Overlap is too obvious to matter.\" It is the strongest cue you have. Where an outline crosses another ambiguously — a hand and a railing sharing an edge — the spatial reading collapses at that exact spot, and correct haze elsewhere does not repair it.\n\"Distant things are just smaller.\" Smaller, and paler, and flatter, and finer-grained, and higher in the frame. If only the size changed, something is wrong.\n\n\nHow to check an image in five seconds\n\nPick three objects at three apparent depths and rank them front to back by overlap alone. That ranking is your ground truth.\nFind the horizon, or work out where eye level must be. Do their bases sit in the same order relative to it?\nCompare contrast and colour intensity. Same order, weakening with distance?\nCompare sharpness and texture grain. Same order again?\nAny cue giving a different order is the defect. Name it — \"the figure overlaps the wall but is hazier than it\" is a usable report; \"looks off\" is not. See Naming what is wrong.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Linear perspective\n              Parallel lines in the world meet at a point in the picture, because equal real distances take up less of your view the further away they are.\n            \n          \n        \n          \n            \n              Atmospheric perspective\n              Distant things go pale, flat and sky-coloured because you are looking at them through more air, and air scatters light.\n            \n          \n        \n          \n            \n              Depth of field\n              The band of distance that comes out looking sharp. Everything outside it blurs, and how that blur grows tells you whether a picture came out of a real camera.\n            \n          \n        \n          \n            \n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SRC-009 — Smarthistory — SpaceSRC-001 — Getty — Understanding Formal Analysis: Elements of ArtSRC-076 — Drawabox — Boxes: The Basics of Perspective and ProjectionSRC-010 — Smarthistory — Chiaroscuro explainedSRC-013 — Smarthistory — Foreshortening explainedSRC-084 — Photography Life — What is Lens Compression?\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Depth cues",
+    "Why it happens",
+    "The majority rule",
+    "Across different media",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\n\nPietro Perugino, Christ Handing the Keys to St Peter, Sistine Chapel, 1481–82, fresco. Public domain. Smarthistory uses this fresco to teach pictorial space.\nNearly every cue below is running here at once, and they all agree. Follow the joints in the paving away from you: they close together toward the temple's open doorway, and each transverse band of slabs is shallower than the one before. Then compare bodies. The apostles at the front fill about two-fifths of the panel's height; the figures across the middle of the square are a fifth of their height; the ones in the temple doorway a twelfth — and each group's feet sit higher in the frame than the last group's. Finally look past the arches to the hills: pale, flat, near the colour of the sky, while the foreground robes are at full strength.\nCover the hills with a thumb: still deep. Cover the paving instead: still deep. That redundancy is the argument.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AT27rOhAwnKAiWhLhNUsXKg42AG8ASRmoT2fgOEDy5svxZ6tHCFGnkKc5urCKh287jQS040bLlXOnxLaEvVm2DJgpYnjCXRq7uWZAp0-odeagGiCEdB0RnMnUfPWeyCLfpwhLeR8spNrWL9TY1OZDK88uSxHZ5I3XeYgp4HyePmX6Lir-dSdCInSBtNZ_UxIaABloNB_ZQsp_YPMdyLd4ZPL4K_mRfOKNfOsh5bPhieeYnSS5eAda5tEjiKV7tkp-aY0jCVXltiObLfdaVcLLRQg9h9zumKmwun4umVYoJfk60RrEhWSBW6-nlDjrAbSs7jc6xixD-y4VvG7cumPf7VmxWCvjCYbbkB2bWVXfO-d7wrM3Arv6fYx8Xfbyd2atxVFQyBWW1HteEldI1RfrsoVbgJ6d_nIXa2tGZMVUnbc27cAhdqF-aJPMoFKw_Somc21zpYwbPDhFFTsucuzUKtd7b67pH7fRouKicJDM1LAs0wk6mkQAKe2-fPE8cE99QijFuUw7vx7pMieqctbF7alPTG6FcHaGmZH7epKcy_gaK5-l8agVgdAZgDPiQit6TaGwMW-CHNCNf_MGQwPaLbN9C01dZej85GwbY2Vf9KTNOV_5rA4CNuZaS0pKgDFUqgYGNKx11rhc7PZqILcBjb1Q6OFEODn8FAutT3y2ekzuqA_USbOR7pFYrhqwP0yhEHbFTQHudBG3c-QJydv4ycxPkSZQli3iS7LeKvOBB5c-k8vILd3V73QE1LfZyfPfb7-vR2bd8RiOlAmfY_HOvYLf_NJer3VqHk7u2ni3ZknKycSJ8OaEXf112eyooVh2MEReHbTmQ_VfmrGP6frHfgpRW5uULIZAZUhhn35XzzAEJ8Q_ZK4MyAL8TaFGJl4zGvHPXwUPWKfXISXhUAw94czlwo7A-ptcPpmIxJAA9kfxCoUCbcYh0DSlFFKtBBwjuh3ZSyn_HyBRN7mkO9_iHxjWyTPUWPcgL7qpyeyEcXCCd44Ed-9h4PA2qIU_XrxTny8pf4rniBVn011_VBc7BQIp5Cnq97_AGDZ9P6vSr9MXNCJXRDOLMH-gI7ZY4rNLW0Uvv4c1kuGrLWnZqkRcRAQ5IjnRm99aEOLPXUZfbLhx_wVtlBJj4Oq5C9Y3mRg5-ajSxeAiTnSGZ6dYscuxaBHYstjY7bjGTxx4UHoAmF9YctKeYEnZyz-eM9_hh_vo44TjNankA_lY8jqHG38t4Llj_zMUD4ak8zzqy6w_QwTstnmpdG-luHN5EugxSMoWP7taAYqN5VeyE6fSgxfL-Zfq5z-KDaWwB0FQqU-wUdDijx28U8sjjU4dFzVIxtWu7EQvkZbhVm-oKYEFv8i60pXzVylR2A1xa7jdG5UsD0GMh3g2CI0M5Ak0tOMCFF6469MxH5wl1_qJzCTKXBu1n9IxkhP6ZEASEYDfea1JTkROBhLRUSSRgBSXa8-gHkeEK2Rf5ah0pfEicEqj7TaBt9S4UtTxofi5kNZzwC6Fc1UYc9hAKc4lfOZMi6Pw5dbWfS_Q61bs4btAib6O7Fr8uapBccIs2rDlGiHbUOxwzPp3rXp1g-ZZTkapJndznzFxrgn3sQjYCmj4jHCi8rjslc0R1XxNGtbVyIhtZ1djXsJqKp2bYlXH6CkSmKdv3cJNHqoRUFpcLUV-JJvmScknrdQrJ0Um0Tp3AK5MCAHUrR3_8G13AxtmUXtsSAKi2sm9agqKw0okDXgd3JV1dOv57dFs-lDK9dwIqpOSxhXv4na6ksGlmieBQlIe1zRyZN38P2WkUdfUHtlTFoEfwCCac1TQ3YQPpAB7Bmb8yogXNyXIQO8Y3nRIGvZxHHnb3rmtu5o7ikIZ9jiyMfTPtq8PCqOiZlYGpPU7FZuGTTLQFtTG6anrz8TBpDDrziaStL-xu5HZdFU0s0KBNIrCAiMJcEkZr4D5q7QIf16b1mC6KqEszqJ0CezZIa4MP-NyfKeJKQlNwbgftguIguKDFNjyabQAWq0rFvwW1jXP7ZbscN1GC6TcYlFeBjikmZCw7_e",
+          "alt": "Perugino, Christ Handing the Keys to St Peter, 1481-82: a paved square receding to a domed temple, with large figures in front and tiny ones at the back"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nAndrea Mantegna, Lamentation over the Dead Christ, c. 1470–74, Pinacoteca di Brera, Milan. Public domain.\nForeshortening at the limit. Compare one sole with the face above it: drawn at nearly the same size, absurd as a measurement and correct as a projection, because the feet are the nearest thing here and the head the furthest. Then measure with your fingers — his legs, over half his real length, take up no more picture height than his chest and belly.\nNote what did not change: the thighs are full width. A form aimed at you keeps its width and loses its length. That is the difference between foreshortened and simply small.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AecSuscx5tu-9vT2f_jYI7O3vZ-igvPSRCTTccPO6MKiVJvQCxg3MaFBwREsu_sIJYm43neUwwv6HSINsp4mAQ5tGZmdueCwpS2SZsE6jo3BYiZ0GD0FVtCeEW4TpT5lce09zpfX80mP1AIr7gkdGGBCrbr99n5s1eWoIfD6Z87Y3ioLrOjdrkheJpTcHvfro9WXXnoxauBjP0XGEePho70T0rD8iegQkGll6bTHHCiqAiUf9mtbpkD4skhsFSell3ly2fC5DwA6r6DYH814y9J3sYGEIO8ae7qoSuIh31BvAmXHBnpJNOttd1Wu2kGLJXdpoHwMx35snQo-b7_quL6yLjCmLCfzqeUYKIPLPCM1fsJh7ExYqgmX3_FuTOqkRsHHDLj-tupFx4ngb4-al1Q_mc_xHFg1fFn7lT-VWbZS-Z-UGbKIAYFq4B8QKOOdaWd1-pW9NHpPiWek35WGRqsFTSCwHHHmOudpYYmKD6un4T3EUVUNrvsnqwkNKUpWzJ2i9BBEccitmy7rgzf__b8UX4MVrgLwc_zMKhpwnTjqakA3t6LO48B3hs2lmSbhA6Gc7uSZvy_aOQHp58WdwlC1Mf80cATizycWikTrsyipVPut5rF9Iv4bw3XoHBTIm8nHTaNO6EWUT8sJc_938kB53A5uv9XFr1m4KCv9sFjES4u38Ujt7Yw8icpY0I1K_RAMTdXbL2xUfCBFvTb_NKNNnX4lwxUww78Fd5uG136Gf-t4cF9y36eXelAoG5Rxceqie75NCouUmB19nVlxzr_DNpFwsyrL4VAJ-HgtAvYwviVrlC8Y4rvDzfu0GKhKDJ0-Quyq7idSovWQ1LEqvWwmWJMRTtuNN5S8knynhAxOKYmIZJCUXCPYlcvdNAC4dK9oVeAtVYw6mzsxhafdmBMU2CE7N3LaGmpK0JXpiisvCbc8DP07i7P6IZCn7mnaIdTBVrysxno6Rk0B9hwz8d80nqVvkvl9nolaRsMPFDgGIDmT__GBuhieAV17g36yUxOzt0dONCvGQPlI0Co-dL0GzLvcJ1hANxWfqw-J9iUph0Ivoe74ghe20UxsfGJABj2qgcvhaqR2s4rhCJGSprMDk2JkqabK_EpNG6T6TJaSPh_MHM9fXeLFtrdkhnA-cHYXyt17FXIfu7ltxzvItxVA9bQ93SQKZOLFJrGMkBwkVe3Vc2_CV-eEFF2GDZLkkzp-aMhLRPWdFMabVXclxkvcpX6_f_kKRnnSF5Sizd48GECbQ8YeDkm3MEWOpg1MEOOOHQFoml4lanbiMDoeRaKOwhmdlrQYfhx9is6kfA2F2k6TJg8f8FllKqtnXiivGGcX-QaR-ILVAZT8rlg71zsNfBxn97u-ICcMj_v_OBzP8msjt7fhI4ueE0X_4VyP34G0B9Z45cQg8MTdtS425SA2r1c3L9wakgxvg2LmSvdWHjnBbbQIdQNiMCy22SVJyc4n82vKBsb_jJEp2nUEdUgrvxPKlPW3CvpRkvV0mhyANYzm4QXnDvuJYB3-Ay7eLleQvhiHiXxd21nrVSsQWGFIwN62JHRB3syE0EiIGPT74-7QU-omCy6gVKFUZqHmrX12iWpk5w9IbsF4PsXZJOvAoApnjQHRv3Khg14oObhVC80nKr_CGgh78uTO6WVdjualwwqreGiNpo7-GCqQJfxVIAeNTs1jBW83amu6Aax9Rs5AUDEe6efOdmODDk_LEsSiv6c3133fSFT28x1ktdKyHtQBqPlQvolLiN-Oes8i--m-5AsKgmT92_ISQVK6MbrQRf-d1AXnk0MHOdXTADRUzW71nBHhlTRN6J9eOP6P6FYft9uNYGFI4f2C_96e3G8hMecMAFP76tEUOGDTK8c3QXXxC1B2jq5CTPjpXdqqLeJ_t44Ouhy-NSAeSIlOHPFAUVVPxOZsmdTTcLc_6uc3lHgSHKqPRJCxfp8fPRV1AFoxB24JBSxanpuc97AI7Zv1gYzaHtOSfY4NlevK6E9JsavesXaawTvhibrjCe5cqXBVtXsoWTBRhCcAB0Yw",
+          "alt": "Mantegna, Lamentation over the Dead Christ, c. 1470-74: a body on a slab seen end-on from the soles of the feet"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nSerife Gerenschier, forced perspective at the Sultan Ahmed Mosque, Istanbul, 2017. CC BY 4.0 via Wikimedia Commons.\nShe stands a couple of metres from the lens; the mosque is much further. Her outline runs unbroken across the domes, the arches and the wall — that is overlap, and overlap almost never loses. Relative size is the cue that gives way, and your eye does not discard it, it rewrites it: she must be several storeys tall. The visitors by the doors are the scale that got overruled: roughly her height in reality, an eighth of it here.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AXowQOMPAQ43hReoWFD3529-FEYk_awgE-NZ2kCB4P54d-iZvHTh1qsuujAge9r_nHWzWGX7EkdtT-XO8nkx1zhtluLwcxQdg3nKJ4EMDKDOqcjtm5GRja6USob5EPCumLskkWcYkC4cSpujTwwWhDbiVaOqQt5N7HUrgbSTeP6-lu28QLhFShvVUErnuQu6cN2c5eo3RcWSmPUjAA-BIJQAgsypFCiExDdz8Omd32qUda14pctsDD2j2We6hRWB9C-Y4y4Cq7n8RGH0tVpUudY3M62L8DdxZojNs2DnLs8VnZ7teBJrIMeZRE-ZtWpahpRefwrJ0teWXK0YsSMVmzp8mHeh_6wD_ll7fFmm_rfEfQMLjfuOZEApcrjZz-NiT-LZwOBUTlOzz9T-4HOjq4YbVn57VchYC3Lqkml9q2rMRIHDlMWBsolvbJfrMHyoEko7OeOjSLDdJTtW8CcY7ELFmtXLGmKB-5ZL_51Eb5qGVLXeq6ZQoSJYsHFTJ-_FJJRYKfPp3CIsUhUs4aL6XR9_9vtrXViPfRXenGa-t_2GvH0UZRDmkHL9I0liXI9vsl9InNWn-FJDR1qHJ3ZD2Vg_myJzhIKt56YTIbX39HqaItFqFXijig6ZXMqFEJCzNdP-6SE1DT8028_wuMb7whPKRir74c7S36s9dLrrgRzFwuCFmWVeymBMO7gcbScW-tXba_s3-vA8ooOJGeteFWuUbydZJTd92LSvCPYh8iQACZw9rB6YOEoJ6mfsJdXmKY5h3DwRf0yVeXfsIkCviEwtfPBU--RvP9nXvZ1dFRAi8P0HuFFHYPIEhmGrUaMA0dHNaYO8e6Tss24k-QR2QG1uNuqcjiiPxeGNOgfDLlSLt1E6z36wrn6NDTYyPEQbM4bS_NSTdRloQgbrfFWnW8WbrtYGivsl7de87YE3fRVvr22k8v3ehiiWNvGsWQDgPEWKLM51NqbSmy-w-SgQGhBP_JKC0fCf4fN2C3_eEkLvOCaaVpRrt-n5qxr9N_iyw3fJwhkjMXK0OK7v1FNDwEZNPUTE6tdZaWVIajyTKOQOUuz7wym9MniKyuKZnvsrcMgd6vk3jnmpVkBaAtNniMdQcaEfHwHpnn5aWPi7OD6iaNjutbKxKxe008o09MpSHijiZLPU9fs0bmqi4-nzSoPKM6QO6sNVy2p5STK0s4B-rCX4GygslS_Ki3IQykOfoUiBgabDdtzNxsaRsKvSZMRz-Y8NoPqr4RVMptuiXFySd-GzhIBEcS7YOjd7e_o5rB9Lb5DEHhDXVWENcT3WtEZYtFtpvjSvLgSHGgAOhXWvRQhwGqe3X4XANYRqk8KqlulwpiGD722ax2LjhM2v0BeVzmUIeLE6gonyMuyK7NXfGvs5qAxl1AopewEr0BEmlzbpFT4hQpD_MwR6hMoYszwVw8FfnIi73Yp6f61TQMWAsiiGKMB9nITE8GAa99A5fBXsrs3-q3lrwDEjkPOwNFWIj2vDnqKL2a1Q5mwgG3lAaEqq3EJJ5oqq2AhTXg6JRXLhhonn6eZTI2j6a_EdJZ5rvbuwWE7Uir_acRVEaYv600P2mABavWOPu9R4aoQ_0ksVKOfJcFfpaFn3j3SBoWIlP7kI-Q19YG3AoxWzPOs8nZAHWyUUxnhlIz5prJYGHlUBXuF61UkXClYBki81PdqtyTADLs7OATiPk00rTgAZbQOUdRVg8_L4cCMiReIgARE6QpiQ7Lx8FgzGNbw2SfTf5eULtU4ULRPWboddNM5P8bleM65NdRIkmeRJEzwkkBgZ_ZL-g-CcMINr129L_FaTjrRfHQsiuykaXm5OGsWNf9T3cQNGg-sFewlHJLTAJRMmV9fbqdh0Xh1Ke49tS21bFwKpcPBrXGvjS8m0FiL-DB_hcjCRfpGgaC2YBhPdYQcVo39q_JB2gozgcAvfy5FUKFe7oYQBL0jv7FYdKWY-uuBj5ulHEThWbLRS0Jx7i2tGoFX4WVp82gLDTmdn80pqU-E-CskFgJlFQWQ3HqH_res4ttASBkjifwN-lZDL",
+          "alt": "A woman photographed close to the camera appears several storeys tall in front of a mosque, her hand at the height of an arch"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AT27rOhAwnKAiWhLhNUsXKg42AG8ASRmoT2fgOEDy5svxZ6tHCFGnkKc5urCKh287jQS040bLlXOnxLaEvVm2DJgpYnjCXRq7uWZAp0-odeagGiCEdB0RnMnUfPWeyCLfpwhLeR8spNrWL9TY1OZDK88uSxHZ5I3XeYgp4HyePmX6Lir-dSdCInSBtNZ_UxIaABloNB_ZQsp_YPMdyLd4ZPL4K_mRfOKNfOsh5bPhieeYnSS5eAda5tEjiKV7tkp-aY0jCVXltiObLfdaVcLLRQg9h9zumKmwun4umVYoJfk60RrEhWSBW6-nlDjrAbSs7jc6xixD-y4VvG7cumPf7VmxWCvjCYbbkB2bWVXfO-d7wrM3Arv6fYx8Xfbyd2atxVFQyBWW1HteEldI1RfrsoVbgJ6d_nIXa2tGZMVUnbc27cAhdqF-aJPMoFKw_Somc21zpYwbPDhFFTsucuzUKtd7b67pH7fRouKicJDM1LAs0wk6mkQAKe2-fPE8cE99QijFuUw7vx7pMieqctbF7alPTG6FcHaGmZH7epKcy_gaK5-l8agVgdAZgDPiQit6TaGwMW-CHNCNf_MGQwPaLbN9C01dZej85GwbY2Vf9KTNOV_5rA4CNuZaS0pKgDFUqgYGNKx11rhc7PZqILcBjb1Q6OFEODn8FAutT3y2ekzuqA_USbOR7pFYrhqwP0yhEHbFTQHudBG3c-QJydv4ycxPkSZQli3iS7LeKvOBB5c-k8vILd3V73QE1LfZyfPfb7-vR2bd8RiOlAmfY_HOvYLf_NJer3VqHk7u2ni3ZknKycSJ8OaEXf112eyooVh2MEReHbTmQ_VfmrGP6frHfgpRW5uULIZAZUhhn35XzzAEJ8Q_ZK4MyAL8TaFGJl4zGvHPXwUPWKfXISXhUAw94czlwo7A-ptcPpmIxJAA9kfxCoUCbcYh0DSlFFKtBBwjuh3ZSyn_HyBRN7mkO9_iHxjWyTPUWPcgL7qpyeyEcXCCd44Ed-9h4PA2qIU_XrxTny8pf4rniBVn011_VBc7BQIp5Cnq97_AGDZ9P6vSr9MXNCJXRDOLMH-gI7ZY4rNLW0Uvv4c1kuGrLWnZqkRcRAQ5IjnRm99aEOLPXUZfbLhx_wVtlBJj4Oq5C9Y3mRg5-ajSxeAiTnSGZ6dYscuxaBHYstjY7bjGTxx4UHoAmF9YctKeYEnZyz-eM9_hh_vo44TjNankA_lY8jqHG38t4Llj_zMUD4ak8zzqy6w_QwTstnmpdG-luHN5EugxSMoWP7taAYqN5VeyE6fSgxfL-Zfq5z-KDaWwB0FQqU-wUdDijx28U8sjjU4dFzVIxtWu7EQvkZbhVm-oKYEFv8i60pXzVylR2A1xa7jdG5UsD0GMh3g2CI0M5Ak0tOMCFF6469MxH5wl1_qJzCTKXBu1n9IxkhP6ZEASEYDfea1JTkROBhLRUSSRgBSXa8-gHkeEK2Rf5ah0pfEicEqj7TaBt9S4UtTxofi5kNZzwC6Fc1UYc9hAKc4lfOZMi6Pw5dbWfS_Q61bs4btAib6O7Fr8uapBccIs2rDlGiHbUOxwzPp3rXp1g-ZZTkapJndznzFxrgn3sQjYCmj4jHCi8rjslc0R1XxNGtbVyIhtZ1djXsJqKp2bYlXH6CkSmKdv3cJNHqoRUFpcLUV-JJvmScknrdQrJ0Um0Tp3AK5MCAHUrR3_8G13AxtmUXtsSAKi2sm9agqKw0okDXgd3JV1dOv57dFs-lDK9dwIqpOSxhXv4na6ksGlmieBQlIe1zRyZN38P2WkUdfUHtlTFoEfwCCac1TQ3YQPpAB7Bmb8yogXNyXIQO8Y3nRIGvZxHHnb3rmtu5o7ikIZ9jiyMfTPtq8PCqOiZlYGpPU7FZuGTTLQFtTG6anrz8TBpDDrziaStL-xu5HZdFU0s0KBNIrCAiMJcEkZr4D5q7QIf16b1mC6KqEszqJ0CezZIa4MP-NyfKeJKQlNwbgftguIguKDFNjyabQAWq0rFvwW1jXP7ZbscN1GC6TcYlFeBjikmZCw7_e",
+      "alt": "Perugino, Christ Handing the Keys to St Peter, 1481-82: a paved square receding to a domed temple, with large figures in front and tiny ones at the back"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AecSuscx5tu-9vT2f_jYI7O3vZ-igvPSRCTTccPO6MKiVJvQCxg3MaFBwREsu_sIJYm43neUwwv6HSINsp4mAQ5tGZmdueCwpS2SZsE6jo3BYiZ0GD0FVtCeEW4TpT5lce09zpfX80mP1AIr7gkdGGBCrbr99n5s1eWoIfD6Z87Y3ioLrOjdrkheJpTcHvfro9WXXnoxauBjP0XGEePho70T0rD8iegQkGll6bTHHCiqAiUf9mtbpkD4skhsFSell3ly2fC5DwA6r6DYH814y9J3sYGEIO8ae7qoSuIh31BvAmXHBnpJNOttd1Wu2kGLJXdpoHwMx35snQo-b7_quL6yLjCmLCfzqeUYKIPLPCM1fsJh7ExYqgmX3_FuTOqkRsHHDLj-tupFx4ngb4-al1Q_mc_xHFg1fFn7lT-VWbZS-Z-UGbKIAYFq4B8QKOOdaWd1-pW9NHpPiWek35WGRqsFTSCwHHHmOudpYYmKD6un4T3EUVUNrvsnqwkNKUpWzJ2i9BBEccitmy7rgzf__b8UX4MVrgLwc_zMKhpwnTjqakA3t6LO48B3hs2lmSbhA6Gc7uSZvy_aOQHp58WdwlC1Mf80cATizycWikTrsyipVPut5rF9Iv4bw3XoHBTIm8nHTaNO6EWUT8sJc_938kB53A5uv9XFr1m4KCv9sFjES4u38Ujt7Yw8icpY0I1K_RAMTdXbL2xUfCBFvTb_NKNNnX4lwxUww78Fd5uG136Gf-t4cF9y36eXelAoG5Rxceqie75NCouUmB19nVlxzr_DNpFwsyrL4VAJ-HgtAvYwviVrlC8Y4rvDzfu0GKhKDJ0-Quyq7idSovWQ1LEqvWwmWJMRTtuNN5S8knynhAxOKYmIZJCUXCPYlcvdNAC4dK9oVeAtVYw6mzsxhafdmBMU2CE7N3LaGmpK0JXpiisvCbc8DP07i7P6IZCn7mnaIdTBVrysxno6Rk0B9hwz8d80nqVvkvl9nolaRsMPFDgGIDmT__GBuhieAV17g36yUxOzt0dONCvGQPlI0Co-dL0GzLvcJ1hANxWfqw-J9iUph0Ivoe74ghe20UxsfGJABj2qgcvhaqR2s4rhCJGSprMDk2JkqabK_EpNG6T6TJaSPh_MHM9fXeLFtrdkhnA-cHYXyt17FXIfu7ltxzvItxVA9bQ93SQKZOLFJrGMkBwkVe3Vc2_CV-eEFF2GDZLkkzp-aMhLRPWdFMabVXclxkvcpX6_f_kKRnnSF5Sizd48GECbQ8YeDkm3MEWOpg1MEOOOHQFoml4lanbiMDoeRaKOwhmdlrQYfhx9is6kfA2F2k6TJg8f8FllKqtnXiivGGcX-QaR-ILVAZT8rlg71zsNfBxn97u-ICcMj_v_OBzP8msjt7fhI4ueE0X_4VyP34G0B9Z45cQg8MTdtS425SA2r1c3L9wakgxvg2LmSvdWHjnBbbQIdQNiMCy22SVJyc4n82vKBsb_jJEp2nUEdUgrvxPKlPW3CvpRkvV0mhyANYzm4QXnDvuJYB3-Ay7eLleQvhiHiXxd21nrVSsQWGFIwN62JHRB3syE0EiIGPT74-7QU-omCy6gVKFUZqHmrX12iWpk5w9IbsF4PsXZJOvAoApnjQHRv3Khg14oObhVC80nKr_CGgh78uTO6WVdjualwwqreGiNpo7-GCqQJfxVIAeNTs1jBW83amu6Aax9Rs5AUDEe6efOdmODDk_LEsSiv6c3133fSFT28x1ktdKyHtQBqPlQvolLiN-Oes8i--m-5AsKgmT92_ISQVK6MbrQRf-d1AXnk0MHOdXTADRUzW71nBHhlTRN6J9eOP6P6FYft9uNYGFI4f2C_96e3G8hMecMAFP76tEUOGDTK8c3QXXxC1B2jq5CTPjpXdqqLeJ_t44Ouhy-NSAeSIlOHPFAUVVPxOZsmdTTcLc_6uc3lHgSHKqPRJCxfp8fPRV1AFoxB24JBSxanpuc97AI7Zv1gYzaHtOSfY4NlevK6E9JsavesXaawTvhibrjCe5cqXBVtXsoWTBRhCcAB0Yw",
+      "alt": "Mantegna, Lamentation over the Dead Christ, c. 1470-74: a body on a slab seen end-on from the soles of the feet"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AXowQOMPAQ43hReoWFD3529-FEYk_awgE-NZ2kCB4P54d-iZvHTh1qsuujAge9r_nHWzWGX7EkdtT-XO8nkx1zhtluLwcxQdg3nKJ4EMDKDOqcjtm5GRja6USob5EPCumLskkWcYkC4cSpujTwwWhDbiVaOqQt5N7HUrgbSTeP6-lu28QLhFShvVUErnuQu6cN2c5eo3RcWSmPUjAA-BIJQAgsypFCiExDdz8Omd32qUda14pctsDD2j2We6hRWB9C-Y4y4Cq7n8RGH0tVpUudY3M62L8DdxZojNs2DnLs8VnZ7teBJrIMeZRE-ZtWpahpRefwrJ0teWXK0YsSMVmzp8mHeh_6wD_ll7fFmm_rfEfQMLjfuOZEApcrjZz-NiT-LZwOBUTlOzz9T-4HOjq4YbVn57VchYC3Lqkml9q2rMRIHDlMWBsolvbJfrMHyoEko7OeOjSLDdJTtW8CcY7ELFmtXLGmKB-5ZL_51Eb5qGVLXeq6ZQoSJYsHFTJ-_FJJRYKfPp3CIsUhUs4aL6XR9_9vtrXViPfRXenGa-t_2GvH0UZRDmkHL9I0liXI9vsl9InNWn-FJDR1qHJ3ZD2Vg_myJzhIKt56YTIbX39HqaItFqFXijig6ZXMqFEJCzNdP-6SE1DT8028_wuMb7whPKRir74c7S36s9dLrrgRzFwuCFmWVeymBMO7gcbScW-tXba_s3-vA8ooOJGeteFWuUbydZJTd92LSvCPYh8iQACZw9rB6YOEoJ6mfsJdXmKY5h3DwRf0yVeXfsIkCviEwtfPBU--RvP9nXvZ1dFRAi8P0HuFFHYPIEhmGrUaMA0dHNaYO8e6Tss24k-QR2QG1uNuqcjiiPxeGNOgfDLlSLt1E6z36wrn6NDTYyPEQbM4bS_NSTdRloQgbrfFWnW8WbrtYGivsl7de87YE3fRVvr22k8v3ehiiWNvGsWQDgPEWKLM51NqbSmy-w-SgQGhBP_JKC0fCf4fN2C3_eEkLvOCaaVpRrt-n5qxr9N_iyw3fJwhkjMXK0OK7v1FNDwEZNPUTE6tdZaWVIajyTKOQOUuz7wym9MniKyuKZnvsrcMgd6vk3jnmpVkBaAtNniMdQcaEfHwHpnn5aWPi7OD6iaNjutbKxKxe008o09MpSHijiZLPU9fs0bmqi4-nzSoPKM6QO6sNVy2p5STK0s4B-rCX4GygslS_Ki3IQykOfoUiBgabDdtzNxsaRsKvSZMRz-Y8NoPqr4RVMptuiXFySd-GzhIBEcS7YOjd7e_o5rB9Lb5DEHhDXVWENcT3WtEZYtFtpvjSvLgSHGgAOhXWvRQhwGqe3X4XANYRqk8KqlulwpiGD722ax2LjhM2v0BeVzmUIeLE6gonyMuyK7NXfGvs5qAxl1AopewEr0BEmlzbpFT4hQpD_MwR6hMoYszwVw8FfnIi73Yp6f61TQMWAsiiGKMB9nITE8GAa99A5fBXsrs3-q3lrwDEjkPOwNFWIj2vDnqKL2a1Q5mwgG3lAaEqq3EJJ5oqq2AhTXg6JRXLhhonn6eZTI2j6a_EdJZ5rvbuwWE7Uir_acRVEaYv600P2mABavWOPu9R4aoQ_0ksVKOfJcFfpaFn3j3SBoWIlP7kI-Q19YG3AoxWzPOs8nZAHWyUUxnhlIz5prJYGHlUBXuF61UkXClYBki81PdqtyTADLs7OATiPk00rTgAZbQOUdRVg8_L4cCMiReIgARE6QpiQ7Lx8FgzGNbw2SfTf5eULtU4ULRPWboddNM5P8bleM65NdRIkmeRJEzwkkBgZ_ZL-g-CcMINr129L_FaTjrRfHQsiuykaXm5OGsWNf9T3cQNGg-sFewlHJLTAJRMmV9fbqdh0Xh1Ke49tS21bFwKpcPBrXGvjS8m0FiL-DB_hcjCRfpGgaC2YBhPdYQcVo39q_JB2gozgcAvfy5FUKFe7oYQBL0jv7FYdKWY-uuBj5ulHEThWbLRS0Jx7i2tGoFX4WVp82gLDTmdn80pqU-E-CskFgJlFQWQ3HqH_res4ttASBkjifwN-lZDL",
+      "alt": "A woman photographed close to the camera appears several storeys tall in front of a mosque, her hand at the height of an arch"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Why it happens",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#why-it-happens"
+    },
+    {
+      "text": "The majority rule",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#the-majority-rule"
+    },
+    {
+      "text": "Across different media",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#across-different-media"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#why-it-happens"
+    },
+    {
+      "text": "Linear perspective",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective"
+    },
+    {
+      "text": "Atmospheric perspective",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/atmospheric-perspective"
+    },
+    {
+      "text": "Value structure",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "The anatomy of a shadow",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy"
+    },
+    {
+      "text": "Depth of field",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#the-majority-rule"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#across-different-media"
+    },
+    {
+      "text": "Focal length vs camera position",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues#common-mistakes"
+    },
+    {
+      "text": "Naming what is wrong",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    },
+    {
+      "text": "\n              Linear perspective\n              Parallel lines in the world meet at a point in the picture, because equal real distances take up less of your view the further away they are.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective"
+    },
+    {
+      "text": "\n              Atmospheric perspective\n              Distant things go pale, flat and sky-coloured because you are looking at them through more air, and air scatters light.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/atmospheric-perspective"
+    },
+    {
+      "text": "\n              Depth of field\n              The band of distance that comes out looking sharp. Everything outside it blurs, and how that blur grows tells you whether a picture came out of a real camera.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field"
+    },
+    {
+      "text": "\n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    },
+    {
+      "text": "SRC-009 — Smarthistory — Space",
+      "href": "https://smarthistory.org/space/"
+    },
+    {
+      "text": "SRC-001 — Getty — Understanding Formal Analysis: Elements of Art",
+      "href": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html"
+    },
+    {
+      "text": "SRC-076 — Drawabox — Boxes: The Basics of Perspective and Projection",
+      "href": "https://drawabox.com/lesson/1/6"
+    },
+    {
+      "text": "SRC-010 — Smarthistory — Chiaroscuro explained",
+      "href": "https://smarthistory.org/chiaroscuro-explained/"
+    },
+    {
+      "text": "SRC-013 — Smarthistory — Foreshortening explained",
+      "href": "https://smarthistory.org/foreshortening-explained/"
+    },
+    {
+      "text": "SRC-084 — Photography Life — What is Lens Compression?",
+      "href": "https://photographylife.com/what-is-lens-compression"
+    },
+    {
+      "text": "\n        PreviousSimplification",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/simplification"
+    },
+    {
+      "text": "\n        NextLinear perspective",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues"
+}

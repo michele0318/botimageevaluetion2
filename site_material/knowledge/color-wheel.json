@@ -1,0 +1,10 @@
+{
+  "title": "The colour wheel, and why there is more than one — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-wheel",
+  "source_hash": "93063b2f6d51aa26c7a985ba8678df87dca80e9ee052ebbbd511e91b5df8c1b1",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2894,
+  "output_tokens": 93,
+  "processed_at": "2026-09-13T09:25:05"
+}

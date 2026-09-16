@@ -1,0 +1,47 @@
+{
+  "id": "3dbb6bdedadd10b7f6091ab76e4b6d0617c6538aac8520b0d27cfa05f3ce992e",
+  "prompt": "1950s Swiss concert poster, large white diamond on grey, scattered small colored squares red blue yellow black in lines, diagonal text details bottom left",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 is preferred. It follows the Swiss style more closely: minimal typography, a clear diagonal system, and a stronger connection to the prompt (the large diamond is clearly present, and the squares are arranged in a structured way). Image 1 feels more decorative, which doesn't really fit the period.",
+  "split": "train",
+  "image_group": "96ec0a50336809a6800392ca8ff095733480c29d4887459df766aca09485299e",
+  "image_hashes": [
+    "26614d584e9fb1baa82002fba3da7e0a02ac3e7eda457d1ecdb0e2e277c123fb",
+    "8cf6a404915e20899c300f352a8ffa304088b30a8a4d09d8715f060b9e152b02"
+  ],
+  "contextual_hints": "1950s Swiss style poster\nHIGH\nThe prompt references a specific historical graphic design movement (Swiss Style/International Typographic Style) from the 1950s, which has a distinct visual canon.",
+  "reference_images": [
+    {
+      "label": "1950s Swiss style poster",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "1950s Swiss style poster",
+      "file": "reference_2.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "4dcae2073c5633ff4f270d13daf9451d03b78ad58f194539f7b1aa9fcd4762e9",
+      "corrected": false,
+      "time": "2026-09-13T22:00:57"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:01:01"
+    }
+  ],
+  "feedback": "Image 2 is preferred. It follows the Swiss style more closely: minimal typography, a clear diagonal system, and a stronger connection to the prompt (the large diamond is clearly present, and the squares are arranged in a structured way). Image 1 feels more decorative, which doesn't really fit the period.",
+  "lesson": "If requested style is Swiss minimalism with geometric clarity, prioritize structured composition and typography alignment over decorative embellishment, even if other elements are present.",
+  "lesson_evidence": "Image 2 is preferred. It follows the Swiss style more closely: minimal typography, a clear diagonal system, and a stronger connection to the prompt (the large diamond is clearly present, and the squares are arranged in a structured way).",
+  "lesson_source": "Image 2 is preferred. It follows the Swiss style more closely: minimal typography, a clear diagonal system, and a stronger connection to the prompt (the large diamond is clearly present, and the squares are arranged in a structured way). Image 1 feels more decorative, which doesn't really fit the period."
+}

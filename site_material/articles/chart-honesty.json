@@ -1,0 +1,195 @@
+{
+  "title": "When a chart lies — Image Wiki",
+  "text": "\n  \n\n  When a chart lies\n  The dangerous chart is not the ugly one. It is the one where every number is correct and the picture still argues for something the numbers do not support.\n\n  \n    Termchart honesty / misleading graphics\n    Also calledmisleading charts, deceptive graphs, chart integrity\n    Not the same aschart junk and clutter, bad taste in colour, wrong data\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        The baseline that does not start at zeroTwo axes chosen until the lines crossArea carrying a linear quantityThe window that starts where it suitsUncertainty left outA colour scale that invents a thresholdWhat an honest chart showsLying and ugliness are different problemsCommon mistakes\n      \n    \n  \n\n  A chart can be built entirely out of true numbers and still argue for something false. Nothing is mislabelled, nothing is invented, and the conclusion the reader walks away with does not follow from the data. Keep that separate from the other thing people complain about — charts that are cluttered, 3D, badly coloured, hard work. Those are rude. These are dishonest.\nSix mechanisms cover most of it.\nThe baseline that does not start at zero\n\nAxis from 0the last bar is 8% shorter02550751002022202320242025bar 4 is 92% of bar 1Axis from 90the last bar looks 80% shorter9092.59597.51002022202320242025bar 4 is 20% of bar 1\n\nSame four numbers, one axis change. Left, the last bar is 92% of the first — which is the truth. Right, the last bar is 20% of the first.\n\n\nThe reader concludes that something collapsed in 2025. It does not follow, because the length of a bar is the encoding — that is the whole reason bars work. Cut the axis and the length stops standing for the value and starts standing for (value − 90), a quantity nobody asked about.\nThis is why the ONS and the Urban Institute both treat a zero baseline on bars as non-negotiable, and why both allow line charts and scatter plots to be cropped: those marks are not attached to the axis, so position carries the value and length carries nothing. If the small differences are the story, change the variable rather than the axis — plot percentage change, as in Choosing a chart.\nTwo axes chosen until the lines cross\n\nRight axis 400 to 700revenue is on top all decade0204060400500600700revenueheadcount182125revenue, $mstaffRight axis 300 to 600headcount is on top all decade0204060300400500600revenueheadcount182125revenue, $mstaff\n\nIdentical data in both panels. The only difference is where the right-hand axis starts — 400 or 300. In one, revenue runs above headcount for eight straight years; in the other, headcount does.\n\n\nThe reader concludes the two series are related and that the crossing means something. It does not follow: the crossing is set by two independent axis ranges, and nothing stops you trying ranges until you get the one you wanted. There is no shared scale, so the vertical gap between the lines means nothing.\nThe ONS says avoid dual axes; use two charts, or one chart with annotations. The Urban Institute lists them among absolutes to avoid, with two honest exceptions: two units for one measure (Fahrenheit and Celsius), and the Pareto chart.\nArea carrying a linear quantity\n\nLength10 and 20 as bars1020twice the number, twice the inkArea, scaled by widththe circle drawn twice as wide1020twice the number, four times the inkArea, scaled by areawidth multiplied by 1.411020twice the number, twice the ink\n\nMiddle: the value doubled and someone doubled the circle's width, so the ink quadrupled. Right: the honest version — for twice the quantity, the width goes up by 1.41, and the circle looks disappointingly similar. That disappointment is the reason the middle panel keeps happening.\n\n\nThe reader concludes the second quantity is roughly four times the first. It does not follow, and the same bug wrecks shaded maps: as Cleveland and McGill point out, the total black in a region encodes (rate × area), so a big low-rate region shouts and a small high-rate one whispers — \"Texas is imposing and Rhode Island is hard to see\" (p. 548).\nThe window that starts where it suits\nThe reader concludes a series has been rising steadily. It does not follow, because the start date is a free parameter: shift it two years and the sign of the trend can change. A time window needs a reason from outside the chart — the start of the series, a change in method, a policy date. If the reason is \"this is where the line looks best\", the chart is an argument dressed as a record. Ask what the previous ten years looked like, and why they are not in the picture.\nUncertainty left out\n\n\n\nOffice for National Statistics service manual, chart elements. Open Government Licence v3.0. The red text is the ONS's annotation of its own legend specification.\nFollow the rising blue line and the falling green one. They cross cleanly in late 2020 — and their shaded 95% confidence intervals overlap right through that crossing, pulling apart only near the end. Strip the bands out and the same three lines assert a handover on a date the data cannot pin down.\nThe bands widen to the right, which is the honest shape for anything projected forward. The Urban Institute's version is blunter: a poll giving a candidate 54% with a margin of ±4 points has not put them ahead of a rival on 50%.\n\n\nA colour scale that invents a threshold\nThe reader concludes that these regions belong to a different class from those. Often it does not. A diverging scale — light in the middle, darkening to two hues at the ends — asserts that the midpoint means something; use one where zero is genuinely a boundary, not where you want two colours. A classed or binned gradient asserts the bin edges mean something: it draws a hard border between 49 and 51 while painting 51 and 68 the same. Datawrapper's point is that deciding which values map to which colour has a massive influence on how readers perceive them — a polite way of saying it is a lever.\nWhat an honest chart shows\n\n\n\nOffice for National Statistics service manual, chart elements. Open Government Licence v3.0.\nFour honest habits in one picture. The two series that matter are labelled at the end of their own lines, so nothing has to be matched against a legend; the other four are left grey, which is Visual hierarchy doing the work a legend would have done badly. A dashed reference line marks a date and a shaded range marks a period, each with a short annotation saying what it was — the ONS caps these at ten to twelve words. The source sits under the chart. The y-axis runs from zero to past the highest point, so the full relevant range is there.\n\n\nLying and ugliness are different problems\nA cluttered chart — heavy gridlines, a 3D effect, seven colours, a legend in the wrong place — costs the reader effort. Decluttering, as Storytelling with Data demonstrates, is mostly common sense applied patiently, and it makes the chart faster to read. It does not make a truncated axis honest.\nThe test for lying is narrow and useful: does the geometry encode the quantity the label names? A bar whose length means (value − 90) fails. A circle whose width was doubled for a doubled value fails. Seven ugly colours on a correct zero-based bar chart passes, and an elegant chart from a good style guide can lie fluently. Judge the two separately, and say which one you are objecting to — a channel that is merely inaccurate is a different complaint again, covered in How accurately a chart can be read.\nCommon mistakes\n\n\"It's fine, the axis is labelled.\" People read the picture. The label is a footnote to a shape that already made its argument.\n\"Zero would waste the whole chart.\" On a line chart, crop away. On bars, that argument means you have the wrong variable.\n\"The numbers are correct, so it's accurate.\" Accurate and honest are different tests. Every mechanism above passes a fact-check.\n\"Uncertainty makes it look weak.\" It makes it look like a measurement. A chart hiding its error bars claims precision it does not have.\n\n\nThe one that catches everyone\nTwo charts side by side, comparable data, different axis scales. Each is honest alone and the pair is not, because the reader compares the shapes. The ONS rule is to use the same scale across charts showing comparable data, and it is easy to break without noticing — most charting tools pick each scale independently.\n\n\nReading a chart for honesty in five seconds\n\nFind the zero. Is it there, and does the encoding need it?\nCount the axes. Two vertical scales means the shape of the crossing is a choice.\nCheck what got bigger — a length, or an area?\nLook at the time window and ask why it starts there.\nLook for the source line and any error bars. Missing both is a style, and it is not a good one.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              How accurately a chart can be read\n              The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n            \n          \n        \n          \n            \n              Choosing a chart\n              Start from the relationship in the data and the question in the reader's head. The chart type is the last decision you make, not the first.\n            \n          \n        \n          \n            \n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            \n          \n        \n          \n            \n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        DATA-007-C08 — ONS Service manual — Axes and gridlinesDATA-013 — Urban Institute Data Visualization style guideDATA-003 — Cleveland & McGill, Graphical Perception (JASA, September 1984)DATA-016 — Datawrapper — Which colour scale to use when visualizing dataDATA-018 — Storytelling with Data — declutter this graph\n      \n    \n  \n\n  \n",
+  "headings": [
+    "When a chart lies",
+    "The baseline that does not start at zero",
+    "Two axes chosen until the lines cross",
+    "Area carrying a linear quantity",
+    "The window that starts where it suits",
+    "Uncertainty left out",
+    "A colour scale that invents a threshold",
+    "What an honest chart shows",
+    "Lying and ugliness are different problems",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nAxis from 0the last bar is 8% shorter02550751002022202320242025bar 4 is 92% of bar 1Axis from 90the last bar looks 80% shorter9092.59597.51002022202320242025bar 4 is 20% of bar 1\n\nSame four numbers, one axis change. Left, the last bar is 92% of the first — which is the truth. Right, the last bar is 20% of the first.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nRight axis 400 to 700revenue is on top all decade0204060400500600700revenueheadcount182125revenue, $mstaffRight axis 300 to 600headcount is on top all decade0204060300400500600revenueheadcount182125revenue, $mstaff\n\nIdentical data in both panels. The only difference is where the right-hand axis starts — 400 or 300. In one, revenue runs above headcount for eight straight years; in the other, headcount does.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nLength10 and 20 as bars1020twice the number, twice the inkArea, scaled by widththe circle drawn twice as wide1020twice the number, four times the inkArea, scaled by areawidth multiplied by 1.411020twice the number, twice the ink\n\nMiddle: the value doubled and someone doubled the circle's width, so the ink quadrupled. Right: the honest version — for twice the quantity, the width goes up by 1.41, and the circle looks disappointingly similar. That disappointment is the reason the middle panel keeps happening.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nOffice for National Statistics service manual, chart elements. Open Government Licence v3.0. The red text is the ONS's annotation of its own legend specification.\nFollow the rising blue line and the falling green one. They cross cleanly in late 2020 — and their shaded 95% confidence intervals overlap right through that crossing, pulling apart only near the end. Strip the bands out and the same three lines assert a handover on a date the data cannot pin down.\nThe bands widen to the right, which is the honest shape for anything projected forward. The Urban Institute's version is blunter: a poll giving a candidate 54% with a margin of ±4 points has not put them ahead of a rival on 50%.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWIvXEEH_4NS_s6tl4VNhRpDYP89OXnNMFe7HamY948Y07D8-H1rFDeqGZEAVBi1nGlHc9KxxEVDUByokC-oElX5RZbAmtx6XxYHKgJuOXwsi3NAGT53rcj2QVQezGkA6hIhdv_H6RK7cw77DRtoBCLbMpS_X_Hj9a1ThzE_wrrf20639Nb9mcqMdrohO9EXpLM6qVhKZqL-ROpRfpaaq0JYPkYREbV1Dq0RFv6o4Yc14BC3GMMifr8Esy3ErkozopdL_VZoHIB_2KgPS18JwDrKh0oNBH36TRzjyJcLqPJWCSyaVg5ItDRN7e19bE-IfKH0ets2dpBpgnJS5wTjeTFHbsgTJNVvTVLb1c7vBqznNGFXgCxPUQ74YXmuQbJowY76wI2IsGWU7dUkhoiWUjCRDKalGZZTA4I52z-FXHVVgC8rFeVUzIfPMUrQ8GIX61WSHRvvV6XSYLnDGW30a1zWIYpzwJUEh92QDq7HuIyvA_0RhgzqfzKFQSaqWqv4fM0baa0l92KDLSqM5lgk5ZoPMhtVS9WiwCYiUJA0Fl8Le6yTslH6LOB0Ll1kmxNNIxtqF3fwpTLbTU1koDPzBvoxhFM0Rlnk20zCcCkmTlHEq7o-bAUkQPGzKR9m1syCfZn2fc5Ihlh977XLsaZ49VD99uJKprKt6q3pjTWR9L_h2MCJpLPrROMGT0_ynIoD94vwYpIKLf674xziwMhVK_MG6sN7BZjCdtU1fLMYU257Z-nO0j_4mvQ2ZMrhLBtsnRZGB4X_JdqXPohIEi303ZsK5cDa63_ZhtA9pH42cewJkNqAlOGxpwKaPPpu1fRH-tJXTFx6qrNDBaZOsvCS6yfUyvA1-e375n2-gljItvgdnEEI2wZQm3iiL4mB25BnbL9fq1TgnDTXuHmUpJM2_tduFFGr5VOBrojtF9l0the4EWxiJQl11kd1AZsCkOR82OtkrKY4XNkcKTXvSrZUIHCfv-mo3jL-dL31SgaSs_L07tOhqzWgxp0It1rJuhwcNI1-sq8K4lf4TOaiXFA7CpiqoLXR96RHXF4-m6XcjAz48k2q9QXYZtaoI6-9c5xUlKG0ApfBCzyMT4shXB_Gp3v9tgyFmbtTkoBd0gFiwPQl4dNikruGnt4YQL4xv1pbiMPe-mST0DOwOj4avSopVjtDOGQug16p7pyUVD3ihxnwfK-6mrl9Qhb9xEEl96HvYFXprSHQO2MOh8JhTdtGUcMDZqMQTwTcVeWkqND0DPmcVaURVXD77bNilxLnN59gDoWgPxp7C-9cdWSCP6lvCMCRhIgawtPftRM6G_KTlSlfhjQm404RFJz29LOHTqwmlW_hfL4k9rPLg75qMKBG5pC1I5-qgT0KtLIOaLDSXvOKw-xcc8Ok7RQGt1KuomEUTEf90rqVELPnOBQ-IPI1mkU5S-vVtiVKOFAxUH2m8PxA62WLu09_qskxEXU4LUD6VOxJTVo1dUcq9jyzM5hWTSwax7yqxodXoy7ySXnu3MSpwggyuFK6NWD7PM7_YbUVpp7rPQrnml1UZwmRgg4h7ciSdG3UHmdBuCyjYoA7wZrubeofeQYqjTdAT4e0xLM0aeJjGW1raalERg3i3VKyUu0t5_KhEUShOr_3nURnh7kfktQQr2O0CJIqz_uuXW35B9s0HPx5XWZfKESoIkb0RazgimlAfV1qiW4ExbdbDed53-tE6IZUxY31Gl7BaxuoiOThEPhgc9ILu-xltZtUTzca6pfrJHv8-cTBDg4kNY17G9CECDEFUZv1vhps5Fx5kAAiF0Zh-OGdMcXVD8MEBOIcm5CXtIUPz_PEizl4htEqaacaUTGQ3bFHBKK7KmHrXjcnBTV6v5tKe0n-4FXoPFtp2RTPk6b7I5QrbWPfwQi-Y9kpejY3Zg-T9-WHcC4C6fKDfSYEVYBNJynqDcZ9zf1G8Y9ubhmuxCpcSawdCVbOcFqk2UorBJs24lOC7Suvd_UtdbpZPmzStkY40UMz1cYWSsbK2yS0pkwF62VaTCebcf5MG9hQ1jXYo7vjoeeo",
+          "alt": "Three trend lines each surrounded by a shaded 95 per cent confidence band, with the bands widening towards the right"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nOffice for National Statistics service manual, chart elements. Open Government Licence v3.0.\nFour honest habits in one picture. The two series that matter are labelled at the end of their own lines, so nothing has to be matched against a legend; the other four are left grey, which is Visual hierarchy doing the work a legend would have done badly. A dashed reference line marks a date and a shaded range marks a period, each with a short annotation saying what it was — the ONS caps these at ten to twelve words. The source sits under the chart. The y-axis runs from zero to past the highest point, so the full relevant range is there.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AcXHIkw9XdSU3D9HmFgHdbEu4khmdZPUsKIitmuc7kdpQQjeEzjIS1RYh6sjFV4epanAfnzcHfIuWUKLrAULKdPnA3BxNy3iFYfsDMF_E6FJ_XKXagLOLJVrqWQt4xhN2FlMnmrsvhLkLqWwiK4f9rnUUAY3J60ZRQ2IdMxnFLf8iY7AgTq27qpKXQNianYuC4Mj38l6Ln9GBXWe5Y5gtSAe1jMwvbgF83br2yhqQdorSM75HpLhczm0zERGpaSQqHo-7ScVgGgeKj-r5mFayjOnWPUAeB9bhMq9VZo1J6fIJi3cRZYWMwikJw6zSdvL4DyOnwUIA58O4YLaCw5zzLUVbmn6uXy2KcM9gnJvjdunVX8wUMSTIeissxKrOZkbJUrbXKhlA6U4njKs-hxXkHqTo5zwalulIFCW8qMdkileH7aUbC8A5em-u14WM8JnAfhmyZUxK1FcCZJ_lGKS1XtyNfED-SlgiHwPLVyb8soWPQnHG5JcLaJqPfNAFztBYnVdxyad2sj3_dVrWIwdW5eTfJmv7LySebG_-Q35FYQWn0h65ldYL4Qf_AH0kOO3bx6nzBNF-ObehS4ftZatB1syzJskHw0Zdh4wnbNc3Ty3ZA3usBg8hq1FuyGyzyTJ2fg8g29GW3YJ1Ozqt3LW9nVm-CF8kuPE1qJvBmHFzSTzfw-75bWMb5pZilUAubUm-mViSFh5umO3NPHrMV3Tya8o2ZtqCKOq-ggnC2376pF9xZGWwHrYUYkNyXMLjj1zQZhfxGbRRTpA4GUGgBFXUbLn9-zbPWYfA_wybMoYOEKyo5C63_N22XR21QdY6J2pJeHCPzpx4Wc3vc_slqIDwjB2gggBVy0Ail9Y_0TWdGKMVCITPE4NZw2ijZYitciPNcmf55z-Jl351Au2fJ5umc10JNtbOLOpJO1H5t5phnzNV8i1iaQ4tH4L0KYw8qdT5y1EIimwcrbjjwnHJ1yNF_2Aa6YdVvElBLJ3UaBzk1zdpqwCM840ld5dBotSj2ev9YjUU1ma1v2vYbQ9DQ80ieg9oQnCdcL-XbCqDuq3-mvAXbt7CKQP5Ad-Kj-NXwb3_jRQnh7oBDqWGSWWzuSbyzJLUZa5xNfsH93JpR7MEZDDkXXoXcwUid1ufVBrhaiSfcQkl9CrIWIMw1P9jDnI7yXNQFP0bdjoFR9wZ7BVO1Cx6ZxedVNWbh9JsSM9GwybfjAOw4sMyVUpwj-SzfXZ8cyg7Uevp1muLhgKPMkrF67ra7jHexfDvvt3rNYqibLpMrCZkBudLpUH8Yabsm3F2MyL7F7W1nGLhcRmm3XbZTXoS1mr7kz5Gye7TOYmQqYNLnPzePdUiVwC9CmCgGjyKqoUPUckj0usgqVo3BpjWtC158F7AZbE-drEU76B-vZF82wupECEFWC7vzxf6LDEm7bxgJBwewDamFfsNj2G0mlNqYZWBqqKG5EBA1ffdspaUaJmEnWz46FwRalhdl6IeLjy40TkTcz4LdOJEMyJJIMIivb9PekgQt_RGpy-O9WaDvrvs53isC3D9ZPq0Ti1weZrBDoxNzpfo8LpfFbbqqbHNxdYWFYNU4Ge5ENaMVBrvjFbwhesKaNHO9SP86qZzycPruTxugV_wRG39CPLpe1rxzr1sQK8MAVH6FyUf4sT0cKrt4oeHxvf5dvzemTSId0iCITOcYM5xcllWwboJxWD8P-RsFRp8ERHigpnh4Hk7qoVDXD0vT06Mae15NdlKyW0TId045wNbdAK6apt-lzZPVG0vzUgWPA7eVGxM7AV9jy5t6kwB7uqQhsKzd7KL9xbV0YFcOkj8-EqMA5PHKGGn4VlAiVCwxQJP735pJXenpgkFVT2j8sknHXyiXhlQSygB-EFFj8swAVZRU7B2j3DU9uqm63rf_UCwC4YwsXk-Q5HjLQzcQICrXxjKxvvAjEKcfv2yaLrJP2w4Amfh6dr5pjmjcfWWkLasVBobEtcJYVphjw13VpJ1EAgv6u6wmbkinzvRAc6LUXvAxBqMWOkYIfn1LxM_qS6Rsmx8ESZ",
+          "alt": "A line chart with two highlighted series labelled at their right-hand ends, a dashed reference line, a shaded date range and a source note"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWIvXEEH_4NS_s6tl4VNhRpDYP89OXnNMFe7HamY948Y07D8-H1rFDeqGZEAVBi1nGlHc9KxxEVDUByokC-oElX5RZbAmtx6XxYHKgJuOXwsi3NAGT53rcj2QVQezGkA6hIhdv_H6RK7cw77DRtoBCLbMpS_X_Hj9a1ThzE_wrrf20639Nb9mcqMdrohO9EXpLM6qVhKZqL-ROpRfpaaq0JYPkYREbV1Dq0RFv6o4Yc14BC3GMMifr8Esy3ErkozopdL_VZoHIB_2KgPS18JwDrKh0oNBH36TRzjyJcLqPJWCSyaVg5ItDRN7e19bE-IfKH0ets2dpBpgnJS5wTjeTFHbsgTJNVvTVLb1c7vBqznNGFXgCxPUQ74YXmuQbJowY76wI2IsGWU7dUkhoiWUjCRDKalGZZTA4I52z-FXHVVgC8rFeVUzIfPMUrQ8GIX61WSHRvvV6XSYLnDGW30a1zWIYpzwJUEh92QDq7HuIyvA_0RhgzqfzKFQSaqWqv4fM0baa0l92KDLSqM5lgk5ZoPMhtVS9WiwCYiUJA0Fl8Le6yTslH6LOB0Ll1kmxNNIxtqF3fwpTLbTU1koDPzBvoxhFM0Rlnk20zCcCkmTlHEq7o-bAUkQPGzKR9m1syCfZn2fc5Ihlh977XLsaZ49VD99uJKprKt6q3pjTWR9L_h2MCJpLPrROMGT0_ynIoD94vwYpIKLf674xziwMhVK_MG6sN7BZjCdtU1fLMYU257Z-nO0j_4mvQ2ZMrhLBtsnRZGB4X_JdqXPohIEi303ZsK5cDa63_ZhtA9pH42cewJkNqAlOGxpwKaPPpu1fRH-tJXTFx6qrNDBaZOsvCS6yfUyvA1-e375n2-gljItvgdnEEI2wZQm3iiL4mB25BnbL9fq1TgnDTXuHmUpJM2_tduFFGr5VOBrojtF9l0the4EWxiJQl11kd1AZsCkOR82OtkrKY4XNkcKTXvSrZUIHCfv-mo3jL-dL31SgaSs_L07tOhqzWgxp0It1rJuhwcNI1-sq8K4lf4TOaiXFA7CpiqoLXR96RHXF4-m6XcjAz48k2q9QXYZtaoI6-9c5xUlKG0ApfBCzyMT4shXB_Gp3v9tgyFmbtTkoBd0gFiwPQl4dNikruGnt4YQL4xv1pbiMPe-mST0DOwOj4avSopVjtDOGQug16p7pyUVD3ihxnwfK-6mrl9Qhb9xEEl96HvYFXprSHQO2MOh8JhTdtGUcMDZqMQTwTcVeWkqND0DPmcVaURVXD77bNilxLnN59gDoWgPxp7C-9cdWSCP6lvCMCRhIgawtPftRM6G_KTlSlfhjQm404RFJz29LOHTqwmlW_hfL4k9rPLg75qMKBG5pC1I5-qgT0KtLIOaLDSXvOKw-xcc8Ok7RQGt1KuomEUTEf90rqVELPnOBQ-IPI1mkU5S-vVtiVKOFAxUH2m8PxA62WLu09_qskxEXU4LUD6VOxJTVo1dUcq9jyzM5hWTSwax7yqxodXoy7ySXnu3MSpwggyuFK6NWD7PM7_YbUVpp7rPQrnml1UZwmRgg4h7ciSdG3UHmdBuCyjYoA7wZrubeofeQYqjTdAT4e0xLM0aeJjGW1raalERg3i3VKyUu0t5_KhEUShOr_3nURnh7kfktQQr2O0CJIqz_uuXW35B9s0HPx5XWZfKESoIkb0RazgimlAfV1qiW4ExbdbDed53-tE6IZUxY31Gl7BaxuoiOThEPhgc9ILu-xltZtUTzca6pfrJHv8-cTBDg4kNY17G9CECDEFUZv1vhps5Fx5kAAiF0Zh-OGdMcXVD8MEBOIcm5CXtIUPz_PEizl4htEqaacaUTGQ3bFHBKK7KmHrXjcnBTV6v5tKe0n-4FXoPFtp2RTPk6b7I5QrbWPfwQi-Y9kpejY3Zg-T9-WHcC4C6fKDfSYEVYBNJynqDcZ9zf1G8Y9ubhmuxCpcSawdCVbOcFqk2UorBJs24lOC7Suvd_UtdbpZPmzStkY40UMz1cYWSsbK2yS0pkwF62VaTCebcf5MG9hQ1jXYo7vjoeeo",
+      "alt": "Three trend lines each surrounded by a shaded 95 per cent confidence band, with the bands widening towards the right"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AcXHIkw9XdSU3D9HmFgHdbEu4khmdZPUsKIitmuc7kdpQQjeEzjIS1RYh6sjFV4epanAfnzcHfIuWUKLrAULKdPnA3BxNy3iFYfsDMF_E6FJ_XKXagLOLJVrqWQt4xhN2FlMnmrsvhLkLqWwiK4f9rnUUAY3J60ZRQ2IdMxnFLf8iY7AgTq27qpKXQNianYuC4Mj38l6Ln9GBXWe5Y5gtSAe1jMwvbgF83br2yhqQdorSM75HpLhczm0zERGpaSQqHo-7ScVgGgeKj-r5mFayjOnWPUAeB9bhMq9VZo1J6fIJi3cRZYWMwikJw6zSdvL4DyOnwUIA58O4YLaCw5zzLUVbmn6uXy2KcM9gnJvjdunVX8wUMSTIeissxKrOZkbJUrbXKhlA6U4njKs-hxXkHqTo5zwalulIFCW8qMdkileH7aUbC8A5em-u14WM8JnAfhmyZUxK1FcCZJ_lGKS1XtyNfED-SlgiHwPLVyb8soWPQnHG5JcLaJqPfNAFztBYnVdxyad2sj3_dVrWIwdW5eTfJmv7LySebG_-Q35FYQWn0h65ldYL4Qf_AH0kOO3bx6nzBNF-ObehS4ftZatB1syzJskHw0Zdh4wnbNc3Ty3ZA3usBg8hq1FuyGyzyTJ2fg8g29GW3YJ1Ozqt3LW9nVm-CF8kuPE1qJvBmHFzSTzfw-75bWMb5pZilUAubUm-mViSFh5umO3NPHrMV3Tya8o2ZtqCKOq-ggnC2376pF9xZGWwHrYUYkNyXMLjj1zQZhfxGbRRTpA4GUGgBFXUbLn9-zbPWYfA_wybMoYOEKyo5C63_N22XR21QdY6J2pJeHCPzpx4Wc3vc_slqIDwjB2gggBVy0Ail9Y_0TWdGKMVCITPE4NZw2ijZYitciPNcmf55z-Jl351Au2fJ5umc10JNtbOLOpJO1H5t5phnzNV8i1iaQ4tH4L0KYw8qdT5y1EIimwcrbjjwnHJ1yNF_2Aa6YdVvElBLJ3UaBzk1zdpqwCM840ld5dBotSj2ev9YjUU1ma1v2vYbQ9DQ80ieg9oQnCdcL-XbCqDuq3-mvAXbt7CKQP5Ad-Kj-NXwb3_jRQnh7oBDqWGSWWzuSbyzJLUZa5xNfsH93JpR7MEZDDkXXoXcwUid1ufVBrhaiSfcQkl9CrIWIMw1P9jDnI7yXNQFP0bdjoFR9wZ7BVO1Cx6ZxedVNWbh9JsSM9GwybfjAOw4sMyVUpwj-SzfXZ8cyg7Uevp1muLhgKPMkrF67ra7jHexfDvvt3rNYqibLpMrCZkBudLpUH8Yabsm3F2MyL7F7W1nGLhcRmm3XbZTXoS1mr7kz5Gye7TOYmQqYNLnPzePdUiVwC9CmCgGjyKqoUPUckj0usgqVo3BpjWtC158F7AZbE-drEU76B-vZF82wupECEFWC7vzxf6LDEm7bxgJBwewDamFfsNj2G0mlNqYZWBqqKG5EBA1ffdspaUaJmEnWz46FwRalhdl6IeLjy40TkTcz4LdOJEMyJJIMIivb9PekgQt_RGpy-O9WaDvrvs53isC3D9ZPq0Ti1weZrBDoxNzpfo8LpfFbbqqbHNxdYWFYNU4Ge5ENaMVBrvjFbwhesKaNHO9SP86qZzycPruTxugV_wRG39CPLpe1rxzr1sQK8MAVH6FyUf4sT0cKrt4oeHxvf5dvzemTSId0iCITOcYM5xcllWwboJxWD8P-RsFRp8ERHigpnh4Hk7qoVDXD0vT06Mae15NdlKyW0TId045wNbdAK6apt-lzZPVG0vzUgWPA7eVGxM7AV9jy5t6kwB7uqQhsKzd7KL9xbV0YFcOkj8-EqMA5PHKGGn4VlAiVCwxQJP735pJXenpgkFVT2j8sknHXyiXhlQSygB-EFFj8swAVZRU7B2j3DU9uqm63rf_UCwC4YwsXk-Q5HjLQzcQICrXxjKxvvAjEKcfv2yaLrJP2w4Amfh6dr5pjmjcfWWkLasVBobEtcJYVphjw13VpJ1EAgv6u6wmbkinzvRAc6LUXvAxBqMWOkYIfn1LxM_qS6Rsmx8ESZ",
+      "alt": "A line chart with two highlighted series labelled at their right-hand ends, a dashed reference line, a shaded date range and a source note"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The baseline that does not start at zero",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#the-baseline-that-does-not-start-at-zero"
+    },
+    {
+      "text": "Two axes chosen until the lines cross",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#two-axes-chosen-until-the-lines-cross"
+    },
+    {
+      "text": "Area carrying a linear quantity",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#area-carrying-a-linear-quantity"
+    },
+    {
+      "text": "The window that starts where it suits",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#the-window-that-starts-where-it-suits"
+    },
+    {
+      "text": "Uncertainty left out",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#uncertainty-left-out"
+    },
+    {
+      "text": "A colour scale that invents a threshold",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#a-colour-scale-that-invents-a-threshold"
+    },
+    {
+      "text": "What an honest chart shows",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#what-an-honest-chart-shows"
+    },
+    {
+      "text": "Lying and ugliness are different problems",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#lying-and-ugliness-are-different-problems"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#the-baseline-that-does-not-start-at-zero"
+    },
+    {
+      "text": "Choosing a chart",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#two-axes-chosen-until-the-lines-cross"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#area-carrying-a-linear-quantity"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#the-window-that-starts-where-it-suits"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#uncertainty-left-out"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#a-colour-scale-that-invents-a-threshold"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#what-an-honest-chart-shows"
+    },
+    {
+      "text": "Visual hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#lying-and-ugliness-are-different-problems"
+    },
+    {
+      "text": "How accurately a chart can be read",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty#common-mistakes"
+    },
+    {
+      "text": "\n              How accurately a chart can be read\n              The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+    },
+    {
+      "text": "\n              Choosing a chart\n              Start from the relationship in the data and the question in the reader's head. The chart type is the last decision you make, not the first.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+    },
+    {
+      "text": "\n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "\n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "DATA-007-C08 — ONS Service manual — Axes and gridlines",
+      "href": "https://service-manual.ons.gov.uk/data-visualisation/guidance/axes-and-gridlines"
+    },
+    {
+      "text": "DATA-013 — Urban Institute Data Visualization style guide",
+      "href": "https://urbaninstitute.github.io/graphics-styleguide/"
+    },
+    {
+      "text": "DATA-003 — Cleveland & McGill, Graphical Perception (JASA, September 1984)",
+      "href": "https://euclid.psych.yorku.ca/www/psy6135/papers/ClevelandMcGill1984.pdf"
+    },
+    {
+      "text": "DATA-016 — Datawrapper — Which colour scale to use when visualizing data",
+      "href": "https://www.datawrapper.de/blog/which-color-scale-to-use-in-data-vis"
+    },
+    {
+      "text": "DATA-018 — Storytelling with Data — declutter this graph",
+      "href": "https://www.storytellingwithdata.com/blog/2017/3/29/declutter-this-graph"
+    },
+    {
+      "text": "\n        PreviousChoosing a chart",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+    },
+    {
+      "text": "\n        NextIcon, pictogram, symbol, glyph, logo",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty"
+}

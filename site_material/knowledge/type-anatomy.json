@@ -1,0 +1,27 @@
+{
+  "title": "Type anatomy — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy",
+  "source_hash": "3ad3eb731bf8288f969da8ddbfc7804e4bbb5154dc644511e160d0ee7ed43db5",
+  "rules": [
+    {
+      "rule": "If comparing text at the same point size, measure the x-height (height of lowercase letters without ascenders or descenders) to determine which appears bigger.",
+      "evidence": "What your eyes are actually measuring is the x-height: the height of a lowercase letter that has no ascender and no descender."
+    },
+    {
+      "rule": "If evaluating legibility at small sizes, check for high stroke contrast and tight apertures, as these features tend to fail below one pixel.",
+      "evidence": "High contrast, tight apertures and delicate terminals look superb at 60px and turn to mush at 11px: the thin strokes fall below one pixel and the apertures fill in."
+    },
+    {
+      "rule": "If distinguishing typeface from font, identify the design as the typeface and the specific file (e.g., Helvetica-Bold.otf) as the font.",
+      "evidence": "A typeface is the design. A font is the file."
+    },
+    {
+      "rule": "If analyzing italic style, verify if letters are redrawn with cursive structure rather than mechanically slanted to avoid identifying it as a faux italic.",
+      "evidence": "True italics are redrawn from cursive structure; the a and g usually change shape entirely. A mechanically slanted roman is an oblique at best."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2333,
+  "output_tokens": 263,
+  "processed_at": "2026-09-13T09:39:40"
+}

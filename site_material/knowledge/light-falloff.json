@@ -1,0 +1,23 @@
+{
+  "title": "Light falloff — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-falloff",
+  "source_hash": "3df993aaea6a78949b6077f4af5ee5fcc8d8e92a4fcd5b8a52efca29982dc71f",
+  "rules": [
+    {
+      "rule": "A brightness gradient across a flat surface indicates falloff; steepness implies a close source while flatness implies a distant one.",
+      "evidence": "A brightness gradient across a plain flat surface with no object causing it. Steep means a close source."
+    },
+    {
+      "rule": "If the near and far sides of an object show a large drop in light, the source is likely within a metre or two.",
+      "evidence": "Compare the near and far side of one object. A big drop across a head means a source a metre or two away."
+    },
+    {
+      "rule": "A background that is pitch black relative to a nearby subject indicates a close light source, not a dark object.",
+      "evidence": "A background far darker than the subject with nothing else explaining it — used deliberately, the cheapest way to separate subject from surroundings (Value structure)."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2606,
+  "output_tokens": 220,
+  "processed_at": "2026-09-13T09:31:35"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "15865402384f42f123b4444ac03f71e5b7fe8a3499463d4c6b0c2a4fe5dc3c3d",
+  "prompt": "Website landing page for \"Arvetiss\" biocomposite PCR plates, bento card grid layout, 3D purple glass tubular shapes hero image, lavender palette",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 delivers a much more polished and accurate execution. Image 2 fails because the website page looks incredibly primitive, completely misses the requested bento card grid layout, and suffers from clear anatomical issues with the purple elements.",
+  "split": "train",
+  "image_group": "c070de5f5feef0026bbb819d3838b9f629edc85a86193f216aa4ead91f061650",
+  "image_hashes": [
+    "9a726e3ee14c336264fd36d5b3cb784ed3f7b4c29bb654ff6ba132c27cd27d2a",
+    "b80a68defb703853d91454699773945e5f4e4bfdb412fa4e4e81e45df9a1c20a"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "bb62265b9becf82924071e47e972c317bf2a4b0d0daf3c1f89303c5d024dc185",
+      "corrected": false,
+      "time": "2026-09-13T22:08:21"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "bb62265b9becf82924071e47e972c317bf2a4b0d0daf3c1f89303c5d024dc185",
+      "corrected": true,
+      "time": "2026-09-13T22:08:25"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 delivers a much more polished and accurate execution. Image 2 fails because the website page looks incredibly primitive, completely misses the requested bento card grid layout, and suffers from clear anatomical issues with the purple elements.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:08:23"
+    }
+  ],
+  "feedback": "Image 1 delivers a much more polished and accurate execution. Image 2 fails because the website page looks incredibly primitive, completely misses the requested bento card grid layout, and suffers from clear anatomical issues with the purple elements.",
+  "lesson": "If a requested style is specified, prioritize fidelity to that style over generic aesthetics; omit structural or visual misalignments even if they appear minor.",
+  "lesson_evidence": "Image 1 delivers a much more polished and accurate execution. Image 2 fails because the website page looks incredibly primitive, completely misses the requested bento card grid layout, and suffers from clear anatomical issues with the purple elements.",
+  "lesson_source": "Image 1 delivers a much more polished and accurate execution. Image 2 fails because the website page looks incredibly primitive, completely misses the requested bento card grid layout, and suffers from clear anatomical issues with the purple elements."
+}

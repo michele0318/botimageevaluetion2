@@ -1,0 +1,36 @@
+{
+  "id": "d4f1ed3cdcbd7a153e74eeb45a65a3206c2ad0200c6f5507c29af362cc1bf2ce",
+  "prompt": "still life sculpture on bright yellow background: pink rock,  balloon flower, egg in a cup, board game cube, silver chain with pendant",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 wins on composition. It builds one connected vertical structure — rock, balloon arms, egg, balancing block, flower as counterweight — so everything reads as a single sculpture, while image 2 is just separate objects sitting side by side. The balancing act adds tension and motion; image 2 is static. Image 1 also uses the tall format and negative space well, with the flower stem leading the eye, whereas image 2 is bottom-heavy under an oversized flower. And its details (carved symbols, icons, the egg's expiry stamp) feel intentional and cryptic, while image 2's decorative touches read as generic.",
+  "split": "test",
+  "image_group": "e3fc070e936147c5f5c1707a6cddd1e962acdd4f78318fb077ec206e69e13bbe",
+  "image_hashes": [
+    "5a029862efb293ca23417df7bf6ad0b03e9014ddb71c72287ef6815b8f769611",
+    "cfa3c457317ce9839ac66f72d06a56414537c28b3fcb27f7f0af441653bcefb1"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "c0db87fcf2fdcf752e767a6b2ef9a7cb5a2eed6cb4681d74d0e52c29bfc5995f",
+      "corrected": false,
+      "time": "2026-09-13T02:17:55"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:17:57"
+    }
+  ],
+  "feedback": "Image 1 wins on composition. It builds one connected vertical structure — rock, balloon arms, egg, balancing block, flower as counterweight — so everything reads as a single sculpture, while image 2 is just separate objects sitting side by side. The balancing act adds tension and motion; image 2 is static. Image 1 also uses the tall format and negative space well, with the flower stem leading the eye, whereas image 2 is bottom-heavy under an oversized flower. And its details (carved symbols, icons, the egg's expiry stamp) feel intentional and cryptic, while image 2's decorative touches read as generic.",
+  "lesson": "When requested, prioritize compositional unity and intentional detail over static object arrangement; use vertical structure and negative space to imply motion or tension.",
+  "lesson_evidence": "Image 1 wins on composition. It builds one connected vertical structure — rock, balloon arms, egg, balancing block, flower as counterweight — so everything reads as a single sculpture, while image 2 is just separate objects sitting side by side.",
+  "lesson_source": "Image 1 wins on composition. It builds one connected vertical structure — rock, balloon arms, egg, balancing block, flower as counterweight — so everything reads as a single sculpture, while image 2 is just separate objects sitting side by side. The balancing act adds tension and motion; image 2 is static. Image 1 also uses the tall format and negative space well, with the flower stem leading the eye, whereas image 2 is bottom-heavy under an oversized flower. And its details (carved symbols, icons, the egg's expiry stamp) feel intentional and cryptic, while image 2's decorative touches read as generic."
+}

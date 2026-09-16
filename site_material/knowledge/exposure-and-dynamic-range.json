@@ -1,0 +1,15 @@
+{
+  "title": "Exposure and dynamic range — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/exposure-and-dynamic-range",
+  "source_hash": "65f620b3df57026572726a974220f79de544aa84e0be55a25f4a4a9d8c4dbd6f",
+  "rules": [
+    {
+      "rule": "If a region appears flat white or black with no texture, it indicates clipping where data is permanently lost and cannot be recovered.",
+      "evidence": "Clipped means the data is gone. Every pixel in that region sits at maximum (or minimum) with nothing between them. Nothing recovers it: no slider and no model can put back a texture that was never measured."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2499,
+  "output_tokens": 304,
+  "processed_at": "2026-09-13T09:28:07"
+}

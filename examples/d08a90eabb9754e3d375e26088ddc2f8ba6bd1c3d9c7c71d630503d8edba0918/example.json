@@ -1,0 +1,45 @@
+{
+  "id": "d08a90eabb9754e3d375e26088ddc2f8ba6bd1c3d9c7c71d630503d8edba0918",
+  "prompt": "Close-up low angle of white robotic hand, visible joints and wires, small colored accents, light blue background, 3D render",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 utilizes a very interesting perspective that showcases the object's numerous details effectively without making the scene feel overloaded. Conversely, Image 2 is too simplistic and lacks any visually engaging features.",
+  "split": "train",
+  "image_group": "e29a71876d7b0fa2c7601a52385fffa8755e801d8ad50c46925fc1270e525aaf",
+  "image_hashes": [
+    "4ff2d1ae038a3c02839c5aec0b276bc9c865ee4cce8282dc732074df711556aa",
+    "a9dc69fcf42b84d77d7b527a0671a86f60086d82298e44e322d4cd762cff570e"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "c36a619c366c216d3ebe086525cb42b0880f9dc2dec60f39798445e98c75e51b",
+      "corrected": false,
+      "time": "2026-09-13T02:24:15"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "c36a619c366c216d3ebe086525cb42b0880f9dc2dec60f39798445e98c75e51b",
+      "corrected": true,
+      "time": "2026-09-13T02:24:18"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 utilizes a very interesting perspective that showcases the object's numerous details effectively without making the scene feel overloaded. Conversely, Image 2 is too simplistic and lacks any visually engaging features.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:24:17"
+    }
+  ],
+  "feedback": "Image 1 utilizes a very interesting perspective that showcases the object's numerous details effectively without making the scene feel overloaded. Conversely, Image 2 is too simplistic and lacks any visually engaging features.",
+  "lesson": "When a requested style includes detailed visual elements like joints, wires, or accents, prioritize perspective and composition to avoid visual overload while maintaining detail richness.",
+  "lesson_evidence": "Image 1 utilizes a very interesting perspective that showcases the object's numerous details effectively without making the scene feel overloaded.",
+  "lesson_source": "Image 1 utilizes a very interesting perspective that showcases the object's numerous details effectively without making the scene feel overloaded. Conversely, Image 2 is too simplistic and lacks any visually engaging features."
+}

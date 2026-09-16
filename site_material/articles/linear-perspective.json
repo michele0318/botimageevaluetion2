@@ -1,0 +1,151 @@
+{
+  "title": "Linear perspective — Image Wiki",
+  "text": "\n  \n\n  Linear perspective\n  Parallel lines in the world meet at a point in the picture, because equal real distances take up less of your view the further away they are.\n\n  \n    Termlinear perspective\n    Also calledone-point perspective, vanishing point perspective, geometric perspective\n    Not the same asatmospheric perspective, foreshortening, barrel distortion\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        Why it happensThe horizon is your eye levelOne, two and three pointIt only works from one placeCommon mistakes\n      \n    \n  \n\n  Stand at the end of a straight railway and look down the track. The two rails are 1.4 metres apart at your feet and 1.4 metres apart a kilometre away — you could go and measure it. In the photograph you take, they meet.\nNothing bent: the rails did not converge, the image of the rails converged. Tate's definition is the compact one — although parallel lines never meet, they appear to as they get further away, and the point where they appear to meet is the vanishing point. Getty's example is a photograph of Fifth Avenue whose diagonals walk your eye straight into it.\n\n\n\nJack Delano, tracks at the Proviso yard of the Chicago and North Western Railroad, April 1943. FSA/OWI Kodachrome, Library of Congress. Public domain, US government work.\nPut a fingertip where the rails appear to meet, near the middle of the frame: that is the vanishing point. Every rail in the yard arrives there, and so do the ballast edges and the yellow-painted rails down the centre — all of them parallel to one another on the ground, and one direction gets one point.\nThen read the sleepers, identical planks at identical spacing. At the bottom of the frame each is a broad board with a gap you could put a boot into; a third of the way up they are a fine stripe; near the point they merge into grey.\nLast, the two rows of boxcars: same-sized cars whose rooflines drop and wheels climb as they recede, pinching toward the height the rails converge on. That height is eye level, and it sits below the roof of the nearest car — Delano was on the ballast, not on a bridge.\n\n\nWhy it happens\nYour eye measures angles, not metres, and the angle something takes up falls off with distance: twice as far is half as tall on your retina, ten times as far a tenth as tall. The gap between the rails is a real 1.4 metres everywhere — at 10 metres it takes up some angle, at 20 metres half of it, at 100 metres a tenth. It never reaches zero but it shrinks toward zero, and \"the direction in which the gap has shrunk to nothing\" is one specific point in your field of view. The vanishing point is not a place in the world; it is a direction.\nHence the rule that does all the practical work: every set of lines parallel to each other in the world shares one vanishing point in the image, wherever in the scene those lines are. Two roads at two angles have two points. The near kerb and the far kerb of the same road have one.\nThe horizon is your eye level\nNot \"where the ground stops\". Not \"where the sky begins\". The horizon line in a picture is the height of the eye — or the camera — that made it. Full stop.\nEverything follows from that. Any horizontal set of parallel lines vanishes somewhere on the horizon, because horizontal directions all point at eye height. Anything whose base is below the horizon is below your eye and you see the top of it; anything above it you see from underneath. If you can see the top of a table, that tabletop is lower than your eye.\n\nevery pair of eyes landson the horizon linehorizonthe same line now crossesall three at the kneehorizonCamera at 1.65 mstanding: three 1.80 m people at 6, 12 and 24 mCamera at 0.50 mcrouched: same people, same lens, same spots\n\nSame lens held level, same three 1.80 m people at 6, 12 and 24 metres. Only the camera height changes.\nLeft: the camera is at 1.65 m, so the horizon marks everything 1.65 m above the ground — and it runs through the eyes of all three figures, near, middle and far alike. Right: drop the camera to 0.50 m and the same line cuts all three at the knee. Not the near one at the knee and the far one at the hip: the same fraction of every figure, because that fraction is camera height divided by figure height, and the distance cancels out.\nThe faint ground lines are the same fact again — converging on the horizon in both panels, but flatter when the camera drops, because a low eye sees the ground almost edge-on.\n\n\nThat is the eye-level test, and it catches more broken pictures than anything else here. If the person at the back of the room has their eyes a head higher than the person at the front on the same floor, the two were not drawn from the same viewpoint.\nOne, two and three point\nDrawabox has the clearest framing. A box has three sets of edges, one along each dimension of space; each set is parallel within itself, so each has its own vanishing point — three at most, for one box. Which of them you can see depends only on where you stand.\n\nSquare-on to the box. Two sets run parallel to your picture plane and do not converge at all; only the third runs away. One vanishing point — a corridor, a railway, a nave.\nStanding at a corner. Two sets now run away, each to its own point on the horizon; verticals stay upright. Two points.\nCamera tilted up or down. The verticals run away too, to a third point above or below the frame. Cambridge in Colour states the rule exactly: converging verticals appear whenever the lens is aimed away from the horizon, and a camera aimed at the horizon keeps real verticals parallel in the print. Hence architectural photographers shift the lens sideways instead of tilting it up.\n\nSo one-, two- and three-point are not three systems but three descriptions of how many sets of parallel edges you see obliquely. And \"three\" is a limit on one box, not on a picture: a street of buildings at different angles has a pair of points for every orientation in it.\n\n\n\nThe Ideal City, Urbino, c. 1480–1490, public domain.\nThe same geometry constructed rather than photographed: the rooflines, base lines, paving joints and door steps all run back to the doorway at the centre of the round building.\nLook instead at what does not converge. The horizontal courses of stone across the building fronts run flat across the panel, and the columns and jambs stay upright. Those edges are parallel to the picture surface, so they never shrink toward anything — which is what makes this one-point, and tells you the painter stood square-on to the square.\n\n\nIt only works from one place\nThe construction assumes a single eye at one fixed point — Tate notes early systems used exactly that, one viewpoint and one vanishing point, with multiple points arriving later. A perspective picture is therefore strictly correct for one standing position and no other; you tolerate it from elsewhere because your brain compensates, not because the geometry does.\nThat is the lever for judging images: everything in the frame must have been seen from the same point. A table drawn as though you stand over it, with a vase on it drawn as though you sit beside it, is two viewpoints in one picture, and it reads as wrong long before anyone can say why.\n\nWho invented it\nTate says linear perspective was invented in Italy in the early fifteenth century and first developed by the painter Paolo Uccello. Most other accounts credit Brunelleschi's demonstration in Florence around 1413 and Alberti with writing the method down in 1435, treating Uccello as an early obsessive user rather than the originator. Sources differ on the person; the century and the country do not.\n\nCommon mistakes\n\n\"The horizon is where the sky meets the land.\" Over a flat sea they coincide. Over hills they do not — the skyline can sit well above or below eye level. Indoors there is still a horizon; you just find it from the receding edges instead.\n\"Converging verticals mean the lens distorted it.\" No. Tilt a camera up at a building and the verticals converge, correctly. Barrel distortion is a different defect: it curves straight lines. Straight but converging is perspective; bowed is optics.\n\"Two-point is more realistic than one-point.\" It is a different place to stand, nothing more.\n\"Everything must point at the vanishing point.\" Only lines parallel to that one direction. A side street at 30 degrees has its own point, and so does a chair pushed away from the table.\n\"Isometric game art has bad perspective.\" It has none, on purpose — a different projection, where parallel edges stay parallel and nothing shrinks with distance, which is exactly what lets a tile set repeat forever.\n\n\nFour checks on a perspective\n\nFind the horizon. If it is not visible, extend any two receding horizontal edges until they meet; that height is eye level.\nExtend two separate sets of parallel edges. Each set must converge on one point, and horizontal sets must land on the horizon — not above, not below.\nRun the eye-level test on every figure standing on the same floor. Eyes on one line.\nCheck the verticals: all parallel, or all leaning the same way by the same amount. One wall upright and the next leaning is two viewpoints. See Depth cues for what else has to agree, and Atmospheric perspective for the cue that carries depth when there are no straight lines at all.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Depth cues\n              A picture is a flat surface. It reads as deep because a dozen separate cues all point the same way, and your eye believes the majority.\n            \n          \n        \n          \n            \n              Atmospheric perspective\n              Distant things go pale, flat and sky-coloured because you are looking at them through more air, and air scatters light.\n            \n          \n        \n          \n            \n              Focal length vs camera position\n              Where the camera stands decides how big near things look next to far things. The lens only decides how much of that view fits in the frame.\n            \n          \n        \n          \n            \n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SRC-080 — Tate — PerspectiveSRC-076 — Drawabox — Boxes: The Basics of Perspective and ProjectionSRC-001 — Getty — Understanding Formal Analysis: Elements of ArtSRC-009 — Smarthistory — SpaceSRC-083 — Cambridge in Colour — Tilt-Shift Lenses: Perspective ControlSRC-084 — Photography Life — What is Lens Compression?\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Linear perspective",
+    "Why it happens",
+    "The horizon is your eye level",
+    "One, two and three point",
+    "It only works from one place",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\n\nJack Delano, tracks at the Proviso yard of the Chicago and North Western Railroad, April 1943. FSA/OWI Kodachrome, Library of Congress. Public domain, US government work.\nPut a fingertip where the rails appear to meet, near the middle of the frame: that is the vanishing point. Every rail in the yard arrives there, and so do the ballast edges and the yellow-painted rails down the centre — all of them parallel to one another on the ground, and one direction gets one point.\nThen read the sleepers, identical planks at identical spacing. At the bottom of the frame each is a broad board with a gap you could put a boot into; a third of the way up they are a fine stripe; near the point they merge into grey.\nLast, the two rows of boxcars: same-sized cars whose rooflines drop and wheels climb as they recede, pinching toward the height the rails converge on. That height is eye level, and it sits below the roof of the nearest car — Delano was on the ballast, not on a bridge.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AevO_ymFcDw-0z6qHaf_YSzYp3UO5yOZk-q9B9lLDjDMCrJ9uT9JeBaGFp44Bxtr7IJmhyyNEpLnhJNGB-jksRk5oOvtRsi1pwIPcCiwudob37bAgOPOG_mbsMeWXYKxrFNuQ6Z9LWpibf87_fmQfjgyKeS1SF_9IRzvcPjudoFKxdjZ7LC-rFIsKY_dp6wXJl3UjzM-_A6TJhg54UhMfCkUC2qiQkWSlwQVw85gCa4UbjxzFYw5QuwGgNlma6Lxvgk8nP3TkJlKOS5vM4tu-FLUUJFfuDmKyD2r8ueFhX93qvbfvQWM9vDqtZxyVe_rth-fL5p1kp4txQkcI62-EVFMzsg6qHlf4FAf_pV10rNOebBdJQ0zAcEdL67p3y1J81kiLLPlo-12ScgSflFlXpby-7FygZlakljumazAQZlN1J1Sk6EBSDK2NR8toXjQCatJ3v-uVMnNYVRhGIjJRRINZazujsEHMKLAm1w5ZO7L9q8uRI7vVETrbfYhT5m5uUQ5msbNlHpS5fvtvn0RyPR_S9yWvUg-bU-GWRu2lLA7jd0FP9M4V_hng_uwAHFwREBsRD5UK3Iy_sroqf9_Ix3ezCG79tZMHJ7zwlanJy1aPRgw65uiG4bp5krHVtat73gtwf5kggoGa33vZeziCO_xrTvOYtF_dVYlE2C_D01EqjSkjovjF2dhZlqmMoJU60wTZ0t0XLj7DFCz2Q1-C147eQwhx34aIk9iigIqEGl0Z4ptR5_xUj6NTQuFauK-rXOtqh7otrobM29dlK-oHXeg_ASQxFVvAF_aPaJBjT7PWU9xfy5rFTz7blvOOzE6mmybZs9nK-m2ZiQnQRUEUs_hQ9u202-afqbpdf9yHT07B4zTa0amW7X9YNFPIhmPPqoamcL9ovAf14urULzeKOke8Eu_je2nNtkqtsYs64hHNoNXGiriIGW8O1dl8AIcLhA1CdrZ4CkPwnrMdQ13SAv1eHH_NAc2qo5g_J8xWOk14NBdmAeLR8wOYMWN8vB8rIP4-FxpRIko4qQ_1CtLFRMddlN93Z8A-i_h3aGjDBz4R7w0jdM1Ers29mhYoBsjWpLONZynj0QMQSRdm2kUjaURfp7wLWqrjx_EetuVgT-Sz_IuBGxPzJvPaz_JzMzi1Al9RQRmt6JCdAplQBpegOxhkD0OUgmsc8TWrXPpjehioVFbRMTDPkJ6Gcyo9Z2upvuvU6lLPifVN2J2XMac001_iKx8S9a6xdaZe-ACHVcwbcr4_ZlsuwEHApyrg06MSetR_qLxSygak4QxygK7mT-F0mGNb_r7WBJrNuw3f_h447Anp8fxf4vEfi0elSOXNNrHytu-rKuTpP69So5FjbQ9Vj9azG2jzOC1F4m7En0n6Ne9FQtssSAaWaJTmU7DgRzfqR0SYBpJqVRjtGHF0bGiuJlVT0eQGXD9Wgf6ql7wGwUX3KPw__6Nhhqv1FDT8k-_UAm9QdXtBt_4LsqDznjS5iGHbvLDUbIuYT7-Ga4TP_3NvsEkq4hVtMlkWLjDSx7JKQAsrJORhtIWRtHaRHaqjB7FAJNCNHM0dZ2tqJ4xI7bcq3_CzyRMpbdTgsi5LGrJFobTsYcRipf7-39GuWmNtrIhUYp_BPXlMjBS1UvVxtUmIdia5rCDt5PWxtZe4RMtRZJlbBtIvVHzvfUzKtzXpbjRZakY5c_FEG_nI7Fmr4op2EDuHEAtZkq8Sx_2Sm3FWCx2qJJ9TGXFG6JpxScu-_xTxsTA05XvpB2i2xwMcu6Ytg2F6_-Q5PxukGWGmJkAXKY-HlRRif4sON9oHNXirrVQyBMKFMfF2u7KUADldfFUvqAL7DE8AtSmzUg_qgmVQ7-uLWeh-nU4RllUBH78P_biPFzq12xKtx5xz2l5lggHDQUfBCdhsNOpvQpjBNOp6Z9p5GS5GPVwLK9Ie1xHPVrAHrWstpM35dzoLD95TYYqQeT3qDUfkgTU1PGHpTrjYTKGFNZAwSnrJwGgprS5UjCodjUmj3-cORzPuqdWk0e55RlZzL9nA32Eg5R3",
+          "alt": "Jack Delano, tracks at a railway classification yard in 1943: dozens of parallel tracks converging on a single point at the far end"
+        }
+      ]
+    },
+    {
+      "caption": "\nevery pair of eyes landson the horizon linehorizonthe same line now crossesall three at the kneehorizonCamera at 1.65 mstanding: three 1.80 m people at 6, 12 and 24 mCamera at 0.50 mcrouched: same people, same lens, same spots\n\nSame lens held level, same three 1.80 m people at 6, 12 and 24 metres. Only the camera height changes.\nLeft: the camera is at 1.65 m, so the horizon marks everything 1.65 m above the ground — and it runs through the eyes of all three figures, near, middle and far alike. Right: drop the camera to 0.50 m and the same line cuts all three at the knee. Not the near one at the knee and the far one at the hip: the same fraction of every figure, because that fraction is camera height divided by figure height, and the distance cancels out.\nThe faint ground lines are the same fact again — converging on the horizon in both panels, but flatter when the camera drops, because a low eye sees the ground almost edge-on.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nThe Ideal City, Urbino, c. 1480–1490, public domain.\nThe same geometry constructed rather than photographed: the rooflines, base lines, paving joints and door steps all run back to the doorway at the centre of the round building.\nLook instead at what does not converge. The horizontal courses of stone across the building fronts run flat across the panel, and the columns and jambs stay upright. Those edges are parallel to the picture surface, so they never shrink toward anything — which is what makes this one-point, and tells you the painter stood square-on to the square.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AZXpNkW5RZuCtH13YiYMxZ08sHurWdT1S1NklnNjcqZeLxV9yhFShRkJVSdBtIhojGOqP_6BkIEpNHFvG-R-JC8AyxUt95YRxuMidfjLK_Q_UQlm6pC9EJ2OZHqGZreQrH60TgU0X-dfz3QePBxDgLKuaACa9_sfGEbvdjjTow0H-zPu4p6c9Iz_UGCGNRJAerWXMUgHtMe6VwrdDOR2CHC1QE9uGecpNa3DAOZil07O8NYemogDb8eA6f3JbZzz6K1-W77orLWBwAZ8FxO4prMnzv0QxM7RWcG2N1iaabyQWAIqyA-ohVWXnuno5nZCyXMQlVUL-j1ernRdRd-ppR3g-EkPquhTtsaq74qr0LR4-LfcYs_7DiUAqjV_F3nDUq0y6ZEtAxG08oyulyDlSuRAbFUr6STIE0i8WWEkDKNRF8lRR5t3GcJ4cHoyEjOX903Caqcc9rHFBtpAnlsisVZKdrk56j-T2I5Bzve_St3FX-nRCRPwzCqDbx0a-nIBIXmDTaEqRyn13dmGgqhszrCJVZPujhClepN6-Xgngk-9_qbenbc6X50NxBHlz88FFilQQVaA08xTiK2U2D0MYeDa6QapDdWg0It7EC4KYMGxdfMVWvxM9AGOfVdHT-V4jR1UQR25cs1xvKZFAY98ZKSxWufVp_KUBWH2zLlzT_5FWMdoiwhmZvjUe_bx-2GCEfTqj3_pH_OeVxOAYameNgU2rAdjSdzS1YnTXvARVRi2y3D8situXVCDXCbjj2RO3U7TAS6vDSciivi_mbpgZyhI_fBVCGT4zxtPBwIJPbSb1d5zECvEpmRDGJ1azumDwfSzYIOgzbQUydG0wDcO1lA4Wp8tGNbeXuvx1eh16iXrF1ysWVgY9m8fZ4Q4r1NcM2lpmJ0rpOdeG_tHwKlpWKiQL6jjkiHauZdOcYFcLIri0ToEAxroR4UW21famquf072BxNJ3jdQnUgeuqpdwFcMn_ftNxipBxOFzycWgHZxoYD1od03tqInrAJJGvUsX21XqysHWZ17AgUcPZ45oQ63EDuFMF8RwnQDn2fyHMKJtqQSxJtSStndvCsBULbaIu04jpLUAEKgsC5-7EhaT9g8vOAPC2sR0AAm3DYHxh1VkAIIwOXG7G9ahD1wuQ2tOsVDb6a_II1xALNDWPKu0iDiJxsver-CH2IHxDrUUjNOAGT3lbuRmkhCt-FNDmxLpll2azTGU6IiWn226NYFmOUuTPFhmS7aNuQSAwFOsEBoyK6kccCoDE3EckNLwbfA8yTG2ONRADrk8Cof_ucKrzotnqq7bYTrsGk2IFz-qPFXg3V5pppNJymzPi7Pkh3MIU2u4V3m0Ggxp2pvC_E-t0_c1V4xEgHbd6bGsx3B_ATSK8-H47n22r_10reuInK1Hb2ZvX9-yspj9KmCAphdZTooh28y95_NDRLgo4gyDUrCdzNNOwyleZTCdVRTCJcHr4cT7M1p09jmLAhCQxjMDEMr6juQguPYkCwhbfbLJhyoIMtotQ6ZBm5Li_Snf7GKcecTQaU5dMA703E7ZSbBEKwWLRNN1Z3HyNxIaxQltbjdd6xSLdbp_CujrHuJseFTs-LkwI1lOH8wX3nmaMd5PQ8daZZcRAJWqLOX9YcOO6XiSjhKYQALGy1Wnrd6NoaoWNaeffsddwKpSDzBss11GPY3L96vhkfOj-_SYBs5E_pzKwv7kRQyaMP09lI1e_tjPZL8geWaqsfrKBggk78_ktteoE-tbO_WW00sXIf0rDKog-iNybtTDtlemdYkDEsjkqAF8gQaBsVnrw24dFdvp9gWhd4M1xX6LDFdVU9XsMfv3WDXAKi22fC1262i4TgiDBMC6DYXwtfSAUQdH9OuNkQLE55FBAxjz_p4ujCsBNrcykYPsIw85OLMs15uAuyKPN23we38zMeAbQnvKyW4ws68A-tsa18fLSU1AJ56Ll5lzc8On6WMQ8hs4gZsEMoWwLZMlyxZvDYBYU6Psc9-c0aM-Wev4yVbygNaAQQtKXzPcFdC91YWS4cfV_BSjE_v8",
+          "alt": "The Ideal City, Urbino, c. 1480-1490, showing one-point perspective"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AevO_ymFcDw-0z6qHaf_YSzYp3UO5yOZk-q9B9lLDjDMCrJ9uT9JeBaGFp44Bxtr7IJmhyyNEpLnhJNGB-jksRk5oOvtRsi1pwIPcCiwudob37bAgOPOG_mbsMeWXYKxrFNuQ6Z9LWpibf87_fmQfjgyKeS1SF_9IRzvcPjudoFKxdjZ7LC-rFIsKY_dp6wXJl3UjzM-_A6TJhg54UhMfCkUC2qiQkWSlwQVw85gCa4UbjxzFYw5QuwGgNlma6Lxvgk8nP3TkJlKOS5vM4tu-FLUUJFfuDmKyD2r8ueFhX93qvbfvQWM9vDqtZxyVe_rth-fL5p1kp4txQkcI62-EVFMzsg6qHlf4FAf_pV10rNOebBdJQ0zAcEdL67p3y1J81kiLLPlo-12ScgSflFlXpby-7FygZlakljumazAQZlN1J1Sk6EBSDK2NR8toXjQCatJ3v-uVMnNYVRhGIjJRRINZazujsEHMKLAm1w5ZO7L9q8uRI7vVETrbfYhT5m5uUQ5msbNlHpS5fvtvn0RyPR_S9yWvUg-bU-GWRu2lLA7jd0FP9M4V_hng_uwAHFwREBsRD5UK3Iy_sroqf9_Ix3ezCG79tZMHJ7zwlanJy1aPRgw65uiG4bp5krHVtat73gtwf5kggoGa33vZeziCO_xrTvOYtF_dVYlE2C_D01EqjSkjovjF2dhZlqmMoJU60wTZ0t0XLj7DFCz2Q1-C147eQwhx34aIk9iigIqEGl0Z4ptR5_xUj6NTQuFauK-rXOtqh7otrobM29dlK-oHXeg_ASQxFVvAF_aPaJBjT7PWU9xfy5rFTz7blvOOzE6mmybZs9nK-m2ZiQnQRUEUs_hQ9u202-afqbpdf9yHT07B4zTa0amW7X9YNFPIhmPPqoamcL9ovAf14urULzeKOke8Eu_je2nNtkqtsYs64hHNoNXGiriIGW8O1dl8AIcLhA1CdrZ4CkPwnrMdQ13SAv1eHH_NAc2qo5g_J8xWOk14NBdmAeLR8wOYMWN8vB8rIP4-FxpRIko4qQ_1CtLFRMddlN93Z8A-i_h3aGjDBz4R7w0jdM1Ers29mhYoBsjWpLONZynj0QMQSRdm2kUjaURfp7wLWqrjx_EetuVgT-Sz_IuBGxPzJvPaz_JzMzi1Al9RQRmt6JCdAplQBpegOxhkD0OUgmsc8TWrXPpjehioVFbRMTDPkJ6Gcyo9Z2upvuvU6lLPifVN2J2XMac001_iKx8S9a6xdaZe-ACHVcwbcr4_ZlsuwEHApyrg06MSetR_qLxSygak4QxygK7mT-F0mGNb_r7WBJrNuw3f_h447Anp8fxf4vEfi0elSOXNNrHytu-rKuTpP69So5FjbQ9Vj9azG2jzOC1F4m7En0n6Ne9FQtssSAaWaJTmU7DgRzfqR0SYBpJqVRjtGHF0bGiuJlVT0eQGXD9Wgf6ql7wGwUX3KPw__6Nhhqv1FDT8k-_UAm9QdXtBt_4LsqDznjS5iGHbvLDUbIuYT7-Ga4TP_3NvsEkq4hVtMlkWLjDSx7JKQAsrJORhtIWRtHaRHaqjB7FAJNCNHM0dZ2tqJ4xI7bcq3_CzyRMpbdTgsi5LGrJFobTsYcRipf7-39GuWmNtrIhUYp_BPXlMjBS1UvVxtUmIdia5rCDt5PWxtZe4RMtRZJlbBtIvVHzvfUzKtzXpbjRZakY5c_FEG_nI7Fmr4op2EDuHEAtZkq8Sx_2Sm3FWCx2qJJ9TGXFG6JpxScu-_xTxsTA05XvpB2i2xwMcu6Ytg2F6_-Q5PxukGWGmJkAXKY-HlRRif4sON9oHNXirrVQyBMKFMfF2u7KUADldfFUvqAL7DE8AtSmzUg_qgmVQ7-uLWeh-nU4RllUBH78P_biPFzq12xKtx5xz2l5lggHDQUfBCdhsNOpvQpjBNOp6Z9p5GS5GPVwLK9Ie1xHPVrAHrWstpM35dzoLD95TYYqQeT3qDUfkgTU1PGHpTrjYTKGFNZAwSnrJwGgprS5UjCodjUmj3-cORzPuqdWk0e55RlZzL9nA32Eg5R3",
+      "alt": "Jack Delano, tracks at a railway classification yard in 1943: dozens of parallel tracks converging on a single point at the far end"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AZXpNkW5RZuCtH13YiYMxZ08sHurWdT1S1NklnNjcqZeLxV9yhFShRkJVSdBtIhojGOqP_6BkIEpNHFvG-R-JC8AyxUt95YRxuMidfjLK_Q_UQlm6pC9EJ2OZHqGZreQrH60TgU0X-dfz3QePBxDgLKuaACa9_sfGEbvdjjTow0H-zPu4p6c9Iz_UGCGNRJAerWXMUgHtMe6VwrdDOR2CHC1QE9uGecpNa3DAOZil07O8NYemogDb8eA6f3JbZzz6K1-W77orLWBwAZ8FxO4prMnzv0QxM7RWcG2N1iaabyQWAIqyA-ohVWXnuno5nZCyXMQlVUL-j1ernRdRd-ppR3g-EkPquhTtsaq74qr0LR4-LfcYs_7DiUAqjV_F3nDUq0y6ZEtAxG08oyulyDlSuRAbFUr6STIE0i8WWEkDKNRF8lRR5t3GcJ4cHoyEjOX903Caqcc9rHFBtpAnlsisVZKdrk56j-T2I5Bzve_St3FX-nRCRPwzCqDbx0a-nIBIXmDTaEqRyn13dmGgqhszrCJVZPujhClepN6-Xgngk-9_qbenbc6X50NxBHlz88FFilQQVaA08xTiK2U2D0MYeDa6QapDdWg0It7EC4KYMGxdfMVWvxM9AGOfVdHT-V4jR1UQR25cs1xvKZFAY98ZKSxWufVp_KUBWH2zLlzT_5FWMdoiwhmZvjUe_bx-2GCEfTqj3_pH_OeVxOAYameNgU2rAdjSdzS1YnTXvARVRi2y3D8situXVCDXCbjj2RO3U7TAS6vDSciivi_mbpgZyhI_fBVCGT4zxtPBwIJPbSb1d5zECvEpmRDGJ1azumDwfSzYIOgzbQUydG0wDcO1lA4Wp8tGNbeXuvx1eh16iXrF1ysWVgY9m8fZ4Q4r1NcM2lpmJ0rpOdeG_tHwKlpWKiQL6jjkiHauZdOcYFcLIri0ToEAxroR4UW21famquf072BxNJ3jdQnUgeuqpdwFcMn_ftNxipBxOFzycWgHZxoYD1od03tqInrAJJGvUsX21XqysHWZ17AgUcPZ45oQ63EDuFMF8RwnQDn2fyHMKJtqQSxJtSStndvCsBULbaIu04jpLUAEKgsC5-7EhaT9g8vOAPC2sR0AAm3DYHxh1VkAIIwOXG7G9ahD1wuQ2tOsVDb6a_II1xALNDWPKu0iDiJxsver-CH2IHxDrUUjNOAGT3lbuRmkhCt-FNDmxLpll2azTGU6IiWn226NYFmOUuTPFhmS7aNuQSAwFOsEBoyK6kccCoDE3EckNLwbfA8yTG2ONRADrk8Cof_ucKrzotnqq7bYTrsGk2IFz-qPFXg3V5pppNJymzPi7Pkh3MIU2u4V3m0Ggxp2pvC_E-t0_c1V4xEgHbd6bGsx3B_ATSK8-H47n22r_10reuInK1Hb2ZvX9-yspj9KmCAphdZTooh28y95_NDRLgo4gyDUrCdzNNOwyleZTCdVRTCJcHr4cT7M1p09jmLAhCQxjMDEMr6juQguPYkCwhbfbLJhyoIMtotQ6ZBm5Li_Snf7GKcecTQaU5dMA703E7ZSbBEKwWLRNN1Z3HyNxIaxQltbjdd6xSLdbp_CujrHuJseFTs-LkwI1lOH8wX3nmaMd5PQ8daZZcRAJWqLOX9YcOO6XiSjhKYQALGy1Wnrd6NoaoWNaeffsddwKpSDzBss11GPY3L96vhkfOj-_SYBs5E_pzKwv7kRQyaMP09lI1e_tjPZL8geWaqsfrKBggk78_ktteoE-tbO_WW00sXIf0rDKog-iNybtTDtlemdYkDEsjkqAF8gQaBsVnrw24dFdvp9gWhd4M1xX6LDFdVU9XsMfv3WDXAKi22fC1262i4TgiDBMC6DYXwtfSAUQdH9OuNkQLE55FBAxjz_p4ujCsBNrcykYPsIw85OLMs15uAuyKPN23we38zMeAbQnvKyW4ws68A-tsa18fLSU1AJ56Ll5lzc8On6WMQ8hs4gZsEMoWwLZMlyxZvDYBYU6Psc9-c0aM-Wev4yVbygNaAQQtKXzPcFdC91YWS4cfV_BSjE_v8",
+      "alt": "The Ideal City, Urbino, c. 1480-1490, showing one-point perspective"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Why it happens",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#why-it-happens"
+    },
+    {
+      "text": "The horizon is your eye level",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#the-horizon-is-your-eye-level"
+    },
+    {
+      "text": "One, two and three point",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#one-two-and-three-point"
+    },
+    {
+      "text": "It only works from one place",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#it-only-works-from-one-place"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#why-it-happens"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#the-horizon-is-your-eye-level"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#one-two-and-three-point"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#it-only-works-from-one-place"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective#common-mistakes"
+    },
+    {
+      "text": "Depth cues",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues"
+    },
+    {
+      "text": "Atmospheric perspective",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/atmospheric-perspective"
+    },
+    {
+      "text": "\n              Depth cues\n              A picture is a flat surface. It reads as deep because a dozen separate cues all point the same way, and your eye believes the majority.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues"
+    },
+    {
+      "text": "\n              Atmospheric perspective\n              Distant things go pale, flat and sky-coloured because you are looking at them through more air, and air scatters light.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/atmospheric-perspective"
+    },
+    {
+      "text": "\n              Focal length vs camera position\n              Where the camera stands decides how big near things look next to far things. The lens only decides how much of that view fits in the frame.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position"
+    },
+    {
+      "text": "\n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    },
+    {
+      "text": "SRC-080 — Tate — Perspective",
+      "href": "https://www.tate.org.uk/art/art-terms/perspective"
+    },
+    {
+      "text": "SRC-076 — Drawabox — Boxes: The Basics of Perspective and Projection",
+      "href": "https://drawabox.com/lesson/1/6"
+    },
+    {
+      "text": "SRC-001 — Getty — Understanding Formal Analysis: Elements of Art",
+      "href": "https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html"
+    },
+    {
+      "text": "SRC-009 — Smarthistory — Space",
+      "href": "https://smarthistory.org/space/"
+    },
+    {
+      "text": "SRC-083 — Cambridge in Colour — Tilt-Shift Lenses: Perspective Control",
+      "href": "https://www.cambridgeincolour.com/tutorials/tilt-shift-lenses1.htm"
+    },
+    {
+      "text": "SRC-084 — Photography Life — What is Lens Compression?",
+      "href": "https://photographylife.com/what-is-lens-compression"
+    },
+    {
+      "text": "\n        PreviousDepth cues",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-cues"
+    },
+    {
+      "text": "\n        NextAtmospheric perspective",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/atmospheric-perspective"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective"
+}

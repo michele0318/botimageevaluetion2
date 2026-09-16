@@ -1,0 +1,23 @@
+{
+  "title": "Paths and curves — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier",
+  "source_hash": "722afd8f9761d03e02411e99b09c41f741386f4f2e35087177be2fb6faf498f7",
+  "rules": [
+    {
+      "rule": "If a curve has dense, evenly spaced anchors rather than sparse ones placed at curvature changes, it was likely traced automatically.",
+      "evidence": "Count the anchors on one curve. If they are dense and evenly spaced rather than sparse and placed where the curve turns, it was traced."
+    },
+    {
+      "rule": "If magnifying a long curve reveals ripples in the edge, the anchor count is bloated with small errors.",
+      "evidence": "Magnify one long curve. Ripple means anchor bloat."
+    },
+    {
+      "rule": "If dropping artwork on a colored background causes holes to fill in or become solid blobs, the holes were created by stacking shapes rather than using a compound path.",
+      "evidence": "Drop the artwork on a coloured background and see whether every hole is still a hole."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2045,
+  "output_tokens": 234,
+  "processed_at": "2026-09-13T09:35:23"
+}

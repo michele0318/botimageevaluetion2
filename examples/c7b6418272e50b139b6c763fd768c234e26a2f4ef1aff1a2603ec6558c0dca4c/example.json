@@ -1,0 +1,59 @@
+{
+  "id": "c7b6418272e50b139b6c763fd768c234e26a2f4ef1aff1a2603ec6558c0dca4c",
+  "prompt": "paddington bear and a young boy on the doorstep of a pastel turquoise house",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Please note that even though the second image is more beautiful, more vibrant, and also matches the prompt, we can see an anatomy issue with the mug in the boy’s hands. Because of this, image 1 wins.",
+  "split": "train",
+  "image_group": "a41f1e7bcd1e56d3e0cd194a3a9aa323a2a0660adeea6fb145bc5574a2e85d3b",
+  "image_hashes": [
+    "e33ef655e19a54cc8795bb770d5a55c69d54407e41008dd30db34025412c2dff",
+    "1af375dae7c96277af200fa89491ab5c4092fb6b408dbe0e8f7df20e8ccbcfce"
+  ],
+  "contextual_hints": "Paddington Bear character\nHIGH\nPaddington Bear is a globally recognized fictional character with a specific visual canon (hat, coat, suitcase).",
+  "reference_images": [
+    {
+      "label": "Paddington Bear character",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Paddington Bear character",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Paddington Bear character",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Paddington Bear character",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "Paddington Bear character",
+      "file": "reference_5.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "874ef531844a99b6901a815f6b0602610b085b1208662fb1c64870987c635f3f",
+      "corrected": false,
+      "time": "2026-09-13T21:55:55"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:55:57"
+    }
+  ],
+  "feedback": "Please note that even though the second image is more beautiful, more vibrant, and also matches the prompt, we can see an anatomy issue with the mug in the boy’s hands. Because of this, image 1 wins.",
+  "lesson": "If requested style is specified, prioritize adherence to prompt details over aesthetic preference; anatomical or structural accuracy may override visual appeal if relevant to the prompt.",
+  "lesson_evidence": "Please note that even though the second image is more beautiful, more vibrant, and also matches the prompt, we can see an anatomy issue with the mug in the boy’s hands. Because of this, image 1 wins.",
+  "lesson_source": "Please note that even though the second image is more beautiful, more vibrant, and also matches the prompt, we can see an anatomy issue with the mug in the boy’s hands. Because of this, image 1 wins."
+}

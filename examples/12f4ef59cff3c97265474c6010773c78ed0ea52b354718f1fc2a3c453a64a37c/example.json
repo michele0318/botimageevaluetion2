@@ -1,0 +1,42 @@
+{
+  "id": "12f4ef59cff3c97265474c6010773c78ed0ea52b354718f1fc2a3c453a64a37c",
+  "prompt": "surreal vegetation-covered building fragment floating in the sky, featuring a vintage horn speaker on the roof, a large ancient animal statue emerging from its side. A small sign on the building's façade displays an address. illustration — digital painting",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 wins due to its highly engaging presentation, masterfully executed composition, and beautiful lighting. Even though it features a sphinx instead of a standard animal, its artistic depth elevates the entire piece. In contrast, Image 1 completely lacks creative vision, interpreting the prompt far too literally by mindlessly packing in every requested element without any underlying thought or cohesive idea.",
+  "split": "train",
+  "image_group": "3df7543b8767f87c3ee424e46eae9c7ff216c69500930b25cfa8d54581feecce",
+  "image_hashes": [
+    "7301b570a4c716ad20ff1188cc6f318cada2b8b42217cf223c91380beb3a176a",
+    "92f61845c3d9f417cebe417f272911608c011876c1eaaff92274f33bc3e79437"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "232cfc04df0d03d36ec0b12c71b332d008cf34a5f2a58235026c24e4817f0e48",
+      "corrected": false,
+      "time": "2026-09-13T21:54:52"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "232cfc04df0d03d36ec0b12c71b332d008cf34a5f2a58235026c24e4817f0e48",
+      "corrected": true,
+      "time": "2026-09-13T21:55:01"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 wins due to its highly engaging presentation, masterfully executed composition, and beautiful lighting. Even though it features a sphinx instead of a standard animal, its artistic depth elevates the entire piece. In contrast, Image 1 completely lacks creative vision, interpreting the prompt far too literally by mindlessly packing in every requested element without any underlying thought or cohesive idea.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:54:59"
+    }
+  ],
+  "feedback": "Image 2 wins due to its highly engaging presentation, masterfully executed composition, and beautiful lighting. Even though it features a sphinx instead of a standard animal, its artistic depth elevates the entire piece. In contrast, Image 1 completely lacks creative vision, interpreting the prompt far too literally by mindlessly packing in every requested element without any underlying thought or cohesive idea."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Visual hierarchy — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy",
+  "source_hash": "57bec595cb05d3ab902886beddc1c15962ffa9abd2265e3b827f301fc687ef11",
+  "rules": [
+    {
+      "rule": "The eye lands first on the element with the strongest value contrast against its immediate surroundings, not necessarily the brightest or largest object.",
+      "evidence": "The eye is pulled by contrast against the local surroundings, not by brightness in absolute terms."
+    },
+    {
+      "rule": "Faces and eyes act as a powerful attractor regardless of size due to recognition emphasis, often overriding other elements.",
+      "evidence": "Brejon calls it recognition emphasis: human shapes take attention off objects almost regardless of size (SRC-098)."
+    },
+    {
+      "rule": "If two elements have equal strength, the eye will ping-pong between them unless a relationship like a gaze or line connects them.",
+      "evidence": "Two equally strong attractors. The eye goes A, then B, then back to A, and never settles."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2736,
+  "output_tokens": 200,
+  "processed_at": "2026-09-13T09:41:23"
+}

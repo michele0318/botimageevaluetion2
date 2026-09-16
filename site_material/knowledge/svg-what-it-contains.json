@@ -1,0 +1,15 @@
+{
+  "title": "What an SVG actually contains — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains",
+  "source_hash": "9907477eb744157847a2d109c35a74c5375a7d0115b097cbe4afd5141cecc142",
+  "rules": [
+    {
+      "rule": "An SVG file is readable text containing XML that may hold geometry, live text, raster images, scripts, or external references, but the .svg extension proves nothing about its actual contents.",
+      "evidence": "So the extension proves nothing — and the file is readable text, which is how you check."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2979,
+  "output_tokens": 295,
+  "processed_at": "2026-09-13T09:39:25"
+}

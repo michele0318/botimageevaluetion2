@@ -1,0 +1,15 @@
+{
+  "title": "Packaging hierarchy — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/packaging-hierarchy",
+  "source_hash": "303f606c5892ad609c27a333a2155e690c0ce9a47a92b6fe3a83bb4d5232befd",
+  "rules": [
+    {
+      "rule": "If designing for shelf impact from a metre away, prioritize contrast against the background over increasing logo size within a busy field.",
+      "evidence": "At a metre the limit is usually contrast against the background, not size. A mark 20% bigger inside the same busy field is not easier to find."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2733,
+  "output_tokens": 300,
+  "processed_at": "2026-09-13T09:35:10"
+}

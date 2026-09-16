@@ -1,0 +1,36 @@
+{
+  "id": "ad2720d290ea113be269b6f335584f9e4ec81257fbc40ae06f20dd2d49e19e33",
+  "prompt": "Fat vertical capsule shape centered on beige background, gradient from orange through pink and blue to dark indigo, bottom dissolves into soft blur, minimalist",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 is exceptionally well-executed, featuring smooth color transitions and an effective blur at the bottom of the figure. It wins due to its superior overall aesthetic and artistic polish.",
+  "split": "train",
+  "image_group": "10b4bc23ac3886b61bbc0627a28a6b7112afbd9e1b9262144cbb38406c17e415",
+  "image_hashes": [
+    "f73b72761412ce06e91cb090d64c8a0d4b208642f3715ee4bd5fbe5ec20eb0ea",
+    "c0663d05e58de83092b7b7b26e2134a65e6b5c0eab52097b4dc97d1bdd69b188"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ed5e77891be79e5eb1e176f469a19e6aabb31f86b05562eaf3ae12596c13e07a",
+      "corrected": false,
+      "time": "2026-09-13T02:23:16"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:23:17"
+    }
+  ],
+  "feedback": "Image 2 is exceptionally well-executed, featuring smooth color transitions and an effective blur at the bottom of the figure. It wins due to its superior overall aesthetic and artistic polish.",
+  "lesson": "If a requested style is specified, prioritize smooth color transitions and soft blur effects for visual cohesion, but only if the style is explicitly requested; otherwise, default to minimalist execution without stylistic preference.",
+  "lesson_evidence": "Image 2 is exceptionally well-executed, featuring smooth color transitions and an effective blur at the bottom of the figure. It wins due to its superior overall aesthetic and artistic polish.",
+  "lesson_source": "Image 2 is exceptionally well-executed, featuring smooth color transitions and an effective blur at the bottom of the figure. It wins due to its superior overall aesthetic and artistic polish."
+}

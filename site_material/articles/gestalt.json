@@ -1,0 +1,141 @@
+{
+  "title": "Gestalt grouping — Image Wiki",
+  "text": "\n  \n\n  Gestalt grouping\n  The automatic machinery that turns a field of pixels into objects and groups — and the reason accidental alignments in a photograph look deliberate.\n\n  \n    Termgestalt principles\n    Also calledgrouping principles, laws of perceptual organisation, gestalt laws\n    Not the same ascomposition rules, figure-ground on its own, style\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        The principles that earn their placeWhy this matters for judging imagesCommon mistakes\n      \n    \n  \n\n  In 1910 Max Wertheimer stood at a railway crossing and watched two lamps flashing alternately. He did not see two lamps taking turns. He saw one lamp moving back and forth — which is also what you see on a cinema marquee, and what you see on a screen sixty times a second (SRC-028).\nNothing moved. The movement was manufactured. That is the useful starting point: your visual system is not a camera reporting what arrived at the retina. It is a machine that assembles pixels into objects and objects into groups, it does this before you get a say, and the rules it uses are known.\nThose rules are the gestalt principles. Brejon prefers the less mystical name, principles of perceptual organisation, which is what they are (SRC-098).\nThe principles that earn their place\n\nEven fieldfifteen separate dotsProximityspacing: a three and a twoSimilaritycolour: two interleaved setsCommon regionthe box beats the gapedge not drawnClosurenotches turned inward — a triangle appearsSame discs, notches turned outidentical ink, identical positions — no triangle\n\nThe top row is the same fifteen dots four times over. Each panel changes exactly one property, and each change hands you a different set of groups.\nProximity (spacing only): a three and a two. You now believe two of the dots belong together, on no evidence except a gap. Proximity is one of the strongest cues there is and it routinely beats colour and shape (SRC-036).\nSimilarity (colour only, spacing untouched): two interleaved sets. Colour is the strongest similarity trait — it will pull elements of completely different shapes into one group (SRC-035). In Pixar's Piper, every bird on the beach is an adult sandpiper except the chick; the adults collapse into one mass and the chick stands alone (SRC-098).\nCommon region (one outline, spacing and colour untouched): the two enclosed columns leave the field and become a unit, even though the box gives them no advantage in spacing (SRC-037). In a photograph the boundary need not be drawn: a patch of light on a wall, a doorway, a pool of shadow all act as regions.\nThe bottom row is closure. Identical discs in identical positions in both panels; only the direction the notches face changes. On the left you see a triangle whose edges are not drawn and whose interior is exactly the same tone as the panel around it. Turn the notches outward and it is gone — so the triangle was never in the ink.\n\n\nClosure needs the right amount of information: too little and the parts stay parts, too much and there is nothing left to complete. The PBS logo is three heads made largely of gaps (SRC-038, SRC-033).\nContinuity. Elements along a line or curve are read as belonging to that line, and the line is read as continuing through whatever interrupts it. Where a straight line crosses a curve, you see two continuous strokes passing over each other, not four separate segments meeting at a point (SRC-028).\n\n\n\nMeindert Hobbema, The Avenue at Middelharnis, 1689 (National Gallery, London). Public domain.\nContinuity in a real picture, and the reason it is worth a figure: watch where your eye goes without being asked. It starts at the bottom edge, picks up one of the wheel ruts, and runs up the track to the tiny walking figure and the church tower beyond.\nNothing forces that. The ruts are broken, puddled and interrupted, and the trunks cut across them; your visual system stitches the fragments into one continuous line and then follows it. That is also why a road, a fence, a handrail or a shoreline will hijack a composition whether or not it points at the subject.\n\n\nFigure and ground. Before any of the above, the field gets split into objects and the stuff objects sit on. Rubin's vase — two profiles or one vase, never both at once — is the standard demonstration. The split is forced and exclusive, and it is settled by cues like relative size and convexity rather than by what you intended. This one has its own article: Negative space.\nRough order of strength, which is useful when cues fight each other: common region beats proximity, proximity beats similarity, and similarity survives distance better than either (SRC-035, SRC-037).\nWhy this matters for judging images\nAll of the above runs automatically, on the flat two-dimensional array, with no access to the three-dimensional scene. Your grouping machinery does not know that the pole is thirty metres behind the head. It sees two shapes that touch, and touching shapes join.\nThat single fact explains most of the classic \"amateur\" tells.\nTangents and mergers. A lamp post growing out of someone's head. A branch coming out of an ear. A horizon running exactly through a neck. Continuity carries the pole's line up into the head, closure completes it, and the two become one object. Brejon notes that tangents are sometimes deliberate — Paul Thomas Anderson rests a blinding white cross directly on Daniel Day-Lewis's head in There Will Be Blood — but that \"most of the time they are accidental and distracting\" (SRC-098).\nSubjects touching the frame edge. The edge is a hard line, so a subject that touches it merges with it and reads as attached to the border rather than sitting inside the picture. A clear gap works and a decisive overlap works. The half-measure is what fails.\nBusy backgrounds. A cluttered background offers dozens of competing proximity and similarity groupings, and the subject gets recruited into them. A striped shirt against striped blinds; a dark head against a dark bookshelf. The subject does not disappear because the background is \"distracting\" in some vague sense — it disappears because it has been grouped with the background, and no separate object is left for the eye to find. That is also why it wrecks the Visual hierarchy.\n\n\n\nLarge-tailed nightjar (Caprimulgus macrurus) roosting, Bharatpur, 2015. Photograph by Tanmay Haldar via Wikimedia Commons, CC BY-SA 4.0.\nThere is a bird in the left half of this picture, lying along the branch. It takes most people a few seconds, and this is what a merger looks like when nature does it on purpose.\nWork out what is missing. The bird's outline is all there — you can trace head, shoulder, folded wing and tail. But every cue that would separate it from the branch is absent: the same browns, the same mid-tones, the same streaky bark-like texture, and no shadow gap under the body because it is pressed flat to the wood. Similarity groups the bird with the branch, so there is no second object for your eye to find.\nTwo things do eventually give it away, and both are local breaks in the pattern: the dark slit of the closed eye, and a short crisp edge where the folded wing overlaps the bark near the bottom left. A merger in a photograph fails or succeeds on exactly these — not on how \"cluttered\" the background looks.\n\n\nAccidental similarity and accidental regions. Two unrelated things sharing a colour read as related, and viewers hunt for the story connecting them — a red exit sign behind a red dress is a sentence you did not write. And a subject standing half in a patch of light is cut into two objects by the edge of the patch; faces sliced by a shadow edge are the everyday case.\n\nYou cannot argue with it\nOnce you have seen the pole coming out of the head, you cannot un-see it, and neither can anyone else. \"But it is obviously in the background\" is true and irrelevant. Grouping happens before understanding, so the explanation arrives too late to undo the impression.\n\nCommon mistakes\n\n\"Gestalt is design theory, not photography.\" It describes perception. Brejon found the same principles in a 1996 Pixar lighting course from Sharon Calahan, and treats them as the foundation of shot composition (SRC-098).\n\"These are rules for composing.\" They are descriptions of what happens to a viewer. You cannot switch them off; you can only work with or against them. Calahan's own phrasing: not rules to be followed, but a structure for exploring possibilities.\n\"A merger is a small technical flaw.\" It changes what object the viewer sees. That is not small.\n\"The grouping is whatever I intended.\" The machinery has no access to your intention. It has the pixels.\n\n\nChecking an image for grouping accidents\n\nTrace the subject's outline with your eye. Does anything touch it, cross it, or continue out of it?\nCheck every frame edge. Is anything just barely touching?\nSquint. Does the subject stay a separate shape, or merge into the background mass?\nLook for repeated colours or shapes that connect two things that have nothing to do with each other.\nLook for boundaries — light patches, shadow edges, doorways — that cut the subject into two pieces.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Negative space\n              The empty parts of an image are shapes too, and you are composing them whether you notice or not.\n            \n          \n        \n          \n            \n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n          \n            \n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SRC-028 — Smashing Magazine — Design Principles: Visual Perception And The Principles Of GestaltSRC-029 — Smashing Magazine — Design Principles: Space And The Figure-Ground RelationshipSRC-035 — Nielsen Norman Group — Similarity Principle in Visual DesignSRC-036 — Nielsen Norman Group — Proximity Principle in Visual DesignSRC-037 — Nielsen Norman Group — The Principle of Common RegionSRC-038 — Nielsen Norman Group — The Principle of Closure in Visual DesignSRC-033 — Nielsen Norman Group — 5 Principles of Visual Design in UXSRC-098 — Chris Brejon — CG Cinematography, Chapter 3: Gestalt Theory\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Gestalt grouping",
+    "The principles that earn their place",
+    "Why this matters for judging images",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nEven fieldfifteen separate dotsProximityspacing: a three and a twoSimilaritycolour: two interleaved setsCommon regionthe box beats the gapedge not drawnClosurenotches turned inward — a triangle appearsSame discs, notches turned outidentical ink, identical positions — no triangle\n\nThe top row is the same fifteen dots four times over. Each panel changes exactly one property, and each change hands you a different set of groups.\nProximity (spacing only): a three and a two. You now believe two of the dots belong together, on no evidence except a gap. Proximity is one of the strongest cues there is and it routinely beats colour and shape (SRC-036).\nSimilarity (colour only, spacing untouched): two interleaved sets. Colour is the strongest similarity trait — it will pull elements of completely different shapes into one group (SRC-035). In Pixar's Piper, every bird on the beach is an adult sandpiper except the chick; the adults collapse into one mass and the chick stands alone (SRC-098).\nCommon region (one outline, spacing and colour untouched): the two enclosed columns leave the field and become a unit, even though the box gives them no advantage in spacing (SRC-037). In a photograph the boundary need not be drawn: a patch of light on a wall, a doorway, a pool of shadow all act as regions.\nThe bottom row is closure. Identical discs in identical positions in both panels; only the direction the notches face changes. On the left you see a triangle whose edges are not drawn and whose interior is exactly the same tone as the panel around it. Turn the notches outward and it is gone — so the triangle was never in the ink.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nMeindert Hobbema, The Avenue at Middelharnis, 1689 (National Gallery, London). Public domain.\nContinuity in a real picture, and the reason it is worth a figure: watch where your eye goes without being asked. It starts at the bottom edge, picks up one of the wheel ruts, and runs up the track to the tiny walking figure and the church tower beyond.\nNothing forces that. The ruts are broken, puddled and interrupted, and the trunks cut across them; your visual system stitches the fragments into one continuous line and then follows it. That is also why a road, a fence, a handrail or a shoreline will hijack a composition whether or not it points at the subject.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AT9zNrV8gg8IPXF8cNkjJkQ1Cqo9d0TfvXI0oUbtswxGblWVqfgxInCeJZuHaYound2ugoTg5HCZdl9syR0OqZjeqwk3o06i2cHqeMXEheUvXiLoI6f7Ys863VdKMHZs9iT4axNcuwaTK-uonDdGhW9JL2DCB6Zh6gZN5z2bOFBhsMo_Grd4K9LnO1SpGGKn6U6QZBSIEq4SwAHJQrKhQtP4OXNSTRn-Ks-jFDrtdKyjAYmFeSb-M8KZj3MzPcLcEWDH2QjZpOUQQ7YbO1bd_LbSaB23Pa71jk9LT3UQGFCAXkHCVypVPeYjYldkUYjFvprMCQLvqXk-QCkgd6BrtVy3ezi7y3VTXRVmFkSrjfxEoXDqxf6liKrYNr2Qo1VkYeTzmVoWSU0z_I3h22SXM-x938uFQMddqMoUtPF53M4Iw-LrABJKZd1eYK1OY9TryRgXLCSJiphEbOcm6udUCbHIuus0nEE3XOOuYpdKcfex12s6-WLdUHw42pDSeIf22PvFDPEtAcTYaqiIOZHO1lFCoEcCA5o_wkefcz-RccKAJOhLpHGBjeNulskZQl-WP02jZMduf3UGmXmdCv3bO-45aenjGxsUgRsktE_WxH-oLbUidquhA9rjeqQckgha36hsnPtRizBU8xpcmdL58xkj6k-Ha-wWFDwHOTVRaYkzLciNpqUofL-v79u1lK22xQqHGMpY2PO3HK9BQ0fDe2MKEvRmT-EAcRDYUKYGvlG6UNCuU9LrEkSSnuarTMsMmagwwo5985wT7wW5R_RsJRMOeTBalagx64IbgOoNGVoQyDZfcxj-6RhIjuKi8xFeg8WxfYlnbC3lkZaGQXI2fZo4ex1dg1qQz5zhSBBOXhguvl92kmhRiDp_6wyTeOl1JVF3lufp5Cp0E0tcQ2dsEXnp-NJZdyXrRnXFHZHatBi7Aldrv1tMSXzNayP6glv9FXi68Wddd5RMbj8VxlIghfl7MVwoZhMyKXHhRGPLcN7pV7zV3BkLFQ-VWhD-2CUJ4DX5C71m3LeqhsepHHnbFuovY8c5Iur4J81t_R5LmZT8AqtDPWGnuXLbraaxy5CqnPhuYN-gdlDiIRptiRshJpsvPQ-nR5YGcxoVnUB9LjAo4u4CvGlHapF8yLMn3yKRyZyvkRsiDjhjkOmjLvwwihbc7YbFVciv7KCsx0fam5G_pl3cwwhm3N09FXFGF9bSC5ODxWiegl6jHys6XBLzrgH9g3fNmM14mzRiMdT4glQkzY9-dBH7TDAoFDownLFAY1xVHvrw_x2DhHV6jvYGlPMxqfAfCSkviMZV4jA_MDgMgHhT_OznsgdRklkK11dcvJz_eocntCk3Wudcy2feWuDhXJp-fww2YxG3tbRetoapsUCTm8vnkSncOuGxVbPWC1r_Fle-GvZBaVZK7Qng47dJtRaFjzAz5YCn1TVl5EowDG4kAt1ZjlNfdBIgicDGTCvYDBc_RDu441CZhqSYhApVW1wHME5NE2NT7Ox15UFf4EztlLTmzyMQQWWKdLlL7EhKZKugJWh2W7o-lWkjHeLru88Xb0gG9-yYm0g7__jYfmGD6oGYuiW2IxOyNdno8r73ka3Lz8F1Z_zJSMF3HMnrEImZN34AwheSPSJOX5BUOdxM8-kOrWxnzZwSr_oqC6TynnQLQ4dJKG455cYjnVe7S5CnKg8iDnyb6NURqCLN2LcL_hKsulRKtBNyfhhyDni83qkxBskHjHt8nYIfHwX5fAFg7CmxceQV9DIhCIOIzYr7P_ulyIn9Qx4CfXiLuPSahgxOI4RsZLiADRqAMj2t6crhFQ1oTbzLhXLJG9NJtIXOnB-AAefLVqVbzdmmBl6CdnU1cbb3fZjjsEQP_FQzp23D9lggeR9R9KFJWnwCoM2fqS0gF_0Nyc8idgg6gLd5UBPq5T3imgYGHhbIozrlq_ol2j6uKHsgclY9f5mReZcOxwaTf8ya9wDBwhJHUeokvErewOI1P5KiREp5sPGJ53owCH6909oGi7b2ruI9CBiPerSoMZ3AMMsOgeHX",
+          "alt": "Hobbema, The Avenue at Middelharnis: a rutted track running away between rows of tall thin trees"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nLarge-tailed nightjar (Caprimulgus macrurus) roosting, Bharatpur, 2015. Photograph by Tanmay Haldar via Wikimedia Commons, CC BY-SA 4.0.\nThere is a bird in the left half of this picture, lying along the branch. It takes most people a few seconds, and this is what a merger looks like when nature does it on purpose.\nWork out what is missing. The bird's outline is all there — you can trace head, shoulder, folded wing and tail. But every cue that would separate it from the branch is absent: the same browns, the same mid-tones, the same streaky bark-like texture, and no shadow gap under the body because it is pressed flat to the wood. Similarity groups the bird with the branch, so there is no second object for your eye to find.\nTwo things do eventually give it away, and both are local breaks in the pattern: the dark slit of the closed eye, and a short crisp edge where the folded wing overlaps the bark near the bottom left. A merger in a photograph fails or succeeds on exactly these — not on how \"cluttered\" the background looks.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ASGRA_OIoK6O2kH0xfe5IN25erdqHNjjHfpwIMchiRGGPrskh6d7-16uEBUznXe5xyGQL6i0uxq8zDuYG0-lHgjzsXj5kPOQtIEHdYmYUYOFSt_iecDb6TiSCiP0vCXEVou7l6XL1Sqpi30sa1PnRRX4N5txk4Xtu0B3pDdzKn49qhyi032R5bar625VScCkl7soeONyzpsshY_sNqFzp-Qh4M0hGTCaGS4Pxf_we58Sm8rS0BDthfOrLENFImDyL9lzSLmsS2jeO_YyQPfhZc2zoXFe8mqIjtT4T0HkzodXmNWvMXzP1DXakpl_-81klSZo-ErVMuOLFtPoXtfG6EkQxnU6-7VchU70U15SkfcOYPGD4_ThyqQzsI7gSXu4Be7w4LHkYpetQ7yVXAt151OZvyaavt94zUaU-thVsw2wcprZmISmx7QFC4gJoK-5kdNmkUdAH9iz9e5X9bB7Mu_NQJ9KyrrVqTJxnm4HFuTEgtpfG93wymKExyNGLQETQB8ET0cDNZ636aqgwbvpGPLaCJt5Hrc4mNqo4166fzeT08tdZ5QUCy0n8UmHB-1c2rr1hvRc-H4dyoA6niuDe7YaKf9ZsfjeAKIL6ANLHtlkxn2D-Vmj0h8J2WTCVLvrITPOGyc9f8EzIcqaTEvKw-mxyskG_9BNrToTLw_fYs7O90L-vACW_Sekj_b2yYtCHsETYgqbHca1lkwl2FUKmW4Igyekn5vNPBYQZwew8OursJ9Gf58vyAkunAxF0KvVneUoz8I3_9KIyTa5X4r3pc7nlOX3zgWy5v1ud-5iiG1tS91Jq54MViyf7F8ofLXBS8JwjpNWaYLCwZzqR-3hlhcMQTbT2zTJtNccyVwTd_-yCx5E0vZuPs696ZExhWDsth0XV9iuA1PkFQMxKYrBFDQ59_n--I7f7fcdjnnS4dwvrZTrDin6lvBj5ZdFaf7IoA4Fsa7sa5SNnCNrqThrdY7cwIYNpn2JXpr-T-Lk4NydwhPtCd1lrmrKnvJCLG44kruG3xJcVR6kSqs2lzIQDXdg4kW8JOS8kvDHBJJuglmpNaIwUfvT1HdM0A33tp-VNrz70aj7syskeVaHTizOFtgUoAyR4ARnmOntBspTb4MtMhqx4ApdkOV2XUbe3jhms64awZ6sgSX65uhJwjyPVtgu_LrHYPhlY__wUsLEA6AklpvrMdpFI2mE6FuOmxOawYqZ3c5uvegpnWhNK_Lx5g2CDxcrmFagpCSyAruSVhOHiPAh9EPfasjrmlwoCxzx7CgNFk02tL5bVwdC3l5yalCheQwkYsmKPaf4rZYKt__-_zKQM_UupEq18yhOxMt_OpIIhdC4M407178SSU0Tn9xrxGvQb223zX1M7sVhW2mG-9ooa7nsjXcRc1XYN6yiso6G3y4eJaIK4iawhz-QrLGijKcLnXgtZaJvfV4_0o7zr6EdIcB4sVtpVAG0rL9Tl8hifC6zRG86zjGB7DBGmlkr_kE30z0xdmUYTSVQ4bOeE9JplquQqrxZ8j113aTQV_jKvpA0lFi05dqLp4udM9xo0kSUR5S7ajby5B633cBEX0pB-kkSr6VPgkIdZq55A9V_ztKduThKXW02WSf2q_gjEeRlXX_NVj102Slwg5KtjyiwTMWFJDCCS1T-7dReZ0Q5SZarzRWTbF-zwApeQ-0FMMxkWEO5mmQ0sTTLD4L5lxMxVy35yBENlcX86-HybLw8JkTf9IDWPZ4iheMvagAmKBnSEPMtrHai1cgc4yUEDyxjupVc04Kr5YWm2jQCvM56zSUEBFCszwqYve2cfr4EAD2vqQ3MO-jOukQxIosm1zo0H740ZKeY-vmAeZRW_GMqkML8hqoy6BDc8Wid-Vc2rOshSffbdHcUp9w4wQFOTNq71KSir6Cd9PchwiMY4UPQLdve2bJFet5y81M9lsXQ_YUo3meuwFFNL_HPSM06EoxUKi7-lpLEOdM_E10RffjtkG_27D9lVwPnKhioEtwMtg920G0yYLSByS-jxOuZLcB2PtPuB3_Em9G8NciO",
+          "alt": "A large-tailed nightjar roosting on a bare branch, its mottled plumage matching the bark"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AT9zNrV8gg8IPXF8cNkjJkQ1Cqo9d0TfvXI0oUbtswxGblWVqfgxInCeJZuHaYound2ugoTg5HCZdl9syR0OqZjeqwk3o06i2cHqeMXEheUvXiLoI6f7Ys863VdKMHZs9iT4axNcuwaTK-uonDdGhW9JL2DCB6Zh6gZN5z2bOFBhsMo_Grd4K9LnO1SpGGKn6U6QZBSIEq4SwAHJQrKhQtP4OXNSTRn-Ks-jFDrtdKyjAYmFeSb-M8KZj3MzPcLcEWDH2QjZpOUQQ7YbO1bd_LbSaB23Pa71jk9LT3UQGFCAXkHCVypVPeYjYldkUYjFvprMCQLvqXk-QCkgd6BrtVy3ezi7y3VTXRVmFkSrjfxEoXDqxf6liKrYNr2Qo1VkYeTzmVoWSU0z_I3h22SXM-x938uFQMddqMoUtPF53M4Iw-LrABJKZd1eYK1OY9TryRgXLCSJiphEbOcm6udUCbHIuus0nEE3XOOuYpdKcfex12s6-WLdUHw42pDSeIf22PvFDPEtAcTYaqiIOZHO1lFCoEcCA5o_wkefcz-RccKAJOhLpHGBjeNulskZQl-WP02jZMduf3UGmXmdCv3bO-45aenjGxsUgRsktE_WxH-oLbUidquhA9rjeqQckgha36hsnPtRizBU8xpcmdL58xkj6k-Ha-wWFDwHOTVRaYkzLciNpqUofL-v79u1lK22xQqHGMpY2PO3HK9BQ0fDe2MKEvRmT-EAcRDYUKYGvlG6UNCuU9LrEkSSnuarTMsMmagwwo5985wT7wW5R_RsJRMOeTBalagx64IbgOoNGVoQyDZfcxj-6RhIjuKi8xFeg8WxfYlnbC3lkZaGQXI2fZo4ex1dg1qQz5zhSBBOXhguvl92kmhRiDp_6wyTeOl1JVF3lufp5Cp0E0tcQ2dsEXnp-NJZdyXrRnXFHZHatBi7Aldrv1tMSXzNayP6glv9FXi68Wddd5RMbj8VxlIghfl7MVwoZhMyKXHhRGPLcN7pV7zV3BkLFQ-VWhD-2CUJ4DX5C71m3LeqhsepHHnbFuovY8c5Iur4J81t_R5LmZT8AqtDPWGnuXLbraaxy5CqnPhuYN-gdlDiIRptiRshJpsvPQ-nR5YGcxoVnUB9LjAo4u4CvGlHapF8yLMn3yKRyZyvkRsiDjhjkOmjLvwwihbc7YbFVciv7KCsx0fam5G_pl3cwwhm3N09FXFGF9bSC5ODxWiegl6jHys6XBLzrgH9g3fNmM14mzRiMdT4glQkzY9-dBH7TDAoFDownLFAY1xVHvrw_x2DhHV6jvYGlPMxqfAfCSkviMZV4jA_MDgMgHhT_OznsgdRklkK11dcvJz_eocntCk3Wudcy2feWuDhXJp-fww2YxG3tbRetoapsUCTm8vnkSncOuGxVbPWC1r_Fle-GvZBaVZK7Qng47dJtRaFjzAz5YCn1TVl5EowDG4kAt1ZjlNfdBIgicDGTCvYDBc_RDu441CZhqSYhApVW1wHME5NE2NT7Ox15UFf4EztlLTmzyMQQWWKdLlL7EhKZKugJWh2W7o-lWkjHeLru88Xb0gG9-yYm0g7__jYfmGD6oGYuiW2IxOyNdno8r73ka3Lz8F1Z_zJSMF3HMnrEImZN34AwheSPSJOX5BUOdxM8-kOrWxnzZwSr_oqC6TynnQLQ4dJKG455cYjnVe7S5CnKg8iDnyb6NURqCLN2LcL_hKsulRKtBNyfhhyDni83qkxBskHjHt8nYIfHwX5fAFg7CmxceQV9DIhCIOIzYr7P_ulyIn9Qx4CfXiLuPSahgxOI4RsZLiADRqAMj2t6crhFQ1oTbzLhXLJG9NJtIXOnB-AAefLVqVbzdmmBl6CdnU1cbb3fZjjsEQP_FQzp23D9lggeR9R9KFJWnwCoM2fqS0gF_0Nyc8idgg6gLd5UBPq5T3imgYGHhbIozrlq_ol2j6uKHsgclY9f5mReZcOxwaTf8ya9wDBwhJHUeokvErewOI1P5KiREp5sPGJ53owCH6909oGi7b2ruI9CBiPerSoMZ3AMMsOgeHX",
+      "alt": "Hobbema, The Avenue at Middelharnis: a rutted track running away between rows of tall thin trees"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ASGRA_OIoK6O2kH0xfe5IN25erdqHNjjHfpwIMchiRGGPrskh6d7-16uEBUznXe5xyGQL6i0uxq8zDuYG0-lHgjzsXj5kPOQtIEHdYmYUYOFSt_iecDb6TiSCiP0vCXEVou7l6XL1Sqpi30sa1PnRRX4N5txk4Xtu0B3pDdzKn49qhyi032R5bar625VScCkl7soeONyzpsshY_sNqFzp-Qh4M0hGTCaGS4Pxf_we58Sm8rS0BDthfOrLENFImDyL9lzSLmsS2jeO_YyQPfhZc2zoXFe8mqIjtT4T0HkzodXmNWvMXzP1DXakpl_-81klSZo-ErVMuOLFtPoXtfG6EkQxnU6-7VchU70U15SkfcOYPGD4_ThyqQzsI7gSXu4Be7w4LHkYpetQ7yVXAt151OZvyaavt94zUaU-thVsw2wcprZmISmx7QFC4gJoK-5kdNmkUdAH9iz9e5X9bB7Mu_NQJ9KyrrVqTJxnm4HFuTEgtpfG93wymKExyNGLQETQB8ET0cDNZ636aqgwbvpGPLaCJt5Hrc4mNqo4166fzeT08tdZ5QUCy0n8UmHB-1c2rr1hvRc-H4dyoA6niuDe7YaKf9ZsfjeAKIL6ANLHtlkxn2D-Vmj0h8J2WTCVLvrITPOGyc9f8EzIcqaTEvKw-mxyskG_9BNrToTLw_fYs7O90L-vACW_Sekj_b2yYtCHsETYgqbHca1lkwl2FUKmW4Igyekn5vNPBYQZwew8OursJ9Gf58vyAkunAxF0KvVneUoz8I3_9KIyTa5X4r3pc7nlOX3zgWy5v1ud-5iiG1tS91Jq54MViyf7F8ofLXBS8JwjpNWaYLCwZzqR-3hlhcMQTbT2zTJtNccyVwTd_-yCx5E0vZuPs696ZExhWDsth0XV9iuA1PkFQMxKYrBFDQ59_n--I7f7fcdjnnS4dwvrZTrDin6lvBj5ZdFaf7IoA4Fsa7sa5SNnCNrqThrdY7cwIYNpn2JXpr-T-Lk4NydwhPtCd1lrmrKnvJCLG44kruG3xJcVR6kSqs2lzIQDXdg4kW8JOS8kvDHBJJuglmpNaIwUfvT1HdM0A33tp-VNrz70aj7syskeVaHTizOFtgUoAyR4ARnmOntBspTb4MtMhqx4ApdkOV2XUbe3jhms64awZ6sgSX65uhJwjyPVtgu_LrHYPhlY__wUsLEA6AklpvrMdpFI2mE6FuOmxOawYqZ3c5uvegpnWhNK_Lx5g2CDxcrmFagpCSyAruSVhOHiPAh9EPfasjrmlwoCxzx7CgNFk02tL5bVwdC3l5yalCheQwkYsmKPaf4rZYKt__-_zKQM_UupEq18yhOxMt_OpIIhdC4M407178SSU0Tn9xrxGvQb223zX1M7sVhW2mG-9ooa7nsjXcRc1XYN6yiso6G3y4eJaIK4iawhz-QrLGijKcLnXgtZaJvfV4_0o7zr6EdIcB4sVtpVAG0rL9Tl8hifC6zRG86zjGB7DBGmlkr_kE30z0xdmUYTSVQ4bOeE9JplquQqrxZ8j113aTQV_jKvpA0lFi05dqLp4udM9xo0kSUR5S7ajby5B633cBEX0pB-kkSr6VPgkIdZq55A9V_ztKduThKXW02WSf2q_gjEeRlXX_NVj102Slwg5KtjyiwTMWFJDCCS1T-7dReZ0Q5SZarzRWTbF-zwApeQ-0FMMxkWEO5mmQ0sTTLD4L5lxMxVy35yBENlcX86-HybLw8JkTf9IDWPZ4iheMvagAmKBnSEPMtrHai1cgc4yUEDyxjupVc04Kr5YWm2jQCvM56zSUEBFCszwqYve2cfr4EAD2vqQ3MO-jOukQxIosm1zo0H740ZKeY-vmAeZRW_GMqkML8hqoy6BDc8Wid-Vc2rOshSffbdHcUp9w4wQFOTNq71KSir6Cd9PchwiMY4UPQLdve2bJFet5y81M9lsXQ_YUo3meuwFFNL_HPSM06EoxUKi7-lpLEOdM_E10RffjtkG_27D9lVwPnKhioEtwMtg920G0yYLSByS-jxOuZLcB2PtPuB3_Em9G8NciO",
+      "alt": "A large-tailed nightjar roosting on a bare branch, its mottled plumage matching the bark"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The principles that earn their place",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt#the-principles-that-earn-their-place"
+    },
+    {
+      "text": "Why this matters for judging images",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt#why-this-matters-for-judging-images"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt#the-principles-that-earn-their-place"
+    },
+    {
+      "text": "Negative space",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/negative-space"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt#why-this-matters-for-judging-images"
+    },
+    {
+      "text": "Visual hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt#common-mistakes"
+    },
+    {
+      "text": "\n              Negative space\n              The empty parts of an image are shapes too, and you are composing them whether you notice or not.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/negative-space"
+    },
+    {
+      "text": "\n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "\n              Naming what is wrong\n              A checklist for turning \"something looks off\" into a specific, defensible sentence about the image.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    },
+    {
+      "text": "SRC-028 — Smashing Magazine — Design Principles: Visual Perception And The Principles Of Gestalt",
+      "href": "https://www.smashingmagazine.com/2014/03/design-principles-visual-perception-and-the-principles-of-gestalt/"
+    },
+    {
+      "text": "SRC-029 — Smashing Magazine — Design Principles: Space And The Figure-Ground Relationship",
+      "href": "https://www.smashingmagazine.com/2014/05/design-principles-space-figure-ground-relationship/"
+    },
+    {
+      "text": "SRC-035 — Nielsen Norman Group — Similarity Principle in Visual Design",
+      "href": "https://www.nngroup.com/articles/gestalt-similarity/"
+    },
+    {
+      "text": "SRC-036 — Nielsen Norman Group — Proximity Principle in Visual Design",
+      "href": "https://www.nngroup.com/articles/gestalt-proximity/"
+    },
+    {
+      "text": "SRC-037 — Nielsen Norman Group — The Principle of Common Region",
+      "href": "https://www.nngroup.com/articles/common-region/"
+    },
+    {
+      "text": "SRC-038 — Nielsen Norman Group — The Principle of Closure in Visual Design",
+      "href": "https://www.nngroup.com/articles/principle-closure/"
+    },
+    {
+      "text": "SRC-033 — Nielsen Norman Group — 5 Principles of Visual Design in UX",
+      "href": "https://www.nngroup.com/articles/principles-visual-design/"
+    },
+    {
+      "text": "SRC-098 — Chris Brejon — CG Cinematography, Chapter 3: Gestalt Theory",
+      "href": "https://chrisbrejon.com/cg-cinematography/chapter-3-gestalt-theory/"
+    },
+    {
+      "text": "\n        PreviousExposure and dynamic range",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/exposure-and-dynamic-range"
+    },
+    {
+      "text": "\n        NextNaming what is wrong",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt"
+}

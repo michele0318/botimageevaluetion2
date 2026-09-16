@@ -1,0 +1,96 @@
+{
+  "model": "qwen3.5:4b",
+  "context": 4096,
+  "split": "test",
+  "system_hash": "16dc6ccd1655be37b49bf388876d4705bd838995127e0a85d42a7623650edca3",
+  "correction_lookup": false,
+  "count": 6,
+  "correct": 3,
+  "results": [
+    {
+      "id": "363283f6393dcd568fe1536c965f3250bad359ecec82e7970e521b774fdde4a4",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 23.92,
+      "usage": {
+        "prompt_eval_count": 2072,
+        "eval_count": 4,
+        "total_duration": 23284592800,
+        "load_duration": 202462000
+      }
+    },
+    {
+      "id": "526c44edebc4450503399ec05689e36e905e87f2669e9a3c92398f9d281b5029",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 6.3,
+      "usage": {
+        "prompt_eval_count": 830,
+        "eval_count": 4,
+        "total_duration": 6147877000,
+        "load_duration": 26313600
+      }
+    },
+    {
+      "id": "717da826723bc10186e3183363cbe3231696a1d834d3837ed0e9b87281b098ed",
+      "expected": "2",
+      "predicted": "2",
+      "correct": true,
+      "error": null,
+      "seconds": 19.57,
+      "usage": {
+        "prompt_eval_count": 2022,
+        "eval_count": 4,
+        "total_duration": 19298518200,
+        "load_duration": 24093500
+      }
+    },
+    {
+      "id": "742833ad952cfa3dd16dcb5a811b7422ce85c236fc5d32f45966cbba31b43076",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 21.54,
+      "usage": {
+        "prompt_eval_count": 2170,
+        "eval_count": 4,
+        "total_duration": 21233670000,
+        "load_duration": 10993900
+      }
+    },
+    {
+      "id": "750347391011bf6ceb289dab780767596ab3c6307d08eb0bc5fd405a51867193",
+      "expected": "2",
+      "predicted": "2",
+      "correct": true,
+      "error": null,
+      "seconds": 7.37,
+      "usage": {
+        "prompt_eval_count": 1014,
+        "eval_count": 4,
+        "total_duration": 7243390800,
+        "load_duration": 23822600
+      }
+    },
+    {
+      "id": "d4f1ed3cdcbd7a153e74eeb45a65a3206c2ad0200c6f5507c29af362cc1bf2ce",
+      "expected": "1",
+      "predicted": "1",
+      "correct": true,
+      "error": null,
+      "seconds": 21.94,
+      "usage": {
+        "prompt_eval_count": 2163,
+        "eval_count": 4,
+        "total_duration": 21324647000,
+        "load_duration": 24306800
+      }
+    }
+  ],
+  "note": "Gli errori sono conteggiati come risposte non corrette. Nessuna garanzia sui task futuri."
+}

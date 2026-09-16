@@ -1,0 +1,36 @@
+{
+  "id": "bfd0bcdff0438f4d07603a6d50c6d4321bb5529db3fb81ddfae2fbd5625d21b3",
+  "prompt": "3D render, isometric pastel still life, cloud and star shaped pillows, wavy fabric ribbons, tiny flower patches,  colorful bottom-left fading to monochrome white top-right, dreamy mood",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 features a perfectly balanced composition where smaller objects complement larger ones, paired with an excellent color palette. The rich, detailed textures are highly engaging and invite the viewer to examine the image closely.",
+  "split": "train",
+  "image_group": "fa2e533ffb817aec18a2b8d25d89ea46b0061e1fe4900d6dd14df525316091d9",
+  "image_hashes": [
+    "87a4ae78376519e9d29c10067ae29a5ab37ae673d26b8e5bf5b0f119fb78e90d",
+    "2e91e2f4a33a624ce14953736796c9539e488ea30fdf86bc89f29ea2bbdadf04"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "fa592d7418403771aa85dcf4d08953b8425d7b468b0522e8075796c589583698",
+      "corrected": false,
+      "time": "2026-09-13T02:18:58"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:19:01"
+    }
+  ],
+  "feedback": "Image 2 features a perfectly balanced composition where smaller objects complement larger ones, paired with an excellent color palette. The rich, detailed textures are highly engaging and invite the viewer to examine the image closely.",
+  "lesson": "If a requested style is specified, prioritize compositional balance and texture richness to enhance viewer engagement, without declaring one style superior",
+  "lesson_evidence": "Image 2 features a perfectly balanced composition where smaller objects complement larger ones, paired with an excellent color palette. The rich, detailed textures are highly engaging and invite the viewer to examine the image closely.",
+  "lesson_source": "Image 2 features a perfectly balanced composition where smaller objects complement larger ones, paired with an excellent color palette. The rich, detailed textures are highly engaging and invite the viewer to examine the image closely."
+}

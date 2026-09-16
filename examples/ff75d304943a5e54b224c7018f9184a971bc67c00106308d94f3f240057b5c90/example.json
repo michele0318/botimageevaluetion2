@@ -1,0 +1,36 @@
+{
+  "id": "ff75d304943a5e54b224c7018f9184a971bc67c00106308d94f3f240057b5c90",
+  "prompt": "A medium full shot photograph of an older distinguished European man aged 65-75, posing thoughtfully with his hand on his forehead. The portrait captures him with gray hair and thick black rectangular eyeglasses, wearing a dark blazer over a polo shirt against a textured studio backdrop.",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: The 'textured studio backdrop' in Image 1 is excessively high-contrast, which distracts the viewer from the subject. While Image 2 also follows the prompt, it does so with more restraint; the texture is present but subtle, ensuring the primary focus remains entirely on the man.",
+  "split": "train",
+  "image_group": "823b1cb6e658183d44958f1f7fcd92fc6099bf6de2bbecdf81a9e6847f8ad19e",
+  "image_hashes": [
+    "a7333137d65196a6cdb082263ff12e5a70230c275201021cf24ce7430b316368",
+    "ca6b8cd60ccab0d41fdf1e0285f39dd1bfe52b08026b28a52eb92c115bc41dfb"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "51227d436d4633258cdad8bff71381d63e4b97570a3f52b30601d81891bdc747",
+      "corrected": false,
+      "time": "2026-09-13T22:05:23"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:05:30"
+    }
+  ],
+  "feedback": "The 'textured studio backdrop' in Image 1 is excessively high-contrast, which distracts the viewer from the subject. While Image 2 also follows the prompt, it does so with more restraint; the texture is present but subtle, ensuring the primary focus remains entirely on the man.",
+  "lesson": "If a requested style includes a textured backdrop, ensure its contrast and prominence are restrained to avoid distracting from the subject; style is only relevant when explicitly requested.",
+  "lesson_evidence": "The 'textured studio backdrop' in Image 1 is excessively high-contrast, which distracts the viewer from the subject. While Image 2 also follows the prompt, it does so with more restraint; the texture is present but subtle, ensuring the primary focus remains entirely on the man.",
+  "lesson_source": "The 'textured studio backdrop' in Image 1 is excessively high-contrast, which distracts the viewer from the subject. While Image 2 also follows the prompt, it does so with more restraint; the texture is present but subtle, ensuring the primary focus remains entirely on the man."
+}

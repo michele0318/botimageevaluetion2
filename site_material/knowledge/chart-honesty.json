@@ -1,0 +1,15 @@
+{
+  "title": "When a chart lies — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty",
+  "source_hash": "8bfdafafa5f59869410a33a081363f2b3262a45a650b7c887e701cfde4832ae2",
+  "rules": [
+    {
+      "rule": "A chart is dishonest if its geometry encodes a quantity different from the label, such as bar length representing (value - 90) instead of value.",
+      "evidence": "The test for lying is narrow and useful: does the geometry encode the quantity the label names?"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2487,
+  "output_tokens": 258,
+  "processed_at": "2026-09-13T09:23:42"
+}

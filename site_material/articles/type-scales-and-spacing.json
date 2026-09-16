@@ -1,0 +1,167 @@
+{
+  "title": "Type scales and spacing scales — Image Wiki",
+  "text": "\n  \n\n  Type scales and spacing scales\n  The two most-used scales in any design system — a short list of text sizes and a short list of gaps. Both work only if adjacent steps are far enough apart to look deliberate.\n\n  \n    Termtype scale / spacing scale\n    Also calledtypographic scale, size scale, spacing units, 8-point grid\n    Not the same astype scale vs type hierarchy, spacing scale vs grid, font size vs line height\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        The step has to be visibleSize and line height are one decision, not twoSpacing scalesThe accessibility floorWhere fixed scales breakCommon mistakes\n      \n    \n  \n\n  You have hit this and probably blamed yourself. A page has a section heading at 21 px and a subheading under it at 19 px, and you cannot tell whether you are looking at two levels or at a mistake. Your eye registers the difference; it just cannot decide what the difference means.\nA type scale is the fix, and it is deliberately boring: a short list of sizes chosen so that any two neighbours are obviously different. A spacing scale is the same idea for gaps. Between them they cover most of the decisions a design system makes.\n\n\nNamed steps, 1734\nNumbered steps, 1969\n\n\nLeft: William Caslon, A Specimen, London, 1734 (public domain). Right: a page of Granjon from Specimen of Type Faces in the United States Government Printing Office, 1969 — a US government work, so public domain.\nLeft is a type scale three hundred years before the phrase existed, and every step has a name: French Cannon, Two Lines Great Primer, Double Pica, Great Primer, English, Pica, Small Pica, Long Primer, Brevier, Nonpareil, Pearl. A printer did not ask for 15 point. He asked for Long Primer, because that was one of the sizes that existed in the shop.\nRight, the same logic with numbers: Granjon at 12, 14, 21, 24 and 30 point, each with a case number — 43L12, 43L14, 43L21, 43L24, 43L30 — so a compositor could find the drawer. Now look at 21 point next to 24 point and try to tell them apart at a glance. You cannot, quickly, and that pair is exactly what a modern scale would drop.\n\n\nThe step has to be visible\n\nRenew a passport24 pxBefore you start21 pxYou need your current passport19 pxand a debit or credit card.Last updated 4 June 202618 pxSteps too closeeach step about a tenth bigger than the lastRenew a passport36 pxBefore you start24 pxYou need your current passport19 pxand a debit or credit card.Last updated 4 June 202616 pxSteps you can seethe GOV.UK large-screen scale: 16, 19, 24, 36 px\n\nSame words, same four levels, same body size. Only the spread differs.\nLeft, each step is roughly a tenth bigger than the last, and the result has no hierarchy — the heading reads as body text that got slightly excited, and the caption at 18 px looks like body text with a bug. Right is the real GOV.UK large-screen scale: 16, 19, 24 and 36 px. You can sort those four into rank order from across the room, which is the entire test.\n\n\nGOV.UK calls its scale \"a collection of font sizes and line heights that underpin all of the typographic styles on GOV.UK\", tested and iterated on different devices, and gives one instruction for anything new: \"align it with one of the points on the type scale\" (SYS-009). The points are numbered by their large-screen pixel size — 80, 48, 36, 27, 24, 19, 16 — and two of them, 80 and 27, are marked \"only used in exceptional circumstances\". A scale with a warning label on two of its seven steps is one somebody has actually used.\nWhat each level does on a page belongs to Type hierarchy on a page. The system question here is narrower: how many steps, and how far apart.\nSize and line height are one decision, not two\nGOV.UK ties every point on its type scale to a line height that is a multiple of 5 px: 48/50, 36/40, 24/30, 19/25, 16/20. The reason is rhythm — \"this creates a consistent vertical rhythm, which makes pages easier to scan and read\" (SYS-009). Because every line box is a multiple of five, unrelated blocks stack without drifting out of alignment.\nAtlassian bundles the pair into one token: font family, size, weight and line height together, with \"optimized spacing values based on font size\" (SYS-013). That is the systems-side lesson — shipping the two as one named style removes the commonest way people break a page, which is changing one and not the other. Why the pairing matters typographically is Measure and line height.\nTheir tokens are also in rem rather than px, so \"users can adjust the size of text depending on their needs\" (SYS-013). A scale written in pixels quietly overrides the reader.\nSpacing scales\n\n1372291117Arbitrary valuessix gaps, six values, chosen one at a timeand the two row gaps are 9 and 11, which nobody decided151025101020Values from a scalethe GOV.UK static scale: 5, 10, 15, 20, 25, 30, 40, 50, 60 pxand both row gaps are 10, because 11 does not exist\n\nThe same card, with every vertical gap measured. Left, six gaps and six different numbers, each chosen on its own while somebody nudged things in a design tool. Look at the two gaps between list rows: 9 px and 11 px. They play the same role, so they should be the same number, and nobody decided that they should not be.\nRight, the same card built from the GOV.UK static scale. Six gaps, four values, and the two row gaps match — not because anyone was careful, but because 11 does not exist.\n\n\nThe two public systems pick different base units and both work. USWDS builds on multiples of 8 px, with half-steps only low down: 4, 8, 12, 16, 20, 24, then 32, 40, 48, 56, 64, 72, 80 (SYS-002-C04). GOV.UK builds on 5 px, and stops counting in fives after 30: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60 (SYS-008). Both put their fine steps at the small end: at large sizes a 5 px difference is invisible. The base unit is a convention; the shortness of the list is the mechanism.\nGOV.UK runs two spacing scales at once: a static one and a responsive one where units 0 to 3 stay fixed while larger units grow, so unit 6 is 20 px on small screens and 30 px on large (SYS-008). Small gaps are structural; only breathing room scales.\nThe accessibility floor\nUSWDS puts a hard number under this: \"For most text, including body copy, use at least an effective size of 16px\", with smaller sizes reserved for captions, footnotes, photo credits and specialised UI (SYS-004). Their scale offers 13, 14 and 15 px, to be used sparingly.\nTheir scale also skips on purpose: 13, 14, 15, 16, 17, then 22, 32, 40, 48 (SYS-002-C06). Nine sizes, with a deliberate hole between 17 and 22, because nothing useful lives there.\nNot everyone agrees on the floor. Atlassian's default body token is 14 px on a 20 px line height, with 16 px reserved for long-form reading (SYS-013). The disagreement is about audience, not eyesight: a dense tool people use all day versus a public service page a stranger reads once under stress. For anything a member of the public must read, take the 16 px floor. The wider argument about size and effort is in Legibility and readability.\nWhere fixed scales break\n\nCheck ifyou need avisaYou can use this serviceto check whether you need150 px of headinga 320 px viewport, drawn actual sizeFixed scaletype scale point 48 stays 48 pxCheck if youneed a visaYou can use this serviceto check whether you needa visa before you travel.It takes about 5 minutesand there is no fee.You will need your travel70 px of headinga 320 px viewport, drawn actual sizeResponsive scalepoint 48 drops to 32 px below 640 px wide\n\nA 320 px viewport, drawn actual size. Left, GOV.UK type scale point 48 held at 48 px: the heading needs three lines, eats 150 px of screen, and leaves room for one line of body text. Right, the same point resolved at 32 px because the screen is below the 640 px tablet breakpoint: two heading lines, 70 px, and four lines of content visible.\nThe heading has not lost its rank — it is still by far the biggest thing on the screen. It has only stopped being the whole screen.\n\n\nThat is the failure mode of a scale defined as fixed pixel values. GOV.UK makes the scale itself responsive: above the 640 px tablet breakpoint point 48 is 48 px, below it 32 px, and point 80 drops from 80 to 53 px (SYS-009).\nThe honest detail is the middle. On small screens points 27 and 24 both render at 21 px — two steps collapse into one value. The scale gives up a level rather than ship two sizes three pixels apart, which is the first diagram in this article applied under pressure. GOV.UK's Frontend v6.0.0 went the other way at the bottom, increasing small-screen sizes for legibility (SYS-009). Scales get revised; that is normal.\nCommon mistakes\n\n\"A ratio makes it a scale.\" Multiplying by 1.125 forever produces neighbouring sizes nobody can tell apart, and fractional pixels. Both public systems use hand-picked integers.\n\"One more size will not hurt.\" It will, twice: when it lands next to an existing size, and again when somebody adds a different in-between size next year.\n\"Spacing is just eyeballing.\" Eyeballing is how you get 9 px and 11 px in the same list.\n\"The scale is the design.\" It is the floor. Two designers on one scale can still produce a good page and a bad one; the scale only rules out sloppy.\n\n\nAuditing a scale in five steps\n\nList every distinct text size on the page. More than six or seven is a smell.\nSort them. Any two within about 15% of each other are competing, not ranking.\nCheck the smallest size against 16 px, and ask what it is for.\nList every distinct gap. Do gaps that play the same role have the same value?\nNarrow the window to 320 px. Does the biggest heading still leave room for content?\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Design tokens\n              A named decision. The point of calling a colour color.text.default rather than #1B1B1B is that the name can be pointed somewhere else once, for everybody.\n            \n          \n        \n          \n            \n              Type hierarchy on a page\n              How a reader finds their way through a page without being told — by size, weight, space, position and case. Space does more of the work than size does.\n            \n          \n        \n          \n            \n              Measure and line height\n              The two settings that decide whether body text is comfortable — how long the lines are, and how far apart. They have to be chosen together.\n            \n          \n        \n          \n            \n              Legibility and readability\n              Two different measurements that get treated as one — whether you can tell the characters apart, and whether you can get through a paragraph without effort.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SYS-009 — GOV.UK Design System — Type scaleSYS-008 — GOV.UK Design System — SpacingSYS-004 — USWDS — TypographySYS-002-C06 — USWDS — Font size tokensSYS-002-C04 — USWDS — Spacing unitsSYS-013 — Atlassian Design — Typography\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Type scales and spacing scales",
+    "The step has to be visible",
+    "Size and line height are one decision, not two",
+    "Spacing scales",
+    "The accessibility floor",
+    "Where fixed scales break",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\nNamed steps, 1734\nNumbered steps, 1969\n\n\nLeft: William Caslon, A Specimen, London, 1734 (public domain). Right: a page of Granjon from Specimen of Type Faces in the United States Government Printing Office, 1969 — a US government work, so public domain.\nLeft is a type scale three hundred years before the phrase existed, and every step has a name: French Cannon, Two Lines Great Primer, Double Pica, Great Primer, English, Pica, Small Pica, Long Primer, Brevier, Nonpareil, Pearl. A printer did not ask for 15 point. He asked for Long Primer, because that was one of the sizes that existed in the shop.\nRight, the same logic with numbers: Granjon at 12, 14, 21, 24 and 30 point, each with a case number — 43L12, 43L14, 43L21, 43L24, 43L30 — so a compositor could find the drawer. Now look at 21 point next to 24 point and try to tell them apart at a glance. You cannot, quickly, and that pair is exactly what a modern scale would drop.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AXhYKW0LNdbSeoy9Twokl_GU3hJxt5Uzitor0ztp7CYrV7Dei23A_6Euhkn-wN_DxU7TGLz4aTMQiiupUU9r_WkwDVHGS_6Dd05x-xoi5NMiAOxUel1tB7-YruFzdO1HpHcJ8b-F_1nXsojTRUWLc2f0Bc0w-NEZo3vSFTGPBDmiU0YtJbXCa4kCLr0RQ3vlbXbzREntyQJqEJX6cMe8C8b5Q4NxRPpX3bUNeeEAAYVqpiBqeplYgjG23rDIYiw0u3NpD9nPKghI7Q7omVOd2CZGf6pIRbyHMsvSrVOwIH_0zkRaIPIA8A_Tgby9Tcc6ftbFOUhQk2P0R2px_ORBy93wTh2W5lJSsCshoZO-czodTqj8XE06qWtGArVu4kpGax9ldsLYQCgF1TsnYkpdjCrWZ4evpQ3P1F1nIeQIRGt056oywVvBWvqSF8_OgGUS0yHTymZNXPbMlEqeHZwJJAww3QPv85oRAhOtjsORLyUBcmGNJ2QYzPpliUZ56SO9wxJi5Z-FiVtotl4CKqutVVH6Wfp1mVkEjNUUJkPbqkDyPBU04J8nA-A3pQDeMqWqxE-M51OFREzB7KsFEOc_TogYISUC8e-Fg0NFXNdxIvdDweW0caHXzMGw9elsWp_Oc798OR0Z9YKEu7KKGkKWPRiagNTHX5RsEOsWGU6plc8cC7YapCohtI-hDGr38S4At3csG9tCZefW1gStujLSOY4hBEN_oSv1zQyajIPYtSa0cIHg8XsiMqllDRu6pTx-aYBZnfUC5eJxxV0zy4swrP_hinGsYqNWd7O8g5d9qV_S9Btd_bXd-XzhX3B76Eicz7LxknvKzLFXCin9ULeZh4OlVFqWAWJ_rlGAKZSU7azYZM_zbNYX6gWbWm2OdIRhi8MfR2B9sSIJVyW8ezuIK20LzmRqlSWxE9iJkMKJcORtrIiBDjPfL0Bzk0t_GxycmruTJsGY8NPGMdl3xuVoh3_jKdWEm-XWPqvwP5tiGVl9LLKgJvIPeszjfeNDhsxP5VGlw8noSEM5o22U90MkNYZ_8HJSvrnQyeek1NNsPHB5xsJVUz4FRDPESXDs_9ad7-2TLbB6VkCzd_qEEhy61Lhf8wVqinPp_DknQYmPqCMOna8E7MrWayeLvm2x0QYE1GSh3AHkQaUjqnCg8VZOrU2wEWx2DiPQH4m2c0aWq63bDYoerdE0M8nmFJvnneNkdx_qQi3fE00h29uXYMkMm3S1VWLQ-fXu9NycRasmmXHXJmSOiwv6eWaKm3xTvTDKVKOketh6TWidJnlXXZ07PwtDjN-jR3GTth2c4e4UomjwFGAuZ71tJpLXvXSwNU3x7U17jFNNIkXsQcTWOLghRtYEoPmZtCJ1YIWYVOz7aM6230yz3LKy_5FeA01lte1Wg2aJf5pG04U5HBp_7KxMQ1KwUU1WFeaCfVEsqStpXpJ7ga25e3dMPUmdnaKPxw9CxvpwBMPl21eIL52AGGsPYgjQ-ZReH4bJHwuX2d9Mw-tO7CVBYhu0yj0dUlMOh9gxaL05iuOmzFIX1mhjGxpQLQB7pH6jpVk2meICHLYEt2FhkhJzcKod-umef3kjqOmkAOHRsslxuCEqPIH8r4s4j-gJk10Y4F-P6WZ82T7Wm-tksxKrSdybyMmSW256juRs_86w6wq5J4_FvqgOYKVV0FOymf92QyGVVupL8yjWOSl9T8uGIKprlEwUzvm3EtsF2Xz8l93axF1TCqfzgXWZRxnqBJFtMevjuTJdgtffph79ICF1KdBf-kWpsvycGLxt4pIqNsYQl1A9Ej4mN0H2mUh9dcYkY6ruSBk5DnZ2P0o8xVsQUCcIMbhfRl4M17i9zJDfVxlVnnifBvMRHng1yedLbu_s9_1Yzo7Npslny53omK70jXh-1CEt8LDwbwdiOm6-cGAkrdSSYvwfwuauR3vkEpjdEvzLx0gnKsUF72ELl99DE837boDJQWu5UF1Qzc7NCh99NXDFXOQ6SoXOyK82jbQmA8FFklVQwuU8NwCZM564Bx9W0kldRNXyHJBg",
+          "alt": "Named steps, 1734"
+        },
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AQrWSmRQYAUnxAL8X4hvFBVNStMkALdGfLCUMiW74NmQrit2yzcc2kGUgp3ynGTJGZ74JfoPbJfanvlk0P6nLqUlV56mo1ukqNDBJFNRhn4T8JFeWT8wV7MbOPThAGiWc6XLW5BVN1YrltuEe_bKiZMpPR075hu1oH_ctakMXRtddtZiFZvlLvp-3gZEBdgMHP2CbMaiv-uCg35auhAhM3MfU8o6nAP-bR98RPcD0l4V3vjELuP52hS7Y6fkbOfwVxVwcHeZeX8fLVlrz5outHkVx0pltUaXUVXgc9TThLeLNeHQeKREPlJ_745ec2ffJ4fACQeaSLb9Icr-FFStrqQwiQlcIVdGyuzGiDz6LoL_tC5FjnIvFdKoKofq61lHHTsq31PnP5uj_n7wLrzCh_fy6JmE3oHFzp8d019bljED-C4JHMx4jqK1aHzthvr66_ylHove_FqhumlsQrw9iTn8olZM7M-vEvDNo4SBmLZc28h6T-UJqAPTVm2yj9E7sF-UYCD_-q2xkNmuAveF8ygr4_E86QJRHpp9c-nUpbTVRKWw5VV2XxoYekAREC_potvFr3g5VfRkeNm4_yXXlsXYkN480XeCZU-jjYrZyf6thknkogPNLM8M8a5tnBZOsP8sn_ekrkTJgTeYTJbfKqZsIMupP4MeNzR-NLY57kVDnW3gqHKmARTQ9Lh1I34wmDxKK8VDP_1jXIhUPM__GEC7_lwsTDvfiKCRjMZ-n-HEusZH3EplBosuQ19anrpvBzDnv6OahrxQxNso7sr9aqC59ajN23qY82gp86wR_CziQpitB0pfRLZ_VsW32zVryk8nf_416SCFHyVFOPJaUj7hxqqsINqmqJihnfK_8uelp3PpCWWP0RMDN3HhwHuEVGBAt9m_7bYOMU4y5cylGBAzFQDuaIQYN8t837HahC6QHNEhxviQG_8jUBIkY5w9Yn-1BB_uRXDxsAT1iVhtHxJYQ2BFhjedDX7ZEyRzKzB0zYNOCzSU8uYmv7pV_TAsKTSF1C7awjnOk7R1Ff2FR4kx2Hi2WCMnrAQXcMmmhpfl685oZf21Jre9Gm0Dc1unNSocmE-CvA7DmmASyHSaekAEvUFc2G1OKqfWkHdRIqumbB28esjy0b-YvYbE--1yfbqK93yiNgmk2nzFeRFCOn7Pes2JxbJ203t1dPnLvVLnitzI019HN02p9KEIMzRGcyT8QuFKtSzuFqaqZpWHCqv3IU_eBL-el-cm8TlJzwwN7pJ8ZMup8bukFTFVbTvQJZNchiTsFWohFbc8N4F-fU3MtwxwDaHT6KPDLA0jARlqSbKV0R1iy4ORr6CwtlCQy9oaj4nms4HaQ4yRSyui0nHbiQCNuX8hC-o_5NMuIGqUUkfP-qSBwuIGQaMU6-Fgqw58A0EcjRyD8J8lK6GQtUNed7RUnhn_HPIsQ0DPcxurBY33b6CepjZY_opE31eJceLP4337pG7kFRiwtfUaabAZ5R9mFa7p2k6JV7GDN_XzpjMszmozH-XvZXDS87jh7ojim_ZTRrL7dU4LmSZJTTUBcK40Dbk63ef55RULYjV7IL-LuxUGFcnGFxYPQWDdV6jbsXuJ1pCjH0UphJCzimSd7LmfLoqx3PA7FCLweGf2rmA1ljQDTQGRUnjkOKO4HgUbbMgvtUET0YnJ5xkVH9anfqDvIx1g2Om0zgpHGmDjbhrF3ALj18rNMIlE4iBOomOP38_BJT9mLAS7k3xfs2-YBd3c14XrSISvprdmCW1K2bHeSSttW_o6hrCDwxGNyqFATSrKgCXToYCKQvcg4xJ2NrDf4O_uFqFzz4T9VxPQbplS2RVyu-a6j50tJaFGHFWP4GghNz2RTos3jJB7zjmPwrt6bchQT6ct2b9DZ9DFlPNgQxeNu-Cf888phIF4XoneObqpXklrTtIviV3t4B6SXKa9zRWLEWavkhQdXZG5zaaX_ddkgyq7Q279aYjqRBA9jAF4sb6OsFMVh_1HGngkMKqOzIxdKZuMemlRx8Yp-16I8eiZE5cFWWt_FJys",
+          "alt": "Numbered steps, 1969"
+        }
+      ]
+    },
+    {
+      "caption": "\nRenew a passport24 pxBefore you start21 pxYou need your current passport19 pxand a debit or credit card.Last updated 4 June 202618 pxSteps too closeeach step about a tenth bigger than the lastRenew a passport36 pxBefore you start24 pxYou need your current passport19 pxand a debit or credit card.Last updated 4 June 202616 pxSteps you can seethe GOV.UK large-screen scale: 16, 19, 24, 36 px\n\nSame words, same four levels, same body size. Only the spread differs.\nLeft, each step is roughly a tenth bigger than the last, and the result has no hierarchy — the heading reads as body text that got slightly excited, and the caption at 18 px looks like body text with a bug. Right is the real GOV.UK large-screen scale: 16, 19, 24 and 36 px. You can sort those four into rank order from across the room, which is the entire test.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n1372291117Arbitrary valuessix gaps, six values, chosen one at a timeand the two row gaps are 9 and 11, which nobody decided151025101020Values from a scalethe GOV.UK static scale: 5, 10, 15, 20, 25, 30, 40, 50, 60 pxand both row gaps are 10, because 11 does not exist\n\nThe same card, with every vertical gap measured. Left, six gaps and six different numbers, each chosen on its own while somebody nudged things in a design tool. Look at the two gaps between list rows: 9 px and 11 px. They play the same role, so they should be the same number, and nobody decided that they should not be.\nRight, the same card built from the GOV.UK static scale. Six gaps, four values, and the two row gaps match — not because anyone was careful, but because 11 does not exist.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nCheck ifyou need avisaYou can use this serviceto check whether you need150 px of headinga 320 px viewport, drawn actual sizeFixed scaletype scale point 48 stays 48 pxCheck if youneed a visaYou can use this serviceto check whether you needa visa before you travel.It takes about 5 minutesand there is no fee.You will need your travel70 px of headinga 320 px viewport, drawn actual sizeResponsive scalepoint 48 drops to 32 px below 640 px wide\n\nA 320 px viewport, drawn actual size. Left, GOV.UK type scale point 48 held at 48 px: the heading needs three lines, eats 150 px of screen, and leaves room for one line of body text. Right, the same point resolved at 32 px because the screen is below the 640 px tablet breakpoint: two heading lines, 70 px, and four lines of content visible.\nThe heading has not lost its rank — it is still by far the biggest thing on the screen. It has only stopped being the whole screen.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AXhYKW0LNdbSeoy9Twokl_GU3hJxt5Uzitor0ztp7CYrV7Dei23A_6Euhkn-wN_DxU7TGLz4aTMQiiupUU9r_WkwDVHGS_6Dd05x-xoi5NMiAOxUel1tB7-YruFzdO1HpHcJ8b-F_1nXsojTRUWLc2f0Bc0w-NEZo3vSFTGPBDmiU0YtJbXCa4kCLr0RQ3vlbXbzREntyQJqEJX6cMe8C8b5Q4NxRPpX3bUNeeEAAYVqpiBqeplYgjG23rDIYiw0u3NpD9nPKghI7Q7omVOd2CZGf6pIRbyHMsvSrVOwIH_0zkRaIPIA8A_Tgby9Tcc6ftbFOUhQk2P0R2px_ORBy93wTh2W5lJSsCshoZO-czodTqj8XE06qWtGArVu4kpGax9ldsLYQCgF1TsnYkpdjCrWZ4evpQ3P1F1nIeQIRGt056oywVvBWvqSF8_OgGUS0yHTymZNXPbMlEqeHZwJJAww3QPv85oRAhOtjsORLyUBcmGNJ2QYzPpliUZ56SO9wxJi5Z-FiVtotl4CKqutVVH6Wfp1mVkEjNUUJkPbqkDyPBU04J8nA-A3pQDeMqWqxE-M51OFREzB7KsFEOc_TogYISUC8e-Fg0NFXNdxIvdDweW0caHXzMGw9elsWp_Oc798OR0Z9YKEu7KKGkKWPRiagNTHX5RsEOsWGU6plc8cC7YapCohtI-hDGr38S4At3csG9tCZefW1gStujLSOY4hBEN_oSv1zQyajIPYtSa0cIHg8XsiMqllDRu6pTx-aYBZnfUC5eJxxV0zy4swrP_hinGsYqNWd7O8g5d9qV_S9Btd_bXd-XzhX3B76Eicz7LxknvKzLFXCin9ULeZh4OlVFqWAWJ_rlGAKZSU7azYZM_zbNYX6gWbWm2OdIRhi8MfR2B9sSIJVyW8ezuIK20LzmRqlSWxE9iJkMKJcORtrIiBDjPfL0Bzk0t_GxycmruTJsGY8NPGMdl3xuVoh3_jKdWEm-XWPqvwP5tiGVl9LLKgJvIPeszjfeNDhsxP5VGlw8noSEM5o22U90MkNYZ_8HJSvrnQyeek1NNsPHB5xsJVUz4FRDPESXDs_9ad7-2TLbB6VkCzd_qEEhy61Lhf8wVqinPp_DknQYmPqCMOna8E7MrWayeLvm2x0QYE1GSh3AHkQaUjqnCg8VZOrU2wEWx2DiPQH4m2c0aWq63bDYoerdE0M8nmFJvnneNkdx_qQi3fE00h29uXYMkMm3S1VWLQ-fXu9NycRasmmXHXJmSOiwv6eWaKm3xTvTDKVKOketh6TWidJnlXXZ07PwtDjN-jR3GTth2c4e4UomjwFGAuZ71tJpLXvXSwNU3x7U17jFNNIkXsQcTWOLghRtYEoPmZtCJ1YIWYVOz7aM6230yz3LKy_5FeA01lte1Wg2aJf5pG04U5HBp_7KxMQ1KwUU1WFeaCfVEsqStpXpJ7ga25e3dMPUmdnaKPxw9CxvpwBMPl21eIL52AGGsPYgjQ-ZReH4bJHwuX2d9Mw-tO7CVBYhu0yj0dUlMOh9gxaL05iuOmzFIX1mhjGxpQLQB7pH6jpVk2meICHLYEt2FhkhJzcKod-umef3kjqOmkAOHRsslxuCEqPIH8r4s4j-gJk10Y4F-P6WZ82T7Wm-tksxKrSdybyMmSW256juRs_86w6wq5J4_FvqgOYKVV0FOymf92QyGVVupL8yjWOSl9T8uGIKprlEwUzvm3EtsF2Xz8l93axF1TCqfzgXWZRxnqBJFtMevjuTJdgtffph79ICF1KdBf-kWpsvycGLxt4pIqNsYQl1A9Ej4mN0H2mUh9dcYkY6ruSBk5DnZ2P0o8xVsQUCcIMbhfRl4M17i9zJDfVxlVnnifBvMRHng1yedLbu_s9_1Yzo7Npslny53omK70jXh-1CEt8LDwbwdiOm6-cGAkrdSSYvwfwuauR3vkEpjdEvzLx0gnKsUF72ELl99DE837boDJQWu5UF1Qzc7NCh99NXDFXOQ6SoXOyK82jbQmA8FFklVQwuU8NwCZM564Bx9W0kldRNXyHJBg",
+      "alt": "Named steps, 1734"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AQrWSmRQYAUnxAL8X4hvFBVNStMkALdGfLCUMiW74NmQrit2yzcc2kGUgp3ynGTJGZ74JfoPbJfanvlk0P6nLqUlV56mo1ukqNDBJFNRhn4T8JFeWT8wV7MbOPThAGiWc6XLW5BVN1YrltuEe_bKiZMpPR075hu1oH_ctakMXRtddtZiFZvlLvp-3gZEBdgMHP2CbMaiv-uCg35auhAhM3MfU8o6nAP-bR98RPcD0l4V3vjELuP52hS7Y6fkbOfwVxVwcHeZeX8fLVlrz5outHkVx0pltUaXUVXgc9TThLeLNeHQeKREPlJ_745ec2ffJ4fACQeaSLb9Icr-FFStrqQwiQlcIVdGyuzGiDz6LoL_tC5FjnIvFdKoKofq61lHHTsq31PnP5uj_n7wLrzCh_fy6JmE3oHFzp8d019bljED-C4JHMx4jqK1aHzthvr66_ylHove_FqhumlsQrw9iTn8olZM7M-vEvDNo4SBmLZc28h6T-UJqAPTVm2yj9E7sF-UYCD_-q2xkNmuAveF8ygr4_E86QJRHpp9c-nUpbTVRKWw5VV2XxoYekAREC_potvFr3g5VfRkeNm4_yXXlsXYkN480XeCZU-jjYrZyf6thknkogPNLM8M8a5tnBZOsP8sn_ekrkTJgTeYTJbfKqZsIMupP4MeNzR-NLY57kVDnW3gqHKmARTQ9Lh1I34wmDxKK8VDP_1jXIhUPM__GEC7_lwsTDvfiKCRjMZ-n-HEusZH3EplBosuQ19anrpvBzDnv6OahrxQxNso7sr9aqC59ajN23qY82gp86wR_CziQpitB0pfRLZ_VsW32zVryk8nf_416SCFHyVFOPJaUj7hxqqsINqmqJihnfK_8uelp3PpCWWP0RMDN3HhwHuEVGBAt9m_7bYOMU4y5cylGBAzFQDuaIQYN8t837HahC6QHNEhxviQG_8jUBIkY5w9Yn-1BB_uRXDxsAT1iVhtHxJYQ2BFhjedDX7ZEyRzKzB0zYNOCzSU8uYmv7pV_TAsKTSF1C7awjnOk7R1Ff2FR4kx2Hi2WCMnrAQXcMmmhpfl685oZf21Jre9Gm0Dc1unNSocmE-CvA7DmmASyHSaekAEvUFc2G1OKqfWkHdRIqumbB28esjy0b-YvYbE--1yfbqK93yiNgmk2nzFeRFCOn7Pes2JxbJ203t1dPnLvVLnitzI019HN02p9KEIMzRGcyT8QuFKtSzuFqaqZpWHCqv3IU_eBL-el-cm8TlJzwwN7pJ8ZMup8bukFTFVbTvQJZNchiTsFWohFbc8N4F-fU3MtwxwDaHT6KPDLA0jARlqSbKV0R1iy4ORr6CwtlCQy9oaj4nms4HaQ4yRSyui0nHbiQCNuX8hC-o_5NMuIGqUUkfP-qSBwuIGQaMU6-Fgqw58A0EcjRyD8J8lK6GQtUNed7RUnhn_HPIsQ0DPcxurBY33b6CepjZY_opE31eJceLP4337pG7kFRiwtfUaabAZ5R9mFa7p2k6JV7GDN_XzpjMszmozH-XvZXDS87jh7ojim_ZTRrL7dU4LmSZJTTUBcK40Dbk63ef55RULYjV7IL-LuxUGFcnGFxYPQWDdV6jbsXuJ1pCjH0UphJCzimSd7LmfLoqx3PA7FCLweGf2rmA1ljQDTQGRUnjkOKO4HgUbbMgvtUET0YnJ5xkVH9anfqDvIx1g2Om0zgpHGmDjbhrF3ALj18rNMIlE4iBOomOP38_BJT9mLAS7k3xfs2-YBd3c14XrSISvprdmCW1K2bHeSSttW_o6hrCDwxGNyqFATSrKgCXToYCKQvcg4xJ2NrDf4O_uFqFzz4T9VxPQbplS2RVyu-a6j50tJaFGHFWP4GghNz2RTos3jJB7zjmPwrt6bchQT6ct2b9DZ9DFlPNgQxeNu-Cf888phIF4XoneObqpXklrTtIviV3t4B6SXKa9zRWLEWavkhQdXZG5zaaX_ddkgyq7Q279aYjqRBA9jAF4sb6OsFMVh_1HGngkMKqOzIxdKZuMemlRx8Yp-16I8eiZE5cFWWt_FJys",
+      "alt": "Numbered steps, 1969"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The step has to be visible",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#the-step-has-to-be-visible"
+    },
+    {
+      "text": "Size and line height are one decision, not two",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#size-and-line-height-are-one-decision-not-two"
+    },
+    {
+      "text": "Spacing scales",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#spacing-scales"
+    },
+    {
+      "text": "The accessibility floor",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#the-accessibility-floor"
+    },
+    {
+      "text": "Where fixed scales break",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#where-fixed-scales-break"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#the-step-has-to-be-visible"
+    },
+    {
+      "text": "Type hierarchy on a page",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#size-and-line-height-are-one-decision-not-two"
+    },
+    {
+      "text": "Measure and line height",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#spacing-scales"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#the-accessibility-floor"
+    },
+    {
+      "text": "Legibility and readability",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#where-fixed-scales-break"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing#common-mistakes"
+    },
+    {
+      "text": "\n              Design tokens\n              A named decision. The point of calling a colour color.text.default rather than #1B1B1B is that the name can be pointed somewhere else once, for everybody.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/design-tokens"
+    },
+    {
+      "text": "\n              Type hierarchy on a page\n              How a reader finds their way through a page without being told — by size, weight, space, position and case. Space does more of the work than size does.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "\n              Measure and line height\n              The two settings that decide whether body text is comfortable — how long the lines are, and how far apart. They have to be chosen together.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    },
+    {
+      "text": "\n              Legibility and readability\n              Two different measurements that get treated as one — whether you can tell the characters apart, and whether you can get through a paragraph without effort.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability"
+    },
+    {
+      "text": "SYS-009 — GOV.UK Design System — Type scale",
+      "href": "https://design-system.service.gov.uk/styles/type-scale/"
+    },
+    {
+      "text": "SYS-008 — GOV.UK Design System — Spacing",
+      "href": "https://design-system.service.gov.uk/styles/spacing/"
+    },
+    {
+      "text": "SYS-004 — USWDS — Typography",
+      "href": "https://designsystem.digital.gov/components/typography/"
+    },
+    {
+      "text": "SYS-002-C06 — USWDS — Font size tokens",
+      "href": "https://designsystem.digital.gov/design-tokens/typesetting/font-size/"
+    },
+    {
+      "text": "SYS-002-C04 — USWDS — Spacing units",
+      "href": "https://designsystem.digital.gov/design-tokens/spacing-units/"
+    },
+    {
+      "text": "SYS-013 — Atlassian Design — Typography",
+      "href": "https://atlassian.design/foundations/typography"
+    },
+    {
+      "text": "\n        PreviousDesign tokens",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/design-tokens"
+    },
+    {
+      "text": "\n        NextColour management",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing"
+}

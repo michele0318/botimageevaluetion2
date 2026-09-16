@@ -1,0 +1,23 @@
+{
+  "title": "Focal length vs camera position — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/focal-length-vs-position",
+  "source_hash": "6a5a8b2e9a68e606686338311d2cc436785bd2dda2269c33b5be9db7728c92f8",
+  "rules": [
+    {
+      "rule": "If near parts of a subject appear oversized relative to far parts, the camera was positioned close to the subject.",
+      "evidence": "Near parts oversized against far parts means a close camera, and nothing else."
+    },
+    {
+      "rule": "If distant background objects appear huge behind the subject, the camera was positioned far back with a long lens.",
+      "evidence": "Distant buildings or hills rendered huge behind the subject means the camera was far back with a long lens."
+    },
+    {
+      "rule": "If straight lines bow outward near edges, it is barrel distortion caused by a lens defect, not camera position.",
+      "evidence": "Bowed near the edges is barrel or pincushion, a lens defect."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2249,
+  "output_tokens": 193,
+  "processed_at": "2026-09-13T09:28:20"
+}

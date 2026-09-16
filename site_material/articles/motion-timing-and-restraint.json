@@ -1,0 +1,148 @@
+{
+  "title": "Timing and restraint — Image Wiki",
+  "text": "\n  \n\n  Timing and restraint\n  How long an interface animation should last, which curve it should follow, and why every one of them has to be switchable off. The usable window is roughly 100 to 500 milliseconds.\n\n  \n    Termanimation duration and easing\n    Also calledanimation duration, easing, timing curves, reduced motion\n    Not the same asduration vs easing, ease-in vs ease-out, reduced motion vs no motion\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        The numbersWhy bigger and further want longerWhat each curve saysRepetition changes the arithmeticReduced motion is a requirement, not a courtesyCommon mistakes\n      \n    \n  \n\n  You already know what badly timed animation feels like. Too slow, and you reach for the next thing while the panel is still arriving — the machine has become something you wait for. Too fast, and you get a flicker and then a different screen, with no idea what happened in between.\nThe window between those failures is narrow, and a tenth of a second inside it changes the answer.\nThe numbers\nNN/g's recommendation, from usability testing, is that most interface animation should last 100 to 500 milliseconds, depending on complexity and on how far the element travels (MOTION-008). Their reference points:\n\n\n\nWhat moves\nDuration\nWhy\n\n\n\n\nA checkbox or toggle\n~100 ms\nBottom of perceptible motion; feels immediate, like handling the thing\n\n\nA modal or sheet arriving\n200–300 ms\nFollowable across a big change without dragging\n\n\nA large move on a large screen\nup to 400 ms\nAlready \"very slow\"; reserve it\n\n\nAnything\n500 ms\n\"Animations start to feel like a real drag\"\n\n\n\nTwo details are easy to miss. Entrances want slightly longer than exits — a popup might take 300 ms to appear and 250 to leave. And the error is not symmetric: \"It is far more common for animations to be too long than too short\" (MOTION-008).\nCarbon turns the same knowledge into named values: 70 ms for a button or toggle, 110 ms for a fade, 150 ms for a small expansion, 240 ms for a toast, 400 ms for a large expansion, 700 ms for dimming a background. Its checklist asks whether micro-interactions land between 90 and 120 ms (MOTION-005). Most of the range sits below 250 ms.\nWhy bigger and further want longer\n\n0100200300400500time, milliseconds20 px90 px260 pxswitch · 200 msdropdown · 200 mssheet · 200 msthe sheet moves 13× faster than the switch200 ms whatever movesOne duration for everything0100200300400500time, milliseconds20 px90 px260 pxswitch · 110 msdropdown · 240 mssheet · 400 msnow only 3× faster110, 240 and 400 msDuration scaled to the distance\n\nDistance up, time across, so the slope of each line is speed. Left, one duration for everything: the switch creeps 20 px while the sheet covers 260 px in the same 200 ms, so one specification produces a sluggish switch and a sheet that flies.\nRight, the same three with durations from Carbon's scale. The slopes converge, which is the point — Carbon uses \"a non-linear duration scale to achieve better perceived consistency across all distances\" (MOTION-005), and the plot also shows why strict proportionality would not work: making the sheet thirteen times slower than the switch would just make it slow. The travel distances here are illustrative; the durations are real tokens.\n\n\nDuration is not a house style you pick once but a function of the movement: \"the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes\" (MOTION-005). Material 3 encodes the same idea as three speeds — fast for small components like switches, default, slow for full-screen change — and adds a twist: one token resolves to different values on a watch, a phone and a tablet, so the movement \"feels fast in the context of the device\" (MOTION-001).\nWhat each curve says\n\n\n\nÉtienne-Jules Marey, Chronophotograph of a Flying Heron, Cleveland Museum of Art. CC0.\nAn easing curve, photographed. The shutter opened at a fixed rate, so every gap between two birds is the same slice of time — which means the gaps are speed.\nStart at the left, where the exposures pile on top of each other and the wings overlap: the heron is barely moving. Follow it right and the figures separate, then separate further, and the last two are further apart than any pair before them while also climbing. Crowded means slow, spread means fast. That is the whole grammar, and the plots below use it too.\n\n\nPerfectly steady motion looks wrong, and both systems say so independently. Carbon: \"strictly linear movement appears unnatural to the human eye.\" NN/g: an object moving at one speed the whole way \"feels less natural than one that subtly speeds up or down\" (MOTION-005, MOTION-008). Real things have mass.\n\nname and specificationprogress against timewhere the object is at six equally spaced instantsLinearcubic-bezier(0, 0, 1, 1)reads mechanical, like a conveyordonestartEase-outcubic-bezier(0, 0, 0.3, 1)arrives and settles: use for entrancesdonestartEase-incubic-bezier(0.2, 0, 1, 0.9)accelerates away: use for exitsdonestartSpringstiffness + damping, no set durationovershoots, then settles backdonestart\n\nFour curves, each shown twice: as progress against time, and as where the object actually is at six equally spaced instants. Trust the second column — it is what your eye sees.\nEase-out — the cubic-bezier values are Carbon's expressive entrance curve — covers most of the ground immediately and then crawls in, which is why it feels responsive and lets the eye predict where the thing will stop. Ease-in does the reverse and reads as departure. Spring is different in kind: no end time, only stiffness and damping, and it overshoots before settling (MOTION-001). Its last two samples sit slightly left of the furthest one.\n\n\nThe names are backwards and everyone trips over it. Ease-out is for things coming in: it decelerates into rest. Ease-in is for things leaving: it accelerates away (MOTION-008).\nHere the sources disagree outright. Material 3 has replaced duration-and-easing with spring physics and treats overshoot as a feature: its expressive scheme \"overshoots the final values to add bounce\" (MOTION-001). Carbon forbids exactly that — \"Do not use easing curves that suggest bounce, stretch, or sudden stops\" — because IBM's motion should be \"essential and efficient\" (MOTION-005). A difference of temperament, not of fact.\nRepetition changes the arithmetic\n\n\n\nPhenakistiscope disc with cats and donkey, c. 1830. Cooper Hewitt collection; public domain.\nSpun in front of a mirror and watched through the twelve slots, this disc plays about a second of animation: the cat clears the stool, the donkey chews. Then it plays it again. And again, identically, for as long as you keep spinning.\nEvery animation in an interface is one of these discs. The question is never how the movement feels once. It is how it feels on the fortieth spin.\n\n\nAn animation you meet once is a first impression. The same animation on the primary button of a tool somebody uses all day is a tax collected forty times a shift. NN/g judges a real case: a checkmark that arcs from Add to Bag across the screen to the cart is \"long and very likely to be annoying with repetition\" (MOTION-008).\nSo frequency belongs in the specification. The rarer the moment, the more motion it can carry — which is how Carbon splits its two styles, reserving expressive motion \"for occasional, important moments\" and keeping productive motion \"subtle and out of the way\" for everyday work (MOTION-005).\nReduced motion is a requirement, not a courtesy\nWCAG 2.1 success criterion 2.3.3, Animation from Interactions, is one sentence: \"Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed\" (MOTION-010).\nThe reason is vestibular, not aesthetic. Non-essential movement can trigger inner-ear disorder reactions, and W3C states the severity: \"nausea, migraine headaches, and potentially needing bed rest to recover\". The persona quote in the same document is worth reading once — \"Stop that extra movement! You are making me so dizzy I cannot concentrate\" (MOTION-010).\nThree ways to satisfy it, and you need only one: avoid unnecessary animation; give people a control that switches non-essential animation off; or respect the setting their operating system already offers, through the prefers-reduced-motion media query (MOTION-010).\n\"Motion animation\" is also narrower than it sounds. It means in-between steps that create movement, and it \"does not include changes of color, blurring, or opacity which do not change the perceived size, shape, or position of the element\" (MOTION-010) — so a cross-fade that does not move anything is a legitimate fallback, not a cop-out.\nCommon mistakes\n\n\"We will fine-tune the timing later.\" Timing is the design. Going from 250 to 300 ms \"can feel very different\" (MOTION-008).\n\"Reduced motion means no animation.\" It means no non-essential motion animation. A tool for authoring animation still has to preview the animation (MOTION-010).\n\"Ease-in-out is the safe choice.\" It delays the start, which reads as unresponsive on something the user just clicked. Ease-out on input is the default for a reason (MOTION-005).\n\n\nThe four tests\n\nFreeze a frame. Pause halfway and look at the layout. If the mid-point is incoherent, the transition is hiding a structural problem.\nTurn reduced motion on. Everything must stay reachable and understandable.\nRun it on a slow device. Hardware that cannot keep up turns the animation into a delay, so there must be a static way to say the same thing (MOTION-005).\nWatch it forty times. Whatever survives that is the right duration. Almost everything that fails, fails by being too long.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Motion as information\n              Movement used to tell the reader something — where a thing came from, and that it is still the same thing. Motion is the loudest signal an interface has, which is why spending it on decoration is expensive.\n            \n          \n        \n          \n            \n              Rhythm and repetition\n              Repeating something turns many things into one thing — and the moment it does, whatever does not belong to the set becomes impossible to miss.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        MOTION-008 — NN/g — Executing UX Animations: Duration and Motion CharacteristicsMOTION-005 — Carbon Design System — Motion overviewMOTION-010 — W3C WAI — Understanding SC 2.3.3: Animation from InteractionsMOTION-001 — Material Design 3 — Motion: how it worksMOTION-007 — NN/g — The Role of Animation and Motion in UX\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Timing and restraint",
+    "The numbers",
+    "Why bigger and further want longer",
+    "What each curve says",
+    "Repetition changes the arithmetic",
+    "Reduced motion is a requirement, not a courtesy",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n0100200300400500time, milliseconds20 px90 px260 pxswitch · 200 msdropdown · 200 mssheet · 200 msthe sheet moves 13× faster than the switch200 ms whatever movesOne duration for everything0100200300400500time, milliseconds20 px90 px260 pxswitch · 110 msdropdown · 240 mssheet · 400 msnow only 3× faster110, 240 and 400 msDuration scaled to the distance\n\nDistance up, time across, so the slope of each line is speed. Left, one duration for everything: the switch creeps 20 px while the sheet covers 260 px in the same 200 ms, so one specification produces a sluggish switch and a sheet that flies.\nRight, the same three with durations from Carbon's scale. The slopes converge, which is the point — Carbon uses \"a non-linear duration scale to achieve better perceived consistency across all distances\" (MOTION-005), and the plot also shows why strict proportionality would not work: making the sheet thirteen times slower than the switch would just make it slow. The travel distances here are illustrative; the durations are real tokens.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nÉtienne-Jules Marey, Chronophotograph of a Flying Heron, Cleveland Museum of Art. CC0.\nAn easing curve, photographed. The shutter opened at a fixed rate, so every gap between two birds is the same slice of time — which means the gaps are speed.\nStart at the left, where the exposures pile on top of each other and the wings overlap: the heron is barely moving. Follow it right and the figures separate, then separate further, and the last two are further apart than any pair before them while also climbing. Crowded means slow, spread means fast. That is the whole grammar, and the plots below use it too.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWCNuXxuGN8Cr17N3Ncu7GTVdECfzZL9FqlY0GtBH1Ng9BkvyV2ZVeLoTkTEseI7ZoTWDCBMMldmDHg6bg5oQGvFeo8TP6z_eR8-PofOIAId81_LKxMKknrXZ4aVOX5U69q7L0R8cRuv1XTcdnYT5xa6MOYejJvtttg1ii3f7ibqKTqNilLu9EcLcXjDNBx9t-0EsFWqTlurekzD3wmKGVK7Th62XE2iB8Bd3mBoWB_US4o2HVxIkorp6jihfaO8EIXalx44bkmYbIDMvAiOG6xlK3A1Xd2Qvlmh5CtT5z-4Y2y2b_P_Ri1z5OXBF_vuVyDbGzr5zTGuIDaMyTQvoG5a3V8vfeWFhvcibNZhFoH6cvkmjHfOJ-7jHVlCroat7JkHIpAnIvDke-IR5Bd3ne8POSWwST6oiOHlmor-zgOBfJaTJLi52_Po9uu0ZqioZDz5uqJmHVUe1ci3tcskOpyKHTbnEatlM8xOe4FygIrqXYH7NTJRLKwBK4Miv_y-lase90cKS-ihgL7O813mSjBaJpJrOGaCRjzT52xYwxdyFKok3uEY7NhJouSMJi5x8iFQip3SRMqJ3rBDkKta6-4OGSVvA2M9Y5mqO3JPmouI9BWEMyBc6OLL74JxlBOy77CGqAeAfnaa4GEAAAhaxKon9O-Q9RM_uytJbabY07zTq8DRy1O46TXz4XhWhc6AqAiLNdpWs9ae5MrfDtbAgvzvWUN_jNri6_5yHUnPOvl6q3Lsm7_1VyvMCw58pfL0guqEKKkningLhP5768IHX4KHw3M_O6rxaRNkJHmEPJvRifCXmLYCUwDZEwdvL6hNryNDsEM4lnYX6Eg1JFXbuPD_nhGNLqvGn4V03-hQf5DXn0ZiMv36FKhxqfBn26p4q_ZnKpYf0xD4TbpFvQ7ggYfDPYwJXR5zJEPQwCNdzCE8Qyb0e1dx9zyRB9GUo8p8nuTiDafs3LY0TXIa5lmZ1tFDl4_ESv8Vtw4ti9qji8IBWasMQ5xl9ZYb3k31Bsq33q7F1glhJ4zDEcfH4qE7swUGSMLYiMcwCIkVaKqphYR-MU0V4Sj6wKAYAk59fPVLhfFWFqz1gmVjFxY_nnwxtphhETD6CyASW9odgn3RMV6cif2XGIqmloI00NXiMdy7wyBlbt6nLlj4N-x27Q-oLLwW2EtyFpI25s1Opko1FDE69NftJPCSQviGfHIVdePEEVolbfY5UU5jWprVXNb_EFqYirYE_R3-_jwY7YESVbS-0FqsbQNFga9fwZXWeJtMzA6nmnzcUQUSWuRUkWe8Lo1X13vTW-jcSn__6TzVAhJiKn1P3hwd3W9UpXwAUVlVxqDRnMLuai2h-A0F7m39Z49OgGaybVD9zOdfZrgAzuNhewEmjnN9spuPyGtFIJNcXW2rOFeHJJhJ_cb7RUTpN3f3GybfrR8_taHsn0ERG1i_OxAIgYR4R4ii2aCIosh0zctbDyYmCZ1TL9JQUsJlAMgO8b42jxr-wcAUTRu2tvl8vRPlUNq-Gs3UjmZF4yEzN_4QGS1kvkV6baWk93Zmy-swqzjoAA8ORGdJFm8xfDDlIG2Rd693MxJTP41XIJLdPRRAwH9R08Y--RbHgWbH5VuZCKY-Wzrn3GkW-4E1sPMw8xKbhMo4gO2S1Ul1odloo3ycRvH2DPOwGBPTyesZAwgFDPCbq5bAI2RO77CMvYTyH5Y9eGSf4LTxHvZJoEALmdW2ZrY5C0kINOr3fBFPSZPT7U4p356X3qCq50uNw11NE_TlKVsCWu3pEKd_TU33_iLlA66rxtrF29cx4KFUJDFQlcGX3OeYyf9SalwPuX_ASzBxeNWotMn3E0bqOtv2KXnmCbvqA3y7jh7U567J6SIVNkQgMDxndHC4alIUam3Uhob3aQCoZc-PrXuERwwjSDo-d0XlMtvWvvFP9jUEwLrenM2USCEdCaXDleM5uam-rcxWwe-wr-72VIUGYHx-DGUP4lqtoJn21uyihNZDTsmx1anmMYQnixq5y14gsVBgRWzxgAU5apVspXUyNN1i",
+          "alt": "Marey chronophotograph of a heron taking off: about ten exposures on one plate, crowded at the left and widely separated at the right"
+        }
+      ]
+    },
+    {
+      "caption": "\nname and specificationprogress against timewhere the object is at six equally spaced instantsLinearcubic-bezier(0, 0, 1, 1)reads mechanical, like a conveyordonestartEase-outcubic-bezier(0, 0, 0.3, 1)arrives and settles: use for entrancesdonestartEase-incubic-bezier(0.2, 0, 1, 0.9)accelerates away: use for exitsdonestartSpringstiffness + damping, no set durationovershoots, then settles backdonestart\n\nFour curves, each shown twice: as progress against time, and as where the object actually is at six equally spaced instants. Trust the second column — it is what your eye sees.\nEase-out — the cubic-bezier values are Carbon's expressive entrance curve — covers most of the ground immediately and then crawls in, which is why it feels responsive and lets the eye predict where the thing will stop. Ease-in does the reverse and reads as departure. Spring is different in kind: no end time, only stiffness and damping, and it overshoots before settling (MOTION-001). Its last two samples sit slightly left of the furthest one.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nPhenakistiscope disc with cats and donkey, c. 1830. Cooper Hewitt collection; public domain.\nSpun in front of a mirror and watched through the twelve slots, this disc plays about a second of animation: the cat clears the stool, the donkey chews. Then it plays it again. And again, identically, for as long as you keep spinning.\nEvery animation in an interface is one of these discs. The question is never how the movement feels once. It is how it feels on the fortieth spin.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AUG-_xjWxxVQQMVOPvdGqc28XDEsU99UTCya_nZEfRgD4Olj2lrxqlCHp0FvErTFXbQ73rhQjfhdIXn7lejbzSjvL8NBnLgesCVHdpT0LC1r6WH7XYxqqjqow59lOKKi2qaI8nStfPF70gZCJKdMWp23jugYzJDJIwUPUyI7rCtbBtSIB3mZTAtXsZ4GY8YHJnJXCVy-DVYtM9BKuPIF5euDU65zh1f15DWt4BNVhJnL3s7i6PG65o_MSBiiYGMzWdnU9u1Y-DGLvdOgTBHurCWiAXuomN3uqdlzqh-F21sxb6yss2UpyxoUgqDIs1BAAFatiLTJ3_YRT44jDF55g3RO_5fwY6oBomjxb-tuhy3M4YQDi_5LLzo32LA-x1m66Lsi-iK1d6buV0l4PEgLpvGmQgUC6jreBYART_nQkELr8rqUOSwAXd7-ZZ1qj_BcYGA8b6m8zjpUdtsxk4UKTgIHJVAcg6nLFakpMGqvzLX7hNRUMvZakp6pV5udJqIBEw57BeJC4vjXxA6Chmx9x5-01rcdwF9oInjcv0OTNCHJlDADlPrTeaiPWDpR6a3RqCfMyCOZsmoUbxub5jFNd96A_w1XovQcYzcnw2-jedhlalZIyFgAv1i7y0FPiFE7KSacIZip6p-A5JR10TK3uef1a3p9SHr9XFIxNEXgkT-rkK0jTc7Q-Y7w8aEz-sX8_W26p8aBNg-bWAHN7WKulaPaTQNrrfNt5rURDXgLyOwj3PxFUVtQE7ptY0ncnYwymZk5cOwUAhfjKHAzku8qm5uTbsR4ASR7GwTKdrqK6h-GKUlK8UMqW3YzBkS2zUeLF0EF_EdP6E-fmhWoa1hAytMQ1mLA7e53Ps2jLTg--SW5xTxvafoUMxC1WgN6OK6kxTK0atW337b7GwBjQb6ArLMUOWh34h8ZqvSw3WnJIEXOLuvTlHhtJa8kObdiAKeeisXN8VdfKLsXpBM9Z-hW4pM9kgrDEz8jOtFxJcAu5XRyuxd1N7p7K_Ouvq7GVIGbKCAaE8efYSeRJWF2ijrf2tLKA0GujWqIKMQgzy3M4NnXveg7MLSUymY1pS0nwHzUsaDw7HpcEoI5W_o9bkidKM1TxN39eHd80Shj61qgfmq0AZrOMw4e4TwuVJ3T4THmv19UWw3-3-men1EKnX8YtnsfcMRkxHUsjyGUNrk3n1XlMaBXI71rwN-bGlTs8dKDjioUhnEKGHTcPfDzB7WMy_dOESkGSz2iV9pCsMEWZY7RD7UX1VY3ABiuttaWOUOVeWgREVtF5nn5Akj-IFokH1nexHcsLwb4IGuiDWfTYtXcnFvM8RjwfWFxe5SVSu48DtmHL7JhkYmRF9AyTg7ChSmt3hNucyoBVQHNl4Omqu405es-WrWIFGTeazPezOnuzJee6CBnzMezkijhGk8KkNSam6xLLcv0h9eHH5ExqtnFl6ZHncN229jtnop9rH7z2cONkzU_4k7OMVwo0RFsEQ0uqm6bweda42U3nGKJqQOLxuCW1bgU3qadZFEOzsvWT_pKDJOjzVAITUTkYPN-iKFlZRV47nhOhIAA7oo8EJ1lP7-hUaJ7l3JNwplfnS_zTs2iHjxK9ZI6O3HhvychB5c1NUFaWEbYY5244cQL2zEeZ3d8RLrQrr70QSbAAimahCosahETNL0HFLUcV8Pzld5YQHKeV7fNJ5qamHnphoA0h4hAx5h_lTRblOfXIDTbQ8xENUgiuyvu8l19pi2Me2kWkXTN4tqLcBEUWPNGMGylPCr3hItmzgcs9myl_bmSv1YAXhBV8rnVwXCMuqmrPRZxVk6SSc0eqCYPUD1J_b-oj82mcwdSsV6cB5bm36zFfEFQPtjcc0Ub3XIpO3TN361VMbHNhAFeTYWKsdv_9XyMOIb8f5pNgYX9LgV93g6C_XtTEwJ9ZPR2dMqKcG_5Zj80hhozzZWHOliJEpagX9JoFwUSTurn6nPmVaa7DGXA3-0sI4wGMVJWlfV6gss4G9DfP7uuAM0x7-qH4lQNxtc-sUY9JByuqM8zu9lYHOqy",
+          "alt": "Phenakistiscope disc, c. 1830: a paper disc with twelve viewing slots and two rings of drawings, a cat leaping over a stool and a donkey's head"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWCNuXxuGN8Cr17N3Ncu7GTVdECfzZL9FqlY0GtBH1Ng9BkvyV2ZVeLoTkTEseI7ZoTWDCBMMldmDHg6bg5oQGvFeo8TP6z_eR8-PofOIAId81_LKxMKknrXZ4aVOX5U69q7L0R8cRuv1XTcdnYT5xa6MOYejJvtttg1ii3f7ibqKTqNilLu9EcLcXjDNBx9t-0EsFWqTlurekzD3wmKGVK7Th62XE2iB8Bd3mBoWB_US4o2HVxIkorp6jihfaO8EIXalx44bkmYbIDMvAiOG6xlK3A1Xd2Qvlmh5CtT5z-4Y2y2b_P_Ri1z5OXBF_vuVyDbGzr5zTGuIDaMyTQvoG5a3V8vfeWFhvcibNZhFoH6cvkmjHfOJ-7jHVlCroat7JkHIpAnIvDke-IR5Bd3ne8POSWwST6oiOHlmor-zgOBfJaTJLi52_Po9uu0ZqioZDz5uqJmHVUe1ci3tcskOpyKHTbnEatlM8xOe4FygIrqXYH7NTJRLKwBK4Miv_y-lase90cKS-ihgL7O813mSjBaJpJrOGaCRjzT52xYwxdyFKok3uEY7NhJouSMJi5x8iFQip3SRMqJ3rBDkKta6-4OGSVvA2M9Y5mqO3JPmouI9BWEMyBc6OLL74JxlBOy77CGqAeAfnaa4GEAAAhaxKon9O-Q9RM_uytJbabY07zTq8DRy1O46TXz4XhWhc6AqAiLNdpWs9ae5MrfDtbAgvzvWUN_jNri6_5yHUnPOvl6q3Lsm7_1VyvMCw58pfL0guqEKKkningLhP5768IHX4KHw3M_O6rxaRNkJHmEPJvRifCXmLYCUwDZEwdvL6hNryNDsEM4lnYX6Eg1JFXbuPD_nhGNLqvGn4V03-hQf5DXn0ZiMv36FKhxqfBn26p4q_ZnKpYf0xD4TbpFvQ7ggYfDPYwJXR5zJEPQwCNdzCE8Qyb0e1dx9zyRB9GUo8p8nuTiDafs3LY0TXIa5lmZ1tFDl4_ESv8Vtw4ti9qji8IBWasMQ5xl9ZYb3k31Bsq33q7F1glhJ4zDEcfH4qE7swUGSMLYiMcwCIkVaKqphYR-MU0V4Sj6wKAYAk59fPVLhfFWFqz1gmVjFxY_nnwxtphhETD6CyASW9odgn3RMV6cif2XGIqmloI00NXiMdy7wyBlbt6nLlj4N-x27Q-oLLwW2EtyFpI25s1Opko1FDE69NftJPCSQviGfHIVdePEEVolbfY5UU5jWprVXNb_EFqYirYE_R3-_jwY7YESVbS-0FqsbQNFga9fwZXWeJtMzA6nmnzcUQUSWuRUkWe8Lo1X13vTW-jcSn__6TzVAhJiKn1P3hwd3W9UpXwAUVlVxqDRnMLuai2h-A0F7m39Z49OgGaybVD9zOdfZrgAzuNhewEmjnN9spuPyGtFIJNcXW2rOFeHJJhJ_cb7RUTpN3f3GybfrR8_taHsn0ERG1i_OxAIgYR4R4ii2aCIosh0zctbDyYmCZ1TL9JQUsJlAMgO8b42jxr-wcAUTRu2tvl8vRPlUNq-Gs3UjmZF4yEzN_4QGS1kvkV6baWk93Zmy-swqzjoAA8ORGdJFm8xfDDlIG2Rd693MxJTP41XIJLdPRRAwH9R08Y--RbHgWbH5VuZCKY-Wzrn3GkW-4E1sPMw8xKbhMo4gO2S1Ul1odloo3ycRvH2DPOwGBPTyesZAwgFDPCbq5bAI2RO77CMvYTyH5Y9eGSf4LTxHvZJoEALmdW2ZrY5C0kINOr3fBFPSZPT7U4p356X3qCq50uNw11NE_TlKVsCWu3pEKd_TU33_iLlA66rxtrF29cx4KFUJDFQlcGX3OeYyf9SalwPuX_ASzBxeNWotMn3E0bqOtv2KXnmCbvqA3y7jh7U567J6SIVNkQgMDxndHC4alIUam3Uhob3aQCoZc-PrXuERwwjSDo-d0XlMtvWvvFP9jUEwLrenM2USCEdCaXDleM5uam-rcxWwe-wr-72VIUGYHx-DGUP4lqtoJn21uyihNZDTsmx1anmMYQnixq5y14gsVBgRWzxgAU5apVspXUyNN1i",
+      "alt": "Marey chronophotograph of a heron taking off: about ten exposures on one plate, crowded at the left and widely separated at the right"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AUG-_xjWxxVQQMVOPvdGqc28XDEsU99UTCya_nZEfRgD4Olj2lrxqlCHp0FvErTFXbQ73rhQjfhdIXn7lejbzSjvL8NBnLgesCVHdpT0LC1r6WH7XYxqqjqow59lOKKi2qaI8nStfPF70gZCJKdMWp23jugYzJDJIwUPUyI7rCtbBtSIB3mZTAtXsZ4GY8YHJnJXCVy-DVYtM9BKuPIF5euDU65zh1f15DWt4BNVhJnL3s7i6PG65o_MSBiiYGMzWdnU9u1Y-DGLvdOgTBHurCWiAXuomN3uqdlzqh-F21sxb6yss2UpyxoUgqDIs1BAAFatiLTJ3_YRT44jDF55g3RO_5fwY6oBomjxb-tuhy3M4YQDi_5LLzo32LA-x1m66Lsi-iK1d6buV0l4PEgLpvGmQgUC6jreBYART_nQkELr8rqUOSwAXd7-ZZ1qj_BcYGA8b6m8zjpUdtsxk4UKTgIHJVAcg6nLFakpMGqvzLX7hNRUMvZakp6pV5udJqIBEw57BeJC4vjXxA6Chmx9x5-01rcdwF9oInjcv0OTNCHJlDADlPrTeaiPWDpR6a3RqCfMyCOZsmoUbxub5jFNd96A_w1XovQcYzcnw2-jedhlalZIyFgAv1i7y0FPiFE7KSacIZip6p-A5JR10TK3uef1a3p9SHr9XFIxNEXgkT-rkK0jTc7Q-Y7w8aEz-sX8_W26p8aBNg-bWAHN7WKulaPaTQNrrfNt5rURDXgLyOwj3PxFUVtQE7ptY0ncnYwymZk5cOwUAhfjKHAzku8qm5uTbsR4ASR7GwTKdrqK6h-GKUlK8UMqW3YzBkS2zUeLF0EF_EdP6E-fmhWoa1hAytMQ1mLA7e53Ps2jLTg--SW5xTxvafoUMxC1WgN6OK6kxTK0atW337b7GwBjQb6ArLMUOWh34h8ZqvSw3WnJIEXOLuvTlHhtJa8kObdiAKeeisXN8VdfKLsXpBM9Z-hW4pM9kgrDEz8jOtFxJcAu5XRyuxd1N7p7K_Ouvq7GVIGbKCAaE8efYSeRJWF2ijrf2tLKA0GujWqIKMQgzy3M4NnXveg7MLSUymY1pS0nwHzUsaDw7HpcEoI5W_o9bkidKM1TxN39eHd80Shj61qgfmq0AZrOMw4e4TwuVJ3T4THmv19UWw3-3-men1EKnX8YtnsfcMRkxHUsjyGUNrk3n1XlMaBXI71rwN-bGlTs8dKDjioUhnEKGHTcPfDzB7WMy_dOESkGSz2iV9pCsMEWZY7RD7UX1VY3ABiuttaWOUOVeWgREVtF5nn5Akj-IFokH1nexHcsLwb4IGuiDWfTYtXcnFvM8RjwfWFxe5SVSu48DtmHL7JhkYmRF9AyTg7ChSmt3hNucyoBVQHNl4Omqu405es-WrWIFGTeazPezOnuzJee6CBnzMezkijhGk8KkNSam6xLLcv0h9eHH5ExqtnFl6ZHncN229jtnop9rH7z2cONkzU_4k7OMVwo0RFsEQ0uqm6bweda42U3nGKJqQOLxuCW1bgU3qadZFEOzsvWT_pKDJOjzVAITUTkYPN-iKFlZRV47nhOhIAA7oo8EJ1lP7-hUaJ7l3JNwplfnS_zTs2iHjxK9ZI6O3HhvychB5c1NUFaWEbYY5244cQL2zEeZ3d8RLrQrr70QSbAAimahCosahETNL0HFLUcV8Pzld5YQHKeV7fNJ5qamHnphoA0h4hAx5h_lTRblOfXIDTbQ8xENUgiuyvu8l19pi2Me2kWkXTN4tqLcBEUWPNGMGylPCr3hItmzgcs9myl_bmSv1YAXhBV8rnVwXCMuqmrPRZxVk6SSc0eqCYPUD1J_b-oj82mcwdSsV6cB5bm36zFfEFQPtjcc0Ub3XIpO3TN361VMbHNhAFeTYWKsdv_9XyMOIb8f5pNgYX9LgV93g6C_XtTEwJ9ZPR2dMqKcG_5Zj80hhozzZWHOliJEpagX9JoFwUSTurn6nPmVaa7DGXA3-0sI4wGMVJWlfV6gss4G9DfP7uuAM0x7-qH4lQNxtc-sUY9JByuqM8zu9lYHOqy",
+      "alt": "Phenakistiscope disc, c. 1830: a paper disc with twelve viewing slots and two rings of drawings, a cat leaping over a stool and a donkey's head"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The numbers",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#the-numbers"
+    },
+    {
+      "text": "Why bigger and further want longer",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#why-bigger-and-further-want-longer"
+    },
+    {
+      "text": "What each curve says",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#what-each-curve-says"
+    },
+    {
+      "text": "Repetition changes the arithmetic",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#repetition-changes-the-arithmetic"
+    },
+    {
+      "text": "Reduced motion is a requirement, not a courtesy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#reduced-motion-is-a-requirement-not-a-courtesy"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#the-numbers"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#why-bigger-and-further-want-longer"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#what-each-curve-says"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#repetition-changes-the-arithmetic"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#reduced-motion-is-a-requirement-not-a-courtesy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint#common-mistakes"
+    },
+    {
+      "text": "\n              Motion as information\n              Movement used to tell the reader something — where a thing came from, and that it is still the same thing. Motion is the loudest signal an interface has, which is why spending it on decoration is expensive.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information"
+    },
+    {
+      "text": "\n              Rhythm and repetition\n              Repeating something turns many things into one thing — and the moment it does, whatever does not belong to the set becomes impossible to miss.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/rhythm-and-repetition"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "MOTION-008 — NN/g — Executing UX Animations: Duration and Motion Characteristics",
+      "href": "https://www.nngroup.com/articles/animation-duration/"
+    },
+    {
+      "text": "MOTION-005 — Carbon Design System — Motion overview",
+      "href": "https://carbondesignsystem.com/elements/motion/overview/"
+    },
+    {
+      "text": "MOTION-010 — W3C WAI — Understanding SC 2.3.3: Animation from Interactions",
+      "href": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html"
+    },
+    {
+      "text": "MOTION-001 — Material Design 3 — Motion: how it works",
+      "href": "https://m3.material.io/styles/motion/overview/how-it-works"
+    },
+    {
+      "text": "MOTION-007 — NN/g — The Role of Animation and Motion in UX",
+      "href": "https://www.nngroup.com/articles/animation-purpose-ux/"
+    },
+    {
+      "text": "\n        PreviousMotion as information",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information"
+    },
+    {
+      "text": "\n        NextDesign tokens",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/design-tokens"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint"
+}

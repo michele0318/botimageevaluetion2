@@ -1,0 +1,19 @@
+{
+  "title": "Contrast — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/contrast",
+  "source_hash": "8b52479e8cb6e9707051c24c7d926cbf0bec2e507970ccf7f7f1fdd57409cf42",
+  "rules": [
+    {
+      "rule": "An edge exists only where something changes; where nothing changes, there is no shape or hierarchy.",
+      "evidence": "an edge exists only where something changes. Where nothing changes there is no edge, and where there is no edge there is no shape."
+    },
+    {
+      "rule": "High contrast creates an intense mood while low contrast creates a quiet mood; neither is inherently good or bad.",
+      "evidence": "high and low contrast are two moods rather than a good setting and a bad one — high contrast reads intense, low contrast reads quiet, and neither is a score"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2658,
+  "output_tokens": 250,
+  "processed_at": "2026-09-13T09:25:59"
+}

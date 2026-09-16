@@ -1,0 +1,19 @@
+{
+  "title": "Poster mechanisms — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/poster-mechanisms",
+  "source_hash": "7afb3dca03faa8d8819279578df3684ba792d9e98921b8b7d1ad58d6786ce586",
+  "rules": [
+    {
+      "rule": "If an image contains competing elements like multiple tents or flags that cause the eye to wander, it employs 'Overwhelm the eye'; if it has one dominant shape in the center, it uses 'Focus the eye'.",
+      "evidence": "Where did your eye land first, and was there competition? One landing site means focus; a tour means overwhelm."
+    },
+    {
+      "rule": "If text is placed inside shapes to describe them rather than sitting underneath as a caption, the mechanism is 'Use text as image' where letters perform the picture's job.",
+      "evidence": "In use text as image the letters are the picture. Judging the type as if it were only a label misses the whole design."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2426,
+  "output_tokens": 368,
+  "processed_at": "2026-09-13T09:36:13"
+}

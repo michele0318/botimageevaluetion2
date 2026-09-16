@@ -1,0 +1,23 @@
+{
+  "title": "The ethics of making and choosing images — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/image-ethics",
+  "source_hash": "6948771c0287ce1d810a15be66ff709f8f216c9a7dee58ad622592823a1889cb",
+  "rules": [
+    {
+      "rule": "If an image implies a claim it does not carry, check if the frame excludes context outside the picture's edge.",
+      "evidence": "A chosen frame. The queue. Nothing is added; the edge of the picture does the arguing."
+    },
+    {
+      "rule": "If an image features identifiable people, ask if they would recognize themselves and agree to being shown like this.",
+      "evidence": "Would this person recognise themselves? Did they agree to this use, or to being photographed at all?"
+    },
+    {
+      "rule": "If a caption states nothing was edited, verify if anything was arranged, moved, retouched, or retimed before approval.",
+      "evidence": "Was anything arranged, moved, retouched or retimed — and would the caption still be true if you said so?"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2567,
+  "output_tokens": 210,
+  "processed_at": "2026-09-13T09:30:47"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "717da826723bc10186e3183363cbe3231696a1d834d3837ed0e9b87281b098ed",
+  "prompt": "Mockup of an e-commerce dashboard's 'Add new product' interface, illustration, application named with its brand name in the logo and sidebar, user profile picture for a person named 'Gbemi Olori'",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: The images are similar, but image 1 contains background artifacts (blue shapes) that serve no functional or aesthetic purpose and only reduce the image's usability. Additionally, the text is more distorted than in image 2.",
+  "split": "test",
+  "image_group": "cf8d98a00e3651d1461dc8037d334cbfd20e8faeb873128bfb66c4c82aab2898",
+  "image_hashes": [
+    "2be4fe81133c853c916371f62ecd285b5f77aedb1ceed321490a954598da9864",
+    "7d086477f45feb338025474084ae5f268a71128ff4ce23ce32ea78727a3c94eb"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "6bb9f18459cefde52a00b36aa87dfddebd81da9029ce441b73f4f194752b6498",
+      "corrected": false,
+      "time": "2026-09-13T02:14:57"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:14:59"
+    }
+  ],
+  "feedback": "The images are similar, but image 1 contains background artifacts (blue shapes) that serve no functional or aesthetic purpose and only reduce the image's usability. Additionally, the text is more distorted than in image 2."
+}

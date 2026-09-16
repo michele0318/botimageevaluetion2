@@ -1,0 +1,27 @@
+{
+  "title": "How to look at an image — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look",
+  "source_hash": "2e37a8cfb9a6cb1be096990620f5aafe1d8c37dbd008a6bef53378e0f28f891f",
+  "rules": [
+    {
+      "rule": "If you start analyzing before noting where your eye landed first, you lose the ability to identify the image's real focal point.",
+      "evidence": "The instant you start analysing, you lose the ability to know where you actually looked. Whatever it was, that is the image's real focal point, regardless of what the maker intended."
+    },
+    {
+      "rule": "If squinting reveals only three to five patches of light and dark shapes, but the subject vanishes into the background, the image has a value problem.",
+      "evidence": "Can you tell what the picture is from these alone? If the subject vanishes into the background at this stage, the image has a value problem, and no amount of colour or detail will fix it."
+    },
+    {
+      "rule": "If every object in the frame does not agree with the observed light direction (source size and shadow evidence), the image fails its internal logic.",
+      "evidence": "Then check whether every object in the frame agrees with that answer. Shadows are the evidence, so read the shadows, not the highlights."
+    },
+    {
+      "rule": "If an image feels restless or leaks at the edges, it is likely because your eye bounces between two equally loud things or slides out of the frame without settling.",
+      "evidence": "Does it move somewhere and settle, or bounce between two equally loud things, or slide out of the frame at a corner and not come back? An image that leaks at the edges feels restless"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2250,
+  "output_tokens": 290,
+  "processed_at": "2026-09-13T09:30:00"
+}

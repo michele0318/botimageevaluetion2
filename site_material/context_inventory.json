@@ -1,0 +1,205 @@
+[
+  {
+    "tag": "DIV",
+    "id": "hints-section",
+    "cls": "hints-section",
+    "text": "CONTEXTUAL HINTS\nCGV logo\nHIGH\nCGV is a major cinema chain; its logo is requested for the poster design.\nDolby Atmos logo\nHIGH\nStandard technical logo for movie posters.",
+    "html": "<div id=\"hints-section\" class=\"hints-section\" style=\"display: block;\">\n                <div class=\"hints-header\">\n                    <div class=\"hints-title\">Contextual Hints</div>\n                </div>\n                <div id=\"hints-list\" class=\"hints-list\"><div class=\"hint-card\"><div class=\"hint-top\"><div class=\"hint-query\">CGV logo</div><span class=\"priority-badge priority-high\">high</span></div><div class=\"hint-images\"><button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AbyJ664UGtNZ93TV8ZjEkLFTmMO4OqoWUmm5fRmJUkyCZnIYeVvPEaydOGsIYuQuY8lz1Bpk4taY2f6dtFClHdNN51hxbPHkd7xQqoHuodUF2tZmLFYhxXf9EnG95vbEq28I-z2RWkLI4RUQ_0JW9G4grySQ02YPKlEU6jSiVRGk2UskCECkxzIQBb_Pwd_0X728qnVWPIuNGvOiVN7puNajadzR8o7T6pkzzYfATEdW8zjVRqqe2vthcxqtM7k4kjNysowME4-enYp2IdKBupj7XXNvLiW2qIN2yhAyc7BFmxWSRk3gG5oX0YaNH6DgL9QkKr3GnU0KJv7caGRueKiQjoKVDGzzN8dKHASKKkNvLNbwqFYz9HK-sfBe7YapvR7TgC4iBUn9MtQEVXocoDN8AbgBQs4Q4Wcf6vn0w8YDzxvGz1QvWk_oJvSK5ygDRpbHUqJhnJt_ilVPGPzuS3tlQwPNc655SwCK1uWMNDovoLZ6nFU0DTTBA_ba9bbVIWgs-LUMYJg7a-0Nn96bGQv46X0ivUo5jvQNrOHukS_Na8GkzPSd-yIYUqurt3XqaJ7O2PZyPeXBpmO8mlpguatmOZJ9Ax3pgeAebebJHHY_zHzbKblvzEkCUnGRICW7jIQ6F7Z37ir61RpxGnrmIfpYrS2FetabACoXVlRbtnXdYedypqQVrFEmBlY3zLADxuVsNQxZ1zJLgtRXIzbcZT5dQ6643Oa5rT28ATmlaZpydh7E0E_D0E8cvb2y6iA32t3TLG1FNwJXOCMiPNyRxH0AEDICOjz6mqcEeOopA4nEJ-rDUUqqnYXZVZVqIB7Z9W4spIyG9ad"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hints-header",
+    "text": "CONTEXTUAL HINTS",
+    "html": "<div class=\"hints-header\">\n                    <div class=\"hints-title\">Contextual Hints</div>\n                </div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hints-title",
+    "text": "CONTEXTUAL HINTS",
+    "html": "<div class=\"hints-title\">Contextual Hints</div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "hints-list",
+    "cls": "hints-list",
+    "text": "CGV logo\nHIGH\nCGV is a major cinema chain; its logo is requested for the poster design.\nDolby Atmos logo\nHIGH\nStandard technical logo for movie posters.",
+    "html": "<div id=\"hints-list\" class=\"hints-list\"><div class=\"hint-card\"><div class=\"hint-top\"><div class=\"hint-query\">CGV logo</div><span class=\"priority-badge priority-high\">high</span></div><div class=\"hint-images\"><button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AbyJ664UGtNZ93TV8ZjEkLFTmMO4OqoWUmm5fRmJUkyCZnIYeVvPEaydOGsIYuQuY8lz1Bpk4taY2f6dtFClHdNN51hxbPHkd7xQqoHuodUF2tZmLFYhxXf9EnG95vbEq28I-z2RWkLI4RUQ_0JW9G4grySQ02YPKlEU6jSiVRGk2UskCECkxzIQBb_Pwd_0X728qnVWPIuNGvOiVN7puNajadzR8o7T6pkzzYfATEdW8zjVRqqe2vthcxqtM7k4kjNysowME4-enYp2IdKBupj7XXNvLiW2qIN2yhAyc7BFmxWSRk3gG5oX0YaNH6DgL9QkKr3GnU0KJv7caGRueKiQjoKVDGzzN8dKHASKKkNvLNbwqFYz9HK-sfBe7YapvR7TgC4iBUn9MtQEVXocoDN8AbgBQs4Q4Wcf6vn0w8YDzxvGz1QvWk_oJvSK5ygDRpbHUqJhnJt_ilVPGPzuS3tlQwPNc655SwCK1uWMNDovoLZ6nFU0DTTBA_ba9bbVIWgs-LUMYJg7a-0Nn96bGQv46X0ivUo5jvQNrOHukS_Na8GkzPSd-yIYUqurt3XqaJ7O2PZyPeXBpmO8mlpguatmOZJ9Ax3pgeAebebJHHY_zHzbKblvzEkCUnGRICW7jIQ6F7Z37ir61RpxGnrmIfpYrS2FetabACoXVlRbtnXdYedypqQVrFEmBlY3zLADxuVsNQxZ1zJLgtRXIzbcZT5dQ6643Oa5rT28ATmlaZpydh7E0E_D0E8cvb2y6iA32t3TLG1FNwJXOCMiPNyRxH0AEDICOjz6mqcEeOopA4nEJ-rDUUqqnYXZVZVqIB7Z9W4spIyG9adgNig1FRtDiXyXMyaJ12sOh0bLu63C57I-17wCGJTRGzLd55fS6tDDyfMdoeOayZpc9MHjlURIszFP0SoAkkHq1exYww0yNcA1Hgx6pZ-qqCHLjUORKtapN9zV79a-FTrDGwBy4KgATgtdSuZnurSjNZF2OKCVLqcPUxT3MHdjbVHpDqcfLiZIs_0beNFr1xE221xoC1joyYewdWUOrbItuBjIGrPw"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-card",
+    "text": "CGV logo\nHIGH\nCGV is a major cinema chain; its logo is requested for the poster design.",
+    "html": "<div class=\"hint-card\"><div class=\"hint-top\"><div class=\"hint-query\">CGV logo</div><span class=\"priority-badge priority-high\">high</span></div><div class=\"hint-images\"><button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AbyJ664UGtNZ93TV8ZjEkLFTmMO4OqoWUmm5fRmJUkyCZnIYeVvPEaydOGsIYuQuY8lz1Bpk4taY2f6dtFClHdNN51hxbPHkd7xQqoHuodUF2tZmLFYhxXf9EnG95vbEq28I-z2RWkLI4RUQ_0JW9G4grySQ02YPKlEU6jSiVRGk2UskCECkxzIQBb_Pwd_0X728qnVWPIuNGvOiVN7puNajadzR8o7T6pkzzYfATEdW8zjVRqqe2vthcxqtM7k4kjNysowME4-enYp2IdKBupj7XXNvLiW2qIN2yhAyc7BFmxWSRk3gG5oX0YaNH6DgL9QkKr3GnU0KJv7caGRueKiQjoKVDGzzN8dKHASKKkNvLNbwqFYz9HK-sfBe7YapvR7TgC4iBUn9MtQEVXocoDN8AbgBQs4Q4Wcf6vn0w8YDzxvGz1QvWk_oJvSK5ygDRpbHUqJhnJt_ilVPGPzuS3tlQwPNc655SwCK1uWMNDovoLZ6nFU0DTTBA_ba9bbVIWgs-LUMYJg7a-0Nn96bGQv46X0ivUo5jvQNrOHukS_Na8GkzPSd-yIYUqurt3XqaJ7O2PZyPeXBpmO8mlpguatmOZJ9Ax3pgeAebebJHHY_zHzbKblvzEkCUnGRICW7jIQ6F7Z37ir61RpxGnrmIfpYrS2FetabACoXVlRbtnXdYedypqQVrFEmBlY3zLADxuVsNQxZ1zJLgtRXIzbcZT5dQ6643Oa5rT28ATmlaZpydh7E0E_D0E8cvb2y6iA32t3TLG1FNwJXOCMiPNyRxH0AEDICOjz6mqcEeOopA4nEJ-rDUUqqnYXZVZVqIB7Z9W4spIyG9adgNig1FRtDiXyXMyaJ12sOh0bLu63C57I-17wCGJTRGzLd55fS6tDDyfMdoeOayZpc9MHjlURIszFP0SoAkkHq1exYww0yNcA1Hgx6pZ-qqCHLjUORKtapN9zV79a-FTrDGwBy4KgATgtdSuZnurSjNZF2OKCVLqcPUxT3MHdjbVHpDqcfLiZIs_0beNFr1xE221xoC1joyYewdWUOrbItuBjIGrPwEOC8Dq6S6ykOPmDJgAFCC_A_5ldi9PlZKckpAesO"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-top",
+    "text": "CGV logo\nHIGH",
+    "html": "<div class=\"hint-top\"><div class=\"hint-query\">CGV logo</div><span class=\"priority-badge priority-high\">high</span></div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-query",
+    "text": "CGV logo",
+    "html": "<div class=\"hint-query\">CGV logo</div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-images",
+    "text": "",
+    "html": "<div class=\"hint-images\"><button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AbyJ664UGtNZ93TV8ZjEkLFTmMO4OqoWUmm5fRmJUkyCZnIYeVvPEaydOGsIYuQuY8lz1Bpk4taY2f6dtFClHdNN51hxbPHkd7xQqoHuodUF2tZmLFYhxXf9EnG95vbEq28I-z2RWkLI4RUQ_0JW9G4grySQ02YPKlEU6jSiVRGk2UskCECkxzIQBb_Pwd_0X728qnVWPIuNGvOiVN7puNajadzR8o7T6pkzzYfATEdW8zjVRqqe2vthcxqtM7k4kjNysowME4-enYp2IdKBupj7XXNvLiW2qIN2yhAyc7BFmxWSRk3gG5oX0YaNH6DgL9QkKr3GnU0KJv7caGRueKiQjoKVDGzzN8dKHASKKkNvLNbwqFYz9HK-sfBe7YapvR7TgC4iBUn9MtQEVXocoDN8AbgBQs4Q4Wcf6vn0w8YDzxvGz1QvWk_oJvSK5ygDRpbHUqJhnJt_ilVPGPzuS3tlQwPNc655SwCK1uWMNDovoLZ6nFU0DTTBA_ba9bbVIWgs-LUMYJg7a-0Nn96bGQv46X0ivUo5jvQNrOHukS_Na8GkzPSd-yIYUqurt3XqaJ7O2PZyPeXBpmO8mlpguatmOZJ9Ax3pgeAebebJHHY_zHzbKblvzEkCUnGRICW7jIQ6F7Z37ir61RpxGnrmIfpYrS2FetabACoXVlRbtnXdYedypqQVrFEmBlY3zLADxuVsNQxZ1zJLgtRXIzbcZT5dQ6643Oa5rT28ATmlaZpydh7E0E_D0E8cvb2y6iA32t3TLG1FNwJXOCMiPNyRxH0AEDICOjz6mqcEeOopA4nEJ-rDUUqqnYXZVZVqIB7Z9W4spIyG9adgNig1FRtDiXyXMyaJ12sOh0bLu63C57I-17wCGJTRGzLd55fS6tDDyfMdoeOayZpc9MHjlURIszFP0SoAkkHq1exYww0yNcA1Hgx6pZ-qqCHLjUORKtapN9zV79a-FTrDGwBy4KgATgtdSuZnurSjNZF2OKCVLqcPUxT3MHdjbVHpDqcfLiZIs_0beNFr1xE221xoC1joyYewdWUOrbItuBjIGrPwEOC8Dq6S6ykOPmDJgAFCC_A_5ldi9PlZKckpAesOdeqWbtd-IR4h33HCzLWD8lRIcTWKN8aZ5zB_lnHg1ldChUBEFv4YpelLbbWNEnDRp15dpQFlrJ2RptR71GxBXL2vUNFnUHBiP6NYyHMOOPN7F2lBwkH3xkf7DCF7pQD8XJGb6tTBarJJF7O"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AbyJ664UGtNZ93TV8ZjEkLFTmMO4OqoWUmm5fRmJUkyCZnIYeVvPEaydOGsIYuQuY8lz1Bpk4taY2f6dtFClHdNN51hxbPHkd7xQqoHuodUF2tZmLFYhxXf9EnG95vbEq28I-z2RWkLI4RUQ_0JW9G4grySQ02YPKlEU6jSiVRGk2UskCECkxzIQBb_Pwd_0X728qnVWPIuNGvOiVN7puNajadzR8o7T6pkzzYfATEdW8zjVRqqe2vthcxqtM7k4kjNysowME4-enYp2IdKBupj7XXNvLiW2qIN2yhAyc7BFmxWSRk3gG5oX0YaNH6DgL9QkKr3GnU0KJv7caGRueKiQjoKVDGzzN8dKHASKKkNvLNbwqFYz9HK-sfBe7YapvR7TgC4iBUn9MtQEVXocoDN8AbgBQs4Q4Wcf6vn0w8YDzxvGz1QvWk_oJvSK5ygDRpbHUqJhnJt_ilVPGPzuS3tlQwPNc655SwCK1uWMNDovoLZ6nFU0DTTBA_ba9bbVIWgs-LUMYJg7a-0Nn96bGQv46X0ivUo5jvQNrOHukS_Na8GkzPSd-yIYUqurt3XqaJ7O2PZyPeXBpmO8mlpguatmOZJ9Ax3pgeAebebJHHY_zHzbKblvzEkCUnGRICW7jIQ6F7Z37ir61RpxGnrmIfpYrS2FetabACoXVlRbtnXdYedypqQVrFEmBlY3zLADxuVsNQxZ1zJLgtRXIzbcZT5dQ6643Oa5rT28ATmlaZpydh7E0E_D0E8cvb2y6iA32t3TLG1FNwJXOCMiPNyRxH0AEDICOjz6mqcEeOopA4nEJ-rDUUqqnYXZVZVqIB7Z9W4spIyG9adgNig1FRtDiXyXMyaJ12sOh0bLu63C57I-17wCGJTRGzLd55fS6tDDyfMdoeOayZpc9MHjlURIszFP0SoAkkHq1exYww0yNcA1Hgx6pZ-qqCHLjUORKtapN9zV79a-FTrDGwBy4KgATgtdSuZnurSjNZF2OKCVLqcPUxT3MHdjbVHpDqcfLiZIs_0beNFr1xE221xoC1joyYewdWUOrbItuBjIGrPwEOC8Dq6S6ykOPmDJgAFCC_A_5ldi9PlZKckpAesOdeqWbtd-IR4h33HCzLWD8lRIcTWKN8aZ5zB_lnHg1ldChUBEFv4YpelLbbWNEnDRp15dpQFlrJ2RptR71GxBXL2vUNFnUHBiP6NYyHMOOPN7F2lBwkH3xkf7DCF7pQD8XJGb6tTBarJJF7O2wCJZVY1iDRQ1VJQQVi8IgHGQ"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AbyJ664UGtNZ93TV8ZjEkLFTmMO4OqoWUmm5fRmJUkyCZnIYeVvPEaydOGsIYuQuY8lz1Bpk4taY2f6dtFClHdNN51hxbPHkd7xQqoHuodUF2tZmLFYhxXf9EnG95vbEq28I-z2RWkLI4RUQ_0JW9G4grySQ02YPKlEU6jSiVRGk2UskCECkxzIQBb_Pwd_0X728qnVWPIuNGvOiVN7puNajadzR8o7T6pkzzYfATEdW8zjVRqqe2vthcxqtM7k4kjNysowME4-enYp2IdKBupj7XXNvLiW2qIN2yhAyc7BFmxWSRk3gG5oX0YaNH6DgL9QkKr3GnU0KJv7caGRueKiQjoKVDGzzN8dKHASKKkNvLNbwqFYz9HK-sfBe7YapvR7TgC4iBUn9MtQEVXocoDN8AbgBQs4Q4Wcf6vn0w8YDzxvGz1QvWk_oJvSK5ygDRpbHUqJhnJt_ilVPGPzuS3tlQwPNc655SwCK1uWMNDovoLZ6nFU0DTTBA_ba9bbVIWgs-LUMYJg7a-0Nn96bGQv46X0ivUo5jvQNrOHukS_Na8GkzPSd-yIYUqurt3XqaJ7O2PZyPeXBpmO8mlpguatmOZJ9Ax3pgeAebebJHHY_zHzbKblvzEkCUnGRICW7jIQ6F7Z37ir61RpxGnrmIfpYrS2FetabACoXVlRbtnXdYedypqQVrFEmBlY3zLADxuVsNQxZ1zJLgtRXIzbcZT5dQ6643Oa5rT28ATmlaZpydh7E0E_D0E8cvb2y6iA32t3TLG1FNwJXOCMiPNyRxH0AEDICOjz6mqcEeOopA4nEJ-rDUUqqnYXZVZVqIB7Z9W4spIyG9adgNig1FRtDiXyXMyaJ12sOh0bLu63C57I-17wCGJTRGzLd55fS6tDDyfMdoeOayZpc9MHjlURIszFP0SoAkkHq1exYww0yNcA1Hgx6pZ-qqCHLjUORKtapN9zV79a-FTrDGwBy4KgATgtdSuZnurSjNZF2OKCVLqcPUxT3MHdjbVHpDqcfLiZIs_0beNFr1xE221xoC1joyYewdWUOrbItuBjIGrPwEOC8Dq6S6ykOPmDJgAFCC_A_5ldi9PlZKckpAesOdeqWbtd-IR4h33HCzLWD8lRIcTWKN8aZ5zB_lnHg1ldChUBEFv4YpelLbbWNEnDRp15dpQFlrJ2RptR71GxBXL2vUNFnUHBiP6NYyHMOOPN7F2lBwkH3xkf7DCF7pQD8XJGb6tTBarJJF7O2wCJZVY1iDRQ1VJQQVi8IgHGQD0NkvsQahPHGaKqQS_ohy7adHaGc9kIzB4hBF3EcE8WbRx"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AYJPIVQX0ixrw-MzuNBSZzyyjztdCARHQ_UXF01405JkbQxBQE6gjz2RSoNhh46vY57H0QpS2wxJvSJytvUOebjsKLkNaYkAoguXwMu0QgErs3_Jcc5ejsSN9NpHGRSzq4USToNCSLSMxWBbYOSGapeMy7bVtOl6DsC4bR90Z-C40IqgkOuCyZAKPHk87FKRAPmPI0DiCZEJvmgihBgxDG2IYgZgRCLZmRydnKgyAvjfAeg2a68LjBZrCgEgml_CAJDz9U7rYTN6pfVm9CtFSSXHHau3A358_kkzTr9lu9mvaW-hjMyukb2Or1FSGTfr0fNOUJ_EomYbz1zo_gv2NvIrEzrplKRIpQAv_g0Zdl8BFmurV7DSjF97b56DFDllnPyPhmk8-hUbVmqv3_ANEFnAkQHPxP9W_Bq-KCEq8Yh34RqSRy0arvPwQIHEN-9NNJWhN9onCZsEyzKrMMtCRV4q9O1TDEbAWTQBVrQonhOdKVqL6oP_Utd3FRBhmT_s4MP7Ep5hBlhqsCyyAumViUKUWhpeCOxPw7aOHDp4WVQVxVrykbHl2YIOP5kowiQqGjfAILV7lBXoHZsnuDnjG9_TH3Y7nSgUfHGycE-rSxaayu1EdDBmR5F6nyzi9rmztQ_ctb6nXcEgfIOwyL1VL8jqyZRPAw1sE64sQZcxeyOWsO-MjSnBX2rtrge_0EokbQkQ5m91WZxetplkMrPffGthFAbwVHSiNthTbd7tuwrssXMsb_YRO1OCTX7WSLhOMjKhAsBDzjD48suR2p-epULTvOrdyCsIQX0rzNKLPsguXzbhfVhEpFyMrqGkasQf2-0ujBVkP_w-iKS37rRNGx4KVof0RQGaH2EoWu0Vp2lbX93vzMYCmvuIxrYFDyfcVUVFiaE-iMA8K9cSxFD-cNCoYSM1zV-6abrWt9dZp65QrnT7WFJVdic94xB1MkfAXBhf3z6_EGJzuRGzEMrJ0yXrGVdLGKPCpTtYRlGCLO2WZ2Pi8WObo-LnRCclbKLp7jl9CUkxe4NzkqCBPPISf8ftegV32rwGC81K9fZGANgivAMZF1jcMDFY5JkYZ4nDCriEu2nr0wXNFx8fHGueSxSDYBvFLZRaMDr_hODCKRz8l8AOOm_v20sYlvYYrWhKEjr3pwEBVthSF3SDHKL0Qh17uQeMygjJ1xO0x34amMITAyt00XwACM28dmQrBINUf9uNNFyVp4PpAkXBIRJxT8GFHC-xEVS2UGVcsdJUyEfMoKZC0SZQgUJN"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AYJPIVQX0ixrw-MzuNBSZzyyjztdCARHQ_UXF01405JkbQxBQE6gjz2RSoNhh46vY57H0QpS2wxJvSJytvUOebjsKLkNaYkAoguXwMu0QgErs3_Jcc5ejsSN9NpHGRSzq4USToNCSLSMxWBbYOSGapeMy7bVtOl6DsC4bR90Z-C40IqgkOuCyZAKPHk87FKRAPmPI0DiCZEJvmgihBgxDG2IYgZgRCLZmRydnKgyAvjfAeg2a68LjBZrCgEgml_CAJDz9U7rYTN6pfVm9CtFSSXHHau3A358_kkzTr9lu9mvaW-hjMyukb2Or1FSGTfr0fNOUJ_EomYbz1zo_gv2NvIrEzrplKRIpQAv_g0Zdl8BFmurV7DSjF97b56DFDllnPyPhmk8-hUbVmqv3_ANEFnAkQHPxP9W_Bq-KCEq8Yh34RqSRy0arvPwQIHEN-9NNJWhN9onCZsEyzKrMMtCRV4q9O1TDEbAWTQBVrQonhOdKVqL6oP_Utd3FRBhmT_s4MP7Ep5hBlhqsCyyAumViUKUWhpeCOxPw7aOHDp4WVQVxVrykbHl2YIOP5kowiQqGjfAILV7lBXoHZsnuDnjG9_TH3Y7nSgUfHGycE-rSxaayu1EdDBmR5F6nyzi9rmztQ_ctb6nXcEgfIOwyL1VL8jqyZRPAw1sE64sQZcxeyOWsO-MjSnBX2rtrge_0EokbQkQ5m91WZxetplkMrPffGthFAbwVHSiNthTbd7tuwrssXMsb_YRO1OCTX7WSLhOMjKhAsBDzjD48suR2p-epULTvOrdyCsIQX0rzNKLPsguXzbhfVhEpFyMrqGkasQf2-0ujBVkP_w-iKS37rRNGx4KVof0RQGaH2EoWu0Vp2lbX93vzMYCmvuIxrYFDyfcVUVFiaE-iMA8K9cSxFD-cNCoYSM1zV-6abrWt9dZp65QrnT7WFJVdic94xB1MkfAXBhf3z6_EGJzuRGzEMrJ0yXrGVdLGKPCpTtYRlGCLO2WZ2Pi8WObo-LnRCclbKLp7jl9CUkxe4NzkqCBPPISf8ftegV32rwGC81K9fZGANgivAMZF1jcMDFY5JkYZ4nDCriEu2nr0wXNFx8fHGueSxSDYBvFLZRaMDr_hODCKRz8l8AOOm_v20sYlvYYrWhKEjr3pwEBVthSF3SDHKL0Qh17uQeMygjJ1xO0x34amMITAyt00XwACM28dmQrBINUf9uNNFyVp4PpAkXBIRJxT8GFHC-xEVS2UGVcsdJUyEfMoKZC0SZQgUJNWy68Y2FgwvafmnlSPIzCBeVf7q1bRAOtkiWvVJujei_PHF"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AUAdUhWEhiRBHZfOjRuUVteFoA_WGL_jO2nfR6p-puIxpEr2StwjvZV0H6TQVnkAO4t7QVBLvWdOUZwYAnrE-rAAJeAaQ_RFim1pV9jmsGUPXMYkBXaLDVhyxpSWTDR6mh_KuiNoP8gtN4ljS7P9HlCBO1Q3tt5dMKA8KnMl72_1KgRrGS-hhegFV2_s84nyU8A6pj3vnaHx3vSmPF37KWcxCOIEgyEPfMYlPUGB1qEIde8RW6SSaCbA5uKEbLCwWHT4hkbxEMZgaQNSkguOpUWVeaFVUGlu-xCQeNvCCb3wdNFEWTIZrqlemnEelbwwaPjGJVK1gFcCMjipYqWj2Ma3-Asgwm1f5ZowkW4w-winJxf_AgIegOg2ZEJIul-aLUResmNNvEuvnBkvRZqCItr86da0wiKIwwvlYULPqmmMVehURtGGYWqKGpr3YPADtk8LQy31e_aqRkizpKEIw5CtMPjazN94PvQetGk1cu9IIIRlRlhPd0FmvgT0tifSBtDNlel22QKma9hlahn_m9Y_D2VddFSsxJr49HFep61x9VTbzUdMYW_bIAMf92pnwTK1nimwYgWRidz-IgrBmWywfUQwmUKDuBw3zQRhU9RO2CDg4XxkQ5gfIEwKaBgso3l0eKcZrwPIpDuTvrwiIuTmtrJQbE3Y9E47c2FXcQiH_YyoJf3tuHDWMBaB6q35zvKcaSDGCpazGPAvZ8w7xPWRtmzUYnAaB4kH7HRsbrHJs-CDPnLffCcC57Z0T32KrsBJ0r4ScjUBT87JZ1OaNxL0cQU6OiLjUaoUDE7hGrPukOzkDZn26R1spt59vrm2SSBlnkpr1rlWwu8OG8TmjAKoMzvClyV14gVW5ghct3ADQESfZjDM5XA1pg03usCyP81HCbPuo0TMM6S5jWWPcbO2q7koDFisDhx4vb8W9_SdAoluKx7yZfV2pnsH3VNraSng6XoCiKkrelf_Vhi39gdLDUM5-6PsRqN4v0W2pxI-_TYF7XkhNRNwB5op2s6O4UW8rXEbzaeBTx6G1oA7WJYWA8LCQiubLDeBp10ntxpfXCmlPpvsgrIpqtFVh9vp1RApZc3zTjzwEAooZbJXfMS1U53G5VNU3WMy35VjpwwzUFrMD79g6MhbqCFfi3MMZ6qfWSe6Tiuemcmju1jfrtnJLSrns2XZsWXfHUUZLh0pVlVMd7Sahl73NSB9b7KFX1PKdkPK5wapS_13bnD9Qq7ntSkwOzwFpAGlHIwpx9ju4TPNsF0RYi84"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AUAdUhWEhiRBHZfOjRuUVteFoA_WGL_jO2nfR6p-puIxpEr2StwjvZV0H6TQVnkAO4t7QVBLvWdOUZwYAnrE-rAAJeAaQ_RFim1pV9jmsGUPXMYkBXaLDVhyxpSWTDR6mh_KuiNoP8gtN4ljS7P9HlCBO1Q3tt5dMKA8KnMl72_1KgRrGS-hhegFV2_s84nyU8A6pj3vnaHx3vSmPF37KWcxCOIEgyEPfMYlPUGB1qEIde8RW6SSaCbA5uKEbLCwWHT4hkbxEMZgaQNSkguOpUWVeaFVUGlu-xCQeNvCCb3wdNFEWTIZrqlemnEelbwwaPjGJVK1gFcCMjipYqWj2Ma3-Asgwm1f5ZowkW4w-winJxf_AgIegOg2ZEJIul-aLUResmNNvEuvnBkvRZqCItr86da0wiKIwwvlYULPqmmMVehURtGGYWqKGpr3YPADtk8LQy31e_aqRkizpKEIw5CtMPjazN94PvQetGk1cu9IIIRlRlhPd0FmvgT0tifSBtDNlel22QKma9hlahn_m9Y_D2VddFSsxJr49HFep61x9VTbzUdMYW_bIAMf92pnwTK1nimwYgWRidz-IgrBmWywfUQwmUKDuBw3zQRhU9RO2CDg4XxkQ5gfIEwKaBgso3l0eKcZrwPIpDuTvrwiIuTmtrJQbE3Y9E47c2FXcQiH_YyoJf3tuHDWMBaB6q35zvKcaSDGCpazGPAvZ8w7xPWRtmzUYnAaB4kH7HRsbrHJs-CDPnLffCcC57Z0T32KrsBJ0r4ScjUBT87JZ1OaNxL0cQU6OiLjUaoUDE7hGrPukOzkDZn26R1spt59vrm2SSBlnkpr1rlWwu8OG8TmjAKoMzvClyV14gVW5ghct3ADQESfZjDM5XA1pg03usCyP81HCbPuo0TMM6S5jWWPcbO2q7koDFisDhx4vb8W9_SdAoluKx7yZfV2pnsH3VNraSng6XoCiKkrelf_Vhi39gdLDUM5-6PsRqN4v0W2pxI-_TYF7XkhNRNwB5op2s6O4UW8rXEbzaeBTx6G1oA7WJYWA8LCQiubLDeBp10ntxpfXCmlPpvsgrIpqtFVh9vp1RApZc3zTjzwEAooZbJXfMS1U53G5VNU3WMy35VjpwwzUFrMD79g6MhbqCFfi3MMZ6qfWSe6Tiuemcmju1jfrtnJLSrns2XZsWXfHUUZLh0pVlVMd7Sahl73NSB9b7KFX1PKdkPK5wapS_13bnD9Qq7ntSkwOzwFpAGlHIwpx9ju4TPNsF0RYi84hb9ZYfKyvoSVfBCTZTMkr0QKA6Y4r80AzzdN6xunx6DWgA"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AQoZYKSRqU9ywzKPKc9Sx4_xREIagm0c3zqSTv5UWu_gbgOrn2HmGUL2TGoEVrtvkaSEDBAHBrYZ5d_mss-s3uOfos_2yhyMQWlDsaH_D3b9iTKJhCslg5XqdnQXvj5_PBFoCb5JyMU0gq6CC4SIJNE5UqJY_HZP-xPwCjLKSOMIPzASoIrqcF6cxjDgnPjRwRAb8X06_XR8ywG6Mw6bKLs1uF69jHWGCjyicLdQrtjvXNl4wZMT4Nq5uYKAJWmKWE6P7bSEIggvLiSBpErPthNJApzo4y5W9Da-8M-ozLFulneqNu4pMUY_OuKnlQOYbrZv9oI30emN1aiPXzBWxN6ZGpDLP82kXRjeq43yAUncGS3-axOE8MPiG-MrY2G_zWxU4pdOTYtXWFTWxPi17ynTR8-hmIU1XJg6V2pCtm3ri1Ot_wLvbtbIdluBMH3WHu5bFyiWRgc72oCc8q6Nk-itptWbTuDHWqeGlJ1mDrNQJpiiYwzIbtbhT6IjIS_O23fMtIot0vgmkEuw0aeu7csIrhhP16W8TzNof4y_A12FCEVZzQN8-o4j5HJWdVDpoQofGrqeTfYE1Zlkf2sxj11jzdPOy9ilXHF2rCKuV0SdcqA-9yw1zQKPxsHQyktBIqxCCgtdETDE650YVvlyAOItLKOMzJt0R_V7IFX2Vxq2hRRUoYTk6xBe8TWVHHjT7ZkpHhCC6aT8gSPCx1Up8klBDpxXd9XUNuqgff8Li9yDwkmige-13jNKKd2ySUdlWAG5OeDhyMLnp_c7-c3Oo2hWdj2oU09RDTc1ZA8IuszoNgnDLG1Gr2sy6DwlGCJ-XeQlCEM0NSkS81U6R56KirIm7jZWmFcq8hlGG3ZaLRWs9_sQXZM-z9EbHX3QbkdUQEzM7bAbryyYPaVdZyHvOR5oTzTtu_6MrvQwjyGVggblMeqlsEC0uIojdQb2_fuxCQdgG5mRyTHB_mVbs7fNzqC9qlz_VmnHCC1pPPhpy-3cGiw73wWVUr6cYmHJ22xFQbYXR7etzMS1WRAVk5Y5i-w8hZHCbJlvoCpqPf6onfUqyT_zVWKkCsXf3EG1D0mtOduC5m0brApoEEMTbZFIXMr6qceHnE7YWnBjzAupats-5tjYdyMe_xvoPsdgkQStYu8vzVgJMC5e3DWlfZilJTqXDmCr1IFB-cFZQ0s0oTDyFQ1P-LXhb20YjpRZP2I2tG2cMBP90hDNcJltiZ1x4CXIT0RRJ6q16GJezRjVyglPvPdgpcOAOBxr"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AQoZYKSRqU9ywzKPKc9Sx4_xREIagm0c3zqSTv5UWu_gbgOrn2HmGUL2TGoEVrtvkaSEDBAHBrYZ5d_mss-s3uOfos_2yhyMQWlDsaH_D3b9iTKJhCslg5XqdnQXvj5_PBFoCb5JyMU0gq6CC4SIJNE5UqJY_HZP-xPwCjLKSOMIPzASoIrqcF6cxjDgnPjRwRAb8X06_XR8ywG6Mw6bKLs1uF69jHWGCjyicLdQrtjvXNl4wZMT4Nq5uYKAJWmKWE6P7bSEIggvLiSBpErPthNJApzo4y5W9Da-8M-ozLFulneqNu4pMUY_OuKnlQOYbrZv9oI30emN1aiPXzBWxN6ZGpDLP82kXRjeq43yAUncGS3-axOE8MPiG-MrY2G_zWxU4pdOTYtXWFTWxPi17ynTR8-hmIU1XJg6V2pCtm3ri1Ot_wLvbtbIdluBMH3WHu5bFyiWRgc72oCc8q6Nk-itptWbTuDHWqeGlJ1mDrNQJpiiYwzIbtbhT6IjIS_O23fMtIot0vgmkEuw0aeu7csIrhhP16W8TzNof4y_A12FCEVZzQN8-o4j5HJWdVDpoQofGrqeTfYE1Zlkf2sxj11jzdPOy9ilXHF2rCKuV0SdcqA-9yw1zQKPxsHQyktBIqxCCgtdETDE650YVvlyAOItLKOMzJt0R_V7IFX2Vxq2hRRUoYTk6xBe8TWVHHjT7ZkpHhCC6aT8gSPCx1Up8klBDpxXd9XUNuqgff8Li9yDwkmige-13jNKKd2ySUdlWAG5OeDhyMLnp_c7-c3Oo2hWdj2oU09RDTc1ZA8IuszoNgnDLG1Gr2sy6DwlGCJ-XeQlCEM0NSkS81U6R56KirIm7jZWmFcq8hlGG3ZaLRWs9_sQXZM-z9EbHX3QbkdUQEzM7bAbryyYPaVdZyHvOR5oTzTtu_6MrvQwjyGVggblMeqlsEC0uIojdQb2_fuxCQdgG5mRyTHB_mVbs7fNzqC9qlz_VmnHCC1pPPhpy-3cGiw73wWVUr6cYmHJ22xFQbYXR7etzMS1WRAVk5Y5i-w8hZHCbJlvoCpqPf6onfUqyT_zVWKkCsXf3EG1D0mtOduC5m0brApoEEMTbZFIXMr6qceHnE7YWnBjzAupats-5tjYdyMe_xvoPsdgkQStYu8vzVgJMC5e3DWlfZilJTqXDmCr1IFB-cFZQ0s0oTDyFQ1P-LXhb20YjpRZP2I2tG2cMBP90hDNcJltiZ1x4CXIT0RRJ6q16GJezRjVyglPvPdgpcOAOBxrmaS2At20h9pKG_zA_voeZjbyV35FsBIKC_MzPWr7j_pVKT"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/ARZ3bGseI6m9UeAMl0YDjw_HL_KDhhy8Ra1ITdKhpiG5h0Xu1QU_Xt6XAB1R9bnC8xP9aagQGCGeeP6XcCvCQMlHucHR0jQwBGJAj5-h6SPXxnIG68WEw4KEJ7qTqFwv2PTPGlapRU3m9SKiWxeUaXYyCGWUCXoKiKOW62y3s1z6o4-zdiopEzjv-9OjZZMG1yJdJLhxflvrKu6xpqJoeAcvqcZiB5wnfMoilgMRudp-EG7bHrHBh4tNICOb2E5qTgegxXVH4vPwVI08cy6D90E6qjsllc1D71D4FcvwnZXrloEBrRWjblGUwp8uEcaurnZhQYh28yjo4Cj_GN_Qz7LM8KeZ2FpQ8IR9T2ee_CyT0UrL-Wiw3AlAytrPq489CpSIVWr69Om-LH5clVh0xKAuLnFjcI1kt0W1ZE6cpVAl4Et9TiGmv-zXgnZDDJSG0OebunOvgVfd6voeAu9_vuWi5NqCD7RkZ0Y25ebaPCIBL574hv2kZ0yiYmlJxOJwKPGAa6uYTyASIB9dc08MZx4yJC1N7tOzC7sOnJ1yTxCndgsmo5aLWkujQi42PMbP-URIQQNCpPXZeZhzfKNkLywiSCjS2gpWq57tgfJ70eBWbSsUjHWaz6PJo3lcqKDlb9Bk4DNozTf9TXfXSQOortMvqEaDH0bN7wszUDo3Ore2boJ6vfRWXt14FmWJy5tO4LK8RuNX-LF5dgiZqRdAFAB7UMY2ww4Zxlz1G6GhDoKvSgR9F-DprcHz6G9CciWGCUYeCYbL4DMnLDV65TZqouQ6B6a884AhRMRUzFkUjyo1o46yBuSaLMlY3FuAlPhBTk4gKKQBYIb9JOsgmWLe2HggOVCtw9NPEbfbtvCfBGGMCObmjLxpPDB2xoH0Veuyb0ecV8j2OVc2CAoc7TWc7B6C16vQfAIUsurfqTok_ZiNCIZuoHOhXTBg_-aJpZgHsIB978LIi2nSfgyX0LfdsTvBafJ5ZPzohZUoXDCowShkmhtgQqvdvbbp0zVdJGhANa8KAtp5yzM5xcPQfnpJ9XWCWfvUZQUqGQcLDCsVsDOPJSC8N9x8NFr4IrC8EAe0Bb8tEN4GVjQmnzs3rPI0TOLGOTRllQZ-EZKivtnTCTCb7OqtCbe49YxhAzED4u_Ibzwg0mjtfxEwOm3337L_9FQRcNh3RThyQG2ze5j0MkRxchW0tnDIL0g-1n5KhmQHuwBKWYhEGNoRU8ye8Ai337hW39Jme4zdkqLPWhnwzncAv-VHyMYpD1ME"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/ARZ3bGseI6m9UeAMl0YDjw_HL_KDhhy8Ra1ITdKhpiG5h0Xu1QU_Xt6XAB1R9bnC8xP9aagQGCGeeP6XcCvCQMlHucHR0jQwBGJAj5-h6SPXxnIG68WEw4KEJ7qTqFwv2PTPGlapRU3m9SKiWxeUaXYyCGWUCXoKiKOW62y3s1z6o4-zdiopEzjv-9OjZZMG1yJdJLhxflvrKu6xpqJoeAcvqcZiB5wnfMoilgMRudp-EG7bHrHBh4tNICOb2E5qTgegxXVH4vPwVI08cy6D90E6qjsllc1D71D4FcvwnZXrloEBrRWjblGUwp8uEcaurnZhQYh28yjo4Cj_GN_Qz7LM8KeZ2FpQ8IR9T2ee_CyT0UrL-Wiw3AlAytrPq489CpSIVWr69Om-LH5clVh0xKAuLnFjcI1kt0W1ZE6cpVAl4Et9TiGmv-zXgnZDDJSG0OebunOvgVfd6voeAu9_vuWi5NqCD7RkZ0Y25ebaPCIBL574hv2kZ0yiYmlJxOJwKPGAa6uYTyASIB9dc08MZx4yJC1N7tOzC7sOnJ1yTxCndgsmo5aLWkujQi42PMbP-URIQQNCpPXZeZhzfKNkLywiSCjS2gpWq57tgfJ70eBWbSsUjHWaz6PJo3lcqKDlb9Bk4DNozTf9TXfXSQOortMvqEaDH0bN7wszUDo3Ore2boJ6vfRWXt14FmWJy5tO4LK8RuNX-LF5dgiZqRdAFAB7UMY2ww4Zxlz1G6GhDoKvSgR9F-DprcHz6G9CciWGCUYeCYbL4DMnLDV65TZqouQ6B6a884AhRMRUzFkUjyo1o46yBuSaLMlY3FuAlPhBTk4gKKQBYIb9JOsgmWLe2HggOVCtw9NPEbfbtvCfBGGMCObmjLxpPDB2xoH0Veuyb0ecV8j2OVc2CAoc7TWc7B6C16vQfAIUsurfqTok_ZiNCIZuoHOhXTBg_-aJpZgHsIB978LIi2nSfgyX0LfdsTvBafJ5ZPzohZUoXDCowShkmhtgQqvdvbbp0zVdJGhANa8KAtp5yzM5xcPQfnpJ9XWCWfvUZQUqGQcLDCsVsDOPJSC8N9x8NFr4IrC8EAe0Bb8tEN4GVjQmnzs3rPI0TOLGOTRllQZ-EZKivtnTCTCb7OqtCbe49YxhAzED4u_Ibzwg0mjtfxEwOm3337L_9FQRcNh3RThyQG2ze5j0MkRxchW0tnDIL0g-1n5KhmQHuwBKWYhEGNoRU8ye8Ai337hW39Jme4zdkqLPWhnwzncAv-VHyMYpD1MEwHFfnvcsvvtr-1aRgpPNsVGNQAWLjnIl3GCRsvD_slHYcZ"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-reasoning",
+    "text": "CGV is a major cinema chain; its logo is requested for the poster design.",
+    "html": "<div class=\"hint-reasoning\">CGV is a major cinema chain; its logo is requested for the poster design.</div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-card",
+    "text": "Dolby Atmos logo\nHIGH\nStandard technical logo for movie posters.",
+    "html": "<div class=\"hint-card\"><div class=\"hint-top\"><div class=\"hint-query\">Dolby Atmos logo</div><span class=\"priority-badge priority-high\">high</span></div><div class=\"hint-images\"><button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AXQ4IZ9fOLmfbwo3eh9PUCOAp7rJULo7s3seB9h2BbO48fvZNd4ATiDg4wzpIgxo7zySidKpiYzMKujQy4-lj7ihaWSFsPa6JtFuwRHdjxTXvsVLnrcREQpTK359O2ad5JysftxqeFIpoqZt2bVV9xr5kZPcXyuJBp5q31DOxcQNFNvrpYPhKKZLXqiDxfXZmmKa9So9oeLGRO6cOBBBP2HqEkGUlnTrl_Smt3BMsvkEM2pPeSaPHBr_apjbBSojBxgZt_7b47Yzd-xSp8R255Ia6jySa9nJreWJubBIywzQoZhovfkOW6-1YKz9hAnxXDV7NnWbTwWYtSoXPFalOKXKpDRRlQN8QYb4KeLS0XfLxn16PAuU04pNjhpHWU6-pKydou0sNsvIPyg0cjuSSnVfHgaL9c2UC0id8X_1vkJl9A2ur_9-mQtvSLwTOExJ8cHFj5sQib3ERJWmUvvrNv_f7-hutmWq0ZYnTfPcDH4wnwh20MG4A3ue4ESTDU6a8DFsBlXPj7cPsK-k9BXJASw-cquyXy-AePs90MR1-SQVbE7cq1kyJhSj_q30q1731_WU_zQ6lXw-VEU7656Z7TMOBFVc-Gy3HM4qXd1g8mbEZFSwSr5c15drxu4VCDP0-wEKHqV2_RqDWwCJFII1NRysmFkunq7BgwO06GYdt810O7xrxvtZGIhAfTadoLURVM7abfj184yG_HxFsPiwsDgAN8h3hlV21yv7_1LtHZ6ywjZC32R9vJbsbopRiGWUVDpoDdppDPUaYslXNjDBxj_qRGAr8ihVQbIwkMM6HgsWggygW1KHOMolyT-h0eMEojpunQKnpJa8x20yRxuKOUZaE3LoZaCTiD1JyE7cxnAeMK6jDCsWulkMIyAKeBrLVyPVDfFakABtyph2HwhLtFWSBdDnF1LiWrQh5oGyO4qJsIv2SfV9AjXFgNsi5MIuJ5kEMFjp0E2RV8RT6IUM5eEzcNhPMaiovTX9-dOjH3B0hUmp-8X4aCsNJ0P0cmdWWYp6G6fKrGHodnkPmenlaz45oy2-0esrXI59vW3IES2aL4Oks4qOYFpU3rEQbRbx7UAih3Is"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-top",
+    "text": "Dolby Atmos logo\nHIGH",
+    "html": "<div class=\"hint-top\"><div class=\"hint-query\">Dolby Atmos logo</div><span class=\"priority-badge priority-high\">high</span></div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-query",
+    "text": "Dolby Atmos logo",
+    "html": "<div class=\"hint-query\">Dolby Atmos logo</div>"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-images",
+    "text": "",
+    "html": "<div class=\"hint-images\"><button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AXQ4IZ9fOLmfbwo3eh9PUCOAp7rJULo7s3seB9h2BbO48fvZNd4ATiDg4wzpIgxo7zySidKpiYzMKujQy4-lj7ihaWSFsPa6JtFuwRHdjxTXvsVLnrcREQpTK359O2ad5JysftxqeFIpoqZt2bVV9xr5kZPcXyuJBp5q31DOxcQNFNvrpYPhKKZLXqiDxfXZmmKa9So9oeLGRO6cOBBBP2HqEkGUlnTrl_Smt3BMsvkEM2pPeSaPHBr_apjbBSojBxgZt_7b47Yzd-xSp8R255Ia6jySa9nJreWJubBIywzQoZhovfkOW6-1YKz9hAnxXDV7NnWbTwWYtSoXPFalOKXKpDRRlQN8QYb4KeLS0XfLxn16PAuU04pNjhpHWU6-pKydou0sNsvIPyg0cjuSSnVfHgaL9c2UC0id8X_1vkJl9A2ur_9-mQtvSLwTOExJ8cHFj5sQib3ERJWmUvvrNv_f7-hutmWq0ZYnTfPcDH4wnwh20MG4A3ue4ESTDU6a8DFsBlXPj7cPsK-k9BXJASw-cquyXy-AePs90MR1-SQVbE7cq1kyJhSj_q30q1731_WU_zQ6lXw-VEU7656Z7TMOBFVc-Gy3HM4qXd1g8mbEZFSwSr5c15drxu4VCDP0-wEKHqV2_RqDWwCJFII1NRysmFkunq7BgwO06GYdt810O7xrxvtZGIhAfTadoLURVM7abfj184yG_HxFsPiwsDgAN8h3hlV21yv7_1LtHZ6ywjZC32R9vJbsbopRiGWUVDpoDdppDPUaYslXNjDBxj_qRGAr8ihVQbIwkMM6HgsWggygW1KHOMolyT-h0eMEojpunQKnpJa8x20yRxuKOUZaE3LoZaCTiD1JyE7cxnAeMK6jDCsWulkMIyAKeBrLVyPVDfFakABtyph2HwhLtFWSBdDnF1LiWrQh5oGyO4qJsIv2SfV9AjXFgNsi5MIuJ5kEMFjp0E2RV8RT6IUM5eEzcNhPMaiovTX9-dOjH3B0hUmp-8X4aCsNJ0P0cmdWWYp6G6fKrGHodnkPmenlaz45oy2-0esrXI59vW3IES2aL4Oks4qOYFpU3rEQbRbx7UAih3IshDI9L-5OkxkOiNgTnNTBZj7C4dYsnWBCjZW63Mphjiz3AIBmQ1hgapuMuJAsZkQT4uS3fw25VcCb5av2xAbTGE-g1ABgs-3EI0456P8vyCmynHpC9E2hn653m3JUUyv7dM8PZilU3CmOdl5PENABVb5"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AXQ4IZ9fOLmfbwo3eh9PUCOAp7rJULo7s3seB9h2BbO48fvZNd4ATiDg4wzpIgxo7zySidKpiYzMKujQy4-lj7ihaWSFsPa6JtFuwRHdjxTXvsVLnrcREQpTK359O2ad5JysftxqeFIpoqZt2bVV9xr5kZPcXyuJBp5q31DOxcQNFNvrpYPhKKZLXqiDxfXZmmKa9So9oeLGRO6cOBBBP2HqEkGUlnTrl_Smt3BMsvkEM2pPeSaPHBr_apjbBSojBxgZt_7b47Yzd-xSp8R255Ia6jySa9nJreWJubBIywzQoZhovfkOW6-1YKz9hAnxXDV7NnWbTwWYtSoXPFalOKXKpDRRlQN8QYb4KeLS0XfLxn16PAuU04pNjhpHWU6-pKydou0sNsvIPyg0cjuSSnVfHgaL9c2UC0id8X_1vkJl9A2ur_9-mQtvSLwTOExJ8cHFj5sQib3ERJWmUvvrNv_f7-hutmWq0ZYnTfPcDH4wnwh20MG4A3ue4ESTDU6a8DFsBlXPj7cPsK-k9BXJASw-cquyXy-AePs90MR1-SQVbE7cq1kyJhSj_q30q1731_WU_zQ6lXw-VEU7656Z7TMOBFVc-Gy3HM4qXd1g8mbEZFSwSr5c15drxu4VCDP0-wEKHqV2_RqDWwCJFII1NRysmFkunq7BgwO06GYdt810O7xrxvtZGIhAfTadoLURVM7abfj184yG_HxFsPiwsDgAN8h3hlV21yv7_1LtHZ6ywjZC32R9vJbsbopRiGWUVDpoDdppDPUaYslXNjDBxj_qRGAr8ihVQbIwkMM6HgsWggygW1KHOMolyT-h0eMEojpunQKnpJa8x20yRxuKOUZaE3LoZaCTiD1JyE7cxnAeMK6jDCsWulkMIyAKeBrLVyPVDfFakABtyph2HwhLtFWSBdDnF1LiWrQh5oGyO4qJsIv2SfV9AjXFgNsi5MIuJ5kEMFjp0E2RV8RT6IUM5eEzcNhPMaiovTX9-dOjH3B0hUmp-8X4aCsNJ0P0cmdWWYp6G6fKrGHodnkPmenlaz45oy2-0esrXI59vW3IES2aL4Oks4qOYFpU3rEQbRbx7UAih3IshDI9L-5OkxkOiNgTnNTBZj7C4dYsnWBCjZW63Mphjiz3AIBmQ1hgapuMuJAsZkQT4uS3fw25VcCb5av2xAbTGE-g1ABgs-3EI0456P8vyCmynHpC9E2hn653m3JUUyv7dM8PZilU3CmOdl5PENABVb5d_izZogV-4p2AG6SC96-lwk2h"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AXQ4IZ9fOLmfbwo3eh9PUCOAp7rJULo7s3seB9h2BbO48fvZNd4ATiDg4wzpIgxo7zySidKpiYzMKujQy4-lj7ihaWSFsPa6JtFuwRHdjxTXvsVLnrcREQpTK359O2ad5JysftxqeFIpoqZt2bVV9xr5kZPcXyuJBp5q31DOxcQNFNvrpYPhKKZLXqiDxfXZmmKa9So9oeLGRO6cOBBBP2HqEkGUlnTrl_Smt3BMsvkEM2pPeSaPHBr_apjbBSojBxgZt_7b47Yzd-xSp8R255Ia6jySa9nJreWJubBIywzQoZhovfkOW6-1YKz9hAnxXDV7NnWbTwWYtSoXPFalOKXKpDRRlQN8QYb4KeLS0XfLxn16PAuU04pNjhpHWU6-pKydou0sNsvIPyg0cjuSSnVfHgaL9c2UC0id8X_1vkJl9A2ur_9-mQtvSLwTOExJ8cHFj5sQib3ERJWmUvvrNv_f7-hutmWq0ZYnTfPcDH4wnwh20MG4A3ue4ESTDU6a8DFsBlXPj7cPsK-k9BXJASw-cquyXy-AePs90MR1-SQVbE7cq1kyJhSj_q30q1731_WU_zQ6lXw-VEU7656Z7TMOBFVc-Gy3HM4qXd1g8mbEZFSwSr5c15drxu4VCDP0-wEKHqV2_RqDWwCJFII1NRysmFkunq7BgwO06GYdt810O7xrxvtZGIhAfTadoLURVM7abfj184yG_HxFsPiwsDgAN8h3hlV21yv7_1LtHZ6ywjZC32R9vJbsbopRiGWUVDpoDdppDPUaYslXNjDBxj_qRGAr8ihVQbIwkMM6HgsWggygW1KHOMolyT-h0eMEojpunQKnpJa8x20yRxuKOUZaE3LoZaCTiD1JyE7cxnAeMK6jDCsWulkMIyAKeBrLVyPVDfFakABtyph2HwhLtFWSBdDnF1LiWrQh5oGyO4qJsIv2SfV9AjXFgNsi5MIuJ5kEMFjp0E2RV8RT6IUM5eEzcNhPMaiovTX9-dOjH3B0hUmp-8X4aCsNJ0P0cmdWWYp6G6fKrGHodnkPmenlaz45oy2-0esrXI59vW3IES2aL4Oks4qOYFpU3rEQbRbx7UAih3IshDI9L-5OkxkOiNgTnNTBZj7C4dYsnWBCjZW63Mphjiz3AIBmQ1hgapuMuJAsZkQT4uS3fw25VcCb5av2xAbTGE-g1ABgs-3EI0456P8vyCmynHpC9E2hn653m3JUUyv7dM8PZilU3CmOdl5PENABVb5d_izZogV-4p2AG6SC96-lwk2hRD4g6N73xk2Saug3xeSAVFMhk0lZ4Z5kwVZDAvy2l3uS2x"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "cls": "hint-image-link",
+    "text": "",
+    "html": "<button type=\"button\" class=\"hint-image-link\"><img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AZdZNYX3HHQ2HdOZbEJbGU5sANvquRxBPQpHgGN-d8wRlkiKJUBmtxf340vT2WeS0T_NHSrwyyZJPfiVgYV1MGr5e1EF6brTv_LJSS2e5YdN2ScLJGEvgGFfubhwk8mWG6fcKhpvMniFgSOfgoxqaknQxoUttaUN1Nk-xwZgNSvo8fkoxGjdsA0tYDzCY9qOET9MlKFD8pHoZOkC829-9uWj-6Cbel15F98WpYVbKvb_IFeO7FDQ2b0CSJdrXdwXEB8mz0BhWwXDWB_lpnyWKTO5tb_Wy0RUf7PbuAlpKNfqiXfGI8JST7WKnt6ZLQio0SMy2BmA96SksfPsDJEmFW_PZWggBGc6nG8tJffokrv0ETCMCe-MgPhqJHOnnPsAmNRBNVB6MH_I3CUewYyICrUWbZlovNt7o20A3MJvppHGPLS9rkwzznYAd3eW5uhBeds0qcSmNzRW1qYhYBRNHDPzj5bQCNgatTEp2bKM7sKjA8snW6lgUBzoisksEYrzuXlYJmrdMVezZK4zK7M7Q8JMwggyw_yykFQBRgAIkDYvgnsgC5G5Ztr0zG9fVHfzNoWNiw5xAw9sW60vSrfQtuX2yxkdqiGcEDk7nUq2mJjYwvIcRMOKHuumwktVBfkuXmdJsk3MDMoe_UUEIfBbFBnpJ2MR31czbq3w2cuxOWKnvbC6mECgbfie9dVBojtoVBp2maL5lYn6Og0hsNDNtTqeykcjn1NFMlplc8Qrb-IkRDkX_eqULrNWcLzovN_sAzP0FSsdL7O03hr3NjlYk5sWE8Zl8jGYm9jHdtg67XU_iU1FbUWgIwfqroH2Qkqmw0mL_3mzj7j7y9CCVj5D5QY137zB7-bYSzSEEkLaIqK8KpdrAN-VgZo5oa8fb0yOHAXJykYccYd7y3tLux5m7cq-yeV7YdW1GYzDUP4i1lPydHUSdm9DmQML1X3RPmvwI7o5DU234AWi1Mhdg3S-32XXP0-GAEVhOyOlRHNMGbY5rh6hNGW2Bjtj9L4KsPpnj-PdOX7KqBcWt1mMl4bzsECGjfdmal0iPSF-p45aEZuTjFwWo2bL97tn8OH9MNgAs5R1OcOcqBrMpkp8QxQ8DrytUqXJnFui8RhLYm7EC_ZYwzjtjZh19mJxhjz5m1ChyKuofgFwjyKxPhlAn1b8oFTUryh6xpCD65cH63MGc1eQtGblhh5ic4IleBXGj1lgkhRJj0j-tT_4xPwQwyqCCWmervM2iDqRlMuIK9dxI2merhfPJmSikJcG"
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "cls": "hint-image",
+    "text": "",
+    "html": "<img class=\"hint-image\" src=\"https://secure-images-proxy.pulsar-eec.workers.dev/i/AZdZNYX3HHQ2HdOZbEJbGU5sANvquRxBPQpHgGN-d8wRlkiKJUBmtxf340vT2WeS0T_NHSrwyyZJPfiVgYV1MGr5e1EF6brTv_LJSS2e5YdN2ScLJGEvgGFfubhwk8mWG6fcKhpvMniFgSOfgoxqaknQxoUttaUN1Nk-xwZgNSvo8fkoxGjdsA0tYDzCY9qOET9MlKFD8pHoZOkC829-9uWj-6Cbel15F98WpYVbKvb_IFeO7FDQ2b0CSJdrXdwXEB8mz0BhWwXDWB_lpnyWKTO5tb_Wy0RUf7PbuAlpKNfqiXfGI8JST7WKnt6ZLQio0SMy2BmA96SksfPsDJEmFW_PZWggBGc6nG8tJffokrv0ETCMCe-MgPhqJHOnnPsAmNRBNVB6MH_I3CUewYyICrUWbZlovNt7o20A3MJvppHGPLS9rkwzznYAd3eW5uhBeds0qcSmNzRW1qYhYBRNHDPzj5bQCNgatTEp2bKM7sKjA8snW6lgUBzoisksEYrzuXlYJmrdMVezZK4zK7M7Q8JMwggyw_yykFQBRgAIkDYvgnsgC5G5Ztr0zG9fVHfzNoWNiw5xAw9sW60vSrfQtuX2yxkdqiGcEDk7nUq2mJjYwvIcRMOKHuumwktVBfkuXmdJsk3MDMoe_UUEIfBbFBnpJ2MR31czbq3w2cuxOWKnvbC6mECgbfie9dVBojtoVBp2maL5lYn6Og0hsNDNtTqeykcjn1NFMlplc8Qrb-IkRDkX_eqULrNWcLzovN_sAzP0FSsdL7O03hr3NjlYk5sWE8Zl8jGYm9jHdtg67XU_iU1FbUWgIwfqroH2Qkqmw0mL_3mzj7j7y9CCVj5D5QY137zB7-bYSzSEEkLaIqK8KpdrAN-VgZo5oa8fb0yOHAXJykYccYd7y3tLux5m7cq-yeV7YdW1GYzDUP4i1lPydHUSdm9DmQML1X3RPmvwI7o5DU234AWi1Mhdg3S-32XXP0-GAEVhOyOlRHNMGbY5rh6hNGW2Bjtj9L4KsPpnj-PdOX7KqBcWt1mMl4bzsECGjfdmal0iPSF-p45aEZuTjFwWo2bL97tn8OH9MNgAs5R1OcOcqBrMpkp8QxQ8DrytUqXJnFui8RhLYm7EC_ZYwzjtjZh19mJxhjz5m1ChyKuofgFwjyKxPhlAn1b8oFTUryh6xpCD65cH63MGc1eQtGblhh5ic4IleBXGj1lgkhRJj0j-tT_4xPwQwyqCCWmervM2iDqRlMuIK9dxI2merhfPJmSikJcGB2oZIqU2EoSlxrJr0z6_TNnRK0wQs-s8TYWre2DR5ryMk-"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "cls": "hint-reasoning",
+    "text": "Standard technical logo for movie posters.",
+    "html": "<div class=\"hint-reasoning\">Standard technical logo for movie posters.</div>"
+  },
+  {
+    "tag": "H2",
+    "id": "contextual-hints",
+    "cls": "",
+    "text": "Contextual Hints",
+    "html": "<h2 id=\"contextual-hints\"><strong>Contextual Hints</strong></h2>"
+  }
+]

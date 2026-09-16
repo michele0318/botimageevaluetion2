@@ -1,0 +1,27 @@
+{
+  "title": "Complementary colours — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/complementary-colors",
+  "source_hash": "b0edcaa908d2de2db7e02a59e64c66de5741bd31c40567fcf0b9b80075d7dea9",
+  "rules": [
+    {
+      "rule": "If two paints are mixed to create a grey, they are mixing complements; visual complements (which produce afterimages) do not necessarily mix to grey.",
+      "evidence": "Mixing complements — two paints, dyes or inks that can be mixed in some proportion to make a grey."
+    },
+    {
+      "rule": "If you stare at a saturated colour and look at a white surface, the ghost image appearing is the visual complement, which lies 180° opposite on the perceptual hue plane.",
+      "evidence": "Visual complements — two colours at opposite ends of a straight line drawn through the neutral centre of a perceptual hue plane. This is the pair your eye pairs, and the one the afterimage shows you."
+    },
+    {
+      "rule": "If two colours have equal lightness, equal chroma, and a hard boundary between them, the viewer will perceive the edge as buzzing.",
+      "evidence": "If the pair sits at the same value and the same chroma with a hard edge between them, expect the boundary to buzz."
+    },
+    {
+      "rule": "If you attempt to darken a colour by adding its visual complement, the mixture will lose chroma faster than it loses lightness and may not become neutral grey.",
+      "evidence": "Add the complement and you lose chroma faster than you lose lightness."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 3313,
+  "output_tokens": 267,
+  "processed_at": "2026-09-13T09:25:42"
+}

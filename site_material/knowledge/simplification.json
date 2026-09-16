@@ -1,0 +1,19 @@
+{
+  "title": "Simplification — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/simplification",
+  "source_hash": "b9319fac7dcbf14672dcb64d181f3165b22088683cb8a00bdcc8dc9ef1fad850",
+  "rules": [
+    {
+      "rule": "If an image has many competing elements, remove those that do not earn attention to restore a single subject.",
+      "evidence": "Simplification is the practice of deciding what the attention is being spent on, by removing the things that are spending it without earning it."
+    },
+    {
+      "rule": "If density is the intended subject (like a crowd), do not remove elements as this would reduce the content itself.",
+      "evidence": "When density is the subject — a city, a crowd, an economy, a festival — reducing it would be reducing the content."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2566,
+  "output_tokens": 244,
+  "processed_at": "2026-09-13T09:38:48"
+}

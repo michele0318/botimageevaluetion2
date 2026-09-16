@@ -1,0 +1,45 @@
+{
+  "id": "732b98d1de5bd22ade3f42609f8af963130729052253c6aba4a0ad12afd64aa0",
+  "prompt": "“self storage” logo",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: The images are very similar and have issues with the text, but image 2 has more of them. Therefore, image 1 should be chosen.",
+  "split": "train",
+  "image_group": "65cbac62ea2a6c790f2fd5ad20e8b31dc403496707c8ee8f6b5fa729980db614",
+  "image_hashes": [
+    "6c5426f948864c53ad22dc36f574479b2ff506354d5f9d5ee350efee41e53a06",
+    "b84d51739342c090a6221853d974e779bcb815cf9599ed779ec1fe0dead5eef2"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "ef466ed7385a164a249f75681408773298e27e8154adec7311a96375ef5d2008",
+      "corrected": false,
+      "time": "2026-09-13T21:56:26"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "ef466ed7385a164a249f75681408773298e27e8154adec7311a96375ef5d2008",
+      "corrected": true,
+      "time": "2026-09-13T21:56:29"
+    }
+  ],
+  "observed_feedback": "Please take another look:The images are very similar and have issues with the text, but image 2 has more of them. Therefore, image 1 should be chosen.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T21:56:27"
+    }
+  ],
+  "feedback": "The images are very similar and have issues with the text, but image 2 has more of them. Therefore, image 1 should be chosen.",
+  "lesson": "If requested style is not specified, prioritize the image with fewer text issues; do not choose based on style unless explicitly requested.",
+  "lesson_evidence": "The images are very similar and have issues with the text, but image 2 has more of them. Therefore, image 1 should be chosen.",
+  "lesson_source": "The images are very similar and have issues with the text, but image 2 has more of them. Therefore, image 1 should be chosen."
+}

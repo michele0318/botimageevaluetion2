@@ -1,0 +1,10 @@
+{
+  "title": "Hue, value and chroma — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions",
+  "source_hash": "7d75a052fc8d84b87f6c7118f7b457c9e23bc2f653fac7a9352f9b3ec45f55dc",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2362,
+  "output_tokens": 358,
+  "processed_at": "2026-09-13T09:24:50"
+}

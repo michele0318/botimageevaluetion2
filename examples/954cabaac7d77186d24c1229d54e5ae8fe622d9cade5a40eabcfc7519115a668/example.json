@@ -1,0 +1,45 @@
+{
+  "id": "954cabaac7d77186d24c1229d54e5ae8fe622d9cade5a40eabcfc7519115a668",
+  "prompt": "TRANSLATION: 'Sufi dervishes in a large mosque, surrounded by lights and dimensions.'\n\nORIGINAL : 'دراويش صوفيين في مسجد كبير وحولهم انوار وابعاد.'",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 wins on composition and atmosphere: it is cinematic, with a figure in the foreground that leads the eye and depth behind it, and the figures hold different poses so the frame feels alive. In image 2 the composition is dull and the repeated identical poses make it look generated.",
+  "split": "train",
+  "image_group": "9a5b4c7e19495b812932db2a0d68ad047e4657b7b62d8cee303282d02f6e7cad",
+  "image_hashes": [
+    "f3a039a4d48b764a8ab672bbc53d31e695e772d6883155e329fcd447afbe035d",
+    "d5eaa41b65996f322efe74faa1f274b3d05cea975efa785355aca9b0f44cfb88"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "3e3d1bf11a5b87e273362e049b5dd5696049f73e04a7268276f2b093caba4a91",
+      "corrected": false,
+      "time": "2026-09-13T21:53:49"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "3e3d1bf11a5b87e273362e049b5dd5696049f73e04a7268276f2b093caba4a91",
+      "corrected": true,
+      "time": "2026-09-13T21:53:53"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 wins on composition and atmosphere: it is cinematic, with a figure in the foreground that leads the eye and depth behind it, and the figures hold different poses so the frame feels alive. In image 2 the composition is dull and the repeated identical poses make it look generated.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:53:51"
+    }
+  ],
+  "feedback": "Image 1 wins on composition and atmosphere: it is cinematic, with a figure in the foreground that leads the eye and depth behind it, and the figures hold different poses so the frame feels alive. In image 2 the composition is dull and the repeated identical poses make it look generated.",
+  "lesson": "If a requested style is specified, prioritize dynamic composition and varied poses to enhance visual interest and cinematic atmosphere over static repetition; style preference only applies when explicitly requested.",
+  "lesson_evidence": "Image 1 wins on composition and atmosphere: it is cinematic, with a figure in the foreground that leads the eye and depth behind it, and the figures hold different poses so the frame feels alive. In image 2 the composition is dull and the repeated identical poses make it look generated.",
+  "lesson_source": "Image 1 wins on composition and atmosphere: it is cinematic, with a figure in the foreground that leads the eye and depth behind it, and the figures hold different poses so the frame feels alive. In image 2 the composition is dull and the repeated identical poses make it look generated."
+}

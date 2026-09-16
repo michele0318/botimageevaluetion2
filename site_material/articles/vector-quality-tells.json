@@ -1,0 +1,208 @@
+{
+  "title": "What a bad vector file looks like — Image Wiki",
+  "text": "\n  \n\n  What a bad vector file looks like\n  The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n\n  \n    Termvector quality defects\n    Also calledhairline stroke, miter spike, gradient banding, clipping mask, pattern seam, auto-trace, vector defects\n    Not the same astaste, style, drawing skill\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        At 16 pixels: detail that has nowhere to goHairlines: strokes with nothing to draw them withMiter spikes on sharp cornersBanding in gradientsClipped, not removedPattern seamsFont substitutionAuto-trace mushSmall things that are still faults\n      \n    \n  \n\n  Vector artwork mostly fails at two sizes: very small, and very large. In between, almost anything looks acceptable. So the review is not \"does this look good on my screen\" — it is \"look at it at 16 pixels, then look at one edge at 1600%\".\nEverything below is a defect with a cause, not a matter of taste. Say which one you found and it can be fixed in a minute.\nAt 16 pixels: detail that has nowhere to go\n\n152 px48 px24 px16 pxOne file, four sizes. Nothing is redrawn between them.The inner ring is 4 units wide on a mark 152 units across, so it is 0.6 px at 24 px and 0.4 px at 16 px.The four ticks go first, then the inner ring. At 16 px what is left is a heavy ring with a dot in it.\n\nThe file is not damaged and nothing needs repairing in it. There are simply not enough pixels for a ring four units wide on a mark a hundred and fifty-two units across.\nThis is a drawing decision, and Logo reproduction tests is where it belongs. Report it as \"does not survive 16 px\", not as \"bad file\".\n\n\nHairlines: strokes with nothing to draw them with\nStroke width lives in user units, and the default is 1. Set it small enough and the line still exists in the geometry while having no physical width to speak of at output.\n\nstroke width 0.1 ptstroke width 0.75 ptA hairlinebelow one screen pixel and below what a press can hold: it drops outA weight the process can printthe same geometry, drawn with something to draw it with\n\nSame geometry, one variable: stroke width.\nA stroke around 0.1 pt is below one pixel on a normal screen and below what most presses can lay down. It renders as a pale grey ghost, or drops out entirely, or — worse — survives in one proof and disappears in the next.\nWhere it comes from: artwork scaled down without scaling its strokes, imported CAD or map data, or a default \"hairline\" setting from an old tool.\nWhere to look: thin rules, table borders, keylines around a logo, the inner details of an emblem. Check at final size, not at 100%.\n\n\nMiter spikes on sharp corners\nAt a corner, a mitred join extends the outer edges of the stroke until they meet. On a shallow angle that meeting point can be a long way from the corner. The spec's answer is stroke-miterlimit, whose initial value is 4: past that ratio, a miter join falls back to a bevel.\n\nstroke-miterlimit: 12stroke-miterlimit: 443 px past the artworkthe join stops at the limitA raised limita corner this sharp grows a spike out of nothingThe default limit of 4past the limit the join falls back to a flat bevel\n\nSame corner, same stroke width, one variable: the miter limit.\nLeft, a raised limit. The join reaches 43 pixels past the drawing, straight out of the artwork's own bounding box — which is how a star or an arrowhead grows a whisker nobody drew, and how a logo ends up cropped by its own container.\nRight, the default. The corner is cut flat instead.\nWhere to look: stars, arrowheads, italic strokes, any pointed leaf or flame shape, and any artwork whose bounding box is mysteriously bigger than the visible shape.\n\n\nBanding in gradients\nA gradient is stops plus interpolation: each stop names a colour at an offset and the renderer fills in between. Bands appear when there are not enough distinct values to fill in with — a blend built from too few steps, a gradient flattened to a small palette, or a long subtle ramp squeezed into 8 bits per channel.\n\nOne rampno edge anywhere in itNine stepsbanding: countable bands, and edges nobody drew\n\nSame two end colours, one variable: how many values there are in between.\nThe tell is that the edges are evenly spaced and perpendicular to the ramp. Real edges in artwork are placed by a person and are not regular.\nWhere to look: large flat skies and backgrounds, soft shadows behind a card, anything that went through a \"flatten transparency\" step. Print introduces its own version of this; see Colour management.\n\n\nClipped, not removed\nClipping is all-or-nothing: MDN's phrasing is that any half-transparent effect is impossible, and the clipping shape itself is never painted — its geometry only decides which pixels of the content survive. The content it hides is still in the file.\n\ntidy, and heavyClipped to the artboardwhat the reader sees, and what the dashed frame marksStill all in therethe hidden artwork comes back the moment the file is converted\n\nSame file, one variable: whether the clip is applied.\nEverything outside the frame is still stored, still counted in the bounding box by some tools, and still there when the file is converted, placed in another document, or opened by software that handles the clip differently. It is also why a 200-kilobyte-looking logo arrives as 40 megabytes.\nStock libraries reject this outright for the same reason: Shutterstock requires that \"any objects outside of the artboard or hidden layers should be removed from the file before submitted\" — platform-specific wording for a general hygiene rule.\nWhere to look: file size against apparent complexity; a bounding box larger than the visible art; content that reappears after an export.\n\n\nPattern seams\nA pattern paints by repeating a tile. MDN calls patterns \"arguably one of the more confusing fill types to use in SVG\", largely because the tile and its contents can be measured in two different coordinate systems. When the tile's edges do not meet exactly, the join shows.\n\nTiles that meetthe only lines are the ones in the motifTiles that do not quite meeta faint grid at exactly the tile spacing\n\nSame motif, one variable: whether the tile fills its own cell.\nThe giveaway is regularity. A faint grid at exactly one spacing, running the whole width of the fill, is a tile boundary — not texture, not a design choice, and not something a viewer's screen invented.\nWhere to look: backgrounds, fabric and packaging fills, map hatching. Zoom to a size where one tile is a few centimetres and pan along the field.\n\n\nFont substitution\n\nthe font the file asks fora substitute with wider lettersDownload the reportDownload the reportthe button ends hereTwo lines of heading thatthe designer set to twoTwo lines of headingthat the designer setto twoNothing to reportthe label fits and the heading keeps its two linesThe same file, one font missingthe label overruns and a third line lands on the rule\n\nThe file asked for a font that was not there. The substitute has different widths, so the label no longer fits its button and the heading no longer fits the two lines it was given.\nThe tell is usually not ugliness — it is a collision: text touching a rule, a label wider than its button, a caption rewrapped to three lines. See AI, EPS and PDF for the live-text-versus-outlined trade this comes from.\n\n\nAuto-trace mush\n\nthe photograph: value changes at every row of pixelsthe trace: five flat fills and four boundaries nobody drewContinuousno edges in it, because there are no edges in the subjectAuto-tracedseams that wander, with an anchor wherever the tracer turnedThe tell is the seam. A drawn gradient has two stops and no boundary; a traced one has a contour per band,wandering where the sampling wandered, and an anchor wherever the tracer changed its mind.\n\nThree signatures, all visible without any tool: flat bands where the original had a continuous roll, seams that wander because the sampling wandered, and anchor points every few pixels along each of them.\nA fourth often comes with them — a pale halo where the trace of a dark shape stopped short of a light background, or vice versa.\nWhere to look: logos \"vectorised\" from a JPEG, artwork sold as vector at suspiciously low prices, anything whose curves ripple at 6x. See Paths and curves.\n\n\nSmall things that are still faults\n\nStray points and duplicate anchors. Invisible on screen, and they break offsets, cutting paths and boolean operations.\nStrokes where fills were needed. A stroked shape scaled up keeps its stroke width unless the stroke was set to scale, so a logo enlarged for a sign can arrive with hairline outlines around fat shapes.\nText left live in a file going somewhere without the font. See above.\nEffects that only exist in one editor. Live blends, live shadows and mesh gradients often flatten to raster on export; check the exported file, not the working file.\nA raster image hiding inside. The most common single fault in \"vector\" deliverables — how to check is in What an SVG actually contains.\n\n\nA five-minute vector review\n\nRender at 16 px. What survives?\nZoom one curved edge to 1600%. Pixels, ripple, or clean?\nLook at every sharp corner for a spike.\nDrop the artwork on a coloured background: are all the holes real?\nLook along every gradient for evenly-spaced edges, and along every tiled fill for a regular grid.\nTry to select the text. Then ask about fonts.\nCompare file size against apparent complexity, and check for content outside the artboard.\n\n\n\nSeparate the defect from the drawing\n\"The strokes are 0.1 pt and will not print\" is a defect: measurable, fixable, not arguable. \"The mark is too intricate\" is a judgement about the design, which may be entirely deliberate. Both are worth saying — but say which one you are saying.\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Paths and curves\n              What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n            \n          \n        \n          \n            \n              AI, EPS and PDF\n              Three containers people call \"vector formats\". What each really holds, what survives being opened somewhere else, and what outlining the text destroys on the way.\n            \n          \n        \n          \n            \n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            \n          \n        \n          \n            \n              Logo reproduction tests\n              The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n            \n          \n        \n          \n            \n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        VEC-005 — W3C — SVG 2, Painting: Filling, Stroking and Marker SymbolsVEC-010 — MDN — SVG from scratch: Fills and strokesVEC-011 — MDN — SVG from scratch: Clipping and maskingVEC-012 — MDN — SVG from scratch: PatternsVEC-027 — MDN — SVG from scratch: GradientsVEC-004 — W3C — SVG 2, PathsVEC-018 — Shutterstock (platform-specific) — Vector and illustration quality requirements\n      \n    \n  \n\n  \n",
+  "headings": [
+    "What a bad vector file looks like",
+    "At 16 pixels: detail that has nowhere to go",
+    "Hairlines: strokes with nothing to draw them with",
+    "Miter spikes on sharp corners",
+    "Banding in gradients",
+    "Clipped, not removed",
+    "Pattern seams",
+    "Font substitution",
+    "Auto-trace mush",
+    "Small things that are still faults",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n152 px48 px24 px16 pxOne file, four sizes. Nothing is redrawn between them.The inner ring is 4 units wide on a mark 152 units across, so it is 0.6 px at 24 px and 0.4 px at 16 px.The four ticks go first, then the inner ring. At 16 px what is left is a heavy ring with a dot in it.\n\nThe file is not damaged and nothing needs repairing in it. There are simply not enough pixels for a ring four units wide on a mark a hundred and fifty-two units across.\nThis is a drawing decision, and Logo reproduction tests is where it belongs. Report it as \"does not survive 16 px\", not as \"bad file\".\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nstroke width 0.1 ptstroke width 0.75 ptA hairlinebelow one screen pixel and below what a press can hold: it drops outA weight the process can printthe same geometry, drawn with something to draw it with\n\nSame geometry, one variable: stroke width.\nA stroke around 0.1 pt is below one pixel on a normal screen and below what most presses can lay down. It renders as a pale grey ghost, or drops out entirely, or — worse — survives in one proof and disappears in the next.\nWhere it comes from: artwork scaled down without scaling its strokes, imported CAD or map data, or a default \"hairline\" setting from an old tool.\nWhere to look: thin rules, table borders, keylines around a logo, the inner details of an emblem. Check at final size, not at 100%.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nstroke-miterlimit: 12stroke-miterlimit: 443 px past the artworkthe join stops at the limitA raised limita corner this sharp grows a spike out of nothingThe default limit of 4past the limit the join falls back to a flat bevel\n\nSame corner, same stroke width, one variable: the miter limit.\nLeft, a raised limit. The join reaches 43 pixels past the drawing, straight out of the artwork's own bounding box — which is how a star or an arrowhead grows a whisker nobody drew, and how a logo ends up cropped by its own container.\nRight, the default. The corner is cut flat instead.\nWhere to look: stars, arrowheads, italic strokes, any pointed leaf or flame shape, and any artwork whose bounding box is mysteriously bigger than the visible shape.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nOne rampno edge anywhere in itNine stepsbanding: countable bands, and edges nobody drew\n\nSame two end colours, one variable: how many values there are in between.\nThe tell is that the edges are evenly spaced and perpendicular to the ramp. Real edges in artwork are placed by a person and are not regular.\nWhere to look: large flat skies and backgrounds, soft shadows behind a card, anything that went through a \"flatten transparency\" step. Print introduces its own version of this; see Colour management.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\ntidy, and heavyClipped to the artboardwhat the reader sees, and what the dashed frame marksStill all in therethe hidden artwork comes back the moment the file is converted\n\nSame file, one variable: whether the clip is applied.\nEverything outside the frame is still stored, still counted in the bounding box by some tools, and still there when the file is converted, placed in another document, or opened by software that handles the clip differently. It is also why a 200-kilobyte-looking logo arrives as 40 megabytes.\nStock libraries reject this outright for the same reason: Shutterstock requires that \"any objects outside of the artboard or hidden layers should be removed from the file before submitted\" — platform-specific wording for a general hygiene rule.\nWhere to look: file size against apparent complexity; a bounding box larger than the visible art; content that reappears after an export.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nTiles that meetthe only lines are the ones in the motifTiles that do not quite meeta faint grid at exactly the tile spacing\n\nSame motif, one variable: whether the tile fills its own cell.\nThe giveaway is regularity. A faint grid at exactly one spacing, running the whole width of the fill, is a tile boundary — not texture, not a design choice, and not something a viewer's screen invented.\nWhere to look: backgrounds, fabric and packaging fills, map hatching. Zoom to a size where one tile is a few centimetres and pan along the field.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nthe font the file asks fora substitute with wider lettersDownload the reportDownload the reportthe button ends hereTwo lines of heading thatthe designer set to twoTwo lines of headingthat the designer setto twoNothing to reportthe label fits and the heading keeps its two linesThe same file, one font missingthe label overruns and a third line lands on the rule\n\nThe file asked for a font that was not there. The substitute has different widths, so the label no longer fits its button and the heading no longer fits the two lines it was given.\nThe tell is usually not ugliness — it is a collision: text touching a rule, a label wider than its button, a caption rewrapped to three lines. See AI, EPS and PDF for the live-text-versus-outlined trade this comes from.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nthe photograph: value changes at every row of pixelsthe trace: five flat fills and four boundaries nobody drewContinuousno edges in it, because there are no edges in the subjectAuto-tracedseams that wander, with an anchor wherever the tracer turnedThe tell is the seam. A drawn gradient has two stops and no boundary; a traced one has a contour per band,wandering where the sampling wandered, and an anchor wherever the tracer changed its mind.\n\nThree signatures, all visible without any tool: flat bands where the original had a continuous roll, seams that wander because the sampling wandered, and anchor points every few pixels along each of them.\nA fourth often comes with them — a pale halo where the trace of a dark shape stopped short of a light background, or vice versa.\nWhere to look: logos \"vectorised\" from a JPEG, artwork sold as vector at suspiciously low prices, anything whose curves ripple at 6x. See Paths and curves.\n\n",
+      "images": []
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "At 16 pixels: detail that has nowhere to go",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#at-16-pixels-detail-that-has-nowhere-to-go"
+    },
+    {
+      "text": "Hairlines: strokes with nothing to draw them with",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#hairlines-strokes-with-nothing-to-draw-them-with"
+    },
+    {
+      "text": "Miter spikes on sharp corners",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#miter-spikes-on-sharp-corners"
+    },
+    {
+      "text": "Banding in gradients",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#banding-in-gradients"
+    },
+    {
+      "text": "Clipped, not removed",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#clipped-not-removed"
+    },
+    {
+      "text": "Pattern seams",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#pattern-seams"
+    },
+    {
+      "text": "Font substitution",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#font-substitution"
+    },
+    {
+      "text": "Auto-trace mush",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#auto-trace-mush"
+    },
+    {
+      "text": "Small things that are still faults",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#small-things-that-are-still-faults"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#at-16-pixels-detail-that-has-nowhere-to-go"
+    },
+    {
+      "text": "Logo reproduction tests",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#hairlines-strokes-with-nothing-to-draw-them-with"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#miter-spikes-on-sharp-corners"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#banding-in-gradients"
+    },
+    {
+      "text": "Colour management",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#clipped-not-removed"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#pattern-seams"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#font-substitution"
+    },
+    {
+      "text": "AI, EPS and PDF",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#auto-trace-mush"
+    },
+    {
+      "text": "Paths and curves",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells#small-things-that-are-still-faults"
+    },
+    {
+      "text": "What an SVG actually contains",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n              Paths and curves\n              What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+    },
+    {
+      "text": "\n              AI, EPS and PDF\n              Three containers people call \"vector formats\". What each really holds, what survives being opened somewhere else, and what outlining the text destroys on the way.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+    },
+    {
+      "text": "\n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n              Logo reproduction tests\n              The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+    },
+    {
+      "text": "\n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "VEC-005 — W3C — SVG 2, Painting: Filling, Stroking and Marker Symbols",
+      "href": "https://www.w3.org/TR/SVG2/painting.html"
+    },
+    {
+      "text": "VEC-010 — MDN — SVG from scratch: Fills and strokes",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Fills_and_strokes"
+    },
+    {
+      "text": "VEC-011 — MDN — SVG from scratch: Clipping and masking",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Clipping_and_masking"
+    },
+    {
+      "text": "VEC-012 — MDN — SVG from scratch: Patterns",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Patterns"
+    },
+    {
+      "text": "VEC-027 — MDN — SVG from scratch: Gradients",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Gradients"
+    },
+    {
+      "text": "VEC-004 — W3C — SVG 2, Paths",
+      "href": "https://www.w3.org/TR/SVG2/paths.html"
+    },
+    {
+      "text": "VEC-018 — Shutterstock (platform-specific) — Vector and illustration quality requirements",
+      "href": "https://submit.shutterstock.com/help/en/articles/10594650-vector-and-illustration-quality-requirements"
+    },
+    {
+      "text": "\n        PreviousAI, EPS and PDF",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+    },
+    {
+      "text": "\n        NextHow images mean",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-images-mean"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+}

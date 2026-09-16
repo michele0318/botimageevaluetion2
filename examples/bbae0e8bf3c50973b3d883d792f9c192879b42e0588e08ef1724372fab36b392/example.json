@@ -1,0 +1,45 @@
+{
+  "id": "bbae0e8bf3c50973b3d883d792f9c192879b42e0588e08ef1724372fab36b392",
+  "prompt": "Abstract 3D render metal blob sculpture, dramatic studio lighting, shallow depth of field with blurred background, moody monochromatic tones, heavy grainy texture",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 features a highly interesting and conceptual form, elevated by excellent lighting, precise placement, and a great sense of depth. Image 2 falls short, failing to achieve the same compelling composition and atmospheric depth.",
+  "split": "train",
+  "image_group": "8db099b039b0175d979cc293f2bf267ad166830a3534e37cd6e01728b3614520",
+  "image_hashes": [
+    "da8e65cb620190b08c9dc258a533beade3c61cda9da897b8b55b351fe5286539",
+    "24c753f58f45345dc97cc94f63a87605c910ebf8f46fe7e1c9d7b3384c6cdd3f"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "cd4d9945f7e466f95867aba013685bed811b7266475aa0be4afa9508e95145ac",
+      "corrected": false,
+      "time": "2026-09-13T22:06:34"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "cd4d9945f7e466f95867aba013685bed811b7266475aa0be4afa9508e95145ac",
+      "corrected": true,
+      "time": "2026-09-13T22:06:42"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 features a highly interesting and conceptual form, elevated by excellent lighting, precise placement, and a great sense of depth. Image 2 falls short, failing to achieve the same compelling composition and atmospheric depth.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:06:40"
+    }
+  ],
+  "feedback": "Image 1 features a highly interesting and conceptual form, elevated by excellent lighting, precise placement, and a great sense of depth. Image 2 falls short, failing to achieve the same compelling composition and atmospheric depth.",
+  "lesson": "When requested, prioritize lighting, depth of field, and atmospheric tone over texture or form alone; style is context-dependent and must match the prompt’s mood and composition goals.",
+  "lesson_evidence": "Image 1 features a highly interesting and conceptual form, elevated by excellent lighting, precise placement, and a great sense of depth.",
+  "lesson_source": "Image 1 features a highly interesting and conceptual form, elevated by excellent lighting, precise placement, and a great sense of depth. Image 2 falls short, failing to achieve the same compelling composition and atmospheric depth."
+}

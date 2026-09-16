@@ -1,0 +1,10 @@
+{
+  "archived_images": 233,
+  "decoded_images": 232,
+  "invalid_or_unsupported": [
+    "images/642e20283b4ab332b9320f524908f2ef50508f189bb58906d5eccb8681fb674c.bin"
+  ],
+  "teaching_examples": 181,
+  "exact_test_image_pixels_excluded": true,
+  "weights_trained": false
+}

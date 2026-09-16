@@ -1,0 +1,12 @@
+{
+  "id": "c58a55e11fdb6a1d97d20a41337989a78ad867d4439071b59e34c8e69e468890",
+  "prompt": "3D render of figure in oversized quilted hooded jacket, orange and grey spiral stripes, sculptural fabric face mask, brown background, half body",
+  "correct_choice": null,
+  "verification": "",
+  "split": "train",
+  "image_group": "690cb9a78c7a0cad65b323808802c7f3d5f37c9e0ff85767704872463d19e4a1",
+  "image_hashes": [
+    "4fd20d2eae2c30b7b34ea24601a427f9ebc9d073f3f887e0fc8edae5ea61e2da",
+    "8803f8ccc1359a253f0ab89f09d57e708ec5143ec09fccb367bc7c58cee067f3"
+  ]
+}

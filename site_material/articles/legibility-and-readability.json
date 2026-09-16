@@ -1,0 +1,172 @@
+{
+  "title": "Legibility and readability — Image Wiki",
+  "text": "\n  \n\n  Legibility and readability\n  Two different measurements that get treated as one — whether you can tell the characters apart, and whether you can get through a paragraph without effort.\n\n  \n    Termlegibility / readability\n    Also calledletter distinguishability, reading comfort, type accessibility\n    Not the same aslegibility vs readability, contrast in type design vs colour contrast, font size vs apparent size\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        Why the two come apartThe pairs worth checkingAperture, and why counters matterWhat accessibility addsCommon mistakes\n      \n    \n  \n\n  Think of the last time you typed a code off a screen and got it wrong. l1lI on a bank token, 0O in a licence key, a street sign where you could not tell Bourne from Boume. Now think of the last long article you gave up on. You could identify every letter fine. The lines were too long, or too crammed, and your eye kept losing its place.\nTwo separate failures, and typography has two words for them. Google Fonts defines them cleanly: legibility is \"how distinguishable individual characters and words are to the eye of the reader\"; readability is \"how easy it is to read the text overall.\"\nThe trap is that they come apart.\n\n\n\nGoogle Fonts Knowledge, \"Introducing accessibility in typography\". Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nTwo different measurements in one picture. Top row is legibility, and it is decided glyph by glyph: on the left the vertical strokes are interchangeable, on the right the 1 has a flag and the I has crossbars, so you can name each one on sight.\nBottom row is readability, and it is decided by the setting rather than the drawing. Both paragraphs are the same typeface. The left one is set larger against a fixed line height, so the lines are jammed together and the descenders push into the row below; the right one is smaller and breathes. Nothing about the letterforms changed.\n\n\nWhy the two come apart\nLegibility asks about a single glyph in isolation: given a smear of ink or a handful of pixels, can you decide which character it is? It is settled by shape — the aperture, the terminal, whether the b is a mirrored d.\nReadability asks about a stream. Reading is not a glide. Your eye jumps in short hops, fixates, jumps again, and about once per line makes a long backwards-and-down jump to find the start of the next one. Anything that makes that machinery stumble hurts readability: an over-long line, leading so tight the lines merge into grey (Measure and line height), letters crowded until words blur. Google Fonts names crowding explicitly — \"when too many letters are too close to each other… words may blur or seem to disappear.\"\nSo a display face with knife-thin hairlines can be perfectly legible at 60px on a poster and unreadable as body text at 11px. And a beautifully set page in a face whose I and l are identical reads fine as prose — right up until it contains a password.\n\nrn  mIl1  0Omodern  modemr plus n, then mcapital I, lowercase l, digit 1, digit 0, capital Otwo real words, one letter apartRendered cleanly16 px on a good screen, close uprn  mIl1  0Omodern  modemr plus n, then mcapital I, lowercase l, digit 1, digit 0, capital Otwo real words, one letter apartThe same characters, degraded8 px, across a room, or with low vision\n\nThe panels contain identical characters. The only difference on the right is that the rendering has been degraded — which is what happens at 8px, at a distance, on a cheap screen, or to a reader with reduced acuity.\nWatch rn and m. On the left the gap between the r and the n is obvious. On the right it has closed, and the two groups are the same shape. modern and modem are now the same word. That is a legibility failure, and no amount of line height fixes it.\n\n\nThe pairs worth checking\nGoogle Fonts lists the specific pairs to test in any face you are judging: qp, db, 0O, nu, il1I, 69, a8, a6, 6g, and rn against m. Every one of those is a Latin pair; other scripts have their own, and their own reasons (Beyond Latin). Two mechanisms are behind the list.\nMirroring. Many letters are one shape flipped: b/d, p/q, 6/9. A reader who takes bog for dog has not misread a word, they have read a different one. Structural differences — a tail, a spur — beat cosmetic ones.\nSimple structure. Capital L, lowercase l and the digit 1 are all a single vertical stem, which is why they collapse in a plain sans. Google Fonts advises checking exactly this trio for structural changes such as a serif on the 1 or a tail on the l.\n\n\n\nGoogle Fonts Knowledge, \"Introducing accessibility in typography\" — the typefaces Andika, Lexend and Atkinson Hyperlegible. Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nThree faces drawn specifically to keep these pairs apart. Look at the third column: the zero has a slash through it, the l has a tail, the 1 has both a flag and a foot. Each of those is a deliberate structural tell, not a flourish.\n\n\nWhere the pairs matter is context, not taste. In running prose you barely need them, because the neighbouring words disambiguate — \"I got the l1cence\" is not a real risk. In a password, a wifi key, a flight number or a road sign read at 60 km/h there is no context to lean on, so every character survives alone. The less context, the more legibility has to do by itself.\nAperture, and why counters matter\n\n\n\nGoogle Fonts Knowledge, \"Introducing accessibility in typography\". Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nThe tinted shapes are the counters; the leader lines mark where each letter opens. Left, the openings are nearly shut, so a c at small size fills in and becomes an o, and an e becomes a c. Right, the same three letters with the openings held wide — Google Fonts notes that more white inside a letter also makes it look larger, which is a second, free benefit.\n\n\nWhat accessibility adds\nGoogle Fonts declines to name a single most-accessible font. What it offers is settings that stop excluding people:\n\nSize. 16px, 1em or 1rem as the smallest body size.\nContrast. WCAG AA wants 4.5:1 for small text, 3:1 for large text and graphics; 7:1 is AAA. Maximum is not the goal — Google Fonts notes that some readers with cognitive disabilities find pure black on pure white at 21:1 fatiguing, and suggests aiming for about 7:1.\nSpacing. Generous line height, a measure that does not run away, room between characters.\nDon't hard-set line height when text can be resized. Users scale type system-wide; freeze the leading and the lines overlap at the larger size.\nReal text, not pictures of text. A menu shipped as a JPEG cannot be searched, scaled or read aloud.\n\n\nTwo things called contrast\nStroke contrast is the thick-to-thin ratio inside a letterform (Type anatomy). Colour contrast is the luminance ratio between text and background. Google Fonts flags the collision explicitly. High stroke contrast usually hurts small-size legibility; high colour contrast usually helps, up to a point.\n\nCommon mistakes\n\n\"Legible and readable mean the same thing.\" One is per character, the other per paragraph. You can pass either and fail the other.\n\"A dyslexia-friendly font fixes reading difficulty.\" Google Fonts declines to name a universal winner and points to evidence that preference varies by person. Spacing and size do more reliable work.\n\"All caps is harder to read, always.\" For prose, yes — it is longer and gives every word the same rectangular shape. But Butterick notes that at business-card sizes of 6–8 point, all caps and lowercase are equally legible.\n\"More letter-spacing means more legibility.\" Butterick's rule splits by case: lowercase does not ordinarily need any, while all caps and small caps always want 5–12% extra, because capitals were spaced to sit next to lowercase. His overboard test is exact — if the gaps are big enough to fit another letter, you have gone too far.\n\"Bigger is always better.\" Past a point, larger type in a fixed column just shortens the measure and multiplies return sweeps.\n\n\nJudging type in an image\n\nFind a 1, an l and an I if the image contains any. Can you name each one without guessing?\nSquint, or step back two metres. Which letter pairs merge first?\nLook at a c and an e: are the openings still open, or filled in?\nNow stop looking at letters and look at the block. Can your eye find the start of the next line without hunting? If not, the problem is the setting, not the font — looking on purpose, applied to text.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Type anatomy\n              The named parts of a letter, and which of them actually decide whether a page is easy to read rather than merely pretty.\n            \n          \n        \n          \n            \n              Measure and line height\n              The two settings that decide whether body text is comfortable — how long the lines are, and how far apart. They have to be chosen together.\n            \n          \n        \n          \n            \n              Beyond Latin\n              Most typographic advice is advice about Latin. This is which parts of it come from the eye, which parts are Latin-only conventions, and what other writing systems do instead.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        TYPE-018 — Google Fonts Knowledge — Introducing accessibility in typographyTYPE-005 — Google Fonts Knowledge — An overview of Latin type anatomyTYPE-015 — Google Fonts Knowledge — Understanding measure/line lengthTYPE-012 — Google Fonts Knowledge — Choosing typefaces that have optical sizesTYPE-022-C06 — Butterick's Practical Typography — LetterspacingTYPE-022-C05 — Butterick's Practical Typography — Point size\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Legibility and readability",
+    "Why the two come apart",
+    "The pairs worth checking",
+    "Aperture, and why counters matter",
+    "What accessibility adds",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\n\nGoogle Fonts Knowledge, \"Introducing accessibility in typography\". Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nTwo different measurements in one picture. Top row is legibility, and it is decided glyph by glyph: on the left the vertical strokes are interchangeable, on the right the 1 has a flag and the I has crossbars, so you can name each one on sight.\nBottom row is readability, and it is decided by the setting rather than the drawing. Both paragraphs are the same typeface. The left one is set larger against a fixed line height, so the lines are jammed together and the descenders push into the row below; the right one is smaller and breathes. Nothing about the letterforms changed.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Ac63XeTOFQqfBkNL_3qzrjoNz_FMlpv3eIoRvc1dZ13juW0s2L4k8u4--_LsrP3pU0IIVweJ5nl3rxNfMuC9_QHIW8rsdowXfKDqtjQze-bvQ-kACpw5mcvKWlAafL7l5rqD70IvEtsXZln6Gj6DUdm9QhjPGxGqlKIMN38PNR8GI3CGUzQtXVvupZBC32u7xGa6OdBND3Z19SqdLgDj1lwOUsABAovZOhJIeOgDxXl5ZB5-P9ZtoP8jpYw1yCqj3Kpgx4ugQyVDcpI5NvhcibWhAGETPtST_QGxc7AbB7wjnCljz9ltSBrlomrr_uGdcjm7kaCOJDYIDVaDIkbtQ0MTsDT5j6pK8dI4hOIFzJLRynJJdZig9jBNEmCo7jNwkvY4LCAUw040X1TXsYCYvLi6AjfvoTBUejPTXq0ZbSLsLE18QAdK6yilHqmftQItdQ6bRz3SpIpLP_8guC4ZK37SIlER-v5-OwNZB92fVC_NSNznSqum7ZAhmT5vrGLXOBbTvM_DrRuYf9QyQni9dBIGgMX6MOWEAfKxG_SUSxa9hDVkL8uGp1PTpiXcMVD1kG8693fOAGVrc9Gn0W-9VIzdl2TzoBQgtDmFx6pZXuKSYP39riPobqcviDzutPcYC2UgFleVwktXriJtgn_Ym3WOeIzXYnK6yl4IthX3JMInOiq8mPe7xj7UKLmM0xOXAuCV1vfU5Ze5LIoVClqZw4TCvE9Hki8fKIeiO5xU97NCBaTtt6n2NvOEFBOjO5VIbkN30rXwTJ5K9IZLtaP9g3bjMWz1cFC29pzSmwYNQAEO60zlVCEJgjQcWnea8elGoHLdKghFGnUVb3WAvxvZglLWGBeHKyie3ecX2fQUQqqpUXM08AdQu4OsxtAxujTC45usanrPeGcVTpm_2Y4ZNSSJ-IbWDpaC9y--mlPws5icbrrgfaYqJJoSN85uHz8hcL9Pv2Jq9fMhe7Q_oBDZCRymXrMgjW27uz6mVB-WSOa6A3AbS9OV6Nw-_zEOMi8A-sJzR6MksniPypaxqpn3bg5VATrswJtHblHYOLu-I7C7UmZuVpssyMfsnk7goVcpSMFyKab7UVLnMt5SVM7gjbInsdN06OIS4ML6m2d1l29gHKluzg61qSQruLEmF-JWL1r01fcAOd7lFKqKXHuKOoPgYapyQhQ3qUtQaFnakDRgwdGVAaKBnszcn2nJl4wZkq2aAGRgjw5iLSsD4u6vJkLUoZe2odCRic71PrKK54WpdcVmws5DE4uelxp4lhEvktr-jL-Zj3nRtHN7PJ7eoO1o4-Fa0i6roLaSpuhw7uWG-TcNmoauo8UcaWcXGLI5eNPg3uzCcuuFqBT_RcC8CUjMIaJHJOb-hyiWA97vaJyM77niF_mrX4HoubwA3tAqHhwMkWInV3hKr_4ODb7QS-0oahUB24zIF5XGyqA4s7dH4r1TctvwEk4AGCzh4qEknrPj9cuHSPrkVcF8qihTb7g8UUbj7_CTSPo5pucKe53Hk9m7A1Aa_F65TI2FXcvmIKcK-4GZwQBRIC1iaO-FrPSeYIbtmXc8sW_9Tdf161aQi_cEqVJ8T96lag09pszyI6HTl-XcByxHYuoJx34kZwAbutMtETWiJjNt5v2gkOztJAhZSF8jpTv9mLMv_P9DHUHxAEQWAxhvCuKDV1wI0OaMDFnkG3Nysdpr8RAgX9DwhpVGIUSOUDPq6gA-v4IYbqdjJniXziM8J8AqFEVyaSx29uu_IslfCN6x-JzZgT-Ufj9Tfq9wdHdOJMQBzLdUxiRbXNLcfBf1Das_CbKvkvLD3J-PSIfWGLqh-xjl88BDTOnJN7XcnEodB-8O3gdaq5kHlBr2YOL8FOQlsQajzypZ36kH2dzTc4Y6rHkUy7cM4JB7Cl4U3LQC_-9Mhf8bjS1fSv9sUu_Df3Ev544dESXj_2ewE_TMgrqNE8ltQskRG_ucnMIklH3m6VMJSTllPjyujk8QshMJOvS7I-O8DFgp0gVDiDuv2-9lvNq5sQeFo3-0WT0038Uqyxs2bpDH",
+          "alt": "Top: pairs of I, l, 1, 0, O, o compared across four typefaces. Bottom: two paragraphs, one crammed and one comfortable"
+        }
+      ]
+    },
+    {
+      "caption": "\nrn  mIl1  0Omodern  modemr plus n, then mcapital I, lowercase l, digit 1, digit 0, capital Otwo real words, one letter apartRendered cleanly16 px on a good screen, close uprn  mIl1  0Omodern  modemr plus n, then mcapital I, lowercase l, digit 1, digit 0, capital Otwo real words, one letter apartThe same characters, degraded8 px, across a room, or with low vision\n\nThe panels contain identical characters. The only difference on the right is that the rendering has been degraded — which is what happens at 8px, at a distance, on a cheap screen, or to a reader with reduced acuity.\nWatch rn and m. On the left the gap between the r and the n is obvious. On the right it has closed, and the two groups are the same shape. modern and modem are now the same word. That is a legibility failure, and no amount of line height fixes it.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nGoogle Fonts Knowledge, \"Introducing accessibility in typography\" — the typefaces Andika, Lexend and Atkinson Hyperlegible. Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nThree faces drawn specifically to keep these pairs apart. Look at the third column: the zero has a slash through it, the l has a tail, the 1 has both a flag and a foot. Each of those is a deliberate structural tell, not a flourish.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AeD5J3-4WW-Yv8220_MI4jlOtsgJYwqGl_pFPcfbmV6oXd0Gm1doPcWy3q7fjqXZ7IPuNOXySMLTrG0PTjWEEiMriSXJ04UBNx46_nc6d6UdaAJxRVpkp6jor3jhL8eOU2luq6GVlztip4iQkgX4s-C1gwc1eGvPsdd2DRnr_pAQow44RWI1Objm0Q3ffozDUOthjM8atAaf8HRuDZaTBOkZB8DPb4NTjqMDbxFjanpPAfaMumQFTHivKvxKBlZtptalEv4wli9doP3csX-YwerJDIuqroGkujZG4Gs7xtkKLP9RZGYIEULfrhKlE14EpgRX4IOHKX6-MIIXdmgZQpaYy-MhZ5bIB4luQDFeKVgyTla85Mxgf00BZM3eR4nlkwVY8Xl24vUJNVQji7fAX2-h2L44EbFRfH-oikUS4e9P8wruSSDnOBwl0iRVb4jZHRQOwbOB4qCovWQyakEkaNdQIoPVaVYG5Hgb6geqrf-rUrKseKW1elfrXV2hyYDVtL5xLRbtCJfHj5hsV0JnGV4q4bGy09rTfxsZwMIwIvVRUG2fYoEnZf2VNC2cLOKsbH6tj1ds-bpwH7HOYw7t0nBk3AcxeyU05lin_KUtdC8rIrnLw99d43gm5F7Ki30pxBOAGbInu2D0wVGER8tcyS0hhnIMxQpF8m1C54VI-s9w-IrV2ZXf4PicjqzPPbmbpUhqK_U1_rpNp4eA5tK9SBkj7W3Qo7D3IAILrdcFDAsuKz4B2PHLuwHmEGAY5ktHQaaCzv1U8HSn99mhQs97be3t3Vd0AwZCB3LnkCKHez0gkq1qmiAsRsmc9svenFPkuJoA-NXsrXd5AUbqjMLaj7z2fSQA3wfEDZ7u14R4iAhKKMcY761_uAF6wnOPbs0AeIziKWeUX9PnRd-PxV5t9hP6-xGXNnhtinOa0FBEeKHPYGfJ2KPKRWGSF_8Qo6n6lZLcLyrEGCipbq5lBVUBbc9CJy2WzMj6h6dXF2JgvIqxoKABgCarC8LCjApfcg_YMAhjIDVbhKKD4nbA677lDHrkX2PorIW4OqnSB1MY7ej4iAee2EJATi6xIsPYym8b_A9OjPN2NRp6Um3I27gIrrqhYXK1uWN4r5yzFnkvutEnInr-qb37Qy0xtqOasLyYaAtVKRVbh3vzX7U6M85nOck8lGHJKejoX50v1mKQafLPJhUrjvaJxac_IgD3Eq8PF13d8_TMxz-RRovKyjsSO0yJtdkSmK-un3qlIUhk73C2iExtwoP7LyQKvx6E8rZxKigjRu7AEBvoKT7QfkOEp6MVw3PH6rXScIXB9dd2Z4yg9ItTKDUF22Nh7jrnCxlwKJTlKv5MQo6gBLuL7NRShTBvtH_wt0iJu4O6dAAUJcN2PfO3VOg_GPfEjnPcIOvh2xwz7tsOMXTGIHXTH56O4psttUrgBd9KtpHf-jqITMDdqy-O3H2jPw2ec7PkQWdu7OYGvxbgnHOeXvn8faWfBPHuuudoMmj3yTOxXIc-udZFSQxUf1ZhMNmXHCMSkl4QntDRraXef4UuxbX235ozLcpmavMY3aa0c_rseX7OlWNnPmtzez6TCGhB_9C3iWcMepl2Ks-031QU3fyK2Q5XXs4NB2lUQ1c3MKJWOzOiDMEVt-Zd3t2nQbyzU01DYmAUU_Sau2xcmzNgOEI8xPhUNnDODzMbmvr3uEgwrPdZqcAcDKTOhqLj3eVPHtru15C9hLHT4byRbDBM4Gu2uqv6s4Qny7OEQTpfUGmBXCLMfZZcZgLO5KoTA-hx4m5dejWH3yPutf5akGeDvms-aV4pHlzln4k50joFUGfMJdmJ_pDy_qJ-hW6xwR8fHRDUgKUnPLL0Xl92xTt5EtyjvwtINHp8jKyOqWZF7N9R3aeTym3V1DZ2mliz3krQCfJWGo0waxbW6toNCmozwtHib3MUVl_w7xw2HTqiEZyXmm8e3J0cM8Z1Fd2HMatxbp1A9Cqo71hzjtNlNzA0WrUnJDalPrBSSPBVIGt_KEzrLPdO6ohwfTIT11N7U_RfTxxyw2qS",
+          "alt": "rn m, i l 1, o c 0 O C and a8 6g a6 set in three typefaces designed for legibility"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nGoogle Fonts Knowledge, \"Introducing accessibility in typography\". Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nThe tinted shapes are the counters; the leader lines mark where each letter opens. Left, the openings are nearly shut, so a c at small size fills in and becomes an o, and an e becomes a c. Right, the same three letters with the openings held wide — Google Fonts notes that more white inside a letter also makes it look larger, which is a second, free benefit.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AdPkuwO4DEeFf2obvuXb-9D2yKnumB0YY72GawFf6BwrOfqVKz8YZvL4TqDWN4Hns6w0mtLwhcZVER0wlk31VHCBZGqFpSg5YAmXZN9XkwZX6dnj6rOmu5tAhfvwjkfoQO-LVgJWSGZ8A0kffQX6Ah8u8XKuNkIj-q5T_6wcqnPligSZTD5sZon64Z6ayff7DSeKcBJ96CLNjE3mFrVLDxvJ0B0qY_E5Le1YZbosq9hsvVmr6HaWQrzojXla8PQMhjK6OCCAof8EHMd6Jw01MNOO4hlZSEK-09f1U6bHctw_oTAljnuMj0gkw1dZ4piffxBN3jwlySRtrfiOIv0JXgkD_BBziDOJUyAxiZnjfAchsAZrmHxkbSe2zuT2k6FkQf5qpbaQCD26_ErA8nAt7Z_fxMGZREk-ZNj0TFETi8lkUtAEjS3H9jsI1_Q4f0Qkf4j0mxshryiiPDeV7y5VEgxE6TjsOW1-vD4NTzipKn_8evk4qfXb4LkAQnK17-foRbOZNgZqqA3SnSpt0tPGgABn9pZsY2In1v1GkP4Udj35CC40OjydX6Q8tXXepibLs777Mj4dxnwmelSXpPpONWKndCuv38miT2dvjViMOwdGGhvaWV0cXF6TB4JfSWMEMDb9M3hdNjYvGBrpU3QqjTQX4BYbvVPBOVojdNXVQx5d1EbzKkixh-gzTte3NHzw0rz8Cg8S4iYN4eAf4vyvK_dawW4wFjlbAPcV2MNFweQ20ufYBZCMrZ66Oo0bBQz2R9SjOoDHGIis9mwpiH5aYJTSogaluB1XxIRKCBQHeqEp-Xd724YKtZnbWMcfCqMbeGPMOdp9zcuN4URBchZz8WTz7iGnYj3RAPLBtEMOiUWac4LFMmeaAvaev7NhPgLP77b1czN-PUy2HjQk75lEoWnLVjfhbDqEZIrrSOwSuwny4gJPuR6arMyacTE5URHICIMJEIuMpbP86BMVQm0j8ev0cw0SSJzbvbJF4MvO-5VjjFj1ryJ3JbNftzvnbW5kOT7gVE6nerANlebNjq21jdVSIhCn_P-6SnuHrgoMucPJPeCmgnK9rpL7aw3ndlAzS8Vb5_NMUeOePNppjjpwEC5SFND4J7OhvAgkGIBEUXVDfmN8BsndKXdQPlt0TNA_0tNCW1J41WbjpD_jp5hxB_aNyrxWIis7FNMuVBsfiOKglkrrwxKGe0tvg_1NP62xkyJ89ezHji-9aTUl6u04dTUp2xUPq7YU7h9kzlH7eXKUrwaqmNYY0lc7svT8PBJ76E_P3a2UEucKI1fWgTTSL1QtxI-0IwGO8nRz3L_IRQTWipShPKaA6Hv9J49832LchHizAGzbYVBsO9OJMfa0g-ORNMnVmrGaZSuDq74ROQKouC5j6kDlhqLipDdFopcCyd-4BpPY53CmqWiGk5ccxVACpdTTbA5c6VrwESFi8D4ONhLlHsspJbxi-jHd9iIWSL8GVuz-fGShvCESpglPepaQANvMeyvy-NkczPuDRWqbiaSD7dm4CIbJhep9qrFSU4Yo5v6Xz1HZ1P7symQU0Czb_xaIJU_hPcyf4KiPadATEjcXi9QhRzqx6EIYMjkB_YqlSlF2oEK3Ud0hFIcL-KeNWInymveYwd4mx6r3p0kBkrgY56dENJXItRyYV_e5eGOX005cfkhtyZdNsLLRUUtzl2JtPSdwm66TT8bHcErvPnoC5EqUqVMsGFpebeMJcgvlZm4XDBBJ3t6lm-fK6VTAwSCWeItII0qBkeAdCKx474kvwfRdrIt6bOFSPBS547zi0bJ5gXgCYVNSVMd2dLQNBXY-d5-74VKXCxbDMbUQrWwWmxV-2RaUFgF9IUo1US2EdkpQ942jEIT1tM80vb-5sPuGvPFS2B2-vAjbqnhPvL1y4wffeQu12FQd7NWcZl-uhTEiLMwfYj14A3gK2eFPuI67vRyAMJqSSIL593Ss8MPKjf3buTi3ZZcLAL7cKIxhbJvl0xLJJh0fJbEQQqsQ7Cbvq-SYyIhfadI8vS6fubp1jfPnHCidKRh3Kr3-",
+          "alt": "The letters c, o and e drawn twice, first with narrow openings and then with wide openings, with their counters tinted"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Ac63XeTOFQqfBkNL_3qzrjoNz_FMlpv3eIoRvc1dZ13juW0s2L4k8u4--_LsrP3pU0IIVweJ5nl3rxNfMuC9_QHIW8rsdowXfKDqtjQze-bvQ-kACpw5mcvKWlAafL7l5rqD70IvEtsXZln6Gj6DUdm9QhjPGxGqlKIMN38PNR8GI3CGUzQtXVvupZBC32u7xGa6OdBND3Z19SqdLgDj1lwOUsABAovZOhJIeOgDxXl5ZB5-P9ZtoP8jpYw1yCqj3Kpgx4ugQyVDcpI5NvhcibWhAGETPtST_QGxc7AbB7wjnCljz9ltSBrlomrr_uGdcjm7kaCOJDYIDVaDIkbtQ0MTsDT5j6pK8dI4hOIFzJLRynJJdZig9jBNEmCo7jNwkvY4LCAUw040X1TXsYCYvLi6AjfvoTBUejPTXq0ZbSLsLE18QAdK6yilHqmftQItdQ6bRz3SpIpLP_8guC4ZK37SIlER-v5-OwNZB92fVC_NSNznSqum7ZAhmT5vrGLXOBbTvM_DrRuYf9QyQni9dBIGgMX6MOWEAfKxG_SUSxa9hDVkL8uGp1PTpiXcMVD1kG8693fOAGVrc9Gn0W-9VIzdl2TzoBQgtDmFx6pZXuKSYP39riPobqcviDzutPcYC2UgFleVwktXriJtgn_Ym3WOeIzXYnK6yl4IthX3JMInOiq8mPe7xj7UKLmM0xOXAuCV1vfU5Ze5LIoVClqZw4TCvE9Hki8fKIeiO5xU97NCBaTtt6n2NvOEFBOjO5VIbkN30rXwTJ5K9IZLtaP9g3bjMWz1cFC29pzSmwYNQAEO60zlVCEJgjQcWnea8elGoHLdKghFGnUVb3WAvxvZglLWGBeHKyie3ecX2fQUQqqpUXM08AdQu4OsxtAxujTC45usanrPeGcVTpm_2Y4ZNSSJ-IbWDpaC9y--mlPws5icbrrgfaYqJJoSN85uHz8hcL9Pv2Jq9fMhe7Q_oBDZCRymXrMgjW27uz6mVB-WSOa6A3AbS9OV6Nw-_zEOMi8A-sJzR6MksniPypaxqpn3bg5VATrswJtHblHYOLu-I7C7UmZuVpssyMfsnk7goVcpSMFyKab7UVLnMt5SVM7gjbInsdN06OIS4ML6m2d1l29gHKluzg61qSQruLEmF-JWL1r01fcAOd7lFKqKXHuKOoPgYapyQhQ3qUtQaFnakDRgwdGVAaKBnszcn2nJl4wZkq2aAGRgjw5iLSsD4u6vJkLUoZe2odCRic71PrKK54WpdcVmws5DE4uelxp4lhEvktr-jL-Zj3nRtHN7PJ7eoO1o4-Fa0i6roLaSpuhw7uWG-TcNmoauo8UcaWcXGLI5eNPg3uzCcuuFqBT_RcC8CUjMIaJHJOb-hyiWA97vaJyM77niF_mrX4HoubwA3tAqHhwMkWInV3hKr_4ODb7QS-0oahUB24zIF5XGyqA4s7dH4r1TctvwEk4AGCzh4qEknrPj9cuHSPrkVcF8qihTb7g8UUbj7_CTSPo5pucKe53Hk9m7A1Aa_F65TI2FXcvmIKcK-4GZwQBRIC1iaO-FrPSeYIbtmXc8sW_9Tdf161aQi_cEqVJ8T96lag09pszyI6HTl-XcByxHYuoJx34kZwAbutMtETWiJjNt5v2gkOztJAhZSF8jpTv9mLMv_P9DHUHxAEQWAxhvCuKDV1wI0OaMDFnkG3Nysdpr8RAgX9DwhpVGIUSOUDPq6gA-v4IYbqdjJniXziM8J8AqFEVyaSx29uu_IslfCN6x-JzZgT-Ufj9Tfq9wdHdOJMQBzLdUxiRbXNLcfBf1Das_CbKvkvLD3J-PSIfWGLqh-xjl88BDTOnJN7XcnEodB-8O3gdaq5kHlBr2YOL8FOQlsQajzypZ36kH2dzTc4Y6rHkUy7cM4JB7Cl4U3LQC_-9Mhf8bjS1fSv9sUu_Df3Ev544dESXj_2ewE_TMgrqNE8ltQskRG_ucnMIklH3m6VMJSTllPjyujk8QshMJOvS7I-O8DFgp0gVDiDuv2-9lvNq5sQeFo3-0WT0038Uqyxs2bpDH",
+      "alt": "Top: pairs of I, l, 1, 0, O, o compared across four typefaces. Bottom: two paragraphs, one crammed and one comfortable"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AeD5J3-4WW-Yv8220_MI4jlOtsgJYwqGl_pFPcfbmV6oXd0Gm1doPcWy3q7fjqXZ7IPuNOXySMLTrG0PTjWEEiMriSXJ04UBNx46_nc6d6UdaAJxRVpkp6jor3jhL8eOU2luq6GVlztip4iQkgX4s-C1gwc1eGvPsdd2DRnr_pAQow44RWI1Objm0Q3ffozDUOthjM8atAaf8HRuDZaTBOkZB8DPb4NTjqMDbxFjanpPAfaMumQFTHivKvxKBlZtptalEv4wli9doP3csX-YwerJDIuqroGkujZG4Gs7xtkKLP9RZGYIEULfrhKlE14EpgRX4IOHKX6-MIIXdmgZQpaYy-MhZ5bIB4luQDFeKVgyTla85Mxgf00BZM3eR4nlkwVY8Xl24vUJNVQji7fAX2-h2L44EbFRfH-oikUS4e9P8wruSSDnOBwl0iRVb4jZHRQOwbOB4qCovWQyakEkaNdQIoPVaVYG5Hgb6geqrf-rUrKseKW1elfrXV2hyYDVtL5xLRbtCJfHj5hsV0JnGV4q4bGy09rTfxsZwMIwIvVRUG2fYoEnZf2VNC2cLOKsbH6tj1ds-bpwH7HOYw7t0nBk3AcxeyU05lin_KUtdC8rIrnLw99d43gm5F7Ki30pxBOAGbInu2D0wVGER8tcyS0hhnIMxQpF8m1C54VI-s9w-IrV2ZXf4PicjqzPPbmbpUhqK_U1_rpNp4eA5tK9SBkj7W3Qo7D3IAILrdcFDAsuKz4B2PHLuwHmEGAY5ktHQaaCzv1U8HSn99mhQs97be3t3Vd0AwZCB3LnkCKHez0gkq1qmiAsRsmc9svenFPkuJoA-NXsrXd5AUbqjMLaj7z2fSQA3wfEDZ7u14R4iAhKKMcY761_uAF6wnOPbs0AeIziKWeUX9PnRd-PxV5t9hP6-xGXNnhtinOa0FBEeKHPYGfJ2KPKRWGSF_8Qo6n6lZLcLyrEGCipbq5lBVUBbc9CJy2WzMj6h6dXF2JgvIqxoKABgCarC8LCjApfcg_YMAhjIDVbhKKD4nbA677lDHrkX2PorIW4OqnSB1MY7ej4iAee2EJATi6xIsPYym8b_A9OjPN2NRp6Um3I27gIrrqhYXK1uWN4r5yzFnkvutEnInr-qb37Qy0xtqOasLyYaAtVKRVbh3vzX7U6M85nOck8lGHJKejoX50v1mKQafLPJhUrjvaJxac_IgD3Eq8PF13d8_TMxz-RRovKyjsSO0yJtdkSmK-un3qlIUhk73C2iExtwoP7LyQKvx6E8rZxKigjRu7AEBvoKT7QfkOEp6MVw3PH6rXScIXB9dd2Z4yg9ItTKDUF22Nh7jrnCxlwKJTlKv5MQo6gBLuL7NRShTBvtH_wt0iJu4O6dAAUJcN2PfO3VOg_GPfEjnPcIOvh2xwz7tsOMXTGIHXTH56O4psttUrgBd9KtpHf-jqITMDdqy-O3H2jPw2ec7PkQWdu7OYGvxbgnHOeXvn8faWfBPHuuudoMmj3yTOxXIc-udZFSQxUf1ZhMNmXHCMSkl4QntDRraXef4UuxbX235ozLcpmavMY3aa0c_rseX7OlWNnPmtzez6TCGhB_9C3iWcMepl2Ks-031QU3fyK2Q5XXs4NB2lUQ1c3MKJWOzOiDMEVt-Zd3t2nQbyzU01DYmAUU_Sau2xcmzNgOEI8xPhUNnDODzMbmvr3uEgwrPdZqcAcDKTOhqLj3eVPHtru15C9hLHT4byRbDBM4Gu2uqv6s4Qny7OEQTpfUGmBXCLMfZZcZgLO5KoTA-hx4m5dejWH3yPutf5akGeDvms-aV4pHlzln4k50joFUGfMJdmJ_pDy_qJ-hW6xwR8fHRDUgKUnPLL0Xl92xTt5EtyjvwtINHp8jKyOqWZF7N9R3aeTym3V1DZ2mliz3krQCfJWGo0waxbW6toNCmozwtHib3MUVl_w7xw2HTqiEZyXmm8e3J0cM8Z1Fd2HMatxbp1A9Cqo71hzjtNlNzA0WrUnJDalPrBSSPBVIGt_KEzrLPdO6ohwfTIT11N7U_RfTxxyw2qS",
+      "alt": "rn m, i l 1, o c 0 O C and a8 6g a6 set in three typefaces designed for legibility"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AdPkuwO4DEeFf2obvuXb-9D2yKnumB0YY72GawFf6BwrOfqVKz8YZvL4TqDWN4Hns6w0mtLwhcZVER0wlk31VHCBZGqFpSg5YAmXZN9XkwZX6dnj6rOmu5tAhfvwjkfoQO-LVgJWSGZ8A0kffQX6Ah8u8XKuNkIj-q5T_6wcqnPligSZTD5sZon64Z6ayff7DSeKcBJ96CLNjE3mFrVLDxvJ0B0qY_E5Le1YZbosq9hsvVmr6HaWQrzojXla8PQMhjK6OCCAof8EHMd6Jw01MNOO4hlZSEK-09f1U6bHctw_oTAljnuMj0gkw1dZ4piffxBN3jwlySRtrfiOIv0JXgkD_BBziDOJUyAxiZnjfAchsAZrmHxkbSe2zuT2k6FkQf5qpbaQCD26_ErA8nAt7Z_fxMGZREk-ZNj0TFETi8lkUtAEjS3H9jsI1_Q4f0Qkf4j0mxshryiiPDeV7y5VEgxE6TjsOW1-vD4NTzipKn_8evk4qfXb4LkAQnK17-foRbOZNgZqqA3SnSpt0tPGgABn9pZsY2In1v1GkP4Udj35CC40OjydX6Q8tXXepibLs777Mj4dxnwmelSXpPpONWKndCuv38miT2dvjViMOwdGGhvaWV0cXF6TB4JfSWMEMDb9M3hdNjYvGBrpU3QqjTQX4BYbvVPBOVojdNXVQx5d1EbzKkixh-gzTte3NHzw0rz8Cg8S4iYN4eAf4vyvK_dawW4wFjlbAPcV2MNFweQ20ufYBZCMrZ66Oo0bBQz2R9SjOoDHGIis9mwpiH5aYJTSogaluB1XxIRKCBQHeqEp-Xd724YKtZnbWMcfCqMbeGPMOdp9zcuN4URBchZz8WTz7iGnYj3RAPLBtEMOiUWac4LFMmeaAvaev7NhPgLP77b1czN-PUy2HjQk75lEoWnLVjfhbDqEZIrrSOwSuwny4gJPuR6arMyacTE5URHICIMJEIuMpbP86BMVQm0j8ev0cw0SSJzbvbJF4MvO-5VjjFj1ryJ3JbNftzvnbW5kOT7gVE6nerANlebNjq21jdVSIhCn_P-6SnuHrgoMucPJPeCmgnK9rpL7aw3ndlAzS8Vb5_NMUeOePNppjjpwEC5SFND4J7OhvAgkGIBEUXVDfmN8BsndKXdQPlt0TNA_0tNCW1J41WbjpD_jp5hxB_aNyrxWIis7FNMuVBsfiOKglkrrwxKGe0tvg_1NP62xkyJ89ezHji-9aTUl6u04dTUp2xUPq7YU7h9kzlH7eXKUrwaqmNYY0lc7svT8PBJ76E_P3a2UEucKI1fWgTTSL1QtxI-0IwGO8nRz3L_IRQTWipShPKaA6Hv9J49832LchHizAGzbYVBsO9OJMfa0g-ORNMnVmrGaZSuDq74ROQKouC5j6kDlhqLipDdFopcCyd-4BpPY53CmqWiGk5ccxVACpdTTbA5c6VrwESFi8D4ONhLlHsspJbxi-jHd9iIWSL8GVuz-fGShvCESpglPepaQANvMeyvy-NkczPuDRWqbiaSD7dm4CIbJhep9qrFSU4Yo5v6Xz1HZ1P7symQU0Czb_xaIJU_hPcyf4KiPadATEjcXi9QhRzqx6EIYMjkB_YqlSlF2oEK3Ud0hFIcL-KeNWInymveYwd4mx6r3p0kBkrgY56dENJXItRyYV_e5eGOX005cfkhtyZdNsLLRUUtzl2JtPSdwm66TT8bHcErvPnoC5EqUqVMsGFpebeMJcgvlZm4XDBBJ3t6lm-fK6VTAwSCWeItII0qBkeAdCKx474kvwfRdrIt6bOFSPBS547zi0bJ5gXgCYVNSVMd2dLQNBXY-d5-74VKXCxbDMbUQrWwWmxV-2RaUFgF9IUo1US2EdkpQ942jEIT1tM80vb-5sPuGvPFS2B2-vAjbqnhPvL1y4wffeQu12FQd7NWcZl-uhTEiLMwfYj14A3gK2eFPuI67vRyAMJqSSIL593Ss8MPKjf3buTi3ZZcLAL7cKIxhbJvl0xLJJh0fJbEQQqsQ7Cbvq-SYyIhfadI8vS6fubp1jfPnHCidKRh3Kr3-",
+      "alt": "The letters c, o and e drawn twice, first with narrow openings and then with wide openings, with their counters tinted"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Why the two come apart",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#why-the-two-come-apart"
+    },
+    {
+      "text": "The pairs worth checking",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#the-pairs-worth-checking"
+    },
+    {
+      "text": "Aperture, and why counters matter",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#aperture-and-why-counters-matter"
+    },
+    {
+      "text": "What accessibility adds",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#what-accessibility-adds"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#why-the-two-come-apart"
+    },
+    {
+      "text": "Measure and line height",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#the-pairs-worth-checking"
+    },
+    {
+      "text": "Beyond Latin",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#aperture-and-why-counters-matter"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#what-accessibility-adds"
+    },
+    {
+      "text": "Type anatomy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability#common-mistakes"
+    },
+    {
+      "text": "looking on purpose",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "\n              Type anatomy\n              The named parts of a letter, and which of them actually decide whether a page is easy to read rather than merely pretty.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy"
+    },
+    {
+      "text": "\n              Measure and line height\n              The two settings that decide whether body text is comfortable — how long the lines are, and how far apart. They have to be chosen together.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    },
+    {
+      "text": "\n              Beyond Latin\n              Most typographic advice is advice about Latin. This is which parts of it come from the eye, which parts are Latin-only conventions, and what other writing systems do instead.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "TYPE-018 — Google Fonts Knowledge — Introducing accessibility in typography",
+      "href": "https://fonts.google.com/knowledge/readability_and_accessibility/introducing_accessibility_in_typography"
+    },
+    {
+      "text": "TYPE-005 — Google Fonts Knowledge — An overview of Latin type anatomy",
+      "href": "https://fonts.google.com/knowledge/introducing_type/an_overview_of_latin_type_anatomy"
+    },
+    {
+      "text": "TYPE-015 — Google Fonts Knowledge — Understanding measure/line length",
+      "href": "https://fonts.google.com/knowledge/using_type/understanding_measure_line_length"
+    },
+    {
+      "text": "TYPE-012 — Google Fonts Knowledge — Choosing typefaces that have optical sizes",
+      "href": "https://fonts.google.com/knowledge/choosing_type/choosing_typefaces_that_have_optical_sizes"
+    },
+    {
+      "text": "TYPE-022-C06 — Butterick's Practical Typography — Letterspacing",
+      "href": "https://practicaltypography.com/letterspacing.html"
+    },
+    {
+      "text": "TYPE-022-C05 — Butterick's Practical Typography — Point size",
+      "href": "https://practicaltypography.com/point-size.html"
+    },
+    {
+      "text": "\n        PreviousType anatomy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy"
+    },
+    {
+      "text": "\n        NextMeasure and line height",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability"
+}

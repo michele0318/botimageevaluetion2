@@ -1,0 +1,36 @@
+{
+  "id": "fc65745de0b9ba785be5d7c46d3a764ab660e693244eb2712c460887c43cff67",
+  "prompt": "Illustrative poster, top: multicolor outlined \"OTTOJAJA\", middle: big green square with white daisy, gradient drop, bottom: multicolor outlined \"13·8·PARG GERSWALDE 13·00H\", sans-serif address, white background",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is preferred. The composition feels more considered. In Image 2, the vertical spacing between elements doesn't seem very intentional, and the illustration width doesn't match the main title, which breaks the composition. The shadow behind the illustration is also too strong and makes the poster messier.",
+  "split": "train",
+  "image_group": "1b77b3808689618d52a47ef117921cb9dd14e3d45d140788796852bc7a29da23",
+  "image_hashes": [
+    "6746ce8a2576f9ca1fcda184f1c5da220a07dd4bd25c74d06159648736b9b031",
+    "2f0c00331db4880b0c9aaa0906a7399ccd70d25a690feabb09a2941061f1c0ba"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ca805b00d684e023d299c7057d96995dd3c59adbd466b960c19a3d932d997132",
+      "corrected": false,
+      "time": "2026-09-13T02:20:31"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:20:32"
+    }
+  ],
+  "feedback": "Image 1 is preferred. The composition feels more considered. In Image 2, the vertical spacing between elements doesn't seem very intentional, and the illustration width doesn't match the main title, which breaks the composition. The shadow behind the illustration is also too strong and makes the poster messier.",
+  "lesson": "If requested style is specified, prioritize alignment and intentional spacing; avoid mismatched widths or overpowering shadows that disrupt composition.",
+  "lesson_evidence": "The composition feels more considered. In Image 2, the vertical spacing between elements doesn't seem very intentional, and the illustration width doesn't match the main title, which breaks the composition. The shadow behind the illustration is also too strong and makes the poster messier.",
+  "lesson_source": "Image 1 is preferred. The composition feels more considered. In Image 2, the vertical spacing between elements doesn't seem very intentional, and the illustration width doesn't match the main title, which breaks the composition. The shadow behind the illustration is also too strong and makes the poster messier."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "b2046fb1a85271f6a83a36dec31143305ac265e8898ac620c8f44751346eb97a",
+  "prompt": "painterly illustration, weary monarch on a stone throne",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 stands out due to its highly engaging presentation and unique, creative art style. In contrast, Image 1 feels overly generic and uninspired, interpreting the \"weary monarch\" prompt far too literally while conceptually failing to place the king on an actual throne.",
+  "split": "train",
+  "image_group": "5d6d8d18fa8d7428379507015b9f020b0a2443c0cb4e5a9d8214e792b80022f4",
+  "image_hashes": [
+    "f69a20096975bb92266c16cfcd5c499d8fb0db08edab14dd65a8a7d5d49ff692",
+    "3ba4809169fe3ee5484dc4184245b54ef7a7c6c3cfc23196472852915f8dedf6"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "cd630621ed1c624ab0a495688bbe6d64062e2e88d3162f208c0bcb1f6bd512a5",
+      "corrected": false,
+      "time": "2026-09-13T02:24:50"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "cd630621ed1c624ab0a495688bbe6d64062e2e88d3162f208c0bcb1f6bd512a5",
+      "corrected": true,
+      "time": "2026-09-13T02:24:59"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 stands out due to its highly engaging presentation and unique, creative art style. In contrast, Image 1 feels overly generic and uninspired, interpreting the \"weary monarch\" prompt far too literally while conceptually failing to place the king on an actual throne.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:24:57"
+    }
+  ],
+  "feedback": "Image 2 stands out due to its highly engaging presentation and unique, creative art style. In contrast, Image 1 feels overly generic and uninspired, interpreting the \"weary monarch\" prompt far too literally while conceptually failing to place the king on an actual throne.",
+  "lesson": "When a requested style is specified, prioritize artistic interpretation over literal execution; avoid generic or uninspired renditions that fail to engage with the prompt’s conceptual intent.",
+  "lesson_evidence": "Image 2 stands out due to its highly engaging presentation and unique, creative art style. In contrast, Image 1 feels overly generic and uninspired, interpreting the \"weary monarch\" prompt far too literally while conceptually failing to place the king on an actual throne.",
+  "lesson_source": "Image 2 stands out due to its highly engaging presentation and unique, creative art style. In contrast, Image 1 feels overly generic and uninspired, interpreting the \"weary monarch\" prompt far too literally while conceptually failing to place the king on an actual throne."
+}

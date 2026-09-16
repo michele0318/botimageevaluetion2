@@ -1,0 +1,19 @@
+{
+  "title": "Edges and merges — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/edges-and-merges",
+  "source_hash": "09bac7a5225238742b87725d4a4bbb979d0c581457ef851a21ea9eb2642e6d6b",
+  "rules": [
+    {
+      "rule": "An edge is defined by a change in value, hue, texture, or sharpness; without this step, the shape ceases to exist.",
+      "evidence": "Every edge in a photograph is a change — in value, in hue, in texture, in sharpness — and if the change is not there, neither is the shape."
+    },
+    {
+      "rule": "An edge that touches or runs off the frame's border merges with it, causing the subject to appear attached to the frame rather than inside it.",
+      "evidence": "A shape that just touches the border merges with it and reads as attached to the frame rather than sitting inside the picture"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2656,
+  "output_tokens": 230,
+  "processed_at": "2026-09-13T09:27:32"
+}

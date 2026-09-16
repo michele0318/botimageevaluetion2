@@ -1,0 +1,12 @@
+{
+  "id": "703960ac8a20eecede4b5625a3d3aaad7a5a082ca7231e51f73654b43e7cdd31",
+  "prompt": "postage stamp",
+  "correct_choice": null,
+  "verification": "",
+  "split": "train",
+  "image_group": "c500df42dd8f3eeb43fd5ec788cdae26d34a95d74221f76f0b0245a7360d76fb",
+  "image_hashes": [
+    "26db47bfd672ccbb0f14c09859d58e8319c15b01cce722109708c74d46dfadcd",
+    "5bcfac05cb1e83604db690bb06c69f283e4efc17063f00551ddbbbb18303cb40"
+  ]
+}

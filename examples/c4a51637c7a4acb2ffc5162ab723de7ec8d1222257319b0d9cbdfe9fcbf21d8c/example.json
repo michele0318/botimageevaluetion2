@@ -1,0 +1,45 @@
+{
+  "id": "c4a51637c7a4acb2ffc5162ab723de7ec8d1222257319b0d9cbdfe9fcbf21d8c",
+  "prompt": "tough man and refined woman sharing a tense moment photograph",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is a great film-style photo shot through a car window with a creative idea. In contrast, Image 2 feels weird because the people are doing random things and not looking at each other. Also, the rain feels out of place in this scene.",
+  "split": "train",
+  "image_group": "5caa8e22e9eeef1c11edf500fb1e1693394068a8880b7405fd23217a751917cc",
+  "image_hashes": [
+    "e6e417c12579c4f5b3ce1b2e1a1a361f740b4ef8a5386e0c1535ee21847e20dc",
+    "bc9ca9a943103077c5d61e71075eb19daca1f73a2c949211cf151ed9b8953ebc"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "108feb9bd58c92bc6b290ea8a965f3c8c05166db7bfae937ea4507395d4e0d25",
+      "corrected": false,
+      "time": "2026-09-13T02:22:45"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "108feb9bd58c92bc6b290ea8a965f3c8c05166db7bfae937ea4507395d4e0d25",
+      "corrected": true,
+      "time": "2026-09-13T02:22:50"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is a great film-style photo shot through a car window with a creative idea. In contrast, Image 2 feels weird because the people are doing random things and not looking at each other. Also, the rain feels out of place in this scene.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:22:48"
+    }
+  ],
+  "feedback": "Image 1 is a great film-style photo shot through a car window with a creative idea. In contrast, Image 2 feels weird because the people are doing random things and not looking at each other. Also, the rain feels out of place in this scene.",
+  "lesson": "If a requested style is specified, prioritize it; otherwise, use the style that best aligns with the scene’s emotional tone and narrative cohesion.",
+  "lesson_evidence": "Image 1 is a great film-style photo shot through a car window with a creative idea.",
+  "lesson_source": "Image 1 is a great film-style photo shot through a car window with a creative idea. In contrast, Image 2 feels weird because the people are doing random things and not looking at each other. Also, the rain feels out of place in this scene."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "6da5bd2a3bb43869db6b9c60054242883d1148dd29d9ae324bd5ef1fe0ddc70b",
+  "prompt": "Microsoft 365 3D glass icons floating without containers, grid, solid light gray background",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 stands out because the detailing on each individual icon is significantly better and more intricate. While Image 1 is executed reasonably well, it ultimately falls short of the sharp definition and high-quality rendering found throughout Image 2.",
+  "split": "train",
+  "image_group": "0f290b9b3b9e8ed6d861ff46a9ed7977809acc7012aeb24fca4cce6202c8cca3",
+  "image_hashes": [
+    "7799175b32e3b0bb969ebe5b99fb457d6dd695d459db5aaac835eeb142e036a0",
+    "96ed98331cab11783a796eb095050c84e097b97141384fa2f727413012d91753"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ecb2f60e9b68d76ca143ea3c3cb16c6d7c91ea5d9abbbbe0ff928a45c385426b",
+      "corrected": false,
+      "time": "2026-09-13T22:07:47"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:07:49"
+    }
+  ],
+  "feedback": "Image 2 stands out because the detailing on each individual icon is significantly better and more intricate. While Image 1 is executed reasonably well, it ultimately falls short of the sharp definition and high-quality rendering found throughout Image 2.",
+  "lesson": "When a requested style is specified, prioritize visual fidelity and intricate detailing over generic execution; do not compromise on rendering quality unless explicitly instructed otherwise.",
+  "lesson_evidence": "Image 2 stands out because the detailing on each individual icon is significantly better and more intricate. While Image 1 is executed reasonably well, it ultimately falls short of the sharp definition and high-quality rendering found throughout Image 2.",
+  "lesson_source": "Image 2 stands out because the detailing on each individual icon is significantly better and more intricate. While Image 1 is executed reasonably well, it ultimately falls short of the sharp definition and high-quality rendering found throughout Image 2."
+}

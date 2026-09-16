@@ -1,0 +1,137 @@
+{
+  "title": "Choosing a chart — Image Wiki",
+  "text": "\n  \n\n  Choosing a chart\n  Start from the relationship in the data and the question in the reader's head. The chart type is the last decision you make, not the first.\n\n  \n    Termchart type selection\n    Also calledchart choice, which chart to use, chart taxonomy\n    Not the same aschart styling, colour palettes, dashboard design\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        The nine relationshipsThe procedureMunzner's nested modelCommon mistakes\n      \n    \n  \n\n  Most bad charts were not badly drawn. They were drawn to answer a question nobody asked.\nThe usual way people pick a chart is to picture one they liked and pour the numbers in. The reliable way runs the other direction: name the question in plain words, name the relationship in the data that answers it, and only then pick an encoding. The Financial Times' Visual Vocabulary is organised that way — its top-level headings are relationships, not chart shapes. So is the ONS service manual, which lists eight and notes that one bar chart can serve four of them.\n\nWhich region is biggest?bar chart of the 2021 levelRegion B8.6mRegion D5.7mRegion A4.8mRegion C3.2mWhich region grew fastest?bar chart of the 2011 to 2021 changeRegion C+14.3%Region A+6.7%Region B+4.9%Region D+1.8%\n\nFour regions, two numbers each, one dataset. Both panels are ordered bar charts — the encoding is identical.\nWatch Region C. Asked who is biggest, it comes last. Asked who grew fastest, it comes first. Neither chart is wrong and neither is prettier; they answer different questions, and the second one required deriving a variable (percentage change) that was not in the table. The ONS calls this out directly: sometimes the clearest way to show a trend is a number you have to calculate first.\n\n\nThe nine relationships\nThe FT's categories, with what each one actually answers:\n\nDeviationhow far above or below?Correlationdo these two move together?Rankingwho is ahead?Distributionhow are the values spread?Change over timewhich way is it going?Part-to-wholewhat makes up the total?Magnitudehow big is it?Spatialwhere?Flowwhat moves where, and how much?\n\nNine relationships, nine questions. These are sketches of kinds of comparison, not a menu of chart types — several of them can be drawn as a bar chart, and a bar chart can serve several of them.\n\n\n\nDeviation — how far above or below a reference? Usually zero, sometimes a target or a long-run average.\nCorrelation — do these two variables move together? Readers assume you mean causes unless told otherwise.\nRanking — who is ahead? For when an item's place in the order matters more than its value.\nDistribution — how are the values spread, and how lumpy is the spread?\nChange over time — which way is it going? Choosing the window is most of the work.\nPart-to-whole — what makes up the total? If the reader only cares how big the parts are, this is magnitude.\nMagnitude — how big? Usually a counted thing: barrels, dollars, people.\nSpatial — where? Reserve it for when location genuinely beats everything else.\nFlow — what moves where, and how much of it?\n\nTwo forks the FT flags. Part-to-whole and magnitude look interchangeable and are not: if the question is \"how big is defence spending\", show magnitude, and stack it into a whole only when the share is the point. And a choropleth should carry rates, not totals — a map of raw counts is a population map in disguise.\n\n\n\nOffice for National Statistics service manual, chart elements. Open Government Licence v3.0. The red text is the ONS's own annotation of its gridline specification.\nA ranking chart doing the small things right. It is a bar rather than a column because the category names are long sentences. The bars run from highest to lowest so neighbouring values can be compared without hunting — the ONS is explicit that alphabetical order is the wrong default — except for \"Other service activities\", which is plotted last regardless of size because it is not a real category. The axis starts at zero, values are labelled on the bars, and the source is stated under the chart.\n\n\nThe procedure\n\nWrite the question in one sentence, in words, with no chart in it. \"Did the gap between the two regions narrow after 2019?\"\nName the relationship. That sentence is deviation over time, not magnitude.\nFind the variable that answers it. Often it is a derived one — a change, a difference from an average, a rate per person. Plotting two levels side by side and hoping the reader subtracts them is the most common failure in the whole business.\nPick the encoding that puts the comparison on a common scale. Same comparison, same axis, same zero. That is the whole content of How accurately a chart can be read applied to a decision.\nPut the answer in the title. Not \"Labour force participation, 1950–2019\" but what happened to it. The ONS puts the finding in the chart title, the Urban Institute calls these active titles, and the US Web Design System says to state the message as text rather than leave the audience guessing.\n\nStep 4 has a corollary worth its own name: consistent baselines. Components starting from different places cannot be compared, which is why a stacked area chart is bad at showing what happened to its middle band and a set of lines from a shared axis is good at it.\nMunzner's nested model\nTamara Munzner's nested model is the rigorous version of the same argument. Four levels, each with its own way of being wrong and its own way of being checked.\n\n1. Domain problem characterisationvalidated byobserve and interview real users2. Operation and data-type abstractionvalidated bytarget users do their own work with it3. Visual encoding and interaction designvalidated byjustify against perceptual principles4. Algorithm designvalidated byanalyse computational complexityan error here cascades downward\n\nEach level takes the level above as its input, so a mistake at the top cannot be repaired lower down — you can only build a beautifully encoded, blazingly fast answer to the wrong question. Note how different the four checks are: the top level is validated by talking to people, the bottom by counting operations.\n\n\nThe useful part is where the failures live. Level 3 — visual encoding — is the level everybody argues about, because it is the level you can see. But most bad charts fail at level 2: the operations and data types chosen do not answer the problem. Wrong variable, wrong grouping, wrong comparison. Munzner's test for that level is deliberately harsh — target users have to use the thing for their own work, not perform a task the designer invented. For a chart, the equivalent is showing it to someone who was not in the meeting, which is what the ONS recommends, and finding out what they think it says.\nIt also explains arguments that go nowhere: one person objects at level 3 (\"this should be a bar chart\"), the other defends at level 2 (\"but the point is the share\"). Both can be right. Say which level you mean.\nCommon mistakes\n\n\"Which chart type suits this data?\" Data type does not determine chart type; the question does. The same table supports a dozen honest charts and a hundred pointless ones.\n\"One chart, all the findings.\" Charts showing several relationships at once are usually less clear than charts showing one. The ONS and the USWDS agree: two simple charts beat one clever chart, even if they overlap.\n\"Unfamiliar chart type, more sophisticated analysis.\" An unfamiliar shape spends the reader's attention on decoding rather than understanding. If you need one, give them a simple overview first.\n\"It has to be a chart.\" If the reader needs exact values, use a table. If one number matters, print it large. The Urban Institute's guide opens by asking whether it should be a chart at all.\n\n\nBefore you draw it\n\nSay the question out loud. If it needs two sentences, you have two charts.\nName the relationship. Deviation, correlation, ranking, distribution, time, part-to-whole, magnitude, spatial, flow.\nAsk what variable answers that question, and whether it exists yet or needs deriving.\nCheck that the comparison you care about lands on one shared scale with one shared zero.\nShow it to someone who was not in the meeting and ask what it says — slowly, the way How to look at an image describes. If they name a different finding than your title, the problem is at level 2, and When a chart lies covers what happens if you ship it anyway.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              How accurately a chart can be read\n              The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n            \n          \n        \n          \n            \n              When a chart lies\n              The dangerous chart is not the ugly one. It is the one where every number is correct and the picture still argues for something the numbers do not support.\n            \n          \n        \n          \n            \n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        DATA-002 — Financial Times Visual VocabularyDATA-007-C11 — ONS Service manual — Choosing a chart typeDATA-008 — ONS Service manual — PrinciplesDATA-005 — Munzner, A Nested Model for Visualization Design and Validation (InfoVis 2009)DATA-014 — U.S. Web Design System — Data visualizations\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Choosing a chart",
+    "The nine relationships",
+    "The procedure",
+    "Munzner's nested model",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nWhich region is biggest?bar chart of the 2021 levelRegion B8.6mRegion D5.7mRegion A4.8mRegion C3.2mWhich region grew fastest?bar chart of the 2011 to 2021 changeRegion C+14.3%Region A+6.7%Region B+4.9%Region D+1.8%\n\nFour regions, two numbers each, one dataset. Both panels are ordered bar charts — the encoding is identical.\nWatch Region C. Asked who is biggest, it comes last. Asked who grew fastest, it comes first. Neither chart is wrong and neither is prettier; they answer different questions, and the second one required deriving a variable (percentage change) that was not in the table. The ONS calls this out directly: sometimes the clearest way to show a trend is a number you have to calculate first.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nDeviationhow far above or below?Correlationdo these two move together?Rankingwho is ahead?Distributionhow are the values spread?Change over timewhich way is it going?Part-to-wholewhat makes up the total?Magnitudehow big is it?Spatialwhere?Flowwhat moves where, and how much?\n\nNine relationships, nine questions. These are sketches of kinds of comparison, not a menu of chart types — several of them can be drawn as a bar chart, and a bar chart can serve several of them.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nOffice for National Statistics service manual, chart elements. Open Government Licence v3.0. The red text is the ONS's own annotation of its gridline specification.\nA ranking chart doing the small things right. It is a bar rather than a column because the category names are long sentences. The bars run from highest to lowest so neighbouring values can be compared without hunting — the ONS is explicit that alphabetical order is the wrong default — except for \"Other service activities\", which is plotted last regardless of size because it is not a real category. The axis starts at zero, values are labelled on the bars, and the source is stated under the chart.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AZn_Uq9H0H33DdmLjaz93wQLuDqwrEFnMHdNZz1Il2OfA_KEw3reBuRXIsvIPqiuz4odheit7S8WF_ZTShDPzzkatdC_iYhzUGhxzzo2wW7fZdwjd3mqyUskvu6cal8p_W9RWuzglr0oWl2DVm_2cdpH7RJ-ry5FtiuK1mhCKZSFzeOa4FEQLzWJoLrjoeYYi9bkHcNUS8t3yolZ-GBb-iC-0b_OY28nz5-WqA-j8ryIi7OIZSVLT5F1TlnYmxSU9KL-31Yx2JO7VArPjFZdNTclwVOGClDoTTihZiBUfQC0ryZfMmF-JXWfvq1Unqp4sJqOH7QTr9yIdz8ihtB5H7lS2MeCG-WG213ki40Oywev9OcENsLBq3m4kIrbtVNij-1GeMGquCbg_U7CSNLxQ2jIToiYkmBO3BRV6bd9sldXCaNaTSdZTnEhyQxQS_SjlzmRh5VdOMoBvYcN3osYlQBQbnx_pD8VKBAejkkCL4lIiM5e88ZvEuANAp0rVFzB6kgj2Tx3Tmh5kDcvIj8YTFOc_DLRSz8La4KGnTIpxuMuCLpwcMVws5YM7SROTmk3g1DI0F40TDzb-cg7CjKcQulaApfSBJv_aF5XRcpopSs7Ms95FDUdzuH8xwJmeca4eznFjZCjim4qVMmBq5mrZv37_NHc4rf8CvoyF5LSnh8s7bkSvrzxbJdTMZ7ub1rRyEt8DozPzlY5yeT0CM0eA8X0Ek9JkO4UsR4wGGOLma7dnlpU0LFbz1Qcl3_IzPSS-aaLoXVT_OjVlPMA0iNlbbh0fbvS7r9CE1PKpD-YAj8SDdKMo7U_AD8pfZ3-65hv2eKPxrGQjj7CZ6wVPZpG-0IkLbaTvFLe5rKEXwAfqqiaRY6lHzUmC_Le_vBxBJuU0lxutfs11CdHms_TXV9oDkbWkGWx98KL0OW3J_RtSpbiTCPAV4MfrmvA4fNWWQANP61U-2Tb6jUvl6GEGiJU06OlVKKJSDJRIb7eJ6cpt1YZ9AZvC1g51oH2o1tEhUwPaCjKAOxPytA8__ch03kQPg92t3eULKMln00F5Sx_SHo-sXaJ7Zz0qV4pAcR6lfnd4g_EK5t68HnxQsbhLeKwH_Lpa7RLHjedUDZcsqwrNSRXQzxpUv3fG5Hoxjs5SMKfCbvbErathOBjOcxqE5plO2VQq1dgIrqm8hA6EuT5M7yS2eN5OmWZYslpEwxFEPW4GLGwydEw0ERSrXdNypOhCOWterMbSOppa4C06t3eWbOvBJGxlQrKaR3BE_csuhWFBwCE0SyhSl7Q8povQYLvqfMnjxjHuri02RBmySbbOw5aJ8kGW39Jp1hw-0CEFS2CvUd_iAVdY2HGEW85d5FI1BkLg13PbWgnIn1HRFWS72Y2Z4skb_FFnWUbvaENjqEXu0fS_o4J6BBEJcNvWtshTsYiBzK799Vvu-4HLw2qmzOA3Fh9iddI82UhL7d4NuhQnqeUtcKN66OdgLpetGu28dZSrwHxCohP60jUvATNAZqYBKSsgB3hQY6pYG1W9Mwr7wBz4JgzigVXALYw_2XAfzpYZQMkPqDpF8MOurQr7qithSzeZgPO1vu1ivSAheOoxjO26pUFBSjkfkm0Yb2-3iu1TEDrn66BQikDNvMs5NaPm9FWs98A65KjK1izZnEohU7dU_IXGxL02qOn1915c0j-U8f3cSDsd9csATw5wSnyuTCb-1SKjlpj5TEbiTWk-NS_YZmXVzvKQtv3HDfXW0tqyuyuhNEJvHPYhQXBi_zEYvhXE6-VtOqeDmN5vvDHuH6autzB8AKXfEZonBBD2ucuFedi9ST6OuRuKS_ov5K2LiPkEgySYyHWscNRdthqeoA-aXGjVC8hFQaTy57IP5NhXG2qxtoM-t9PHmz9NEzfsn2JYzUlE8EG6JgHZCXBxuROaVJoWvB-93-9Jkgm7vp-7dhEHgQN9LUUqJeIM9neo8Mc_dcqZ3_pMOph5lSaTSgo8P_hd_ypeHk0_eUp8IqupxfzogGGBMuykAN5m-MTzh6AwEutiZZ3PpbstXLZ",
+          "alt": "A horizontal bar chart of nine industry categories sorted from 91 per cent down to 8 per cent, with an Other category last"
+        }
+      ]
+    },
+    {
+      "caption": "\n1. Domain problem characterisationvalidated byobserve and interview real users2. Operation and data-type abstractionvalidated bytarget users do their own work with it3. Visual encoding and interaction designvalidated byjustify against perceptual principles4. Algorithm designvalidated byanalyse computational complexityan error here cascades downward\n\nEach level takes the level above as its input, so a mistake at the top cannot be repaired lower down — you can only build a beautifully encoded, blazingly fast answer to the wrong question. Note how different the four checks are: the top level is validated by talking to people, the bottom by counting operations.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AZn_Uq9H0H33DdmLjaz93wQLuDqwrEFnMHdNZz1Il2OfA_KEw3reBuRXIsvIPqiuz4odheit7S8WF_ZTShDPzzkatdC_iYhzUGhxzzo2wW7fZdwjd3mqyUskvu6cal8p_W9RWuzglr0oWl2DVm_2cdpH7RJ-ry5FtiuK1mhCKZSFzeOa4FEQLzWJoLrjoeYYi9bkHcNUS8t3yolZ-GBb-iC-0b_OY28nz5-WqA-j8ryIi7OIZSVLT5F1TlnYmxSU9KL-31Yx2JO7VArPjFZdNTclwVOGClDoTTihZiBUfQC0ryZfMmF-JXWfvq1Unqp4sJqOH7QTr9yIdz8ihtB5H7lS2MeCG-WG213ki40Oywev9OcENsLBq3m4kIrbtVNij-1GeMGquCbg_U7CSNLxQ2jIToiYkmBO3BRV6bd9sldXCaNaTSdZTnEhyQxQS_SjlzmRh5VdOMoBvYcN3osYlQBQbnx_pD8VKBAejkkCL4lIiM5e88ZvEuANAp0rVFzB6kgj2Tx3Tmh5kDcvIj8YTFOc_DLRSz8La4KGnTIpxuMuCLpwcMVws5YM7SROTmk3g1DI0F40TDzb-cg7CjKcQulaApfSBJv_aF5XRcpopSs7Ms95FDUdzuH8xwJmeca4eznFjZCjim4qVMmBq5mrZv37_NHc4rf8CvoyF5LSnh8s7bkSvrzxbJdTMZ7ub1rRyEt8DozPzlY5yeT0CM0eA8X0Ek9JkO4UsR4wGGOLma7dnlpU0LFbz1Qcl3_IzPSS-aaLoXVT_OjVlPMA0iNlbbh0fbvS7r9CE1PKpD-YAj8SDdKMo7U_AD8pfZ3-65hv2eKPxrGQjj7CZ6wVPZpG-0IkLbaTvFLe5rKEXwAfqqiaRY6lHzUmC_Le_vBxBJuU0lxutfs11CdHms_TXV9oDkbWkGWx98KL0OW3J_RtSpbiTCPAV4MfrmvA4fNWWQANP61U-2Tb6jUvl6GEGiJU06OlVKKJSDJRIb7eJ6cpt1YZ9AZvC1g51oH2o1tEhUwPaCjKAOxPytA8__ch03kQPg92t3eULKMln00F5Sx_SHo-sXaJ7Zz0qV4pAcR6lfnd4g_EK5t68HnxQsbhLeKwH_Lpa7RLHjedUDZcsqwrNSRXQzxpUv3fG5Hoxjs5SMKfCbvbErathOBjOcxqE5plO2VQq1dgIrqm8hA6EuT5M7yS2eN5OmWZYslpEwxFEPW4GLGwydEw0ERSrXdNypOhCOWterMbSOppa4C06t3eWbOvBJGxlQrKaR3BE_csuhWFBwCE0SyhSl7Q8povQYLvqfMnjxjHuri02RBmySbbOw5aJ8kGW39Jp1hw-0CEFS2CvUd_iAVdY2HGEW85d5FI1BkLg13PbWgnIn1HRFWS72Y2Z4skb_FFnWUbvaENjqEXu0fS_o4J6BBEJcNvWtshTsYiBzK799Vvu-4HLw2qmzOA3Fh9iddI82UhL7d4NuhQnqeUtcKN66OdgLpetGu28dZSrwHxCohP60jUvATNAZqYBKSsgB3hQY6pYG1W9Mwr7wBz4JgzigVXALYw_2XAfzpYZQMkPqDpF8MOurQr7qithSzeZgPO1vu1ivSAheOoxjO26pUFBSjkfkm0Yb2-3iu1TEDrn66BQikDNvMs5NaPm9FWs98A65KjK1izZnEohU7dU_IXGxL02qOn1915c0j-U8f3cSDsd9csATw5wSnyuTCb-1SKjlpj5TEbiTWk-NS_YZmXVzvKQtv3HDfXW0tqyuyuhNEJvHPYhQXBi_zEYvhXE6-VtOqeDmN5vvDHuH6autzB8AKXfEZonBBD2ucuFedi9ST6OuRuKS_ov5K2LiPkEgySYyHWscNRdthqeoA-aXGjVC8hFQaTy57IP5NhXG2qxtoM-t9PHmz9NEzfsn2JYzUlE8EG6JgHZCXBxuROaVJoWvB-93-9Jkgm7vp-7dhEHgQN9LUUqJeIM9neo8Mc_dcqZ3_pMOph5lSaTSgo8P_hd_ypeHk0_eUp8IqupxfzogGGBMuykAN5m-MTzh6AwEutiZZ3PpbstXLZ",
+      "alt": "A horizontal bar chart of nine industry categories sorted from 91 per cent down to 8 per cent, with an Other category last"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The nine relationships",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#the-nine-relationships"
+    },
+    {
+      "text": "The procedure",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#the-procedure"
+    },
+    {
+      "text": "Munzner's nested model",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#munzners-nested-model"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#the-nine-relationships"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#the-procedure"
+    },
+    {
+      "text": "How accurately a chart can be read",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#munzners-nested-model"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart#common-mistakes"
+    },
+    {
+      "text": "How to look at an image",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "When a chart lies",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty"
+    },
+    {
+      "text": "\n              How accurately a chart can be read\n              The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+    },
+    {
+      "text": "\n              When a chart lies\n              The dangerous chart is not the ugly one. It is the one where every number is correct and the picture still argues for something the numbers do not support.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty"
+    },
+    {
+      "text": "\n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "DATA-002 — Financial Times Visual Vocabulary",
+      "href": "https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary"
+    },
+    {
+      "text": "DATA-007-C11 — ONS Service manual — Choosing a chart type",
+      "href": "https://service-manual.ons.gov.uk/data-visualisation/chart-types/choosing-a-chart-type"
+    },
+    {
+      "text": "DATA-008 — ONS Service manual — Principles",
+      "href": "https://service-manual.ons.gov.uk/data-visualisation/guidance/principles"
+    },
+    {
+      "text": "DATA-005 — Munzner, A Nested Model for Visualization Design and Validation (InfoVis 2009)",
+      "href": "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/"
+    },
+    {
+      "text": "DATA-014 — U.S. Web Design System — Data visualizations",
+      "href": "https://designsystem.digital.gov/components/data-visualizations/"
+    },
+    {
+      "text": "\n        PreviousHow accurately a chart can be read",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+    },
+    {
+      "text": "\n        NextWhen a chart lies",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+}

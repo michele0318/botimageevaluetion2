@@ -1,0 +1,141 @@
+{
+  "title": "Icon, pictogram, symbol, glyph, logo — Image Wiki",
+  "text": "\n  \n\n  Icon, pictogram, symbol, glyph, logo\n  Five words the field uses interchangeably for five different things. Knowing which one you are looking at tells you what test it has to pass.\n\n  \n    Termicon / pictogram / symbol / glyph / logo\n    Also calledicons, pictograms, symbols, iconography, symbol signs\n    Not the same aslogo and wordmark, typographic glyph, illustration\n    Read6 min\n  \n\n  \n    \n      On this page\n      \n        The five wordsRecognition is not interpretationSome pictures travel and some do notCommon mistakes\n      \n    \n  \n\n  You are in an airport corridor and there is a small black picture on the wall: a person in a peaked cap standing behind a counter, with an open suitcase on it. You can name every object in that drawing in two seconds. Officer. Counter. Case.\nNow say what the sign means. Is it where you declare goods, where your passport gets stamped, where luggage is searched, or where lost bags are claimed? You recognised the picture completely and learned nothing about what to do.\nThat gap is the whole subject. And the five words people use for these little pictures — icon, pictogram, symbol, glyph, logo — are not synonyms. Each one names a picture with a different job and therefore a different test to pass.\n\ntelephonetaxicup of coffeeA picture of a thingyou can name it before anyone explainsofficer, a casetwo peoplea chair, a clockA picture of a situationyou can name the parts, not the servicego this wayask herenot allowedPure conventionnothing in the shape resembles the meaning\n\nNine real pictograms from the AIGA/DOT set, sorted by how much of the meaning the drawing itself carries. All are public domain.\nLeft, the drawing is the referent: a handset, a cab, a cup. Middle, the drawing is a little scene that stands in for a service — you can name the officer and the case, but \"customs\" is an institution, not an object, so you have to infer it. Right, nothing about the shape resembles the meaning: the ring-and-bar means forbidden and the arrow means go, and both had to be taught to you once.\n\n\nThe five words\nAn icon is a small functional picture inside an interface: tap it and something happens. Carbon draws its interface icons on 16-pixel artboards and requires a touch target of 44 pixels or more, which tells you what an icon really is — a control the size of a fingertip.\nA pictogram is a pictorial sign that stands for a thing, a place or a service in the physical world. It is bigger, it does nothing when touched, and it has to survive being read across a room. Carbon's minimum pictogram size is 48 pixels, three times its icon size, and its guidance is blunt: do not use a pictogram as a replacement for a UI icon. Same drawing style, different job.\nA symbol is conventional. Its meaning was assigned, not depicted, so it cannot be worked out — only remembered. The red diagonal bar, the recycling triangle, the wheelchair, the biohazard trefoil: every one is a fact you learned.\nA glyph is a character in a font. This is not a metaphor any more. Material Symbols ship as a variable font with axes for weight, fill, optical size and grade; Apple's SF Symbols number over seven thousand, come in nine weights and three scales, and sit on the text baseline like letters. When an icon is a glyph it inherits type behaviour — it scales with the text, it can be bolded, and it will be missing if the font fails to load.\nA logo identifies an organisation. It is the one picture here that is not supposed to be generic: being unmistakably one specific thing is the point. Carbon says plainly: don't use pictograms as logos.\nRecognition is not interpretation\nTwo separate things happen when someone looks at a small picture, and they fail separately.\nRecognition is naming the depicted object. It runs on ordinary object recognition — silhouette, part relationships, a couple of diagnostic features, the machinery gestalt grouping describes — so it is fast, and a clean pictogram makes it almost free.\nInterpretation is working out what the sign is telling you to do here. That does not come from the drawing. It comes from convention, from the frame around it, and from what you already know about buildings like this one. The picture is the smaller half of the message.\n\non the kerb at the rank itselfIdentificationyou have arrived — it is here50 m before the junction, overheadDirectionnot here — keep walking that way\n\nThe identical public-domain pictogram, and the only difference is an arrow.\nLeft, it names the spot you are standing on. Right, it tells you the spot is somewhere else. Recognising a taxi gets you neither reading. The ADA takes the same distinction seriously enough to write it into law: a pictogram that labels a permanent room must sit on a field at least 6 inches high with raised and braille text directly below that field, while a pictogram that merely informs or points is exempt from both.\n\n\nSome pictures travel and some do not\nA pictogram of a thing travels well, because the thing exists in the viewer's world and has one name. A pictogram of an abstraction travels badly, because the drawing can only show a scene that implies it, and which scene implies what is local knowledge.\nLook again at the officer and the case. That reading requires you to know that a country inspects goods at its border, that inspection happens at a counter, and that the person doing it wears a uniform. The clock beside a seated figure means \"waiting room\" only if you already expect a room whose purpose is delay.\nThis is exactly why the serious symbol sets are tested rather than reasoned about. The SEGD healthcare programme generated 155 candidate drawings for 22 destinations, cut them to five each with an expert panel, and then ran comprehension tests on linguistically diverse hospital users before choosing the final 22. Nobody could tell from the drawing board which ones would land.\n\n\n\nPhoto: Glogger, Washroom pictogram sign with braille, 2008, via Wikimedia Commons, CC BY-SA 3.0.\nFour of the five categories on one plate. The man and the woman are pictograms — pictures of the expected occupants. The wheelchair is the International Symbol of Accessibility, a symbol: it does not mean \"wheelchairs\", it means \"accessible\", and you had to be told. WASHROOM is set in glyphs. The braille strip is a fifth writing system that is not required to contrast with the plate, because fingers do not care about contrast.\n\n\nCommon mistakes\n\n\"A good pictogram needs no explanation.\" True only for pictures of objects. For services, institutions and rules, the label is doing most of the work and the picture is a fast handle on it.\n\"Icon and pictogram are the same thing at different sizes.\" Different jobs. An icon is a control you touch; a pictogram is a label read across a room, so it is sized by viewing distance. Scale a 16-pixel icon up to a doorplate and you get a thin, weak-stroked drawing that dies at 10 metres.\n\"It worked in the mock-up, so it works.\" You judged it knowing the answer. Once you know what a symbol means you can never again see it the way a stranger does. This is why comprehension has to be measured.\n\"More detail makes it clearer.\" Detail dies first at distance and small sizes. What survives is silhouette and one or two diagnostic features — which is also why members of a large set start to collide.\n\n\nReading a small picture on purpose\n\nName what is literally drawn. Objects only, no interpreting.\nNow say what the sign is asserting — this is it, it is that way, it is forbidden. Which part of the picture told you? Usually none of it.\nFind the convention doing the work: a ring, an arrow, a colour, a frame, a position on the wall.\nAsk what a stranger to this building would have to know already. That list is your risk.\nCheck the label. If removing the text leaves the sign ambiguous, the picture was decoration.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Testing whether a symbol works\n              You cannot tell whether a symbol is understood by looking at it, because you already know the answer. You find out by testing strangers — and the results are boringly repeatable.\n            \n          \n        \n          \n            \n              Sign legibility is arithmetic\n              How big, how thick, how far apart, how much contrast. Most of it is calculated from viewing distance and mounting height, and the legal numbers are floors rather than goals.\n            \n          \n        \n          \n            \n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        ICON-004 — SEGD — AIGA/DOT Symbols for Transportation (public domain set)ICON-005 — Wikimedia Commons — Category:AIGA symbol signsICON-003-C01 — Carbon Design System — Pictograms, usageICON-002 — Carbon Design System — Icons, usageWAY-010 — US Access Board — Guide to the ADA Standards, Chapter 7: SignsICON-008 — SEGD / Hablamos Juntos — Universal Symbols in Health Care: Implementation GuidebookICON-001 — Material Design 3 — Icons\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Icon, pictogram, symbol, glyph, logo",
+    "The five words",
+    "Recognition is not interpretation",
+    "Some pictures travel and some do not",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\ntelephonetaxicup of coffeeA picture of a thingyou can name it before anyone explainsofficer, a casetwo peoplea chair, a clockA picture of a situationyou can name the parts, not the servicego this wayask herenot allowedPure conventionnothing in the shape resembles the meaning\n\nNine real pictograms from the AIGA/DOT set, sorted by how much of the meaning the drawing itself carries. All are public domain.\nLeft, the drawing is the referent: a handset, a cab, a cup. Middle, the drawing is a little scene that stands in for a service — you can name the officer and the case, but \"customs\" is an institution, not an object, so you have to infer it. Right, nothing about the shape resembles the meaning: the ring-and-bar means forbidden and the arrow means go, and both had to be taught to you once.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\non the kerb at the rank itselfIdentificationyou have arrived — it is here50 m before the junction, overheadDirectionnot here — keep walking that way\n\nThe identical public-domain pictogram, and the only difference is an arrow.\nLeft, it names the spot you are standing on. Right, it tells you the spot is somewhere else. Recognising a taxi gets you neither reading. The ADA takes the same distinction seriously enough to write it into law: a pictogram that labels a permanent room must sit on a field at least 6 inches high with raised and braille text directly below that field, while a pictogram that merely informs or points is exempt from both.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nPhoto: Glogger, Washroom pictogram sign with braille, 2008, via Wikimedia Commons, CC BY-SA 3.0.\nFour of the five categories on one plate. The man and the woman are pictograms — pictures of the expected occupants. The wheelchair is the International Symbol of Accessibility, a symbol: it does not mean \"wheelchairs\", it means \"accessible\", and you had to be told. WASHROOM is set in glyphs. The braille strip is a fifth writing system that is not required to contrast with the plate, because fingers do not care about contrast.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AYtkfTFwabWnCKaSN2hMWTmh2C6wgq07lqPqGPrOoanwy-m0tJ-yCz1Kd9ZRCWbBB1pxrsqHKrPdbJoZf1v1_v9RYidjcf1-QMiqq3AbezJHeSc3TfyUZH90RKE0fThdwA96Qg-FbN7ixYGFWjgsIbEnaZol-k3v5Jaev2dHBdxncevcPqLoTJukrR65qe1iyDTScbpuvqmoY0Ut7-huPb7rAeFnk6Pz3tUxYKjm_G1rjC6PTBpvKUJhtMQdK_PDY6VizpF2a6SPe9YaROLDohyeJRzggU0YtQQNoUHjT8rgrFFUxaD7UZJ7znt6Sn1Ys6z_1pgEtdl3rDyTB0_zmoOj3rGtZAU9BMtKtwPcRZgzUIG7va6DBAM5_kn-tc-8WuTbpqOy0lFqOjLBc4ZidXBmL-o2w_eeij15OLfLUBKciJ2hD5y9jZUWMQ8FQNRDnOxrI4edOb6We1PHVNDDanwAAZ0dAfU3sy9vje7AV3O-rm5vyq1mFccAZ88MKwZEOBjzNs_lPEblYKnv_lXSQ79ym9gRxkAOYRLzbpqhiiGSJ-4dJHSLZ-PYdBItdBsBGdVJHZEsG1ixY4ZTdAgTsy7oKMpnghwUiHqUbOU64BZP-Us4ll12a9AyGJKCO0iH9egqMfsl0QuoQUPPNHvLiAX9uVMNEAPwO3QcNhMiuC677tiUhvoJ0oZ4HKeBB2fPjQxVL48-sqLwsXcxiAgoLVU5rCcI35oJpUcotC-Tn-asto5xdtjciMNZcD1SYXgUVfi4GytOtrLjcIojc6l_gTqVDEaPqDYncVSL2xhZpUb1ElZDAd9stpMFjhxNUtfcssm1wKXFIlWSdoMC53-Byc4mzQreanvv_wZ-WmqyMNHrWJIwAoPPBTdLl0oPBO93V9yDF7P12NbU0XRGxRzEbtsiQgleJy0XiR4x-5h5qlDTz9XdwlBB7YXSQmH_vVtrG-FZaNn4V8FrLLC3WK99WT-2Z9yqvbK06n57Ajfko0rGLQUP9OIBX1yimb7XgAYwrXRrADAeT7ZhdtdP-mlo_34lVLRAGKAoJRjoOc6AXjb_DU9eRK59UfnJhR_xPzlVFboG99ZPoc24m6N2yGtuBtOhAZxcXfGTWs-GuY0LJy4hvxqVa3eQXqHw1F0mS92uC5k5AWPxjFHyn_ynv5yQsHnASp9ZniEZF2o02p0GRcehv0IYrfC_qHr7HSzhK22Kjgb0GIILuwWDrAkTuv5zgZMS5pGUH82zJw4tb7djRoVYJ6zKtAPkabdTwSrggNGIIuRKRGJ6Yc-iVeDndHUY5vTOswqZfj6od13YujNA3HE1mhikZ25bXYi4d_HzkapEQXsQmSfjqRTa6oRsQR4MtiQGRyHJyMvKnE-S4_AzaebaRSl3eTLV7dozTyy9BsjinzHkEw3Cfh4MaCz5rOpADpNiR_6PbO3X_881Gyb-IOGSOc_jhLGAfF2pmkXmLmgsf_HawMQXfmra3EQpDsOPch9N_zJ2XZiG_F0XvO2uQrKo7Wu51qHjZ_WmtbfOCH-738dk7RNXfhvyAE67maBwGJJuk6MV2JP44ay9ptCDymBGj_7bKlXNz6KayjSYbmXmd8Hp1VtmhnaK5L530fFL_XlydAVYl_UVm2kDQe9aK8UtCRWzf2kpSSYHh-J9MT2JfHooUBg9S5OLdYo6y5M3iORchDVwbAWHZZg3YFN4K_PRhvw54KgVB-uvDdztA0AK9kY3pjw9XBXOjbZKv7eR50NOO3h3MwM5ZaFAwe1QMnnKS6rWWuXH69Colw22CHJ-MZVNFlB5jlq7meFSlFwn8qozvnOmyx-eeE43jc7R0_RHMV8-EbQYz_FxRBBDKCOcewL8ICH4_d49HV3O1MgzxAU8bvU0zgbgfhyofUhBt4dUNHxkh_FrBFLvmZfdbS8ggmXyCUka8MQ0fAQ1-BBwidt2V6Vs0162HsPx_CRCapXaE0NoKUf1dwg7paMwbuK3LKne7DgSas-6Joab8_FXVWvD8Nn1zeVR0ffE4MP8SBMYZDuuHdCLJ9c694hoydXq",
+          "alt": "A dark teal washroom sign with raised white pictograms of a man, a woman and a wheelchair user, the raised word WASHROOM, and a clear braille strip below"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AYtkfTFwabWnCKaSN2hMWTmh2C6wgq07lqPqGPrOoanwy-m0tJ-yCz1Kd9ZRCWbBB1pxrsqHKrPdbJoZf1v1_v9RYidjcf1-QMiqq3AbezJHeSc3TfyUZH90RKE0fThdwA96Qg-FbN7ixYGFWjgsIbEnaZol-k3v5Jaev2dHBdxncevcPqLoTJukrR65qe1iyDTScbpuvqmoY0Ut7-huPb7rAeFnk6Pz3tUxYKjm_G1rjC6PTBpvKUJhtMQdK_PDY6VizpF2a6SPe9YaROLDohyeJRzggU0YtQQNoUHjT8rgrFFUxaD7UZJ7znt6Sn1Ys6z_1pgEtdl3rDyTB0_zmoOj3rGtZAU9BMtKtwPcRZgzUIG7va6DBAM5_kn-tc-8WuTbpqOy0lFqOjLBc4ZidXBmL-o2w_eeij15OLfLUBKciJ2hD5y9jZUWMQ8FQNRDnOxrI4edOb6We1PHVNDDanwAAZ0dAfU3sy9vje7AV3O-rm5vyq1mFccAZ88MKwZEOBjzNs_lPEblYKnv_lXSQ79ym9gRxkAOYRLzbpqhiiGSJ-4dJHSLZ-PYdBItdBsBGdVJHZEsG1ixY4ZTdAgTsy7oKMpnghwUiHqUbOU64BZP-Us4ll12a9AyGJKCO0iH9egqMfsl0QuoQUPPNHvLiAX9uVMNEAPwO3QcNhMiuC677tiUhvoJ0oZ4HKeBB2fPjQxVL48-sqLwsXcxiAgoLVU5rCcI35oJpUcotC-Tn-asto5xdtjciMNZcD1SYXgUVfi4GytOtrLjcIojc6l_gTqVDEaPqDYncVSL2xhZpUb1ElZDAd9stpMFjhxNUtfcssm1wKXFIlWSdoMC53-Byc4mzQreanvv_wZ-WmqyMNHrWJIwAoPPBTdLl0oPBO93V9yDF7P12NbU0XRGxRzEbtsiQgleJy0XiR4x-5h5qlDTz9XdwlBB7YXSQmH_vVtrG-FZaNn4V8FrLLC3WK99WT-2Z9yqvbK06n57Ajfko0rGLQUP9OIBX1yimb7XgAYwrXRrADAeT7ZhdtdP-mlo_34lVLRAGKAoJRjoOc6AXjb_DU9eRK59UfnJhR_xPzlVFboG99ZPoc24m6N2yGtuBtOhAZxcXfGTWs-GuY0LJy4hvxqVa3eQXqHw1F0mS92uC5k5AWPxjFHyn_ynv5yQsHnASp9ZniEZF2o02p0GRcehv0IYrfC_qHr7HSzhK22Kjgb0GIILuwWDrAkTuv5zgZMS5pGUH82zJw4tb7djRoVYJ6zKtAPkabdTwSrggNGIIuRKRGJ6Yc-iVeDndHUY5vTOswqZfj6od13YujNA3HE1mhikZ25bXYi4d_HzkapEQXsQmSfjqRTa6oRsQR4MtiQGRyHJyMvKnE-S4_AzaebaRSl3eTLV7dozTyy9BsjinzHkEw3Cfh4MaCz5rOpADpNiR_6PbO3X_881Gyb-IOGSOc_jhLGAfF2pmkXmLmgsf_HawMQXfmra3EQpDsOPch9N_zJ2XZiG_F0XvO2uQrKo7Wu51qHjZ_WmtbfOCH-738dk7RNXfhvyAE67maBwGJJuk6MV2JP44ay9ptCDymBGj_7bKlXNz6KayjSYbmXmd8Hp1VtmhnaK5L530fFL_XlydAVYl_UVm2kDQe9aK8UtCRWzf2kpSSYHh-J9MT2JfHooUBg9S5OLdYo6y5M3iORchDVwbAWHZZg3YFN4K_PRhvw54KgVB-uvDdztA0AK9kY3pjw9XBXOjbZKv7eR50NOO3h3MwM5ZaFAwe1QMnnKS6rWWuXH69Colw22CHJ-MZVNFlB5jlq7meFSlFwn8qozvnOmyx-eeE43jc7R0_RHMV8-EbQYz_FxRBBDKCOcewL8ICH4_d49HV3O1MgzxAU8bvU0zgbgfhyofUhBt4dUNHxkh_FrBFLvmZfdbS8ggmXyCUka8MQ0fAQ1-BBwidt2V6Vs0162HsPx_CRCapXaE0NoKUf1dwg7paMwbuK3LKne7DgSas-6Joab8_FXVWvD8Nn1zeVR0ffE4MP8SBMYZDuuHdCLJ9c694hoydXq",
+      "alt": "A dark teal washroom sign with raised white pictograms of a man, a woman and a wheelchair user, the raised word WASHROOM, and a clear braille strip below"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The five words",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#the-five-words"
+    },
+    {
+      "text": "Recognition is not interpretation",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#recognition-is-not-interpretation"
+    },
+    {
+      "text": "Some pictures travel and some do not",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#some-pictures-travel-and-some-do-not"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#the-five-words"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#recognition-is-not-interpretation"
+    },
+    {
+      "text": "gestalt grouping",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#some-pictures-travel-and-some-do-not"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol#common-mistakes"
+    },
+    {
+      "text": "viewing distance",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility"
+    },
+    {
+      "text": "comprehension has to be measured",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension"
+    },
+    {
+      "text": "\n              Testing whether a symbol works\n              You cannot tell whether a symbol is understood by looking at it, because you already know the answer. You find out by testing strangers — and the results are boringly repeatable.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension"
+    },
+    {
+      "text": "\n              Sign legibility is arithmetic\n              How big, how thick, how far apart, how much contrast. Most of it is calculated from viewing distance and mounting height, and the legal numbers are floors rather than goals.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility"
+    },
+    {
+      "text": "\n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "ICON-004 — SEGD — AIGA/DOT Symbols for Transportation (public domain set)",
+      "href": "https://segd.org/resources/aiga-dot-symbols-for-transportation/"
+    },
+    {
+      "text": "ICON-005 — Wikimedia Commons — Category:AIGA symbol signs",
+      "href": "https://commons.wikimedia.org/wiki/Category:AIGA_symbol_signs"
+    },
+    {
+      "text": "ICON-003-C01 — Carbon Design System — Pictograms, usage",
+      "href": "https://carbondesignsystem.com/elements/pictograms/usage/"
+    },
+    {
+      "text": "ICON-002 — Carbon Design System — Icons, usage",
+      "href": "https://carbondesignsystem.com/elements/icons/usage/"
+    },
+    {
+      "text": "WAY-010 — US Access Board — Guide to the ADA Standards, Chapter 7: Signs",
+      "href": "https://www.access-board.gov/ada/guides/chapter-7-signs/"
+    },
+    {
+      "text": "ICON-008 — SEGD / Hablamos Juntos — Universal Symbols in Health Care: Implementation Guidebook",
+      "href": "https://media.segd.org/s3fs-public/segd_hj_00_full_workbook_1.pdf"
+    },
+    {
+      "text": "ICON-001 — Material Design 3 — Icons",
+      "href": "https://m3.material.io/styles/icons/overview"
+    },
+    {
+      "text": "\n        PreviousWhen a chart lies",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty"
+    },
+    {
+      "text": "\n        NextTesting whether a symbol works",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/pictogram-comprehension"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol"
+}

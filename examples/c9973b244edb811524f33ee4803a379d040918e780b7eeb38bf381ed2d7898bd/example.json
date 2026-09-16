@@ -1,0 +1,45 @@
+{
+  "id": "c9973b244edb811524f33ee4803a379d040918e780b7eeb38bf381ed2d7898bd",
+  "prompt": "Expressive portrait of a pensive young man with floating objects, painting in charcoal and acrylic",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is the better choice because it has a more unusual and interesting style that stands out.",
+  "split": "train",
+  "image_group": "394e45cf0602b30f66528bf9cc4d4053c2754a04424745b8366ddd5c64349d7f",
+  "image_hashes": [
+    "78f4c013c36b45de7fc7f7b4c705961e8a9e84775a2948572c8f95d04f4b0e0e",
+    "d36edeb68a666b9c9a0487464be6216637107f270e95921dd5aa062accb79f47"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "0ec73a955fdc5276a50e66dad9ac96ead0e7e9f41844aaa1bd6287db12e57e12",
+      "corrected": false,
+      "time": "2026-09-13T02:21:03"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "0ec73a955fdc5276a50e66dad9ac96ead0e7e9f41844aaa1bd6287db12e57e12",
+      "corrected": true,
+      "time": "2026-09-13T02:21:09"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is the better choice because it has a more unusual and interesting style that stands out.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:21:08"
+    }
+  ],
+  "feedback": "Image 1 is the better choice because it has a more unusual and interesting style that stands out.",
+  "lesson": "If a requested style is specified, prioritize uniqueness and visual distinction over conventional aesthetics; style preference is conditional to the prompt's intent.",
+  "lesson_evidence": "Image 1 is the better choice because it has a more unusual and interesting style that stands out.",
+  "lesson_source": "Image 1 is the better choice because it has a more unusual and interesting style that stands out."
+}

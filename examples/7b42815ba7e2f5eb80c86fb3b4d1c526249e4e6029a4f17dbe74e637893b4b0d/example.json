@@ -1,0 +1,71 @@
+{
+  "id": "7b42815ba7e2f5eb80c86fb3b4d1c526249e4e6029a4f17dbe74e637893b4b0d",
+  "prompt": "A Banksy style art piece, Charlie chaplin and the kid, blach and white and red",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is the winner because it adheres to the essential stylistic requirement of the prompt. While Image 2 is undeniably cool and beautiful, it unfortunately fails to deliver \"A Banksy style art,\" which is a crucial condition of the brief.",
+  "split": "train",
+  "image_group": "17fe0b4791f6b9b1ee749deb6c3331eb4dda263e18f97aa3b5ea8af1a88816e5",
+  "image_hashes": [
+    "a92aedbb170830c893ded4dc2b7ed74f6a964eee95203d2d899b7f0cafd17af3",
+    "6da480e07a872fa5552bdefbf75ec7c0d1aedfe99f72b4937dce1ea1c79e378f"
+  ],
+  "contextual_hints": "Banksy style\nHIGH\nBanksy is a specific, world-renowned street artist with a distinct visual stencil style.\n\nCharlie Chaplin person\nHIGH\nCharlie Chaplin is a famous historical actor and public figure.",
+  "reference_images": [
+    {
+      "label": "Banksy style",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Banksy style",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Banksy style",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Charlie Chaplin person",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "Charlie Chaplin person",
+      "file": "reference_5.png"
+    },
+    {
+      "label": "Charlie Chaplin person",
+      "file": "reference_6.png"
+    },
+    {
+      "label": "Charlie Chaplin person",
+      "file": "reference_7.png"
+    },
+    {
+      "label": "Charlie Chaplin person",
+      "file": "reference_8.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "d1646b9f7d24253a5848892d203f32111a33792462af3a43a8fb3d14d86af3d3",
+      "corrected": false,
+      "time": "2026-09-13T21:52:27"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:52:29"
+    }
+  ],
+  "feedback": "Image 1 is the winner because it adheres to the essential stylistic requirement of the prompt. While Image 2 is undeniably cool and beautiful, it unfortunately fails to deliver \"A Banksy style art,\" which is a crucial condition of the brief.",
+  "lesson": "If a requested style is specified, prioritize adherence to that style over aesthetic appeal; style compliance is non-negotiable when explicitly requested.",
+  "lesson_evidence": "Image 1 is the winner because it adheres to the essential stylistic requirement of the prompt. While Image 2 is undeniably cool and beautiful, it unfortunately fails to deliver \"A Banksy style art,\" which is a crucial condition of the brief.",
+  "lesson_source": "Image 1 is the winner because it adheres to the essential stylistic requirement of the prompt. While Image 2 is undeniably cool and beautiful, it unfortunately fails to deliver \"A Banksy style art,\" which is a crucial condition of the brief."
+}

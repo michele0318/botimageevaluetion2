@@ -1,0 +1,10 @@
+{
+  "title": "Raster and vector — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector",
+  "source_hash": "b700f70d8a2705d24b9de4f52a27492348014da216d2d6f9ecfb774f732e2b15",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2995,
+  "output_tokens": 246,
+  "processed_at": "2026-09-13T09:36:49"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "d1b18ff62ab0f374ebd462609857b357ada1e8e9557d267d218d759c7c1bdffe",
+  "prompt": "Three different device mockups for an app login screen, illustration, the branding area includes the 'benexo' logo, a specific time is displayed on the device mockups.",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: As requested, Image 1 shows three different login screens with a clean and user-friendly design. Image 2, however, fails to follow the prompt, has a disorganized layout and a poor color palette that doesn't look professional.",
+  "split": "train",
+  "image_group": "37d17a830bb9e914f0e2fad9b6b079a0973aa39405102c7e4e61ec1ed3c21fe8",
+  "image_hashes": [
+    "b397dec768d892c4e91cd37cd1df9a990386269f30ff4a08c80ea253550c2f18",
+    "2aeeba4915eefe8b4e241a16a8e978d5e745a3bb6591c753025c1290227101fd"
+  ],
+  "contextual_hints": "benexo logo\nHIGH\nThe prompt mentions a specific brand name 'benexo' for a logo. Following the recall-first policy, even if the brand is niche or new, a query is generated to help the verifier identify its visual identity.",
+  "reference_images": [
+    {
+      "label": "benexo logo",
+      "file": "reference_1.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "72a20402da250ca2ff96ae5e7586688a1ad2f625413518f4620744f1590d15ef",
+      "corrected": false,
+      "time": "2026-09-13T22:01:33"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "72a20402da250ca2ff96ae5e7586688a1ad2f625413518f4620744f1590d15ef",
+      "corrected": true,
+      "time": "2026-09-13T22:01:39"
+    }
+  ],
+  "observed_feedback": "Please take another look:As requested, Image 1 shows three different login screens with a clean and user-friendly design. Image 2, however, fails to follow the prompt, has a disorganized layout and a poor color palette that doesn't look professional.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:01:37"
+    }
+  ],
+  "feedback": "As requested, Image 1 shows three different login screens with a clean and user-friendly design. Image 2, however, fails to follow the prompt, has a disorganized layout and a poor color palette that doesn't look professional.",
+  "lesson": "If a requested style is specified, ensure the output matches that style; otherwise, prioritize clarity and professionalism over aesthetic novelty.",
+  "lesson_evidence": "As requested, Image 1 shows three different login screens with a clean and user-friendly design.",
+  "lesson_source": "As requested, Image 1 shows three different login screens with a clean and user-friendly design. Image 2, however, fails to follow the prompt, has a disorganized layout and a poor color palette that doesn't look professional."
+}

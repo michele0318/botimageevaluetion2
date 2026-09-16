@@ -1,0 +1,64 @@
+{
+  "id": "adbbf73227a52c08614e519b3d3e5b54909fcda0fd5c951de8cfb055ffbd5cac",
+  "prompt": "Book cover, pink background, hammer bending forward to hit a nail in its own handle, \"Scratching the Itch\" and \"Tim Lahan\" top left, two-tone outline illustration, paper texture",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 presents a brilliant concept demonstrating a hammer and a nail, featuring uniform text size without unnecessary spacing, all perfectly matching the hammer's design style. Image 2 falls short due to massive gaps between lines, inconsistent text colors and sizes, and a hammer and nail rendered in a completely different, clashing style.",
+  "split": "train",
+  "image_group": "4beb3108e53b937246133a627a503005c628e74b0728954a033fb405b5ebc41c",
+  "image_hashes": [
+    "1dfc83de1663f0e73854cd02b3845160e93c3c814d765ec06552d95808fad36c",
+    "eeb67c2c6436be2aa6820fea8bd42212a44b7b7c1a249433a3c5d17b3ee7c8de"
+  ],
+  "contextual_hints": "Tim Lahan artist style\nHIGH\nTim Lahan is a known illustrator with a distinct minimalist, conceptual style. Searching for his style helps the annotator understand the specific 'two-tone outline' aesthetic requested.",
+  "reference_images": [
+    {
+      "label": "Tim Lahan artist style",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Tim Lahan artist style",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Tim Lahan artist style",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Tim Lahan artist style",
+      "file": "reference_4.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "52c025590daec128c335ae6d58622a851ddc21aab133bc82e6ab4d52287ffb09",
+      "corrected": false,
+      "time": "2026-09-13T22:04:03"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "52c025590daec128c335ae6d58622a851ddc21aab133bc82e6ab4d52287ffb09",
+      "corrected": true,
+      "time": "2026-09-13T22:04:12"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 presents a brilliant concept demonstrating a hammer and a nail, featuring uniform text size without unnecessary spacing, all perfectly matching the hammer's design style. Image 2 falls short due to massive gaps between lines, inconsistent text colors and sizes, and a hammer and nail rendered in a completely different, clashing style.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:04:09"
+    }
+  ],
+  "feedback": "Image 1 presents a brilliant concept demonstrating a hammer and a nail, featuring uniform text size without unnecessary spacing, all perfectly matching the hammer's design style. Image 2 falls short due to massive gaps between lines, inconsistent text colors and sizes, and a hammer and nail rendered in a completely different, clashing style.",
+  "lesson": "If requested, match text styling and illustration style to the core visual concept; avoid stylistic clashes or inconsistent spacing between text elements.",
+  "lesson_evidence": "Image 1 presents a brilliant concept demonstrating a hammer and a nail, featuring uniform text size without unnecessary spacing, all perfectly matching the hammer's design style.",
+  "lesson_source": "Image 1 presents a brilliant concept demonstrating a hammer and a nail, featuring uniform text size without unnecessary spacing, all perfectly matching the hammer's design style. Image 2 falls short due to massive gaps between lines, inconsistent text colors and sizes, and a hammer and nail rendered in a completely different, clashing style."
+}

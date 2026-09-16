@@ -1,0 +1,138 @@
+{
+  "title": "Colour management — Image Wiki",
+  "text": "\n  \n\n  Colour management\n  Why a colour on your screen is not a colour on paper, and the machinery — gamuts, profiles, a shared connection space and four rendering intents — that decides which compromise you get.\n\n  \n    Termcolour management / color management\n    Also calledICC colour management, colour profiles, gamut mapping, rendering intent\n    Not the same ascolour correction, colour grading, calibration\n    Read9 min\n  \n\n  \n    \n      On this page\n      \n        A gamut is a set of colours, not a qualityOne common language in the middleFour ways to lose gracefullySoft proofing: see the bill before you pay itCommon mistakes\n      \n    \n  \n\n  Pick the most electric magenta your screen can make and print it on an office printer. What comes back is a dusty pink-purple. Nothing is broken, nobody miscalibrated anything: there is no ink that does what that pixel did.\nA screen makes colour by emitting light. Paper makes colour by absorbing some of the light that falls on it and throwing the rest back. Those are different physics with different limits, and colour management is the bookkeeping that gets you from one to the other with the fewest surprises.\nA gamut is a set of colours, not a quality\nThe gamut of a device is the range of all colours it can actually produce (PRINT-004, §3). It has a shape, and the shape matters more than the size.\n\nredgreenyellowblueredgreenyellowblueWhat the screen can showsRGB, mid-lightness slice: 359 sampled patchesWhat the press can printgeneric CMYK on coated paper: 149 of those 359 survivepressscreen210 patches: no inkreaches this far out16 patches the pressreaches and sRGB does not\n\nBoth panels are the same slice through colour space — a horizontal cut at middle lightness, green to red left-to-right, blue to yellow bottom-to-top. Of 359 sampled patches an sRGB screen can show at that lightness, 149 survive the trip to a generic CMYK press profile.\nWhere they die is the interesting part. The whole magenta-and-violet corner goes: 210 patches have no ink combination that reaches them, which is why that electric magenta comes back dusty. But the press is not simply weaker. Follow the accent-outlined cells on the left of the right-hand panel: 16 patches the press reaches and sRGB cannot, out in the cyan-greens. Printed cyan ink is more saturated than a screen's cyan primary at this lightness.\nSo \"the print gamut is smaller\" is the wrong mental model. It is a different shape, and colour management is the business of reconciling two shapes that overlap without containing each other.\n(Computed with littleCMS from the sRGB IEC61966-2.1 and Apple Generic CMYK profiles, media-relative colorimetric, 40 × 40 sample grid.)\n\n\nOne common language in the middle\nIf you had five cameras and four printers you would need twenty conversions. ICC's trick is a hub: every profile converts to and from one shared profile connection space, so input and output transforms can be built independently by different vendors and still pair up correctly at run time (PRINT-004, §2).\nThe PCS is not a device. It is CIE colorimetry, based on the CIE 1931 standard observer — a measurement of what a human eye would match — and pinned to a defined viewing setup: illuminant D50, the measurement conventions of ISO 13655, and a reference viewing condition of D50 at 500 lux with a 20% reflectance surround (PRINT-004, §2). Two colours with the same PCS numbers will look the same when viewed under those conditions. That last clause is doing real work, and it is why the Adobe advice below is not fussiness.\nA profile is then, in the ICC's own words, \"a carrier of a colour transform plus information about the intended use of the transform\" (PRINT-007, page 10). It is a binary file of tables and tags. Note what it is not: a profile cannot choose which transform to use for your data — that decision belongs to the colour management module, the CMM (PRINT-007, page 11).\n\nAssign and convert are opposites\nTwo menu items that sound similar and do the reverse of each other. Assign changes the profile and leaves the numbers alone: same R, G, B values, now interpreted as meaning something else, so the colour on screen changes. Convert changes the numbers and leaves the appearance as close as it can: new values in a new space, chosen so the colour looks the same. Reach for convert when you are moving a file to a press; reach for assign only when a file arrived with the wrong tag or none at all.\n\nFour ways to lose gracefully\nWhen a colour will not fit, something must give. ICC defines four rendering intents — four different compromises — and picking one is the only real creative decision in the whole pipeline (PRINT-004, §3.1).\n\nMedia-relative colorimetricin-gamut kept, the rest clip to the edgeon the screenon the paper2033343433chromaICC-absolute colorimetricpaper white left where it measures: L* 88.7on the screenon the paper1823242524chromaPerceptualwhole range squeezed so nothing collapseson the screenon the paper1017233036chromaSaturationvividness kept, hue allowed to slideon the screenon the paper2628313437chromasource: five magenta patches of rising chroma, all at the same lightness\n\nFive magenta patches of rising chroma, all at the same lightness, sent to the same press profile four times. The number under each patch is its chroma after the trip.\nMedia-relative colorimetric (§3.1.1) rescales in-gamut values so the medium's white maps to the reference white, with no further compression. The first patch survives at 20. The other four all land between 33 and 34 — four distinct colours, one ink recipe. In a photograph that is a flower with no petals.\nICC-absolute colorimetric (§3.1.2) leaves in-gamut tristimulus values unchanged, which means it does not pretend the paper is white. This profile's stock measures L* 88.7 with b* +3.6 — a faintly yellow grey — so the whole set sits darker and duller on a visibly tinted ground. That sounds like a bug and is exactly what you want for two jobs the ICC names: spot colours, and simulating one medium on another.\nPerceptual (§3.1.4) trades contrast to preserve detail across the tonal range. Every patch moves, including the one that fitted, and the extremes end up closer together than they started — but all five stay distinguishable. Intended for photographs.\nSaturation (§3.1.3) trades hue accuracy for the vividness of pure colours. Intended for charts and diagrams, where a reader needs to tell series 3 from series 4 and nobody will audit the exact red.\nTwo honest caveats. ICC does not specify where out-of-gamut colours land for the colorimetric intents, and perceptual and saturation mapping are explicitly vendor-specific — so the top two panels are measured and the bottom two illustrate the stated aim. And a profile may not even have separate tables: in Apple's Generic CMYK profile the A2B0/A2B1/A2B2 and B2A0/B2A1/B2A2 tags all point at the same two data blocks, so perceptual, media-relative and saturation give byte-identical output there.\n\n\nThat last point is worth carrying around: if switching intent changes nothing, the profile has nothing to switch to. Ask the printer for theirs rather than reaching for a generic one.\nSoft proofing: see the bill before you pay it\nA soft proof asks your display to imitate the destination: the file is converted through the press profile and back, so what you see is a preview of the compromise. It is the cheapest way to learn that your brand magenta is unprintable — cheaper than a press check, far cheaper than 40,000 cartons.\nIt only works if the display is honest, which is where profiling comes in.\n\n\n\nRobert Cooke, X-Rite ColorChecker Passport, 27 January 2013. Wikimedia Commons, CC BY 2.0.\nProfiling any device starts with measuring known colours: the ICC notes that \"one of the first steps in profile building involves measuring a set of colors from some imaging media or display\" (PRINT-004, §2). This is the camera version of that chart — the lower panel is the classic 24 patches, six of them a neutral grey ramp along the bottom row. Photograph it under the light you care about, compare what the camera recorded against the values the patches are known to have, and the difference is the profile.\nFor a press the same idea runs the other way: print a chart of hundreds of ink combinations, measure the paper with a spectrophotometer, and build the tables from the gap between what you asked for and what the ink did.\n\n\nAdobe's advice for judging the result is all about the room, and it is more important than any software setting (PRINT-001, PRINT-003): install D50 (5000 K) lighting or use a D50 lightbox; work in a room with neutral grey walls; set the desktop to plain grey, because a bright wallpaper around the image will shift your perception of it; leave the monitor on for half an hour before trusting it; and re-profile it roughly monthly, because displays drift. Also worth knowing: your shirt reflects off the screen. Final judgements on a contract proof must be made under the lighting conditions your country's rules specify, not under the office fluorescents.\nCommon mistakes\n\n\"My monitor is wrong.\" Usually nothing is wrong. You are asking for a colour that no ink on that paper produces; see the gamut diagram.\n\"Convert everything to CMYK early.\" Every conversion throws away colours you cannot get back. Stay in the wide space and convert once, late, to the profile the printer names.\n\"Perceptual is the safe default.\" It moves colours that fitted perfectly. For flat brand colour and spot inks, colorimetric is usually the right answer; perceptual is for photographs.\n\"Absolute colorimetric is the most accurate one.\" It is the most literal one. Applied to a normal print job it hands you a grey cast, because it is faithfully reproducing the fact that your paper is not white.\n\"The profile decides.\" The CMM decides, using the profile and the intent you chose (PRINT-007, page 11). Change the application and you can change the result.\n\"Same numbers, same colour.\" Numbers mean nothing without a profile to say what they refer to — the whole reason PDF/X makes an output intent mandatory.\n\n\nBefore you send colour to print\n\nAsk the printer for the destination profile by name. If the answer is \"just send CMYK\", ask again.\nSoft proof with that profile. Note every colour that shifts, and check whether any of them is a brand colour.\nLook at the out-of-gamut warning, if your application has one, on the areas that matter — not the whole image.\nChoose the intent on purpose: colorimetric for flat brand colour and spot inks, perceptual for photographs.\nJudge it on a profiled screen, in grey surroundings, under steady light. Lightness, chroma and hue all move under conversion, and the darkest tone a print can hold is nothing like the darkest tone a screen can show.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Hue, value and chroma\n              A colour is not one thing. It is three independent dials — which colour it is, how light it is, and how far it sits from grey — and most arguments about colour are two people turning different dials.\n            \n          \n        \n          \n            \n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            \n          \n        \n          \n            \n              Exposure and dynamic range\n              How much light got recorded, and how far apart the brightest and darkest thing can be before one of them stops recording at all.\n            \n          \n        \n          \n            \n              How accurately a chart can be read\n              The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        PRINT-004 — ICC — Introduction to the ICC profile format (§2 PCS, §3.1.1–3.1.4 rendering intents)PRINT-007 — William Li, ICC — Fundamentals of ICC Color ManagementPRINT-001 — Adobe — Understanding color management (Acrobat)PRINT-003 — Adobe — Working with color profiles (Acrobat)\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Colour management",
+    "A gamut is a set of colours, not a quality",
+    "One common language in the middle",
+    "Four ways to lose gracefully",
+    "Soft proofing: see the bill before you pay it",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nredgreenyellowblueredgreenyellowblueWhat the screen can showsRGB, mid-lightness slice: 359 sampled patchesWhat the press can printgeneric CMYK on coated paper: 149 of those 359 survivepressscreen210 patches: no inkreaches this far out16 patches the pressreaches and sRGB does not\n\nBoth panels are the same slice through colour space — a horizontal cut at middle lightness, green to red left-to-right, blue to yellow bottom-to-top. Of 359 sampled patches an sRGB screen can show at that lightness, 149 survive the trip to a generic CMYK press profile.\nWhere they die is the interesting part. The whole magenta-and-violet corner goes: 210 patches have no ink combination that reaches them, which is why that electric magenta comes back dusty. But the press is not simply weaker. Follow the accent-outlined cells on the left of the right-hand panel: 16 patches the press reaches and sRGB cannot, out in the cyan-greens. Printed cyan ink is more saturated than a screen's cyan primary at this lightness.\nSo \"the print gamut is smaller\" is the wrong mental model. It is a different shape, and colour management is the business of reconciling two shapes that overlap without containing each other.\n(Computed with littleCMS from the sRGB IEC61966-2.1 and Apple Generic CMYK profiles, media-relative colorimetric, 40 × 40 sample grid.)\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nMedia-relative colorimetricin-gamut kept, the rest clip to the edgeon the screenon the paper2033343433chromaICC-absolute colorimetricpaper white left where it measures: L* 88.7on the screenon the paper1823242524chromaPerceptualwhole range squeezed so nothing collapseson the screenon the paper1017233036chromaSaturationvividness kept, hue allowed to slideon the screenon the paper2628313437chromasource: five magenta patches of rising chroma, all at the same lightness\n\nFive magenta patches of rising chroma, all at the same lightness, sent to the same press profile four times. The number under each patch is its chroma after the trip.\nMedia-relative colorimetric (§3.1.1) rescales in-gamut values so the medium's white maps to the reference white, with no further compression. The first patch survives at 20. The other four all land between 33 and 34 — four distinct colours, one ink recipe. In a photograph that is a flower with no petals.\nICC-absolute colorimetric (§3.1.2) leaves in-gamut tristimulus values unchanged, which means it does not pretend the paper is white. This profile's stock measures L* 88.7 with b* +3.6 — a faintly yellow grey — so the whole set sits darker and duller on a visibly tinted ground. That sounds like a bug and is exactly what you want for two jobs the ICC names: spot colours, and simulating one medium on another.\nPerceptual (§3.1.4) trades contrast to preserve detail across the tonal range. Every patch moves, including the one that fitted, and the extremes end up closer together than they started — but all five stay distinguishable. Intended for photographs.\nSaturation (§3.1.3) trades hue accuracy for the vividness of pure colours. Intended for charts and diagrams, where a reader needs to tell series 3 from series 4 and nobody will audit the exact red.\nTwo honest caveats. ICC does not specify where out-of-gamut colours land for the colorimetric intents, and perceptual and saturation mapping are explicitly vendor-specific — so the top two panels are measured and the bottom two illustrate the stated aim. And a profile may not even have separate tables: in Apple's Generic CMYK profile the A2B0/A2B1/A2B2 and B2A0/B2A1/B2A2 tags all point at the same two data blocks, so perceptual, media-relative and saturation give byte-identical output there.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nRobert Cooke, X-Rite ColorChecker Passport, 27 January 2013. Wikimedia Commons, CC BY 2.0.\nProfiling any device starts with measuring known colours: the ICC notes that \"one of the first steps in profile building involves measuring a set of colors from some imaging media or display\" (PRINT-004, §2). This is the camera version of that chart — the lower panel is the classic 24 patches, six of them a neutral grey ramp along the bottom row. Photograph it under the light you care about, compare what the camera recorded against the values the patches are known to have, and the difference is the profile.\nFor a press the same idea runs the other way: print a chart of hundreds of ink combinations, measure the paper with a spectrophotometer, and build the tables from the gap between what you asked for and what the ink did.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AUtvduzTmzuEcdj6DL6tyKlEZ6WOKkqit2PkVPD27I5lZXEM_M_XqsBLo9Gef2lUuqKn1L8XOJpygwQqCjJnRz-71Up5qIw90zDZrfbQu9WoeRTEyHfkpM5r7E-2CU9LhBudAxYic_2-oxarLfAXuAOSNuN5lpb6AWCkov_BCnksMEGbNNMj__uptWe5UPZnYbdso5uXEBHszqBgFVseKNpzSpoAfZ1NBAmhz0_4OjrmQUI56CcCr107uS2d9FF-ubn01yuCkC4-UhGFAGC0g_9eA7leZBWQuAH2u3Co2BzbsRIfVCmOwbXrXrYvXpvy1QCfVJ50lIQ1mTPf-o8sXCJQaEVoHlSzV5a7rJvFbTq24sVbTM35F-ngJNJ0d3Lp5waLVYstGFuY-0clAfJaNLh3W7xUXacXptAsi8eROK1nh9s05gYnOadi5ZTug6aHersN4gAhROC6GG5wCWi9KrL0HCjdR82sOCxAgXxNfkuWKzR0NXhNFSdcZJaqpmj3ySCHtA2lWU8nOV-7o6K6ZJePSqHX6We7HYz7qehFB8X83tnxB3o6WRS4AKip6JmjAeDb9RiBWuYta82YTnU4f9p_DBthd3ZLKrTFIrrJ3DVdXa9nW_xTv7EVs4i3Sy-q7jWN6ypo-PPcEZpdKBrd9LxBjBpavjFsfp_VOpDLrYEhnCETIHIkcBJLr6yalLuIJUYekqDnDQrkzGpZhwTopAYsNZF7FFeFS2n_Sa7QiJk_T5e2IsX-mrKkZoih-Von0iFiMq14ETK01L5mxUKgKzIxecoo682sScBvUjgQD5TzpMpoM6OaGODN1AJlb_NT-4lsX76LYLHXP_zNs8pe-9rVeSMtfjy_z4TR5dG4y1vL-2marylOgVlrPlKEGhT6SJrUgDakBBRXOg4Q8bERH99fPoXRDim6bluspfcg2UusKeQzAbNDevPYXTrgt5IqvncCFJLywO2GKlH701jfNX22VVGy-th2uqBGNn_cbc-_g7tYX4NP1zWgZWbpOfK8rU6hiIBYO-vJot1DKcfpkuvkEWWwPXo5yiGRvfTy3NDqA8WwwZgV1CocEYFG3pgnLzbtJIbAq2wqxD66vQdQyNf61L8q5o93ZaLLq9b6a4zaibkaIAzbrFKwGw1Ta0Xo33BW7QkohkPp8G09HqGqerWB-ohCfEQzY0kNFqxq7bdZ33pKwj3fdfk3fQbNLedO18VZRar47Es4SBW5cQFoFh4bt--MYzr-g1gw_iXOAB_VB4Ys_iFPiYaUaSk-SMszE7ZrP5_VClu1-bbkuFNVSiDHv_ySZ3lhTIiQ0ji_7PsDpCla7zgjY6_5Dja1gxALL0ybVfVpDqfJxgvOmUOkqrr3rBJfmLla_zBhj1efGIPnpUUC2z1loPop1N2IpALF3KTfuSWr2Pjl2acTEHi1rEJncGIr8pZ3J2hCu-c_5KeeSB67Yj6Ztv2s4x8JusBWtEZZ_DNf_Z4zQ9sWyi9XEV8Vcmo5cbj7RgEwo9uaQMdRnqcBtF9b72WAJ9wxXJ-Tkf_maF__cYsmQcnS3QjifY7z2R5LH9mjUUMbVsr-H6WhuA-6x-_Ji1wGDkof8dD2jaL0SrPQ5fpcGlKQHVXO1N6GjmK3Z66MoHfnWvvwo8unmHePRhYDwAcHxIntXmwlrKj2UCXCa2Xzn0KrI_J32LAukr9YBuUnUtFGEPCXIG8Vpv6TnOqrNpoWPq_nWB8FoOugcD7UhB4qxTlfIsGRJxa8Yq0KB_zc1tnBr8_JaX5wJZ-SSg2ul8j8H6ur7ElmIDOT7lEs9gEyGk1mhv2F1Bk40BrByVweF6NJrfHiBO85ev57bkBRiiXH6yRJXXiinChPIkij0cTRFA48DWm9D-u7P_M7tKkIidJFnp1-M5Zohgm0DLrgjPuSCqGgCRDKJ-aUTR_UMfDT8nouWA014UyXKS4iRwlDLWwCSDR_v121S4QGK4BrW4JOc1TtRNGJdPGS88Hl4vxpeRy8ui0_UpC3EWbJp-wxjRGBEC_RKDr2xNau1NyyR_aMxPw-UJGr",
+          "alt": "An X-Rite ColorChecker Passport open on a wooden table, showing one panel of saturated and neutral patches and another of 24 standard colour patches"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AUtvduzTmzuEcdj6DL6tyKlEZ6WOKkqit2PkVPD27I5lZXEM_M_XqsBLo9Gef2lUuqKn1L8XOJpygwQqCjJnRz-71Up5qIw90zDZrfbQu9WoeRTEyHfkpM5r7E-2CU9LhBudAxYic_2-oxarLfAXuAOSNuN5lpb6AWCkov_BCnksMEGbNNMj__uptWe5UPZnYbdso5uXEBHszqBgFVseKNpzSpoAfZ1NBAmhz0_4OjrmQUI56CcCr107uS2d9FF-ubn01yuCkC4-UhGFAGC0g_9eA7leZBWQuAH2u3Co2BzbsRIfVCmOwbXrXrYvXpvy1QCfVJ50lIQ1mTPf-o8sXCJQaEVoHlSzV5a7rJvFbTq24sVbTM35F-ngJNJ0d3Lp5waLVYstGFuY-0clAfJaNLh3W7xUXacXptAsi8eROK1nh9s05gYnOadi5ZTug6aHersN4gAhROC6GG5wCWi9KrL0HCjdR82sOCxAgXxNfkuWKzR0NXhNFSdcZJaqpmj3ySCHtA2lWU8nOV-7o6K6ZJePSqHX6We7HYz7qehFB8X83tnxB3o6WRS4AKip6JmjAeDb9RiBWuYta82YTnU4f9p_DBthd3ZLKrTFIrrJ3DVdXa9nW_xTv7EVs4i3Sy-q7jWN6ypo-PPcEZpdKBrd9LxBjBpavjFsfp_VOpDLrYEhnCETIHIkcBJLr6yalLuIJUYekqDnDQrkzGpZhwTopAYsNZF7FFeFS2n_Sa7QiJk_T5e2IsX-mrKkZoih-Von0iFiMq14ETK01L5mxUKgKzIxecoo682sScBvUjgQD5TzpMpoM6OaGODN1AJlb_NT-4lsX76LYLHXP_zNs8pe-9rVeSMtfjy_z4TR5dG4y1vL-2marylOgVlrPlKEGhT6SJrUgDakBBRXOg4Q8bERH99fPoXRDim6bluspfcg2UusKeQzAbNDevPYXTrgt5IqvncCFJLywO2GKlH701jfNX22VVGy-th2uqBGNn_cbc-_g7tYX4NP1zWgZWbpOfK8rU6hiIBYO-vJot1DKcfpkuvkEWWwPXo5yiGRvfTy3NDqA8WwwZgV1CocEYFG3pgnLzbtJIbAq2wqxD66vQdQyNf61L8q5o93ZaLLq9b6a4zaibkaIAzbrFKwGw1Ta0Xo33BW7QkohkPp8G09HqGqerWB-ohCfEQzY0kNFqxq7bdZ33pKwj3fdfk3fQbNLedO18VZRar47Es4SBW5cQFoFh4bt--MYzr-g1gw_iXOAB_VB4Ys_iFPiYaUaSk-SMszE7ZrP5_VClu1-bbkuFNVSiDHv_ySZ3lhTIiQ0ji_7PsDpCla7zgjY6_5Dja1gxALL0ybVfVpDqfJxgvOmUOkqrr3rBJfmLla_zBhj1efGIPnpUUC2z1loPop1N2IpALF3KTfuSWr2Pjl2acTEHi1rEJncGIr8pZ3J2hCu-c_5KeeSB67Yj6Ztv2s4x8JusBWtEZZ_DNf_Z4zQ9sWyi9XEV8Vcmo5cbj7RgEwo9uaQMdRnqcBtF9b72WAJ9wxXJ-Tkf_maF__cYsmQcnS3QjifY7z2R5LH9mjUUMbVsr-H6WhuA-6x-_Ji1wGDkof8dD2jaL0SrPQ5fpcGlKQHVXO1N6GjmK3Z66MoHfnWvvwo8unmHePRhYDwAcHxIntXmwlrKj2UCXCa2Xzn0KrI_J32LAukr9YBuUnUtFGEPCXIG8Vpv6TnOqrNpoWPq_nWB8FoOugcD7UhB4qxTlfIsGRJxa8Yq0KB_zc1tnBr8_JaX5wJZ-SSg2ul8j8H6ur7ElmIDOT7lEs9gEyGk1mhv2F1Bk40BrByVweF6NJrfHiBO85ev57bkBRiiXH6yRJXXiinChPIkij0cTRFA48DWm9D-u7P_M7tKkIidJFnp1-M5Zohgm0DLrgjPuSCqGgCRDKJ-aUTR_UMfDT8nouWA014UyXKS4iRwlDLWwCSDR_v121S4QGK4BrW4JOc1TtRNGJdPGS88Hl4vxpeRy8ui0_UpC3EWbJp-wxjRGBEC_RKDr2xNau1NyyR_aMxPw-UJGr",
+      "alt": "An X-Rite ColorChecker Passport open on a wooden table, showing one panel of saturated and neutral patches and another of 24 standard colour patches"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "A gamut is a set of colours, not a quality",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#a-gamut-is-a-set-of-colours-not-a-quality"
+    },
+    {
+      "text": "One common language in the middle",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#one-common-language-in-the-middle"
+    },
+    {
+      "text": "Four ways to lose gracefully",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#four-ways-to-lose-gracefully"
+    },
+    {
+      "text": "Soft proofing: see the bill before you pay it",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#soft-proofing-see-the-bill-before-you-pay-it"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#a-gamut-is-a-set-of-colours-not-a-quality"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#one-common-language-in-the-middle"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#four-ways-to-lose-gracefully"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#soft-proofing-see-the-bill-before-you-pay-it"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management#common-mistakes"
+    },
+    {
+      "text": "PDF/X makes an output intent mandatory",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "Lightness, chroma and hue",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions"
+    },
+    {
+      "text": "the darkest tone a print can hold",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/exposure-and-dynamic-range"
+    },
+    {
+      "text": "\n              Hue, value and chroma\n              A colour is not one thing. It is three independent dials — which colour it is, how light it is, and how far it sits from grey — and most arguments about colour are two people turning different dials.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions"
+    },
+    {
+      "text": "\n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "\n              Exposure and dynamic range\n              How much light got recorded, and how far apart the brightest and darkest thing can be before one of them stops recording at all.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/exposure-and-dynamic-range"
+    },
+    {
+      "text": "\n              How accurately a chart can be read\n              The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+    },
+    {
+      "text": "PRINT-004 — ICC — Introduction to the ICC profile format (§2 PCS, §3.1.1–3.1.4 rendering intents)",
+      "href": "https://www.color.org/getting-started/"
+    },
+    {
+      "text": "PRINT-007 — William Li, ICC — Fundamentals of ICC Color Management",
+      "href": "https://archive.color.org/events/Fundamentals_of_ICC_Color_Management.pdf"
+    },
+    {
+      "text": "PRINT-001 — Adobe — Understanding color management (Acrobat)",
+      "href": "https://helpx.adobe.com/acrobat/using/color-management.html"
+    },
+    {
+      "text": "PRINT-003 — Adobe — Working with color profiles (Acrobat)",
+      "href": "https://helpx.adobe.com/acrobat/using/color-profiles.html"
+    },
+    {
+      "text": "\n        PreviousType scales and spacing scales",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing"
+    },
+    {
+      "text": "\n        NextPrint-ready files",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/colour-management"
+}

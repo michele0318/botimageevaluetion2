@@ -1,0 +1,106 @@
+{
+  "title": "Paths and curves — Image Wiki",
+  "text": "\n  \n\n  Paths and curves\n  What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n\n  \n    Termpath / Bézier curve\n    Also calledbezier curve, anchor points, control points, nodes and handles, compound path\n    Not the same asstroke weight, outline mode, live trace\n    Read6 min\n  \n\n  \n    \n      On this page\n      \n        Fewer anchors, better curveOpen, closed, and the corner that gives it awayHoles are made of two subpaths, not two shapes\n      \n    \n  \n\n  Every vector shape is a path: in the spec's words, \"the outline of a shape which can be filled or stroked\". A path is built by moving an imaginary pen — put it down here, draw a line to there, curve from there to over there.\nYou do not need the mathematics. You need the four words, because they are what a design review is conducted in.\n\nanchoron the curvecontrol pointoff it, and pullssmooth anchor: both handles in one linecorner anchor: the two handles are independentone segmentopen: two loose endsOne path, three segments, four anchorsthe shape lives in the numbers, not in a grid of samples\n\nAnchor points (squares) sit on the curve. The path passes through every one.\nControl points (circles) sit off the curve and pull it. A cubic curve has two of them between each pair of anchors, and the curve leans towards them without ever reaching them — it stays inside the region they define, which is why a handle pulled a long way makes a long lazy arc rather than a spike.\nA segment is one piece of curve between two anchors, with its own pair of control points. Change one segment and the rest of the path does not move.\nThe line from an anchor to its control point is the handle — the thing you actually drag. Where both handles of an anchor lie in one straight line, the curve flows through smoothly. Where they point independently, the path kinks: that is a corner.\nBoth ends of this path are loose, so it is an open path.\n\n\nFewer anchors, better curve\nThis is the single most useful thing to know about vector quality, and it is entirely visible.\n\n7 anchorsthe same arc at 6x46 anchors, same intended outlinethe same arc at 6xDrawnseven anchors, and the curve between them is smoothTracedforty-six anchors, and the curve between them ripples\n\nThe same intended outline, drawn and traced.\nLeft, seven anchors. Each one sits where the curvature genuinely changes, and the curve between them is computed — so it is smooth by construction. At six times magnification the arc is still an arc.\nRight, forty-six anchors following the same outline, each landing a fraction off where the ideal curve would be. At normal size it looks nearly the same. Magnified, the edge ripples, and every one of those anchors is an independent thing that can be nudged, rounded off by an optimiser, or lost in a format conversion.\nA traced curve with four hundred anchors is not four hundred times more accurate than a drawn one with twenty. It is one drawing plus four hundred small errors.\n\n\nAnchor bloat has practical costs beyond looks: the file is larger, editing is miserable, cutting machines and embroidery hardware slow down or stutter, and every anchor is a place where a later transformation introduces a wobble.\n\nWhere bloat comes from\nAutomatic tracing, converting a mesh or 3D outline, exporting from a mapping tool at full precision, and repeated boolean operations. Almost never a person drawing.\n\nOpen, closed, and the corner that gives it away\nA path whose last point simply lands back on the first looks closed, and is not. The spec is explicit about the difference: with a real closepath, the end of the final segment is joined to the start of the first one using the line-join setting. Typed back manually, the two ends are instead capped separately — they are not joined at all.\n\nthe top corner at 4xthe top corner at 4x…L 74 178 L 150 52…L 74 178 ZTyped back onto the startthe two ends are capped, not joined, and the corner is chippedClosed with a closepaththe last segment is joined to the first, and the corner is sharp\n\nSame three corners, same stroke, one difference: whether the subpath is closed.\nLeft, the last point was typed back onto the first. The fill closes over anyway — a fill always behaves as if the path were shut — so at a glance nothing is wrong. Magnify the start corner and the outline is chipped: two flat stroke ends butting into each other instead of one join.\nRight, closed properly. One mitred point.\nThis is why \"it looks closed\" is not the check. The check is the corner where the path started, at high zoom, or a look at whether the shape reports as closed in the editor.\n\n\nGenuinely open paths are fine and often intentional — a signature, a leader line, a stroke of calligraphy. The fault is a shape that was meant to be closed and is not, because strokes will not join, offsets will misbehave, and cutting or filling downstream will do something surprising.\nHoles are made of two subpaths, not two shapes\nOne path can contain several subpaths: each moveto starts a new one. That is how a ring, a letter O, or a washer is drawn — an outer loop and an inner loop in a single path, with a fill rule deciding which side counts as inside.\n\n<path fill-rule=\"evenodd\" d=\"… Z … Z\"/><circle r=\"66\"/> <circle r=\"32\" fill=\"#f1f3f7\"/>A holeone path, two subpaths — what is behind shows throughA disc painted the colour of the pageit hides what is behind, and breaks on any other background\n\nBoth are black rings on a grey panel. An orange band runs behind each.\nLeft is a compound path — one path, an outer circle and an inner circle, the fill rule punching a real hole. The band shows through, because there is nothing there.\nRight is a solid disc with a smaller disc on top of it, painted the same grey as the panel. On a grey page nobody can tell. Put it on the orange band, on a photograph, or on a dark theme and the fake hole becomes a grey blob.\nThe tell costs nothing to run: drop the artwork onto any coloured background.\n\n\n\nThe fill rule is part of the picture\nTwo rules exist. Nonzero counts crossings with direction and treats a region as inside unless the windings cancel; even-odd counts crossings and calls odd inside. The same two loops can therefore render as a ring under one rule and as a filled disc under the other. When a hole fills itself in after an import, the fill rule or the direction of one subpath changed — the geometry is usually fine.\n\n\nReading a path in a review\n\nCount the anchors on one curve. If they are dense and evenly spaced rather than sparse and placed where the curve turns, it was traced.\nMagnify one long curve. Ripple means anchor bloat.\nCheck the corner where each closed-looking shape starts.\nDrop the artwork on a coloured background and see whether every hole is still a hole.\nLook for two anchors on top of each other and stray single points; both survive export and both cause trouble later.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Raster and vector\n              Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n            \n          \n        \n          \n            \n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            \n          \n        \n          \n            \n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            \n          \n        \n          \n            \n              Simplification\n              Every element you add divides the viewer's attention, so the question about anything in the frame is never whether it is nice but what it is doing. Taking things out is the hardest edit there is.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        VEC-004 — W3C — SVG 2, PathsVEC-005 — W3C — SVG 2, Painting: Filling, Stroking and Marker SymbolsVEC-009 — MDN — SVG from scratch: PathsVEC-010 — MDN — SVG from scratch: Fills and strokesVEC-014 — Pomax — A Primer on Bézier Curves\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Paths and curves",
+    "Fewer anchors, better curve",
+    "Open, closed, and the corner that gives it away",
+    "Holes are made of two subpaths, not two shapes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nanchoron the curvecontrol pointoff it, and pullssmooth anchor: both handles in one linecorner anchor: the two handles are independentone segmentopen: two loose endsOne path, three segments, four anchorsthe shape lives in the numbers, not in a grid of samples\n\nAnchor points (squares) sit on the curve. The path passes through every one.\nControl points (circles) sit off the curve and pull it. A cubic curve has two of them between each pair of anchors, and the curve leans towards them without ever reaching them — it stays inside the region they define, which is why a handle pulled a long way makes a long lazy arc rather than a spike.\nA segment is one piece of curve between two anchors, with its own pair of control points. Change one segment and the rest of the path does not move.\nThe line from an anchor to its control point is the handle — the thing you actually drag. Where both handles of an anchor lie in one straight line, the curve flows through smoothly. Where they point independently, the path kinks: that is a corner.\nBoth ends of this path are loose, so it is an open path.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n7 anchorsthe same arc at 6x46 anchors, same intended outlinethe same arc at 6xDrawnseven anchors, and the curve between them is smoothTracedforty-six anchors, and the curve between them ripples\n\nThe same intended outline, drawn and traced.\nLeft, seven anchors. Each one sits where the curvature genuinely changes, and the curve between them is computed — so it is smooth by construction. At six times magnification the arc is still an arc.\nRight, forty-six anchors following the same outline, each landing a fraction off where the ideal curve would be. At normal size it looks nearly the same. Magnified, the edge ripples, and every one of those anchors is an independent thing that can be nudged, rounded off by an optimiser, or lost in a format conversion.\nA traced curve with four hundred anchors is not four hundred times more accurate than a drawn one with twenty. It is one drawing plus four hundred small errors.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nthe top corner at 4xthe top corner at 4x…L 74 178 L 150 52…L 74 178 ZTyped back onto the startthe two ends are capped, not joined, and the corner is chippedClosed with a closepaththe last segment is joined to the first, and the corner is sharp\n\nSame three corners, same stroke, one difference: whether the subpath is closed.\nLeft, the last point was typed back onto the first. The fill closes over anyway — a fill always behaves as if the path were shut — so at a glance nothing is wrong. Magnify the start corner and the outline is chipped: two flat stroke ends butting into each other instead of one join.\nRight, closed properly. One mitred point.\nThis is why \"it looks closed\" is not the check. The check is the corner where the path started, at high zoom, or a look at whether the shape reports as closed in the editor.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n<path fill-rule=\"evenodd\" d=\"… Z … Z\"/><circle r=\"66\"/> <circle r=\"32\" fill=\"#f1f3f7\"/>A holeone path, two subpaths — what is behind shows throughA disc painted the colour of the pageit hides what is behind, and breaks on any other background\n\nBoth are black rings on a grey panel. An orange band runs behind each.\nLeft is a compound path — one path, an outer circle and an inner circle, the fill rule punching a real hole. The band shows through, because there is nothing there.\nRight is a solid disc with a smaller disc on top of it, painted the same grey as the panel. On a grey page nobody can tell. Put it on the orange band, on a photograph, or on a dark theme and the fake hole becomes a grey blob.\nThe tell costs nothing to run: drop the artwork onto any coloured background.\n\n",
+      "images": []
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Fewer anchors, better curve",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier#fewer-anchors-better-curve"
+    },
+    {
+      "text": "Open, closed, and the corner that gives it away",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier#open-closed-and-the-corner-that-gives-it-away"
+    },
+    {
+      "text": "Holes are made of two subpaths, not two shapes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier#holes-are-made-of-two-subpaths-not-two-shapes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier#fewer-anchors-better-curve"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier#open-closed-and-the-corner-that-gives-it-away"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier#holes-are-made-of-two-subpaths-not-two-shapes"
+    },
+    {
+      "text": "\n              Raster and vector\n              Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+    },
+    {
+      "text": "\n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    },
+    {
+      "text": "\n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n              Simplification\n              Every element you add divides the viewer's attention, so the question about anything in the frame is never whether it is nice but what it is doing. Taking things out is the hardest edit there is.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/simplification"
+    },
+    {
+      "text": "VEC-004 — W3C — SVG 2, Paths",
+      "href": "https://www.w3.org/TR/SVG2/paths.html"
+    },
+    {
+      "text": "VEC-005 — W3C — SVG 2, Painting: Filling, Stroking and Marker Symbols",
+      "href": "https://www.w3.org/TR/SVG2/painting.html"
+    },
+    {
+      "text": "VEC-009 — MDN — SVG from scratch: Paths",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths"
+    },
+    {
+      "text": "VEC-010 — MDN — SVG from scratch: Fills and strokes",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Fills_and_strokes"
+    },
+    {
+      "text": "VEC-014 — Pomax — A Primer on Bézier Curves",
+      "href": "https://pomax.github.io/bezierinfo/"
+    },
+    {
+      "text": "\n        PreviousRaster and vector",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+    },
+    {
+      "text": "\n        NextWhat an SVG actually contains",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "5c13bb7a4c2efe768d61c77d1b8e64355c1e8725d0a0ab20a1871c6a5a6a80ff",
+  "prompt": "vintage urban fashion portrait photograph",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: The images are very similar in quality, and image 2 is perhaps slightly more interesting in terms of lighting, but it has a noticeable and significant flaw: anatomical issues with the fingers.",
+  "split": "train",
+  "image_group": "c000cb25e08ad14db92f29eb9fc3d73acce5d74e8e6b49d076d4d93566df8f4f",
+  "image_hashes": [
+    "405407e47c12ff2ff11c65bd4ba96f940471367a82c523aadd16c2e10b4ebd4c",
+    "69d53d0ba49c4bc55c96cc063bd6c0363b5cecc9a869a35b01b5584fdc93af90"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "a4051cd0da60ceeb00d8e1451f8dec934f790cd14a04e7ac60dbc499600f1b14",
+      "corrected": false,
+      "time": "2026-09-13T21:56:56"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "a4051cd0da60ceeb00d8e1451f8dec934f790cd14a04e7ac60dbc499600f1b14",
+      "corrected": true,
+      "time": "2026-09-13T21:57:00"
+    }
+  ],
+  "observed_feedback": "Please take another look:The images are very similar in quality, and image 2 is perhaps slightly more interesting in terms of lighting, but it has a noticeable and significant flaw: anatomical issues with the fingers.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T21:56:58"
+    }
+  ],
+  "feedback": "The images are very similar in quality, and image 2 is perhaps slightly more interesting in terms of lighting, but it has a noticeable and significant flaw: anatomical issues with the fingers.",
+  "lesson": "If requested style is specified, prioritize stylistic alignment over minor technical differences; anatomical accuracy is non-negotiable regardless of style.",
+  "lesson_evidence": "The images are very similar in quality, and image 2 is perhaps slightly more interesting in terms of lighting, but it has a noticeable and significant flaw: anatomical issues with the fingers.",
+  "lesson_source": "The images are very similar in quality, and image 2 is perhaps slightly more interesting in terms of lighting, but it has a noticeable and significant flaw: anatomical issues with the fingers."
+}

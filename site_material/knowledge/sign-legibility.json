@@ -1,0 +1,27 @@
+{
+  "title": "Sign legibility is arithmetic — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/sign-legibility",
+  "source_hash": "7a14d1c6603e9fa557d224ccfa2d1b39326a81e0e5998c02a568f4cab5dfc257",
+  "rules": [
+    {
+      "rule": "If viewing distance exceeds 6 feet at normal mounting height, minimum character height increases by 1/8 inch per additional foot.",
+      "evidence": "5/8″ + 1/8″ per extra foot"
+    },
+    {
+      "rule": "If viewing distance exceeds 20 feet behind a counter, minimum character height is 2 3/8 inches.",
+      "evidence": "a sign at normal eye level read from 20 feet behind a counter needs characters 2 3/8 inches high"
+    },
+    {
+      "rule": "Stroke thickness must not exceed 30% of cap height for visual characters to avoid letter blobs.",
+      "evidence": "Above roughly 30% of cap height the counters fill in. There is a ceiling as well as a floor."
+    },
+    {
+      "rule": "Contrast compliance requires at least 20 LRV points between text and background, with 30 preferred under 200 lux lighting.",
+      "evidence": "asks for a difference of at least 20 LRV points between adjacent critical surfaces, with 30 preferred"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2812,
+  "output_tokens": 214,
+  "processed_at": "2026-09-13T09:38:32"
+}

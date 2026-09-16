@@ -1,0 +1,15 @@
+{
+  "title": "Naming what is wrong — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diagnosing-images",
+  "source_hash": "f32c5d05efa3adde5dd88807d863bdbce2d83bf7464b34f386dbff2d4f989d28",
+  "rules": [
+    {
+      "rule": "If contact points between surfaces are missing or replaced by soft grey blobs at wrong offsets, objects appear to be floating.",
+      "evidence": "Missing it, or replacing it with a soft grey blob at the wrong offset, makes objects hover."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2514,
+  "output_tokens": 232,
+  "processed_at": "2026-09-13T09:27:00"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "How to choose colours — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-harmony",
+  "source_hash": "098a3fc0ca1023b31ed88776049a7e205cb02f6d6f4ab0ff0bdb474afbdbbf84",
+  "rules": [
+    {
+      "rule": "If a palette fails to cohere, check if the job was defined as separation rather than cohesion before assuming hue is wrong.",
+      "evidence": "A palette that separates beautifully will often fail to cohere, so name the job first."
+    },
+    {
+      "rule": "If a palette feels harmonious, ask whether it could plausibly come from a single real light source rather than assuming a named scheme.",
+      "evidence": "Ask whether this palette could come from a real light. If not, that is a style choice — say so rather than calling it wrong."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 3401,
+  "output_tokens": 244,
+  "processed_at": "2026-09-13T09:24:16"
+}

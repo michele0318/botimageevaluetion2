@@ -1,0 +1,60 @@
+{
+  "model": "qwen3-vl:4b-instruct",
+  "context": 4096,
+  "split": "test",
+  "system_hash": "16dc6ccd1655be37b49bf388876d4705bd838995127e0a85d42a7623650edca3",
+  "correction_lookup": false,
+  "count": 6,
+  "correct": 3,
+  "results": [
+    {
+      "id": "363283f6393dcd568fe1536c965f3250bad359ecec82e7970e521b774fdde4a4",
+      "expected": "1",
+      "predicted": "1",
+      "correct": true,
+      "error": null,
+      "seconds": 21.74
+    },
+    {
+      "id": "526c44edebc4450503399ec05689e36e905e87f2669e9a3c92398f9d281b5029",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 12.74
+    },
+    {
+      "id": "717da826723bc10186e3183363cbe3231696a1d834d3837ed0e9b87281b098ed",
+      "expected": "2",
+      "predicted": "2",
+      "correct": true,
+      "error": null,
+      "seconds": 3.15
+    },
+    {
+      "id": "742833ad952cfa3dd16dcb5a811b7422ce85c236fc5d32f45966cbba31b43076",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 1.85
+    },
+    {
+      "id": "750347391011bf6ceb289dab780767596ab3c6307d08eb0bc5fd405a51867193",
+      "expected": "2",
+      "predicted": "1",
+      "correct": false,
+      "error": null,
+      "seconds": 16.55
+    },
+    {
+      "id": "d4f1ed3cdcbd7a153e74eeb45a65a3206c2ad0200c6f5507c29af362cc1bf2ce",
+      "expected": "1",
+      "predicted": "1",
+      "correct": true,
+      "error": null,
+      "seconds": 2.11
+    }
+  ],
+  "note": "Gli errori sono conteggiati come risposte non corrette. Nessuna garanzia sui task futuri."
+}

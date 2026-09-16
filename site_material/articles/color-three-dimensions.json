@@ -1,0 +1,143 @@
+{
+  "title": "Hue, value and chroma — Image Wiki",
+  "text": "\n  \n\n  Hue, value and chroma\n  A colour is not one thing. It is three independent dials — which colour it is, how light it is, and how far it sits from grey — and most arguments about colour are two people turning different dials.\n\n  \n    Termhue / lightness (value) / chroma\n    Also calledthe three dimensions of colour, HSL, HSV, colour attributes\n    Not the same aschroma vs saturation, lightness vs brightness, value vs tone\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        The three dialsChroma is not saturationPure hues sit at different lightnessesWhat you can see in the pictureCommon mistakes\n      \n    \n  \n\n  Two people look at the same sweater in the same photo. One says the red is too bright, the other says it is too dark. They argue for ten minutes before noticing they are describing different properties of the same patch of pixels.\nA colour is three numbers, not one: hue, lightness and chroma. Each can move while the other two stay put, and almost every muddled conversation about colour is somebody changing one and naming another. Albert Munsell set the system out in 1905 and published it as an atlas of physical colour chips ten years later; it has survived every revision of colour science since.\nThe three dials\nHue is which colour it is: the circle of red, orange, yellow, green, cyan, blue, violet, plus the magentas, which appear nowhere in the spectrum and exist only as mixtures of the two ends.\nLightness is where it sits on the black-to-white scale. Value, greyscale value and tone mean the same thing, with one trap: painters often count tone the other way round, so a higher tone means darker. Lightness is not how much light is falling on the surface — it is perceived reflectance, how much light this surface returns compared with a white one under the same light. That is why a white shirt in deep shadow still reads as white.\nChroma is how far the colour is from a grey of the same lightness. Zero chroma is that grey. A traffic cone is high chroma.\nPicture the three as a solid: greys up a vertical axis, hue your angle around it, chroma your distance out.\n\n1000lightness L*yellowchromabluehue = angleWhat a colour picker offersHSV: saturation and value chosen independently1000lightness L*yellowchromabluehue = anglepeak, L* 96peak, L* 32What actually exists in sRGBchroma must fall to zero at black and at white\n\nBoth panels are the same vertical slice through the solid — lightness up, chroma out from the grey axis, one hue on each side.\nLeft: what a picker's square implies. Saturation and value are separate sliders, so full-strength yellow and full-strength blue look available at every height on the scale.\nRight: the same slice plotted from the real sRGB gamut, with the left panel dashed in behind it. Chroma is pinched to nothing at both ends, and the widest point sits at a different height for each hue — yellow bulges out at L* 96, blue at L* 32. Every corner of the dashed rectangle is a colour you can type into a picker and never see.\n\n\nChroma is not saturation\nThese get used as synonyms and they are not. The distinction explains shadows.\n\nColourfulness is how much colour a patch appears to have. Turn the lamp up and colourfulness goes up.\nSaturation is colourfulness relative to brightness — colour purity. Turning the lamp up does not change it.\nChroma is the strength of an object's colour judged against a white surface under that same light.\n\nIn the solid, saturation is the angle away from the grey axis; chroma is the distance from it. Two colours on the same ray out of the black point have the same saturation and wildly different chroma. That ray is also what a single-coloured surface does as it turns away from the light: hue holds, value drops, and chroma drops with it at the rate that keeps saturation unchanged. David Briggs calls the result a shading series. How abruptly a surface runs down it is a question about the light, not the paint — see Hard and soft light.\n\n\n\nFrederic Leighton, Flaming June, 1895. Museo de Arte de Ponce. Public domain.\nOne hue held across most of a canvas while the other two dials move. Follow any fold from its lit crest into the crease beside it. Sampled off the dress, the palest crests average L* 65 at chroma 38 and the deepest creases L* 16 at chroma 23 — and the strongest orange in the garment is neither. It sits in the middle, at L* 46 with chroma 67.\nChroma peaks in the mid-values and falls toward both ends, exactly as the right-hand panel above predicts. The dull orange in the deep folds is not weak colour; it is the correct colour for that value.\n\n\n\nWhy 'never use black' got taught\nBlack pigment pulls chroma down faster than it pulls value down, so the mixture lands too grey for its lightness and falls off the shading series. Painters called it muddy and turned it into a ban. The actual fix is to add back a little of the pure colourant until the mixture is back on the line. The problem was never the black.\n\nPure hues sit at different lightnesses\nThe strongest yellow you can make is a light colour; the strongest violet is a dark one; red lands in the middle. This is physiology: the eye's sensitivity peaks in the greenish-yellow middle of the spectrum and falls away at both ends.\nCheck it in sRGB. Pure yellow #FFFF00 measures about L* 97 — nearly as light as white. Pure blue #0000FF measures about L* 32 — darker than middle grey. Same \"maximum\" colour, two thirds of the scale apart.\n\n\n\nVincent van Gogh, The Starry Night, 1889. Museum of Modern Art, New York. Public domain.\nTwo hues at nearly identical chroma, one inherently light and one inherently dark. Take the four hundred most chromatic yellow pixels in this reproduction and the four hundred most chromatic blue ones: the yellows average chroma 65 at L* 70, the blues chroma 66 at L* 27. Same colour strength, forty-three points of lightness apart.\nSquint until the brushwork blurs and you get the same answer without measuring — the stars survive as separate light notes while the sky sinks into one dark mass. Van Gogh neither lightened the yellow nor darkened the blue.\n\n\n\nYou cannot put a saturated yellow in a dark passage. Either it stops being saturated or the passage stops being dark.\nShift a grade toward yellow and the picture gets lighter as a side effect; shift toward violet and it darkens. People read the lightness change and call it \"warmer\".\n\nWhat you can see in the picture\n\nStrongly coloured patches look lighter than they measure. A saturated blue and a grey of identical luminance do not look identical; the blue has a glow. This is the Helmholtz–Kohlrausch effect, and squinting kills it. Squint before you compare values.\nLightness steps look bigger when they straddle the background. The same grey ramp on a dark field and on a light field appears to jump in different places. Called crispening. You cannot judge a value without noticing what surrounds it.\n\nCommon mistakes\n\n\"Saturation and chroma are the same word.\" Saturation is chroma relative to lightness. A dark maroon and a bright vermilion can have identical saturation and very different chroma. Sliders labelled \"saturation\" usually change chroma.\n\"Brighter light makes colours more saturated.\" More light raises colourfulness and leaves saturation where it was — which is why the room does not change colour when you dim it.\n\"Value means how bright that area is.\" Value is a property of the surface, judged against a white under the same illumination. Brightness is a property of the light arriving.\n\"Yellow and blue are just two hues.\" They are two hues at opposite ends of the lightness scale. Treating them as interchangeable tokens on a wheel is what makes How to choose colours recipes fail.\n\"Desaturating preserves lightness.\" Only in a perceptual space. Desaturating in plain RGB collapses every maximum-chroma hue to the same middle grey, so your yellow and your violet come out identical.\n\n\nHow to read a colour in five seconds\n\nName the hue. One word. Red, orange, blue-green.\nSquint and place its value: darker or lighter than a middle grey card?\nCompare it to a grey of that value. How far from grey is it? That is the chroma.\nNow find the same object in shadow. Hue should hold, value and chroma should both fall together.\nIf the shadow is the same colour just darker, or a more chromatic version of the lit side, go look for a second light source.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              The colour of the light\n              What you see is the object's own colour multiplied by the light's colour — and your brain quietly divides the light back out, which is why a white shirt looks white everywhere.\n            \n          \n        \n          \n            \n              How to choose colours\n              A practical order of operations for picking colours — decide the job, choose on all three dials, then set the areas — and an honest account of why the named schemes explain much less than they claim.\n            \n          \n        \n          \n            \n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        SRC-068 — The Dimensions of Colour — Colours in SpaceSRC-069 — The Dimensions of Colour — Lightness, Value, ToneSRC-070 — The Dimensions of Colour — Shading Series, Shadow SeriesSRC-063 — handprint — Modern Colour Theory (concepts)\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Hue, value and chroma",
+    "The three dials",
+    "Chroma is not saturation",
+    "Pure hues sit at different lightnesses",
+    "What you can see in the picture",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n1000lightness L*yellowchromabluehue = angleWhat a colour picker offersHSV: saturation and value chosen independently1000lightness L*yellowchromabluehue = anglepeak, L* 96peak, L* 32What actually exists in sRGBchroma must fall to zero at black and at white\n\nBoth panels are the same vertical slice through the solid — lightness up, chroma out from the grey axis, one hue on each side.\nLeft: what a picker's square implies. Saturation and value are separate sliders, so full-strength yellow and full-strength blue look available at every height on the scale.\nRight: the same slice plotted from the real sRGB gamut, with the left panel dashed in behind it. Chroma is pinched to nothing at both ends, and the widest point sits at a different height for each hue — yellow bulges out at L* 96, blue at L* 32. Every corner of the dashed rectangle is a colour you can type into a picker and never see.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nFrederic Leighton, Flaming June, 1895. Museo de Arte de Ponce. Public domain.\nOne hue held across most of a canvas while the other two dials move. Follow any fold from its lit crest into the crease beside it. Sampled off the dress, the palest crests average L* 65 at chroma 38 and the deepest creases L* 16 at chroma 23 — and the strongest orange in the garment is neither. It sits in the middle, at L* 46 with chroma 67.\nChroma peaks in the mid-values and falls toward both ends, exactly as the right-hand panel above predicts. The dull orange in the deep folds is not weak colour; it is the correct colour for that value.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Aeiv99ukVHzRlV08HQwm8jfyXoHwYzunLAyQjAKCdXPxJX4nxY8ffTPP-eaG3yNqp5o5-c0w6C2WYGyPim1MocnX4QBViNPdyWHdZ6OfPu6KEMgsrGn_lEAwOIo-OZYI8zWgJvk_Zt9eljL00aOxnJ1aHTzJwmcudjnNDwl9dqtekhQQ4mA7687j69z4R0ljsz4SfN-DiMrKqgxrb780BIg4mgTeqzEwizQhM6xCwTqpy4dHv6BhFu-8EVRKgVe5eMRxVCruf7q6mvXh3NmAl-VD912UhrfA2aoiTZxLYc7U3j4V8_Q2QD_d7Vnw4L7_lbAZIjgyOOZjbt36ONz_xbrcj_SnIN7_NpZAja2TADQRNJIKM59y0JrsalvZWfeHvrIpkphTT9Qaoury277nSIvt_9pO7r943WNtugzhJe-gToO1VIAg21wVEugTXkgCOp20ROl2wiQz4SOGHEMLIDmToXn7xLIazD5IZGdZ1A1zR1Qjg9AFcp144aQ-9sEDSrlXhWXVAKANKwAribsIFaFYtgG2y_lCCs_xH1cu8BZCgJWm7We1qvH_QSMOEDOAUrkYytm7tEYWEmmD4W0DDyK0KrdBopSTgEbCpuREQubQaVGLiu0KKcLiaIucgFRK0OILfYxAb2ohCq5rUqikiXbJsPYMKWmZzCTn6z8VCfKq5ZRjFHjEBuvIkSV6PFdbfPm0Dda7CuQCKENJ2cDagDwvsXpntLFdD3T4DE9Yo8GqaPmfuSw0mqYfs7epNtwOBXL7gDWv_gZk4YLcD6w2JcTdNiSx__P9u9P38qD5iyGibxbbRERzxAsOMGBaQ3lklqZXqQcB9U5za5nbX_xVYpNWBWHZS91pBGLfaYG9kDsIZDCT92R3hTcDLGU7-8T5eO7h0Vwjmk1j3WOoFasPXfWqYxJdd7fmo7ZBrglPy9gp81bAxiQY7RVIIZOPR5x2FKkV_JPT9N5odxd7Kq0Nk2jJwWBMKvNzCfl-yjRrDNw8E8jHVEr7_s3on2y7XtmTzFEpmeqVyt1E8uyDMHR6b2sn_53-lPhIPq9Ly0cpLSrR_gTC4JbdBYXwC_lQcj49IR-oSwuS6pY9Yez29DUc_E_f8riPbdXhYduZVWsScqnkqCpTfgz77smr10lcWDiFb8_Kr-Yo6MqKpXZf54APGC52aghKQORbrN4sd9haXvGNO-cC6FzeMdVQwzWuUSuCYM1WcGOczHDhluFOEoEHcgrWpeLLsshGuFy9Ce3pS0t7tRU9CvFlw9ixc4HUzaTriJ88dN5yLNFGf-9U-VwnIO_0qxMcfoCli_PwsMw-FFZWoDY2Rbocu4vX9by4cV38a_NYDKszIJ7luG-VeumgdKW132EGNvZ1f0b8I9vUQU2MMh58oKKkhJPRQ9rh8nHi0AX-42p00sm0xLCBAHN99C9BP9QODrl88kmIFBX1U-lxlvee__ifllQaD7kTsRdGDAeTlR45nKJhzSdHvCDUjuC2P3jw1dietSyHP59X-S_4LkyjOFmFsKt3cL3v3i_C-1qH9r74gWEVsRPQIAz8kYGV_yE-V38Niq-PPm_Sas9sZE_KVxqTrcFhV8y_Jp0vUY2laiA7f-9RCWdJ9cVlybANIEo2BIPm7_c9s3ko3xGTnH5Ndkwr50pRhkBzRZDjFP_66OcwPtEkpWJq9ytn71RcQHGO3gjdJrF6bh2QvXFwfCmJ1XnXbRi5xLO-pR0ebn9_RK1x_2OMHrRW9usxet1R1d0-bpCdG5W-g8gM_1JF74m68xIpekMTR41Dqmkiky8qi8istLOhQL540pL9Vd4Hn613Mdz91-HMilBWzxTLtHTF_0ziRX5Ec5Cmjr5t2zfVA4gqg_JD20ieULrM_XeqrL3JUEz4N2buSShmxrEsIUivARsFvtZVPr4zcsR_7EzeFSmPCyK0cS0Qn23mfRrYniQZ9oMWCJQRSuNYdCZaVvFH6uhWfXJWuu5ViTCH0ZjLjbKb7wx5VxqW1cT897zP4Fb5vYSA44DAhrBlDka-rvAdFEfvDgr99SHGhoXE",
+          "alt": "A sleeping woman in a voluminous orange dress filling most of the canvas"
+        }
+      ]
+    },
+    {
+      "caption": "\n\n\nVincent van Gogh, The Starry Night, 1889. Museum of Modern Art, New York. Public domain.\nTwo hues at nearly identical chroma, one inherently light and one inherently dark. Take the four hundred most chromatic yellow pixels in this reproduction and the four hundred most chromatic blue ones: the yellows average chroma 65 at L* 70, the blues chroma 66 at L* 27. Same colour strength, forty-three points of lightness apart.\nSquint until the brushwork blurs and you get the same answer without measuring — the stars survive as separate light notes while the sky sinks into one dark mass. Van Gogh neither lightened the yellow nor darkened the blue.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWET7oAkZe9woA1X6f8LA_eGvgDxn9FA0tScsxELFJZbF3akhGym7rrCEbaznFCOjyTR-rVKq7_JcKFPE6cViZrEXQIL7QMRnEuraR_ed5RooNKKM1Cqcu2bv_tO2PvLGJZ_VuqZbGJBpt6fpoW17tqu57qsoVeJSTaocvzRMcp0XED6LUhiG0cS3gV7o3az20FRhMrSe8f-81cjdqYFWr0DDO8fps2NslEpaY5ozaNcKfZ6RMBp20EztB3n0CF1Oa5DC_ndaTILSsPvh32ChMXsgZZDhDdWph-iK2blKJdwDGuUOfoO889BCqgRueK-h4lhxhf9oynBHSe--4oBSbzRyMrEBKogQV7QtdeiSRHjMy-1VwqmiqDkFDGkpQSQeCtTT8NQt4Kc0gppdziJiOcMv7uzEZj0n3f7nM1tRQX3pBu-OAZq7Nn1j2wA8f9D9Z0XMaIiiaDuhJhX6Bh6IOXmqJt47hno250YBi8qDvvwVSuUFr_AACHk5pVi4q_jupXRUaWtz3kT3-o5abnkPD_WiA4tirb8Udxq9ZaM8dCglAZ5d1ICXDfOa7Hh5mZDV3auas9_1YEYhTnFtSpz9VXd1lLrt9IOyZRHQwZu21I-BytWZXt6BiGxumd1yLPTYQD6J6Rk3yvlCfNxebI_4SxurSIPizFGFdV92DY_S7sEhlkGM-WBIq1VY93CKBJcZX76fZcUsIgYltlTCaKMhEWGqokidXWmt5s-i9blhqKIe5-Gj42oeT-jSM0w-o55qugJDZaXj_5DODoGMMkn2T-EhT3XH-sLow7RM2YA8Nt7giWVmnp_AmZTWe354l60cj_MNfeE6ryIk1epL39TzcUfDxnXZMVAU31D3fYJu4vITJVBn5DTyBD6L7NmZPWYiKfLymnBzkfDY8rJmSbOhV-PCijFTISPa2wEkscTPqv2mmnW6JJJAx3F700Oi1duUy17x7CPNq9ShyUiaQa-zuR1qPRB4kJss6h9oTfQlZd-K5ZGi5KOEU90R5G7N00vEINr6pmhrTwBYdeRGfvi_Dei6o49YjLcxjhGuOvEjhRez4OeT3sVP6Wo7KNW9zC5JXevOnPkri_8tQckqBPoQEY39Ux9kDuHCv4ypEDEKQO0cHOpCT-MahTZnCIkVXg9vPGbZMl8E5HxqcvXuT62GI_DpnGvNDk7PcwFiR6YNEnBeqPtrDU53VvopPOKOBGiV-uz0M0F1ZneNq-78Uf-s4IOfnSQsTZX8NO4jdmB6OXVnKF2MMseBJrrx6MTxG53qY2opxw80771ov-39m8a8RWdQD4R1pXbU2fM_NlR5w2pHX20FoGNkHKDsCsIFgVQkO0Zf7tJYJs8cL-KhYPfhhHJoXi9COrKqYVeG-HhXxEySndnRCa_gjL_PZ71UaZ5Mut4QSa--wM9SfrRxeJqOSlCJ1U9e1_8BX1kJpreWDOoV4XMHr8NTm3ixXJIOFAUYdL2o2_AX-8Z9WCYVcSvshrm03bsABtb3teiVLwEIzxIqKRqCRDM09Dzqe6nNZL3Y4EkylIFE_-MH0xbuZX66NPep7NdM77KUfg4FjaDKcA7RoYAExwyAq27vY3v3_hie7ZLk3ojZOcYETr99uMlaklH_PaarTPthKuGQffPsaIHaCjEJzIHst33_B0NHrhkC0cc33Eh3wEOloqKJFO_3UuBzg4QYglPPzWT29IpNAWxgWXFtdTCr-VZ4K9aCD-SLr3g4i1Dqzq2pzm55zGpQ8f6ULblFua_uLqVnuAGLWxjXsQ1XeYc0kFvbH4u5WDwUXtR47SdxIRVGaoXPPi4HcWWhjzyswhppAoKYGIWXj1aJbb_7O5l1hHtlqmgLoBa__JoUjvjK2fJO8TRjWxyZSxIuzm3FOalYOPX-PKp6wZanIv_tWrPI_D-GRsGTFYjo3W2h8TipKkr-gr1IKMT3E8277eTi9eImESu3l5xIXX2khjsUJERBHcis9F-Kpe6JUkqQMXYEwKM0CJlcaHx_nTqu2RqL5UaiGHPP4rwAy7MtbEcE_de7NKNCTiU5z5p",
+          "alt": "A night sky of swirling blue brushwork with yellow stars and a crescent moon above a dark village"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/Aeiv99ukVHzRlV08HQwm8jfyXoHwYzunLAyQjAKCdXPxJX4nxY8ffTPP-eaG3yNqp5o5-c0w6C2WYGyPim1MocnX4QBViNPdyWHdZ6OfPu6KEMgsrGn_lEAwOIo-OZYI8zWgJvk_Zt9eljL00aOxnJ1aHTzJwmcudjnNDwl9dqtekhQQ4mA7687j69z4R0ljsz4SfN-DiMrKqgxrb780BIg4mgTeqzEwizQhM6xCwTqpy4dHv6BhFu-8EVRKgVe5eMRxVCruf7q6mvXh3NmAl-VD912UhrfA2aoiTZxLYc7U3j4V8_Q2QD_d7Vnw4L7_lbAZIjgyOOZjbt36ONz_xbrcj_SnIN7_NpZAja2TADQRNJIKM59y0JrsalvZWfeHvrIpkphTT9Qaoury277nSIvt_9pO7r943WNtugzhJe-gToO1VIAg21wVEugTXkgCOp20ROl2wiQz4SOGHEMLIDmToXn7xLIazD5IZGdZ1A1zR1Qjg9AFcp144aQ-9sEDSrlXhWXVAKANKwAribsIFaFYtgG2y_lCCs_xH1cu8BZCgJWm7We1qvH_QSMOEDOAUrkYytm7tEYWEmmD4W0DDyK0KrdBopSTgEbCpuREQubQaVGLiu0KKcLiaIucgFRK0OILfYxAb2ohCq5rUqikiXbJsPYMKWmZzCTn6z8VCfKq5ZRjFHjEBuvIkSV6PFdbfPm0Dda7CuQCKENJ2cDagDwvsXpntLFdD3T4DE9Yo8GqaPmfuSw0mqYfs7epNtwOBXL7gDWv_gZk4YLcD6w2JcTdNiSx__P9u9P38qD5iyGibxbbRERzxAsOMGBaQ3lklqZXqQcB9U5za5nbX_xVYpNWBWHZS91pBGLfaYG9kDsIZDCT92R3hTcDLGU7-8T5eO7h0Vwjmk1j3WOoFasPXfWqYxJdd7fmo7ZBrglPy9gp81bAxiQY7RVIIZOPR5x2FKkV_JPT9N5odxd7Kq0Nk2jJwWBMKvNzCfl-yjRrDNw8E8jHVEr7_s3on2y7XtmTzFEpmeqVyt1E8uyDMHR6b2sn_53-lPhIPq9Ly0cpLSrR_gTC4JbdBYXwC_lQcj49IR-oSwuS6pY9Yez29DUc_E_f8riPbdXhYduZVWsScqnkqCpTfgz77smr10lcWDiFb8_Kr-Yo6MqKpXZf54APGC52aghKQORbrN4sd9haXvGNO-cC6FzeMdVQwzWuUSuCYM1WcGOczHDhluFOEoEHcgrWpeLLsshGuFy9Ce3pS0t7tRU9CvFlw9ixc4HUzaTriJ88dN5yLNFGf-9U-VwnIO_0qxMcfoCli_PwsMw-FFZWoDY2Rbocu4vX9by4cV38a_NYDKszIJ7luG-VeumgdKW132EGNvZ1f0b8I9vUQU2MMh58oKKkhJPRQ9rh8nHi0AX-42p00sm0xLCBAHN99C9BP9QODrl88kmIFBX1U-lxlvee__ifllQaD7kTsRdGDAeTlR45nKJhzSdHvCDUjuC2P3jw1dietSyHP59X-S_4LkyjOFmFsKt3cL3v3i_C-1qH9r74gWEVsRPQIAz8kYGV_yE-V38Niq-PPm_Sas9sZE_KVxqTrcFhV8y_Jp0vUY2laiA7f-9RCWdJ9cVlybANIEo2BIPm7_c9s3ko3xGTnH5Ndkwr50pRhkBzRZDjFP_66OcwPtEkpWJq9ytn71RcQHGO3gjdJrF6bh2QvXFwfCmJ1XnXbRi5xLO-pR0ebn9_RK1x_2OMHrRW9usxet1R1d0-bpCdG5W-g8gM_1JF74m68xIpekMTR41Dqmkiky8qi8istLOhQL540pL9Vd4Hn613Mdz91-HMilBWzxTLtHTF_0ziRX5Ec5Cmjr5t2zfVA4gqg_JD20ieULrM_XeqrL3JUEz4N2buSShmxrEsIUivARsFvtZVPr4zcsR_7EzeFSmPCyK0cS0Qn23mfRrYniQZ9oMWCJQRSuNYdCZaVvFH6uhWfXJWuu5ViTCH0ZjLjbKb7wx5VxqW1cT897zP4Fb5vYSA44DAhrBlDka-rvAdFEfvDgr99SHGhoXE",
+      "alt": "A sleeping woman in a voluminous orange dress filling most of the canvas"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AWET7oAkZe9woA1X6f8LA_eGvgDxn9FA0tScsxELFJZbF3akhGym7rrCEbaznFCOjyTR-rVKq7_JcKFPE6cViZrEXQIL7QMRnEuraR_ed5RooNKKM1Cqcu2bv_tO2PvLGJZ_VuqZbGJBpt6fpoW17tqu57qsoVeJSTaocvzRMcp0XED6LUhiG0cS3gV7o3az20FRhMrSe8f-81cjdqYFWr0DDO8fps2NslEpaY5ozaNcKfZ6RMBp20EztB3n0CF1Oa5DC_ndaTILSsPvh32ChMXsgZZDhDdWph-iK2blKJdwDGuUOfoO889BCqgRueK-h4lhxhf9oynBHSe--4oBSbzRyMrEBKogQV7QtdeiSRHjMy-1VwqmiqDkFDGkpQSQeCtTT8NQt4Kc0gppdziJiOcMv7uzEZj0n3f7nM1tRQX3pBu-OAZq7Nn1j2wA8f9D9Z0XMaIiiaDuhJhX6Bh6IOXmqJt47hno250YBi8qDvvwVSuUFr_AACHk5pVi4q_jupXRUaWtz3kT3-o5abnkPD_WiA4tirb8Udxq9ZaM8dCglAZ5d1ICXDfOa7Hh5mZDV3auas9_1YEYhTnFtSpz9VXd1lLrt9IOyZRHQwZu21I-BytWZXt6BiGxumd1yLPTYQD6J6Rk3yvlCfNxebI_4SxurSIPizFGFdV92DY_S7sEhlkGM-WBIq1VY93CKBJcZX76fZcUsIgYltlTCaKMhEWGqokidXWmt5s-i9blhqKIe5-Gj42oeT-jSM0w-o55qugJDZaXj_5DODoGMMkn2T-EhT3XH-sLow7RM2YA8Nt7giWVmnp_AmZTWe354l60cj_MNfeE6ryIk1epL39TzcUfDxnXZMVAU31D3fYJu4vITJVBn5DTyBD6L7NmZPWYiKfLymnBzkfDY8rJmSbOhV-PCijFTISPa2wEkscTPqv2mmnW6JJJAx3F700Oi1duUy17x7CPNq9ShyUiaQa-zuR1qPRB4kJss6h9oTfQlZd-K5ZGi5KOEU90R5G7N00vEINr6pmhrTwBYdeRGfvi_Dei6o49YjLcxjhGuOvEjhRez4OeT3sVP6Wo7KNW9zC5JXevOnPkri_8tQckqBPoQEY39Ux9kDuHCv4ypEDEKQO0cHOpCT-MahTZnCIkVXg9vPGbZMl8E5HxqcvXuT62GI_DpnGvNDk7PcwFiR6YNEnBeqPtrDU53VvopPOKOBGiV-uz0M0F1ZneNq-78Uf-s4IOfnSQsTZX8NO4jdmB6OXVnKF2MMseBJrrx6MTxG53qY2opxw80771ov-39m8a8RWdQD4R1pXbU2fM_NlR5w2pHX20FoGNkHKDsCsIFgVQkO0Zf7tJYJs8cL-KhYPfhhHJoXi9COrKqYVeG-HhXxEySndnRCa_gjL_PZ71UaZ5Mut4QSa--wM9SfrRxeJqOSlCJ1U9e1_8BX1kJpreWDOoV4XMHr8NTm3ixXJIOFAUYdL2o2_AX-8Z9WCYVcSvshrm03bsABtb3teiVLwEIzxIqKRqCRDM09Dzqe6nNZL3Y4EkylIFE_-MH0xbuZX66NPep7NdM77KUfg4FjaDKcA7RoYAExwyAq27vY3v3_hie7ZLk3ojZOcYETr99uMlaklH_PaarTPthKuGQffPsaIHaCjEJzIHst33_B0NHrhkC0cc33Eh3wEOloqKJFO_3UuBzg4QYglPPzWT29IpNAWxgWXFtdTCr-VZ4K9aCD-SLr3g4i1Dqzq2pzm55zGpQ8f6ULblFua_uLqVnuAGLWxjXsQ1XeYc0kFvbH4u5WDwUXtR47SdxIRVGaoXPPi4HcWWhjzyswhppAoKYGIWXj1aJbb_7O5l1hHtlqmgLoBa__JoUjvjK2fJO8TRjWxyZSxIuzm3FOalYOPX-PKp6wZanIv_tWrPI_D-GRsGTFYjo3W2h8TipKkr-gr1IKMT3E8277eTi9eImESu3l5xIXX2khjsUJERBHcis9F-Kpe6JUkqQMXYEwKM0CJlcaHx_nTqu2RqL5UaiGHPP4rwAy7MtbEcE_de7NKNCTiU5z5p",
+      "alt": "A night sky of swirling blue brushwork with yellow stars and a crescent moon above a dark village"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The three dials",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#the-three-dials"
+    },
+    {
+      "text": "Chroma is not saturation",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#chroma-is-not-saturation"
+    },
+    {
+      "text": "Pure hues sit at different lightnesses",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#pure-hues-sit-at-different-lightnesses"
+    },
+    {
+      "text": "What you can see in the picture",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#what-you-can-see-in-the-picture"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#the-three-dials"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#chroma-is-not-saturation"
+    },
+    {
+      "text": "Hard and soft light",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-hard-soft"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#pure-hues-sit-at-different-lightnesses"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#what-you-can-see-in-the-picture"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions#common-mistakes"
+    },
+    {
+      "text": "How to choose colours",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-harmony"
+    },
+    {
+      "text": "\n              The colour of the light\n              What you see is the object's own colour multiplied by the light's colour — and your brain quietly divides the light back out, which is why a white shirt looks white everywhere.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-of-light"
+    },
+    {
+      "text": "\n              How to choose colours\n              A practical order of operations for picking colours — decide the job, choose on all three dials, then set the areas — and an honest account of why the named schemes explain much less than they claim.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-harmony"
+    },
+    {
+      "text": "\n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "SRC-068 — The Dimensions of Colour — Colours in Space",
+      "href": "http://www.huevaluechroma.com/011.php"
+    },
+    {
+      "text": "SRC-069 — The Dimensions of Colour — Lightness, Value, Tone",
+      "href": "http://www.huevaluechroma.com/013.php"
+    },
+    {
+      "text": "SRC-070 — The Dimensions of Colour — Shading Series, Shadow Series",
+      "href": "http://www.huevaluechroma.com/101.php"
+    },
+    {
+      "text": "SRC-063 — handprint — Modern Colour Theory (concepts)",
+      "href": "https://www.handprint.com/HP/WCL/color18a.html"
+    },
+    {
+      "text": "\n        PreviousValue structure",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "\n        NextThe colour wheel, and why there is more than one",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-wheel"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions"
+}

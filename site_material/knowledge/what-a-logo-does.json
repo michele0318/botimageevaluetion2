@@ -1,0 +1,19 @@
+{
+  "title": "What a logo does — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/what-a-logo-does",
+  "source_hash": "21297c036b69d2d73aefe110e2874e0eb912a97a94c86cc59534892e03fbe120",
+  "rules": [
+    {
+      "rule": "A logo identifies by matching shapes at a glance rather than explaining the business or arguing quality.",
+      "evidence": "That is the whole job of a logo, and it is a smaller job than most people expect. A logo identifies."
+    },
+    {
+      "rule": "A logo must be reproducible in one colour and at exceedingly small sizes to survive reproduction conditions.",
+      "evidence": "Rand names only two requirements as mandatory — that a logo be reproducible in one colour, and at exceedingly small sizes."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2368,
+  "output_tokens": 226,
+  "processed_at": "2026-09-13T09:41:52"
+}

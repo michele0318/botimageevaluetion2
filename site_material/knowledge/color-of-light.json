@@ -1,0 +1,23 @@
+{
+  "title": "The colour of the light — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-of-light",
+  "source_hash": "1e8ee521cb943c5f417f9bc8492823b38ccfeb8a391d6c9e0fcba92d0e176946",
+  "rules": [
+    {
+      "rule": "If a surface is neutral (e.g., white paper), its observed colour indicates the light's colour; if it changes hue, the light has changed.",
+      "evidence": "The neutral is the giveaway — the paper has nothing of its own to contribute, so its chroma goes from 2 to 56 and it simply becomes the colour of the bulb."
+    },
+    {
+      "rule": "If a surface is coloured (e.g., scarlet), its observed hue remains relatively stable even when the light changes significantly.",
+      "evidence": "The scarlet barely moves; the light is already near its hue."
+    },
+    {
+      "rule": "If lit and shadow sides of the same object show identical hue but different value, suspect a render or composite rather than natural lighting.",
+      "evidence": "If lit and shadow differ only in darkness, and every neutral in frame is perfectly grey, suspect a render with one white light — or a composite."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2702,
+  "output_tokens": 245,
+  "processed_at": "2026-09-13T09:24:33"
+}

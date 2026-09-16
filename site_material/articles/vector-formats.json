@@ -1,0 +1,135 @@
+{
+  "title": "AI, EPS and PDF — Image Wiki",
+  "text": "\n  \n\n  AI, EPS and PDF\n  Three containers people call \"vector formats\". What each really holds, what survives being opened somewhere else, and what outlining the text destroys on the way.\n\n  \n    Termvector file formats\n    Also calledAI file, EPS file, PDF vector, outlined text, expand text, vector delivery\n    Not the same asraster formats, PDF/X, print-ready file\n    Read6 min\n  \n\n  \n    \n      On this page\n      \n        PDF is a container, not a vector formatEPS is a 1980s format with a decoy attachedAI is a working fileLive text, outlined text, and what outlining costs\n      \n    \n  \n\n  \"Send me the vector files\" usually produces one of three things: .ai, .eps, .pdf. All three are containers. Any of them can be full of clean geometry, and any of them can be a photograph with a border round it.\nPDF is a container, not a vector format\nThe Library of Congress description is blunt about what a PDF is: PDF \"represents formatted, page-oriented documents\", and those documents \"may contain text, images, graphics, and other multimedia content\". Its imaging model is derived from PostScript, so it can describe shapes and type in a resolution-independent way. Whether a particular file does is a separate question.\n\none PDF pageQuarterlyLive textstill characters: searchable, editable, translatableVector pathsanchors and segments, the same as in an SVGAn embedded rastera photograph, at whatever resolution it was placed atFlattened transparencyone soft shadow, saved as fourteen opaque sliversPDF is a container, not a vector formatthe extension tells you nothing about what is inside\n\nFour different kinds of content on one page, all legitimate PDF.\nThe headline is still characters. The chart is real geometry. The square patch is a placed photograph, and it has whatever resolution it had when it was placed — enlarging the PDF enlarges those pixels. The band at the bottom was a single soft shadow before the file was flattened for output, and is now a row of opaque slivers that no longer knows it was ever a gradient.\n\"It's a PDF, so it's vector\" is a sentence about a file extension. Zoom to 1600% and look at one edge; that is a sentence about the file.\n\n\nFor the specific case of a PDF that has to survive a press, the restricted subsets and the bleed-and-trim questions are a topic of their own — see Print-ready files.\nEPS is a 1980s format with a decoy attached\nEPS is a PostScript program describing a single rectangular graphic, meant to be dropped into someone else's page. The format description is worth quoting on two points.\nFirst, it is a hybrid by design: \"The EPS format is particularly suited to vector graphics or to graphics that combine vector graphics with raster data\".\nSecond, and this is the one that catches people:\n\nlogo.epslogo.epsa 40 px bitmap storedinside the file so thatany app can show itthe PostScript thepress actually reads%%BeginPreview%!PS-Adobe-3.0 EPSF-3.0The previewwhat most applications put on your screenThe artworkno warning anywhere that the two differ\n\nA typical EPS holds the PostScript and a small bitmap preview, stored so that any application can show something without a PostScript interpreter. The preview is usually of lower resolution and bit-depth than the artwork.\nAnd, in the description's own words: \"An attempt to open an EPS file in many graphics applications will present the preview without any indication that the rendered image is not the main image.\"\nSo a blocky or wrongly-coloured EPS on screen is not evidence of bad artwork, and a good-looking preview is not evidence of good artwork. It is evidence of a preview.\n\n\nOther EPS facts worth carrying: no transparency support and no layers — anything soft was flattened on the way in. Adobe has stated there will be no further versions of the PostScript language or the EPS specification, and enhancements went into PDF instead. And EPS files became an active security problem in 2017, after which Microsoft disabled the EPS import filter in Office by default.\nAsk for EPS when a specific downstream tool demands it — some stock libraries and some older print workflows do — not because it is \"more compatible\".\nAI is a working file\n.ai is Illustrator's own save format, and its job is to preserve what the editor knows: layers, artboards, live effects, editable type, symbols. Early versions were PostScript-language documents; the modern ones are documented by Adobe rather than by a standards body.\nTreat it as the master, not the deliverable. It is the file you want to exist somewhere so that the artwork can be changed next year. It is not the file you send to someone whose tool you have not asked about.\n\n\n\nYou are asked for\nSend\nNot\n\n\n\n\nArtwork for the web\nSVG\nAI, EPS\n\n\nArtwork for a printer\nPDF built to the printer's spec\nAI, \"the SVG\"\n\n\nArtwork for an unknown future use\nAI or the editor's native file, kept as the master, plus a PDF\nOnly a PNG\n\n\nArtwork for a stock library or a specific vendor\nExactly the format and version in their spec sheet\nYour preference\n\n\n\nLive text, outlined text, and what outlining costs\nOutlining — \"create outlines\", \"expand\", \"convert to paths\" — replaces characters with shapes. It is the standard fix for the font problem, and it is irreversible.\n\nSUMMIT<text>SUMMIT</text>search finds the wordone keystroke fixes a typoa translator can replace ita screen reader reads it outand: it needs that font to be availableSUMMIT<path d=\"M 8 40 C …\"/> x 6search finds nothinga typo means redrawing lettersthere is no text to translatea screen reader has nothing to readand: it renders the same everywhereLive textcharacters plus a font nameOutlined textsix shapes that happen to look like letters\n\nIdentical on screen. Not the same object.\nLive text is characters plus a font name: findable by search, fixable with one keystroke, replaceable by a translator, readable by a screen reader — and dependent on that font being installed wherever the file is opened.\nOutlined text is shapes that resemble letters. It renders identically everywhere and it has thrown away search, editing, translation and accessibility. For a non-Latin script the loss is worse, because the shaping the font performed is now baked in and cannot be redone for another language — see Beyond Latin.\n\n\nHere is the failure that outlining is meant to prevent.\n\nthe space the line was drawn forthe space the line was drawn forAutumn AssemblyAutumn Assemblythe box ends hereOpened with the font it asks forthe widths are the ones the designer setOpened without ita substitute has different widths, so the line no longer fits\n\nThe same file opened twice. On the right the requested font was missing, so a substitute was used — different widths, so the line no longer fits the space it was designed for.\nIn a two-line layout this shows up as rewrapped text, a heading colliding with a rule, or a label falling off a button. Nothing in the file is broken; it is simply describing text it cannot draw.\n\n\n\nWhen to outline\nOutline for a final print deliverable, for artwork going to a vendor who cannot install fonts, and for a logotype that must never be re-set. Keep live text for anything that will be edited, translated, read aloud, or searched. Keep an editable master either way — outlining is one-directional.\n\n\nPlatform rules are platform rules\nMarketplace requirements are a useful checklist and not general law. Shutterstock, for example, requires vectors \"saved down to an EPS 8 or EPS 10 format\", requires text to be converted from live fonts to outlined shapes, requires all objects expanded, requires anything outside the artboard or on hidden layers to be removed, and requires the JPEG preview to match the EPS. That is their spec, not the definition of a good vector file. Read whichever spec sheet applies to the job in front of you.\n\n\nReceiving a \"vector file\"\n\nZoom to 1600% on a curved edge. Pixels mean there is raster inside.\nTry to select text with the text cursor. Nothing selectable means outlined, or an image.\nLook for a soft shadow or a transparency effect, then check whether it survived as an effect or as a row of slivers.\nIn an EPS, remember you may be looking at the preview.\nAsk what the fonts are, and whether you are licensed to use them, before you decide against outlining.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            \n          \n        \n          \n            \n              Raster and vector\n              Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n            \n          \n        \n          \n            \n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            \n          \n        \n          \n            \n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            \n          \n        \n          \n            \n              Beyond Latin\n              Most typographic advice is advice about Latin. This is which parts of it come from the eye, which parts are Latin-only conventions, and what other writing systems do instead.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        VEC-015 — Library of Congress — Encapsulated PostScript (EPS) File Format, Version 3.xVEC-016 — Library of Congress — PDF (Portable Document Format) FamilyVEC-026 — PRONOM (The National Archives) — Adobe Illustrator, fmt/419VEC-006 — W3C — SVG 2, TextVEC-013 — MDN — SVG from scratch: TextsVEC-018 — Shutterstock (platform-specific) — Vector and illustration quality requirementsVEC-020 — W3C — WAI-ARIA Graphics Module 1.0\n      \n    \n  \n\n  \n",
+  "headings": [
+    "AI, EPS and PDF",
+    "PDF is a container, not a vector format",
+    "EPS is a 1980s format with a decoy attached",
+    "AI is a working file",
+    "Live text, outlined text, and what outlining costs",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\none PDF pageQuarterlyLive textstill characters: searchable, editable, translatableVector pathsanchors and segments, the same as in an SVGAn embedded rastera photograph, at whatever resolution it was placed atFlattened transparencyone soft shadow, saved as fourteen opaque sliversPDF is a container, not a vector formatthe extension tells you nothing about what is inside\n\nFour different kinds of content on one page, all legitimate PDF.\nThe headline is still characters. The chart is real geometry. The square patch is a placed photograph, and it has whatever resolution it had when it was placed — enlarging the PDF enlarges those pixels. The band at the bottom was a single soft shadow before the file was flattened for output, and is now a row of opaque slivers that no longer knows it was ever a gradient.\n\"It's a PDF, so it's vector\" is a sentence about a file extension. Zoom to 1600% and look at one edge; that is a sentence about the file.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nlogo.epslogo.epsa 40 px bitmap storedinside the file so thatany app can show itthe PostScript thepress actually reads%%BeginPreview%!PS-Adobe-3.0 EPSF-3.0The previewwhat most applications put on your screenThe artworkno warning anywhere that the two differ\n\nA typical EPS holds the PostScript and a small bitmap preview, stored so that any application can show something without a PostScript interpreter. The preview is usually of lower resolution and bit-depth than the artwork.\nAnd, in the description's own words: \"An attempt to open an EPS file in many graphics applications will present the preview without any indication that the rendered image is not the main image.\"\nSo a blocky or wrongly-coloured EPS on screen is not evidence of bad artwork, and a good-looking preview is not evidence of good artwork. It is evidence of a preview.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nSUMMIT<text>SUMMIT</text>search finds the wordone keystroke fixes a typoa translator can replace ita screen reader reads it outand: it needs that font to be availableSUMMIT<path d=\"M 8 40 C …\"/> x 6search finds nothinga typo means redrawing lettersthere is no text to translatea screen reader has nothing to readand: it renders the same everywhereLive textcharacters plus a font nameOutlined textsix shapes that happen to look like letters\n\nIdentical on screen. Not the same object.\nLive text is characters plus a font name: findable by search, fixable with one keystroke, replaceable by a translator, readable by a screen reader — and dependent on that font being installed wherever the file is opened.\nOutlined text is shapes that resemble letters. It renders identically everywhere and it has thrown away search, editing, translation and accessibility. For a non-Latin script the loss is worse, because the shaping the font performed is now baked in and cannot be redone for another language — see Beyond Latin.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nthe space the line was drawn forthe space the line was drawn forAutumn AssemblyAutumn Assemblythe box ends hereOpened with the font it asks forthe widths are the ones the designer setOpened without ita substitute has different widths, so the line no longer fits\n\nThe same file opened twice. On the right the requested font was missing, so a substitute was used — different widths, so the line no longer fits the space it was designed for.\nIn a two-line layout this shows up as rewrapped text, a heading colliding with a rule, or a label falling off a button. Nothing in the file is broken; it is simply describing text it cannot draw.\n\n",
+      "images": []
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "PDF is a container, not a vector format",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#pdf-is-a-container-not-a-vector-format"
+    },
+    {
+      "text": "EPS is a 1980s format with a decoy attached",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#eps-is-a-1980s-format-with-a-decoy-attached"
+    },
+    {
+      "text": "AI is a working file",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#ai-is-a-working-file"
+    },
+    {
+      "text": "Live text, outlined text, and what outlining costs",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#live-text-outlined-text-and-what-outlining-costs"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#pdf-is-a-container-not-a-vector-format"
+    },
+    {
+      "text": "Print-ready files",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#eps-is-a-1980s-format-with-a-decoy-attached"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#ai-is-a-working-file"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats#live-text-outlined-text-and-what-outlining-costs"
+    },
+    {
+      "text": "Beyond Latin",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin"
+    },
+    {
+      "text": "\n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n              Raster and vector\n              Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+    },
+    {
+      "text": "\n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    },
+    {
+      "text": "\n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "\n              Beyond Latin\n              Most typographic advice is advice about Latin. This is which parts of it come from the eye, which parts are Latin-only conventions, and what other writing systems do instead.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin"
+    },
+    {
+      "text": "VEC-015 — Library of Congress — Encapsulated PostScript (EPS) File Format, Version 3.x",
+      "href": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000246.shtml"
+    },
+    {
+      "text": "VEC-016 — Library of Congress — PDF (Portable Document Format) Family",
+      "href": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml"
+    },
+    {
+      "text": "VEC-026 — PRONOM (The National Archives) — Adobe Illustrator, fmt/419",
+      "href": "https://www.nationalarchives.gov.uk/PRONOM/fmt/419"
+    },
+    {
+      "text": "VEC-006 — W3C — SVG 2, Text",
+      "href": "https://www.w3.org/TR/SVG2/text.html"
+    },
+    {
+      "text": "VEC-013 — MDN — SVG from scratch: Texts",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Texts"
+    },
+    {
+      "text": "VEC-018 — Shutterstock (platform-specific) — Vector and illustration quality requirements",
+      "href": "https://submit.shutterstock.com/help/en/articles/10594650-vector-and-illustration-quality-requirements"
+    },
+    {
+      "text": "VEC-020 — W3C — WAI-ARIA Graphics Module 1.0",
+      "href": "https://www.w3.org/TR/graphics-aria-1.0/"
+    },
+    {
+      "text": "\n        PreviousWhat an SVG actually contains",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n        NextWhat a bad vector file looks like",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats"
+}

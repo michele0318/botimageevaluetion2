@@ -1,0 +1,27 @@
+{
+  "title": "Light direction — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-direction",
+  "source_hash": "5d8df79ed74b93ad5fef72aeb564308280d4eb941b94cb25a5037c339ecb113e",
+  "rules": [
+    {
+      "rule": "If a cast shadow points away from the subject, the light source is located in that opposite direction relative to the camera.",
+      "evidence": "Cast shadows point away from the light, the terminator runs across it, the catchlight points back at it."
+    },
+    {
+      "rule": "If an eye contains a catchlight positioned high and to the left, the light source was physically high and to the left.",
+      "evidence": "High and to the left in the eye means the light was high and to the left."
+    },
+    {
+      "rule": "If under-lighting is present but no object within the frame explains or produces that light direction, it reads as wrong.",
+      "evidence": "It stops feeling wrong the instant the frame explains it: a campfire, a laptop screen, a stove burner, footlights."
+    },
+    {
+      "rule": "If a 90° key light position is used with heavy fill, the resulting lighting will be gentle rather than dramatic.",
+      "evidence": "A 90° key with heavy fill is gentle, a 45° key with none is brutal."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2746,
+  "output_tokens": 216,
+  "processed_at": "2026-09-13T09:31:19"
+}

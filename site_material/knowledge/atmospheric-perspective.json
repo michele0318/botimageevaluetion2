@@ -1,0 +1,19 @@
+{
+  "title": "Atmospheric perspective — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/atmospheric-perspective",
+  "source_hash": "ff67271bddb9c7c0b8ddeb67e106e89155d3f46399304d787301befaae42a147",
+  "rules": [
+    {
+      "rule": "If an image shows distant objects, their darkest values must be lighter than the foreground's darkest value; true blacks in the distance indicate no atmospheric perspective.",
+      "evidence": "Blacks stop being black. Nothing in the far distance is as dark as the darkest thing in the foreground."
+    },
+    {
+      "rule": "If an image uses a uniform grey wash over the entire frame without increasing with distance, it fails to demonstrate atmospheric perspective.",
+      "evidence": "Only if it increases with distance. A uniform grey wash over the frame is just a washed-out picture."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2472,
+  "output_tokens": 265,
+  "processed_at": "2026-09-13T09:22:55"
+}

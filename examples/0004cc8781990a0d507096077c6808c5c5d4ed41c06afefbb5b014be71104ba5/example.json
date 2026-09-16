@@ -1,0 +1,52 @@
+{
+  "id": "0004cc8781990a0d507096077c6808c5c5d4ed41c06afefbb5b014be71104ba5",
+  "prompt": "pizza",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 wins. The prompt asks for one thing — a pizza — and image 1 simply delivers it. Image 2 is a fun creative idea, but the horse has taken over the frame and the pizza turned into a prop, so the main idea of the prompt is gone. Creativity is welcome only while the core subject of the prompt survives: an invented take that drops the subject loses to a plain but correct image.",
+  "split": "train",
+  "image_group": "86b8431c856f5619ab97350ea78ca66948e15d55e0cead1824e6949a630f0e55",
+  "image_hashes": [
+    "1a243f77daf7f7eb505aa03c12af9064cd6c3430a76e1e303f09435a12eb0469",
+    "0c7d964ff0ed95fb1399bb34f76f74e4152211815a78d5c40ea711937984e11c"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ebcb19c6e9e8bd78b3c1ff898f3e4887197a8c013fa4b3f3266934841abb0914",
+      "corrected": false,
+      "time": "2026-09-13T02:15:52"
+    },
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "7b397a4b299e917cd67037de4aae6c79d62cb0f3163ff10aa8ab0f24dce2bb90",
+      "corrected": false,
+      "time": "2026-09-13T22:00:10"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:15:54"
+    },
+    {
+      "previous": "1",
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:00:12"
+    }
+  ],
+  "feedback": "Image 1 wins. The prompt asks for one thing — a pizza — and image 1 simply delivers it. Image 2 is a fun creative idea, but the horse has taken over the frame and the pizza turned into a prop, so the main idea of the prompt is gone. Creativity is welcome only while the core subject of the prompt survives: an invented take that drops the subject loses to a plain but correct image.",
+  "lesson": "If a requested subject is absent or compromised, even creatively, a plain correct image wins over an inventive but divergent one — unless creativity is explicitly requested and the subject remains intact.",
+  "lesson_evidence": "Image 1 wins. The prompt asks for one thing — a pizza — and image 1 simply delivers it. Image 2 is a fun creative idea, but the horse has taken over the frame and the pizza turned into a prop, so the main idea of the prompt is gone.",
+  "lesson_source": "Image 1 wins. The prompt asks for one thing — a pizza — and image 1 simply delivers it. Image 2 is a fun creative idea, but the horse has taken over the frame and the pizza turned into a prop, so the main idea of the prompt is gone. Creativity is welcome only while the core subject of the prompt survives: an invented take that drops the subject loses to a plain but correct image."
+}

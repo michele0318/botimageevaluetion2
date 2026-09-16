@@ -1,0 +1,10 @@
+{
+  "title": "Roughness and Fresnel — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/fresnel-roughness",
+  "source_hash": "6beafabbd0cbb0edf0f7205e917ea21c5b1ab25003cb2f5ebed0949039c49786",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 3037,
+  "output_tokens": 298,
+  "processed_at": "2026-09-13T09:28:57"
+}

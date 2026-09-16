@@ -1,0 +1,37 @@
+{
+  "id": "49f516cb8d798279dab331f7b814022cc0c7148d46a4fe30015c81b02b922620",
+  "prompt": "iridescent glass and plastic mechanism, ribbon spiraling into wireframe cage loops, pink surface, 3D close-up",
+  "correct_choice": null,
+  "verification": "",
+  "review_required": "Success page named image 2 after recorded submission of image 1. Excluded from verified examples pending reconciliation.",
+  "split": "test",
+  "image_group": "97756ec57d485bc7c342500f7573dc59ecfd4676b206f25ecc1f93a942e16c0f",
+  "image_hashes": [
+    "27b03719915a271384898bf745942aeac418832235605c4efe59c4dd9e918c29",
+    "eb2a21047134e249b670c0c9a27863911c5736baa687ff716b4b25216b8d3d1f"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": null,
+      "assignment": "9a278c01311a62af18d2fbd05b336a4a46d9c6c533fd0ceeb9f872223bb1992d",
+      "corrected": false,
+      "time": "2026-09-13T02:21:38"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:21:40"
+    }
+  ],
+  "feedback": "Image 2 is the superior choice because it presents a cohesive and logically constructed \"wireframe cage.\" Unlike Image 1, where the metal rings fail to form a framework and simply float disconnectedly in the air, Image 2 features a believable structure with integrated elements and no bizarre floating objects.",
+  "lesson": "If a requested style includes structural coherence in a framework or cage, prioritize the visual that integrates elements logically without floating or disconnected parts.",
+  "lesson_evidence": "Image 2 is the superior choice because it presents a cohesive and logically constructed \"wireframe cage.\" Unlike Image 1, where the metal rings fail to form a framework and simply float disconnectedly in the air, Image 2 features a believable structure with integrated elements and no bizarre floating objects.",
+  "lesson_source": "Image 2 is the superior choice because it presents a cohesive and logically constructed \"wireframe cage.\" Unlike Image 1, where the metal rings fail to form a framework and simply float disconnectedly in the air, Image 2 features a believable structure with integrated elements and no bizarre floating objects."
+}

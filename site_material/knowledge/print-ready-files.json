@@ -1,0 +1,23 @@
+{
+  "title": "Print-ready files — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files",
+  "source_hash": "7e2126cda05de0de336fbcd366c8028c645f0ee1f8f446fb7b1308b4fa3be80e",
+  "rules": [
+    {
+      "rule": "If a BleedBox is defined in a file, it must not be enclosed by the TrimBox.",
+      "evidence": "In other words, PDF/X will not stop you shipping a file with no bleed. It will only stop you shipping one whose boxes contradict each other."
+    },
+    {
+      "rule": "If a file contains fonts that are not embedded, the line breaks may move too because the viewer substitutes a font with different widths.",
+      "evidence": "Open such a file where the font is not installed and the viewer substitutes something, usually with different widths, so the line breaks move too."
+    },
+    {
+      "rule": "If a file has transparency effects like drop shadows or glows without flattening, seams may appear as faint rectangles across the blend.",
+      "evidence": "Flattening carves the artwork into opaque tiles, and the seams sometimes show as faint rectangles across a blend."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2628,
+  "output_tokens": 264,
+  "processed_at": "2026-09-13T09:36:30"
+}

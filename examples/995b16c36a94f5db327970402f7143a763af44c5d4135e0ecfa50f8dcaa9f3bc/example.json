@@ -1,0 +1,42 @@
+{
+  "id": "995b16c36a94f5db327970402f7143a763af44c5d4135e0ecfa50f8dcaa9f3bc",
+  "prompt": "A cartoonish 1960s tiki bar menu cover with smiling, exaggerated tiki statues, patterned surfboards, and coconuts with tiny umbrellas. Bright pastels and playful lettering set a carefree, exotic mood.",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: One could agree that the first image has extra glasses with drinks and umbrellas, and that the second image matches the prompt better in this respect because it does not contain unnecessary objects. But the key feature of this case is that what is expected from us is specifically a menu cover, not the menu itself or a list of available items. In that case, it is more important for us to look at the beauty of the images, and here image 1 clearly wins, because the statues do not have problems with their eyes and the drawing looks neater overall. Image 2 contains text that was not requested anywhere in the prompt. Weighing all the pros and cons, Image 1 wins.",
+  "split": "train",
+  "image_group": "de6defcfe998bf53f40fa7639f0ea834869cad8c4049d4fa4f067bf9fac62651",
+  "image_hashes": [
+    "1f913ef98cfb40c10a3d57fe2d6ce9c131d0c45e0772c94a3d3b42c4e0b900ce",
+    "219ac462de977056b34e2addf846e63ae132601d34d2908ca8c49eedd78f843b"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "f411242ca63236f2ec3f8d867c73be5e441fa04a9d4fde824397993f52dab2fc",
+      "corrected": false,
+      "time": "2026-09-13T02:15:22"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "f411242ca63236f2ec3f8d867c73be5e441fa04a9d4fde824397993f52dab2fc",
+      "corrected": true,
+      "time": "2026-09-13T02:15:27"
+    }
+  ],
+  "observed_feedback": "Please take another look:One could agree that the first image has extra glasses with drinks and umbrellas, and that the second image matches the prompt better in this respect because it does not contain unnecessary objects. But the key feature of this case is that what is expected from us is specifically a menu cover, not the menu itself or a list of available items. In that case, it is more important for us to look at the beauty of the images, and here image 1 clearly wins, because the statues do not have problems with their eyes and the drawing looks neater overall. Image 2 contains text that was not requested anywhere in the prompt. Weighing all the pros and cons, Image 1 wins.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:15:24"
+    }
+  ],
+  "feedback": "One could agree that the first image has extra glasses with drinks and umbrellas, and that the second image matches the prompt better in this respect because it does not contain unnecessary objects. But the key feature of this case is that what is expected from us is specifically a menu cover, not the menu itself or a list of available items. In that case, it is more important for us to look at the beauty of the images, and here image 1 clearly wins, because the statues do not have problems with their eyes and the drawing looks neater overall. Image 2 contains text that was not requested anywhere in the prompt. Weighing all the pros and cons, Image 1 wins."
+}

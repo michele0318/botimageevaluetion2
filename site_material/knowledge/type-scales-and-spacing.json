@@ -1,0 +1,23 @@
+{
+  "title": "Type scales and spacing scales — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-scales-and-spacing",
+  "source_hash": "21c57f33ccbcff9753ec923dd3ce0d0e27877db2a10a9960fc37fcfeed38f367",
+  "rules": [
+    {
+      "rule": "If two adjacent text sizes differ by less than 15%, they are competing rather than ranking and should be removed.",
+      "evidence": "Sort them. Any two within about 15% of each other are competing, not ranking."
+    },
+    {
+      "rule": "If a spacing scale contains gaps that play the same role but have different values, it indicates arbitrary choices rather than a deliberate system.",
+      "evidence": "Look at the two gaps between list rows: 9 px and 11 px. They play the same role, so they should be the same number, and nobody decided that they should not be."
+    },
+    {
+      "rule": "If a type scale is defined as fixed pixel values, it may fail on small screens where steps collapse into one value or consume too much screen real estate.",
+      "evidence": "The honest detail is the middle. On small screens points 27 and 24 both render at 21 px — two steps collapse into one value."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 3060,
+  "output_tokens": 265,
+  "processed_at": "2026-09-13T09:40:17"
+}

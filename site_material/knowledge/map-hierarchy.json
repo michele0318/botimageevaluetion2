@@ -1,0 +1,23 @@
+{
+  "title": "What a map decides — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/map-hierarchy",
+  "source_hash": "cb3ed85c6f316848775c8822894fdda69fa9fad06ee6bef34987b0b3f452c598",
+  "rules": [
+    {
+      "rule": "Design the map at its smallest intended viewing size first, rather than scaling up from a larger version.",
+      "evidence": "Decide the smallest intended size first, then design at it, not at 200%."
+    },
+    {
+      "rule": "Ensure geometric symbols remain readable when small, while complex symbols require more room to be understood.",
+      "evidence": "Their practical rule: geometric symbols stay readable when small, complex ones need room."
+    },
+    {
+      "rule": "Use visual contrast as a finite resource where the theme needs to stand out against a low-contrast base.",
+      "evidence": "Turn contrast up and features separate; turn it down and they read as belonging together, which is precisely why a basemap should be low-contrast."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2678,
+  "output_tokens": 187,
+  "processed_at": "2026-09-13T09:33:11"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "AI, EPS and PDF — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-formats",
+  "source_hash": "5bbdcf22fc5f5ef55568e4dce0e62d33c94d742f8eeb13068973208bb1b93d43",
+  "rules": [
+    {
+      "rule": "If a PDF file must survive press output, check for flattened transparency saved as opaque slivers rather than soft shadows.",
+      "evidence": "The band at the bottom was a single soft shadow before the file was flattened for output, and is now a row of opaque slivers that no longer knows it was ever a gradient."
+    },
+    {
+      "rule": "If an EPS preview looks blocky or wrongly coloured on screen, do not assume the artwork is bad because the preview resolution differs from the main PostScript data.",
+      "evidence": "So a blocky or wrongly-coloured EPS on screen is not evidence of bad artwork, and a good-looking preview is not evidence of good artwork. It is evidence of a preview."
+    },
+    {
+      "rule": "If text in a vector file cannot be selected with a cursor, it has been outlined into shapes and lost searchability, translation, and accessibility.",
+      "evidence": "Try to select text with the text cursor. Nothing selectable means outlined, or an image."
+    },
+    {
+      "rule": "If a logotype must never be re-set for a vendor who cannot install fonts, outline the text; otherwise keep live text for editing and translation.",
+      "evidence": "Outline for a final print deliverable, for artwork going to a vendor who cannot install fonts, and for a logotype that must never be re-set. Keep live text for anything that will be edited, translated, read aloud, or searched."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2369,
+  "output_tokens": 284,
+  "processed_at": "2026-09-13T09:40:49"
+}

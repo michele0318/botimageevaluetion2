@@ -1,0 +1,35 @@
+{
+  "id": "2f46e7d5f1cf8536d77141250d2ef7e958d32e5b82fb03f1f7e79112171c5183",
+  "prompt": "ambulance car",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Both images correspond to prompt approximately to the same level. However, image 1 shows some text, which is drawn poorly – but the prompt does not ask for text explicitly! In this case, we should prefer an image without text (or an image with better text). Prefer image 2.",
+  "split": "train",
+  "image_group": "aeb00efafbc0947a38a8a12e395cfca109a7adadd1d42c5ad906caaa3c020149",
+  "image_hashes": [
+    "55136ee6e61ab7eea5de5e0ae1b34735351a5d2ebd4afebac8ebd1f204fdd0cf",
+    "6007cd345b2baf916e7b7b5e417ece3b2bd886e54124e8864e2324ff41d45cad"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "29fb8d576f5d0c98e07385f55e5f572513db27af3a5598c39c1425aacd271508",
+      "corrected": false,
+      "time": "2026-09-13T02:10:56"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:10:57"
+    }
+  ],
+  "feedback": "Both images correspond to prompt approximately to the same level. However, image 1 shows some text, which is drawn poorly – but the prompt does not ask for text explicitly! In this case, we should prefer an image without text (or an image with better text). Prefer image 2.",
+  "lesson": "If a requested style includes explicit elements not mentioned in the prompt, prioritize the image that omits or better renders those elements, unless otherwise specified.",
+  "lesson_evidence": "Both images correspond to prompt approximately to the same level. However, image 1 shows some text, which is drawn poorly – but the prompt does not ask for text explicitly! In this case, we should prefer an image without text (or an image with better text). Prefer image 2.",
+  "lesson_source": "Both images correspond to prompt approximately to the same level. However, image 1 shows some text, which is drawn poorly – but the prompt does not ask for text explicitly! In this case, we should prefer an image without text (or an image with better text). Prefer image 2."
+}

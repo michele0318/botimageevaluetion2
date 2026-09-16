@@ -1,0 +1,19 @@
+{
+  "title": "The anatomy of a shadow — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/shadow-anatomy",
+  "source_hash": "931e1bf7d543756c5722e355b20d074c901d411005c4003d83d4e4ad395e7789",
+  "rules": [
+    {
+      "rule": "Reflected light on the shadow side must always remain darker than the darkest part of the lit side; if it is brighter, it indicates a second light source.",
+      "evidence": "The working rule: on one object under one source, reflected light inside the shadow stays darker than the darkest part of the lit side. Break it and the object reads as a cut-out with a glow behind it."
+    },
+    {
+      "rule": "If an object has no distinct dark seam where it meets the ground, it likely appears to be floating rather than resting on a surface.",
+      "evidence": "Where the object meets the ground: a distinct dark seam? No seam means it is floating."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2640,
+  "output_tokens": 311,
+  "processed_at": "2026-09-13T09:37:59"
+}

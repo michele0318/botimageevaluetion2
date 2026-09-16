@@ -1,0 +1,15 @@
+{
+  "title": "Metal and everything else — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/metal-vs-dielectric",
+  "source_hash": "5e2b11c4a01ce26f952f1a8b2241c6b205a6e1fdc84d419e198581437a642470",
+  "rules": [
+    {
+      "rule": "If an object shows no body colour and reflects the room's environment at high strength (60–90%), it is a metal conductor.",
+      "evidence": "Metal: no body colour. What you see is the environment, at high strength."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 3229,
+  "output_tokens": 236,
+  "processed_at": "2026-09-13T09:33:45"
+}

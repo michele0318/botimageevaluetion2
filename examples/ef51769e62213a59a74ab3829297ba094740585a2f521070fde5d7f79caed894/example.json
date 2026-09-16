@@ -1,0 +1,45 @@
+{
+  "id": "ef51769e62213a59a74ab3829297ba094740585a2f521070fde5d7f79caed894",
+  "prompt": "3D typography, colorful toy-like letters, mixed with wooden blocks, screws, gears, glass tubes with marbles, floating on black background",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 features a brilliant concept of shaping various objects into letters, enhanced by a great color combination and proper close-up framing. Image 1 fails because it is heavily cluttered with distracting background elements that draw attention away from the main subject.",
+  "split": "train",
+  "image_group": "dcd170e3ca5cebb219edafe29a6ba2adec316110228a9e42cce09d43fc19178d",
+  "image_hashes": [
+    "6303d6a7cc04cca87cf713e9dbca2c54cee70d1de4eed0832d3bf353c22aff43",
+    "fb2f7e9505f00d36d1ef1c65e9f615d9d1c9a7d80fc6a7d491686b6a2f028c54"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "e8324cee3e8b2c00ac4d5fdc5ec1f7c1b2d45df03a6a39bada8944abcfb364a3",
+      "corrected": false,
+      "time": "2026-09-13T02:23:44"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "e8324cee3e8b2c00ac4d5fdc5ec1f7c1b2d45df03a6a39bada8944abcfb364a3",
+      "corrected": true,
+      "time": "2026-09-13T02:23:47"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 features a brilliant concept of shaping various objects into letters, enhanced by a great color combination and proper close-up framing. Image 1 fails because it is heavily cluttered with distracting background elements that draw attention away from the main subject.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:23:45"
+    }
+  ],
+  "feedback": "Image 2 features a brilliant concept of shaping various objects into letters, enhanced by a great color combination and proper close-up framing. Image 1 fails because it is heavily cluttered with distracting background elements that draw attention away from the main subject.",
+  "lesson": "If requested style includes mixed object typography, prioritize clean framing and color harmony to avoid visual clutter; style only matters when explicitly requested.",
+  "lesson_evidence": "Image 2 features a brilliant concept of shaping various objects into letters, enhanced by a great color combination and proper close-up framing.",
+  "lesson_source": "Image 2 features a brilliant concept of shaping various objects into letters, enhanced by a great color combination and proper close-up framing. Image 1 fails because it is heavily cluttered with distracting background elements that draw attention away from the main subject."
+}

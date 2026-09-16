@@ -1,0 +1,35 @@
+{
+  "id": "363283f6393dcd568fe1536c965f3250bad359ecec82e7970e521b774fdde4a4",
+  "prompt": "an airplane is taking off from a runway",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: The images are very similar and have issues rendering the planes, but these flaws are more obvious in image 2. Image 1 wins.",
+  "split": "test",
+  "image_group": "0a89e79334d7e01d0529ba17580923d27a04761cfb1f2ed6d40a2fa431bf71f7",
+  "image_hashes": [
+    "aeb7f4d88955708c48b7d2865df2f1bfeac153cb9d287356367bb35ddfd3a149",
+    "6b73a8ffe3f5712ccc642688e832b0414041e598504791a1fb657ff8e382657c"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "f152cbddc77303c18068bd93128ebec4f6a53edb2d51b239ab27e7fc80b41591",
+      "corrected": false,
+      "time": "2026-09-13T02:11:55"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:11:56"
+    }
+  ],
+  "feedback": "The images are very similar and have issues rendering the planes, but these flaws are more obvious in image 2. Image 1 wins.",
+  "lesson": "If a requested style is specified, prioritize rendering fidelity over minor visual differences; otherwise, choose the image with fewer rendering flaws.",
+  "lesson_evidence": "The images are very similar and have issues rendering the planes, but these flaws are more obvious in image 2. Image 1 wins.",
+  "lesson_source": "The images are very similar and have issues rendering the planes, but these flaws are more obvious in image 2. Image 1 wins."
+}

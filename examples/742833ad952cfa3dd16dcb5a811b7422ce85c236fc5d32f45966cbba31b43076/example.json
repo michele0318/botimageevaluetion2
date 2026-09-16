@@ -1,0 +1,45 @@
+{
+  "id": "742833ad952cfa3dd16dcb5a811b7422ce85c236fc5d32f45966cbba31b43076",
+  "prompt": "logo\"* EL PINCHE iNGE *\" \"INGENIERÍA DEL RITMO\", Spanish, \"Mezclas precisas. tiempos bien medidos & ritmos finitos.\", 'house disco', 'funk hip-hop', 'y algo más...'",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is preferred because it uses a more consistent typographic style. In Image 2, the top lettering looks low-quality, and the mix of unrelated fonts makes the design feel less cohesive.",
+  "split": "test",
+  "image_group": "feea6137f257ecb2f49eea1f544f21440602f1bac52947d31ecb54318a74ca9a",
+  "image_hashes": [
+    "35ba33a630ae8643426b3b3e15aca092ed3ecd9c1a2bc69eabb2fd2bee7055d6",
+    "3ea15b994bdb1df33ea7ddf7c81bfe20184a6e1d042c836e815c9696e49949ba"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "a826a9ccddc650190a20e618ea10bd98ad7361093683f49afc7652282f38af52",
+      "corrected": false,
+      "time": "2026-09-13T02:18:26"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "a826a9ccddc650190a20e618ea10bd98ad7361093683f49afc7652282f38af52",
+      "corrected": true,
+      "time": "2026-09-13T02:18:29"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is preferred because it uses a more consistent typographic style. In Image 2, the top lettering looks low-quality, and the mix of unrelated fonts makes the design feel less cohesive.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:18:27"
+    }
+  ],
+  "feedback": "Image 1 is preferred because it uses a more consistent typographic style. In Image 2, the top lettering looks low-quality, and the mix of unrelated fonts makes the design feel less cohesive.",
+  "lesson": "If a requested style is specified, prioritize typographic consistency over font variety; otherwise, default to clarity and cohesion without style imposition.",
+  "lesson_evidence": "Image 1 is preferred because it uses a more consistent typographic style. In Image 2, the top lettering looks low-quality, and the mix of unrelated fonts makes the design feel less cohesive.",
+  "lesson_source": "Image 1 is preferred because it uses a more consistent typographic style. In Image 2, the top lettering looks low-quality, and the mix of unrelated fonts makes the design feel less cohesive."
+}

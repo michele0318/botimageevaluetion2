@@ -1,0 +1,15 @@
+{
+  "title": "instructionModal",
+  "source": "site dialog: instructionModal",
+  "source_hash": "5fc6e1d46c4e29fe6e5529ebec7110a7a4aa41498ca0e58fe5cbb7f3bc222b5e",
+  "rules": [
+    {
+      "rule": "If an image completely misses the main subject (e.g., requested a car, got a house), it cannot win.",
+      "evidence": "Serious Deviations: If the image completely misses the main subject (e.g., requested a car, got a house), it cannot win."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 1732,
+  "output_tokens": 294,
+  "processed_at": "2026-09-13T09:42:06"
+}

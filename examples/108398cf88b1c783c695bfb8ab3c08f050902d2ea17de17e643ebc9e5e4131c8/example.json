@@ -1,0 +1,44 @@
+{
+  "id": "108398cf88b1c783c695bfb8ab3c08f050902d2ea17de17e643ebc9e5e4131c8",
+  "prompt": "Show the national sport of Japan",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: There are obvious anatomy issues in the second image. A person cannot have a third leg. Although image 1 also has something strange going on with the arm, that could at least be explained as an injury sustained during the fight. The problem in the second image is much more obvious, so image 1 wins.",
+  "split": "train",
+  "image_group": "e08d57fc998bc255d3bedf064d67a1274eeae13d1320dfc9dbe3dba660955954",
+  "image_hashes": [
+    "14c9cdb6b04da95a5d8c084bde1131b4019ae3aef291ac0b8b29d71fd83e5cce",
+    "53b3e08bdc1f09ec9157793f6ef2d4f98922b6320e779063e96a04312fa63829"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "051710262d08391a634c71bdbd0cc16208b94578b7dce5b49b20de37aec92ff8",
+      "corrected": false,
+      "time": "2026-09-13T02:10:25"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "051710262d08391a634c71bdbd0cc16208b94578b7dce5b49b20de37aec92ff8",
+      "corrected": true,
+      "time": "2026-09-13T02:10:29"
+    }
+  ],
+  "observed_feedback": "Please take another look:There are obvious anatomy issues in the second image. A person cannot have a third leg. Although image 1 also has something strange going on with the arm, that could at least be explained as an injury sustained during the fight. The problem in the second image is much more obvious, so image 1 wins.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:10:26"
+    }
+  ],
+  "feedback": "There are obvious anatomy issues in the second image. A person cannot have a third leg. Although image 1 also has something strange going on with the arm, that could at least be explained as an injury sustained during the fight. The problem in the second image is much more obvious, so image 1 wins.",
+  "lesson": "If a visual element violates anatomical plausibility in a way that is immediately obvious and non-contextual, it should be prioritized over a less obviously flawed image, even if the latter has other strange elements.",
+  "lesson_evidence": "There are obvious anatomy issues in the second image. A person cannot have a third leg. Although image 1 also has something strange going on with the arm, that could at least be explained as an injury sustained during the fight. The problem in the second image is much more obvious, so image 1 wins.",
+  "lesson_source": "There are obvious anatomy issues in the second image. A person cannot have a third leg. Although image 1 also has something strange going on with the arm, that could at least be explained as an injury sustained during the fight. The problem in the second image is much more obvious, so image 1 wins."
+}

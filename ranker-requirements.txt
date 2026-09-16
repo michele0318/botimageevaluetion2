@@ -1,0 +1,12 @@
+# Isolated Python 3.12 environment. Install torch 2.7.1 + torchvision 0.22.1
+# from https://download.pytorch.org/whl/cu128 first; never replace bot-venv.
+image-reward==1.5
+timm==0.6.13
+transformers==4.38.2
+fairscale==0.4.13
+huggingface-hub==0.25.2
+diffusers==0.27.2
+accelerate==0.28.0
+datasets==2.21.0
+numpy==1.26.4
+clip @ https://github.com/openai/CLIP/archive/refs/heads/main.zip

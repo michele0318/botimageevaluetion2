@@ -1,0 +1,167 @@
+{
+  "title": "Type anatomy — Image Wiki",
+  "text": "\n  \n\n  Type anatomy\n  The named parts of a letter, and which of them actually decide whether a page is easy to read rather than merely pretty.\n\n  \n    Termtype anatomy\n    Also calledletter anatomy, parts of a letter, letterform anatomy\n    Not the same astypeface vs font, point size vs x-height, counter vs aperture\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        The horizontal linesThe parts of the letter itselfTypeface, font, familyFour axes people muddleCommon mistakes\n      \n    \n  \n\n  Set one paragraph in Times and one in Verdana, both at 12 point, and put them side by side. The Verdana looks bigger. Not subtly bigger — obviously bigger.\nNothing is wrong with your eyes. Point size measures the slot the letters were cast into, not the letters. Butterick says it straight: the point-size system is not absolute, and two fonts at the same point size will not necessarily appear the same on the page.\nWhat your eyes are actually measuring is the x-height: the height of a lowercase letter that has no ascender and no descender. The x, the o, the e. Google Fonts calls it the thing that \"indicates how tall or short the type appears.\" The CSS Fonts spec goes further and gives it a number — the aspect value, x-height divided by font size — with the exact figures for the pair above: Verdana 0.545, Times 0.447. Twenty per cent more lowercase for the same nominal size.\n\nfont sizecap heightbaselinedescenderx-heightSmall x-heightaspect value 0.447 — about Timesx-height ÷ font size; the leading feels roomyfont sizecap heightbaselinedescenderx-heightLarge x-heightaspect value 0.545 — about Verdanasame font size, and the same leading feels tight\n\nBoth panels use the same font size — the caliper on the left is identical, and so are the cap height, baseline and descender lines. The only thing that moved is the orange x-height line, set to the two real aspect values above.\nNow look at the mock paragraphs. Same font size, same line pitch, and the right-hand block reads bigger and tighter. That is why x-height is worth knowing: it predicts apparent size, and it eats the gap between lines.\n\n\nThe horizontal lines\nEvery Latin letter is built against a few lines: the baseline it sits on, the x-height, the cap height of capitals, and the ascender and descender — the parts reaching above the x-height and dropping below the baseline.\nThese are not trivia. Google Fonts points out that the first job of line height is to stop descenders on one line colliding with ascenders — or accents — on the line below. If you have seen a Vietnamese or Czech heading where the accents kiss the line above, that is this problem and nothing more.\n\n\n\nGoogle Fonts Knowledge, \"An overview of Latin type anatomy\" (typeface: Epilogue). Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nFollow the H: it starts at the cap-height line, not at the ascender line above it — in most faces the ascender of a lowercase l runs slightly taller than a capital. The p is the only letter here crossing the baseline, and its tail is what your line height has to leave room for.\n\n\nThe parts of the letter itself\nFour terms carry most of the weight.\n\nCounter — the enclosed white shape inside a letter: the hole in the o, the loop of the p, the upper bowl of the e.\nAperture — the gap where a letter opens outwards: the mouth of the c, the notch of the e. Not the counter, and the term people get wrong most often.\nTerminal — how a stroke ends. Google Fonts calls the treatment of terminals \"a key factor in the overall typeface design\" with real effects on legibility.\nStroke contrast — the thick divided by the thin. A monoline sans is near 1; a Didone can be 10 or more.\n\n\nx-heightbaselinedescendercounterthinthickterminalaperturestemThe parts of a letterstroke contrast is the thick divided by the thin; the aperture is the gap, not the hole\n\nThese are constructed shapes rather than a real typeface, so every label points at something exact. The counter of the o is a closed hole; the aperture of the c is the gap between its two terminals — you could walk out of it.\nThe thin and thick markers on the o are the whole of stroke contrast. Note where they are: the thin parts are at the top and bottom, the thick at the sides. That is a vertical stress axis, and it is why the o looks like a pen made it.\n\n\nOnce you can see those four, you can predict trouble. High contrast, tight apertures and delicate terminals look superb at 60px and turn to mush at 11px: the thin strokes fall below one pixel and the apertures fill in. That is the problem optical sizes exist to solve — Google Fonts describes small optical sizes as having less stroke contrast, larger x-heights, wider characters and more open spacing, while display cuts get refined features and tighter spacing. Which shapes survive at small size is the subject of Legibility and readability.\nTypeface, font, family\nA typeface is the design. A font is the file. Google Fonts' formulation is the one worth memorising: a typeface is what you see; a font is what you use. Helvetica is a typeface; Helvetica-Bold.otf is a font.\nA family is a typeface plus its weights and styles — most basically regular, bold, italic and bold italic, which together, Google Fonts says, \"form a type family.\"\nAnd a glyph is not a character. The fi ligature below is one glyph standing in for two characters, which is why a font's glyph count has nothing to do with the size of an alphabet — a point that matters enormously once you leave Latin (Beyond Latin).\n\n\n\nGoogle Fonts Knowledge, \"An overview of Latin type anatomy\" (typeface: EB Garamond). Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nThe ligature in the middle is the thing to look at: f and i have been replaced by a single drawn shape, so the f's hook does not crash into the i's dot. Two characters, one glyph. The small cap on the right is a third case form — an uppercase letter redrawn to sit at lowercase height, not a shrunken capital.\n\n\nFour axes people muddle\n\n\n\nAxis\nWhat it changes\nCommon confusion\n\n\n\n\nWeight\nStroke thickness — Light through Black\nNot the same as size\n\n\nWidth\nHow much horizontal room the letters take\nNot the same as letter-spacing\n\n\nOptical size\nA different drawing intended for a size range\nNot the same as font size\n\n\nStyle\nItalic, oblique, small caps\nItalic is not a slanted roman\n\n\n\nVariable fonts collapse these into sliders, so you can ask for weight 742 instead of choosing between 700 and 800.\nCommon mistakes\n\n\"Point size tells you how big the type is.\" It tells you the size of the box. The x-height tells you how big it looks.\n\"Counter and aperture are the same thing.\" The counter is the hole; the aperture is the gap. A letter can have a large counter and a nearly shut aperture.\n\"Bold is just the regular thickened.\" That is a faux bold, synthesised by software, and Google Fonts is blunt that it should be avoided — in a real bold the designer rebalances the white space inside and around the letters.\n\"Italic is the roman leaning over.\" True italics are redrawn from cursive structure; the a and g usually change shape entirely. A mechanically slanted roman is an oblique at best.\n\"Optical size is a fancy name for font size.\" It selects which drawing you get. Set a display cut at 9px and it will look terrible.\n\n\nReading a letter in ten seconds\n\nFind an o or an e. Where are the thin parts? That gives you the stress axis and the contrast.\nFind a c. Is its mouth wide open or nearly shut? That is the aperture, and it predicts small-size performance.\nCompare the x to the H. A tall x means the face will look big for its point size and will want more leading (Measure and line height).\nLook at an a and a g in the italic. Redrawn, or just leaning? Leaning means faux.\n\n\nNone of this is connoisseurship. Every item on that list changes how fast a stranger reads the page — and Type hierarchy on a page picks up what happens once several sizes of type share one.\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Legibility and readability\n              Two different measurements that get treated as one — whether you can tell the characters apart, and whether you can get through a paragraph without effort.\n            \n          \n        \n          \n            \n              Measure and line height\n              The two settings that decide whether body text is comfortable — how long the lines are, and how far apart. They have to be chosen together.\n            \n          \n        \n          \n            \n              Beyond Latin\n              Most typographic advice is advice about Latin. This is which parts of it come from the eye, which parts are Latin-only conventions, and what other writing systems do instead.\n            \n          \n        \n          \n            \n              Type hierarchy on a page\n              How a reader finds their way through a page without being told — by size, weight, space, position and case. Space does more of the work than size does.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        TYPE-005 — Google Fonts Knowledge — An overview of Latin type anatomyTYPE-006 — Google Fonts Knowledge — Introducing weights & stylesTYPE-012 — Google Fonts Knowledge — Choosing typefaces that have optical sizesTYPE-004 — Google Fonts Knowledge — Making sense of typographic classificationsTYPE-022-C05 — Butterick's Practical Typography — Point sizeTYPE-031 — W3C — CSS Fonts Module Level 4, §2.6 font-size-adjust\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Type anatomy",
+    "The horizontal lines",
+    "The parts of the letter itself",
+    "Typeface, font, family",
+    "Four axes people muddle",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\nfont sizecap heightbaselinedescenderx-heightSmall x-heightaspect value 0.447 — about Timesx-height ÷ font size; the leading feels roomyfont sizecap heightbaselinedescenderx-heightLarge x-heightaspect value 0.545 — about Verdanasame font size, and the same leading feels tight\n\nBoth panels use the same font size — the caliper on the left is identical, and so are the cap height, baseline and descender lines. The only thing that moved is the orange x-height line, set to the two real aspect values above.\nNow look at the mock paragraphs. Same font size, same line pitch, and the right-hand block reads bigger and tighter. That is why x-height is worth knowing: it predicts apparent size, and it eats the gap between lines.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nGoogle Fonts Knowledge, \"An overview of Latin type anatomy\" (typeface: Epilogue). Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nFollow the H: it starts at the cap-height line, not at the ascender line above it — in most faces the ascender of a lowercase l runs slightly taller than a capital. The p is the only letter here crossing the baseline, and its tail is what your line height has to leave room for.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AXEbXLnRjYzzm06rirYG7wKwVqMyQBvBjtXGJMUxv4ZMYzuLAHRlLFlw3LbmXyjmLr1kuepxXwAAMUyOVD-13AbX7anPQ15SZTErVJBDLP1zcaPskMdKLZIJrdHXx_-GsJ3FCeQEjevinARy5z6sLeyHw0XYx0vXdDBcQYk937PRrkvOct9EyvKzhlH269kWVYlmMde4-s2gKLxY7zl5qSO2EAduak3BCULjzkNPmXJZI5ogmRyC3LXd4lfRo8TcJzZpY6stGgK7iJj0O103j6y1OAgy4CYf_RDT4awSdoOvVtmK5yHyxb3gSGL_j0DFUu9x7yyGDGUvk2GON44DeQElsKnyXkkCg0fF9PyepoZ2z5_ll5LUGuYTrQQR5QYf7-tlc6EwgBUJVvibkXG9zrslKBDl_bJNq74p98bgYxL996hyDVF3cTR9Kpo8YrwPaH0l0bEr34rE_ZSSCcWaHs-D9Wh76wf9znzF_G_aG-S2bOCKuNpVCV-okd82w7VKxUaAibefRy8_l9c8ubE2cO5s0iMVgbq6ftNoBkANZBzILdU-7VV_eTJ1RremX8h0qbS6YQ2TmYiZzbm2InaoWaobWSHfHgr1t88PcAkBo5gICjusZ9Nfz_g7TWGhFW113Jan56zLl-djylJgv05FGMmCSo8D-LSFsctCCDhKpWrTwX_IuS5M3mN-BOVOvRr7IKLt7N0XP4WGaDJv5EUzlaHIugklb3D0Ycu5s9ZPwTHFyKM2BMBG8ptdbLHKbSHCR1WuyTlPFRPl0wiNYga9KUFbie8NAwQp67SkzVjCWVzo6x3IGVlLZPojUbFonp9iCBCK-cm7Ark67V4QZl6sdFCGxRihUfQ1QQxZqxK_fejeS-rd70wAGdTQ96ejSGQnQsHppgrBxrSMOa3pa4gvvyzAyF9f0fd00cVBmnY_uwQvbvOJvsaSPurqPzT1kP33cIwMbGtE5oCNiDcFbkf93pd3ZAQ1Se5nucitBGFKZPw1w12rx4ujr8X9NHF-55MfoY_zWWAjl14yoF-du_ZB0UF89OMsREUuNo3VSOP_MM-qw1xkJJW8trR-RfGEKmeoQ10um-LRJIQBC-yrEQ7Iu3RaxNVOUaV8LPuj4SS2kQ0x7b9OAsLi9_u8RmRglXbyBWGf4AS2Ns_gviYv1q0-BQBHsEqnUFArjMc0jQMQw1gxSS9skXTv3JARX4sBvQtfBN1VJ-RXAMb2oiB9Svs6VNzpXlaNyDxDY2juhgdrtru6ssCGhNegpxSttqVagiuCXBze0BxF3Zn54YWtgVG48h5ifDp-FuEcXlMuydv9QAsd7CtK2b6ZlXEO3IP3F4faBqdTXMa5xfwpvD6vkPU35Zp6kBEJDRfI5iS9mjzMBRMGZgDvZxNyX3uExcAJGcCU5AKGdWpIyXelf0FzpUnnHOjh6oFdMUZ7dWYrRshSv7UiqFl3BGw7VDr5T5nnYxzia3_xvxOTga0DAI4AKeDaqulMobveSmmLff91H5VtNquVBz4HRvXcBzLwskr8sboxgkwFfM4XfLEv4Y5LzQlY7KZ8S4QqLcFmI0dYu7ZHuZtTrb_g1ZkebxcPHytXS2fAEtz0fAcCVsw2UP5auyUHbfk3bc8Ya8QcV82gnpcCl94MEtN1wTari9QAvtzYpjqCrmN3D5pVPh9Mr_tKhTWJql6g6a5GfWQG33CzFAyGCC2kkHDJPSMtkU7ic39-446EQ74oP2n7YB0q1mx80X8pUomNlODwFrEWuQkVxVTo8ZSAVePFG2yIjRsa_CnFtKaNeqFTYlK4r6uv8YR55NkdXXiEs_FTfYY31M-Worun2Z9MA7jrZe7H8u7ffKmFifd3OS5jS5-GIxbEWgix5pLZ3SubOgJGwvnfSKQltAwv5N4nDdlb2mVFoWrdO15t6AOSBjHQdT6NrnHKWTtb92xjnarIActOLwpMOWm-BCyrp8DH42DdyUAI9jXKr18JNVjnDQgWxoHMZtgmZrdUYq4HNfqgxwYIGarehUSRozlKk84_LiUFRwbaARd0KHcfjs_c",
+          "alt": "The word Help with horizontal lines marking ascender, cap height, x-height, baseline and descender"
+        }
+      ]
+    },
+    {
+      "caption": "\nx-heightbaselinedescendercounterthinthickterminalaperturestemThe parts of a letterstroke contrast is the thick divided by the thin; the aperture is the gap, not the hole\n\nThese are constructed shapes rather than a real typeface, so every label points at something exact. The counter of the o is a closed hole; the aperture of the c is the gap between its two terminals — you could walk out of it.\nThe thin and thick markers on the o are the whole of stroke contrast. Note where they are: the thin parts are at the top and bottom, the thick at the sides. That is a vertical stress axis, and it is why the o looks like a pen made it.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nGoogle Fonts Knowledge, \"An overview of Latin type anatomy\" (typeface: EB Garamond). Content owned by Google, licensed CC BY-SA 4.0; cropped for this page and shared under the same licence.\nThe ligature in the middle is the thing to look at: f and i have been replaced by a single drawn shape, so the f's hook does not crash into the i's dot. Two characters, one glyph. The small cap on the right is a third case form — an uppercase letter redrawn to sit at lowercase height, not a shrunken capital.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AbTwO_jkc5cmZYS1zP4aYQI5nV19KpfQUpU68I_l9cF-Ns27zuqv3aSjCHfz0iyINzhdgt275t5c2Gkd8mzGbtrCzXM_hjyITnQbOT4Xe2fmCpXWk9IfT9X1CxZeZ04frIJqqyJDgBYK9rjbtxc3ipBSuJa4Ymy_V9bR0xB0yxHV1flRY2YIKF5E2wnFnLenYBHwpwxsWr7MVdJEfdI6IhKs7x_ojSaDTQRf8PlhDVqlooc4O1JT8-EC5hiddea1r8xM3l5QdNnfuYcpjQrOYRmdDV7bquYh7JHCzn_DyJ1qUksLZDwAC4f8riZjK83XHISyfRHE4lPGIsw-8i963R6u3ZHtG1XBh2VpS5ZiYxgJWtsB6_hwY5wYCBVzeiOinAafCt5hpZUzrubnzHZnZntOtFLGVT7vNzmOQCDYK6EjOISgWeNDiG9BuJgwIxU1kA4_1bbZqJTQE4AkVkjA6lJ80xQ-qvikQ879Qi3BVOFTSl7YzCJ3YijzPxEr64PGQX7RaIJk5OvWy5v7fGKhx-1czA_1qDlgvd9U8I7Zgez7pR3uGiaFWweZDx8JfSQDvtxZf1WOMXIZ5co4hGkfmP_4oNFbfIBKe6MLwrGXDAic35c4C0SIKa_Il2uHowIGVtE2ZdveXk1ZDfd3NNGhaJ_OUriLyy3ory6Y-t4pcG1QtYJeSQAFhbZayhRCgakEyoofz9Sfoa4hMOgGqFbmddl7Dylt_HX756WMTXmBmoi62km1mZb7HMr2EDItzPO2Xm7BwVtvoNS5dwtQeZCRtEp_pHaKBE0ByNxXpOkOAX0-3DBWbzYEA1qsNWzoj42Iw8oxzbvlMs1HzyoKCk-kDEdIsQF5YRSdCP0_FVS9PcBBvwl9HLPxRInuD46Ms36L0vlT6491x3t5-ta-vJkYLfl8QP2IHcGwwJo_YcWb-MjZ2RAQk1XIW0l7aCfKHxlF79DnFHVx49gYm59iwlgR3T916edtlJ6MOcUDhc4_xBK3YLCBqlz02J6M-UBZzNZT3aWr_WW0uxweE3CZEngdzmEgd4pMxI7fMaaswZ5Cfpi26bSflGGZazM9xgLlD-OPX8psIfIZRqCXBdHeJW16uZ76D1paRtPDeQa5mNUszBMdF2vpYKsGllnxBqYxwmDSue309ppNOM0126FUmEbNJ2U9HXCiB_XCJBg7S7P9FSW0I0RlQk3VLEyxclWE22x475WdgqSE42Y721XCLDTKvl_WB5CI3veR1iSyFfSHge_zJ6tHmuYoRz6nN_6a41kZaPKh_Td2AK9wyKf7FUTWBXZFaPiidhg27ZFdexB1FoWhfc3W90_KzbakdTg8M77Ar1pg8xbwoEVAuijVSKrUGogdGBBYdW4RSdhrxmfHoaJjJILy_jK2FFKO-zlWm8CbQIhwFjI1gTucvB37YOEiqkewS1ZPJw80LwPjLCgfMPhT1MTHVef9xT-TN-s2Mq7DJQjHN9YkUvVNjUhRk1s9bCmygzF384jLRJNbg7UvV1R7L5SugDeo9Hu0iPbHiWoI8j7dc5lsGGgT8NgYesBMAjdb_ZtX6SqYo-vZBxjXfNiqLIHmENoIje0nGAgXMWfOWMJY4RBkutnxweZmm8KSAg1TKCr7uc19u_6uFObFk8homy5mLMhRGfOkzXyM6uz89QL-nmlpXD0X9sIuE9G_OspKZveuh14BfVohBKJy82SxCYUNAHzXiBT7fv8WPYQlF7NGAhDgbOwkIVChRi15YWpShrCVQzqk6ZPN4VdI3Ya5MbD1U_QRWFD6Gcm3A5CwbUFHlVT7bU3uuXqtJYNUbZMC4yRqUUBiC3ldLzVsBlrdcoM1XsUZvKTdmUrzplRlWV2yRZoQ-HYSwrgqoPC5niLeBSkfzA00oh_OkefiKdtpAe93wMTZOFsc0jHIt7bbV2uLiI1S_Rk-Eca_yfy596KuhSFoU3Mc9NfV6I3FxZ7VUkmmLNWFUFHVOshbefp_td4IXlmfdaltqZuAtOnG0KPllVmgjXXeSANEgzUuRo_WNdUQgeFGbdlkLaIow0S-",
+          "alt": "The letters QuofiE annotated with uppercase, diacritic, serif, lowercase, ligature and small cap"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AXEbXLnRjYzzm06rirYG7wKwVqMyQBvBjtXGJMUxv4ZMYzuLAHRlLFlw3LbmXyjmLr1kuepxXwAAMUyOVD-13AbX7anPQ15SZTErVJBDLP1zcaPskMdKLZIJrdHXx_-GsJ3FCeQEjevinARy5z6sLeyHw0XYx0vXdDBcQYk937PRrkvOct9EyvKzhlH269kWVYlmMde4-s2gKLxY7zl5qSO2EAduak3BCULjzkNPmXJZI5ogmRyC3LXd4lfRo8TcJzZpY6stGgK7iJj0O103j6y1OAgy4CYf_RDT4awSdoOvVtmK5yHyxb3gSGL_j0DFUu9x7yyGDGUvk2GON44DeQElsKnyXkkCg0fF9PyepoZ2z5_ll5LUGuYTrQQR5QYf7-tlc6EwgBUJVvibkXG9zrslKBDl_bJNq74p98bgYxL996hyDVF3cTR9Kpo8YrwPaH0l0bEr34rE_ZSSCcWaHs-D9Wh76wf9znzF_G_aG-S2bOCKuNpVCV-okd82w7VKxUaAibefRy8_l9c8ubE2cO5s0iMVgbq6ftNoBkANZBzILdU-7VV_eTJ1RremX8h0qbS6YQ2TmYiZzbm2InaoWaobWSHfHgr1t88PcAkBo5gICjusZ9Nfz_g7TWGhFW113Jan56zLl-djylJgv05FGMmCSo8D-LSFsctCCDhKpWrTwX_IuS5M3mN-BOVOvRr7IKLt7N0XP4WGaDJv5EUzlaHIugklb3D0Ycu5s9ZPwTHFyKM2BMBG8ptdbLHKbSHCR1WuyTlPFRPl0wiNYga9KUFbie8NAwQp67SkzVjCWVzo6x3IGVlLZPojUbFonp9iCBCK-cm7Ark67V4QZl6sdFCGxRihUfQ1QQxZqxK_fejeS-rd70wAGdTQ96ejSGQnQsHppgrBxrSMOa3pa4gvvyzAyF9f0fd00cVBmnY_uwQvbvOJvsaSPurqPzT1kP33cIwMbGtE5oCNiDcFbkf93pd3ZAQ1Se5nucitBGFKZPw1w12rx4ujr8X9NHF-55MfoY_zWWAjl14yoF-du_ZB0UF89OMsREUuNo3VSOP_MM-qw1xkJJW8trR-RfGEKmeoQ10um-LRJIQBC-yrEQ7Iu3RaxNVOUaV8LPuj4SS2kQ0x7b9OAsLi9_u8RmRglXbyBWGf4AS2Ns_gviYv1q0-BQBHsEqnUFArjMc0jQMQw1gxSS9skXTv3JARX4sBvQtfBN1VJ-RXAMb2oiB9Svs6VNzpXlaNyDxDY2juhgdrtru6ssCGhNegpxSttqVagiuCXBze0BxF3Zn54YWtgVG48h5ifDp-FuEcXlMuydv9QAsd7CtK2b6ZlXEO3IP3F4faBqdTXMa5xfwpvD6vkPU35Zp6kBEJDRfI5iS9mjzMBRMGZgDvZxNyX3uExcAJGcCU5AKGdWpIyXelf0FzpUnnHOjh6oFdMUZ7dWYrRshSv7UiqFl3BGw7VDr5T5nnYxzia3_xvxOTga0DAI4AKeDaqulMobveSmmLff91H5VtNquVBz4HRvXcBzLwskr8sboxgkwFfM4XfLEv4Y5LzQlY7KZ8S4QqLcFmI0dYu7ZHuZtTrb_g1ZkebxcPHytXS2fAEtz0fAcCVsw2UP5auyUHbfk3bc8Ya8QcV82gnpcCl94MEtN1wTari9QAvtzYpjqCrmN3D5pVPh9Mr_tKhTWJql6g6a5GfWQG33CzFAyGCC2kkHDJPSMtkU7ic39-446EQ74oP2n7YB0q1mx80X8pUomNlODwFrEWuQkVxVTo8ZSAVePFG2yIjRsa_CnFtKaNeqFTYlK4r6uv8YR55NkdXXiEs_FTfYY31M-Worun2Z9MA7jrZe7H8u7ffKmFifd3OS5jS5-GIxbEWgix5pLZ3SubOgJGwvnfSKQltAwv5N4nDdlb2mVFoWrdO15t6AOSBjHQdT6NrnHKWTtb92xjnarIActOLwpMOWm-BCyrp8DH42DdyUAI9jXKr18JNVjnDQgWxoHMZtgmZrdUYq4HNfqgxwYIGarehUSRozlKk84_LiUFRwbaARd0KHcfjs_c",
+      "alt": "The word Help with horizontal lines marking ascender, cap height, x-height, baseline and descender"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AbTwO_jkc5cmZYS1zP4aYQI5nV19KpfQUpU68I_l9cF-Ns27zuqv3aSjCHfz0iyINzhdgt275t5c2Gkd8mzGbtrCzXM_hjyITnQbOT4Xe2fmCpXWk9IfT9X1CxZeZ04frIJqqyJDgBYK9rjbtxc3ipBSuJa4Ymy_V9bR0xB0yxHV1flRY2YIKF5E2wnFnLenYBHwpwxsWr7MVdJEfdI6IhKs7x_ojSaDTQRf8PlhDVqlooc4O1JT8-EC5hiddea1r8xM3l5QdNnfuYcpjQrOYRmdDV7bquYh7JHCzn_DyJ1qUksLZDwAC4f8riZjK83XHISyfRHE4lPGIsw-8i963R6u3ZHtG1XBh2VpS5ZiYxgJWtsB6_hwY5wYCBVzeiOinAafCt5hpZUzrubnzHZnZntOtFLGVT7vNzmOQCDYK6EjOISgWeNDiG9BuJgwIxU1kA4_1bbZqJTQE4AkVkjA6lJ80xQ-qvikQ879Qi3BVOFTSl7YzCJ3YijzPxEr64PGQX7RaIJk5OvWy5v7fGKhx-1czA_1qDlgvd9U8I7Zgez7pR3uGiaFWweZDx8JfSQDvtxZf1WOMXIZ5co4hGkfmP_4oNFbfIBKe6MLwrGXDAic35c4C0SIKa_Il2uHowIGVtE2ZdveXk1ZDfd3NNGhaJ_OUriLyy3ory6Y-t4pcG1QtYJeSQAFhbZayhRCgakEyoofz9Sfoa4hMOgGqFbmddl7Dylt_HX756WMTXmBmoi62km1mZb7HMr2EDItzPO2Xm7BwVtvoNS5dwtQeZCRtEp_pHaKBE0ByNxXpOkOAX0-3DBWbzYEA1qsNWzoj42Iw8oxzbvlMs1HzyoKCk-kDEdIsQF5YRSdCP0_FVS9PcBBvwl9HLPxRInuD46Ms36L0vlT6491x3t5-ta-vJkYLfl8QP2IHcGwwJo_YcWb-MjZ2RAQk1XIW0l7aCfKHxlF79DnFHVx49gYm59iwlgR3T916edtlJ6MOcUDhc4_xBK3YLCBqlz02J6M-UBZzNZT3aWr_WW0uxweE3CZEngdzmEgd4pMxI7fMaaswZ5Cfpi26bSflGGZazM9xgLlD-OPX8psIfIZRqCXBdHeJW16uZ76D1paRtPDeQa5mNUszBMdF2vpYKsGllnxBqYxwmDSue309ppNOM0126FUmEbNJ2U9HXCiB_XCJBg7S7P9FSW0I0RlQk3VLEyxclWE22x475WdgqSE42Y721XCLDTKvl_WB5CI3veR1iSyFfSHge_zJ6tHmuYoRz6nN_6a41kZaPKh_Td2AK9wyKf7FUTWBXZFaPiidhg27ZFdexB1FoWhfc3W90_KzbakdTg8M77Ar1pg8xbwoEVAuijVSKrUGogdGBBYdW4RSdhrxmfHoaJjJILy_jK2FFKO-zlWm8CbQIhwFjI1gTucvB37YOEiqkewS1ZPJw80LwPjLCgfMPhT1MTHVef9xT-TN-s2Mq7DJQjHN9YkUvVNjUhRk1s9bCmygzF384jLRJNbg7UvV1R7L5SugDeo9Hu0iPbHiWoI8j7dc5lsGGgT8NgYesBMAjdb_ZtX6SqYo-vZBxjXfNiqLIHmENoIje0nGAgXMWfOWMJY4RBkutnxweZmm8KSAg1TKCr7uc19u_6uFObFk8homy5mLMhRGfOkzXyM6uz89QL-nmlpXD0X9sIuE9G_OspKZveuh14BfVohBKJy82SxCYUNAHzXiBT7fv8WPYQlF7NGAhDgbOwkIVChRi15YWpShrCVQzqk6ZPN4VdI3Ya5MbD1U_QRWFD6Gcm3A5CwbUFHlVT7bU3uuXqtJYNUbZMC4yRqUUBiC3ldLzVsBlrdcoM1XsUZvKTdmUrzplRlWV2yRZoQ-HYSwrgqoPC5niLeBSkfzA00oh_OkefiKdtpAe93wMTZOFsc0jHIt7bbV2uLiI1S_Rk-Eca_yfy596KuhSFoU3Mc9NfV6I3FxZ7VUkmmLNWFUFHVOshbefp_td4IXlmfdaltqZuAtOnG0KPllVmgjXXeSANEgzUuRo_WNdUQgeFGbdlkLaIow0S-",
+      "alt": "The letters QuofiE annotated with uppercase, diacritic, serif, lowercase, ligature and small cap"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The horizontal lines",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#the-horizontal-lines"
+    },
+    {
+      "text": "The parts of the letter itself",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#the-parts-of-the-letter-itself"
+    },
+    {
+      "text": "Typeface, font, family",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#typeface-font-family"
+    },
+    {
+      "text": "Four axes people muddle",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#four-axes-people-muddle"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#the-horizontal-lines"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#the-parts-of-the-letter-itself"
+    },
+    {
+      "text": "Legibility and readability",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#typeface-font-family"
+    },
+    {
+      "text": "Beyond Latin",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#four-axes-people-muddle"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy#common-mistakes"
+    },
+    {
+      "text": "Measure and line height",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    },
+    {
+      "text": "Type hierarchy on a page",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "\n              Legibility and readability\n              Two different measurements that get treated as one — whether you can tell the characters apart, and whether you can get through a paragraph without effort.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability"
+    },
+    {
+      "text": "\n              Measure and line height\n              The two settings that decide whether body text is comfortable — how long the lines are, and how far apart. They have to be chosen together.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height"
+    },
+    {
+      "text": "\n              Beyond Latin\n              Most typographic advice is advice about Latin. This is which parts of it come from the eye, which parts are Latin-only conventions, and what other writing systems do instead.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/beyond-latin"
+    },
+    {
+      "text": "\n              Type hierarchy on a page\n              How a reader finds their way through a page without being told — by size, weight, space, position and case. Space does more of the work than size does.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "TYPE-005 — Google Fonts Knowledge — An overview of Latin type anatomy",
+      "href": "https://fonts.google.com/knowledge/introducing_type/an_overview_of_latin_type_anatomy"
+    },
+    {
+      "text": "TYPE-006 — Google Fonts Knowledge — Introducing weights & styles",
+      "href": "https://fonts.google.com/knowledge/introducing_type/introducing_weights_styles"
+    },
+    {
+      "text": "TYPE-012 — Google Fonts Knowledge — Choosing typefaces that have optical sizes",
+      "href": "https://fonts.google.com/knowledge/choosing_type/choosing_typefaces_that_have_optical_sizes"
+    },
+    {
+      "text": "TYPE-004 — Google Fonts Knowledge — Making sense of typographic classifications",
+      "href": "https://fonts.google.com/knowledge/introducing_type/making_sense_of_typographic_classifications"
+    },
+    {
+      "text": "TYPE-022-C05 — Butterick's Practical Typography — Point size",
+      "href": "https://practicaltypography.com/point-size.html"
+    },
+    {
+      "text": "TYPE-031 — W3C — CSS Fonts Module Level 4, §2.6 font-size-adjust",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-size-adjust-prop"
+    },
+    {
+      "text": "\n        PreviousLogo reproduction tests",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+    },
+    {
+      "text": "\n        NextLegibility and readability",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/legibility-and-readability"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-anatomy"
+}

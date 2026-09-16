@@ -1,0 +1,166 @@
+{
+  "title": "Raster and vector — Image Wiki",
+  "text": "\n  \n\n  Raster and vector\n  Two ways of storing a picture — a grid of samples, or the geometry of the shapes. Which one a file uses decides what you may safely do to it.\n\n  \n    Termraster / vector\n    Also calledbitmap, pixels versus vectors, vector graphics, resolution independence\n    Not the same asfile size, image resolution, SVG\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        Three real filesWhat resolution independence actually promisesWhat each one is forGradients are allowed, and they are the part that does not surviveWhich one to ask for\n      \n    \n  \n\n  A photograph and a logo are not the same kind of object, and not because one is a picture of a face. They are stored differently, and everything you are allowed to do to them follows from that.\nA raster image is a grid of samples. Somebody decided how many rows and columns, measured a colour for each cell, and that is the whole file. A vector image is a set of instructions: this shape, these corners, this curve, filled with this colour. Nothing has been measured on a grid, so there is no grid to run out of.\nThree real files\nBefore the diagrams: three vector files that exist, with their real contents. Two of them are short enough to print in full.\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><svg xmlns=\"http://www.w3.org/2000/svg\"     width=\"900\" height=\"600\"><rect fill=\"#fff\" height=\"600\" width=\"900\"/><circle fill=\"#bc002d\" cx=\"450\" cy=\"300\" r=\"180\"/></svg>the whole file, 209 bytes, nothing left outwhat those two elements drawA vector image is instructions, and here they all are.Two elements, no paths at all, and the file is shorter than this caption.It prints at any size because 450, 300 and 180 are proportions, not pixels.\n\nFlag of Japan.svg from Wikimedia Commons, public domain. Everything in the file is on the left: an svg element, a white rect, a red circle. 209 bytes, zero paths.\nThe numbers in it — cx=\"450\" cy=\"300\" r=\"180\" — are not pixels. They are positions in a 900 by 600 coordinate space, so the same file is a favicon, a slide background and a printed flag depending on what asks for it.\n\n\n\n<svg xmlns=\"http://www.w3.org/2000/svg\"     version=\"1.0\" viewBox=\"0 0 29 29\">  <path d=\"m0 6 3-2 15 4 7-7a2 2 0 013 3           l-7 7 4 15-2 3-7-13-5 5v4           l-2 2-2-5-5-2 2-2h4l5-5z\"/></svg>170 bytes · one path · eight commandsthe coordinates run 0–29, so the size is decided later2464160 pxOne real file, three sizes, nothing redrawn between them.Each mark above is the same eight commands with a different scale in front of them. That is the whole differencebetween this file and a photograph of the same mark, which would have to pick one size and keep it.\n\nAiga departingflights.svg, public domain. 170 bytes, one path, eight drawing commands — and the four marks on the right are that one path with four different scales in front of it.\nThis is the whole of what \"resolution independence\" means in practice. Nothing was redrawn, nothing was resampled, and there is no version of this file that is \"the small one\".\n\n\nReal artwork is the same thing with more of it. The third file is a technical illustration of a bicycle:\n\n\n\nBicycle diagram.svg by Al2, CC BY 3.0, via Wikimedia Commons — the file itself, rendered by your browser from its geometry.\n\n\n\nInside those 119,609 bytes\nCount\n\n\n\n\npath elements\n128\n\n\ndrawing commands inside them\n2,194\n\n\ncircle and rect elements\n26 and 7\n\n\ntext elements\n1,070\n\n\nswitch elements choosing between them\n29\n\n\ndistinct systemLanguage values\n61\n\n\n\nThe last three rows are the interesting ones: the labels are live text, they exist in sixty-one languages inside this one file, and each switch picks the version that matches the reader. Zoom the page in and the leader lines stay hairline sharp while the type stays type. None of that is available in a picture of a bicycle diagram.\n\n\n\n16 x 16 samples, enlarged 16xat 24 pxStored as pixelsenlarge it and the samples become squarestwo arcs, drawn at the output sizeat 24 pxStored as geometrythe edge is recomputed at every size\n\nThe same mark, the same output size, one difference: what the file holds.\nLeft, sixteen by sixteen samples, blown up sixteen times. The edge is a staircase because the staircase is all there ever was — the file never knew the shape was a curve, only which cells happened to land inside it.\nRight, two circular arcs and a fill. Asked for a 256-pixel version, the renderer solves where the edge falls at 256 pixels. Asked for a 4,000-pixel version it solves it again.\nNow look at the two 24-pixel thumbnails in the corners. At the size the file was made for, they are the same picture. The storage model does not make an image better. It decides what happens when you change your mind about the size.\n\n\nWhat resolution independence actually promises\nOne file, any size, no second export. That is the whole promise, and it is worth a lot.\nWhat it does not promise is detail. The last step of showing a vector file is always turning it into pixels, on your screen or on a plate, and at that step a shape thinner than the output can represent has nowhere to go.\n\n152 pxrays, ring and counter all read48 pxthe rays are merging16 pxa blob with a dot in it152 px againnothing was lost from the file\n\nThe same file four times; only the output size changes. At 152 pixels the ring, the sixteen rays and the small counter all read. At 48 the rays are merging into a grey fringe. At 16 the whole thing is a dark blob with a dot in it.\nThe fourth panel is the proof that nothing was destroyed: it is the same file again at 152 pixels, intact. The information never left. The output simply had eleven pixels to say it in.\nIf a mark has to work at 16 pixels, that is a drawing problem, not a file-format problem — see Logo reproduction tests.\n\n\n\nTwo sentences worth keeping apart\n\"This is vector, so it can be printed at any size\" — true.\n\"This is vector, so it will look good small\" — not true, and not related.\n\nWhat each one is for\nRaster suits anything where the value changes at every point: photographs, paintings, renders, anything with texture, noise or soft light. Vector suits anything made of a countable number of flat or smoothly-shaded shapes: logos, icons, type, diagrams, maps, technical drawings.\nThe awkward case is trying to move something across the line.\n\none gradientThe photographvalue changes at every point6 flat coloursThe auto-traceflat bands, a stair-stepped edge, an anchor at every step\n\nA shaded ball, and the same ball run through an automatic trace.\nThe trace is genuinely vector now. It is also wrong in three separate ways: the continuous roll from light to dark has become six flat bands with visible edges nobody drew, the silhouette has turned into a staircase, and there is an anchor point at every step of that staircase — thousands of them, each one a place for a later edit to go wrong.\n\"Make it vector\" applied to a photograph does not recover information the photograph never had in a form geometry can hold. It replaces measurements with a rough impression of them.\n\n\nGoing the other way is safe and lossy in a way nobody minds: rendering a vector file to PNG at a stated size throws away the ability to change the size, and keeps the appearance exactly.\nGradients are allowed, and they are the part that does not survive\nVector does not mean flat colour. SVG has gradients of its own — a linearGradient or radialGradient with a couple of stops, referenced from a fill, no samples anywhere in it (What an SVG actually contains has the mechanics). A simple two-stop ramp is as legitimate a piece of vector artwork as a circle.\n\nwhat was drawnwhat comes back vectorisedflat fill · 1 path1 path, identicalgradient · 1 path, 2 stops6 stacked paths, 5 seamsnothing to decidehow many bands? the file does not sayA gradient is legal SVG, and it is not what survives a redraw: the tracer picks a band count, and the seams come out evenly spaced.\n\nOne variable: whether the shape was shaded.\nA flat fill has nothing to decide, so it comes back as the same path. A gradient does not travel that way. Nothing in it says how many bands to spend on it, so the tracer picks a number, and the seams between those bands land at even intervals — which is exactly what makes them visible.\n\n\n\nHouse rule: ask for flat fills\nGradients are legal, and our own vectorising is weak at them: a smooth ramp comes back as a stack of flat bands with the seams showing. When the deliverable is vector, keep the artwork to flat fills, and put whatever shading is needed into a couple of large deliberate shapes rather than a ramp. If a gradient is unavoidable, review the result along the ramp for evenly spaced edges — What a bad vector file looks like is the checklist.\n\nWhich one to ask for\n\n\n\nYou need\nAsk for\nBecause\n\n\n\n\nA logo for print, signage, embroidery, anything unknown\nVector\nThe final size is not decided yet\n\n\nA logo at a known pixel size for a web page\nEither; a rendered PNG or SVG both work\nNothing left to decide\n\n\nA photograph, at any size\nRaster\nThere is nothing to describe geometrically\n\n\nAn icon set\nVector\nIt must survive many sizes, and stay editable\n\n\nA \"vector version\" of an existing photograph\nNothing — the request is wrong\nSee the trace above; ask for the original artwork instead\n\n\n\nThe one question that settles most arguments is not \"is this vector?\" but \"where did this come from?\" A mark drawn in Illustrator has clean geometry. The same mark traced from a JPEG of a business card does not, whatever the extension says.\n\nTelling them apart in ten seconds\n\nZoom to 800%. A staircase of squares along every edge means raster. Crisp edges at any zoom mean vector — but only if the file really is geometry, which the extension does not prove; see What an SVG actually contains.\nCount the colours in a smooth area. Vector artwork is usually a handful of fills and gradients; a photograph is thousands of values.\nLook for a stair-stepped silhouette on a shape that should be smooth. That is an auto-trace, whatever it is saved as.\nLook at the file size against the pixel dimensions. A 4 KB file claiming to be a large detailed image is either vector or a compression miracle.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Paths and curves\n              What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n            \n          \n        \n          \n            \n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            \n          \n        \n          \n            \n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            \n          \n        \n          \n            \n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            \n          \n        \n          \n            \n              Logo reproduction tests\n              The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        VEC-001 — W3C — Scalable Vector Graphics (SVG) 2VEC-003 — W3C — SVG 2, Coordinate Systems, Transformations and UnitsVEC-008 — MDN — SVG: Scalable Vector GraphicsVEC-017 — Library of Congress — Scalable Vector Graphics (SVG) File Format FamilyVEC-027 — MDN — SVG from scratch: Gradients\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Raster and vector",
+    "Three real files",
+    "What resolution independence actually promises",
+    "What each one is for",
+    "Gradients are allowed, and they are the part that does not survive",
+    "Which one to ask for",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><svg xmlns=\"http://www.w3.org/2000/svg\"     width=\"900\" height=\"600\"><rect fill=\"#fff\" height=\"600\" width=\"900\"/><circle fill=\"#bc002d\" cx=\"450\" cy=\"300\" r=\"180\"/></svg>the whole file, 209 bytes, nothing left outwhat those two elements drawA vector image is instructions, and here they all are.Two elements, no paths at all, and the file is shorter than this caption.It prints at any size because 450, 300 and 180 are proportions, not pixels.\n\nFlag of Japan.svg from Wikimedia Commons, public domain. Everything in the file is on the left: an svg element, a white rect, a red circle. 209 bytes, zero paths.\nThe numbers in it — cx=\"450\" cy=\"300\" r=\"180\" — are not pixels. They are positions in a 900 by 600 coordinate space, so the same file is a favicon, a slide background and a printed flag depending on what asks for it.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n<svg xmlns=\"http://www.w3.org/2000/svg\"     version=\"1.0\" viewBox=\"0 0 29 29\">  <path d=\"m0 6 3-2 15 4 7-7a2 2 0 013 3           l-7 7 4 15-2 3-7-13-5 5v4           l-2 2-2-5-5-2 2-2h4l5-5z\"/></svg>170 bytes · one path · eight commandsthe coordinates run 0–29, so the size is decided later2464160 pxOne real file, three sizes, nothing redrawn between them.Each mark above is the same eight commands with a different scale in front of them. That is the whole differencebetween this file and a photograph of the same mark, which would have to pick one size and keep it.\n\nAiga departingflights.svg, public domain. 170 bytes, one path, eight drawing commands — and the four marks on the right are that one path with four different scales in front of it.\nThis is the whole of what \"resolution independence\" means in practice. Nothing was redrawn, nothing was resampled, and there is no version of this file that is \"the small one\".\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nBicycle diagram.svg by Al2, CC BY 3.0, via Wikimedia Commons — the file itself, rendered by your browser from its geometry.\n\n\n\nInside those 119,609 bytes\nCount\n\n\n\n\npath elements\n128\n\n\ndrawing commands inside them\n2,194\n\n\ncircle and rect elements\n26 and 7\n\n\ntext elements\n1,070\n\n\nswitch elements choosing between them\n29\n\n\ndistinct systemLanguage values\n61\n\n\n\nThe last three rows are the interesting ones: the labels are live text, they exist in sixty-one languages inside this one file, and each switch picks the version that matches the reader. Zoom the page in and the leader lines stay hairline sharp while the type stays type. None of that is available in a picture of a bicycle diagram.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ASmSdYQ1-HRJcIQUSP1jIxDqwd9fiBtBjkoPI1zT2J1tTrlsjnQVW6-whMkUfErI8Q8lwwWO1eiQp68q2OTWNV0U1mffDaTG7UvlgfrCTL_R-TLXJ0jL7LggktxBAhua2PjH6kKomf1TsJwQsDphdq539Yg8yE2Xl_rg9YwlsDJWWmuxpbJDhXVPsbtoJ230lJUoEqJWRUiih5cI9D8LPT2e8og3lERA0DMh1yc53ONKvUoz6u8-exVFHvo_8glaH3D6FTKyLUvbruHO9SnjVsPlagUbFl3A4jabZY-W8XckJ2S-x9kSbdXGFDjSpq5jlpbiJ-920NM-muSQc8zBzd77DXN_hdEqvjlbu8ogyv2Pwm1ipi9_G-swGtltsTECaEiDNbtJF3xA36UQkAWE_4I3toa-nd7WS_KNaumrhoTfF9phhHHS134e1tmaUA2GvyPJWJJEF9yVZHzE7bhVttRJwhXJEPRZfiw0124cZAJTL0zqmfVN5t2AJyoRmAfdhBv0hzO_m_VLGYrdMkHwZPHJ-6Hf3bqXVoHG1S3cuZ8wMRFXOKODHk5B3eWoaqOl_ioYMPMnjb3_zrWAg5KcdMYv7Og32kh8HcidnvcU9yE73P8Dj_n5awkqMMbpRpdU-WkDWDmPhxfD4Xlm4ooiZkrcj-8Kfn3CVtCDsDUNjiImEkBFTUx0v7NC3_bWBO2fJzfePmrtjSyIAVlwciOK9pFIene1vTuKCYt0IMYG-x6eJ_C7oDKkO7M9y1ozC9PCZiXo5y2-hhiAGmLZJ83MoMzuVn_xfa3lTxKsoawipyTkmVUwkWbHXgjmN3Vd2zpWQ7O7LsFiGt9O8V7rZI0iTGDzLAsE0sIQxo_jdlnxewtFPq2itceQMQKiYFO0by7uCDTsZewDYw4V6iRfaWxM59caurMWEQTy1GJpU4IdoN_g4FcXaUBq0PxpUD8xn4gmE-KwPFJGMxEmmHoJmv8_vE4yERWaj3FSJxQXOEw4fhLIdZbcElsyn3_t4TzWDSjXCJpVmgg3BIaHUkSuh-RiYrDQlloSzRSjcx4Ddse64J98hZwGRwFbS0sSYqi7p5cLAK-tZTJpB7myFdqYFvB4jlVXOWKb5SZZHf4CRmNmsmu7kIl5aWFZGVAex4r7nwv2ubrd577s7S2CQnZ7EhAvwm6rRvdNARzPCmzYTVSHKUGlp5kSPNkajBV7xLFmaOBs51Gigp1qrdP8HogBPUdoMfwb9kgR9OL5yoyjZHXJ9ViOcm6ZGaIadvaNAWFsDveC1BldJzzcOma28Ro-TqHhcqSjEJO3Sy1Go-mNO5-TXpjSsLPDwFwSiMQ_kxWrgA_h8ci1SGgAkFhsspre6lrPtKmNSqczbYX2HM04sIb8kKth67Ka_EP6gcSliL0ub07d0UZhMDq_aVie3hu_qMfdxTLeuDk5_5oE_TvTU4fDvddq94oCr-wgXCt03T1z1f64as1NB8W76GS7Zkxmmqf-shT7rKIirtyC24gf556Lpa77D_R_tAkM3S2tiGEFYETi_2iSGYfZOWTxiSRPqXjHC8aQDo4EGRRyPlwZEPy4PaukvYzNTjE1ln8Uwp7BTkZbh8o6nAXmhQIyzIQunZTMBS5MP-0SRaykgLR9XVTS6YTHOZdoscPXeuVPa2GDeW1o_4VJm0C98rxDTLCG-nlkk_5t-dRttPYJJDvb1lrX9DJKk4OkONYHL_c5hv6oJAiJoLIYfQpZMFRZdHUq1wX9c9-kBZpLEbYoCY5PYPwqmkoEqyXuoAtKmtr-SraMA34ug4-QWo2aI6dGWIEVkbsXHG6Tzdu7EWW16RPCttRHULN1QEm5JjDHP65WvwtdGYdzO1zv38I4ygKFKDWxD4iAEFePrLec778Vg7Easq-nWkX4sdz7wNcNfpCxaJ9Gr5zxBiO5uAjsOCL5mSwqSD00aAYnunaGnL3HwWt7fTK6j9b6XNxrRi9FJSHBFKYoDbHzM1wzpx1dApSnoaQnfIsazKu5VhHOEQpu54SPRNIu_CbLOsT7NeewjacOqto9r5qH",
+          "alt": "A labelled technical diagram of a bicycle: frame, wheels, drivetrain and components drawn as outlines with a leader line and a caption for each part"
+        }
+      ]
+    },
+    {
+      "caption": "\n16 x 16 samples, enlarged 16xat 24 pxStored as pixelsenlarge it and the samples become squarestwo arcs, drawn at the output sizeat 24 pxStored as geometrythe edge is recomputed at every size\n\nThe same mark, the same output size, one difference: what the file holds.\nLeft, sixteen by sixteen samples, blown up sixteen times. The edge is a staircase because the staircase is all there ever was — the file never knew the shape was a curve, only which cells happened to land inside it.\nRight, two circular arcs and a fill. Asked for a 256-pixel version, the renderer solves where the edge falls at 256 pixels. Asked for a 4,000-pixel version it solves it again.\nNow look at the two 24-pixel thumbnails in the corners. At the size the file was made for, they are the same picture. The storage model does not make an image better. It decides what happens when you change your mind about the size.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n152 pxrays, ring and counter all read48 pxthe rays are merging16 pxa blob with a dot in it152 px againnothing was lost from the file\n\nThe same file four times; only the output size changes. At 152 pixels the ring, the sixteen rays and the small counter all read. At 48 the rays are merging into a grey fringe. At 16 the whole thing is a dark blob with a dot in it.\nThe fourth panel is the proof that nothing was destroyed: it is the same file again at 152 pixels, intact. The information never left. The output simply had eleven pixels to say it in.\nIf a mark has to work at 16 pixels, that is a drawing problem, not a file-format problem — see Logo reproduction tests.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\none gradientThe photographvalue changes at every point6 flat coloursThe auto-traceflat bands, a stair-stepped edge, an anchor at every step\n\nA shaded ball, and the same ball run through an automatic trace.\nThe trace is genuinely vector now. It is also wrong in three separate ways: the continuous roll from light to dark has become six flat bands with visible edges nobody drew, the silhouette has turned into a staircase, and there is an anchor point at every step of that staircase — thousands of them, each one a place for a later edit to go wrong.\n\"Make it vector\" applied to a photograph does not recover information the photograph never had in a form geometry can hold. It replaces measurements with a rough impression of them.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nwhat was drawnwhat comes back vectorisedflat fill · 1 path1 path, identicalgradient · 1 path, 2 stops6 stacked paths, 5 seamsnothing to decidehow many bands? the file does not sayA gradient is legal SVG, and it is not what survives a redraw: the tracer picks a band count, and the seams come out evenly spaced.\n\nOne variable: whether the shape was shaded.\nA flat fill has nothing to decide, so it comes back as the same path. A gradient does not travel that way. Nothing in it says how many bands to spend on it, so the tracer picks a number, and the seams between those bands land at even intervals — which is exactly what makes them visible.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/ASmSdYQ1-HRJcIQUSP1jIxDqwd9fiBtBjkoPI1zT2J1tTrlsjnQVW6-whMkUfErI8Q8lwwWO1eiQp68q2OTWNV0U1mffDaTG7UvlgfrCTL_R-TLXJ0jL7LggktxBAhua2PjH6kKomf1TsJwQsDphdq539Yg8yE2Xl_rg9YwlsDJWWmuxpbJDhXVPsbtoJ230lJUoEqJWRUiih5cI9D8LPT2e8og3lERA0DMh1yc53ONKvUoz6u8-exVFHvo_8glaH3D6FTKyLUvbruHO9SnjVsPlagUbFl3A4jabZY-W8XckJ2S-x9kSbdXGFDjSpq5jlpbiJ-920NM-muSQc8zBzd77DXN_hdEqvjlbu8ogyv2Pwm1ipi9_G-swGtltsTECaEiDNbtJF3xA36UQkAWE_4I3toa-nd7WS_KNaumrhoTfF9phhHHS134e1tmaUA2GvyPJWJJEF9yVZHzE7bhVttRJwhXJEPRZfiw0124cZAJTL0zqmfVN5t2AJyoRmAfdhBv0hzO_m_VLGYrdMkHwZPHJ-6Hf3bqXVoHG1S3cuZ8wMRFXOKODHk5B3eWoaqOl_ioYMPMnjb3_zrWAg5KcdMYv7Og32kh8HcidnvcU9yE73P8Dj_n5awkqMMbpRpdU-WkDWDmPhxfD4Xlm4ooiZkrcj-8Kfn3CVtCDsDUNjiImEkBFTUx0v7NC3_bWBO2fJzfePmrtjSyIAVlwciOK9pFIene1vTuKCYt0IMYG-x6eJ_C7oDKkO7M9y1ozC9PCZiXo5y2-hhiAGmLZJ83MoMzuVn_xfa3lTxKsoawipyTkmVUwkWbHXgjmN3Vd2zpWQ7O7LsFiGt9O8V7rZI0iTGDzLAsE0sIQxo_jdlnxewtFPq2itceQMQKiYFO0by7uCDTsZewDYw4V6iRfaWxM59caurMWEQTy1GJpU4IdoN_g4FcXaUBq0PxpUD8xn4gmE-KwPFJGMxEmmHoJmv8_vE4yERWaj3FSJxQXOEw4fhLIdZbcElsyn3_t4TzWDSjXCJpVmgg3BIaHUkSuh-RiYrDQlloSzRSjcx4Ddse64J98hZwGRwFbS0sSYqi7p5cLAK-tZTJpB7myFdqYFvB4jlVXOWKb5SZZHf4CRmNmsmu7kIl5aWFZGVAex4r7nwv2ubrd577s7S2CQnZ7EhAvwm6rRvdNARzPCmzYTVSHKUGlp5kSPNkajBV7xLFmaOBs51Gigp1qrdP8HogBPUdoMfwb9kgR9OL5yoyjZHXJ9ViOcm6ZGaIadvaNAWFsDveC1BldJzzcOma28Ro-TqHhcqSjEJO3Sy1Go-mNO5-TXpjSsLPDwFwSiMQ_kxWrgA_h8ci1SGgAkFhsspre6lrPtKmNSqczbYX2HM04sIb8kKth67Ka_EP6gcSliL0ub07d0UZhMDq_aVie3hu_qMfdxTLeuDk5_5oE_TvTU4fDvddq94oCr-wgXCt03T1z1f64as1NB8W76GS7Zkxmmqf-shT7rKIirtyC24gf556Lpa77D_R_tAkM3S2tiGEFYETi_2iSGYfZOWTxiSRPqXjHC8aQDo4EGRRyPlwZEPy4PaukvYzNTjE1ln8Uwp7BTkZbh8o6nAXmhQIyzIQunZTMBS5MP-0SRaykgLR9XVTS6YTHOZdoscPXeuVPa2GDeW1o_4VJm0C98rxDTLCG-nlkk_5t-dRttPYJJDvb1lrX9DJKk4OkONYHL_c5hv6oJAiJoLIYfQpZMFRZdHUq1wX9c9-kBZpLEbYoCY5PYPwqmkoEqyXuoAtKmtr-SraMA34ug4-QWo2aI6dGWIEVkbsXHG6Tzdu7EWW16RPCttRHULN1QEm5JjDHP65WvwtdGYdzO1zv38I4ygKFKDWxD4iAEFePrLec778Vg7Easq-nWkX4sdz7wNcNfpCxaJ9Gr5zxBiO5uAjsOCL5mSwqSD00aAYnunaGnL3HwWt7fTK6j9b6XNxrRi9FJSHBFKYoDbHzM1wzpx1dApSnoaQnfIsazKu5VhHOEQpu54SPRNIu_CbLOsT7NeewjacOqto9r5qH",
+      "alt": "A labelled technical diagram of a bicycle: frame, wheels, drivetrain and components drawn as outlines with a leader line and a caption for each part"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "Three real files",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#three-real-files"
+    },
+    {
+      "text": "What resolution independence actually promises",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#what-resolution-independence-actually-promises"
+    },
+    {
+      "text": "What each one is for",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#what-each-one-is-for"
+    },
+    {
+      "text": "Gradients are allowed, and they are the part that does not survive",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#gradients-are-allowed-and-they-are-the-part-that-does-not-survive"
+    },
+    {
+      "text": "Which one to ask for",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#which-one-to-ask-for"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#three-real-files"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#what-resolution-independence-actually-promises"
+    },
+    {
+      "text": "Logo reproduction tests",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#what-each-one-is-for"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#gradients-are-allowed-and-they-are-the-part-that-does-not-survive"
+    },
+    {
+      "text": "What an SVG actually contains",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "What a bad vector file looks like",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector#which-one-to-ask-for"
+    },
+    {
+      "text": "What an SVG actually contains",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n              Paths and curves\n              What a vector shape is made of — anchors, control points, segments — and why the same outline drawn with twenty anchors is better than the same outline traced with four hundred.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+    },
+    {
+      "text": "\n              What an SVG actually contains\n              SVG is an XML document that may hold geometry, live text, an embedded photograph, links to other servers, filters and scripts. So the extension proves nothing — and the file is readable text, which is how you check.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/svg-what-it-contains"
+    },
+    {
+      "text": "\n              What a bad vector file looks like\n              The faults you can see — hairlines that vanish, spikes on sharp corners, banded gradients, artwork hidden rather than removed, tiled seams, substituted fonts and traced mush — and the size to look at each one.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells"
+    },
+    {
+      "text": "\n              Print-ready files\n              What survives the trip to a press — PDF/X as a deliberately restricted subset of PDF, bleed and trim as consequences of a blade, and why \"is this print-ready\" is answered by the printer's spec sheet rather than by a file format.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "\n              Logo reproduction tests\n              The set of physical conditions a mark has to survive — one colour, small size, reversed on dark, blurred, stitched, next to competitors — and the mechanism that makes each one fail.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/logo-reproduction-tests"
+    },
+    {
+      "text": "VEC-001 — W3C — Scalable Vector Graphics (SVG) 2",
+      "href": "https://www.w3.org/TR/SVG2/"
+    },
+    {
+      "text": "VEC-003 — W3C — SVG 2, Coordinate Systems, Transformations and Units",
+      "href": "https://www.w3.org/TR/SVG2/coords.html"
+    },
+    {
+      "text": "VEC-008 — MDN — SVG: Scalable Vector Graphics",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG"
+    },
+    {
+      "text": "VEC-017 — Library of Congress — Scalable Vector Graphics (SVG) File Format Family",
+      "href": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000515.shtml"
+    },
+    {
+      "text": "VEC-027 — MDN — SVG from scratch: Gradients",
+      "href": "https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Gradients"
+    },
+    {
+      "text": "\n        PreviousPrint-ready files",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/print-ready-files"
+    },
+    {
+      "text": "\n        NextPaths and curves",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/paths-and-bezier"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/raster-vs-vector"
+}

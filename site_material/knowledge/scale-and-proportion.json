@@ -1,0 +1,19 @@
+{
+  "title": "Scale and proportion — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/scale-and-proportion",
+  "source_hash": "398866e097d27ed878e440507819eaba6b3f29a1e7cc9d2703e722720b7efa91",
+  "rules": [
+    {
+      "rule": "If haze makes distant objects appear pale and blue, this indicates large distances (kilometres) rather than small ones (metres).",
+      "evidence": "Haze. Distant things go paler and bluer, and heavy haze means kilometres, not metres."
+    },
+    {
+      "rule": "If detail falls off at a specific distance where individual features like leaves or bricks become unrecognizable, that cut-off point indicates roughly how far away the object is.",
+      "evidence": "Detail falling off. Past some distance you stop seeing individual leaves, bricks or faces, and where that cut-off lands says roughly how far away you are."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2855,
+  "output_tokens": 260,
+  "processed_at": "2026-09-13T09:37:41"
+}

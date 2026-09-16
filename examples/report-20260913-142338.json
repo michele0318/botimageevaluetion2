@@ -1,0 +1,104 @@
+{
+  "model": "qwen3.5:4b",
+  "context": 4096,
+  "split": "test",
+  "strategy": "direct",
+  "site_knowledge": true,
+  "system_hash": "035ff4e04b3cbfb545e57540f62318f1728fb195f2c76b379efc5b2c5986ccf2",
+  "correction_lookup": false,
+  "count": 6,
+  "correct": 3,
+  "results": [
+    {
+      "id": "363283f6393dcd568fe1536c965f3250bad359ecec82e7970e521b774fdde4a4",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 22.52,
+      "usage": {
+        "prompt_eval_count": 2265,
+        "eval_count": 7,
+        "total_duration": 22259439000,
+        "load_duration": 36138300,
+        "response": "{\"choice\": \"2\"}"
+      }
+    },
+    {
+      "id": "526c44edebc4450503399ec05689e36e905e87f2669e9a3c92398f9d281b5029",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 7.39,
+      "usage": {
+        "prompt_eval_count": 1053,
+        "eval_count": 7,
+        "total_duration": 7275172300,
+        "load_duration": 18907600,
+        "response": "{\"choice\": \"2\"}"
+      }
+    },
+    {
+      "id": "717da826723bc10186e3183363cbe3231696a1d834d3837ed0e9b87281b098ed",
+      "expected": "2",
+      "predicted": "2",
+      "correct": true,
+      "error": null,
+      "seconds": 21.03,
+      "usage": {
+        "prompt_eval_count": 2260,
+        "eval_count": 7,
+        "total_duration": 20769567800,
+        "load_duration": 22770000,
+        "response": "{\"choice\": \"2\"}"
+      }
+    },
+    {
+      "id": "742833ad952cfa3dd16dcb5a811b7422ce85c236fc5d32f45966cbba31b43076",
+      "expected": "1",
+      "predicted": "2",
+      "correct": false,
+      "error": null,
+      "seconds": 23.34,
+      "usage": {
+        "prompt_eval_count": 2380,
+        "eval_count": 7,
+        "total_duration": 23101688300,
+        "load_duration": 7787800,
+        "response": "{\"choice\": \"2\"}"
+      }
+    },
+    {
+      "id": "750347391011bf6ceb289dab780767596ab3c6307d08eb0bc5fd405a51867193",
+      "expected": "2",
+      "predicted": "2",
+      "correct": true,
+      "error": null,
+      "seconds": 8.67,
+      "usage": {
+        "prompt_eval_count": 1246,
+        "eval_count": 7,
+        "total_duration": 8544037400,
+        "load_duration": 18661600,
+        "response": "{\"choice\": \"2\"}"
+      }
+    },
+    {
+      "id": "d4f1ed3cdcbd7a153e74eeb45a65a3206c2ad0200c6f5507c29af362cc1bf2ce",
+      "expected": "1",
+      "predicted": "1",
+      "correct": true,
+      "error": null,
+      "seconds": 23.87,
+      "usage": {
+        "prompt_eval_count": 2392,
+        "eval_count": 7,
+        "total_duration": 23345495800,
+        "load_duration": 22006400,
+        "response": "{\"choice\": \"1\"}"
+      }
+    }
+  ],
+  "note": "Gli errori sono conteggiati come risposte non corrette. Nessuna garanzia sui task futuri."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "83c0d9c7e7c0b09ab16cf3d71bbda2598077f3d8feadd8f2b6f03c53ec215552",
+  "prompt": "Music event poster, flat paper-cut color blocks, green top \"STRELKA\", yellow rising semicircle \"VICTOR KISWELL (FR)\", tan middle \"03.11 23:00\", red upward diamond \"SHINY BOOTS\", black sans-serif",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 is clearly the stronger poster. Huge headline type, the red triangle drives up to meet it, and the diagonal \"SHINY BOOTS\" cuts across the grid to create movement and tension. It's confident and has real attitude. Image 2 takes the exact same palette but plays everything safe — type sits neatly centered and horizontal, the little red diamond with its tiny caption feels timid and underused. Where image 2 is merely clean and legible, image 1 commits to a bold composition with energy and a point of view.",
+  "split": "train",
+  "image_group": "54b32d64eb6364d9f6d6d5ac67ef7d68142dda53b992d0b6a94f9cd15ccf7db1",
+  "image_hashes": [
+    "64f2a0b80dc6fed5927867a04c9718807bd433e4aa5f2025723dcc5c530873ec",
+    "dd1e46ca5735c7fe4b200396f3d90191c1b51713559089d2dc231097af4eeafb"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "e5bbf8cbd01af680ffb318b521189518149d2f17faa71c6a9c291e8b1afc18bc",
+      "corrected": false,
+      "time": "2026-09-13T02:25:27"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "e5bbf8cbd01af680ffb318b521189518149d2f17faa71c6a9c291e8b1afc18bc",
+      "corrected": true,
+      "time": "2026-09-13T02:25:31"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 is clearly the stronger poster. Huge headline type, the red triangle drives up to meet it, and the diagonal \"SHINY BOOTS\" cuts across the grid to create movement and tension. It's confident and has real attitude. Image 2 takes the exact same palette but plays everything safe — type sits neatly centered and horizontal, the little red diamond with its tiny caption feels timid and underused. Where image 2 is merely clean and legible, image 1 commits to a bold composition with energy and a point of view.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:25:28"
+    }
+  ],
+  "feedback": "Image 2 is clearly the stronger poster. Huge headline type, the red triangle drives up to meet it, and the diagonal \"SHINY BOOTS\" cuts across the grid to create movement and tension. It's confident and has real attitude. Image 2 takes the exact same palette but plays everything safe — type sits neatly centered and horizontal, the little red diamond with its tiny caption feels timid and underused. Where image 2 is merely clean and legible, image 1 commits to a bold composition with energy and a point of view.",
+  "lesson": "When requested, prioritize compositional energy and directional movement over neat alignment; use bold shapes and diagonal lines to create tension and attitude, even if it sacrifices strict centering.",
+  "lesson_evidence": "Image 2 is clearly the stronger poster. Huge headline type, the red triangle drives up to meet it, and the diagonal \"SHINY BOOTS\" cuts across the grid to create movement and tension. It's confident and has real attitude.",
+  "lesson_source": "Image 2 is clearly the stronger poster. Huge headline type, the red triangle drives up to meet it, and the diagonal \"SHINY BOOTS\" cuts across the grid to create movement and tension. It's confident and has real attitude. Image 2 takes the exact same palette but plays everything safe — type sits neatly centered and horizontal, the little red diamond with its tiny caption feels timid and underused. Where image 2 is merely clean and legible, image 1 commits to a bold composition with energy and a point of view."
+}

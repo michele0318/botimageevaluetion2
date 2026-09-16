@@ -1,0 +1,12 @@
+{
+  "id": "97736a278270fbed1e866a526d6b09c4b7f5bc4762b8ffd6473005e8f3af395e",
+  "prompt": "a whole bunch of crispy fried chicken tossed into the air, red background. shallow-focus, 35mm, photorealistic, Canon EOS 5D Mark IV DSLR, f/5.6 aperture, 1/125 second shutter speed, ISO 100",
+  "correct_choice": null,
+  "verification": "",
+  "split": "train",
+  "image_group": "fd85e260e49279c0d6940507ac947f45dc398ba2ca12c1772d7f432824862014",
+  "image_hashes": [
+    "ad9fe9c49c8777a1dad7fa71c0d5bae45bf4a3196cb28d2ca9ef0d77df491256",
+    "a4c01fdb8db43a8fb4b86a69e770a5004b29fdf6ee9261022ae6da2df488264d"
+  ]
+}

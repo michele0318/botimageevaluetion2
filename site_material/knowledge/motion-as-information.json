@@ -1,0 +1,10 @@
+{
+  "title": "Motion as information — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information",
+  "source_hash": "241973252f680d74d431fb325f2a94d4c3e8799ef04701b56ff0f08efc932358",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2448,
+  "output_tokens": 261,
+  "processed_at": "2026-09-13T09:34:01"
+}

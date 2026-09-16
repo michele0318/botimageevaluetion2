@@ -1,0 +1,19 @@
+{
+  "title": "Grids — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/grids",
+  "source_hash": "1a401870eaecac9fa4378c25553b3870d1b81e09aa88eda5f69e2f693153cc14",
+  "rules": [
+    {
+      "rule": "If comparing two pages on the same grid, check if text starts and stops at identical heights to confirm a once-decided system rather than independent layouts.",
+      "evidence": "Open any book at two random spreads and hold them side by side. The text starts at the same height on all four pages. It stops at the same height."
+    },
+    {
+      "rule": "If assessing grid utility for content, count real ingredients first and build a grid that fits them rather than designing the grid before knowing the content.",
+      "evidence": "Designing the grid before knowing the content. Count the real ingredients first — headings, captions, sidebars, picture shapes — then build a grid that fits them"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2504,
+  "output_tokens": 248,
+  "processed_at": "2026-09-13T09:29:28"
+}

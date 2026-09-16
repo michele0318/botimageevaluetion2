@@ -1,0 +1,15 @@
+{
+  "title": "What a bad vector file looks like — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/vector-quality-tells",
+  "source_hash": "479eaf7999729635aa0b8a7f6d633174bdf2b6f1370a669ebaeea83c0ca7d7ae",
+  "rules": [
+    {
+      "rule": "Detect banding in gradients by looking for evenly spaced edges perpendicular to the ramp, which indicates too few interpolation steps.",
+      "evidence": "The tell is that the edges are evenly spaced and perpendicular to the ramp. Real edges in artwork are placed by a person and are not regular."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2775,
+  "output_tokens": 281,
+  "processed_at": "2026-09-13T09:41:07"
+}

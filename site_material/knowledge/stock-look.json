@@ -1,0 +1,10 @@
+{
+  "title": "The stock look — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/stock-look",
+  "source_hash": "726be1ae2ad1b0ba123488351d1a220ff8e2b5b37b387082dce97ce479d27d6d",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2665,
+  "output_tokens": 277,
+  "processed_at": "2026-09-13T09:39:06"
+}

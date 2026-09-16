@@ -1,0 +1,23 @@
+{
+  "title": "Diffuse and specular — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/diffuse-specular",
+  "source_hash": "db7996938c5fda948cded37059107a33ac89e4b8284c43aa92f14d52e52339c3",
+  "rules": [
+    {
+      "rule": "A bright patch is a highlight (specular) if it moves when the viewer moves, whereas diffuse shading remains fixed relative to the object's geometry.",
+      "evidence": "So the specular highlight moves when you move; the diffuse shading does not. That one test tells you whether a bright patch is a highlight or a light-coloured piece of paint, and it costs nothing but a head movement."
+    },
+    {
+      "rule": "If a highlight matches the object's body colour, the material is likely metal, which reflects almost no of its own colour.",
+      "evidence": "Anything with a highlight the same colour as its own body is either metal or wrong — go to Metal and everything else."
+    },
+    {
+      "rule": "A perfectly diffuse surface is physically unrealisable; real matte surfaces rely on internal scattering rather than outer roughness.",
+      "evidence": "PBRT points out a perfectly diffuse surface is not physically realisable; dull chalkboard and matte paint are the closest real things"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2616,
+  "output_tokens": 248,
+  "processed_at": "2026-09-13T09:27:16"
+}

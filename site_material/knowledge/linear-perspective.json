@@ -1,0 +1,27 @@
+{
+  "title": "Linear perspective — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/linear-perspective",
+  "source_hash": "fdb009332dc175efea54f2f8179f7a6cb1f9ade888143494f4fd3aca940cc0aa",
+  "rules": [
+    {
+      "rule": "Every set of parallel lines in the world must converge to exactly one vanishing point in the image.",
+      "evidence": "every set of lines parallel to each other in the world shares one vanishing point in the image, wherever in the scene those lines are"
+    },
+    {
+      "rule": "Horizontal sets of parallel lines must converge on the horizon line, which represents the camera's eye level.",
+      "evidence": "Any horizontal set of parallel lines vanishes somewhere on the horizon, because horizontal directions all point at eye height"
+    },
+    {
+      "rule": "All vertical lines must remain parallel to each other; if they lean, they must all lean in the same direction by the same amount.",
+      "evidence": "Check the verticals: all parallel, or all leaning the same way by the same amount. One wall upright and the next leaning is two viewpoints"
+    },
+    {
+      "rule": "If a horizon line is not visible, extend any two receding horizontal edges until they meet to determine the eye level height.",
+      "evidence": "If it is not visible, extend any two receding horizontal edges until they meet; that height is eye level"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2500,
+  "output_tokens": 221,
+  "processed_at": "2026-09-13T09:32:05"
+}

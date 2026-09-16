@@ -1,0 +1,36 @@
+{
+  "id": "9e8061c41028e24443d651e97e376e71f9e7d8fbb6e70b5b1bd4f91147815961",
+  "prompt": "TRANSLATION: 'Garden Decoration Metal Sunflower Wall Decor 2D.'\n\nORIGINAL : '\n花園擺飾 金屬向日葵Wall Decor 2D.'",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: The prompt specifies a metallic sunflower. In image 2, the plant is difficult to identify as a sunflower, and its material does not look much like metal (see Prompt Relevance instruction criterion).",
+  "split": "train",
+  "image_group": "65eeba94e673ddd2a5a7e615294f8422147ae907b4e3bbd781943fd7bc574ceb",
+  "image_hashes": [
+    "e6be0bdc94e2b483aafbcab6d6543cf9923f5131c581005345247ef21192a6e5",
+    "36cfe00214194dcf4d087726a03193b7ba81f9ea9d36407943a21e1558dc0715"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "5c09ba8b4ad04bb4f51602306a904c07ac4a430816c1ddf0a7c154bd7502e650",
+      "corrected": false,
+      "time": "2026-09-13T21:52:56"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:52:58"
+    }
+  ],
+  "feedback": "The prompt specifies a metallic sunflower. In image 2, the plant is difficult to identify as a sunflower, and its material does not look much like metal (see Prompt Relevance instruction criterion).",
+  "lesson": "If the prompt specifies a material or object type, ensure the visual representation matches that description unless explicitly overridden by style request; otherwise, prioritize prompt fidelity over aesthetic interpretation.",
+  "lesson_evidence": "The prompt specifies a metallic sunflower. In image 2, the plant is difficult to identify as a sunflower, and its material does not look much like metal (see Prompt Relevance instruction criterion).",
+  "lesson_source": "The prompt specifies a metallic sunflower. In image 2, the plant is difficult to identify as a sunflower, and its material does not look much like metal (see Prompt Relevance instruction criterion)."
+}

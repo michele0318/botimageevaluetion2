@@ -1,0 +1,145 @@
+{
+  "title": "How accurately a chart can be read — Image Wiki",
+  "text": "\n  \n\n  How accurately a chart can be read\n  The property of the ink that carries a number — position, length, angle, area, shading — decides how wrong the reader will be. The order is not a matter of taste; it was measured.\n\n  \n    Termgraphical perception / visual encoding accuracy\n    Also calledgraphical perception, elementary perceptual tasks, channel effectiveness\n    Not the same aschart junk, colour palettes, accuracy of the data itself\n    Read7 min\n  \n\n  \n    \n      On this page\n      \n        The measured rankingWhy position winsArea is worse than it looksMoving a judgement up the ladderWhat the ranking does not sayCommon mistakes\n      \n    \n  \n\n  Somebody puts a pie chart of market share on screen and asks which of the two middle wedges is bigger. You squint. You guess. The next slide has the same five numbers as bars, and you know the answer before anyone finishes the sentence.\nNothing about the data changed. What changed is the visual channel — the property of the ink carrying the number. Wedge angle in one picture, distance along a shared axis in the other. Some channels can be read accurately and some cannot, and the difference has been measured.\nThe measured ranking\nIn 1984 William Cleveland and Robert McGill listed ten elementary perceptual tasks — the mental jobs a viewer performs to get a quantity out of a graph — then ran experiments to put them in order. Fifty-one subjects estimated what percentage the smaller of two marked values was of the larger. Error was scored as log₂(|judged − true| + ⅛): an answer twice as far off counts one unit worse.\nTheir order, most accurate first (p. 536):\n\nPosition along a common scale\nPosition along non-aligned scales\nLength, direction, angle — a three-way tie\nArea\nVolume, curvature\nShading, colour saturation\n\nThe gaps matter more than the order. Position beat length by factors of 1.4 to 2.5, and beat angle by 1.96 (pp. 541, 544). Move a number out of a pie wedge and onto a dot on an axis and you roughly halve how wrong the reader is. Jeffrey Heer and Michael Bostock re-ran the study on Mechanical Turk in 2010 and got the same ordering back (Exp. 1A, figure 4).\n\n1. Position, common scaledot plot, bar chart02040AB2. Position, separate scalessmall multiples00000AB3. Lengthstacked bar, area chartAB3. Angle (tied)pie chart, donutAB4. Areabubble chart, treemapAB6. Shading, saturationchoropleth, heat mapAB\n\nThe same five numbers — 31, 25, 19, 15, 10 — six times. In every panel the marks tagged A and B are the 25 and the 19, so the true answer is always the same: B is 76% of A.\nTry it. In panel 1 you read two numbers off one axis. By panel 4 you are comparing two wedges. By panel 6 you are comparing two blues, and if you get within twenty points you are doing well. Rank 5 (volume, curvature) is missing because nothing should be using it.\n\n\nWhy position wins\nA shared axis gives you a printed reference. Reading a mark's position is really an alignment judgement — is this dot above or below that gridline — and alignment is the one spatial task the eye does extremely well, down to a fraction of the mark's own width. You do it twice and subtract.\nTake the axis away and there is nothing to check against. Now you estimate a quantity outright — how long that bar, how wide that angle, how much ink in that square — then do it again and form a ratio between two loose estimates.\n\nOne rulerboth marks on the same axis010203040A25B19read 25, read 19, subtractTwo rulerseach mark on its own axis0204002040ABthe two zerosdo not line upread both, then correct for the offsetNo rulertwo floating lengthsABno number to read anywhere\n\nThe same two values, three times, with only the reference structure changing.\nOne ruler: two readings, one subtraction. Two rulers: the scales are identical but their zeros are 26 pixels apart, and look what happens — B lands higher on the page than A even though B is the smaller number. Nothing is mislabelled; you simply have to hold an offset in your head. No ruler: two floating lengths and no number to read anywhere.\n\n\nThe failure is not just noisier, it is biased in a known direction: for true percentages between 25 and 50, Cleveland and McGill's subjects consistently underestimated length and angle differences (p. 544).\nArea is worse than it looks\nArea sits at rank 4 for a specific reason: the eye does not compute area, it grabs a length instead. Cleveland and McGill flagged it in advance — a circle \"has an area associated with it, but it also has a length, and a person shown circles might well judge diameters or circumferences rather than areas\" (p. 532).\nHeer and Bostock found the sharp version. Comparing rectangles in a treemap, accuracy was worst at an aspect ratio near 1:1 (p. 4) — squares. With a square, side length is a clean stand-in for area, so everyone reaches for it, and side length is the square root of area.\n\nTwo squaresa squarified treemap, aspect ratio near 1:1AB7162sides say 87%areas are 76%Two oblongsthe same two areas, aspect 2:3 and 3:2AB58758750widths say 131%, heights say 58%areas are still 76%\n\nLeft: B is 76% of A by area, but its sides are 87% of A's. Substitute side for area and you are eleven points wrong, in a predictable direction, every time.\nRight: the same two areas as oblongs. Now the shortcut gives contradictory answers — the widths say 131%, the heights say 58% — so it cannot be used, and the reader is forced to judge the thing you actually encoded. This is consistent with why the squares came out worse.\n\n\nWhich is awkward for \"squarified\" treemap layouts, whose whole method is pushing rectangles toward 1:1.\nMoving a judgement up the ladder\nEvery fix Cleveland and McGill proposed converts a low-ranked judgement into a position judgement. A pie becomes a dot chart, a divided bar becomes a grouped dot chart, and a shaded map becomes a framed-rectangle chart — an identical outlined box in every region, fill height carrying the value, \"one step higher in the hierarchy\" (p. 548).\n\nShaded regionsa choropleth: rank 6, shadingABCDEFE has the highest rate. A has most of the dark.Framed rectanglesthe same numbers: rank 2, positionABCDEFSame frame everywhere. Compare the fill heights.\n\nSix regions, six rates, two encodings. Left, the darkness of each patch carries the rate, so what your eye actually adds up is rate × area: region A has half E's rate and more than twice its ink. Right, every region gets the same empty frame and the value is the height of the fill, which is a position judgement against a nearby zero.\nCleveland and McGill put the bug plainly: on a shaded map the total black in a state encodes (murders ÷ people) × area, so \"Texas is imposing and Rhode Island is hard to see\" (p. 548).\n\n\nWhat the ranking does not say\n\nIt ranks accuracy of magnitude judgement and nothing else. Not memorability, and not whether anyone looks at the right mark first — that is Visual hierarchy.\nPosition on a map is not on the list, because a map answers where, not how much. When that is the question, geography is the answer and no bar chart replaces it — though the FT reserves spatial charts for when location matters more than anything else.\nColour hue and texture were left off deliberately: they have no unambiguous small-to-large order, which makes them good for naming categories and bad for carrying quantities (p. 532). See Hue, value and chroma.\nAccuracy is sometimes not the point. A pie reads 25% and 50% instantly because right angles are familiar shapes; the Urban Institute keeps pies for those cases and caps them at five slices.\n\nCommon mistakes\n\n\"Pie charts are bad taste.\" Worse than that, and also better. Pie loses to bars by a measured factor of about two — and wins when all you need is \"about half\".\n\"Bubble size is intuitive.\" Area is rank 4 and your reader is judging diameters. Fine differences will not survive.\n\"Colour intensity shows the numbers.\" It shows a rough order, from the bottom of the ranking, and hands the biggest region the loudest voice. What the reader is reading is light and dark masses.\n\"Direct labels fix it.\" Labels get read one at a time; the picture's shape carries the pattern.\n\n\nReading a chart's accuracy in five seconds\n\nFind the number you are meant to compare. What ink carries it — distance along an axis, a length, an angle, an area, a colour?\nIs there a shared zero? Marks on different baselines are already one rank down.\nIf it is area: are the shapes near-square? Assume sides are being compared, and the difference read as smaller than it is.\nIf it is colour: is the loudest patch loud because of the data, or because it is large?\nAsk what question the chart is for. A low-ranked channel is not wrong — see Choosing a chart — but it should be a decision, not an accident.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Choosing a chart\n              Start from the relationship in the data and the question in the reader's head. The chart type is the last decision you make, not the first.\n            \n          \n        \n          \n            \n              When a chart lies\n              The dangerous chart is not the ugly one. It is the one where every number is correct and the picture still argues for something the numbers do not support.\n            \n          \n        \n          \n            \n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        DATA-003 — Cleveland & McGill, Graphical Perception (JASA, September 1984)DATA-004 — Heer & Bostock, Crowdsourcing Graphical Perception (CHI 2010)DATA-013 — Urban Institute Data Visualization style guideDATA-002 — Financial Times Visual Vocabulary\n      \n    \n  \n\n  \n",
+  "headings": [
+    "How accurately a chart can be read",
+    "The measured ranking",
+    "Why position wins",
+    "Area is worse than it looks",
+    "Moving a judgement up the ladder",
+    "What the ranking does not say",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n1. Position, common scaledot plot, bar chart02040AB2. Position, separate scalessmall multiples00000AB3. Lengthstacked bar, area chartAB3. Angle (tied)pie chart, donutAB4. Areabubble chart, treemapAB6. Shading, saturationchoropleth, heat mapAB\n\nThe same five numbers — 31, 25, 19, 15, 10 — six times. In every panel the marks tagged A and B are the 25 and the 19, so the true answer is always the same: B is 76% of A.\nTry it. In panel 1 you read two numbers off one axis. By panel 4 you are comparing two wedges. By panel 6 you are comparing two blues, and if you get within twenty points you are doing well. Rank 5 (volume, curvature) is missing because nothing should be using it.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nOne rulerboth marks on the same axis010203040A25B19read 25, read 19, subtractTwo rulerseach mark on its own axis0204002040ABthe two zerosdo not line upread both, then correct for the offsetNo rulertwo floating lengthsABno number to read anywhere\n\nThe same two values, three times, with only the reference structure changing.\nOne ruler: two readings, one subtraction. Two rulers: the scales are identical but their zeros are 26 pixels apart, and look what happens — B lands higher on the page than A even though B is the smaller number. Nothing is mislabelled; you simply have to hold an offset in your head. No ruler: two floating lengths and no number to read anywhere.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nTwo squaresa squarified treemap, aspect ratio near 1:1AB7162sides say 87%areas are 76%Two oblongsthe same two areas, aspect 2:3 and 3:2AB58758750widths say 131%, heights say 58%areas are still 76%\n\nLeft: B is 76% of A by area, but its sides are 87% of A's. Substitute side for area and you are eleven points wrong, in a predictable direction, every time.\nRight: the same two areas as oblongs. Now the shortcut gives contradictory answers — the widths say 131%, the heights say 58% — so it cannot be used, and the reader is forced to judge the thing you actually encoded. This is consistent with why the squares came out worse.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\nShaded regionsa choropleth: rank 6, shadingABCDEFE has the highest rate. A has most of the dark.Framed rectanglesthe same numbers: rank 2, positionABCDEFSame frame everywhere. Compare the fill heights.\n\nSix regions, six rates, two encodings. Left, the darkness of each patch carries the rate, so what your eye actually adds up is rate × area: region A has half E's rate and more than twice its ink. Right, every region gets the same empty frame and the value is the height of the fill, which is a position judgement against a nearby zero.\nCleveland and McGill put the bug plainly: on a shaded map the total black in a state encodes (murders ÷ people) × area, so \"Texas is imposing and Rhode Island is hard to see\" (p. 548).\n\n",
+      "images": []
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The measured ranking",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#the-measured-ranking"
+    },
+    {
+      "text": "Why position wins",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#why-position-wins"
+    },
+    {
+      "text": "Area is worse than it looks",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#area-is-worse-than-it-looks"
+    },
+    {
+      "text": "Moving a judgement up the ladder",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#moving-a-judgement-up-the-ladder"
+    },
+    {
+      "text": "What the ranking does not say",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#what-the-ranking-does-not-say"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#the-measured-ranking"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#why-position-wins"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#area-is-worse-than-it-looks"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#moving-a-judgement-up-the-ladder"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#what-the-ranking-does-not-say"
+    },
+    {
+      "text": "Visual hierarchy",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "Hue, value and chroma",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/color-three-dimensions"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy#common-mistakes"
+    },
+    {
+      "text": "light and dark masses",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "Choosing a chart",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+    },
+    {
+      "text": "\n              Choosing a chart\n              Start from the relationship in the data and the question in the reader's head. The chart type is the last decision you make, not the first.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+    },
+    {
+      "text": "\n              When a chart lies\n              The dangerous chart is not the ugly one. It is the one where every number is correct and the picture still argues for something the numbers do not support.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/chart-honesty"
+    },
+    {
+      "text": "\n              Value structure\n              How light or dark things are, independent of their colour. Squint at any image and what survives is its value structure — and if that does not read, no colour will save it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/value-structure"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "DATA-003 — Cleveland & McGill, Graphical Perception (JASA, September 1984)",
+      "href": "https://euclid.psych.yorku.ca/www/psy6135/papers/ClevelandMcGill1984.pdf"
+    },
+    {
+      "text": "DATA-004 — Heer & Bostock, Crowdsourcing Graphical Perception (CHI 2010)",
+      "href": "https://vis.stanford.edu/files/2010-MTurk-CHI.pdf"
+    },
+    {
+      "text": "DATA-013 — Urban Institute Data Visualization style guide",
+      "href": "https://urbaninstitute.github.io/graphics-styleguide/"
+    },
+    {
+      "text": "DATA-002 — Financial Times Visual Vocabulary",
+      "href": "https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary"
+    },
+    {
+      "text": "\n        PreviousType hierarchy on a page",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page"
+    },
+    {
+      "text": "\n        NextChoosing a chart",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/choosing-a-chart"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/encoding-accuracy"
+}

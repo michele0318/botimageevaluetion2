@@ -1,0 +1,12 @@
+{
+  "id": "a1a5485613be2ae5721228a9204ea34b7f5fda260a9bc50ea75faebf1184fb1c",
+  "prompt": "a beautiful woman wearing a beautiful sculptural costume made of swirling hearts, vortexes, batik, beautiful background, hyper realistic fashion photography",
+  "correct_choice": null,
+  "verification": "",
+  "split": "test",
+  "image_group": "bc8e388b80f79b86ddd99ef9567933df7d7bde6fce46586a615c9435848f5119",
+  "image_hashes": [
+    "56fb47f52d687608d42f4259df1c7de19073f45ad8c2fdfd9c7c3e8f6587bd77",
+    "74128342fc6009acf26a5dbe4d21934a3cfb61c9ea1166e689d857825fb8d3b7"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "d9e33740c85e53f62cfd1ac4123ebaad2c84a40fd78682d80d68de00c8f50644",
+  "prompt": "TRANSLATION: \"A young nun, lying exhausted on the bed of a dark convent\"\n\nORIGINAL: \"Una giovane suora, distesa esausta sul letto di un convento buio\"",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: When we look at images, we subconsciously and immediately perceive the composition, lighting, and colors. An image with a carefully balanced composition and harmonious colors will always feel more pleasing to us.\n\nIf we compare Image 1 and Image 2, in the second image the nun is the center of the composition. The cross is placed according to the rule of thirds and fills the empty space in the upper right part of the image. The window in Image 2 creates natural light, softly illuminating the room in a way that feels appropriate for the historical setting. The painting style in the second image adds a historical undertone: for most people, a nun is associated with church aesthetics, and the style of old Victorian-era paintings only reinforces that impression.\n\nIf we analyze Image 1, there are many problems. The lighting looks unnatural, as if it comes from an artificial electronic source. The composition is unbalanced, and the upper part of the image is almost completely empty. The nun does not look like she is lying on a pillow, but rather as if she is holding her head up in the air. For some reason, she is holding her hand in a gesture of blessing, even though according to the prompt she is supposed to be tired. And the realistic photographic style in Image 1 destroys the entire mood of the image — it feels artificial and low-quality.\n\nImage 2 wins in every respect.",
+  "split": "train",
+  "image_group": "42ea181cc3ea6c54e78635580a4d4d24e8855a93f1760bfec97d780a7d4808a4",
+  "image_hashes": [
+    "82baaacefd56a66dccb8bcff828464349c2c61f0e27536551aaaec84feebca04",
+    "349f8b3403f0e4db623177add22e0e96a6c9ac489a1886afacd931582811e4aa"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "e6c58f33519136409a659eebf59dcec6bd24d50023911b9f177882a0bfef5459",
+      "corrected": false,
+      "time": "2026-09-13T02:26:57"
+    }
+  ],
+  "observed_feedback": "You are right!When we look at images, we subconsciously and immediately perceive the composition, lighting, and colors. An image with a carefully balanced composition and harmonious colors will always feel more pleasing to us.\n\nIf we compare Image 1 and Image 2, in the second image the nun is the center of the composition. The cross is placed according to the rule of thirds and fills the empty space in the upper right part of the image. The window in Image 2 creates natural light, softly illuminating the room in a way that feels appropriate for the historical setting. The painting style in the second image adds a historical undertone: for most people, a nun is associated with church aesthetics, and the style of old Victorian-era paintings only reinforces that impression.\n\nIf we analyze Image 1, there are many problems. The lighting looks unnatural, as if it comes from an artificial electronic source. The composition is unbalanced, and the upper part of the image is almost completely empty. The nun does not look like she is lying on a pillow, but rather as if she is holding her head up in the air. For some reason, she is holding her hand in a gesture of blessing, even though according to the prompt she is supposed to be tired. And the realistic photographic style in Image 1 destroys the entire mood of the image — it feels artificial and low-quality.\n\nImage 2 wins in every respect.\nTo the next task!",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:28:47"
+    }
+  ],
+  "feedback": "When we look at images, we subconsciously and immediately perceive the composition, lighting, and colors. An image with a carefully balanced composition and harmonious colors will always feel more pleasing to us.\n\nIf we compare Image 1 and Image 2, in the second image the nun is the center of the composition. The cross is placed according to the rule of thirds and fills the empty space in the upper right part of the image. The window in Image 2 creates natural light, softly illuminating the room in a way that feels appropriate for the historical setting. The painting style in the second image adds a historical undertone: for most people, a nun is associated with church aesthetics, and the style of old Victorian-era paintings only reinforces that impression.\n\nIf we analyze Image 1, there are many problems. The lighting looks unnatural, as if it comes from an artificial electronic source. The composition is unbalanced, and the upper part of the image is almost completely empty. The nun does not look like she is lying on a pillow, but rather as if she is holding her head up in the air. For some reason, she is holding her hand in a gesture of blessing, even though according to the prompt she is supposed to be tired. And the realistic photographic style in Image 1 destroys the entire mood of the image — it feels artificial and low-quality.\n\nImage 2 wins in every respect."
+}

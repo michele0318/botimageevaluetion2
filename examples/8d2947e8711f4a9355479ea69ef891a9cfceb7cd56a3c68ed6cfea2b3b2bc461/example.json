@@ -1,0 +1,56 @@
+{
+  "id": "8d2947e8711f4a9355479ea69ef891a9cfceb7cd56a3c68ed6cfea2b3b2bc461",
+  "prompt": "Сoncert poster, green witch on broomstick, orange hat and dress, woodcut engraving, blue background, \"KING GIZZARD', 'AND THE LIZARD WIZARD '22', 'ST. MICHAEL'S FORTRESS, ŠIBENIK, CROATIA', 'AUGUST 2 & 3'",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: image 1 frame is odd, and the old-paper texture is there for no reason. The composition is weak and the color palette doesn't work — it's evenly pale, with no accents or contrast. The background landscape is distracting, the character is boring and cliché, and the typography has no hierarchy.",
+  "split": "train",
+  "image_group": "bc6815bcbe52c9a42418f3b594211d3cdea0e820054acf2c06fa9c2cc4927ddb",
+  "image_hashes": [
+    "bb7da695c8f4700f771aa3addcef7bbad54413c05f6f83f97b8ef8af091ec50b",
+    "ad746a95858d1b5eb3d9e7bf666f255a586be67e104ce621f4a031092cac1123"
+  ],
+  "contextual_hints": "King Gizzard and the Lizard Wizard poster\nHIGH\nThe prompt references a specific musical band for a concert poster; their visual aesthetic is highly distinct.",
+  "reference_images": [
+    {
+      "label": "King Gizzard and the Lizard Wizard poster",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "King Gizzard and the Lizard Wizard poster",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "King Gizzard and the Lizard Wizard poster",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "King Gizzard and the Lizard Wizard poster",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "King Gizzard and the Lizard Wizard poster",
+      "file": "reference_5.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "4e030eaa9c8b5c6c461adb5ffc2461b112e4245b5e9e111668ba01d567f17aec",
+      "corrected": false,
+      "time": "2026-09-13T22:11:37"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:11:44"
+    }
+  ],
+  "feedback": "image 1 frame is odd, and the old-paper texture is there for no reason. The composition is weak and the color palette doesn't work — it's evenly pale, with no accents or contrast. The background landscape is distracting, the character is boring and cliché, and the typography has no hierarchy."
+}

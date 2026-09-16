@@ -1,0 +1,128 @@
+{
+  "version": "imagereward-encoder768-full-prompt-v2",
+  "fingerprint": "8788acc4155fe40dc4f35bb0bb5a47160a1f763aa7ead6bd428f918f6f0957f8",
+  "weights_trained": 768,
+  "trained_at": "2026-09-13T21:13:02+0200",
+  "model_source": {
+    "repository": "zai-org/ImageReward",
+    "revision": "5736be03b2652728fb87788c9797b0570450ab72"
+  },
+  "training_count": 31,
+  "test_count": 6,
+  "train_only_cv": [
+    {
+      "regularization": 0.01,
+      "correct": 16,
+      "count": 31,
+      "loss": 1.5626227989990313
+    },
+    {
+      "regularization": 0.1,
+      "correct": 16,
+      "count": 31,
+      "loss": 1.123084114332251
+    },
+    {
+      "regularization": 1.0,
+      "correct": 17,
+      "count": 31,
+      "loss": 0.8610512639208179
+    },
+    {
+      "regularization": 10.0,
+      "correct": 20,
+      "count": 31,
+      "loss": 0.7684293264126822
+    },
+    {
+      "regularization": 100.0,
+      "correct": 9,
+      "count": 31,
+      "loss": 0.742186228954417
+    }
+  ],
+  "selected_regularization": 10.0,
+  "train_adapted": {
+    "correct": 23,
+    "count": 31,
+    "loss": 0.5554652723335293,
+    "predictions": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1
+    ]
+  },
+  "test_adapted": {
+    "correct": 2,
+    "count": 6,
+    "loss": 0.6717477420429468,
+    "predictions": [
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "test_full_prompt_baseline": {
+    "correct": 3,
+    "count": 6,
+    "loss": 0.870713409609268,
+    "predictions": [
+      2,
+      1,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "test_original_35_token_baseline": 3,
+  "test_ids": [
+    "363283f6393dcd568fe1536c965f3250bad359ecec82e7970e521b774fdde4a4",
+    "526c44edebc4450503399ec05689e36e905e87f2669e9a3c92398f9d281b5029",
+    "717da826723bc10186e3183363cbe3231696a1d834d3837ed0e9b87281b098ed",
+    "742833ad952cfa3dd16dcb5a811b7422ce85c236fc5d32f45966cbba31b43076",
+    "750347391011bf6ceb289dab780767596ab3c6307d08eb0bc5fd405a51867193",
+    "d4f1ed3cdcbd7a153e74eeb45a65a3206c2ad0200c6f5507c29af362cc1bf2ce"
+  ],
+  "max_prompt_tokens": 116,
+  "median_extraction_seconds": 0.34400000000005093,
+  "limitations": [
+    "Small repeatedly inspected holdout; exploratory only.",
+    "No Llama/Qwen weights changed. Only ImageReward correction head.",
+    "Wiki figure captions are not preference labels and were not used to train this head.",
+    "Prompt chunks preserve all tokens but may lose cross-chunk relationships.",
+    "224px center-cropped ImageReward input can miss edge details and small text."
+  ],
+  "automatic_deployment": false
+}

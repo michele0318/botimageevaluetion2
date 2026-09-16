@@ -1,0 +1,27 @@
+{
+  "title": "Depth of field — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/depth-of-field",
+  "source_hash": "b141c24790199db156c830b4f4b909f889f4803794f2e572c13d2617b71000d5",
+  "rules": [
+    {
+      "rule": "If an object at a specific distance is sharp on one side but soft on the other, it is likely fake because real optics blur uniformly across that distance.",
+      "evidence": "Equal distance means equal sharpness. An object sharp on one side and soft on the other at the same distance is wrong"
+    },
+    {
+      "rule": "If bright highlights in the background appear as smudges or remain points without forming discs, the blur was likely applied afterwards rather than by real optics.",
+      "evidence": "A smear where bright points stay points is blur applied afterwards. Hard light is what puts specular points in a scene at all (Hard and soft light), so a hard-lit background with no discs is doubly suspect"
+    },
+    {
+      "rule": "If thin strands like hair or whiskers cross the boundary between sharp and blurry areas without blurring as they leave the focal plane, the image is likely fake.",
+      "evidence": "Hair, whiskers and thin wires are where fakes break. Strands crossing the blur boundary should blur where they leave the focal plane"
+    },
+    {
+      "rule": "If a background has an even blur from shoulder to horizon with no depth in it, or if a sharp halo clings exactly to a silhouette's outline, it suggests cutout work rather than real optical blur.",
+      "evidence": "The boundary follows the object, not its outline. A thin sharp halo of background clinging to a silhouette, or a soft fringe eating into the subject, is a cutout"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2325,
+  "output_tokens": 292,
+  "processed_at": "2026-09-13T09:26:29"
+}

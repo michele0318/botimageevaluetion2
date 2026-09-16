@@ -1,0 +1,23 @@
+{
+  "title": "Icon, pictogram, symbol, glyph, logo — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/icon-pictogram-symbol",
+  "source_hash": "f02945164035c266464046e22b4649a91a2d29806651e49b1746d41158908800",
+  "rules": [
+    {
+      "rule": "An icon is a small functional picture inside an interface that acts as a control the size of a fingertip, requiring a touch target of at least 44 pixels.",
+      "evidence": "An icon is a small functional picture inside an interface: tap it and something happens. Carbon draws its interface icons on 16-pixel artboards and requires a touch target of 44 pixels or more, which tells you what an icon really is — a control the size of a fingertip."
+    },
+    {
+      "rule": "A pictogram is a larger pictorial sign representing a thing, place, or service in the physical world that must survive being read across a room.",
+      "evidence": "A pictogram is a pictorial sign that stands for a thing, a place or a service in the physical world. It is bigger, it does nothing when touched, and it has to survive being read across a room."
+    },
+    {
+      "rule": "A symbol is conventional meaning assigned rather than depicted, requiring prior knowledge of facts like the red diagonal bar meaning forbidden.",
+      "evidence": "A symbol is conventional. Its meaning was assigned, not depicted, so it cannot be worked out — only remembered. The red diagonal bar, the recycling triangle, the wheelchair, the biohazard trefoil: every one is a fact you learned."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2181,
+  "output_tokens": 357,
+  "processed_at": "2026-09-13T09:30:16"
+}

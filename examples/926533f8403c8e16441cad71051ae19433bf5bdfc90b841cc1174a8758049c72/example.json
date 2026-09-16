@@ -1,0 +1,59 @@
+{
+  "id": "926533f8403c8e16441cad71051ae19433bf5bdfc90b841cc1174a8758049c72",
+  "prompt": "first person VR view, stylized 3D futuristic clinic classroom, friendly animated doctor showing glowing holographic model of human body and friendly cell characters, child hands interacting with floating icons, bright blue and white lighting, Pixar style, immersive adventure environment",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: The first image has issues with anatomy and prompt adherence. We should not be able to see the VR headset, because the prompt specifically asks for a first-person view from inside the headset. Image 2 wins.",
+  "split": "test",
+  "image_group": "28c465f38205be7251f713cc3479d473ee5d80ee82241a803a56e7c1e7dc209c",
+  "image_hashes": [
+    "afacd89500c565b14103f06749d9829fa09e6d4b4aef4c673e0ef369252bef2a",
+    "7aeea2f9621846a2823c0a3e14dcda2678faabebe07bc94d0eee50dc62dd0ca1"
+  ],
+  "contextual_hints": "Pixar style\nHIGH\nThe prompt explicitly requests the signature 3D animation aesthetic of Pixar Animation Studios.",
+  "reference_images": [
+    {
+      "label": "Pixar style",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Pixar style",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Pixar style",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Pixar style",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "Pixar style",
+      "file": "reference_5.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ffa6a37f064f62bd7a29f4663ddca575f8272afa021fbe94baf97dde8f4ac20a",
+      "corrected": false,
+      "time": "2026-09-13T21:53:27"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:53:29"
+    }
+  ],
+  "feedback": "The first image has issues with anatomy and prompt adherence. We should not be able to see the VR headset, because the prompt specifically asks for a first-person view from inside the headset. Image 2 wins.",
+  "lesson": "If a prompt specifies a first-person view, ensure the viewer’s perspective is immersive without visible headset; style adherence takes precedence over stylistic embellishments.",
+  "lesson_evidence": "The first image has issues with anatomy and prompt adherence. We should not be able to see the VR headset, because the prompt specifically asks for a first-person view from inside the headset.",
+  "lesson_source": "The first image has issues with anatomy and prompt adherence. We should not be able to see the VR headset, because the prompt specifically asks for a first-person view from inside the headset. Image 2 wins."
+}

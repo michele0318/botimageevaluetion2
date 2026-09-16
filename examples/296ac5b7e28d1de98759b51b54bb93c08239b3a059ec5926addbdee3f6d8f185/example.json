@@ -1,0 +1,45 @@
+{
+  "id": "296ac5b7e28d1de98759b51b54bb93c08239b3a059ec5926addbdee3f6d8f185",
+  "prompt": "TRANSLATION: \"A cinematic photograph of a tired Western priest in a war-torn alleyway. A man in a black ecclesiastical habit walks alongside another man among debris and corpses.\"\n\nORIGINAL: \"Una fotografía cinematográfica de un sacerdote occidental agotado en una callejuela destruida por la guerra. Un hombre con un hábito negro eclesiástico camina junto a otro hombre entre escombros y cadáveres.\"",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is much more cinematic and has a stronger focus on the subject. The overall composition and camera angle are also more professional and well-chosen.",
+  "split": "train",
+  "image_group": "731ee3d7ed40892e9247bb9acc3ae5378dbbf5053f3a5ddaa1e0c3e6820fe42d",
+  "image_hashes": [
+    "ceac9294301fbd097c01e7a641394bc18469c8931ba7e8f6ef048b9c9a5060ef",
+    "7e61d1c9e5eb0d99edbdb0c451cc46bff5a6ecd1c58c37de46900303f1fc50cf"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "312862e039e2a70bbf1c7e8f98c5c69ea31eb98c9c7dbc405566e5cc2c348f96",
+      "corrected": false,
+      "time": "2026-09-13T02:19:30"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "312862e039e2a70bbf1c7e8f98c5c69ea31eb98c9c7dbc405566e5cc2c348f96",
+      "corrected": true,
+      "time": "2026-09-13T02:19:36"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is much more cinematic and has a stronger focus on the subject. The overall composition and camera angle are also more professional and well-chosen.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T02:19:34"
+    }
+  ],
+  "feedback": "Image 1 is much more cinematic and has a stronger focus on the subject. The overall composition and camera angle are also more professional and well-chosen.",
+  "lesson": "If a requested style is specified, prioritize cinematic composition and subject focus over literal translation; composition and camera angle matter only when requested.",
+  "lesson_evidence": "Image 1 is much more cinematic and has a stronger focus on the subject. The overall composition and camera angle are also more professional and well-chosen.",
+  "lesson_source": "Image 1 is much more cinematic and has a stronger focus on the subject. The overall composition and camera angle are also more professional and well-chosen."
+}

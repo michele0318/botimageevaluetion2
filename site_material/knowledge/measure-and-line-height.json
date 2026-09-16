@@ -1,0 +1,15 @@
+{
+  "title": "Measure and line height — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/measure-and-line-height",
+  "source_hash": "4a3ea53e39d17673d20673e380e54525222ed50858fae9a69437c2049bc33c69",
+  "rules": [
+    {
+      "rule": "If the measure exceeds approximately 15 words (90 characters), increase line height to prevent eye jumps from landing on the wrong line.",
+      "evidence": "as our measure grows wider, so too should our line height become more open"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2475,
+  "output_tokens": 251,
+  "processed_at": "2026-09-13T09:33:27"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Rhythm and repetition — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/rhythm-and-repetition",
+  "source_hash": "b67fff27c9ea783a5fa9355a4972928b221338ededcd7f9ec417a2958737ee96",
+  "rules": [
+    {
+      "rule": "Regular intervals read as order or machinery, while steadily changing intervals read as movement, and irregular intervals feel organic.",
+      "evidence": "Regularevery gap the samereads as order, structure, machineryAcceleratingeach gap a quarter wider than the lastreads as movement, speed, recessionthe accentBrokenevery gap the same but one, which is doubledthe gap is the accent — nothing was added"
+    },
+    {
+      "rule": "A rhythm becomes a surface rather than a row of objects when repeated elements merge into one mass, losing individual inspection.",
+      "evidence": "Squint and ask whether the repeats have merged into one mass. If they have, they are a surface, not a row of objects."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2571,
+  "output_tokens": 288,
+  "processed_at": "2026-09-13T09:37:06"
+}

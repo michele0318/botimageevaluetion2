@@ -1,0 +1,23 @@
+{
+  "title": "Type hierarchy on a page — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/type-hierarchy-on-a-page",
+  "source_hash": "94f036b33248747fdd5ff9396a044863bdb76049faca8e7d909cdef1b3728917",
+  "rules": [
+    {
+      "rule": "If a page uses only one type size, it will appear as a wall where readers cannot visually distinguish the order of information without reading every line.",
+      "evidence": "Left, one size, one leading, no gaps: a wall. You can read it, but you cannot see it — finding the address means reading every line until you hit it."
+    },
+    {
+      "rule": "If a page uses only type size to create hierarchy, it will feel busier and more insistent than using space or weight.",
+      "evidence": "Right, no gaps at all, but five type sizes doing the separating. It works too, and notice what it feels like: busier, more insistent, and the small last line has been pushed toward the illegible."
+    },
+    {
+      "rule": "If a page uses only one type size with empty lines between groups, it will create four visible parts without changing the rhythm or requiring extra type sizes.",
+      "evidence": "Middle, still one size everywhere. The only change is empty lines between the groups, and now the page has four visible parts."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2887,
+  "output_tokens": 299,
+  "processed_at": "2026-09-13T09:39:58"
+}

@@ -1,0 +1,232 @@
+{
+  "text": "Annotation Tool: Which image is a better response to the user's request?\nImage Wiki\nInstructions\nFAQ\nYou have completed 0/40 training tasks\nThe task expires in 4 minutes and 57 seconds.\nRequest\n⤢ Zoom\nResponses\n⤢ Zoom\nDifference\nThe difference will be shown here\n1 / 2 — mark the best response\nEnter — submit and go to the next task\ndouble-click an image or ⤢ Zoom — full-size viewer\nin the viewer: ← → switch inside the block · Tab request ⇆ responses · wheel / + - zoom · drag to pan · B backdrop · 0 reset · Esc close\nSubmit (available in 2s)\nOptional Comment",
+  "inputs": [
+    {
+      "type": "hidden",
+      "name": "current_assignment_id",
+      "id": "",
+      "value": "3666b7bf-217a-4124-8869-f10fe89da181"
+    },
+    {
+      "type": "hidden",
+      "name": "submit_after_hint",
+      "id": "",
+      "value": "False"
+    },
+    {
+      "type": "checkbox",
+      "name": "need_response",
+      "id": "needResponseToggle",
+      "value": "on"
+    },
+    {
+      "type": "email",
+      "name": "email",
+      "id": "emailInput",
+      "value": ""
+    }
+  ],
+  "images": [
+    {
+      "id": "img1",
+      "cls": "",
+      "alt": "Request Image",
+      "visible": true,
+      "src": ""
+    },
+    {
+      "id": "img2",
+      "cls": "",
+      "alt": "Response Image",
+      "visible": true,
+      "src": ""
+    },
+    {
+      "id": "lb-img",
+      "cls": "lightbox-image",
+      "alt": "Full-size image",
+      "visible": false,
+      "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AVVr7_1RaWfABbSu1ZKwxosInsrne2hpvLiShsQu_B0zsW2nSpYdXvyY3M9IrUvf_I3m4WUZ4sDXn3vxr9PUAtf_1E8S0vC6uCu-2wE08BdyIiibD3-kkb0oiqHKxF2t7V-g0NPSR7cjkCAABJ07P5_L9Sw8duQ8Q0rE4nSUUtlRaPbvrLYHgCnEk4aPzuRzfSdx6fs5xfdWoWEAy1sGuaur0T6ebhX2SLx1CvvC6B2Ab03zvqmYnY_t0BG1Dz1LVfZDXNRAjjedQ_tovMRnLR78MgQ37dnRqPUT6KsYsy8QKrVMIfu0KncoToUOSL-1PWlxe_8DAf30o4j5rkD5GRyFkucyS0EEyE1ErdjgpmKCqEjIjoigIW61d-ntXgYqmJlxPm03z1HynldpsKD56V47I7irtUpVoGT8fwWzazyWxsRdYChK2qDz28M3AxyQztGU2DAdVZDa-ASQ5T44lK9hY3KuMKPlA6V5f_lwlG83EoRQXdyaaNrAXhL_eXgEWZnGGDL97qtU8dMR81y4pjjIjQgXdLVmef4HRXvImmMW-KFs5DxKDsX5-k_60B3uPjp1WqZVc4z39mBggLmRvSVVLUEDWdbtqGSjAFSUeQXja-AOMtAggdWhU1kEPchePmuIB6aA9HhWju0RJQqI7Z-h70XmjiR7JIZP5xKoIAqhFCJjMNiR8hmJzsR55k7LAzm9A7oVOk0wuMEY09v0O6UR3g5gVXjrLxjrF8pOFrvRBWwrjAKcZQJUeqBzcwDU_mO0y0860dcw9sKah57_7lgAV3E1FlSJoBl2hmVZe0Aak5ovvYGxzgq7B_vijhmJBNuz58kU3g5FpYXfgkGD4chI8pkrkMMlMECgCNB6W9DBvYlBKr44D97Bp3Ief_Y_FsN9XW5UzFAcxDj5KDEIo1sP3Ml6s0U7m67zhDHD8LJngbXDOgPVFCXwrrBPAZGyBnYX_rkkdAdyE0qfRSHa8Lr_epRqS79EiOFwT9UNO_J3mioR8I1U4JwIkOeASe5scpiM69qyA2mSyC4JOrBXZ1qZ_K4s5UOFHo5Ap8dWJEWHT9yowVIn5jDUS4ye-OV1hJcgQG-TdkO2WE8ZBuhnIt5dQSTl4QfPRGPvUrU_0d8wGJH604y6BuCquvUjIXvXnn868jJNVU1SkCauHNsr3zqA-sRYdK5MT9oyVP3SOyt4SlF39Mg0yGxwcCSdL1pWucWMG_2cEY315oJy3np86SEWVir6LgXBAj12xRTrn3YnnPU4sL0nS1oi0D4ay0o66GUrH5BTrJ4VdNO9xqj21CV37zR967_oVW1L-24_5vKaW2Ntok6YhsPzWVdgHwkT2CjXJ8ZSPUXPqMVZr83VxvBmML426Q1XGIM5iNqxX0r0lpb2C43_mABUxfPY6f9ROFFrKdyQpjHw1JtI_7uUUN35iF17nbdWR5Gfw59Q9ZP1hE-tsVaGGKbxCffYZDqM2jvs77oY1UBL7s9raTswrE7D5yPqiVUhLWJ0MFQhZrqepRqnTh4AMhrPswQB_KU72gdIJFTQJI8glPux65dUiaE3DcQD_SQ5dBXaWoYstoLS6BMxi9JrtuyvqtC42T6pZSqilIYKYLbwNRZIhohO0bSyei_AZaORtWF2PfL3KTOBE1xwVaLqItzy5ORaeUNi0eqdekrpa8SDV3BRSHXJg7bUfQzlVqYG1kmDHzqm5kdMzwoyEahJTTDLdxvcyPtMTFGR-znnjrWK9i6MgKUaR_2oKbAJAJKEKdoSFnfQzkt1rscz8EOnno4oM4yTLZlCvYDzA5Vil4B3KuwqCsC7WJJfKzHiNGz0KSHkiM1DTeWg5lZM_hAERNERyF_GVRWqrjC1OgaxhQPxz5w24WytuIai9szzVYu3P4otOY7lJvEL8q30RvXlI0tGA-DwtHC7X4UWOD4jZViMyvVWoYJAV__HAMtCxc8YWodzmZXi_wsUSyNLLh8husBBpEq42Vcut1uOkbEz-qfxBtTNooPvV00p_npZai1eiTfBMColTeUMO9FKx3cZKL19LOIeJWeb"
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "",
+      "cls": "",
+      "alt": "Example",
+      "visible": false,
+      "src": ""
+    },
+    {
+      "id": "instructionModalImg",
+      "cls": "",
+      "alt": "Fullscreen",
+      "visible": false,
+      "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Instructions",
+      "id": ""
+    },
+    {
+      "text": "FAQ",
+      "id": ""
+    },
+    {
+      "text": "⤢ Zoom",
+      "id": ""
+    },
+    {
+      "text": "⤢ Zoom",
+      "id": ""
+    },
+    {
+      "text": "Submit (available in 2s)",
+      "id": "submitBtn"
+    },
+    {
+      "text": "Optional Comment",
+      "id": ""
+    }
+  ],
+  "canvases": [
+    {
+      "id": "diffCanvas",
+      "width": 300,
+      "height": 150
+    }
+  ]
+}

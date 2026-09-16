@@ -1,0 +1,193 @@
+02:08:03 Caricamento locale di qwen3-vl:4b-instruct prima di aprire le attivita...
+02:08:16 Apro il progetto nella sessione salvata.
+02:08:18 Progetto caricato; cerco la piattaforma delle attività.
+02:08:19 Progetto selezionato; attendo il collegamento alla piattaforma.
+02:08:26 Piattaforma esterna aperta; attendo la prima attività.
+02:08:28 Formazione automatica: leggo e salvo il feedback visibile; nessuna esecuzione di istruzioni del sito nel terminale.
+02:08:30 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:08:52 Valutazione locale: 21.5 s (caricamento 0.1 s).
+02:08:52 Formazione: inviata immagine 1.
+02:08:55 Correzione del sito acquisita: immagine 1
+02:08:57 Criterio generalizzabile salvato per i prompt successivi.
+02:08:57 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:08:59 Correzione del sito acquisita: immagine 1
+02:08:59 La stessa risposta è già stata inviata in questa fase; nessun reinvio. Formazione sospesa nella stessa finestra.
+02:08:59 Training guidato: nessuna scelta o risposta automatica. Correggi gli esempi nel pannello verde.
+02:09:00 Esempio raccolto; attendo verifica umana. Totale e accuratezza: dataset_tools.py status.
+02:10:01 Formazione automatica: leggo e salvo il feedback visibile; nessuna esecuzione di istruzioni del sito nel terminale.
+02:10:02 Correzione del sito acquisita: immagine 2
+02:10:02 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:10:05 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:10:25 Valutazione locale: 19.1 s (caricamento 0.1 s).
+02:10:25 Formazione: inviata immagine 2.
+02:10:26 Correzione del sito acquisita: immagine 1
+02:10:29 Criterio generalizzabile salvato per i prompt successivi.
+02:10:30 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:10:32 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:10:56 Valutazione locale: 23.7 s (caricamento 0.0 s).
+02:10:56 Formazione: inviata immagine 2.
+02:10:59 Criterio generalizzabile salvato per i prompt successivi.
+02:10:59 Confermato dal sito: immagine 2. Formazione 12/40.
+02:11:01 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:11:25 Valutazione locale: 23.5 s (caricamento 0.0 s).
+02:11:25 Formazione: inviata immagine 1.
+02:11:29 Criterio generalizzabile salvato per i prompt successivi.
+02:11:29 Confermato dal sito: immagine 1. Formazione 13/40.
+02:11:31 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:11:55 Valutazione locale: 24.0 s (caricamento 0.0 s).
+02:11:55 Formazione: inviata immagine 1.
+02:11:57 Criterio generalizzabile salvato per i prompt successivi.
+02:11:57 Confermato dal sito: immagine 1. Formazione 14/40.
+02:11:58 Istruzioni del nuovo modulo lette. Proseguo con la formazione.
+02:12:00 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:12:25 Valutazione locale: 23.7 s (caricamento 0.0 s).
+02:12:25 Formazione: inviata immagine 1.
+02:12:27 Correzione del sito acquisita: immagine 2
+02:12:28 Criterio generalizzabile salvato per i prompt successivi.
+02:12:29 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:13:04 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:13:21 Valutazione locale: 16.8 s (caricamento 0.0 s).
+02:13:21 Formazione: inviata immagine 1.
+02:13:23 Feedback presente ma risposta corretta non esplicita: serve verifica, non una scelta a tentativi. Formazione sospesa nella stessa finestra.
+02:13:23 Training guidato: nessuna scelta o risposta automatica. Correggi gli esempi nel pannello verde.
+02:13:24 Esempio raccolto; attendo verifica umana. Totale e accuratezza: dataset_tools.py status.
+02:14:08 Correzione umana salvata: immagine 2
+02:14:32 Formazione automatica: leggo e salvo il feedback visibile; nessuna esecuzione di istruzioni del sito nel terminale.
+02:14:33 Correzione del sito acquisita: immagine 2
+02:14:35 Criterio generalizzabile salvato per i prompt successivi.
+02:14:35 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:14:36 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:14:57 Valutazione locale: 20.3 s (caricamento 0.0 s).
+02:14:57 Formazione: inviata immagine 2.
+02:15:01 Confermato dal sito: immagine 2. Formazione 17/40.
+02:15:03 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:15:22 Valutazione locale: 18.7 s (caricamento 0.0 s).
+02:15:23 Formazione: inviata immagine 2.
+02:15:24 Correzione del sito acquisita: immagine 1
+02:15:27 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:15:28 Istruzioni del nuovo modulo lette. Proseguo con la formazione.
+02:15:29 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:15:52 Valutazione locale: 22.3 s (caricamento 0.0 s).
+02:15:52 Formazione: inviata immagine 1.
+02:15:56 Criterio generalizzabile salvato per i prompt successivi.
+02:15:56 Confermato dal sito: immagine 1. Formazione 19/40.
+02:15:58 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:16:22 Valutazione locale: 23.6 s (caricamento 0.1 s).
+02:16:23 Formazione: inviata immagine 1.
+02:16:27 Criterio generalizzabile salvato per i prompt successivi.
+02:16:27 Confermato dal sito: immagine 1. Formazione 20/40.
+02:16:28 Istruzioni del nuovo modulo lette. Proseguo con la formazione.
+02:16:29 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:16:53 Valutazione locale: 22.9 s (caricamento 0.1 s).
+02:16:53 Formazione: inviata immagine 1.
+02:16:55 Correzione del sito acquisita: immagine 2
+02:16:58 Criterio generalizzabile salvato per i prompt successivi.
+02:16:58 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:17:00 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:17:23 Valutazione locale: 23.1 s (caricamento 0.1 s).
+02:17:24 Formazione: inviata immagine 2.
+02:17:27 Criterio generalizzabile salvato per i prompt successivi.
+02:17:27 Confermato dal sito: immagine 2. Formazione 22/40.
+02:17:28 Istruzioni del nuovo modulo lette. Proseguo con la formazione.
+02:17:31 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:17:55 Valutazione locale: 24.2 s (caricamento 0.0 s).
+02:17:56 Formazione: inviata immagine 1.
+02:18:00 Criterio generalizzabile salvato per i prompt successivi.
+02:18:00 Confermato dal sito: immagine 1. Formazione 23/40.
+02:18:01 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:18:26 Valutazione locale: 24.2 s (caricamento 0.0 s).
+02:18:26 Formazione: inviata immagine 2.
+02:18:27 Correzione del sito acquisita: immagine 1
+02:18:29 Criterio generalizzabile salvato per i prompt successivi.
+02:18:30 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:18:33 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:18:58 Valutazione locale: 23.8 s (caricamento 0.0 s).
+02:18:58 Formazione: inviata immagine 2.
+02:19:02 Criterio generalizzabile salvato per i prompt successivi.
+02:19:02 Confermato dal sito: immagine 2. Formazione 25/40.
+02:19:07 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:19:30 Valutazione locale: 22.2 s (caricamento 0.1 s).
+02:19:30 Formazione: inviata immagine 2.
+02:19:34 Correzione del sito acquisita: immagine 1
+02:19:36 Criterio generalizzabile salvato per i prompt successivi.
+02:19:37 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:19:38 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:20:00 Valutazione locale: 21.5 s (caricamento 0.1 s).
+02:20:01 Formazione: inviata immagine 2.
+02:20:02 Correzione del sito acquisita: immagine 1
+02:20:05 Criterio generalizzabile salvato per i prompt successivi.
+02:20:05 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:20:07 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:20:30 Valutazione locale: 23.6 s (caricamento 0.0 s).
+02:20:31 Formazione: inviata immagine 1.
+02:20:34 Criterio generalizzabile salvato per i prompt successivi.
+02:20:34 Confermato dal sito: immagine 1. Formazione 28/40.
+02:20:39 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:21:03 Valutazione locale: 23.1 s (caricamento 0.1 s).
+02:21:03 Formazione: inviata immagine 2.
+02:21:08 Correzione del sito acquisita: immagine 1
+02:21:09 Criterio generalizzabile salvato per i prompt successivi.
+02:21:10 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:21:13 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:21:38 Valutazione locale: 23.7 s (caricamento 0.1 s).
+02:21:38 Formazione: inviata immagine 1.
+02:21:42 Criterio generalizzabile salvato per i prompt successivi.
+02:21:42 Confermato dal sito: immagine 2. Formazione 30/40.
+02:21:47 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:22:12 Valutazione locale: 23.9 s (caricamento 0.1 s).
+02:22:12 Formazione: inviata immagine 2.
+02:22:17 Correzione del sito acquisita: immagine 1
+02:22:19 Criterio generalizzabile salvato per i prompt successivi.
+02:22:20 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:22:24 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:22:45 Valutazione locale: 20.3 s (caricamento 0.1 s).
+02:22:45 Formazione: inviata immagine 2.
+02:22:48 Correzione del sito acquisita: immagine 1
+02:22:50 Criterio generalizzabile salvato per i prompt successivi.
+02:22:51 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:22:52 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:23:16 Valutazione locale: 23.0 s (caricamento 0.0 s).
+02:23:16 Formazione: inviata immagine 2.
+02:23:19 Criterio generalizzabile salvato per i prompt successivi.
+02:23:19 Confermato dal sito: immagine 2. Formazione 33/40.
+02:23:22 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:23:44 Valutazione locale: 21.6 s (caricamento 0.0 s).
+02:23:44 Formazione: inviata immagine 1.
+02:23:45 Correzione del sito acquisita: immagine 2
+02:23:47 Criterio generalizzabile salvato per i prompt successivi.
+02:23:48 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:23:51 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:24:15 Valutazione locale: 23.6 s (caricamento 0.1 s).
+02:24:15 Formazione: inviata immagine 2.
+02:24:17 Correzione del sito acquisita: immagine 1
+02:24:18 Criterio generalizzabile salvato per i prompt successivi.
+02:24:19 Formazione: inviata immagine 1 dopo correzione esplicita.
+02:24:26 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:24:50 Valutazione locale: 23.6 s (caricamento 0.1 s).
+02:24:50 Formazione: inviata immagine 1.
+02:24:57 Correzione del sito acquisita: immagine 2
+02:24:59 Criterio generalizzabile salvato per i prompt successivi.
+02:25:00 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:25:02 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:25:27 Valutazione locale: 24.3 s (caricamento 0.5 s).
+02:25:27 Formazione: inviata immagine 1.
+02:25:28 Correzione del sito acquisita: immagine 2
+02:25:31 Criterio generalizzabile salvato per i prompt successivi.
+02:25:32 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:25:33 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:25:57 Valutazione locale: 24.0 s (caricamento 0.0 s).
+02:25:57 Formazione: inviata immagine 1.
+02:26:01 Criterio generalizzabile salvato per i prompt successivi.
+02:26:01 Confermato dal sito: immagine 1. Formazione 38/40.
+02:26:02 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:26:26 Valutazione locale: 23.8 s (caricamento 0.0 s).
+02:26:27 Formazione: inviata immagine 1.
+02:26:28 Correzione del sito acquisita: immagine 2
+02:26:30 Criterio generalizzabile salvato per i prompt successivi.
+02:26:30 Formazione: inviata immagine 2 dopo correzione esplicita.
+02:26:32 Applico al prompt corrente i criteri ricavati dal feedback verificato.
+02:26:57 Valutazione locale: 24.0 s (caricamento 0.1 s).
+02:26:57 Formazione: inviata immagine 2.
+02:26:57 Pagina esterna alla formazione: verificare i risultati prima dell’esame. Formazione sospesa nella stessa finestra.
+02:26:58 Training guidato: nessuna scelta o risposta automatica. Correggi gli esempi nel pannello verde.
+02:26:58 Esempio raccolto; attendo verifica umana. Totale e accuratezza: dataset_tools.py status.

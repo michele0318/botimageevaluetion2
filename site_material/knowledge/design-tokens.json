@@ -1,0 +1,10 @@
+{
+  "title": "Design tokens — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/design-tokens",
+  "source_hash": "d4250562d3fc6d2be459e5e0841c6a605b03cfbf838488e54f3e1c5e25ce9a73",
+  "rules": [],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2700,
+  "output_tokens": 203,
+  "processed_at": "2026-09-13T09:26:45"
+}

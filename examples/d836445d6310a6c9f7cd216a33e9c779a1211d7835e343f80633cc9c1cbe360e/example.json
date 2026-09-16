@@ -1,0 +1,75 @@
+{
+  "id": "d836445d6310a6c9f7cd216a33e9c779a1211d7835e343f80633cc9c1cbe360e",
+  "prompt": "A chinese karate man like jackie chan",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Both images fit the prompt, but image 1 invented its own way of drawing the scene instead of playing it safe, and the core idea of the prompt survives. We reward that: when one image is creative and still matches the prompt, and the other matches the prompt with no creativity at all, the creative one wins. Creativity only loses when the invention kills the main idea of the prompt.",
+  "split": "train",
+  "image_group": "9fce35f67b0b0dfa0b6e808ee48e08b01be964ac0a5e5c12350954ae450dd911",
+  "image_hashes": [
+    "4363afd625f964edf965d6e1ed6612d0c519eaa29f81c478d3145c4243e8bb52",
+    "57f599d71da89b40a19ebeb868f170176dfbdb8420204e22646583e365788836"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "eda4a568cf6f5d53e8b30305a139b9e1e9b7c6e6e3728674a79aa4bafdfeb9ab",
+      "corrected": false,
+      "time": "2026-09-13T02:16:23"
+    },
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "916eca8b7ee2c6fc084b3d8b3e1b187dcc940ed230b7ab4754709c08d49b498d",
+      "corrected": false,
+      "time": "2026-09-13T22:00:16"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T02:16:24"
+    },
+    {
+      "previous": "1",
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:00:17"
+    }
+  ],
+  "feedback": "Both images fit the prompt, but image 1 invented its own way of drawing the scene instead of playing it safe, and the core idea of the prompt survives. We reward that: when one image is creative and still matches the prompt, and the other matches the prompt with no creativity at all, the creative one wins. Creativity only loses when the invention kills the main idea of the prompt.",
+  "lesson": "If an image creatively interprets the prompt while preserving its core idea, it wins over a literal match; creativity is only penalized if it destroys the prompt’s essence.",
+  "lesson_evidence": "Both images fit the prompt, but image 1 invented its own way of drawing the scene instead of playing it safe, and the core idea of the prompt survives. We reward that: when one image is creative and still matches the prompt, and the other matches the prompt with no creativity at all, the creative one wins. Creativity only loses when the invention kills the main idea of the prompt.",
+  "lesson_source": "Both images fit the prompt, but image 1 invented its own way of drawing the scene instead of playing it safe, and the core idea of the prompt survives. We reward that: when one image is creative and still matches the prompt, and the other matches the prompt with no creativity at all, the creative one wins. Creativity only loses when the invention kills the main idea of the prompt.",
+  "contextual_hints": "Jackie Chan person\nHIGH\nThe prompt uses Jackie Chan as a visual reference for the subject's appearance and style.",
+  "reference_images": [
+    {
+      "label": "Jackie Chan person",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Jackie Chan person",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Jackie Chan person",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Jackie Chan person",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "Jackie Chan person",
+      "file": "reference_5.png"
+    }
+  ]
+}

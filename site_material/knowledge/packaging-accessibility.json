@@ -1,0 +1,23 @@
+{
+  "title": "Packaging you can actually open — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/packaging-accessibility",
+  "source_hash": "9def64b0412d613d49605b9ec7dcd02bfe3f24fbdc60f600505cf8f830313ab8",
+  "rules": [
+    {
+      "rule": "Opening force must not exceed 3 lb (1.36 kg) for one-handed operation without pinching, twisting, or grasping; boxes over 5 lb require two hands.",
+      "evidence": "The pack must open with one hand, and without the ability to pinch, to twist the wrist, or to grasp with the hand — three separate abilities, tested separately. Boxes over 5 lb must allow two hands."
+    },
+    {
+      "rule": "Barcode quiet zones must be clear; for EAN-13, the left quiet zone must be at least 11X and the right at least 7X where X is the narrowest bar width.",
+      "evidence": "including the blank quiet zones, which for EAN-13 must be at least 11X on the left and 7X on the right."
+    },
+    {
+      "rule": "Braille dot diameter must be 1.5 mm with 2.4 mm centre-to-centre spacing, kept 8 mm clear of any edge or crease, regardless of package size.",
+      "evidence": "dot diameter 1.5 mm, dot spacing 2.4 mm centre to centre, character pitch 6 mm, kept 8 mm clear of any edge or crease"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2813,
+  "output_tokens": 327,
+  "processed_at": "2026-09-13T09:34:52"
+}

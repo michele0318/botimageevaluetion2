@@ -1,0 +1,45 @@
+{
+  "id": "29182e4d80ae75cb1bdb66b7eb24c863c3cd6cb4dd097abf70f3e05332ebbff1",
+  "prompt": "Early 20th century Chinese-Arabic missionary poster, two-color risograph print in dark blue and yellow on aged cream paper, stone gate illustration, biblical text, border layout",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is the richer, more accomplished piece. It's a real two-color letterpress handbill where the typography itself carries the design and gives it real craft and authenticity. Image 2 handles a similar idea but far more simply. It's clean and legible but with a generic layout and lots of empty ground.",
+  "split": "test",
+  "image_group": "7cf59e996e07ea9df4c8b13cd598455ab6732630014a1738fbbd00e543cddd6b",
+  "image_hashes": [
+    "c2aedbb1b2a143ebee2e5e491da76d2aa89632712185eb723d3ee0436881e92d",
+    "422f218862c651f4fcfb5a6ed8b5cf69fb367dfecf38860691016813bc3c3ef7"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "a4ee9931ac1710933b8c273666452c15f8e8235bf456ed0b1f90b9c5366a6cb2",
+      "corrected": false,
+      "time": "2026-09-13T22:10:18"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "a4ee9931ac1710933b8c273666452c15f8e8235bf456ed0b1f90b9c5366a6cb2",
+      "corrected": true,
+      "time": "2026-09-13T22:10:24"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is the richer, more accomplished piece. It's a real two-color letterpress handbill where the typography itself carries the design and gives it real craft and authenticity. Image 2 handles a similar idea but far more simply. It's clean and legible but with a generic layout and lots of empty ground.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:10:21"
+    }
+  ],
+  "feedback": "Image 1 is the richer, more accomplished piece. It's a real two-color letterpress handbill where the typography itself carries the design and gives it real craft and authenticity. Image 2 handles a similar idea but far more simply. It's clean and legible but with a generic layout and lots of empty ground.",
+  "lesson": "If requested style is handcrafted typography with authentic print texture, prioritize design richness over minimalism; if style is simple legibility, prioritize clarity over decorative complexity.",
+  "lesson_evidence": "Image 1 is the richer, more accomplished piece. It's a real two-color letterpress handbill where the typography itself carries the design and gives it real craft and authenticity. Image 2 handles a similar idea but far more simply. It's clean and legible but with a generic layout and lots of empty ground.",
+  "lesson_source": "Image 1 is the richer, more accomplished piece. It's a real two-color letterpress handbill where the typography itself carries the design and gives it real craft and authenticity. Image 2 handles a similar idea but far more simply. It's clean and legible but with a generic layout and lots of empty ground."
+}

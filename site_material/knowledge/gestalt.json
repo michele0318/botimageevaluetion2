@@ -1,0 +1,15 @@
+{
+  "title": "Gestalt grouping — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt",
+  "source_hash": "e5abc910d9807fe46eb86980a9d40aafa816e74f0e4b82baa881d12c7abc0158",
+  "rules": [
+    {
+      "rule": "Proximity (spacing) is a strong cue that beats colour and shape when grouping elements.",
+      "evidence": "Proximity is one of the strongest cues there is and it routinely beats colour and shape"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2443,
+  "output_tokens": 177,
+  "processed_at": "2026-09-13T09:29:12"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "4dd9db37039dc8c0e0f481821e80b84f715197a7f38d339bb097e88de519a5c1",
+  "prompt": "pink and gold striped paper background with a vintage paper white square in the middle open for text with a pink scalloped border around it, hand-painted",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: While both images successfully achieve a hand-painted look, Image 1 is superior because it much better replicates the texture of vintage paper, making it feel more authentic.",
+  "split": "train",
+  "image_group": "fef622aae16b31c2b31a079471df3795ae0509834d914c3f60f370ecac78cdb2",
+  "image_hashes": [
+    "bd7b84e3f9b47a2f5e925e88c198cacbb7b4e84edd83aa4f53b233d293149093",
+    "f0247beef53d688e727f205f7aa9b075eb47f8dc77c0504c0f8c3792049086d7"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "b685471df0c0a01a59b490af2fbd98aa769f9b9d7b48be3471a0d7443fde9249",
+      "corrected": false,
+      "time": "2026-09-13T21:54:19"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:54:21"
+    }
+  ],
+  "feedback": "While both images successfully achieve a hand-painted look, Image 1 is superior because it much better replicates the texture of vintage paper, making it feel more authentic.",
+  "lesson": "If a requested style is specified, prioritize fidelity to the material texture described in the prompt over general stylistic resemblance; texture authenticity matters only when explicitly requested.",
+  "lesson_evidence": "While both images successfully achieve a hand-painted look, Image 1 is superior because it much better replicates the texture of vintage paper, making it feel more authentic.",
+  "lesson_source": "While both images successfully achieve a hand-painted look, Image 1 is superior because it much better replicates the texture of vintage paper, making it feel more authentic."
+}

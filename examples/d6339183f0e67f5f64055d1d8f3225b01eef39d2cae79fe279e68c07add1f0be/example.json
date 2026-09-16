@@ -1,0 +1,36 @@
+{
+  "id": "d6339183f0e67f5f64055d1d8f3225b01eef39d2cae79fe279e68c07add1f0be",
+  "prompt": "TRANSLATION: \"Content shoot for a dermatologist: Briefing for the photographer Goal: Create an aesthetic, warm, and trustworthy visual brand image showcasing professionalism, care for clients, and premium service. 1. Expert Portrait • Close-up shot, soft lighting. • Looking at the camera or a slight smile that creates a feeling of trust. • Background: neutral, pastel shades or office interior.\"\n\nORIGINAL: \"Контент-съемка для косметолога: ТЗ для фотографа Цель: Создать эстетичный, теплый и доверительный визуальный образ бренда, показывающий профессионализм, заботу о клиентах и премиальный сервис. 1. Портрет эксперта • Крупный план, мягкий свет. • Взгляд в камеру или легкая улыбка, создающая ощущение доверия. • Фон: нейтральный, пастельные оттенки или интерьер кабинета.\"",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 2 has clear overexposed areas, and the lighting is slightly worse than in image 1.",
+  "split": "test",
+  "image_group": "34a7b5145957f78121da6710ed8c6b1dc19341b89a898ebb3d724512fecd0531",
+  "image_hashes": [
+    "87638d1e5eddcb8bf5ad36e7a4d3f1217e19f2231aaa58977b2bbb7aa908e315",
+    "29291c971923746af8a4bfc01a4eb07cb1160b56222cbf7ef3cc773212405fbc"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "51456bd9637f34166dff242950b038274c12fbc591b0c0fda6413601a81bf777",
+      "corrected": false,
+      "time": "2026-09-13T21:59:31"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:59:35"
+    }
+  ],
+  "feedback": "Image 2 has clear overexposed areas, and the lighting is slightly worse than in image 1.",
+  "lesson": "If requested style is specified, prioritize lighting fidelity over aesthetic warmth; avoid overexposure even for warm tones unless explicitly requested.",
+  "lesson_evidence": "Image 2 has clear overexposed areas, and the lighting is slightly worse than in image 1.",
+  "lesson_source": "Image 2 has clear overexposed areas, and the lighting is slightly worse than in image 1."
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Balance — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/balance",
+  "source_hash": "34ac04a131006e4dc1b9aa5494bae5fc3844c83c0f75f6c88b3e48b6b29fe3b9",
+  "rules": [
+    {
+      "rule": "A composition is balanced when no single area pulls so hard that the viewer stops seeing the rest of the image.",
+      "evidence": "Balance is not about elements being centred or evenly spread. It is about the pull being distributed."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2443,
+  "output_tokens": 294,
+  "processed_at": "2026-09-13T09:23:10"
+}

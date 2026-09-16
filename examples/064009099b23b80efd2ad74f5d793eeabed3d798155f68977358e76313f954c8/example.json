@@ -1,0 +1,61 @@
+{
+  "id": "064009099b23b80efd2ad74f5d793eeabed3d798155f68977358e76313f954c8",
+  "prompt": "Abstract acrylic painting of stylized flora with glossy, impasto textures, thin dark branches cascading across the canvas adorned with large three-dimensional white flowers and scattered bright blue buds against a mottled grey and blue background, abstract, acrylic, by Anastassia Skopp, no people",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 1 has a visible frame around the canvas, which further reduces its usability. Contextual hint: the style of the requested artist is conveyed well in both images, but image 2 is clean and also matches the prompt's blue-and-white palette more closely. Image 2 wins.",
+  "split": "train",
+  "image_group": "13f1c4a1243fd6b43646afcd7b97eba5bfcea1a4185088caf558df5fcfee3ec5",
+  "image_hashes": [
+    "01416a8fd1bada82a1f90f19ad542f2028937a162f52c80948c0170547e07f2e",
+    "2f60e0501e6d976f224e7039f0b2d9e777b2b7621007f541c8916665e53f5cbd"
+  ],
+  "contextual_hints": "Anastassia Skopp style\nHIGH\nThe prompt explicitly mentions a specific artist to define the visual style of the painting.",
+  "reference_images": [
+    {
+      "label": "Anastassia Skopp style",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "Anastassia Skopp style",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "Anastassia Skopp style",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "Anastassia Skopp style",
+      "file": "reference_4.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "0caec430db152c2ae105c1462ca3ed40d1661cee3ef5c200f70682a275c50443",
+      "corrected": false,
+      "time": "2026-09-13T21:58:25"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "0caec430db152c2ae105c1462ca3ed40d1661cee3ef5c200f70682a275c50443",
+      "corrected": true,
+      "time": "2026-09-13T21:58:31"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 has a visible frame around the canvas, which further reduces its usability. Contextual hint: the style of the requested artist is conveyed well in both images, but image 2 is clean and also matches the prompt's blue-and-white palette more closely. Image 2 wins.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:58:29"
+    }
+  ],
+  "feedback": "Image 1 has a visible frame around the canvas, which further reduces its usability. Contextual hint: the style of the requested artist is conveyed well in both images, but image 2 is clean and also matches the prompt's blue-and-white palette more closely. Image 2 wins."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "da52a8c1c4edb471ef92252d76c22ec50de0a27e831e1ad9d31ccda9a596b1b0",
+  "prompt": "\"COAST HEATING & AIR\" HVAC badge logo, vintage hand-drawn style, \"CALL 805.748.5182\" \"LICENSE No 1071377\" \"LOS OSOS CA\"",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 is preferred because it has a stronger visual idea. Image 1 relies on standard (and very overused) vintage textures and typography, while in Image 2 the hot and cold faces communicate the HVAC theme. It helps make the logo feel more memorable. The illustration also works well compositionally, as the two figures naturally create a frame for the text and help guide attention.",
+  "split": "test",
+  "image_group": "833f42143adb16326567c77cb1f6d553ec1b81ff70d94b635017d5066c576b24",
+  "image_hashes": [
+    "751a6e08a5d45da3a29a167d54f944c295c6162fdea46016e7400d5f2cc58832",
+    "8e875d4b6384b66e6d1ba6b8000d44382a739acd67c0cfd0f17437eb64b0b792"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "9a5bed211a318e4cd767e9362b2771aaf4a47dbcbef1e359e0516da73b718910",
+      "corrected": false,
+      "time": "2026-09-13T22:08:58"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "9a5bed211a318e4cd767e9362b2771aaf4a47dbcbef1e359e0516da73b718910",
+      "corrected": true,
+      "time": "2026-09-13T22:09:03"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 is preferred because it has a stronger visual idea. Image 1 relies on standard (and very overused) vintage textures and typography, while in Image 2 the hot and cold faces communicate the HVAC theme. It helps make the logo feel more memorable. The illustration also works well compositionally, as the two figures naturally create a frame for the text and help guide attention.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:09:00"
+    }
+  ],
+  "feedback": "Image 2 is preferred because it has a stronger visual idea. Image 1 relies on standard (and very overused) vintage textures and typography, while in Image 2 the hot and cold faces communicate the HVAC theme. It helps make the logo feel more memorable. The illustration also works well compositionally, as the two figures naturally create a frame for the text and help guide attention.",
+  "lesson": "When requested, prioritize visual storytelling that reinforces the subject’s theme through symbolic elements (e.g., HVAC faces) to enhance memorability and compositional guidance, even if style is not universally superior.",
+  "lesson_evidence": "Image 2 is preferred because it has a stronger visual idea. Image 1 relies on standard (and very overused) vintage textures and typography, while in Image 2 the hot and cold faces communicate the HVAC theme. It helps make the logo feel more memorable. The illustration also works well compositionally, as the two figures naturally create a frame for the text and help guide attention.",
+  "lesson_source": "Image 2 is preferred because it has a stronger visual idea. Image 1 relies on standard (and very overused) vintage textures and typography, while in Image 2 the hot and cold faces communicate the HVAC theme. It helps make the logo feel more memorable. The illustration also works well compositionally, as the two figures naturally create a frame for the text and help guide attention."
+}

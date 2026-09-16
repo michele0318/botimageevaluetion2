@@ -1,0 +1,42 @@
+{
+  "id": "5e24dd864cb42749814578c1bc346e197c0783df603aa6a82dc2bcb7ff9ec5f3",
+  "prompt": "Chrome abstract chibi baby monk figurine, hands in prayer, minimal featureless face, centered, black-to-white gradient background",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: While both images feature strong compositions and excellent background gradients, Image 2 is the clear winner due to its superior figurine design. It showcases a beautifully abstract form enhanced by striking lighting effects and seamless color transitions. In contrast, Image 1 falls short with a very generic, stock-like figurine that completely fails to properly execute the featureless face concept.",
+  "split": "train",
+  "image_group": "1b5d85822d90f1414999630417864b8aaadb3ca208a00af2f29684ed9c2bf72f",
+  "image_hashes": [
+    "db3044f8eda1cb3b165bc047b67ab12bb7d4e689cad30ce3d9405f358168d410",
+    "e32e0a15df52164ec06e910c308d2cef66de608b148b8507c07106a9a83abed3"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "3f8c3232bd252cd56fea44259b51d415e06210ae47e3f0f22c8e56a06aebc42a",
+      "corrected": false,
+      "time": "2026-09-13T22:02:09"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "3f8c3232bd252cd56fea44259b51d415e06210ae47e3f0f22c8e56a06aebc42a",
+      "corrected": true,
+      "time": "2026-09-13T22:02:13"
+    }
+  ],
+  "observed_feedback": "Please take another look:While both images feature strong compositions and excellent background gradients, Image 2 is the clear winner due to its superior figurine design. It showcases a beautifully abstract form enhanced by striking lighting effects and seamless color transitions. In contrast, Image 1 falls short with a very generic, stock-like figurine that completely fails to properly execute the featureless face concept.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:02:11"
+    }
+  ],
+  "feedback": "While both images feature strong compositions and excellent background gradients, Image 2 is the clear winner due to its superior figurine design. It showcases a beautifully abstract form enhanced by striking lighting effects and seamless color transitions. In contrast, Image 1 falls short with a very generic, stock-like figurine that completely fails to properly execute the featureless face concept."
+}

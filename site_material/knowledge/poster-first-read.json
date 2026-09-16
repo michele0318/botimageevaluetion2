@@ -1,0 +1,15 @@
+{
+  "title": "The first read — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/poster-first-read",
+  "source_hash": "29c997c6fbbf37af4ce627c7e7122bdef13ec922f0cf27f67e77e65a11eb7b13",
+  "rules": [
+    {
+      "rule": "If covering either the image or the text causes the message to die, the design fails because it requires the viewer to already be standing still.",
+      "evidence": "Cover half. Hide the image, then hide the text. If the message dies both times, neither half was carrying it — the poster only works as a complete sentence, which is a real choice, but a fragile one."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2444,
+  "output_tokens": 331,
+  "processed_at": "2026-09-13T09:35:55"
+}

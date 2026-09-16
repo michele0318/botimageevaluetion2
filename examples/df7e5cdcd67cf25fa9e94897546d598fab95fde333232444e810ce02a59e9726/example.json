@@ -1,0 +1,22 @@
+{
+  "id": "df7e5cdcd67cf25fa9e94897546d598fab95fde333232444e810ce02a59e9726",
+  "prompt": "Create a frog with a smiling mouth that looks out from between branches, pulling down a branch with one of its front legs, standing on branches with its back legs, its posture is as if it is doing an Indian hop, more branches are visible in the background",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 stands out as the superior choice, delivering a sharp, highly detailed representation of the prompt where all elements blend organically to look like an authentic wildlife photograph. In contrast, Image 2 suffers from a very strange and unnatural rendering of the branches, particularly the ones positioned directly underneath the frog.",
+  "split": "train",
+  "image_group": "0d286ee1ebb24ba7a8426aea269f5742769ef884defd1fd94a01e39bd172b33b",
+  "image_hashes": [
+    "7fe37b583df486cfe6279f901e9927ae6412a3e21d47af7ccc6bafa3182793ee",
+    "903cfd4c212514fdd7e129dbc593eef7f888e58740658d95781a97f7f080f0c9"
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "time": "2026-09-12T20:22:45"
+    }
+  ],
+  "feedback": "Image 1 stands out as the superior choice, delivering a sharp, highly detailed representation of the prompt where all elements blend organically to look like an authentic wildlife photograph. In contrast, Image 2 suffers from a very strange and unnatural rendering of the branches, particularly the ones positioned directly underneath the frog."
+}

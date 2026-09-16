@@ -1,0 +1,19 @@
+{
+  "title": "Identity systems — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/identity-systems",
+  "source_hash": "e2bec61bce7c431a9297d5ce9ff39d1c916da7792e0a73bde39594ee885773ad",
+  "rules": [
+    {
+      "rule": "If an image displays a mark on large applications like signage, check if it is rebuilt using a specific grid ratio (e.g., three grid units equal the vertical stroke width).",
+      "evidence": "For large applications such as signage the mark may be rebuilt, but only from this grid, and the manual pins the scale with one number: three grid units equal the vertical stroke width."
+    },
+    {
+      "rule": "If an image uses a named typeface family across different page sizes to ensure visual relatedness, it demonstrates a system's approach to materials.",
+      "evidence": "Typeface — one family, so a page nobody has seen still looks related."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2463,
+  "output_tokens": 256,
+  "processed_at": "2026-09-13T09:30:32"
+}

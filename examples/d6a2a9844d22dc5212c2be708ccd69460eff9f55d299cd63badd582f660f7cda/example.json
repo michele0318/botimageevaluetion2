@@ -1,0 +1,45 @@
+{
+  "id": "d6a2a9844d22dc5212c2be708ccd69460eff9f55d299cd63badd582f660f7cda",
+  "prompt": "3D block letters carved from raw beef stake, lying flat on pink marble surface",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: While Image 2 is highly realistic, it is less aesthetic because it depicts raw meat and scraps in an unappealing, visceral way. Additionally, the cluttered background is distracting. Image 1 is superior as it features professional food styling, a cohesive shape, and a well-chosen background that enhances the overall presentation.",
+  "split": "train",
+  "image_group": "0d2c3662cd23ef93d6dd785aaa24dfb3bf41c72efe3715dfeda2cf6a4d229ee4",
+  "image_hashes": [
+    "7a16f4e8fb1aab23cffeecd4c63194d0f46b959c09771515212cbdaafd0bc595",
+    "38cc746aaaa59f21127081953a5ea9f9881507ab557850d8460095fb5666f26d"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "0957bd9cec013ebae99a128386163c5f9e0047842e1e3165ef3b5b4895e6c7ee",
+      "corrected": false,
+      "time": "2026-09-13T22:12:16"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "0957bd9cec013ebae99a128386163c5f9e0047842e1e3165ef3b5b4895e6c7ee",
+      "corrected": true,
+      "time": "2026-09-13T22:12:23"
+    }
+  ],
+  "observed_feedback": "Please take another look:While Image 2 is highly realistic, it is less aesthetic because it depicts raw meat and scraps in an unappealing, visceral way. Additionally, the cluttered background is distracting. Image 1 is superior as it features professional food styling, a cohesive shape, and a well-chosen background that enhances the overall presentation.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:12:21"
+    }
+  ],
+  "feedback": "While Image 2 is highly realistic, it is less aesthetic because it depicts raw meat and scraps in an unappealing, visceral way. Additionally, the cluttered background is distracting. Image 1 is superior as it features professional food styling, a cohesive shape, and a well-chosen background that enhances the overall presentation.",
+  "lesson": "If requested style is not explicitly specified, prioritize aesthetic harmony and professional presentation over realism; avoid visceral or cluttered elements that distract from visual appeal.",
+  "lesson_evidence": "Image 1 is superior as it features professional food styling, a cohesive shape, and a well-chosen background that enhances the overall presentation.",
+  "lesson_source": "While Image 2 is highly realistic, it is less aesthetic because it depicts raw meat and scraps in an unappealing, visceral way. Additionally, the cluttered background is distracting. Image 1 is superior as it features professional food styling, a cohesive shape, and a well-chosen background that enhances the overall presentation."
+}

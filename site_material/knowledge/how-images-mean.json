@@ -1,0 +1,23 @@
+{
+  "title": "How images mean — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-images-mean",
+  "source_hash": "f67f7fd7a04aaf05a6724e2c3ea67af59ab82544de9e206063547aaf70cd66e0",
+  "rules": [
+    {
+      "rule": "An image matches a prompt only if the viewer recognizes its literal content (denotation) within an existing cultural code they already know.",
+      "evidence": "An image reads only inside a code you already have"
+    },
+    {
+      "rule": "High modality cues (like detail and realism) claim the image is real, but low modality cues (like selective framing) indicate a chosen representation.",
+      "evidence": "Modality: how real is it claiming to be?"
+    },
+    {
+      "rule": "A reader can share an image's code to accept its meaning, partially share it to bend the meaning, or understand it perfectly and reject it.",
+      "evidence": "Hall's three positions are worth having: a reader can share the image's code and accept the reading, share it partly and bend it, or understand it perfectly and reject it."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2617,
+  "output_tokens": 208,
+  "processed_at": "2026-09-13T09:29:45"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Hard and soft light — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/light-hard-soft",
+  "source_hash": "2f4c5f7ee1eac3521ce09ceebbd3ae62a257487f500e9d678d350957de27e9db",
+  "rules": [
+    {
+      "rule": "A shadow edge is soft if part of the light source remains visible at that point, creating a gradual fade rather than a crisp line.",
+      "evidence": "A shadow edge is soft because part of the light still reaches it. Nothing more mystical than that."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2391,
+  "output_tokens": 226,
+  "processed_at": "2026-09-13T09:31:49"
+}

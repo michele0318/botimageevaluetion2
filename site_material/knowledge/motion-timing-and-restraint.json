@@ -1,0 +1,27 @@
+{
+  "title": "Timing and restraint — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint",
+  "source_hash": "040e191b0aa896bbc195cf57d411bcfd37b89a4382c3087d26dc0d87912da7cf",
+  "rules": [
+    {
+      "rule": "If an animation duration exceeds 500 ms, it will feel like a real drag to the user.",
+      "evidence": "\"Animations start to feel like a real drag\""
+    },
+    {
+      "rule": "If an animation is repeated frequently (e.g., on a primary button), its duration should be shorter than for rare moments because repetition makes long animations annoying.",
+      "evidence": "The rarer the moment, the more motion it can carry — which is how Carbon splits its two styles, reserving expressive motion \"for occasional, important moments\" and keeping productive motion \"subtle and out of the way\" for everyday work"
+    },
+    {
+      "rule": "If an animation uses a spring curve with overshoot, check if the style forbids bounce; some systems (like Carbon) explicitly forbid it while others (like Material 3) treat it as a feature.",
+      "evidence": "Carbon forbids exactly that — \"Do not use easing curves that suggest bounce, stretch, or sudden stops\" — because IBM's motion should be \"essential and efficient\""
+    },
+    {
+      "rule": "If an animation is triggered by user interaction, ensure there is a way to disable it unless the movement is essential to functionality or information conveyance.",
+      "evidence": "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed"
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2765,
+  "output_tokens": 268,
+  "processed_at": "2026-09-13T09:34:19"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Map furniture and map colour — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/map-elements-and-colour",
+  "source_hash": "a7cd4ce75a762e4ef43447b547f92e2d6453d51e3e93f6e147b8f3598701c8ce",
+  "rules": [
+    {
+      "rule": "Use a sequential colour scheme for ordered data where lightness climbs steadily with value to avoid inventing perceptual boundaries.",
+      "evidence": "The same argument condemns the rainbow twice over: it invents boundaries, and it collapses in greyscale, because its lightness goes up and down."
+    },
+    {
+      "rule": "Ensure labels drop by rank as screen space shrinks at zoomed-out scales to prevent collisions between nearby features.",
+      "evidence": "A label must not collide at any zoom, and the zoom is continuous, so the renderer drops labels by rank as space runs out."
+    },
+    {
+      "rule": "Verify a map's colour scheme remains legible when converted to greyscale or viewed at half size on small devices.",
+      "evidence": "Check it in grey, at the smallest size, and on the smallest device you support."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2787,
+  "output_tokens": 227,
+  "processed_at": "2026-09-13T09:32:55"
+}

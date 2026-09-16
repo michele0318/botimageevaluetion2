@@ -1,0 +1,27 @@
+{
+  "title": "The rule of thirds — Image Wiki",
+  "source": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/rule-of-thirds",
+  "source_hash": "4201050f9459c181979a4fff9758e77586f59bccc5570c0fa68550246f699962",
+  "rules": [
+    {
+      "rule": "If the subject is symmetrical and symmetry is the point, do not place it off centre as this destroys the intended effect.",
+      "evidence": "Symmetry. If the subject is symmetrical and the symmetry is the point, putting it off centre destroys the thing you were photographing."
+    },
+    {
+      "rule": "If a horizon runs through the middle of the frame, do not use it because it splits the image into two competing rectangles with no clear winner.",
+      "evidence": "Do not cut the frame into equal halves. A horizon through the middle splits the image into two competing rectangles, neither of which wins."
+    },
+    {
+      "rule": "If you are judging an image, do not score thirds-grid alignment as a quality signal because it is close to worthless.",
+      "evidence": "When you are judging images, grid compliance is close to worthless as a proxy."
+    },
+    {
+      "rule": "If the subject faces or moves somewhere in the frame, ensure there is room on that side for the eye to go rather than placing it dead centre.",
+      "evidence": "A third, quieter benefit: off-centre placement leaves room on one side, and that room reads as direction."
+    }
+  ],
+  "model": "qwen3.5:4b",
+  "input_tokens": 2566,
+  "output_tokens": 231,
+  "processed_at": "2026-09-13T09:37:22"
+}

@@ -1,0 +1,147 @@
+{
+  "title": "Motion as information — Image Wiki",
+  "text": "\n  \n\n  Motion as information\n  Movement used to tell the reader something — where a thing came from, and that it is still the same thing. Motion is the loudest signal an interface has, which is why spending it on decoration is expensive.\n\n  \n    Termpurposeful motion / UI animation\n    Also calledUI animation, transitions, microinteractions, motion design\n    Not the same asmotion vs decoration, transition vs loading spinner, animation vs video\n    Read8 min\n  \n\n  \n    \n      On this page\n      \n        The two jobs motion actually doesWhy it is expensiveDirection and easing are meaning, not polishWhat motion cannot doCommon mistakes\n      \n    \n  \n\n  Tap a row in a list and a full-screen panel appears. Now tap a different row in a different app and the panel grows out of the row you touched. Same information, same two screens. In the second one you never wonder what you are looking at.\nThat is the whole subject. Motion is not a finish; it is a channel that carries two specific facts and almost nothing else.\n\n\n\nEadweard Muybridge, The Horse in Motion (\"Sallie Gardner\", Palo Alto track, 19 June 1878). Library of Congress; public domain.\nRead the printed note under the plate: the negatives were made \"at intervals of twenty-seven inches of distance, and about the twenty-fifth part of a second of time\". Twelve frames, forty milliseconds apart, of one stride.\nThis is what a motion specification looks like — then and now. Nobody can argue about a movement while watching it at speed, so you stop it, lay the instants side by side, and check them one at a time. The vertical lines are 27 inches apart and the horizontals four inches, so you can measure the horse rather than admire it.\n\n\nThe two jobs motion actually does\nCausality. A thing that grows out of the row you touched has visible parentage. You do not have to work out where the panel came from, or which of the nine things on screen produced it, because you watched it happen. NN/g calls this the difference between an animation that is a \"clue about what is currently happening with the system\" and one that is time-filling visual stimulation (MOTION-007).\nContinuity. A change of state normally destroys the old screen and builds a new one. Motion lets you assert that some object survived the change — this panel is that row, the list is still underneath, you have not gone anywhere. That assertion matters because when it is missing, people reach for the Back button to close an overlay and leave the page instead (MOTION-007).\n\n12345Cutframes 2 to 5 are identical: the panel is simply there12345Shared elementthe tapped row is the same object in every frame, growing into the panel\n\nThe same change, storyboarded twice. Top: frames 2 to 5 are identical, because a cut has no in-between — the panel simply exists, and nothing in the picture says which row produced it.\nBottom: the accent block is the same object in all five frames. It starts as a row in the list and ends as the panel, and the siblings fade rather than vanish, so the list is still the place you came from. Note that the interesting information is in frames 2 to 4, which last around a fifth of a second in real time and which nobody consciously looks at.\n\n\nEverything else people try to do with motion — establish a brand tone, add delight, fill a wait — is either a side effect or a cost.\nWhy it is expensive\nYour visual system is built to catch movement, and it is particularly tuned to motion that looks alive. NN/g grounds this in Pratt and colleagues' 2010 finding that animate motion captures visual attention, and draws the practical conclusion: animation can make a subtle signifier obvious, or it can hijack attention (MOTION-007).\nA cart badge that silently ticks from 2 to 3 gets missed, because people do not notice small static changes far from where they were looking; animating it makes the feedback land. The same power, pointed at a flashing countdown clock that expires \"in under an hour\" no matter when you arrive, is a dark pattern (MOTION-007).\nThere is a quieter cost too: motion competes with itself. In NN/g's loading-screen example five animations run at once, and \"the power of any of these animations to pull the user's attention is diminished by competition from all the others\" (MOTION-007). Attention is the budget, and every decorative movement spends some.\nCarbon states the consequence as a test question: \"The best interface motion may go unnoticed… Is your motion frequently noticed by average users? If so, consider removing or minimizing it\" (MOTION-005). Motion you can describe afterwards is usually motion that was too big.\nDirection and easing are meaning, not polish\n\n\n\nÉtienne-Jules Marey, Chronophotograph of a Man on a Bicycle, c. 1885–1890. National Gallery of Art; CC0.\nOne plate, one rider, five exposures, and you read it instantly as a single man moving right — not as five men. That is continuity doing its work in a still image: same white jacket, same cap, same wheel, in a row.\nThe spacing is the other half. The gaps between the figures are near enough equal, which tells you the speed was steady. Later in this section that spacing becomes the diagnostic: unequal gaps mean acceleration, and acceleration is what an easing curve is.\n\n\nWhich way something moves is a claim about what it is. A card that rises from the bottom edge says it can be pushed back down; one that slides in from the right invites a swipe back to the right (MOTION-007). Get the direction wrong and you have taught a gesture that does not work.\nEasing makes a similar claim about permanence. Carbon reserves its exit curve — where the element speeds up as it goes — for removals, because accelerating away implies the departure \"is permanent\". A side panel that will be needed again gets the standard curve instead, so that it slows as it leaves and reads as coming to rest just outside the frame (MOTION-005).\n\nscreen edgeevery 60 msbiggest step lastAccelerates outgone for good: dismissed, deleted, sentscreen edgeevery 60 msbiggest step firstDecelerates to restparked just outside: a panel you can call back\n\nSame panel, same distance, same 240 ms. Only the spacing of the samples differs, and the ruler under each screen is the thing to read: equal steps in time, unequal steps in space.\nLeft, the gaps grow, so the panel is still gaining speed when it crosses the edge — it is going somewhere, and it is gone. Right, the gaps shrink to nothing at the edge, so the panel has parked: it is just out of sight and you expect to be able to fetch it back. Nobody has to be told this. It is how thrown things and pushed things behave.\n\n\nWhat motion cannot do\n\nIt cannot be re-read. A static layout will sit there while you check it twice. A 200 ms transition happens once, at a moment when the reader is looking somewhere else, and there is no way to scroll back. Anything that must be understood belongs in the static state, not in the transition.\nIt competes with reading. Movement anywhere on the page pulls the eye off the line of text. This is why a moving decoration next to an article is not neutral.\nOn a slow device it is just a delay. Carbon says it plainly: not all devices are powerful enough to run the motion smoothly, \"no matter how essential the motion design is\", so always provide an alternative and \"make sure there is always a way to communicate similar messages statically\" (MOTION-005).\nSome people cannot have it at all. Interaction-triggered animation has to be switchable off unless it is essential (MOTION-010). If your explanation lives in the animation, those readers lose the explanation — see Timing and restraint.\n\nCommon mistakes\n\n\"Animation makes the interface feel polished.\" It makes it feel polished for about three viewings. After that the only motion people tolerate is motion that told them something. NN/g's usability-test participants were actively frustrated by down-time animations (MOTION-007).\n\"A spinner is feedback.\" A spinner says the system is busy. It does not say what will appear, or where. A skeleton placeholder in the shape of the coming content says both (MOTION-007).\n\"Motion can replace navigation.\" It cannot. A zoom that implies going deeper is a useful supplement to clear labels, not a substitute for them (MOTION-007).\n\"Any movement is better than a jump.\" A cut is a legitimate choice, and the right one when nothing needs explaining. Material's physics system exists so that motion follows one consistent set of rules across a product, not so that every change gets a performance (MOTION-001).\n\n\nJudging motion in five seconds\n\nAsk what fact the movement asserts. \"This came from that\", or \"this is still the same thing\" — if neither, it is decoration.\nFreeze it halfway. If the mid-transition frame is nonsense, the transition is doing something the layout cannot support.\nWatch the direction. Does it match the gesture that dismisses the thing?\nWatch it ten times. Anything still charming at ten will survive being seen forty times a day.\nTurn it off in your head. If the interface stops being understandable, the explanation was in the wrong place.\n\n\n\n  \n    \n      Read next\n      \n        \n          \n            \n              Timing and restraint\n              How long an interface animation should last, which curve it should follow, and why every one of them has to be switchable off. The usable window is roughly 100 to 500 milliseconds.\n            \n          \n        \n          \n            \n              Gestalt grouping\n              The automatic machinery that turns a field of pixels into objects and groups — and the reason accidental alignments in a photograph look deliberate.\n            \n          \n        \n          \n            \n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            \n          \n        \n          \n            \n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            \n          \n        \n      \n    \n  \n\n  \n    \n      Where this comes from\n      \n        MOTION-007 — NN/g — The Role of Animation and Motion in UXMOTION-005 — Carbon Design System — Motion overviewMOTION-001 — Material Design 3 — Motion: how it worksMOTION-008 — NN/g — Executing UX Animations: Duration and Motion CharacteristicsMOTION-010 — W3C WAI — Understanding SC 2.3.3: Animation from Interactions\n      \n    \n  \n\n  \n",
+  "headings": [
+    "Motion as information",
+    "The two jobs motion actually does",
+    "Why it is expensive",
+    "Direction and easing are meaning, not polish",
+    "What motion cannot do",
+    "Common mistakes",
+    "Read next",
+    "Where this comes from"
+  ],
+  "figures": [
+    {
+      "caption": "\n\n\nEadweard Muybridge, The Horse in Motion (\"Sallie Gardner\", Palo Alto track, 19 June 1878). Library of Congress; public domain.\nRead the printed note under the plate: the negatives were made \"at intervals of twenty-seven inches of distance, and about the twenty-fifth part of a second of time\". Twelve frames, forty milliseconds apart, of one stride.\nThis is what a motion specification looks like — then and now. Nobody can argue about a movement while watching it at speed, so you stop it, lay the instants side by side, and check them one at a time. The vertical lines are 27 inches apart and the horizontals four inches, so you can measure the horse rather than admire it.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AT725KVltCCMZZEz02Kf1yPR1aRDRmoy1tceXfN8pnR2-qHe-QZ1Jd5E04ckzMZG6_Ep1XCcd-VIsq9l2zjqjcY-LA9afHGtEvxLdNll_KxBh5Z2QRCS-o-nv5H-KYyI39HnRG3mNbp4CsqCs8FlOfyBQDVhUz_9P1J8uXwYfwFDlxm-yT93R3D_MGSyOczIwxRMeEUh_zqFZc7GD-VGDRnYKlpjzcSJojVlbSnIjT6lU6uwcPQ9-gIJLhJdWgvWEEKbm2kk_w-fmLtu9igPrVDYm2CAr6HLaQ1KvX5-J-kV1fbadA-LszZ82jBibcHTUMa2IWDy_cEnwsbS0cvlaDPfpim9CmnPS2KGRAzyvh4LH2Jx6bgxD1dn3mBjpfgnNtxNXt4UqMQYXb1_LJ1rs9SVHpeziMFEtqHs20KDaGPJplk21pWxbV2NmzZpd5rP1Seeer3ULsM753B23y0Ls-SJmw4aBSi_2QURHnL7fGZHDiX16tvpW3RGdtjrI_hNiZ1e6CzDaXmLOc7r-5JbGKlHS2s1pLrhOIJOg4nWG3UHZaU-2FXGcKPdht5Ro0FXQ3taSfk_siG8JAVx9_fdQoJc2fFt7UkO7WAG18miBbcMLug6Jz0ynh2XeO6h2BFnCAFsXhAaiAVKvrou6UZeEzvuPvoslY5OYhIPCvrXIdxhBGtobtcEuEGI_tNWfkG_ZWyTDhasG3C78WyoFYNXlrn2pz2CX_IQqkkpR4SvvVtY5QmmuNyCybxLda58bjRvVLr8UNL5pN-34U1VwHwfCYsZjZWqAgg65MebWu7J1aMcI22_-Lkge2DE8LhX3_4lZBZTEqFm5bh9amL9tgf_WmEyZA9nm4-4seThhF3nzrv17BnNy7VN9Z_4pLddZNEGGB862YHQsbHkFUMAn_xmW1Yz0ZVIXhPhNuuGsByeSqI8iQu9J56aA7db_QXkJtwWGVDA3AG03IRPeJJhnax1EeWFuUXUOq57UKlmvfa8MLxakHj06Cf5Mr5sA8Y979JKOEjC-qmvr2K2EP_9CH-1rS2hHi8Oe9YQodBo0Kh7y5i5iYqQmpLcbFBGpMcgnD7MDCHz1RuMtO1LUSSQdmQ40uv6aUNDNTuYXjIrvur33uJUPs0fiZA3oQ286zQxh2OoI8nZwB6tBubx9lcj07qPV6u71sS5e4mqLBMJzXWVbm6PvspKL75pYe-QouG6UIE5pdarI8H6LXPjUiwABSRP91tZJyMTtW3hlvhqhTwsmfronTdPhnJCO5TtOdtTW-qGk_pbD7L8NlG-fJs_Cd0F-6YSzjBSX4qrqHeF_Q4IMISyrZ0ar7sCTo-d2hhTsIbP-tyJB8lh2252qlssjFy0qOCxhBWyQVAh9D7QGE00b5_EUnud1Mo5MKOdbCCjg5WYWFqA3NqYpacnxG5QZs2RBLNQRnQ5NieeAQfKBVScH-qJPUiede-gMCPc5RYqLKz-gmx0wiVA2ooxwxY65Ito59Dr-ur1fSNRclmLgQYoFpt1kOCP2Rq8FDxbyxDahwKmJLGUDOccORNwSrfQGnpXfN5UTIT2RWNfHWCPPMVCq59hPZRfgM8hnLVUDxEm_bT2wGebX62FAuq8wXbA9g6jK9jf_ezQhrTGRkCq8NJwL6BdVZek1p04dQS9VvuFSOdYRRCTYO5yUrN0wcT4Y0XfN_CXv7Nc1dIQTfjKJBoWWeKAmUr_Y2hqIl5XQ1aOlWgFQDdCFJnakLgUcYf6EVatay2rorPDcHToq0GLvz7QGqeZZsmjJupUhP4taI4GIRJy8T3QIWhHms9Efxq3mxCtf6QAshBl-LD3jpn2TiUlh2VjiLG2s7TtcfXYovfy9iXmPJ5MgGI-yo3H-3jytFZJmUAIo_YD4oHaAafQFVdvmALcsx0f6dRQVb47oDSefwgW-pJimcDHqSQh7qzgwmd1ZGEdkHWZc_P8wPpz1tb-RPr82Ag-EBkvO_sJF4dzoBkd1VsKhvCJvN9YuAETA1Djh66EzexqwcoAYPd1bstmTOAqjeB9CKiA4FO5k-X4gRTA",
+          "alt": "Muybridge, The Horse in Motion, 1878: twelve numbered frames of a galloping horse and rider in silhouette against a marked backdrop"
+        }
+      ]
+    },
+    {
+      "caption": "\n12345Cutframes 2 to 5 are identical: the panel is simply there12345Shared elementthe tapped row is the same object in every frame, growing into the panel\n\nThe same change, storyboarded twice. Top: frames 2 to 5 are identical, because a cut has no in-between — the panel simply exists, and nothing in the picture says which row produced it.\nBottom: the accent block is the same object in all five frames. It starts as a row in the list and ends as the panel, and the siblings fade rather than vanish, so the list is still the place you came from. Note that the interesting information is in frames 2 to 4, which last around a fifth of a second in real time and which nobody consciously looks at.\n\n",
+      "images": []
+    },
+    {
+      "caption": "\n\n\nÉtienne-Jules Marey, Chronophotograph of a Man on a Bicycle, c. 1885–1890. National Gallery of Art; CC0.\nOne plate, one rider, five exposures, and you read it instantly as a single man moving right — not as five men. That is continuity doing its work in a still image: same white jacket, same cap, same wheel, in a row.\nThe spacing is the other half. The gaps between the figures are near enough equal, which tells you the speed was steady. Later in this section that spacing becomes the diagnostic: unequal gaps mean acceleration, and acceleration is what an easing curve is.\n\n",
+      "images": [
+        {
+          "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AQjFYQIPvXR17Vf9XP16UomXJPC-UlOYazN_e6rVHaMjQxg-mm3DT_jMCfrAVYUEhyEMUgAKGZQB7NhriGH7zZTEQPpykUbVezc9xO00BSGvlt6n327O6ofiLb9t8s6E-1tX9n4DK9D9-ePtEAnpOLOPt2whd6cW3MNsQxKHZT2adv2NLiFYrCfNb1GG4eWfa-m-Yw9QON6lniONdqakP_W_oKA8uey2VifXy6vHW48BWfJe_Bh1pk77WV3LKPu3Zy776pD7B8RigRIBh7GER_zV7q01Efa-IsaEehgLjIpfr--IEeCRufZthqEhEQ_n_FA_FSOSNiKo35ioyvjSEJx5_2lCajIuXVPePibqxm5fC_NG9AgYuwWFvW7aMkYGRavq4NW9NjfPEk_Nolx7RoYwHuZYQduU15hu2L1oSdQA2It-g7kj3d7RFM62yslFTYZ-pXFERLxk7ko5WdwsHAxNOdYttfr5fplBdyE7aF_3V8CAbekElbgls2l5zmkYfBXArqjrvf1bnrYeNMEznHPS_s18GlwZuNNNVnKOitFdRu7Xztm1-pZ77tdbFXh0ymZ7-SwgO6tno4CRGnzCbvTYoTdSw-yflx4O0iWc1UJG-jq-sOwEk_ymwlJPUI9SdMsk83yKl4Ani3jrU-zgxt7_Xe6Z9fNKeZA1hSpKzelHdgCbUsSa7RKwdCeB245NEwPrLTmO_MxIDYHHhGDS_6Xjhzh6EQeRgUoARCV25BfihoKictUzK93oKlsHtBJyJRnscGdYp2gr8DEn9tzhJ8wyJqv0ny7xO8McPiiS-mRRkBz-P5vQ3RvZ78RtrDJ9lkENzlOiPthFtsLHVLN5K4IliWkt5fGRS8D_yPaQ_p3LvPrcYaDpXG3biVYNTk_KDdG5GaJb47smzDoVlApY_U2Z4xdBaJRObk0fK7gaEXIb6AX_y4qmhKw6yI1UkXVFXMuBVhXtMR8O7i6iuo6jS8M8TXOdUJ-MCgSPu4apjnJomW5X0_cEFoSWyk0yNcBQ_YKu9WVYdz5V63Y_ZlZhWraN374S0V3aQOk7D7nNmCDnsRSCAy02EYRI-2-GM5FOlDyGVf6bL5meGvhw89t_SfGyGbd4HCE3lJlEnSaFQVw2ys26vKcEgtevvjyCzh6Cj6a9AcgAYbYkZM87jRltjMHBDfVclvglbfndZwJlUxjV17SbutNZorkflTMaB7FxZEMkUTOTRszU73vxzAHX8Xw9YhqB3j-wcJ0tvldz4dHy_rJsSd8N0dm8e8TlrG0-NgtwypjI9mSvB5H_PMlv_1OT78MeDwIyv27Q4aovMA8qMc7PlVdszyYuXt2Thqi1JuDqMJQMWNPfyLfbUoVbISmlUh1IpMEU_j0P7jjPQDYOgcghRKMphwCx5KJZ-NRBy-FeSfoojlZdmEieuvgYXvZcaKNVUD5kdmxcqc_2ZvzoixO2zhFnW42XRV3NsHs_LPo8lZ_yIl_u9xYlmxisUsbF7Oyl1_kbDawa89_LD6InWAUvRexaAkRurPF2LBdYIdvufvaNXD8EKEDigjNvFunZRsUYcV37lYuaWGIkKchITw7esfmv15vLjod-Dt5gyEHCIagwhNin_oV6sQZc_fHt8yNYA6CW0g-_05Uo9wmFRkcugJGtceOsVtl1ytTbYsfvATxsDPub2ctI5VbW_rsEV9OCFslQ768nYQOpiaJOTblEawKoKfElOoCag8XX6789JgXdImd2st1dqVjX7p9-Gja5dftGFcaXTv6uQ29dEXLsQBvHC1_e4RvKBJmCU_rf18YM_lz4vbzLTP-WT7Csr3zhx1DRQaiIULL3hVjvn445_QjqF2NjaIcYUsZcQEhG0ClP6C1CeaKkZANIEqx4NFho9YO5tZ4O1_84oym06H-7Xu9QUNFV6JFgPvwlihFK5_4JtoP0HC3lL5UFC9Ij-yWTgIrzuH7eE7wJI4WnWYUA3uQBVFnKp9DFySSzFlMPJ54kSRCSImHGUsuRbr056TyO6bxJYFCYtu2ENvmCuMq8icyflD7n5aH1hX6k",
+          "alt": "Marey chronophotograph of a man on a bicycle: five overlapping exposures of the same rider on one plate, evenly spaced left to right"
+        }
+      ]
+    },
+    {
+      "caption": "\nscreen edgeevery 60 msbiggest step lastAccelerates outgone for good: dismissed, deleted, sentscreen edgeevery 60 msbiggest step firstDecelerates to restparked just outside: a panel you can call back\n\nSame panel, same distance, same 240 ms. Only the spacing of the samples differs, and the ruler under each screen is the thing to read: equal steps in time, unequal steps in space.\nLeft, the gaps grow, so the panel is still gaining speed when it crosses the edge — it is going somewhere, and it is gone. Right, the gaps shrink to nothing at the edge, so the panel has parked: it is just out of sight and you expect to be able to fetch it back. Nobody has to be told this. It is how thrown things and pushed things behave.\n\n",
+      "images": []
+    }
+  ],
+  "images": [
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AT725KVltCCMZZEz02Kf1yPR1aRDRmoy1tceXfN8pnR2-qHe-QZ1Jd5E04ckzMZG6_Ep1XCcd-VIsq9l2zjqjcY-LA9afHGtEvxLdNll_KxBh5Z2QRCS-o-nv5H-KYyI39HnRG3mNbp4CsqCs8FlOfyBQDVhUz_9P1J8uXwYfwFDlxm-yT93R3D_MGSyOczIwxRMeEUh_zqFZc7GD-VGDRnYKlpjzcSJojVlbSnIjT6lU6uwcPQ9-gIJLhJdWgvWEEKbm2kk_w-fmLtu9igPrVDYm2CAr6HLaQ1KvX5-J-kV1fbadA-LszZ82jBibcHTUMa2IWDy_cEnwsbS0cvlaDPfpim9CmnPS2KGRAzyvh4LH2Jx6bgxD1dn3mBjpfgnNtxNXt4UqMQYXb1_LJ1rs9SVHpeziMFEtqHs20KDaGPJplk21pWxbV2NmzZpd5rP1Seeer3ULsM753B23y0Ls-SJmw4aBSi_2QURHnL7fGZHDiX16tvpW3RGdtjrI_hNiZ1e6CzDaXmLOc7r-5JbGKlHS2s1pLrhOIJOg4nWG3UHZaU-2FXGcKPdht5Ro0FXQ3taSfk_siG8JAVx9_fdQoJc2fFt7UkO7WAG18miBbcMLug6Jz0ynh2XeO6h2BFnCAFsXhAaiAVKvrou6UZeEzvuPvoslY5OYhIPCvrXIdxhBGtobtcEuEGI_tNWfkG_ZWyTDhasG3C78WyoFYNXlrn2pz2CX_IQqkkpR4SvvVtY5QmmuNyCybxLda58bjRvVLr8UNL5pN-34U1VwHwfCYsZjZWqAgg65MebWu7J1aMcI22_-Lkge2DE8LhX3_4lZBZTEqFm5bh9amL9tgf_WmEyZA9nm4-4seThhF3nzrv17BnNy7VN9Z_4pLddZNEGGB862YHQsbHkFUMAn_xmW1Yz0ZVIXhPhNuuGsByeSqI8iQu9J56aA7db_QXkJtwWGVDA3AG03IRPeJJhnax1EeWFuUXUOq57UKlmvfa8MLxakHj06Cf5Mr5sA8Y979JKOEjC-qmvr2K2EP_9CH-1rS2hHi8Oe9YQodBo0Kh7y5i5iYqQmpLcbFBGpMcgnD7MDCHz1RuMtO1LUSSQdmQ40uv6aUNDNTuYXjIrvur33uJUPs0fiZA3oQ286zQxh2OoI8nZwB6tBubx9lcj07qPV6u71sS5e4mqLBMJzXWVbm6PvspKL75pYe-QouG6UIE5pdarI8H6LXPjUiwABSRP91tZJyMTtW3hlvhqhTwsmfronTdPhnJCO5TtOdtTW-qGk_pbD7L8NlG-fJs_Cd0F-6YSzjBSX4qrqHeF_Q4IMISyrZ0ar7sCTo-d2hhTsIbP-tyJB8lh2252qlssjFy0qOCxhBWyQVAh9D7QGE00b5_EUnud1Mo5MKOdbCCjg5WYWFqA3NqYpacnxG5QZs2RBLNQRnQ5NieeAQfKBVScH-qJPUiede-gMCPc5RYqLKz-gmx0wiVA2ooxwxY65Ito59Dr-ur1fSNRclmLgQYoFpt1kOCP2Rq8FDxbyxDahwKmJLGUDOccORNwSrfQGnpXfN5UTIT2RWNfHWCPPMVCq59hPZRfgM8hnLVUDxEm_bT2wGebX62FAuq8wXbA9g6jK9jf_ezQhrTGRkCq8NJwL6BdVZek1p04dQS9VvuFSOdYRRCTYO5yUrN0wcT4Y0XfN_CXv7Nc1dIQTfjKJBoWWeKAmUr_Y2hqIl5XQ1aOlWgFQDdCFJnakLgUcYf6EVatay2rorPDcHToq0GLvz7QGqeZZsmjJupUhP4taI4GIRJy8T3QIWhHms9Efxq3mxCtf6QAshBl-LD3jpn2TiUlh2VjiLG2s7TtcfXYovfy9iXmPJ5MgGI-yo3H-3jytFZJmUAIo_YD4oHaAafQFVdvmALcsx0f6dRQVb47oDSefwgW-pJimcDHqSQh7qzgwmd1ZGEdkHWZc_P8wPpz1tb-RPr82Ag-EBkvO_sJF4dzoBkd1VsKhvCJvN9YuAETA1Djh66EzexqwcoAYPd1bstmTOAqjeB9CKiA4FO5k-X4gRTA",
+      "alt": "Muybridge, The Horse in Motion, 1878: twelve numbered frames of a galloping horse and rider in silhouette against a marked backdrop"
+    },
+    {
+      "src": "https://secure-images-proxy.pulsar-eec.workers.dev/i/AQjFYQIPvXR17Vf9XP16UomXJPC-UlOYazN_e6rVHaMjQxg-mm3DT_jMCfrAVYUEhyEMUgAKGZQB7NhriGH7zZTEQPpykUbVezc9xO00BSGvlt6n327O6ofiLb9t8s6E-1tX9n4DK9D9-ePtEAnpOLOPt2whd6cW3MNsQxKHZT2adv2NLiFYrCfNb1GG4eWfa-m-Yw9QON6lniONdqakP_W_oKA8uey2VifXy6vHW48BWfJe_Bh1pk77WV3LKPu3Zy776pD7B8RigRIBh7GER_zV7q01Efa-IsaEehgLjIpfr--IEeCRufZthqEhEQ_n_FA_FSOSNiKo35ioyvjSEJx5_2lCajIuXVPePibqxm5fC_NG9AgYuwWFvW7aMkYGRavq4NW9NjfPEk_Nolx7RoYwHuZYQduU15hu2L1oSdQA2It-g7kj3d7RFM62yslFTYZ-pXFERLxk7ko5WdwsHAxNOdYttfr5fplBdyE7aF_3V8CAbekElbgls2l5zmkYfBXArqjrvf1bnrYeNMEznHPS_s18GlwZuNNNVnKOitFdRu7Xztm1-pZ77tdbFXh0ymZ7-SwgO6tno4CRGnzCbvTYoTdSw-yflx4O0iWc1UJG-jq-sOwEk_ymwlJPUI9SdMsk83yKl4Ani3jrU-zgxt7_Xe6Z9fNKeZA1hSpKzelHdgCbUsSa7RKwdCeB245NEwPrLTmO_MxIDYHHhGDS_6Xjhzh6EQeRgUoARCV25BfihoKictUzK93oKlsHtBJyJRnscGdYp2gr8DEn9tzhJ8wyJqv0ny7xO8McPiiS-mRRkBz-P5vQ3RvZ78RtrDJ9lkENzlOiPthFtsLHVLN5K4IliWkt5fGRS8D_yPaQ_p3LvPrcYaDpXG3biVYNTk_KDdG5GaJb47smzDoVlApY_U2Z4xdBaJRObk0fK7gaEXIb6AX_y4qmhKw6yI1UkXVFXMuBVhXtMR8O7i6iuo6jS8M8TXOdUJ-MCgSPu4apjnJomW5X0_cEFoSWyk0yNcBQ_YKu9WVYdz5V63Y_ZlZhWraN374S0V3aQOk7D7nNmCDnsRSCAy02EYRI-2-GM5FOlDyGVf6bL5meGvhw89t_SfGyGbd4HCE3lJlEnSaFQVw2ys26vKcEgtevvjyCzh6Cj6a9AcgAYbYkZM87jRltjMHBDfVclvglbfndZwJlUxjV17SbutNZorkflTMaB7FxZEMkUTOTRszU73vxzAHX8Xw9YhqB3j-wcJ0tvldz4dHy_rJsSd8N0dm8e8TlrG0-NgtwypjI9mSvB5H_PMlv_1OT78MeDwIyv27Q4aovMA8qMc7PlVdszyYuXt2Thqi1JuDqMJQMWNPfyLfbUoVbISmlUh1IpMEU_j0P7jjPQDYOgcghRKMphwCx5KJZ-NRBy-FeSfoojlZdmEieuvgYXvZcaKNVUD5kdmxcqc_2ZvzoixO2zhFnW42XRV3NsHs_LPo8lZ_yIl_u9xYlmxisUsbF7Oyl1_kbDawa89_LD6InWAUvRexaAkRurPF2LBdYIdvufvaNXD8EKEDigjNvFunZRsUYcV37lYuaWGIkKchITw7esfmv15vLjod-Dt5gyEHCIagwhNin_oV6sQZc_fHt8yNYA6CW0g-_05Uo9wmFRkcugJGtceOsVtl1ytTbYsfvATxsDPub2ctI5VbW_rsEV9OCFslQ768nYQOpiaJOTblEawKoKfElOoCag8XX6789JgXdImd2st1dqVjX7p9-Gja5dftGFcaXTv6uQ29dEXLsQBvHC1_e4RvKBJmCU_rf18YM_lz4vbzLTP-WT7Csr3zhx1DRQaiIULL3hVjvn445_QjqF2NjaIcYUsZcQEhG0ClP6C1CeaKkZANIEqx4NFho9YO5tZ4O1_84oym06H-7Xu9QUNFV6JFgPvwlihFK5_4JtoP0HC3lL5UFC9Ij-yWTgIrzuH7eE7wJI4WnWYUA3uQBVFnKp9DFySSzFlMPJ54kSRCSImHGUsuRbr056TyO6bxJYFCYtu2ENvmCuMq8icyflD7n5aH1hX6k",
+      "alt": "Marey chronophotograph of a man on a bicycle: five overlapping exposures of the same rider on one plate, evenly spaced left to right"
+    }
+  ],
+  "links": [
+    {
+      "text": "Wiki",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/"
+    },
+    {
+      "text": "The two jobs motion actually does",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#the-two-jobs-motion-actually-does"
+    },
+    {
+      "text": "Why it is expensive",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#why-it-is-expensive"
+    },
+    {
+      "text": "Direction and easing are meaning, not polish",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#direction-and-easing-are-meaning-not-polish"
+    },
+    {
+      "text": "What motion cannot do",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#what-motion-cannot-do"
+    },
+    {
+      "text": "Common mistakes",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#common-mistakes"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#the-two-jobs-motion-actually-does"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#why-it-is-expensive"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#direction-and-easing-are-meaning-not-polish"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#what-motion-cannot-do"
+    },
+    {
+      "text": "Timing and restraint",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint"
+    },
+    {
+      "text": "",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information#common-mistakes"
+    },
+    {
+      "text": "\n              Timing and restraint\n              How long an interface animation should last, which curve it should follow, and why every one of them has to be switchable off. The usable window is roughly 100 to 500 milliseconds.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint"
+    },
+    {
+      "text": "\n              Gestalt grouping\n              The automatic machinery that turns a field of pixels into objects and groups — and the reason accidental alignments in a photograph look deliberate.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/gestalt"
+    },
+    {
+      "text": "\n              Visual hierarchy\n              The order in which your eye visits the parts of an image — decided by the image, not by you.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/visual-hierarchy"
+    },
+    {
+      "text": "\n              How to look at an image\n              A repeatable way to see what an image is actually doing, instead of only noticing whether you like it.\n            ",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/how-to-look"
+    },
+    {
+      "text": "MOTION-007 — NN/g — The Role of Animation and Motion in UX",
+      "href": "https://www.nngroup.com/articles/animation-purpose-ux/"
+    },
+    {
+      "text": "MOTION-005 — Carbon Design System — Motion overview",
+      "href": "https://carbondesignsystem.com/elements/motion/overview/"
+    },
+    {
+      "text": "MOTION-001 — Material Design 3 — Motion: how it works",
+      "href": "https://m3.material.io/styles/motion/overview/how-it-works"
+    },
+    {
+      "text": "MOTION-008 — NN/g — Executing UX Animations: Duration and Motion Characteristics",
+      "href": "https://www.nngroup.com/articles/animation-duration/"
+    },
+    {
+      "text": "MOTION-010 — W3C WAI — Understanding SC 2.3.3: Animation from Interactions",
+      "href": "https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html"
+    },
+    {
+      "text": "\n        PreviousPackaging you can actually open",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/packaging-accessibility"
+    },
+    {
+      "text": "\n        NextTiming and restraint",
+      "href": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-timing-and-restraint"
+    }
+  ],
+  "url": "https://label-exhed4afhtahh0b7.eastus2-01.azurewebsites.net/wiki/motion-as-information"
+}

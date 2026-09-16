@@ -1,0 +1,45 @@
+{
+  "id": "800700b92c5e4bc8e9230073ee971166f4b76bfc914356f0c97115bb4187441b",
+  "prompt": "digital painting of an armored figure on a futuristic vehicle",
+  "correct_choice": "1",
+  "verification": "Correzione esplicita visibile del sito: Image 1 is the superior choice as it accurately captures a high-quality 'digital painting' aesthetic with visible, expressive brushwork. In contrast, Image 2 features an weird scene with logical inconsistencies that create confusing composition.",
+  "split": "train",
+  "image_group": "d2bb1c80eb1a1b273767077a8d83cdf64c2a0a1d7b0042f3647b18c31f2c3239",
+  "image_hashes": [
+    "d34f00e4194b36176634e7301e10c132546ccb42394ab75f32154b89871fe903",
+    "a75de79c1a2a630327348cd5b5afa9080dc11f5d505d10a0dcf3eade61c874f0"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "d1969b66ecc691510efb498feca216c43cdb48334258204e7be3748dfc3ab826",
+      "corrected": false,
+      "time": "2026-09-13T22:09:39"
+    },
+    {
+      "choice": "1",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "d1969b66ecc691510efb498feca216c43cdb48334258204e7be3748dfc3ab826",
+      "corrected": true,
+      "time": "2026-09-13T22:09:45"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 is the superior choice as it accurately captures a high-quality 'digital painting' aesthetic with visible, expressive brushwork. In contrast, Image 2 features an weird scene with logical inconsistencies that create confusing composition.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "1",
+      "model_choice": "2",
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T22:09:43"
+    }
+  ],
+  "feedback": "Image 1 is the superior choice as it accurately captures a high-quality 'digital painting' aesthetic with visible, expressive brushwork. In contrast, Image 2 features an weird scene with logical inconsistencies that create confusing composition.",
+  "lesson": "If a requested style is 'digital painting', prioritize visible brushwork and artistic texture over photorealism or stylized flatness; avoid logical inconsistencies that disrupt compositional clarity.",
+  "lesson_evidence": "Image 1 is the superior choice as it accurately captures a high-quality 'digital painting' aesthetic with visible, expressive brushwork. In contrast, Image 2 features an weird scene with logical inconsistencies that create confusing composition.",
+  "lesson_source": "Image 1 is the superior choice as it accurately captures a high-quality 'digital painting' aesthetic with visible, expressive brushwork. In contrast, Image 2 features an weird scene with logical inconsistencies that create confusing composition."
+}

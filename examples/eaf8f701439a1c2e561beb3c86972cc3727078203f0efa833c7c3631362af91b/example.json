@@ -1,0 +1,68 @@
+{
+  "id": "eaf8f701439a1c2e561beb3c86972cc3727078203f0efa833c7c3631362af91b",
+  "prompt": "a deserted municipal archive room in an alternate 1984 where the future arrived quietly, long metal filing cabinets under soft amber ceiling lamps, one drawer left open with transparent magnetic memory cards mixed into handwritten composer notes, a wall clock with no numbers, dust trails interrupted by one fresh footprint, far window showing a silent elevated transit line passing through blue morning fog, camera placed at desk height behind a half-open door, realistic cinematic photography, restrained retrofuturism, tactile analog materials, subtle impossible technology, quiet mystery, film grain",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 2 masterfully captures the distinct atmosphere of cinematic photography and restrained retrofuturism. In contrast, Image 1 falls short and introduces a bizarre logical flaw where footprints are inexplicably left on a path made of snow, completely disrupting the coherence of the scene.",
+  "split": "train",
+  "image_group": "3c2268d0163cbcb82a90b41f4aeac11bc3c53629669036838ac240d67e3ba524",
+  "image_hashes": [
+    "1b4be378513507ff0997857e1994f5810f53bc0bfc0997111fe7a60f5b1d819b",
+    "801d44cdb08ae2decf51b7e998c6eaa22675881b66079cfac7c0595cd8979e84"
+  ],
+  "contextual_hints": "1984 movie style\nHIGH\nThe prompt references an 'alternate 1984', which strongly evokes the visual canon of Orwellian or retro-dystopian aesthetics associated with the year/title.\n\nretrofuturism style\nHIGH\nSpecific art and architectural style requested to define the visual era and technology level.",
+  "reference_images": [
+    {
+      "label": "1984 movie style",
+      "file": "reference_1.png"
+    },
+    {
+      "label": "1984 movie style",
+      "file": "reference_2.png"
+    },
+    {
+      "label": "1984 movie style",
+      "file": "reference_3.png"
+    },
+    {
+      "label": "retrofuturism style",
+      "file": "reference_4.png"
+    },
+    {
+      "label": "retrofuturism style",
+      "file": "reference_5.png"
+    }
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "9bf86bff33b3715bfac84a82abdf0b8657684b2d10ea7fd960364c5d0509ee11",
+      "corrected": false,
+      "time": "2026-09-13T22:07:14"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "9bf86bff33b3715bfac84a82abdf0b8657684b2d10ea7fd960364c5d0509ee11",
+      "corrected": true,
+      "time": "2026-09-13T22:07:18"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 2 masterfully captures the distinct atmosphere of cinematic photography and restrained retrofuturism. In contrast, Image 1 falls short and introduces a bizarre logical flaw where footprints are inexplicably left on a path made of snow, completely disrupting the coherence of the scene.",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "basis": "rejected_submission_with_exactly_two_options",
+      "time": "2026-09-13T22:07:15"
+    }
+  ],
+  "feedback": "Image 2 masterfully captures the distinct atmosphere of cinematic photography and restrained retrofuturism. In contrast, Image 1 falls short and introduces a bizarre logical flaw where footprints are inexplicably left on a path made of snow, completely disrupting the coherence of the scene.",
+  "lesson": "If requested style includes cinematic photography and restrained retrofuturism, prioritize visual coherence over surreal or illogical elements; avoid juxtaposing impossible tech with inconsistent environmental logic.",
+  "lesson_evidence": "Image 2 masterfully captures the distinct atmosphere of cinematic photography and restrained retrofuturism. In contrast, Image 1 falls short and introduces a bizarre logical flaw where footprints are inexplicably left on a path made of snow, completely disrupting the coherence of the scene.",
+  "lesson_source": "Image 2 masterfully captures the distinct atmosphere of cinematic photography and restrained retrofuturism. In contrast, Image 1 falls short and introduces a bizarre logical flaw where footprints are inexplicably left on a path made of snow, completely disrupting the coherence of the scene."
+}

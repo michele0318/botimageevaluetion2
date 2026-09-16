@@ -1,0 +1,36 @@
+{
+  "id": "8953f4345051682e6af05b471ad5ed2ceff1cb604356bcd5c9c95d61affd5576",
+  "prompt": "Three vibrant red dumbbells are neatly aligned on the polished wooden floor of a well-illuminated gym. The afternoon sunlight streams through the large windows, casting a warm glow on the equipment. In the background, there are rows of exercise machines and mirrors reflecting the interior of the space.",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Both images are far from ideal. Image 2 lacks the mirrors specified in the prompt, which are present in image 1, and there are 4 dumbbells instead 3, but otherwise, it is clearly better than the first image. Image 1 has major issues with the rendering of the dumbbells, as well as oversaturated colors on the floor and artifacts in the form of white spots that are inappropriate for this prompt. Therefore, image 2 wins.",
+  "split": "train",
+  "image_group": "2ce31892490f00c881b2a1c4cd2267e01f6eb5a996ce82ceef43c104c72c0fc4",
+  "image_hashes": [
+    "4aee1aad23def8c22c4e64cf1a5c60ced444cb2862fafb219e730fbad84ffa83",
+    "cfd8b0a973bb6606a6970b869b371138592b976b91df628ae871745db5faa548"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "ff6af87255feb4310f6a39a3187d30810e484fb542d9d1212e51bbb4956fa688",
+      "corrected": false,
+      "time": "2026-09-13T21:57:25"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:57:26"
+    }
+  ],
+  "feedback": "Both images are far from ideal. Image 2 lacks the mirrors specified in the prompt, which are present in image 1, and there are 4 dumbbells instead 3, but otherwise, it is clearly better than the first image. Image 1 has major issues with the rendering of the dumbbells, as well as oversaturated colors on the floor and artifacts in the form of white spots that are inappropriate for this prompt. Therefore, image 2 wins.",
+  "lesson": "If a requested element (like mirrors or exact count of objects) is missing, prioritize the image that better fulfills the prompt’s core visual description, even if minor deviations exist.",
+  "lesson_evidence": "Image 2 lacks the mirrors specified in the prompt, which are present in image 1, and there are 4 dumbbells instead 3, but otherwise, it is clearly better than the first image.",
+  "lesson_source": "Both images are far from ideal. Image 2 lacks the mirrors specified in the prompt, which are present in image 1, and there are 4 dumbbells instead 3, but otherwise, it is clearly better than the first image. Image 1 has major issues with the rendering of the dumbbells, as well as oversaturated colors on the floor and artifacts in the form of white spots that are inappropriate for this prompt. Therefore, image 2 wins."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "e38edfbebd18cdaa188f6b37c46096987fcea2a601cec063d653565d339de3d0",
+  "prompt": "a woman with dark hair wearing a dark tank top and a headband",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 1 has a frame and a logo not requested in the prompt, which distract attention. Therefore, image 2 is better. (See Absence of Visual Artifacts instruction criterion).",
+  "split": "train",
+  "image_group": "25d8f2b153cef12d10eb9764cc46888a939316f3fbce9b541d79f91b90add9a9",
+  "image_hashes": [
+    "b0b2fbd25bfb98a471fe386f9d644b4d33bbd4406041b5fae400e522d74eaa8c",
+    "ca08e8df885e004dfb27f06bf918f2533e2d74122256c88cec5abf0cb408d5d3"
+  ],
+  "attempts": [
+    {
+      "choice": "1",
+      "phase": "false",
+      "accepted": false,
+      "assignment": "b2c5770aa246b2522ab1f97c9aaa5835f2777ad661cbc08303e0783407d636af",
+      "corrected": false,
+      "time": "2026-09-13T02:12:25"
+    },
+    {
+      "choice": "2",
+      "phase": "true",
+      "accepted": null,
+      "assignment": "b2c5770aa246b2522ab1f97c9aaa5835f2777ad661cbc08303e0783407d636af",
+      "corrected": true,
+      "time": "2026-09-13T02:12:28"
+    }
+  ],
+  "observed_feedback": "Please take another look:Image 1 has a frame and a logo not requested in the prompt, which distract attention. Therefore, image 2 is better. (See Absence of Visual Artifacts instruction criterion).",
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": "1",
+      "source": "visible_site_feedback",
+      "time": "2026-09-13T02:12:27"
+    }
+  ],
+  "feedback": "Image 1 has a frame and a logo not requested in the prompt, which distract attention. Therefore, image 2 is better. (See Absence of Visual Artifacts instruction criterion).",
+  "lesson": "If a requested style is specified, avoid non-requested visual artifacts like frames or logos that distract from the subject.",
+  "lesson_evidence": "Image 1 has a frame and a logo not requested in the prompt, which distract attention. Therefore, image 2 is better. (See Absence of Visual Artifacts instruction criterion).",
+  "lesson_source": "Image 1 has a frame and a logo not requested in the prompt, which distract attention. Therefore, image 2 is better. (See Absence of Visual Artifacts instruction criterion)."
+}

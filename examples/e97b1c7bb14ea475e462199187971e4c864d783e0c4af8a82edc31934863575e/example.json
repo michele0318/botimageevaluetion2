@@ -1,0 +1,36 @@
+{
+  "id": "e97b1c7bb14ea475e462199187971e4c864d783e0c4af8a82edc31934863575e",
+  "prompt": "elegant brand identity on smartphone screens",
+  "correct_choice": "2",
+  "verification": "Correzione esplicita visibile del sito: Image 1 has obvious flaws: strong overexposure on the left side of the image, issues with the text, and it looks like there are different phones in the picture. All of this makes image 2 the better choice.",
+  "split": "train",
+  "image_group": "c37eb6f3ba4210d54b7a3d7b7a09dd33da4a65a8dbb4c455d1b927d0fb88b27f",
+  "image_hashes": [
+    "b46e540400f02d0e9c0bfe8337fd50b0abf5cc303c1fefd7cbecdd445dc31e44",
+    "34f4255100c203221170596cb178e90bf15207ad5f6a50534335d4360acb8ddb"
+  ],
+  "attempts": [
+    {
+      "choice": "2",
+      "phase": "false",
+      "accepted": true,
+      "assignment": "4901fd73980eacb82155a818ee622e3bfe3ec56cd4f21fa2efae32f9a6ed302c",
+      "corrected": false,
+      "time": "2026-09-13T21:57:52"
+    }
+  ],
+  "label_history": [
+    {
+      "previous": null,
+      "choice": "2",
+      "model_choice": null,
+      "source": "visible_site_feedback",
+      "basis": "visible_feedback",
+      "time": "2026-09-13T21:57:54"
+    }
+  ],
+  "feedback": "Image 1 has obvious flaws: strong overexposure on the left side of the image, issues with the text, and it looks like there are different phones in the picture. All of this makes image 2 the better choice.",
+  "lesson": "If a requested style is specified, prioritize clarity and consistency over aesthetic flair; avoid visual inconsistencies like overexposure or misaligned elements that distract from the subject.",
+  "lesson_evidence": "Image 1 has obvious flaws: strong overexposure on the left side of the image, issues with the text, and it looks like there are different phones in the picture.",
+  "lesson_source": "Image 1 has obvious flaws: strong overexposure on the left side of the image, issues with the text, and it looks like there are different phones in the picture. All of this makes image 2 the better choice."
+}
